@@ -1,0 +1,8 @@
+{
+  "users": [
+    { "username": "admin",  "name": "Ava Admin",   "email": "ava@example.com",   "role": "admin",  "active": true,  "passwordHash": "895242ec348d5581cea50202549ff9950b56ec1f9a41e2992db95aecc619fd9b" },
+    { "username": "editor", "name": "Eli Editor",  "email": "eli@example.com",   "role": "editor", "active": true,  "passwordHash": "ce89168acd49d91c3ae2ce57e4ae6514834096ffbb9717b48b0ec182c3b6f42e" },
+    { "username": "viewer", "name": "Vera Viewer", "email": "vera@example.com",  "role": "viewer", "active": true,  "passwordHash": "9ec8813a1e76a85cf5ebb614e4c705b128a06156105eadc52835858192d876c2" },
+    { "username": "former", "name": "Finn Former", "email": "finn@example.com",  "role": "viewer", "active": false, "passwordHash": "9ec8813a1e76a85cf5ebb614e4c705b128a06156105eadc52835858192d876c2" }
+  ]
+}

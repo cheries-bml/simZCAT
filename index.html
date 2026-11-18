@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="login-page">
+  <aside class="login-brand">
+    <h1 id="app-name">Loading…</h1>
+    <p id="app-tagline"></p>
+  </aside>
+
+  <main class="login-panel">
+    <form id="login-form" class="login-form" novalidate>
+      <h2>Sign in</h2>
+      <div id="login-error" class="alert" role="alert" hidden></div>
+
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" autocomplete="username" required autofocus>
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required>
+
+      <button id="login-btn" type="submit" class="btn">Sign in</button>
+      <p class="hint">Demo accounts: admin / admin123, editor / editor123, viewer / viewer123</p>
+    </form>
+  </main>
+
+  <script type="module" src="assets/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "appName": "Northfield Console",
+  "tagline": "Sign in to manage your workspace.",
+  "passwordSalt": "change-this-salt-before-going-live",
+  "sessionMinutes": 30,
+  "maxFailedAttempts": 5,
+  "lockoutMinutes": 5,
+  "defaultPage": "dashboard.html",
+  "loginPage": "index.html"
+}
