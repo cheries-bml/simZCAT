@@ -1,57 +1,40 @@
-# SimpleAuth v3.0.0 — Login + CAT
+# SimpleAuth v4.0.0 — Rebuilt, works on file:// + GitHub Pages
 
-JSON-only. No DB. GET only. Tests from `/questions/`.
+## What was fixed from v3
+1. **Login failed on file:// / http** — `crypto.subtle` only works on https/localhost. Now: try subtle, fallback to `passwordHint` compare. Login works everywhere.
+2. **fetch() failed on file://** — Now: if `fetch(data/*.json)` or `fetch(questions/*.json)` fails, app uses built-in fallback data (same demo users + same sample test). You still see the app, Test, and CAT.
+3. **CAT Next needed 2 clicks / was confusing** — Now: single primary button: `Check answer` → `Next →` → `Finish ✓`. One click per step.
+4. **Flag re-rendered question and lost typed corrections** — Now: Flag only toggles dot, does NOT re-render.
+5. **All DOM access guarded** — `if(el)` checks everywhere, global error banner instead of white screen.
+6. **Back navigation restores answers** — MCQ selections + correction inputs are restored when you go Prev.
 
 ## Structure
 ```
 ├── index.html
-├── assets/
-│   ├── css/style.css
-│   └── js/
-│       ├── app.js   # auth + nav + overview + reports
-│       └── cat.js   # test discovery + CAT engine
-├── data/
-│   ├── config.json  # version 3.0.0
-│   ├── roles.json
-│   └── users.json
-├── questions/
-│   ├── manifest.json         # list of test files — REQUIRED for GitHub Pages
-│   └── sample_question.json  # your sample
-└── .nojekyll
+├── assets/css/style.css
+├── assets/js/app.js  # auth, nav, overview, reports, fallback
+├── assets/js/cat.js  # discovery + CAT, fallback test
+├── data/config.json  # version 4.0.0
+├── data/roles.json
+├── data/users.json
+├── questions/manifest.json
+└── questions/sample_question.json
 ```
 
-## Nav
-Overview | **Test** | Reports
+## How to test locally (best way)
+Option A — GitHub Pages (recommended): push folder → Settings → Pages → main / (root)
+Option B — Local server: `npx serve .` or `python -m http.server 8000` then open `http://localhost:8000`
+Option C — Double-click `index.html`: works now via fallback, but to test real JSON files use A or B.
 
-Test sits between Overview and Reports, as requested.
-
-## How Test discovery works (recursive via manifest)
-GitHub Pages cannot list a folder. So:
-1. `cat.js` does `GET questions/manifest.json`
-2. For each path in `tests[]`, it does `GET questions/<path>`
-3. Renders a card per file
-
-To add a test:
-- Put `my-test.json` in `/questions/` or subfolder, e.g. `/questions/english/grammar-1.json`
-- Add `"english/grammar-1.json"` to `manifest.json` → `{"tests": ["sample_question.json", "english/grammar-1.json"]}`
-- Reload. No build step.
-
-## CAT — what it supports from your sample
-- `meta.title/description/info/author/config` (show_answer, show_explanation, no_timer)
-- `questions[].type`: `multiple_choice` + `correction`
-- `multiple_choice`: `data.hint/passage/image/question`, `options {A..E: {text, correct}}` — supports 1 or multiple correct (checkbox when >1 correct, e.g. Q1 has C + E correct)
-- `correction`: `data.multiErrorSegments[] {id, text, clickable, isError, correctAnswers[]}` — tap segment → type correction. `No Error` if 0 errors. Validation is case-insensitive, trims spaces.
-- Per-question: `config.level`, `config.time_in_seconds {fast, normal, easy}`, `config.show_answer/show_explanation`
-- `explanation {text, topic, concept, formula, examples[]}` — shown after answer if enabled
-- Flow: Intro → Q by Q → progress, timer, flag, hint, dots nav, Prev/Next → Result → Review → saved to Reports (localStorage)
-
-## Demo logins
+## Demo
 - admin / admin123
 - manager / manager123
 - staff / staff123
 
-## Deploy
-Push folder → GitHub → Settings → Pages → Branch: main / (root)
+## Test
+Nav: Overview | Test | Reports
+- Test page loads from `questions/manifest.json` via GET. Add file → add to manifest → Reload.
+- CAT: Q1 multiple_choice (2 correct: C + E), Q2 correction (tap s2, s5, type corrections).
 
 ## Note
-Demo auth only. `users.json` is public — don't use real passwords.
+Demo only. `users.json` is public — don't use real passwords.

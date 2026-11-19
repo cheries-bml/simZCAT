@@ -1,136 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SimpleAuth v3 — Test & CAT</title>
-  <meta name="description" content="JSON-only login + Computer Assisted Test. No DB, GET only. Tests from /questions/" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SimpleAuth v4 — Login + CAT</title>
+<link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">
-      <span class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="m9 12 2 2 4-4"/></svg></span>
-      <strong id="appName">SimpleAuth</strong>
-      <span class="version" id="versionPill">v3.0.0</span>
+<header class="topbar">
+  <div class="brand"><span class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span><strong id="appName">SimpleAuth</strong><span class="version" id="versionPill">v4.0.0</span></div>
+  <nav class="main-nav" id="mainNav" hidden>
+    <button class="nav-btn active" data-nav="overview">Overview</button>
+    <button class="nav-btn" data-nav="test">Test</button>
+    <button class="nav-btn" data-nav="reports">Reports</button>
+  </nav>
+  <div class="top-actions"><span class="status"><span class="dot"></span>GET only • No DB</span><button id="logoutBtnTop" class="icon-btn" hidden title="Log out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg></button></div>
+</header>
+<div id="globalError" class="global-error" hidden></div>
+<main class="wrap">
+  <!-- LOGIN -->
+  <section id="loginView" class="login-card">
+    <div class="login-head"><div class="login-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div><h1>Sign in</h1><p>Welcome back</p></div>
+    <form id="loginForm">
+      <label>Username</label>
+      <div class="field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><input id="username" type="text" placeholder="admin" required autocomplete="username" /></div>
+      <label>Password</label>
+      <div class="field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><input id="password" type="password" placeholder="••••••••" required autocomplete="current-password" /><button type="button" id="togglePass" title="Show password"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+      <label class="check"><input id="rememberMe" type="checkbox" /> Remember me</label>
+      <button type="submit" class="btn-primary full" id="loginBtn">Sign in</button>
+      <p id="loginError" class="error" hidden></p>
+    </form>
+    <div class="divider">Demo accounts</div>
+    <div class="demo-list" id="demoList"></div>
+    <p class="tiny" id="versionText">v4.0.0 • JSON only</p>
+    <p class="tiny muted" id="loadStatus">Loading…</p>
+  </section>
+
+  <!-- APP -->
+  <section id="appView" hidden>
+    <!-- OVERVIEW -->
+    <div id="page-overview" class="page">
+      <div class="dash-top"><div><h1 id="welcomeTitle">Hello</h1><p class="muted" id="welcomeSub">—</p></div><button id="refreshBtn" class="btn-ghost">↻ Reload JSON</button></div>
+      <div class="stats">
+        <div class="stat"><span>Your Role</span><strong id="roleName">—</strong><small id="roleDesc">—</small></div>
+        <div class="stat"><span>Permissions</span><strong id="permCount">—</strong><small>From roles.json</small></div>
+        <div class="stat"><span>Tests Available</span><strong id="testCountStat">—</strong><small id="testCountSub">—</small></div>
+      </div>
+      <div class="grid-2">
+        <div class="card"><h3>Permissions</h3><div id="permList" class="chips"></div><h3 class="mt">Widgets</h3><div id="widgetList" class="widgets"></div></div>
+        <div class="card"><h3>Profile</h3><div class="profile"><div class="avatar" id="profileAvatar">A</div><div><strong id="profileName">—</strong><br><span id="profileEmail">—</span><br><small id="profileMeta">—</small></div></div><div class="quick"><button class="btn-primary" data-goto="test">Go to Test →</button><button class="btn-ghost" data-goto="reports">View Reports</button></div></div>
+      </div>
+      <div class="card" id="usersTableCard" hidden><div class="card-head"><h3>Users</h3><span class="pill" id="userCount">0</span></div><div class="table-wrap"><table><thead><tr><th>User</th><th>Username</th><th>Role</th><th>Department</th><th>Status</th></tr></thead><tbody id="usersTableBody"></tbody></table></div></div>
+      <div class="card"><div class="card-head"><h3>Config</h3><button id="toggleConfig" class="btn-ghost">Show</button></div><pre id="configJson" hidden>{}</pre></div>
     </div>
-    <nav id="mainNav" class="main-nav" hidden>
-      <button class="nav-btn active" data-nav="overview">Overview</button>
-      <button class="nav-btn" data-nav="test">Test</button>
-      <button class="nav-btn" data-nav="reports">Reports</button>
-    </nav>
-    <div class="top-actions">
-      <span class="status"><span class="dot"></span> GET only</span>
-      <button id="logoutBtnTop" class="icon-btn" title="Log out" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/></svg></button>
+    <!-- TEST -->
+    <div id="page-test" class="page" hidden>
+      <div class="page-head"><div><h1>Test</h1><p class="muted">Pick a test to start. Files from <code>/questions/</code>.</p></div><span class="pill" id="testTotalPill">0 tests</span></div>
+      <div class="toolbar"><div class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input id="testSearch" placeholder="Search tests…" /></div><select id="testFilter"><option value="all">All types</option><option value="multiple_choice">Multiple choice</option><option value="correction">Correction</option><option value="mixed">Mixed</option></select><button id="reloadTests" class="btn-ghost">↻ Reload</button></div>
+      <p id="testLoading" class="muted small">Loading tests…</p>
+      <div id="testGrid" class="test-grid"></div>
+      <div id="testEmpty" class="empty" hidden><div class="empty-icon">📭</div><h3>No tests found</h3><p class="muted small">Add a file to <code>/questions/</code> and list it in <code>questions/manifest.json</code>.</p></div>
+      <div class="card hint-card"><h3>How to add a test</h3><p class="muted small">1. Put <code>my-test.json</code> in <code>/questions/</code> &nbsp; 2. Add its name to <code>manifest.json</code> &nbsp; 3. Click Reload. Works on GitHub Pages — no server code.</p></div>
     </div>
-  </header>
+    <!-- REPORTS -->
+    <div id="page-reports" class="page" hidden>
+      <div class="page-head"><div><h1>Reports</h1><p class="muted">Your past attempts (saved in this browser).</p></div><button id="clearReports" class="btn-ghost">Clear</button></div>
+      <div id="reportsList"></div>
+      <div id="reportsEmpty" class="empty"><div class="empty-icon">📊</div><h3>No attempts yet</h3><p class="muted small">Finish a test and it will appear here.</p></div>
+    </div>
+  </section>
 
-  <main class="wrap">
-    <!-- LOGIN -->
-    <section id="loginView" class="login-card">
-      <div class="login-head">
-        <div class="login-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="m9 12 2 2 4-4"/></svg></div>
-        <h1>Sign in</h1><p>Welcome back</p>
-      </div>
-      <form id="loginForm">
-        <label for="username">Username</label>
-        <div class="field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6 8-6s8 2 8 6"/></svg><input id="username" type="text" placeholder="admin" required autofocus /></div>
-        <label for="password">Password</label>
-        <div class="field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><input id="password" type="password" placeholder="••••••••" required /><button type="button" id="togglePass" aria-label="Show password"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
-        <label class="check"><input id="rememberMe" type="checkbox" /> Remember me</label>
-        <button type="submit" class="btn-primary" id="loginBtn">Sign in</button>
-        <p id="loginError" class="error" hidden></p>
-      </form>
-      <div class="divider">Demo accounts</div>
-      <div class="demo-list" id="demoList"></div>
-      <p class="tiny"><span id="versionText">v3.0.0</span> • JSON only</p>
-    </section>
-
-    <!-- APP -->
-    <section id="appView" hidden>
-      <!-- OVERVIEW -->
-      <div id="page-overview" class="page">
-        <div class="dash-top"><div><h1 id="welcomeTitle">Hello</h1><p id="welcomeSub"></p></div><div class="dash-actions"><button id="refreshBtn" class="icon-btn" title="Reload JSON"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg></button></div></div>
-        <div class="stats">
-          <div class="stat"><span>Your Role</span><strong id="roleName">—</strong><small id="roleDesc">—</small></div>
-          <div class="stat"><span>Permissions</span><strong id="permCount">—</strong><small>From roles.json</small></div>
-          <div class="stat"><span>Tests Available</span><strong id="testCountStat">—</strong><small id="testCountSub">From /questions/</small></div>
-        </div>
-        <div class="grid-2">
-          <div class="card"><h3>Permissions</h3><div id="permList" class="chips"></div><h3 class="mt">Widgets</h3><div id="widgetList" class="widgets"></div></div>
-          <div class="card"><h3>Profile</h3><div class="profile"><div class="avatar" id="profileAvatar">A</div><div><strong id="profileName">—</strong><br><span id="profileEmail">—</span><br><small id="profileMeta">—</small></div></div><div class="quick"><button class="btn-ghost" data-goto="test">Start a Test →</button><button class="btn-ghost" data-goto="reports">View Reports</button></div></div>
-        </div>
-        <div class="card" id="usersTableCard" hidden><div class="card-head"><h3>Users</h3><span class="pill" id="userCount">0</span></div><div class="table-wrap"><table><thead><tr><th>User</th><th>Username</th><th>Role</th><th>Dept</th><th>Status</th></tr></thead><tbody id="usersTableBody"></tbody></table></div></div>
-        <div class="card"><div class="card-head"><h3>Config</h3><button id="toggleConfig" class="btn-ghost">Show</button></div><pre id="configJson" hidden>{}</pre></div>
-      </div>
-
-      <!-- TEST LIST -->
-      <div id="page-test" class="page" hidden>
-        <div class="page-head"><div><h1>Test</h1><p class="muted">Choose a test from <code>/questions/</code></p></div><span class="pill" id="testTotalPill">0 tests</span></div>
-        <div class="toolbar">
-          <div class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="testSearch" type="text" placeholder="Search tests, topics, author..." /></div>
-          <select id="testFilter"><option value="all">All types</option><option value="multiple_choice">Multiple choice</option><option value="correction">Correction</option><option value="mixed">Mixed</option></select>
-          <button id="reloadTests" class="btn-ghost">↻ Reload</button>
-        </div>
-        <div id="testLoading" class="muted small">Loading tests from /questions/…</div>
-        <div id="testGrid" class="test-grid"></div>
-        <div id="testEmpty" class="empty" hidden><div class="empty-icon">📝</div><h3>No tests found</h3><p>Add a JSON file to <code>/questions/</code> and list it in <code>/questions/manifest.json</code></p></div>
-        <div class="card hint-card"><strong>How adding a test works</strong><p class="muted small">1. Put <code>my-test.json</code> in <code>/questions/</code> (or subfolder). 2. Add its path to <code>/questions/manifest.json</code>. 3. Reload this page. The app <code>GET</code>s the manifest, then <code>GET</code>s each file — no build step.</p></div>
-      </div>
-
-      <!-- REPORTS -->
-      <div id="page-reports" class="page" hidden>
-        <div class="page-head"><div><h1>Reports</h1><p class="muted">Your attempts, saved in this browser</p></div><button id="clearReports" class="btn-ghost">Clear</button></div>
-        <div id="reportsList"></div>
-        <div id="reportsEmpty" class="empty"><div class="empty-icon">📊</div><h3>No attempts yet</h3><p>Finish a test and it will appear here.</p></div>
-      </div>
-    </section>
-
-    <!-- CAT RUNNER -->
-    <section id="catView" hidden>
-      <div class="cat-top">
-        <button id="catClose" class="icon-btn">✕</button>
-        <div class="cat-title-wrap"><strong id="catTitle">Test</strong><span id="catMeta" class="muted small"></span></div>
-        <div class="cat-timer"><span id="catTimerIcon">⏱</span><strong id="catTimer">--:--</strong></div>
-      </div>
-      <div class="progress"><div id="catProgressBar"></div></div>
-      <div class="cat-sub"><span id="catCounter">Q 1 / 1</span><span id="catTypePill" class="pill">multiple_choice</span><button id="catFlag" class="btn-ghost">🚩 Flag</button></div>
-
-      <div id="catIntro" class="card cat-intro">
-        <h2 id="catIntroTitle">Ready?</h2><p id="catIntroDesc" class="muted"></p>
-        <div class="cat-intro-stats"><span id="catIntroCount"></span><span id="catIntroTime"></span><span id="catIntroTypes"></span></div>
-        <button id="catStart" class="btn-primary">Start Test →</button>
-      </div>
-
-      <div id="catBody" hidden>
-        <div class="card" id="catPassageCard" hidden><div class="passage-label">Passage</div><div id="catPassage"></div></div>
-        <div class="card cat-q">
-          <div class="q-top"><span class="pill" id="catLevel">Level 1</span><button id="catHintBtn" class="btn-ghost">💡 Hint</button></div>
-          <div id="catHint" class="hint" hidden></div>
-          <div id="catImageWrap" hidden><img id="catImage" alt="Question image" /><span id="catImageCap" class="muted small"></span></div>
-          <h2 id="catQuestionText">Question</h2>
-          <div id="catOptions" class="options"></div>
-          <div id="catSegmentsWrap" hidden><p class="muted small">Tap a part you think is wrong, then type the correction. Or choose No Error.</p><div id="catSegments" class="segments"></div><button id="catNoError" class="btn-ghost">No Error</button><div id="catCorrectionBox"></div></div>
-          <div id="catFeedback" class="feedback" hidden></div>
-        </div>
-        <div class="cat-actions">
-          <button id="catPrev" class="btn-ghost">← Prev</button>
-          <span id="catDots" class="dots"></span>
-          <button id="catNext" class="btn-primary">Next →</button>
-          <button id="catFinish" class="btn-primary" hidden>Finish</button>
-        </div>
-      </div>
-
-      <div id="catResult" class="card" hidden>
-        <div class="result-head"><div class="score-ring"><span id="resultScore">0%</span></div><div><h2 id="resultTitle">Done!</h2><p id="resultSub" class="muted"></p></div></div>
-        <div class="result-grid"><div><strong id="resultCorrect">0</strong><span>Correct</span></div><div><strong id="resultTotal">0</strong><span>Questions</span></div><div><strong id="resultTime">0:00</strong><span>Time</span></div></div>
-        <div id="resultReview"></div>
-        <div class="result-actions"><button id="catRetake" class="btn-ghost">Retake</button><button id="catBack" class="btn-primary">Back to Tests</button></div>
-      </div>
-    </section>
-  </main>
-  <footer><span id="footerText">SimpleAuth v3.0.0</span><span>JSON only • GET only</span></footer>
-  <script src="assets/js/app.js"></script>
-  <script src="assets/js/cat.js"></script>
+  <!-- CAT -->
+  <section id="catView" hidden>
+    <div class="cat-top"><button id="catClose" class="icon-btn" title="Close">✕</button><div class="cat-title-wrap"><strong id="catTitle">Test</strong><span class="muted small" id="catMeta">—</span></div><div class="cat-timer"><span id="catTimer">—</span></div></div>
+    <div class="progress"><div id="catProgressBar"></div></div>
+    <div class="cat-sub"><span class="muted small" id="catCounter">Q 1 / 1</span><span class="pill" id="catTypePill">—</span><span class="muted small" id="catLevel">Level 1</span></div>
+    <div id="catIntro" class="card cat-intro"><h2 id="catIntroTitle">Ready?</h2><p class="muted" id="catIntroDesc">—</p><div class="cat-intro-stats"><span id="catIntroCount">—</span><span id="catIntroTime">—</span><span id="catIntroTypes">—</span></div><button id="catStart" class="btn-primary">Start Test →</button></div>
+    <div id="catBody" class="card" hidden>
+      <div id="catPassageCard" hidden><div class="passage-label">Passage</div><div id="catPassage"></div></div>
+      <div id="catImageWrap" hidden><img id="catImage" alt="Question image" /><p class="muted small" id="catImageCap"></p></div>
+      <div class="q-top"><h2 id="catQuestionText" class="cat-q">Question</h2><button id="catHintBtn" class="btn-ghost">💡 Hint</button></div>
+      <div id="catHint" class="hint" hidden></div>
+      <div id="catOptions" class="options"></div>
+      <div id="catSegmentsWrap" hidden><p class="muted small">Tap a part you think is wrong, then type the correction:</p><div id="catSegments" class="segments"></div><div id="catCorrectionBox"></div><button id="catNoError" class="btn-ghost">No Error</button></div>
+      <div id="catFeedback" class="feedback" hidden></div>
+      <div class="cat-actions"><button id="catPrev" class="btn-ghost">← Prev</button><div id="catDots" class="dots"></div><button id="catFlag" class="btn-ghost">🚩 Flag</button><button id="catPrimary" class="btn-primary">Check answer</button></div>
+    </div>
+    <div id="catResult" class="card" hidden>
+      <div class="result-head"><div class="score-ring"><span id="resultScore">0%</span></div><div><h2 id="resultTitle">Done</h2><p class="muted" id="resultSub">—</p></div></div>
+      <div class="result-grid"><div><strong id="resultCorrect">0</strong><span>Correct</span></div><div><strong id="resultTotal">0</strong><span>Total</span></div><div><strong id="resultTime">0:00</strong><span>Time</span></div></div>
+      <h3>Review</h3><div id="resultReview"></div>
+      <div class="result-actions"><button id="catRetake" class="btn-primary">Retake</button><button id="catBack" class="btn-ghost">Back to Tests</button></div>
+    </div>
+  </section>
+</main>
+<footer><span id="footerText">SimpleAuth v4.0.0</span><span class="muted">GET only • No DB</span></footer>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/cat.js"></script>
 </body>
 </html>
