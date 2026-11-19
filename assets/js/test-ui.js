@@ -337,7 +337,7 @@ function resultsNodes(test, d, actions) {
   const stat = (label, value, cls = "") => el("div", { className: `stat ${cls}` }, el("strong", { textContent: String(value) }), el("span", { textContent: label }));
 
   return [
-    heading(d.title, test.meta.title),
+    ...heading(d.title, test.meta.title),
     el("section", { className: "panel summary" }, ring,
       el("div", { className: "stats" },
         stat("Correct", sum.correct, "ok"), stat("Incorrect", sum.incorrect, "bad"),
@@ -350,7 +350,7 @@ function resultsNodes(test, d, actions) {
           el("ul", { className: "chips" }, ...sum.topics.map((t) => el("li", { textContent: t }))))
       : null,
     el("h2", { textContent: "Review" }),
-    test.questions.map((q, i) => reviewItem(test, q, i, d.answers[i], sum.statuses[i])),
+    ...test.questions.map((q, i) => reviewItem(test, q, i, d.answers[i], sum.statuses[i])),
     el("div", { className: "q-nav" }, ...actions),
   ];
 }

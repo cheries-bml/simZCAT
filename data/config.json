@@ -1,5 +1,5 @@
 {
-  "appName": "Northfield Console",
+  "appName": "ZCat",
   "tagline": "Sign in to manage your workspace.",
   "passwordSalt": "change-this-salt-before-going-live",
   "sessionMinutes": 30,
