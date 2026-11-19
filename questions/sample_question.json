@@ -56,11 +56,7 @@
       "id": 2,
       "type": "correction",
       "data": {
-        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/sample-image.jpg",
-          "orientation": "landscape | portrait | square"
-        }
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
       },
       "multiErrorSegments": [
         { "id": "s1", "text": "Having", "clickable": false },

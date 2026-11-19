@@ -44,6 +44,13 @@ export function permissionsOf(session, roles) {
   return [...all];
 }
 
+/** Special features (e.g. show_answer, timer_disabler): union over all of the user's roles. */
+export function specialsOf(session, roles) {
+  const all = new Set();
+  for (const key of session.roles) (roles[key]?.special ?? []).forEach((f) => all.add(f));
+  return [...all];
+}
+
 export const can = (session, roles, permission) => permissionsOf(session, roles).includes(permission);
 
 // ----- lockout after repeated failures -----

@@ -1,4 +1,4 @@
-import { loadData, getSession, touchSession, logout, can, permissionsOf, roleLabel, userRoles } from "./auth.js";
+import { loadData, getSession, touchSession, logout, can, permissionsOf, specialsOf, roleLabel, userRoles } from "./auth.js";
 import { el } from "./util.js";
 import { alertModal } from "./modal.js";
 import { renderTests, canLeave } from "./test-ui.js";
@@ -21,12 +21,17 @@ const content = $("content");
 let data, session;
 
 function renderOverview() {
+  const special = specialsOf(session, data.roles);
   return [
     el("h1", { textContent: `Welcome back, ${session.name.split(" ")[0]}` }),
     el("p", { className: "lede", textContent: `You are signed in as ${labels(session.roles)}.` }),
     el("section", { className: "panel" },
       el("h2", { textContent: "Your permissions" }),
       el("ul", { className: "chips" }, ...permissionsOf(session, data.roles).map((p) => el("li", { textContent: p })))),
+    ...(special.length
+      ? [el("section", { className: "panel" }, el("h2", { textContent: "Special features" }),
+          el("ul", { className: "chips" }, ...special.map((f) => el("li", { textContent: f }))))]
+      : []),
   ];
 }
 

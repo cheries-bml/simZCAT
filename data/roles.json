@@ -1,8 +1,8 @@
 {
   "roles": {
-    "admin":   { "label": "Administrator", "permissions": ["overview.view", "test.view", "reports.view", "reports.all", "users.view", "passwords.tool", "settings.view", "show_answer", "show_explanation"] },
-    "editor":  { "label": "Editor",        "permissions": ["overview.view", "test.view", "reports.view", "show_answer"] },
-    "viewer":  { "label": "Viewer",        "permissions": ["overview.view", "test.view"] },
-    "auditor": { "label": "Auditor",       "permissions": ["overview.view", "users.view", "show_explanation"] }
+    "admin":   { "label": "Administrator", "permissions": ["overview.view", "test.view", "reports.view", "reports.all", "users.view", "passwords.tool", "settings.view"], "special": ["show_answer", "show_explanation", "timer_disabler"] },
+    "editor":  { "label": "Editor",        "permissions": ["overview.view", "test.view", "reports.view"], "special": ["show_answer", "timer_disabler"] },
+    "viewer":  { "label": "Viewer",        "permissions": ["overview.view", "test.view"], "special": [] },
+    "auditor": { "label": "Auditor",       "permissions": ["overview.view", "users.view"], "special": ["show_explanation"] }
   }
 }

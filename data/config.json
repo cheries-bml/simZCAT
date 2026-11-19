@@ -5,6 +5,11 @@
   "sessionMinutes": 30,
   "maxFailedAttempts": 5,
   "lockoutMinutes": 5,
+  "defaultTimeInSeconds": {
+    "fast": 15,
+    "normal": 30,
+    "easy": 60
+  },
   "defaultPage": "dashboard.html",
   "loginPage": "index.html",
   "questionsDir": "questions",

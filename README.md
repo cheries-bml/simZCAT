@@ -54,7 +54,7 @@ Why a manifest? GitHub Pages is static, so a browser cannot list a folder. The b
 - `questions[]`: `id`, `type`, `data`, `explanation`, `config` (`level`, `show_answer`, `show_explanation`, `time_in_seconds`).
 - **`multiple_choice`**: `options` keyed by letter; options with `"correct": true` are the answers. Two or more correct options turn the question into select-all (checkboxes). Scoring is all-or-nothing.
 - **`correction`**: `multiErrorSegments`. The user clicks the clickable segments they think are wrong and types a fix; "No error" is also available. A question is correct when the marked segments are exactly those with `isError: true` and every typed fix matches one of `correctAnswers` (case, spacing and edge punctuation ignored). With no `isError` segments, "No error" is the right answer.
-- **Timing:** the user picks a pace (`fast`, `normal`, `easy`). Total time is the sum of each question's `time_in_seconds` for that pace. `no_timer: true` removes the limit and shows elapsed time instead.
+- **Timer:** every test is timed (`meta.config.no_timer` is ignored). Clicking a test opens a dialog where the user picks a pace (`fast`, `normal`, `easy`); the total time is the sum of each question's `config.time_in_seconds[pace]`. A question without that value uses `defaultTimeInSeconds[pace]` from `data/config.json`. When time runs out the test is submitted automatically.
 - **Feedback:** correct answers and explanations appear in the results review. Question-level `show_answer` / `show_explanation` override the test-level values.
 - Light HTML (`<b>`, `<br>`, `<i>`, lists) is allowed in text fields; everything else is stripped.
 
@@ -87,19 +87,31 @@ Demo accounts:
 | viewer   | viewer123 | viewer            |
 | sam      | sam123    | editor + auditor  |
 
-## Permissions
+## Permissions and special features
 
 Set per role in `data/roles.json`; a user gets the union of all their roles.
+
+```json
+"editor": { "label": "Editor", "permissions": ["overview.view", "test.view", "reports.view"], "special": ["show_answer", "timer_disabler"] }
+```
+
+`permissions` control which pages a user can open:
 
 | Permission | Allows |
 |---|---|
 | `overview.view`, `test.view`, `reports.view`, `users.view`, `settings.view` | Opening that page |
 | `reports.all` | Reports lists every user's results (without it, only your own) |
 | `passwords.tool` | The Passwords page |
-| `show_answer` | A **Show answer** button while a test is running (toggles; hidden again when you change question) |
-| `show_explanation` | An **Explanation** button while a test is running (opens a modal) |
 
-Peeking is controlled by these two permissions only. The `show_answer` / `show_explanation` flags inside question files only decide what the review after the test shows. Answers and explanations viewed during a test are counted and shown in Reports and on the results page; they do not change the score.
+`special` features add abilities while a test is running:
+
+| Special feature | Allows |
+|---|---|
+| `show_answer` | A **Show answer** button (toggles; hidden again when you change question) |
+| `show_explanation` | An **Explanation** button (opens a modal) |
+| `timer_disabler` | **Pause / Resume** and **Disable timer / Enable timer** buttons |
+
+The `show_answer` / `show_explanation` flags inside question files only decide what the review after the test shows. Answers and explanations viewed during a test, and pausing or disabling the timer, are recorded and shown in Reports; they do not change the score.
 
 ## Reports
 

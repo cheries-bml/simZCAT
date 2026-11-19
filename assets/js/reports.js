@@ -11,7 +11,7 @@ const pctClass = (p) => (p >= 70 ? "pct pct-high" : p >= 50 ? "pct pct-mid" : "p
 const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
 
 function assists(a) {
-  const parts = [a.peeks ? plural(a.peeks, "answer") : null, a.explained ? plural(a.explained, "explanation") : null].filter(Boolean);
+  const parts = [a.peeks ? plural(a.peeks, "answer") : null, a.explained ? plural(a.explained, "explanation") : null, a.paused ? "paused" : null, a.timerOff ? "timer off" : null].filter(Boolean);
   return parts.length ? parts.join(" · ") : "—";
 }
 

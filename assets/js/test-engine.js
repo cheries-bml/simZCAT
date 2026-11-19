@@ -40,14 +40,19 @@ export function flags(test, q) {
   };
 }
 
-// Total time = sum of each question's time for the chosen pace. 0 means untimed.
-export function timeLimit(test, pace) {
-  if (test.meta?.config?.no_timer) return 0;
-  return test.questions.reduce((sum, q) => {
-    const t = q.config?.time_in_seconds;
-    return sum + (t?.[pace] ?? t?.normal ?? DEFAULT_SECONDS);
-  }, 0);
+/**
+ * Seconds allowed for one question at a pace: the question's own time_in_seconds[pace],
+ * otherwise the default from config.json (a number, or { fast, normal, easy }).
+ */
+export function secondsFor(q, pace, defaults) {
+  const own = q.config?.time_in_seconds?.[pace];
+  if (Number.isFinite(own) && own > 0) return own;
+  const fallback = typeof defaults === "number" ? defaults : defaults?.[pace];
+  return Number.isFinite(fallback) && fallback > 0 ? fallback : DEFAULT_SECONDS;
 }
+
+/** Total test time = the sum over all questions. Every test is timed. */
+export const timeLimit = (test, pace, defaults) => test.questions.reduce((sum, q) => sum + secondsFor(q, pace, defaults), 0);
 
 // ----- answers -----
 // multiple_choice: { selected: ["C", "E"] }   correction: { noError: bool, fixes: { segmentId: "typed text" } }

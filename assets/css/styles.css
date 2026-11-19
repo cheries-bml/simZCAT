@@ -166,7 +166,7 @@ pre { margin: 0; overflow-x: auto; font-size: .85rem; background: var(--bg); pad
 .sentence { font-size: 1.15rem; line-height: 2.2; margin: 0 0 1rem; }
 .seg {
   font: inherit; color: inherit; background: var(--surface); cursor: pointer;
-  border: 1px solid #affaec; border-radius: 4px; padding: 0 .2rem; margin-top: 0.2rem; margin-bottom: 0.2rem; background-color: #f0faf8;
+  border: 1px solid #8aa0b8; border-radius: 4px; padding: 0 .3rem;
   text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px;
 }
 .seg:hover { background: #e6f3f4; border-color: var(--accent); }
@@ -264,3 +264,11 @@ body:has(dialog.modal[open]) { overflow: hidden; }
 .btn-sm { padding: .25rem .7rem; font-size: .85rem; }
 .row-actions { display: flex; gap: .4rem; }
 .row-actions .btn:disabled { cursor: not-allowed; }
+
+/* ---------- Modal: test details ---------- */
+.modal .paces { margin-top: 1rem; }
+
+/* ---------- Timer pause ---------- */
+.q-card { position: relative; }
+.runner.paused .q-card > *, .runner.paused .side > * { visibility: hidden; }
+.runner.paused .q-card::after { content: "Paused"; position: absolute; inset: 0; display: grid; place-items: center; font-size: 1.5rem; font-weight: 700; }
