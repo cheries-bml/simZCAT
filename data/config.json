@@ -1,6 +1,6 @@
 {
-  "appName": "Northfield Console",
-  "tagline": "Sign in to manage your workspace.",
+  "appName": "EngCat",
+  "tagline": "Sign in to start using EngCat.",
   "passwordSalt": "change-this-salt-before-going-live",
   "sessionMinutes": 30,
   "maxFailedAttempts": 5,
