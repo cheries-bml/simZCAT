@@ -105,6 +105,8 @@ Peeking is controlled by these two permissions only. The `show_answer` / `show_e
 
 Each finished test is saved as an attempt in this browser's `localStorage` (the app has no server, so nothing is uploaded). Reports lists the attempts made in this browser: your own, or everyone's with `reports.all`. The newest 500 are kept. Results from other devices or browsers cannot appear here.
 
+Each row has **Retake** (opens that test's start page) and **Review** (shows the answers given in that attempt). Review is not available for results saved before this feature existed, or when the test's questions have changed since the attempt.
+
 ## Dialogs
 
 Notices, errors and confirmations are in-page modal dialogs (`assets/js/modal.js`). The one native prompt left is the browser's "Leave site?" warning if you close or reload the tab during a test; browsers do not let pages restyle it.

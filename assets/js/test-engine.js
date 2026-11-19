@@ -105,3 +105,7 @@ export function hasExplanation(q) {
   const e = q.explanation;
   return !!e && !!(e.text || e.topic || e.concept || e.formula || e.examples?.length);
 }
+
+/** True when a saved attempt was taken on the same questions (same ids, same order). */
+export const sameQuestions = (test, a) =>
+  Array.isArray(a.qids) && a.qids.length === test.questions.length && a.qids.every((id, i) => id === test.questions[i].id);

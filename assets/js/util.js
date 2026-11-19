@@ -8,12 +8,12 @@ export function el(tag, props = {}, ...children) {
     else if (key in node) node[key] = value;
     else node.setAttribute(key, value);
   }
-  node.append(...children.flat().filter((c) => c != null && c !== false));
+  node.append(...children.flat(Infinity).filter((c) => c != null && c !== false));
   return node;
 }
 
 // Replace the children of `root`, ignoring null/false entries.
-export const mount = (root, ...nodes) => root.replaceChildren(...nodes.flat().filter(Boolean));
+export const mount = (root, ...nodes) => root.replaceChildren(...nodes.flat(Infinity).filter(Boolean));
 
 // Question files may contain light HTML (<b>, <br> ...). Keep an allowlist, drop everything else.
 const ALLOWED = new Set(["B", "I", "U", "EM", "STRONG", "BR", "P", "SPAN", "SUB", "SUP", "CODE", "UL", "OL", "LI", "MARK"]);

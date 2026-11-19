@@ -9,7 +9,8 @@ async function init() {
   try {
     data = await loadData();
   } catch (err) {
-    alertModal("Could not load app data", `${err.message}. Serve the site over http(s), not file://.`);
+    console.error(err);
+    alertModal("Something went wrong", "Please try again later.");
     return;
   }
 

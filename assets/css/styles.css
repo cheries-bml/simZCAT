@@ -250,3 +250,8 @@ body:has(dialog.modal[open]) { overflow: hidden; }
 .pct-mid { background: #fff3d6; color: #7a5200; }
 .pct-low { background: var(--danger-bg); color: var(--danger); }
 .report-actions { display: flex; justify-content: flex-end; }
+
+/* ---------- Reports: row actions ---------- */
+.btn-sm { padding: .25rem .7rem; font-size: .85rem; }
+.row-actions { display: flex; gap: .4rem; }
+.row-actions .btn:disabled { cursor: not-allowed; }

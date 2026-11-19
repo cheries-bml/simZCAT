@@ -25,10 +25,23 @@ export async function canLeave() {
 
 const heading = (title, lede) => [el("h1", { textContent: title }), lede ? el("p", { className: "lede", textContent: lede }) : null];
 
-export function renderTests(ctx) {
+/** openPath: optionally jump straight to a test's intro page (used by Reports > Retake). */
+export function renderTests(ctx, openPath) {
   const root = el("div", { className: "test-root" });
-  showCatalog(root, ctx);
+  if (openPath) openTest(root, ctx, openPath);
+  else showCatalog(root, ctx);
   return [root];
+}
+
+async function openTest(root, ctx, path) {
+  try {
+    const test = (await loadCatalog(ctx.config)).find((t) => t.path === path);
+    if (test) return showIntro(root, ctx, test);
+  } catch (err) {
+    console.error(err);
+  }
+  await showCatalog(root, ctx);
+  alertModal("Test unavailable", "This test is no longer available.");
 }
 
 // ================= Catalog =================
@@ -40,13 +53,14 @@ async function showCatalog(root, ctx) {
     tests = await loadCatalog(ctx.config);
   } catch (err) {
     mount(root, heading("Tests"), el("p", { className: "muted", textContent: "The list of tests could not be loaded." }));
-    alertModal("Could not load tests", `${err.message}. Check that manifests/questions-manifest.json exists (see README).`);
+    console.error(err);
+    alertModal("Could not load tests", "Please try again later.");
     return;
   }
   mount(root, heading("Tests", "Pick a test to begin."),
     tests.length
       ? el("div", { className: "cards" }, ...tests.map((t) => card(t, lastAttempt(ctx.session.username, t.path), () => showIntro(root, ctx, t))))
-      : el("p", { className: "panel", textContent: "No tests found. Add question files to /questions and list them in manifests/questions-manifest.json (see README)." }));
+      : el("p", { className: "panel", textContent: "No tests available." }));
 }
 
 function card(t, last, onOpen) {
@@ -284,9 +298,11 @@ function startRun(root, ctx, test, pace) {
       testPath: test.path, testTitle: test.meta.title, pace: r.limit ? pace : null,
       percent: sum.percent, correct: sum.correct, incorrect: sum.incorrect, unanswered: sum.unanswered, total: sum.total,
       seconds: Math.round(r.spent / 1000), timedOut, peeks: r.peeks.size, explained: r.explained.size,
+      qids: test.questions.map((q) => q.id), // lets Reports check the test is unchanged before a review
+      answers: Object.fromEntries(Object.entries(r.answers).filter(([i, a]) => E.isAnswered(test.questions[i], a))),
     });
     window.scrollTo({ top: 0 });
-    showResults(root, ctx, test, r, sum, timedOut);
+    showResults(root, ctx, test, { title: "Results", answers: r.answers, sum, spentMs: r.spent, peeks: r.peeks.size, explained: r.explained.size }, timedOut);
   }
 
   r.timer = setInterval(tick, 1000);
@@ -312,32 +328,52 @@ function explanationNode(ex) {
     ex.examples?.length ? el("ul", {}, ...ex.examples.map((x) => richText(x, "li"))) : null);
 }
 
-// ================= Results =================
-function showResults(root, ctx, test, r, sum, timedOut) {
+// ================= Results & review =================
+// d: { title, answers, sum, spentMs, peeks, explained }
+function resultsNodes(test, d, actions) {
+  const { sum } = d;
   const ring = el("div", { className: "ring", role: "img", "aria-label": `${sum.percent} percent` }, el("span", { textContent: `${sum.percent}%` }));
   ring.style.setProperty("--p", sum.percent);
   const stat = (label, value, cls = "") => el("div", { className: `stat ${cls}` }, el("strong", { textContent: String(value) }), el("span", { textContent: label }));
 
-  mount(root,
-    heading("Results", test.meta.title),
+  return [
+    heading(d.title, test.meta.title),
     el("section", { className: "panel summary" }, ring,
       el("div", { className: "stats" },
         stat("Correct", sum.correct, "ok"), stat("Incorrect", sum.incorrect, "bad"),
-        stat("Unanswered", sum.unanswered), stat("Time used", E.fmtTime(r.spent / 1000)))),
-    r.peeks.size || r.explained.size
-      ? el("p", { className: "muted", textContent: `Assists used: answer shown on ${r.peeks.size} question(s), explanation opened on ${r.explained.size}.` })
+        stat("Unanswered", sum.unanswered), stat("Time used", E.fmtTime(d.spentMs / 1000)))),
+    d.peeks || d.explained
+      ? el("p", { className: "muted", textContent: `Assists used: answer shown on ${d.peeks} question(s), explanation opened on ${d.explained}.` })
       : null,
     sum.topics.length
       ? el("section", { className: "panel" }, el("h2", { textContent: "Topics to review" }),
           el("ul", { className: "chips" }, ...sum.topics.map((t) => el("li", { textContent: t }))))
       : null,
     el("h2", { textContent: "Review" }),
-    test.questions.map((q, i) => reviewItem(test, q, i, r.answers[i], sum.statuses[i])),
-    el("div", { className: "q-nav" },
-      el("button", { className: "btn btn-ghost", type: "button", textContent: "All tests", onclick: () => showCatalog(root, ctx) }),
-      el("button", { className: "btn", type: "button", textContent: "Retake", onclick: () => showIntro(root, ctx, test) })));
+    test.questions.map((q, i) => reviewItem(test, q, i, d.answers[i], sum.statuses[i])),
+    el("div", { className: "q-nav" }, ...actions),
+  ];
+}
 
+function showResults(root, ctx, test, d, timedOut) {
+  mount(root, resultsNodes(test, d, [
+    el("button", { className: "btn btn-ghost", type: "button", textContent: "All tests", onclick: () => showCatalog(root, ctx) }),
+    el("button", { className: "btn", type: "button", textContent: "Retake", onclick: () => showIntro(root, ctx, test) }),
+  ]));
   if (timedOut) alertModal("Time’s up", "Your answers were submitted automatically.");
+}
+
+/** Review a saved attempt (used by Reports). */
+export function showReview(root, test, attempt, { onBack, onRetake }) {
+  const answers = attempt.answers || {};
+  mount(root, resultsNodes(test, {
+    title: "Review", answers, sum: E.summarize(test, answers),
+    spentMs: (attempt.seconds || 0) * 1000, peeks: attempt.peeks || 0, explained: attempt.explained || 0,
+  }, [
+    el("button", { className: "btn btn-ghost", type: "button", textContent: "Back to reports", onclick: onBack }),
+    el("button", { className: "btn", type: "button", textContent: "Retake", onclick: onRetake }),
+  ]));
+  window.scrollTo({ top: 0 });
 }
 
 function reviewItem(test, q, i, a, status) {

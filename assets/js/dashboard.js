@@ -8,8 +8,8 @@ import { renderPasswordTool } from "./password-tool.js";
 // Each section is shown only if the user's roles grant the permission.
 const SECTIONS = [
   { id: "overview",  label: "Overview",  permission: "overview.view",  render: renderOverview },
-  { id: "test",      label: "Test",      permission: "test.view",      render: () => renderTests({ config: data.config, session, roles: data.roles }) },
-  { id: "reports",   label: "Reports",   permission: "reports.view",   render: () => renderReports({ session, roles: data.roles }) },
+  { id: "test",      label: "Test",      permission: "test.view",      render: (opts) => renderTests({ config: data.config, session, roles: data.roles }, opts?.path) },
+  { id: "reports",   label: "Reports",   permission: "reports.view",   render: () => renderReports({ config: data.config, session, roles: data.roles, onRetake: (path) => show("test", { path }) }) },
   { id: "users",     label: "Users",     permission: "users.view",     render: renderUsers },
   { id: "passwords", label: "Passwords", permission: "passwords.tool", render: () => renderPasswordTool({ config: data.config, users: data.users }) },
   { id: "settings",  label: "Settings",  permission: "settings.view",  render: renderSettings },
@@ -40,7 +40,6 @@ function renderUsers() {
   const head = el("tr", {}, ...["Name", "Username", "Email", "Roles", "Status"].map((t) => el("th", { textContent: t })));
   return [
     el("h1", { textContent: "Users" }),
-    el("p", { className: "lede", textContent: "Loaded from data/users.json." }),
     el("section", { className: "panel table-wrap" }, el("table", {}, el("thead", {}, head), el("tbody", {}, ...rows))),
   ];
 }
@@ -49,15 +48,14 @@ function renderSettings() {
   const { passwordSalt, ...safe } = data.config; // keep the salt off the screen
   return [
     el("h1", { textContent: "Settings" }),
-    el("p", { className: "lede", textContent: "Loaded from data/config.json." }),
     el("section", { className: "panel" }, el("pre", { textContent: JSON.stringify(safe, null, 2) })),
   ];
 }
 
-async function show(id) {
+async function show(id, opts) {
   if (!(await canLeave())) return; // a running test asks for confirmation first
   const section = SECTIONS.find((s) => s.id === id);
-  content.replaceChildren(...section.render());
+  content.replaceChildren(...section.render(opts));
   document.querySelectorAll("#nav button").forEach((b) => {
     if (b.dataset.id === id) b.setAttribute("aria-current", "page");
     else b.removeAttribute("aria-current");
@@ -72,7 +70,8 @@ async function init() {
   } catch (err) {
     document.body.hidden = false;
     content.replaceChildren(el("p", { className: "muted", textContent: "The app data could not be loaded." }));
-    alertModal("Could not load data", err.message);
+    console.error(err);
+    alertModal("Something went wrong", "Please try again later.");
     return;
   }
 
