@@ -240,7 +240,7 @@ function startRun(root, ctx, test, pace) {
     const sentence = el("p", { className: "sentence" });
     const fixes = el("div", { className: "fixes" });
     const noErr = el("button", {
-      type: "button", className: "chip-btn", textContent: "No error",
+      type: "button", className: `chip-btn${r.reveal && !E.errorSegments(q).length ? " chip-correct" : ""}`, textContent: "No error",
       onclick: () => { a.noError = !a.noError; if (a.noError) a.fixes = {}; refresh(); },
     });
     let focusId = null;
@@ -252,12 +252,16 @@ function startRun(root, ctx, test, pace) {
     }
 
     function refresh() {
-      sentence.replaceChildren(...segs.flatMap((s) => [
-        s.clickable
-          ? el("button", { type: "button", className: "seg", textContent: s.text, "aria-pressed": String(s.id in a.fixes), onclick: () => toggle(s) })
-          : el("span", { textContent: s.text }),
-        " ",
-      ]));
+      // While the answer is shown: segments that need a fix are marked and followed by the correct text; the rest get a check.
+      mount(sentence, segs.flatMap((s) => {
+        if (!s.clickable) return [el("span", { textContent: s.text }), " "];
+        const state = r.reveal ? (s.isError ? " need-fix" : " is-ok") : "";
+        return [
+          el("button", { type: "button", className: `seg${state}`, textContent: s.text, "aria-pressed": String(s.id in a.fixes), onclick: () => toggle(s) }),
+          r.reveal && s.isError ? el("span", { className: "seg-fix", textContent: `→ ${(s.correctAnswers || []).join(" / ")}` }) : null,
+          " ",
+        ];
+      }));
       noErr.setAttribute("aria-pressed", String(a.noError));
       const marked = segs.filter((s) => s.id in a.fixes);
       fixes.replaceChildren(...(marked.length
