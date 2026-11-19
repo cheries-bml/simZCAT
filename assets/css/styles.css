@@ -166,7 +166,7 @@ pre { margin: 0; overflow-x: auto; font-size: .85rem; background: var(--bg); pad
 .sentence { font-size: 1.15rem; line-height: 2.2; margin: 0 0 1rem; }
 .seg {
   font: inherit; color: inherit; background: var(--surface); cursor: pointer;
-  border: 1px solid #8aa0b8; border-radius: 4px; padding: 0 .3rem;
+  border: 1px solid #8aa0b8; border-radius: 4px; padding: 0 .2rem; margin-top: 0.1rem; margin-bottom: 0.2rem; background-color:#defeff;
   text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px;
 }
 .seg:hover { background: #e6f3f4; border-color: var(--accent); }
