@@ -1,9 +1,1 @@
-{
-  "users": [
-    {"username": "admin", "name": "Ava Admin", "email": "ava@example.com", "roles": ["admin"], "active": true, "passwordHash": "3e1a7e0813a1d5d7a6e153104d08311ee322852ae0084bd03662ba70c8d58130"},
-    {"username": "editor", "name": "Eli Editor", "email": "eli@example.com", "roles": ["editor"], "active": true, "passwordHash": "1e87b64603f1094fd0c22530f5d7fba4932485abf759efdd0773cbd67a1170a6"},
-    {"username": "viewer", "name": "Vera Viewer", "email": "vera@example.com", "roles": ["viewer"], "active": true, "passwordHash": "bd22c6752168edc7e9a025032a40df233849fbfe4a501c44160ef90930ee8d9c"},
-    {"username": "sam", "name": "Sam Multi", "email": "sam@example.com", "roles": ["editor", "auditor"], "active": true, "passwordHash": "7c40a46a22193a2f14513c661e1e2c91641bee444760ed90fd7b25d72fab1dfe"},
-    {"username": "former", "name": "Finn Former", "email": "finn@example.com", "roles": ["viewer"], "active": false, "passwordHash": "bdee14578c739e727c9a2d38d3ce2abe10d5a49990b176fd24df8c40467cbb8c"}
-  ]
-}
+{"users":[{"active":true,"avatar":"A","department":"IT","email":"admin@simpleauth.demo","id":1,"name":"Ayu Admin","passwordHash":"240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9","passwordHint":"admin123","roleId":"admin","username":"admin"},{"active":true,"avatar":"B","department":"Operations","email":"manager@simpleauth.demo","id":2,"name":"Budi Manager","passwordHash":"866485796cfa8d7c0cf7111640205b83076433547577511d81f8030ae99ecea5","passwordHint":"manager123","roleId":"manager","username":"manager"},{"active":true,"avatar":"C","department":"Support","email":"staff@simpleauth.demo","id":3,"name":"Citra Staff","passwordHash":"10176e7b7b24d317acfcf8d2064cfd2f24e154f7b5a96603077d5ef813d6a6b6","passwordHint":"staff123","roleId":"staff","username":"staff"}]}

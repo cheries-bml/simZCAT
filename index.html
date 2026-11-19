@@ -1,34 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sign in</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SimpleAuth — Sign in</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body class="login-page">
-  <aside class="login-brand">
-    <h1 id="app-name">Loading…</h1>
-    <p id="app-tagline"></p>
-  </aside>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+      <strong id="appName">SimpleAuth</strong>
+      <span class="version" id="versionPill">v2.0.0</span>
+    </div>
+    <span class="status"><span class="dot"></span>GET only</span>
+  </header>
 
-  <main class="login-panel">
-    <form id="login-form" class="login-form" novalidate>
-      <h2>Sign in</h2>
+  <main class="wrap">
+    <!-- LOGIN -->
+    <section id="loginView" class="login-card">
+      <div class="login-head">
+        <span class="login-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <h1>Sign in</h1>
+        <p>Welcome back</p>
+      </div>
 
-      <label for="username">Username</label>
-      <input id="username" name="username" type="text" autocomplete="username" required autofocus>
+      <form id="loginForm">
+        <label>Username</label>
+        <div class="field">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6 8-6s8 2 8 6"/></svg>
+          <input id="username" type="text" placeholder="Username" required autofocus autocomplete="username" />
+        </div>
 
-      <label for="password">Password</label>
-      <input id="password" name="password" type="password" autocomplete="current-password" required>
+        <label>Password</label>
+        <div class="field">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          <input id="password" type="password" placeholder="Password" required autocomplete="current-password" />
+          <button type="button" id="togglePass" aria-label="Show password"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+        </div>
 
-      <button id="login-btn" type="submit" class="btn">Sign in</button>
-    </form>
+        <label class="check"><input id="rememberMe" type="checkbox" /> Remember me</label>
+
+        <button type="submit" class="btn-primary" id="loginBtn">Sign in</button>
+        <p id="loginError" class="error" hidden></p>
+      </form>
+
+      <div class="divider"><span>Demo</span></div>
+      <div class="demo-list" id="demoList"></div>
+      <p class="tiny">SimpleAuth <span id="versionText">v2.0.0</span> • JSON only</p>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section id="dashboardView" hidden>
+      <div class="dash-top">
+        <div>
+          <h1 id="welcomeTitle">Hello</h1>
+          <p id="welcomeSub">—</p>
+        </div>
+        <div class="dash-actions">
+          <button id="refreshBtn" class="icon-btn" title="Reload"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-2.6-6.3"/><path d="M21 3v6h-6"/></svg></button>
+          <button id="logoutBtn" class="icon-btn danger" title="Log out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg></button>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><span>Role</span><strong id="roleName">—</strong><small id="roleDesc">—</small></div>
+        <div class="stat"><span>Permissions</span><strong id="permCount">—</strong><small>from roles.json</small></div>
+        <div class="stat"><span>Session</span><strong id="sessionInfo">Active</strong><small id="sessionExpiry">—</small></div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Permissions</h3>
+          <div id="permList" class="chips"></div>
+          <h3 class="mt">Widgets</h3>
+          <div id="widgetList" class="widgets"></div>
+        </div>
+        <div class="card">
+          <h3>Profile</h3>
+          <div class="profile">
+            <div class="avatar" id="profileAvatar">A</div>
+            <div><strong id="profileName">—</strong><br /><span id="profileEmail">—</span><br /><small id="profileMeta">—</small></div>
+          </div>
+          <div class="session-box"><div class="session-head"><span>Session</span><button id="copySession" class="mini">Copy</button></div><pre id="sessionJson">{}</pre></div>
+        </div>
+      </div>
+
+      <div class="card" id="usersTableCard" hidden>
+        <div class="card-head"><h3>Users</h3><span class="pill" id="userCount">0</span></div>
+        <div class="table-wrap"><table><thead><tr><th>User</th><th>Username</th><th>Role</th><th>Dept</th><th>Status</th></tr></thead><tbody id="usersTableBody"></tbody></table></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>Config</h3><button id="toggleConfig" class="mini">Show</button></div>
+        <pre id="configJson" hidden>{}</pre>
+      </div>
+    </section>
   </main>
 
-  <script type="module" src="assets/js/login.js"></script>
+  <footer><span id="footerText">SimpleAuth v2.0.0</span><span>GET only • No DB</span></footer>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>

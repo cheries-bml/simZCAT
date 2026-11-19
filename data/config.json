@@ -1,17 +1,1 @@
-{
-  "appName": "Northfield Console",
-  "tagline": "Sign in to manage your workspace.",
-  "passwordSalt": "change-this-salt-before-going-live",
-  "sessionMinutes": 30,
-  "maxFailedAttempts": 5,
-  "lockoutMinutes": 5,
-  "defaultTimeInSeconds": {
-    "fast": 15,
-    "normal": 30,
-    "easy": 60
-  },
-  "defaultPage": "dashboard.html",
-  "loginPage": "index.html",
-  "questionsDir": "questions",
-  "questionsManifest": "manifests/questions-manifest.json"
-}
+{"allowRememberMe":true,"appName":"SimpleAuth","brandColor":"#5b5ef4","footerText":"SimpleAuth v2.0.0","sessionKey":"simpleauth_session","sessionTimeoutMinutes":120,"tagline":"Sign in","version":"2.0.0"}

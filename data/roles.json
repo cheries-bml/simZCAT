@@ -1,8 +1,1 @@
-{
-  "roles": {
-    "admin":   { "label": "Administrator", "permissions": ["overview.view", "test.view", "reports.view", "reports.all", "users.view", "passwords.tool", "settings.view"], "special": ["show_answer", "show_explanation", "timer_disabler"] },
-    "editor":  { "label": "Editor",        "permissions": ["overview.view", "test.view", "reports.view"], "special": ["show_answer", "timer_disabler"] },
-    "viewer":  { "label": "Viewer",        "permissions": ["overview.view", "test.view"], "special": [] },
-    "auditor": { "label": "Auditor",       "permissions": ["overview.view", "users.view"], "special": ["show_explanation"] }
-  }
-}
+{"roles":[{"color":"#e17055","dashboardWidgets":["users","reports","settings","activity"],"description":"Full access.","id":"admin","name":"Administrator","permissions":["view_dashboard","view_users","view_reports","manage_users","manage_settings","export_data"]},{"color":"#00b894","dashboardWidgets":["users","reports","activity"],"description":"Team + reports.","id":"manager","name":"Manager","permissions":["view_dashboard","view_users","view_reports","export_data"]},{"color":"#0984e3","dashboardWidgets":["reports"],"description":"Reports only.","id":"staff","name":"Staff","permissions":["view_dashboard","view_reports"]}]}
