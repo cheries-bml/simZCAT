@@ -56,11 +56,6 @@ body {
 }
 .login-form .btn { margin-top: 1rem; }
 .hint { color: var(--muted); font-size: .8rem; margin: .75rem 0 0; }
-.alert {
-  background: var(--danger-bg); color: var(--danger);
-  border-left: 3px solid var(--danger);
-  padding: .6rem .8rem; border-radius: var(--radius); font-size: .9rem;
-}
 
 /* ---------- App shell ---------- */
 .topbar {
@@ -203,10 +198,55 @@ pre { margin: 0; overflow-x: auto; font-size: .85rem; background: var(--bg); pad
 .explain p { margin: .3rem 0; }
 .explain ul { margin: .3rem 0 0; padding-left: 1.2rem; }
 .formula { font-family: ui-monospace, monospace; font-size: .85rem; }
-.alert { margin-bottom: 1rem; }
 
 @media (max-width: 860px) {
   .runner { grid-template-columns: 1fr; }
   .side { position: static; }
   .palette { grid-template-columns: repeat(auto-fill, minmax(2.5rem, 1fr)); }
 }
+
+/* ---------- Password tool ---------- */
+.tool-form { display: grid; gap: .6rem; max-width: 28rem; }
+.field { display: grid; gap: .25rem; font-size: .9rem; font-weight: 600; }
+.field input, .field select { font: inherit; font-weight: 400; padding: .6rem .75rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--ink); }
+.check-row { display: flex; align-items: center; gap: .5rem; font-size: .9rem; }
+.tool-out { display: grid; gap: .5rem; justify-items: start; margin: 1rem 0; }
+.tool-out pre { width: 100%; }
+.hash { display: block; width: 100%; word-break: break-all; background: var(--bg); padding: .6rem .75rem; border-radius: var(--radius); font-size: .85rem; }
+.result-ok { color: var(--accent); font-weight: 600; margin: .5rem 0 0; }
+.result-bad { color: var(--danger); font-weight: 600; margin: .5rem 0 0; }
+.notes { margin: 0; padding-left: 1.2rem; display: grid; gap: .4rem; }
+details.panel summary { cursor: pointer; font-weight: 600; }
+details.panel[open] summary { margin-bottom: .75rem; }
+code { background: var(--bg); padding: .05rem .3rem; border-radius: 4px; font-size: .88em; }
+
+/* ---------- Modal ---------- */
+.modal { border: 0; padding: 0; border-radius: 10px; width: min(92vw, 28rem); max-height: 85vh; color: var(--ink); background: var(--surface); box-shadow: 0 20px 60px rgba(18, 26, 43, .35); }
+.modal-wide { width: min(92vw, 40rem); }
+.modal::backdrop { background: rgba(18, 26, 43, .55); }
+.modal[open] { animation: modal-in .14s ease-out; }
+@keyframes modal-in { from { opacity: 0; transform: translateY(8px) scale(.98); } }
+body:has(dialog.modal[open]) { overflow: hidden; }
+.modal-card { display: flex; flex-direction: column; max-height: 85vh; }
+.modal-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.25rem; border-bottom: 1px solid var(--line); }
+.modal-head h2 { margin: 0; font-size: 1.1rem; }
+.modal-x { font: inherit; font-size: 1.5rem; line-height: 1; background: none; border: 0; color: var(--muted); cursor: pointer; padding: 0 .25rem; }
+.modal-x:hover { color: var(--ink); }
+.modal-body { padding: 1.25rem; overflow-y: auto; }
+.modal-body > :first-child { margin-top: 0; }
+.modal-body > :last-child { margin-bottom: 0; }
+.modal-body .explain { background: none; padding: 0; margin: 0; }
+.modal-foot { display: flex; justify-content: flex-end; gap: .5rem; padding: .75rem 1.25rem 1rem; }
+.btn-danger { background: var(--danger); }
+
+/* ---------- Peek answer ---------- */
+.opt.reveal-correct { border-color: var(--accent); background: #e6f3f4; box-shadow: inset 4px 0 0 var(--accent); }
+.opt-tag { margin-left: auto; font-size: .75rem; font-weight: 700; color: var(--accent); }
+.answer-box { margin-top: 1rem; background: #e6f3f4; border-left: 3px solid var(--accent); padding: .7rem .9rem; border-radius: var(--radius); font-size: .95rem; }
+
+/* ---------- Reports ---------- */
+.pct { font-weight: 600; font-size: .8rem; padding: .1rem .55rem; border-radius: 999px; }
+.pct-high { background: #dff1f2; color: #0a5a62; }
+.pct-mid { background: #fff3d6; color: #7a5200; }
+.pct-low { background: var(--danger-bg); color: var(--danger); }
+.report-actions { display: flex; justify-content: flex-end; }

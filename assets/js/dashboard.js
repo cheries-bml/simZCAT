@@ -1,36 +1,32 @@
-import { loadData, getSession, touchSession, logout, can } from "./auth.js";
+import { loadData, getSession, touchSession, logout, can, permissionsOf, roleLabel, userRoles } from "./auth.js";
 import { el } from "./util.js";
+import { alertModal } from "./modal.js";
 import { renderTests, canLeave } from "./test-ui.js";
+import { renderReports } from "./reports.js";
+import { renderPasswordTool } from "./password-tool.js";
 
-// Each section is shown only if the user's role has the permission.
+// Each section is shown only if the user's roles grant the permission.
 const SECTIONS = [
-  { id: "overview", label: "Overview", permission: "overview.view", render: renderOverview },
-  { id: "test",     label: "Test",     permission: "test.view",     render: () => renderTests({ config: data.config, session }) },
-  { id: "reports",  label: "Reports",  permission: "reports.view",  render: renderReports },
-  { id: "users",    label: "Users",    permission: "users.view",    render: renderUsers },
-  { id: "settings", label: "Settings", permission: "settings.view", render: renderSettings },
+  { id: "overview",  label: "Overview",  permission: "overview.view",  render: renderOverview },
+  { id: "test",      label: "Test",      permission: "test.view",      render: () => renderTests({ config: data.config, session, roles: data.roles }) },
+  { id: "reports",   label: "Reports",   permission: "reports.view",   render: () => renderReports({ session, roles: data.roles }) },
+  { id: "users",     label: "Users",     permission: "users.view",     render: renderUsers },
+  { id: "passwords", label: "Passwords", permission: "passwords.tool", render: () => renderPasswordTool({ config: data.config, users: data.users }) },
+  { id: "settings",  label: "Settings",  permission: "settings.view",  render: renderSettings },
 ];
 
 const $ = (id) => document.getElementById(id);
+const labels = (keys) => keys.map((k) => roleLabel(data.roles, k)).join(", ");
 const content = $("content");
 let data, session;
 
 function renderOverview() {
-  const role = data.roles[session.role];
   return [
     el("h1", { textContent: `Welcome back, ${session.name.split(" ")[0]}` }),
-    el("p", { className: "lede", textContent: `You are signed in as ${role.label}.` }),
+    el("p", { className: "lede", textContent: `You are signed in as ${labels(session.roles)}.` }),
     el("section", { className: "panel" },
       el("h2", { textContent: "Your permissions" }),
-      el("ul", { className: "chips" }, ...role.permissions.map((p) => el("li", { textContent: p })))),
-  ];
-}
-
-function renderReports() {
-  return [
-    el("h1", { textContent: "Reports" }),
-    el("p", { className: "lede", textContent: "Visible to editors and administrators." }),
-    el("section", { className: "panel", textContent: "No reports yet. Add your own content in assets/js/dashboard.js." }),
+      el("ul", { className: "chips" }, ...permissionsOf(session, data.roles).map((p) => el("li", { textContent: p })))),
   ];
 }
 
@@ -39,9 +35,9 @@ function renderUsers() {
     el("td", { textContent: u.name }),
     el("td", { textContent: u.username }),
     el("td", { textContent: u.email }),
-    el("td", { textContent: data.roles[u.role]?.label ?? u.role }),
+    el("td", { textContent: labels(userRoles(u)) }),
     el("td", { textContent: u.active ? "Active" : "Disabled", className: u.active ? "" : "status-off" })));
-  const head = el("tr", {}, ...["Name", "Username", "Email", "Role", "Status"].map((t) => el("th", { textContent: t })));
+  const head = el("tr", {}, ...["Name", "Username", "Email", "Roles", "Status"].map((t) => el("th", { textContent: t })));
   return [
     el("h1", { textContent: "Users" }),
     el("p", { className: "lede", textContent: "Loaded from data/users.json." }),
@@ -50,7 +46,7 @@ function renderUsers() {
 }
 
 function renderSettings() {
-  const { passwordSalt, ...safe } = data.config; // never display the salt
+  const { passwordSalt, ...safe } = data.config; // keep the salt off the screen
   return [
     el("h1", { textContent: "Settings" }),
     el("p", { className: "lede", textContent: "Loaded from data/config.json." }),
@@ -58,8 +54,8 @@ function renderSettings() {
   ];
 }
 
-function show(id) {
-  if (!canLeave()) return; // a running test asks for confirmation first
+async function show(id) {
+  if (!(await canLeave())) return; // a running test asks for confirmation first
   const section = SECTIONS.find((s) => s.id === id);
   content.replaceChildren(...section.render());
   document.querySelectorAll("#nav button").forEach((b) => {
@@ -75,7 +71,8 @@ async function init() {
     data = await loadData();
   } catch (err) {
     document.body.hidden = false;
-    content.textContent = err.message;
+    content.replaceChildren(el("p", { className: "muted", textContent: "The app data could not be loaded." }));
+    alertModal("Could not load data", err.message);
     return;
   }
 
@@ -89,15 +86,15 @@ async function init() {
   document.title = `Dashboard · ${data.config.appName}`;
   $("app-name").textContent = data.config.appName;
   $("user-name").textContent = session.name;
-  $("user-role").textContent = data.roles[session.role]?.label ?? session.role;
-  $("logout-btn").addEventListener("click", () => logout(data.config));
+  $("user-role").textContent = labels(session.roles);
+  $("logout-btn").addEventListener("click", async () => { if (await canLeave()) logout(data.config); });
 
   $("nav").replaceChildren(...allowed.map((s) =>
     el("button", { type: "button", textContent: s.label, dataset: { id: s.id }, onclick: () => show(s.id) })));
 
   const start = allowed.find((s) => s.id === location.hash.slice(1)) ?? allowed[0];
   if (!start) { logout(data.config); return; }
-  show(start.id);
+  await show(start.id);
   document.body.hidden = false;
 
   // Sliding session: activity extends it; expiry signs the user out.

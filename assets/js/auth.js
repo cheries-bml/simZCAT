@@ -4,7 +4,6 @@
 const SESSION_KEY = "app.session";
 const LOCK_KEY = "app.lock";
 
-// The only network calls in the app: plain GET requests for static JSON files.
 export async function loadJSON(path) {
   const res = await fetch(path, { method: "GET", cache: "no-store" });
   if (!res.ok) throw new Error(`Could not load ${path} (${res.status})`);
@@ -20,11 +19,32 @@ export async function loadData() {
   return { config, users: usersFile.users, roles: rolesFile.roles };
 }
 
-export async function sha256(text) {
-  const bytes = new TextEncoder().encode(text);
-  const digest = await crypto.subtle.digest("SHA-256", bytes);
+// ----- password hashing -----
+// hash = SHA-256 of "<passwordSalt>:<username in lowercase>:<password>", as 64 hex characters.
+// Hashing is one-way: a hash cannot be turned back into the password.
+export async function hashPassword(config, username, password) {
+  const text = `${config.passwordSalt}:${username.trim().toLowerCase()}:${password}`;
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
   return [...new Uint8Array(digest)].map((b) => b.toString(16).padStart(2, "0")).join("");
 }
+
+// ----- roles & permissions -----
+/** A user may have several roles: "roles": ["editor", "auditor"] (a single string also works). */
+export function userRoles(user) {
+  const r = user.roles ?? user.role;
+  return (Array.isArray(r) ? r : [r]).filter((x) => typeof x === "string" && x);
+}
+
+export const roleLabel = (roles, key) => roles[key]?.label ?? key;
+
+/** Union of the permissions of all the user's roles. Unknown roles grant nothing. */
+export function permissionsOf(session, roles) {
+  const all = new Set();
+  for (const key of session.roles) (roles[key]?.permissions ?? []).forEach((p) => all.add(p));
+  return [...all];
+}
+
+export const can = (session, roles, permission) => permissionsOf(session, roles).includes(permission);
 
 // ----- lockout after repeated failures -----
 function readLock() {
@@ -46,7 +66,7 @@ function registerFailure(config) {
 export function getSession() {
   try {
     const s = JSON.parse(sessionStorage.getItem(SESSION_KEY));
-    if (s && s.expires > Date.now()) return s;
+    if (s && Array.isArray(s.roles) && s.expires > Date.now()) return s;
   } catch { /* ignore */ }
   sessionStorage.removeItem(SESSION_KEY);
   return null;
@@ -73,9 +93,10 @@ export async function login(username, password, { config, users }) {
   }
 
   const user = users.find((u) => u.username.toLowerCase() === username.trim().toLowerCase());
-  const hash = await sha256(config.passwordSalt + password);
+  const hash = await hashPassword(config, username, password);
+  const valid = !!user && user.active && hash === String(user.passwordHash || "").toLowerCase();
 
-  if (!user || !user.active || user.passwordHash !== hash) {
+  if (!valid) {
     registerFailure(config);
     return { ok: false, message: "Username or password is incorrect." };
   }
@@ -84,13 +105,8 @@ export async function login(username, password, { config, users }) {
   sessionStorage.setItem(SESSION_KEY, JSON.stringify({
     username: user.username,
     name: user.name,
-    role: user.role,
+    roles: userRoles(user),
     expires: Date.now() + config.sessionMinutes * 60000,
   }));
   return { ok: true };
-}
-
-export function can(session, roles, permission) {
-  const role = roles[session.role];
-  return !!role && role.permissions.includes(permission);
 }

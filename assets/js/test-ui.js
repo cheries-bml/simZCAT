@@ -1,6 +1,8 @@
 import { el, mount, richText } from "./util.js";
-import { touchSession } from "./auth.js";
+import { touchSession, permissionsOf } from "./auth.js";
 import { loadCatalog } from "./catalog.js";
+import { openModal, alertModal, confirmModal } from "./modal.js";
+import { addAttempt, lastAttempt } from "./results.js";
 import * as E from "./test-engine.js";
 
 let run = null; // the test currently in progress (or just finished)
@@ -11,24 +13,14 @@ function stop() {
   window.onbeforeunload = null;
 }
 
-/** Called by the dashboard before switching sections. */
-export function canLeave() {
-  if (run && !run.finished && !confirm("Leave this test? Your answers will be lost.")) return false;
+/** Called by the dashboard before switching sections or signing out. */
+export async function canLeave() {
+  if (run && !run.finished) {
+    const ok = await confirmModal("Leave this test?", "Your answers will be lost.", { confirmLabel: "Leave test", danger: true });
+    if (!ok) return false;
+  }
   stop();
   return true;
-}
-
-// ----- last scores (per user, in this browser) -----
-const resultsKey = (ctx) => `app.results.${ctx.session.username}`;
-function readResults(ctx) {
-  try { return JSON.parse(localStorage.getItem(resultsKey(ctx))) || {}; } catch { return {}; }
-}
-function saveResult(ctx, path, percent) {
-  try {
-    const all = readResults(ctx);
-    all[path] = { percent, date: new Date().toISOString() };
-    localStorage.setItem(resultsKey(ctx), JSON.stringify(all));
-  } catch { /* storage unavailable */ }
 }
 
 const heading = (title, lede) => [el("h1", { textContent: title }), lede ? el("p", { className: "lede", textContent: lede }) : null];
@@ -47,13 +39,13 @@ async function showCatalog(root, ctx) {
   try {
     tests = await loadCatalog(ctx.config);
   } catch (err) {
-    mount(root, heading("Tests"), el("p", { className: "alert", textContent: `${err.message}. Check that manifests/questions-manifest.json exists (see README).` }));
+    mount(root, heading("Tests"), el("p", { className: "muted", textContent: "The list of tests could not be loaded." }));
+    alertModal("Could not load tests", `${err.message}. Check that manifests/questions-manifest.json exists (see README).`);
     return;
   }
-  const results = readResults(ctx);
   mount(root, heading("Tests", "Pick a test to begin."),
     tests.length
-      ? el("div", { className: "cards" }, ...tests.map((t) => card(t, results[t.path], () => showIntro(root, ctx, t))))
+      ? el("div", { className: "cards" }, ...tests.map((t) => card(t, lastAttempt(ctx.session.username, t.path), () => showIntro(root, ctx, t))))
       : el("p", { className: "panel", textContent: "No tests found. Add question files to /questions and list them in manifests/questions-manifest.json (see README)." }));
 }
 
@@ -96,7 +88,13 @@ function showIntro(root, ctx, test) {
 function startRun(root, ctx, test, pace) {
   stop();
   const n = test.questions.length;
-  const r = (run = { answers: {}, flagged: new Set(), index: 0, started: Date.now(), limit: E.timeLimit(test, pace), finished: false });
+  const perms = new Set(permissionsOf(ctx.session, ctx.roles)); // show_answer / show_explanation come from the user's roles
+  const r = (run = {
+    answers: {}, flagged: new Set(), index: 0, started: Date.now(), limit: E.timeLimit(test, pace), finished: false,
+    reveal: false,          // is the correct answer currently shown for this question?
+    peeks: new Set(),       // questions whose answer was shown
+    explained: new Set(),   // questions whose explanation was opened
+  });
   r.deadline = r.started + r.limit * 1000;
   window.onbeforeunload = (e) => { e.preventDefault(); e.returnValue = ""; };
 
@@ -108,7 +106,7 @@ function startRun(root, ctx, test, pace) {
   mount(root,
     el("div", { className: "runner-bar" },
       el("strong", { textContent: test.meta.title }), progress, timerEl,
-      el("button", { className: "btn", type: "button", textContent: "Submit", onclick: () => submit(false) })),
+      el("button", { className: "btn", type: "button", textContent: "Submit", onclick: () => submit() })),
     el("div", { className: "runner" }, qArea,
       el("aside", { className: "side" }, el("h2", { textContent: "Questions" }), palette,
         el("p", { className: "muted legend", textContent: "Filled = answered · dot = flagged" }))));
@@ -120,7 +118,7 @@ function startRun(root, ctx, test, pace) {
       const left = Math.max(0, Math.ceil((r.deadline - now) / 1000));
       timerEl.textContent = E.fmtTime(left);
       timerEl.classList.toggle("low", left <= 60);
-      if (left === 0) finish("Time’s up. Your answers were submitted automatically.");
+      if (left === 0) finish(true);
     } else {
       timerEl.textContent = E.fmtTime((now - r.started) / 1000);
     }
@@ -128,6 +126,7 @@ function startRun(root, ctx, test, pace) {
 
   function go(i) {
     r.index = i;
+    r.reveal = false; // a peek only lasts while you stay on the question
     drawQuestion();
     drawPalette();
     window.scrollTo({ top: 0 });
@@ -160,22 +159,46 @@ function startRun(root, ctx, test, pace) {
         drawPalette();
       },
     });
+    const answerBtn = perms.has("show_answer")
+      ? el("button", {
+          type: "button", className: "chip-btn js-reveal", textContent: r.reveal ? "Hide answer" : "Show answer",
+          onclick: () => {
+            r.reveal = !r.reveal;
+            if (r.reveal) r.peeks.add(i);
+            drawQuestion();
+            qArea.querySelector(".js-reveal")?.focus();
+          },
+        })
+      : null;
+    const explainBtn = perms.has("show_explanation") && E.hasExplanation(q)
+      ? el("button", {
+          type: "button", className: "chip-btn", textContent: "Explanation",
+          onclick: () => {
+            r.explained.add(i);
+            openModal({ title: `Question ${i + 1}: explanation`, body: explanationNode(q.explanation), wide: true, actions: [{ label: "Close", primary: true }] });
+          },
+        })
+      : null;
+
     mount(qArea,
       el("div", { className: "q-head" },
         el("span", { className: "q-num", textContent: `Question ${i + 1} of ${n}` }),
         q.config?.level ? el("span", { className: "badge", textContent: `Level ${q.config.level}` }) : null,
         el("span", { className: "badge badge-soft", textContent: q.type === "correction" ? "Error correction" : "Multiple choice" }),
-        flagBtn),
+        flagBtn, answerBtn, explainBtn),
       d.hint ? el("p", { className: "hint-box", textContent: d.hint }) : null,
       image(d.image),
       d.passage ? richText(d.passage, "div", "passage") : null,
       d.question ? richText(d.question, "h2", "q-text") : null,
       q.type === "correction" ? correctionInput(q, i) : mcInput(q, i),
+      r.reveal
+        ? el("div", { className: "answer-box", role: "status" }, el("strong", { textContent: "Correct answer: " }), E.correctAnswerText(q))
+        : null,
       el("div", { className: "q-nav" },
         el("button", { className: "btn btn-ghost", type: "button", textContent: "← Previous", disabled: i === 0, onclick: () => go(i - 1) }),
         i < n - 1
           ? el("button", { className: "btn", type: "button", textContent: "Next →", onclick: () => go(i + 1) })
-          : el("button", { className: "btn", type: "button", textContent: "Finish test", onclick: () => submit(false) })));
+          : el("button", { className: "btn", type: "button", textContent: "Finish test", onclick: () => submit() })));
   }
 
   function mcInput(q, i) {
@@ -184,7 +207,7 @@ function startRun(root, ctx, test, pace) {
     return el("div", {},
       multi ? el("p", { className: "multi-note", textContent: `Select ${need} answers.` }) : null,
       el("div", { className: "opts", role: multi ? "group" : "radiogroup" },
-        ...opts.map((o) => el("label", { className: "opt" },
+        ...opts.map((o) => el("label", { className: `opt${r.reveal && o.correct ? " reveal-correct" : ""}` },
           el("input", {
             type: multi ? "checkbox" : "radio", name: `q${i}`, value: o.key, checked: a.selected.includes(o.key),
             onchange: (e) => {
@@ -193,7 +216,8 @@ function startRun(root, ctx, test, pace) {
             },
           }),
           el("span", { className: "opt-key", textContent: o.key }),
-          richText(o.text, "span", "opt-text")))));
+          richText(o.text, "span", "opt-text"),
+          r.reveal && o.correct ? el("span", { className: "opt-tag", textContent: "Correct" }) : null))));
   }
 
   function correctionInput(q, i) {
@@ -237,25 +261,32 @@ function startRun(root, ctx, test, pace) {
     return el("div", {}, sentence, fixes, noErr);
   }
 
-  function submit(auto) {
-    if (!auto) {
-      const left = test.questions.filter((q, i) => !E.isAnswered(q, r.answers[i])).length;
-      const msg = left ? `${left} question${left > 1 ? "s are" : " is"} unanswered. Submit anyway?` : "Submit your answers?";
-      if (!confirm(msg)) return;
-    }
-    finish("");
+  async function submit() {
+    const left = test.questions.filter((q, i) => !E.isAnswered(q, r.answers[i])).length;
+    const warning = "You can’t change your answers after submitting.";
+    const ok = await confirmModal(
+      left ? "Submit with unanswered questions?" : "Submit your answers?",
+      left ? `${left} question${left > 1 ? "s are" : " is"} unanswered. ${warning}` : warning,
+      { confirmLabel: "Submit" });
+    if (ok) finish(false);
   }
 
-  function finish(note) {
+  function finish(timedOut) {
     if (r.finished) return;
     r.finished = true;
     clearInterval(r.timer);
     window.onbeforeunload = null;
+    document.querySelectorAll("dialog.modal[open]").forEach((d) => d.close()); // e.g. an open confirm or explanation
     r.spent = Math.min(Date.now(), r.limit ? r.deadline : Infinity) - r.started;
     const sum = E.summarize(test, r.answers);
-    saveResult(ctx, test.path, sum.percent);
+    addAttempt({
+      ts: Date.now(), username: ctx.session.username, name: ctx.session.name,
+      testPath: test.path, testTitle: test.meta.title, pace: r.limit ? pace : null,
+      percent: sum.percent, correct: sum.correct, incorrect: sum.incorrect, unanswered: sum.unanswered, total: sum.total,
+      seconds: Math.round(r.spent / 1000), timedOut, peeks: r.peeks.size, explained: r.explained.size,
+    });
     window.scrollTo({ top: 0 });
-    showResults(root, ctx, test, r, sum, note);
+    showResults(root, ctx, test, r, sum, timedOut);
   }
 
   r.timer = setInterval(tick, 1000);
@@ -272,19 +303,30 @@ function image(img) {
   return node;
 }
 
+// Shared by the explanation modal (during a test) and the results review.
+function explanationNode(ex) {
+  return el("div", { className: "explain" },
+    ex.topic || ex.concept ? el("p", { className: "muted", textContent: [ex.topic, ex.concept].filter(Boolean).join(" · ") }) : null,
+    ex.text ? richText(ex.text, "p") : null,
+    ex.formula ? el("p", { className: "formula", textContent: ex.formula }) : null,
+    ex.examples?.length ? el("ul", {}, ...ex.examples.map((x) => richText(x, "li"))) : null);
+}
+
 // ================= Results =================
-function showResults(root, ctx, test, r, sum, note) {
+function showResults(root, ctx, test, r, sum, timedOut) {
   const ring = el("div", { className: "ring", role: "img", "aria-label": `${sum.percent} percent` }, el("span", { textContent: `${sum.percent}%` }));
   ring.style.setProperty("--p", sum.percent);
   const stat = (label, value, cls = "") => el("div", { className: `stat ${cls}` }, el("strong", { textContent: String(value) }), el("span", { textContent: label }));
 
   mount(root,
     heading("Results", test.meta.title),
-    note ? el("p", { className: "alert", textContent: note }) : null,
     el("section", { className: "panel summary" }, ring,
       el("div", { className: "stats" },
         stat("Correct", sum.correct, "ok"), stat("Incorrect", sum.incorrect, "bad"),
         stat("Unanswered", sum.unanswered), stat("Time used", E.fmtTime(r.spent / 1000)))),
+    r.peeks.size || r.explained.size
+      ? el("p", { className: "muted", textContent: `Assists used: answer shown on ${r.peeks.size} question(s), explanation opened on ${r.explained.size}.` })
+      : null,
     sum.topics.length
       ? el("section", { className: "panel" }, el("h2", { textContent: "Topics to review" }),
           el("ul", { className: "chips" }, ...sum.topics.map((t) => el("li", { textContent: t }))))
@@ -294,10 +336,12 @@ function showResults(root, ctx, test, r, sum, note) {
     el("div", { className: "q-nav" },
       el("button", { className: "btn btn-ghost", type: "button", textContent: "All tests", onclick: () => showCatalog(root, ctx) }),
       el("button", { className: "btn", type: "button", textContent: "Retake", onclick: () => showIntro(root, ctx, test) })));
+
+  if (timedOut) alertModal("Time’s up", "Your answers were submitted automatically.");
 }
 
 function reviewItem(test, q, i, a, status) {
-  const f = E.flags(test, q), ex = q.explanation || {};
+  const f = E.flags(test, q);
   const row = (label, text) => el("p", { className: "review-row" }, el("strong", { textContent: `${label} ` }), text);
   return el("details", { className: `review ${status}`, open: status !== "correct" },
     el("summary", {},
@@ -306,11 +350,5 @@ function reviewItem(test, q, i, a, status) {
     el("div", { className: "review-body" },
       row("Your answer:", E.userAnswerText(q, a)),
       f.showAnswer ? row("Correct answer:", E.correctAnswerText(q)) : null,
-      f.showExplanation && ex.text
-        ? el("div", { className: "explain" },
-            richText(ex.text, "p"),
-            ex.topic || ex.concept ? el("p", { className: "muted", textContent: [ex.topic, ex.concept].filter(Boolean).join(" · ") }) : null,
-            ex.formula ? el("p", { className: "formula", textContent: ex.formula }) : null,
-            ex.examples?.length ? el("ul", {}, ...ex.examples.map((x) => richText(x, "li"))) : null)
-        : null));
+      f.showExplanation && E.hasExplanation(q) ? explanationNode(q.explanation) : null));
 }

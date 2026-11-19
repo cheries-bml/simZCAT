@@ -100,3 +100,8 @@ export function correctAnswerText(q) {
   }
   return optionList(q).filter((o) => o.correct).map((o) => `${o.key}. ${o.text}`).join("; ");
 }
+
+export function hasExplanation(q) {
+  const e = q.explanation;
+  return !!e && !!(e.text || e.topic || e.concept || e.formula || e.examples?.length);
+}

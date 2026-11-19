@@ -1,20 +1,15 @@
 import { loadData, login, getSession } from "./auth.js";
+import { alertModal } from "./modal.js";
 
 const form = document.getElementById("login-form");
-const errorBox = document.getElementById("login-error");
 const button = document.getElementById("login-btn");
-
-function showError(message) {
-  errorBox.textContent = message;
-  errorBox.hidden = false;
-}
 
 async function init() {
   let data;
   try {
     data = await loadData();
   } catch (err) {
-    showError(`${err.message}. Serve the site over http(s), not file://.`);
+    alertModal("Could not load app data", `${err.message}. Serve the site over http(s), not file://.`);
     return;
   }
 
@@ -29,11 +24,11 @@ async function init() {
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    errorBox.hidden = true;
     const username = form.username.value;
     const password = form.password.value;
     if (!username.trim() || !password) {
-      showError("Enter your username and password.");
+      await alertModal("Missing details", "Enter your username and password.");
+      (username.trim() ? form.password : form.username).focus();
       return;
     }
     button.disabled = true;
@@ -43,7 +38,8 @@ async function init() {
       location.replace(data.config.defaultPage);
     } else {
       form.password.value = "";
-      showError(result.message);
+      await alertModal("Sign-in failed", result.message);
+      form.password.focus();
     }
   });
 }
