@@ -1,7 +1,29 @@
 {
   "roles": {
-    "admin":  { "label": "Administrator", "permissions": ["overview.view", "reports.view", "users.view", "settings.view"] },
-    "editor": { "label": "Editor",        "permissions": ["overview.view", "reports.view"] },
-    "viewer": { "label": "Viewer",        "permissions": ["overview.view"] }
+    "admin": {
+      "label": "Administrator",
+      "permissions": [
+        "overview.view",
+        "test.view",
+        "reports.view",
+        "users.view",
+        "settings.view"
+      ]
+    },
+    "editor": {
+      "label": "Editor",
+      "permissions": [
+        "overview.view",
+        "test.view",
+        "reports.view"
+      ]
+    },
+    "viewer": {
+      "label": "Viewer",
+      "permissions": [
+        "overview.view",
+        "test.view"
+      ]
+    }
   }
 }

@@ -1,0 +1,316 @@
+import { el, mount, richText } from "./util.js";
+import { touchSession } from "./auth.js";
+import { loadCatalog } from "./catalog.js";
+import * as E from "./test-engine.js";
+
+let run = null; // the test currently in progress (or just finished)
+
+function stop() {
+  if (run) clearInterval(run.timer);
+  run = null;
+  window.onbeforeunload = null;
+}
+
+/** Called by the dashboard before switching sections. */
+export function canLeave() {
+  if (run && !run.finished && !confirm("Leave this test? Your answers will be lost.")) return false;
+  stop();
+  return true;
+}
+
+// ----- last scores (per user, in this browser) -----
+const resultsKey = (ctx) => `app.results.${ctx.session.username}`;
+function readResults(ctx) {
+  try { return JSON.parse(localStorage.getItem(resultsKey(ctx))) || {}; } catch { return {}; }
+}
+function saveResult(ctx, path, percent) {
+  try {
+    const all = readResults(ctx);
+    all[path] = { percent, date: new Date().toISOString() };
+    localStorage.setItem(resultsKey(ctx), JSON.stringify(all));
+  } catch { /* storage unavailable */ }
+}
+
+const heading = (title, lede) => [el("h1", { textContent: title }), lede ? el("p", { className: "lede", textContent: lede }) : null];
+
+export function renderTests(ctx) {
+  const root = el("div", { className: "test-root" });
+  showCatalog(root, ctx);
+  return [root];
+}
+
+// ================= Catalog =================
+async function showCatalog(root, ctx) {
+  stop();
+  mount(root, heading("Tests", "Pick a test to begin."), el("p", { className: "muted", textContent: "Loading tests…" }));
+  let tests;
+  try {
+    tests = await loadCatalog(ctx.config);
+  } catch (err) {
+    mount(root, heading("Tests"), el("p", { className: "alert", textContent: `${err.message}. Check that manifests/questions-manifest.json exists (see README).` }));
+    return;
+  }
+  const results = readResults(ctx);
+  mount(root, heading("Tests", "Pick a test to begin."),
+    tests.length
+      ? el("div", { className: "cards" }, ...tests.map((t) => card(t, results[t.path], () => showIntro(root, ctx, t))))
+      : el("p", { className: "panel", textContent: "No tests found. Add question files to /questions and list them in manifests/questions-manifest.json (see README)." }));
+}
+
+function card(t, last, onOpen) {
+  const timed = !t.meta.config?.no_timer;
+  return el("button", { className: "card", type: "button", onclick: onOpen },
+    el("span", { className: "card-folder", textContent: t.folder || "General" }),
+    el("span", { className: "card-title", textContent: t.meta.title || t.path }),
+    el("span", { className: "card-desc", textContent: t.meta.description || "" }),
+    el("span", { className: "card-meta", textContent: [`${t.questions.length} questions`, timed ? "timed" : "untimed", t.meta.author].filter(Boolean).join(" · ") }),
+    last ? el("span", { className: "card-last", textContent: `Last score ${last.percent}%` }) : null);
+}
+
+// ================= Intro =================
+function showIntro(root, ctx, test) {
+  stop();
+  let pace = "normal";
+  const timed = !test.meta.config?.no_timer;
+  const paceBox = timed
+    ? el("fieldset", { className: "paces" }, el("legend", { textContent: "Choose your pace (total time)" }),
+        ...E.PACES.map((p) => el("label", { className: "pace" },
+          el("input", { type: "radio", name: "pace", value: p, checked: p === pace, onchange: () => (pace = p) }),
+          el("span", { className: "pace-name", textContent: p[0].toUpperCase() + p.slice(1) }),
+          el("span", { className: "muted", textContent: E.fmtTime(E.timeLimit(test, p)) }))))
+    : el("p", { className: "muted", textContent: "No time limit. Your elapsed time is shown while you work." });
+
+  mount(root,
+    el("button", { className: "link-btn", type: "button", textContent: "← All tests", onclick: () => showCatalog(root, ctx) }),
+    heading(test.meta.title, test.meta.description),
+    el("section", { className: "panel" },
+      test.meta.info ? richText(test.meta.info, "p") : null,
+      el("ul", { className: "facts" },
+        el("li", { textContent: `${test.questions.length} questions` }),
+        test.meta.author ? el("li", { textContent: `By ${test.meta.author}` }) : null),
+      paceBox),
+    el("button", { className: "btn", type: "button", textContent: "Start test", onclick: () => startRun(root, ctx, test, pace) }));
+}
+
+// ================= Runner =================
+function startRun(root, ctx, test, pace) {
+  stop();
+  const n = test.questions.length;
+  const r = (run = { answers: {}, flagged: new Set(), index: 0, started: Date.now(), limit: E.timeLimit(test, pace), finished: false });
+  r.deadline = r.started + r.limit * 1000;
+  window.onbeforeunload = (e) => { e.preventDefault(); e.returnValue = ""; };
+
+  const timerEl = el("span", { className: "timer", role: "timer" });
+  const progress = el("span", { className: "muted" });
+  const qArea = el("section", { className: "q-card" });
+  const palette = el("div", { className: "palette" });
+
+  mount(root,
+    el("div", { className: "runner-bar" },
+      el("strong", { textContent: test.meta.title }), progress, timerEl,
+      el("button", { className: "btn", type: "button", textContent: "Submit", onclick: () => submit(false) })),
+    el("div", { className: "runner" }, qArea,
+      el("aside", { className: "side" }, el("h2", { textContent: "Questions" }), palette,
+        el("p", { className: "muted legend", textContent: "Filled = answered · dot = flagged" }))));
+
+  function tick() {
+    touchSession(ctx.config); // an active test keeps the login alive
+    const now = Date.now();
+    if (r.limit) {
+      const left = Math.max(0, Math.ceil((r.deadline - now) / 1000));
+      timerEl.textContent = E.fmtTime(left);
+      timerEl.classList.toggle("low", left <= 60);
+      if (left === 0) finish("Time’s up. Your answers were submitted automatically.");
+    } else {
+      timerEl.textContent = E.fmtTime((now - r.started) / 1000);
+    }
+  }
+
+  function go(i) {
+    r.index = i;
+    drawQuestion();
+    drawPalette();
+    window.scrollTo({ top: 0 });
+  }
+
+  function drawPalette() {
+    let answered = 0;
+    palette.replaceChildren(...test.questions.map((q, i) => {
+      const done = E.isAnswered(q, r.answers[i]);
+      if (done) answered++;
+      const flagged = r.flagged.has(i);
+      const b = el("button", {
+        type: "button", textContent: String(i + 1), onclick: () => go(i),
+        className: `pal${done ? " done" : ""}${flagged ? " flag" : ""}`,
+        "aria-label": `Question ${i + 1}${done ? ", answered" : ""}${flagged ? ", flagged" : ""}`,
+      });
+      if (i === r.index) b.setAttribute("aria-current", "step");
+      return b;
+    }));
+    progress.textContent = `${answered}/${n} answered`;
+  }
+
+  function drawQuestion() {
+    const i = r.index, q = test.questions[i], d = q.data || {};
+    const flagBtn = el("button", {
+      type: "button", className: "chip-btn", textContent: "⚑ Flag for review", "aria-pressed": String(r.flagged.has(i)),
+      onclick: () => {
+        if (r.flagged.has(i)) r.flagged.delete(i); else r.flagged.add(i);
+        flagBtn.setAttribute("aria-pressed", String(r.flagged.has(i)));
+        drawPalette();
+      },
+    });
+    mount(qArea,
+      el("div", { className: "q-head" },
+        el("span", { className: "q-num", textContent: `Question ${i + 1} of ${n}` }),
+        q.config?.level ? el("span", { className: "badge", textContent: `Level ${q.config.level}` }) : null,
+        el("span", { className: "badge badge-soft", textContent: q.type === "correction" ? "Error correction" : "Multiple choice" }),
+        flagBtn),
+      d.hint ? el("p", { className: "hint-box", textContent: d.hint }) : null,
+      image(d.image),
+      d.passage ? richText(d.passage, "div", "passage") : null,
+      d.question ? richText(d.question, "h2", "q-text") : null,
+      q.type === "correction" ? correctionInput(q, i) : mcInput(q, i),
+      el("div", { className: "q-nav" },
+        el("button", { className: "btn btn-ghost", type: "button", textContent: "← Previous", disabled: i === 0, onclick: () => go(i - 1) }),
+        i < n - 1
+          ? el("button", { className: "btn", type: "button", textContent: "Next →", onclick: () => go(i + 1) })
+          : el("button", { className: "btn", type: "button", textContent: "Finish test", onclick: () => submit(false) })));
+  }
+
+  function mcInput(q, i) {
+    const opts = E.optionList(q), need = E.correctKeys(q).length, multi = need > 1;
+    const a = (r.answers[i] ??= { selected: [] });
+    return el("div", {},
+      multi ? el("p", { className: "multi-note", textContent: `Select ${need} answers.` }) : null,
+      el("div", { className: "opts", role: multi ? "group" : "radiogroup" },
+        ...opts.map((o) => el("label", { className: "opt" },
+          el("input", {
+            type: multi ? "checkbox" : "radio", name: `q${i}`, value: o.key, checked: a.selected.includes(o.key),
+            onchange: (e) => {
+              a.selected = multi ? (e.target.checked ? [...a.selected, o.key] : a.selected.filter((k) => k !== o.key)) : [o.key];
+              drawPalette();
+            },
+          }),
+          el("span", { className: "opt-key", textContent: o.key }),
+          richText(o.text, "span", "opt-text")))));
+  }
+
+  function correctionInput(q, i) {
+    const a = (r.answers[i] ??= { noError: false, fixes: {} });
+    const segs = q.multiErrorSegments || [];
+    const sentence = el("p", { className: "sentence" });
+    const fixes = el("div", { className: "fixes" });
+    const noErr = el("button", {
+      type: "button", className: "chip-btn", textContent: "No error",
+      onclick: () => { a.noError = !a.noError; if (a.noError) a.fixes = {}; refresh(); },
+    });
+    let focusId = null;
+
+    function toggle(s) {
+      if (s.id in a.fixes) delete a.fixes[s.id];
+      else { a.fixes[s.id] = ""; a.noError = false; focusId = s.id; }
+      refresh();
+    }
+
+    function refresh() {
+      sentence.replaceChildren(...segs.flatMap((s) => [
+        s.clickable
+          ? el("button", { type: "button", className: "seg", textContent: s.text, "aria-pressed": String(s.id in a.fixes), onclick: () => toggle(s) })
+          : el("span", { textContent: s.text }),
+        " ",
+      ]));
+      noErr.setAttribute("aria-pressed", String(a.noError));
+      const marked = segs.filter((s) => s.id in a.fixes);
+      fixes.replaceChildren(...(marked.length
+        ? marked.map((s) => {
+            const input = el("input", { type: "text", value: a.fixes[s.id], placeholder: "Type the correct form", autocomplete: "off", oninput: (e) => { a.fixes[s.id] = e.target.value; } });
+            if (s.id === focusId) queueMicrotask(() => input.focus());
+            return el("label", { className: "fix" }, el("span", { textContent: `Replace “${s.text}” with:` }), input);
+          })
+        : [el("p", { className: "muted", textContent: a.noError ? "You chose “No error”." : "Click the parts that contain an error, or choose “No error”." })]));
+      focusId = null;
+      drawPalette();
+    }
+
+    refresh();
+    return el("div", {}, sentence, fixes, noErr);
+  }
+
+  function submit(auto) {
+    if (!auto) {
+      const left = test.questions.filter((q, i) => !E.isAnswered(q, r.answers[i])).length;
+      const msg = left ? `${left} question${left > 1 ? "s are" : " is"} unanswered. Submit anyway?` : "Submit your answers?";
+      if (!confirm(msg)) return;
+    }
+    finish("");
+  }
+
+  function finish(note) {
+    if (r.finished) return;
+    r.finished = true;
+    clearInterval(r.timer);
+    window.onbeforeunload = null;
+    r.spent = Math.min(Date.now(), r.limit ? r.deadline : Infinity) - r.started;
+    const sum = E.summarize(test, r.answers);
+    saveResult(ctx, test.path, sum.percent);
+    window.scrollTo({ top: 0 });
+    showResults(root, ctx, test, r, sum, note);
+  }
+
+  r.timer = setInterval(tick, 1000);
+  tick();
+  drawQuestion();
+  drawPalette();
+}
+
+function image(img) {
+  if (!img?.url) return null;
+  const o = ["landscape", "portrait", "square"].includes(img.orientation) ? img.orientation : "landscape";
+  const node = el("img", { className: `q-img ${o}`, src: img.url, alt: "Illustration for the question", loading: "lazy" });
+  node.addEventListener("error", () => node.remove()); // broken or placeholder URLs just disappear
+  return node;
+}
+
+// ================= Results =================
+function showResults(root, ctx, test, r, sum, note) {
+  const ring = el("div", { className: "ring", role: "img", "aria-label": `${sum.percent} percent` }, el("span", { textContent: `${sum.percent}%` }));
+  ring.style.setProperty("--p", sum.percent);
+  const stat = (label, value, cls = "") => el("div", { className: `stat ${cls}` }, el("strong", { textContent: String(value) }), el("span", { textContent: label }));
+
+  mount(root,
+    heading("Results", test.meta.title),
+    note ? el("p", { className: "alert", textContent: note }) : null,
+    el("section", { className: "panel summary" }, ring,
+      el("div", { className: "stats" },
+        stat("Correct", sum.correct, "ok"), stat("Incorrect", sum.incorrect, "bad"),
+        stat("Unanswered", sum.unanswered), stat("Time used", E.fmtTime(r.spent / 1000)))),
+    sum.topics.length
+      ? el("section", { className: "panel" }, el("h2", { textContent: "Topics to review" }),
+          el("ul", { className: "chips" }, ...sum.topics.map((t) => el("li", { textContent: t }))))
+      : null,
+    el("h2", { textContent: "Review" }),
+    test.questions.map((q, i) => reviewItem(test, q, i, r.answers[i], sum.statuses[i])),
+    el("div", { className: "q-nav" },
+      el("button", { className: "btn btn-ghost", type: "button", textContent: "All tests", onclick: () => showCatalog(root, ctx) }),
+      el("button", { className: "btn", type: "button", textContent: "Retake", onclick: () => showIntro(root, ctx, test) })));
+}
+
+function reviewItem(test, q, i, a, status) {
+  const f = E.flags(test, q), ex = q.explanation || {};
+  const row = (label, text) => el("p", { className: "review-row" }, el("strong", { textContent: `${label} ` }), text);
+  return el("details", { className: `review ${status}`, open: status !== "correct" },
+    el("summary", {},
+      el("span", { className: "mark", textContent: { correct: "✓", incorrect: "✗", unanswered: "–" }[status], "aria-label": status }),
+      el("span", { textContent: `${i + 1}. ${E.questionTitle(q)}` })),
+    el("div", { className: "review-body" },
+      row("Your answer:", E.userAnswerText(q, a)),
+      f.showAnswer ? row("Correct answer:", E.correctAnswerText(q)) : null,
+      f.showExplanation && ex.text
+        ? el("div", { className: "explain" },
+            richText(ex.text, "p"),
+            ex.topic || ex.concept ? el("p", { className: "muted", textContent: [ex.topic, ex.concept].filter(Boolean).join(" · ") }) : null,
+            ex.formula ? el("p", { className: "formula", textContent: ex.formula }) : null,
+            ex.examples?.length ? el("ul", {}, ...ex.examples.map((x) => richText(x, "li"))) : null)
+        : null));
+}

@@ -1,8 +1,11 @@
 import { loadData, getSession, touchSession, logout, can } from "./auth.js";
+import { el } from "./util.js";
+import { renderTests, canLeave } from "./test-ui.js";
 
 // Each section is shown only if the user's role has the permission.
 const SECTIONS = [
   { id: "overview", label: "Overview", permission: "overview.view", render: renderOverview },
+  { id: "test",     label: "Test",     permission: "test.view",     render: () => renderTests({ config: data.config, session }) },
   { id: "reports",  label: "Reports",  permission: "reports.view",  render: renderReports },
   { id: "users",    label: "Users",    permission: "users.view",    render: renderUsers },
   { id: "settings", label: "Settings", permission: "settings.view", render: renderSettings },
@@ -11,12 +14,6 @@ const SECTIONS = [
 const $ = (id) => document.getElementById(id);
 const content = $("content");
 let data, session;
-
-function el(tag, props = {}, ...children) {
-  const node = Object.assign(document.createElement(tag), props);
-  node.append(...children);
-  return node;
-}
 
 function renderOverview() {
   const role = data.roles[session.role];
@@ -62,6 +59,7 @@ function renderSettings() {
 }
 
 function show(id) {
+  if (!canLeave()) return; // a running test asks for confirmation first
   const section = SECTIONS.find((s) => s.id === id);
   content.replaceChildren(...section.render());
   document.querySelectorAll("#nav button").forEach((b) => {
@@ -69,6 +67,7 @@ function show(id) {
     else b.removeAttribute("aria-current");
   });
   history.replaceState(null, "", `#${id}`);
+  window.scrollTo({ top: 0 });
 }
 
 async function init() {
@@ -94,8 +93,7 @@ async function init() {
   $("logout-btn").addEventListener("click", () => logout(data.config));
 
   $("nav").replaceChildren(...allowed.map((s) =>
-    el("button", { type: "button", textContent: s.label, onclick: () => show(s.id) })));
-  [...$("nav").children].forEach((b, i) => (b.dataset.id = allowed[i].id));
+    el("button", { type: "button", textContent: s.label, dataset: { id: s.id }, onclick: () => show(s.id) })));
 
   const start = allowed.find((s) => s.id === location.hash.slice(1)) ?? allowed[0];
   if (!start) { logout(data.config); return; }

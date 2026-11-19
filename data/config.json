@@ -1,10 +1,12 @@
 {
-  "appName": "EngCat",
-  "tagline": "Sign in to start using EngCat.",
+  "appName": "ZCat",
+  "tagline": "Sign in to manage your workspace.",
   "passwordSalt": "change-this-salt-before-going-live",
   "sessionMinutes": 30,
   "maxFailedAttempts": 5,
   "lockoutMinutes": 5,
   "defaultPage": "dashboard.html",
-  "loginPage": "index.html"
+  "loginPage": "index.html",
+  "questionsDir": "questions",
+  "questionsManifest": "manifests/questions-manifest.json"
 }
