@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "title": "Subject-verb agreement",
+    "description": "Make the verb agree with its subject.",
+    "info": "Two multiple-choice and two error-correction questions (one has no error).",
+    "author": "Cheries",
+    "created": "2026-11-15",
+    "config": {
+      "show_answer": true,
+      "show_explanation": true,
+      "no_timer": false,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct answer.",
+        "question": "Neither the teacher nor the students ___ present."
+      },
+      "options": {
+        "A": {
+          "text": "was"
+        },
+        "B": {
+          "text": "were",
+          "correct": true
+        },
+        "C": {
+          "text": "is"
+        },
+        "D": {
+          "text": "has been"
+        }
+      },
+      "explanation": {
+        "text": "With 'neither ... nor' the verb agrees with the nearer subject: 'students' is plural.",
+        "topic": "Agreement",
+        "concept": "Neither / nor",
+        "examples": [
+          "Neither Tom nor his friends <b>are</b> ready."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 80
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct answer.",
+        "question": "The number of applicants ___ increased."
+      },
+      "options": {
+        "A": {
+          "text": "have"
+        },
+        "B": {
+          "text": "has",
+          "correct": true
+        },
+        "C": {
+          "text": "are"
+        },
+        "D": {
+          "text": "were"
+        }
+      },
+      "explanation": {
+        "text": "'The number of' takes a singular verb. ('A number of' takes a plural verb.)",
+        "topic": "Agreement",
+        "concept": "The number of / A number of",
+        "examples": [
+          "The number of cars <b>has</b> grown."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 80
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Each of the players",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "have received",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "has received"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "a medal, and the coach",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "are",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "is"
+          ]
+        },
+        {
+          "id": "s5",
+          "text": "proud.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Each' is singular: <b>has received</b>. 'The coach' is singular: <b>is</b>.",
+        "topic": "Agreement",
+        "concept": "Singular subjects",
+        "formula": "Each + singular verb"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 80
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "The committee",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s2",
+          "text": "has made",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s3",
+          "text": "its decision.",
+          "clickable": true,
+          "isError": false
+        }
+      ],
+      "explanation": {
+        "text": "The sentence is correct: 'committee' is treated as one unit, so <b>has made</b> and <b>its</b> agree.",
+        "topic": "Agreement",
+        "concept": "Collective nouns"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 80
+        }
+      }
+    }
+  ]
+}

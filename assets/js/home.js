@@ -4,7 +4,7 @@ import { can, permissionsOf, specialsOf, roleLabel } from "./auth.js";
 import { loadCatalog } from "./catalog.js";
 import { listAttempts } from "./results.js";
 import { icon } from "./icons.js";
-import { newestTests, pickQuotes, greeting } from "./test-engine.js";
+import { newestTests, pickQuotes, greeting, crumb } from "./test-engine.js";
 
 const when = (ts) => new Date(ts).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
 const pctClass = (p) => (p >= 70 ? "pct pct-high" : p >= 50 ? "pct pct-mid" : "pct pct-low");
@@ -29,7 +29,7 @@ export function renderHome({ config, session, roles, go }) {
                 el("span", { className: "mini-icon" }, icon("file", { size: 20 })),
                 el("span", { className: "mini-main" },
                   el("span", { className: "mini-title", textContent: t.meta.title || t.path }),
-                  el("span", { className: "mini-sub", textContent: [`${t.questions.length} questions`, t.meta.author].filter(Boolean).join(" · ") })),
+                  el("span", { className: "mini-sub", textContent: [crumb(t), `${t.questions.length} questions`].filter(Boolean).join(" · ") })),
                 icon("chevron", { size: 20 }))))
           : el("li", { className: "muted", textContent: "No questions yet." }));
       })

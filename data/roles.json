@@ -1,8 +1,10 @@
 {
   "roles": {
-    "admin":   { "label": "Administrator", "permissions": ["overview.view", "test.view", "reports.view", "reports.all", "users.view", "passwords.tool", "settings.view"], "special": ["show_answer", "show_explanation", "timer_disabler"] },
-    "editor":  { "label": "Editor",        "permissions": ["overview.view", "test.view", "reports.view"], "special": ["show_answer", "timer_disabler"] },
-    "viewer":  { "label": "Viewer",        "permissions": ["overview.view", "test.view"], "special": [] },
-    "auditor": { "label": "Auditor",       "permissions": ["overview.view", "users.view"], "special": ["show_explanation"] }
+    "admin": {"label": "Administrator", "permissions": ["overview.view", "test.view", "reports.view", "reports.all", "users.view", "passwords.tool", "settings.view"], "special": ["show_answer", "show_explanation", "timer_disabler"]},
+    "editor": {"label": "Editor", "permissions": ["overview.view", "test.view", "reports.view"], "special": ["show_answer", "timer_disabler"]},
+    "viewer": {"label": "Viewer", "permissions": ["overview.view", "test.view"], "special": []},
+    "auditor": {"label": "Auditor", "permissions": ["overview.view", "users.view"], "special": ["show_explanation"]},
+    "teacher": {"label": "Teacher", "permissions": ["overview.view", "test.view", "reports.view", "reports.all", "users.view"], "special": ["show_answer", "show_explanation", "timer_disabler"]},
+    "student": {"label": "Student", "permissions": ["overview.view", "test.view", "reports.view"], "special": []}
   }
 }

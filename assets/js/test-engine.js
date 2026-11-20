@@ -131,3 +131,45 @@ export function pickQuotes(list, n = 3, date = new Date()) {
 }
 
 export const greeting = (hour) => (hour < 12 ? "Good morning" : hour < 18 ? "Good afternoon" : "Good evening");
+
+// ----- filters: questions/<level>/<course>/<topic>/file.json -----
+export const FACETS = [
+  { key: "level", label: "Level" },
+  { key: "course", label: "Course" },
+  { key: "topic", label: "Topic" },
+];
+const LEVEL_ORDER = ["easy", "intermediate", "advanced"];
+
+/** Level, course and topic come from the folders above the file (all lowercase). */
+export function facetsFromPath(path, base = "questions") {
+  const rel = path.startsWith(`${base}/`) ? path.slice(base.length + 1) : path;
+  const dirs = rel.split("/").slice(0, -1).map((d) => d.toLowerCase());
+  return { level: dirs[0] || "", course: dirs[1] || "", topic: dirs.slice(2).join("/") };
+}
+
+export const facetLabel = (v) => String(v).replace(/[-_]+/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+export const crumb = (t) => [t.level, t.course, t.topic].filter(Boolean).map(facetLabel).join(" · ");
+
+function sortValues(key, values) {
+  const rank = (v) => (key === "level" && LEVEL_ORDER.includes(v) ? LEVEL_ORDER.indexOf(v) : LEVEL_ORDER.length);
+  return [...values].sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
+}
+
+// filters: { level: Set, course: Set, topic: Set }. OR inside a group, AND between groups.
+const matches = (t, filters, skip) => FACETS.every(({ key }) => key === skip || !filters[key]?.size || filters[key].has(t[key]));
+export const applyFilters = (tests, filters) => tests.filter((t) => matches(t, filters));
+export const hasFilters = (filters) => FACETS.some(({ key }) => filters[key]?.size);
+
+/** Options for one group with counts, taking the other groups' selections into account. */
+export function facetOptions(tests, filters, key) {
+  const counts = new Map();
+  for (const t of tests) if (t[key] && matches(t, filters, key)) counts.set(t[key], (counts.get(t[key]) || 0) + 1);
+  for (const v of filters[key] || []) if (!counts.has(v)) counts.set(v, 0); // keep a selected value visible so it can be cleared
+  return sortValues(key, counts.keys()).map((value) => ({ value, count: counts.get(value) }));
+}
+
+/** Catalog order: easy, intermediate, advanced; then course, topic and title. */
+export function compareTests(a, b) {
+  const rank = (t) => (LEVEL_ORDER.includes(t.level) ? LEVEL_ORDER.indexOf(t.level) : LEVEL_ORDER.length);
+  return rank(a) - rank(b) || a.course.localeCompare(b.course) || a.topic.localeCompare(b.topic) || String(a.meta?.title).localeCompare(String(b.meta?.title));
+}

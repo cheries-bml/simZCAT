@@ -29,8 +29,9 @@ Static login + computer-assisted test app for GitHub Pages. Plain HTML, CSS and 
 │   └── config.json  roles.json  users.json
 ├── manifests/
 │   └── questions-manifest.json   List of question files the app reads
-├── questions/                 Your question files, any folder depth
-│   └── sample_question.json
+├── questions/                 Question files: questions/<level>/<course>/<topic>/<file>.json
+│   ├── easy/english/grammar/sample_question.json
+│   └── ...                    (easy | intermediate | advanced, then course, then topic)
 ├── scripts/hash_password.py   Optional: command-line password hasher
 ├── scripts/build_manifest.py  Optional: scans /questions recursively -> manifests/questions-manifest.json
 └── .github/workflows/build-manifest.yml   Optional: rebuilds the manifest on every push
@@ -38,18 +39,21 @@ Static login + computer-assisted test app for GitHub Pages. Plain HTML, CSS and 
 
 ## Adding tests
 
-The app reads `manifests/questions-manifest.json` to know which question files exist:
+Put question files in folders three levels deep:
 
-```json
-{ "files": ["questions/sample_question.json", "questions/english/grammar.json"] }
+```
+questions/<level>/<course>/<topic>/<file>.json
+questions/easy/english/grammar/articles.json
+questions/advanced/math/algebra/quadratics.json
 ```
 
-1. Put a question JSON file anywhere under `questions/` (subfolders are fine; the folder name becomes the card label).
-2. Add its path to the manifest, either way:
-   - **By hand:** edit `manifests/questions-manifest.json`.
-   - **Generated:** run `python3 scripts/build_manifest.py`, which scans `questions/` recursively and rewrites the manifest. The included GitHub Action does the same on every push that touches `questions/`.
+- Level 1 (`easy`, `intermediate`, `advanced`), level 2 (the course, e.g. `english`, `math`) and level 3 (the topic, e.g. `grammar`, `reading`, `algebra`) become the filters on the Test page. Use lowercase folder names; hyphens and underscores display as spaces. Other level, course and topic names work too.
+- The app reads the list of files from `manifests/questions-manifest.json`. Browsers cannot list folders on GitHub Pages, so rebuild the manifest after adding files: run `python3 scripts/build_manifest.py` (it scans `questions/` recursively), or let the GitHub Action do it on every push that touches `questions/`. You can also edit the manifest by hand.
+- Files without `meta` and a `questions` array are ignored, and `meta.config.active: false` hides a test.
 
-Why a manifest? GitHub Pages is static, so a browser cannot list a folder. The browser loads the manifest, then each listed file, all with GET requests. Files without `meta` and a `questions` array are ignored, and `meta.config.active: false` hides a test.
+## Filtering tests
+
+The Test page has chip filters for Level, Course and Topic. Pick several chips in a group to match any of them; chips from different groups combine (for example Easy + Math). The counts and the available topics update as you filter, and "Clear filters" resets everything.
 
 ## Question file format
 
@@ -89,6 +93,8 @@ Demo accounts:
 | editor   | editor123 | editor            |
 | viewer   | viewer123 | viewer            |
 | sam      | sam123    | editor + auditor  |
+| teacher  | teacher123 | teacher          |
+| student  | student123 | student          |
 
 ## Branding, home page and icons
 

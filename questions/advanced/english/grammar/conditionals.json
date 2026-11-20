@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "title": "Conditionals",
+    "description": "Second and third conditionals, and common mistakes.",
+    "info": "Two multiple-choice questions and one error-correction question.",
+    "author": "Cheries",
+    "created": "2026-11-18",
+    "config": {
+      "show_answer": true,
+      "show_explanation": true,
+      "no_timer": false,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct answer.",
+        "question": "If she ___ more time, she would finish the report."
+      },
+      "options": {
+        "A": {
+          "text": "has"
+        },
+        "B": {
+          "text": "had",
+          "correct": true
+        },
+        "C": {
+          "text": "have had"
+        },
+        "D": {
+          "text": "will have"
+        }
+      },
+      "explanation": {
+        "text": "An unreal or unlikely present situation uses <b>if + past simple</b>, then <b>would + base verb</b>.",
+        "topic": "Conditionals",
+        "concept": "Second conditional",
+        "formula": "If + past simple, would + verb",
+        "examples": [
+          "If I <b>won</b> the lottery, I would travel."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct answer.",
+        "question": "Had she known the truth, she ___ differently."
+      },
+      "options": {
+        "A": {
+          "text": "would act"
+        },
+        "B": {
+          "text": "would have acted",
+          "correct": true
+        },
+        "C": {
+          "text": "will act"
+        },
+        "D": {
+          "text": "had acted"
+        }
+      },
+      "explanation": {
+        "text": "'Had she known' is an inverted third conditional (= If she had known). The result clause is <b>would have + past participle</b>.",
+        "topic": "Conditionals",
+        "concept": "Third conditional",
+        "formula": "Had + subject + past participle, would have + past participle"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "If",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "he will arrive",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "he arrives",
+            "arrives"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "early,",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "we can start",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s5",
+          "text": "the meeting on time.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "After 'if' in a real future condition, use the present simple: <b>he arrives</b>, not 'will arrive'.",
+        "topic": "Conditionals",
+        "concept": "First conditional",
+        "formula": "If + present simple, will/can + verb"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 120
+        }
+      }
+    }
+  ]
+}

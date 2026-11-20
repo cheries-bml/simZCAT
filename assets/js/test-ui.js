@@ -3,6 +3,7 @@ import { touchSession, specialsOf } from "./auth.js";
 import { loadCatalog } from "./catalog.js";
 import { openModal, alertModal, confirmModal } from "./modal.js";
 import { icon } from "./icons.js";
+import { renderFilterBar } from "./filters.js";
 import { addAttempt, lastAttempt } from "./results.js";
 import * as E from "./test-engine.js";
 
@@ -47,6 +48,9 @@ async function openTest(root, ctx, path) {
 }
 
 // ================= Catalog =================
+// Selected filters are kept while the page stays open.
+const filters = { level: new Set(), course: new Set(), topic: new Set() };
+
 async function showCatalog(root, ctx) {
   stop();
   mount(root, heading("Tests", "Pick a test to begin."), el("p", { className: "muted", textContent: "Loading tests…" }));
@@ -59,15 +63,32 @@ async function showCatalog(root, ctx) {
     alertModal("Could not load tests", "Please try again later.");
     return;
   }
-  mount(root, heading("Tests", "Pick a test to begin."),
-    tests.length
-      ? el("div", { className: "cards" }, ...tests.map((t) => card(t, lastAttempt(ctx.session.username, t.path), () => openIntro(root, ctx, t))))
-      : el("p", { className: "panel", textContent: "No tests available." }));
+  if (!tests.length) {
+    mount(root, heading("Tests"), el("p", { className: "panel", textContent: "No tests available." }));
+    return;
+  }
+
+  const barSlot = el("div");
+  const gridSlot = el("div");
+  mount(root, heading("Tests", "Pick a test to begin."), barSlot, gridSlot);
+
+  function draw(changed) {
+    const shown = E.applyFilters(tests, filters);
+    mount(barSlot, renderFilterBar({ tests, filters, shown: shown.length, onChange: draw }));
+    mount(gridSlot, shown.length
+      ? el("div", { className: "cards" }, ...shown.map((t) => card(t, lastAttempt(ctx.session.username, t.path), () => openIntro(root, ctx, t))))
+      : el("p", { className: "panel", textContent: "No tests match these filters." }));
+    if (changed) barSlot.querySelector(`[data-facet="${changed.key}"][data-value="${changed.value}"]`)?.focus();
+  }
+  draw();
 }
 
 function card(t, last, onOpen) {
+  const where = [t.course, t.topic].filter(Boolean).map(E.facetLabel).join(" › ");
   return el("button", { className: "card", type: "button", onclick: onOpen },
-    el("span", { className: "card-folder" }, icon("file", { size: 16 }), t.folder || "General"),
+    el("span", { className: "card-tags" },
+      t.level ? el("span", { className: `level-pill lv-${t.level}`, textContent: E.facetLabel(t.level) }) : null,
+      el("span", { className: "card-folder" }, icon("file", { size: 16 }), where || "General")),
     el("span", { className: "card-title", textContent: t.meta.title || t.path }),
     el("span", { className: "card-desc", textContent: t.meta.description || "" }),
     el("span", { className: "card-meta", textContent: [`${t.questions.length} questions`, t.meta.author].filter(Boolean).join(" · ") }),
