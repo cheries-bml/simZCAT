@@ -1,0 +1,1070 @@
+{
+  "meta": {
+    "title": "Advanced English Grammar Test (C1-C2)",
+    "description": "A comprehensive test covering advanced English grammar topics at C1 and C2 levels.",
+    "info": "This test includes 30 questions on inversion, conditionals, cleft sentences, subjunctive, advanced passive, modals, participle clauses, and more.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": false,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct inverted structure.",
+        "passage": "",
+        "question": "Rarely ___ such a remarkable display of artistic talent.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/grammar-test.jpg",
+          "orientation": "landscape"
+        }
+      },
+      "options": {
+        "A": { "text": "I have seen" },
+        "B": { "text": "have I seen", "correct": true },
+        "C": { "text": "I saw" },
+        "D": { "text": "did I saw" }
+      },
+      "explanation": {
+        "text": "Negative adverbials at the beginning of a sentence require subject-auxiliary inversion.",
+        "topic": "Inversion",
+        "concept": "Negative Adverbial Inversion",
+        "formula": "Rarely/Seldom/Never + auxiliary + subject + main verb",
+        "examples": [
+          "Rarely <b>have I seen</b> such beauty.",
+          "Never <b>did he complain</b>."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Select the appropriate mixed conditional form.",
+        "passage": "",
+        "question": "If she had taken the job offer last year, she ___ in Paris right now."
+      },
+      "options": {
+        "A": { "text": "would live", "correct": true },
+        "B": { "text": "would have lived" },
+        "C": { "text": "will live" },
+        "D": { "text": "lived" }
+      },
+      "explanation": {
+        "text": "This is a mixed conditional: past condition (had taken) with a present result (would live).",
+        "topic": "Mixed Conditionals",
+        "concept": "Past Condition + Present Result",
+        "formula": "If + past perfect, would + base verb",
+        "examples": [
+          "If I <b>had studied</b> harder, I <b>would be</b> a doctor now.",
+          "If he <b>hadn't missed</b> the train, he <b>would be</b> here."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Identify the correct cleft sentence structure for emphasis.",
+        "passage": "",
+        "question": "___ was the manager who approved the controversial proposal."
+      },
+      "options": {
+        "A": { "text": "It", "correct": true },
+        "B": { "text": "What" },
+        "C": { "text": "That" },
+        "D": { "text": "There" }
+      },
+      "explanation": {
+        "text": "'It' is used in cleft sentences to emphasize a specific part of the sentence (the manager).",
+        "topic": "Cleft Sentences",
+        "concept": "It-cleft for emphasis",
+        "formula": "It + be + emphasized element + relative clause",
+        "examples": [
+          "<b>It</b> was John who broke the window.",
+          "<b>It</b> is the environment that we must protect."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form for the subjunctive mood.",
+        "passage": "",
+        "question": "The board demanded that the CEO ___ immediately."
+      },
+      "options": {
+        "A": { "text": "resigns" },
+        "B": { "text": "resigned" },
+        "C": { "text": "resign", "correct": true },
+        "D": { "text": "resigning" }
+      },
+      "explanation": {
+        "text": "Verbs of demand, suggest, or recommend are followed by 'that' + subject + base form of the verb (subjunctive).",
+        "topic": "Subjunctive Mood",
+        "concept": "Mandative Subjunctive",
+        "formula": "demand/suggest/insist + that + subject + base verb",
+        "examples": [
+          "I suggest that he <b>be</b> present.",
+          "They insisted that she <b>stay</b>."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Select the correct advanced passive structure.",
+        "passage": "",
+        "question": "The ancient manuscript is believed ___ in the 12th century."
+      },
+      "options": {
+        "A": { "text": "to be written" },
+        "B": { "text": "to have been written", "correct": true },
+        "C": { "text": "having been written" },
+        "D": { "text": "being written" }
+      },
+      "explanation": {
+        "text": "When the action in the passive infinitive happened before the main verb, we use the perfect passive infinitive.",
+        "topic": "Advanced Passive",
+        "concept": "Perfect Passive Infinitive",
+        "formula": "Subject + passive verb + to have been + past participle",
+        "examples": [
+          "He is said <b>to have been</b> wealthy.",
+          "The castle is thought <b>to have been built</b> in 1066."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 6,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modal verb for past deduction.",
+        "passage": "The streets are completely wet.",
+        "question": "It ___ rained heavily during the night."
+      },
+      "options": {
+        "A": { "text": "must have", "correct": true },
+        "B": { "text": "should have" },
+        "C": { "text": "can have" },
+        "D": { "text": "would have" }
+      },
+      "explanation": {
+        "text": "'Must have' + past participle is used for logical deductions about the past with high certainty.",
+        "topic": "Modal Verbs",
+        "concept": "Past Deduction",
+        "formula": "must + have + past participle",
+        "examples": [
+          "She <b>must have forgotten</b> our meeting.",
+          "They <b>must have left</b> already."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Identify the correct participle clause.",
+        "passage": "",
+        "question": "___ the final chapter, she closed the book with a sigh of satisfaction."
+      },
+      "options": {
+        "A": { "text": "Having finished", "correct": true },
+        "B": { "text": "Finishing" },
+        "C": { "text": "Having been finished" },
+        "D": { "text": "Finished" }
+      },
+      "explanation": {
+        "text": "The perfect participle ('having' + past participle) is used to show that one action was completed before another began.",
+        "topic": "Participle Clauses",
+        "concept": "Perfect Participle",
+        "formula": "Having + past participle, + main clause",
+        "examples": [
+          "<b>Having completed</b> the task, he went home.",
+          "<b>Having lived</b> there for years, she knew the city well."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct relative pronoun with a preposition.",
+        "passage": "",
+        "question": "The company for ___ I work has just announced a merger."
+      },
+      "options": {
+        "A": { "text": "who" },
+        "B": { "text": "whom", "correct": true },
+        "C": { "text": "which" },
+        "D": { "text": "that" }
+      },
+      "explanation": {
+        "text": "When a preposition precedes the relative pronoun referring to a person, 'whom' must be used, not 'who' or 'that'.",
+        "topic": "Relative Clauses",
+        "concept": "Preposition + Relative Pronoun",
+        "formula": "preposition + whom (for people) / which (for things)",
+        "examples": [
+          "The man with <b>whom</b> I spoke was very helpful.",
+          "The project on <b>which</b> we are working is complex."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Select the correct article usage (or zero article).",
+        "passage": "",
+        "question": "___ honesty is a virtue that is highly valued in all cultures."
+      },
+      "options": {
+        "A": { "text": "The" },
+        "B": { "text": "An" },
+        "C": { "text": "-", "correct": true },
+        "D": { "text": "A" }
+      },
+      "explanation": {
+        "text": "Abstract nouns used in a general sense take the zero article.",
+        "topic": "Articles",
+        "concept": "Zero Article with Abstract Nouns",
+        "formula": "Zero article + abstract noun (general sense)",
+        "examples": [
+          "<b>Love</b> is blind.",
+          "<b>Knowledge</b> is power."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct dependent preposition.",
+        "passage": "",
+        "question": "The new policy is entirely compatible ___ our company's core values."
+      },
+      "options": {
+        "A": { "text": "to" },
+        "B": { "text": "with", "correct": true },
+        "C": { "text": "for" },
+        "D": { "text": "at" }
+      },
+      "explanation": {
+        "text": "The adjective 'compatible' is followed by the preposition 'with'.",
+        "topic": "Dependent Prepositions",
+        "concept": "Adjective + Preposition",
+        "formula": "compatible + with",
+        "examples": [
+          "The software is <b>compatible with</b> all devices.",
+          "His actions are not <b>compatible with</b> his words."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Select the appropriate linking device for concession.",
+        "passage": "The expedition was successful,",
+        "question": "___ the numerous unforeseen challenges."
+      },
+      "options": {
+        "A": { "text": "although" },
+        "B": { "text": "despite", "correct": true },
+        "C": { "text": "even though" },
+        "D": { "text": "however" }
+      },
+      "explanation": {
+        "text": "'Despite' is a preposition and is followed by a noun phrase, whereas 'although' and 'even though' are conjunctions followed by a clause.",
+        "topic": "Concession",
+        "concept": "Prepositional Concession",
+        "formula": "despite/in spite of + noun phrase",
+        "examples": [
+          "<b>Despite</b> the rain, we went out.",
+          "She passed the exam <b>in spite of</b> not studying."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 12,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct reported speech transformation.",
+        "passage": "Direct: 'I may attend the conference,' he said.",
+        "question": "Reported: He said that he ___ attend the conference."
+      },
+      "options": {
+        "A": { "text": "might", "correct": true },
+        "B": { "text": "may" },
+        "C": { "text": "can" },
+        "D": { "text": "will" }
+      },
+      "explanation": {
+        "text": "In reported speech, 'may' typically changes to 'might' to reflect the backshift in tense.",
+        "topic": "Reported Speech",
+        "concept": "Modal Backshift",
+        "formula": "may -> might",
+        "examples": [
+          "She said she <b>might</b> be late.",
+          "He mentioned that it <b>might</b> rain."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Identify the correct future in the past structure.",
+        "passage": "The committee was to have announced the results yesterday, but the decision",
+        "question": "___ postponed indefinitely."
+      },
+      "options": {
+        "A": { "text": "has been" },
+        "B": { "text": "was", "correct": true },
+        "C": { "text": "had been" },
+        "D": { "text": "would have been" }
+      },
+      "explanation": {
+        "text": "The simple past passive 'was postponed' correctly states the factual event that interrupted the planned future-in-the-past action.",
+        "topic": "Future in the Past",
+        "concept": "Interrupted Future in the Past",
+        "formula": "was/were to have + past participle, but + simple past",
+        "examples": [
+          "He <b>was to have arrived</b> at noon, but his flight <b>was</b> delayed.",
+          "They <b>were to have signed</b> the deal, but the terms <b>changed</b>."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 14,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the sentence with correct ellipsis.",
+        "passage": "",
+        "question": "She can play the piano better than ___ ."
+      },
+      "options": {
+        "A": { "text": "I can", "correct": true },
+        "B": { "text": "me" },
+        "C": { "text": "I do" },
+        "D": { "text": "mine" }
+      },
+      "explanation": {
+        "text": "In formal English, the comparative clause retains the auxiliary verb ('I can') rather than using the object pronoun ('me').",
+        "topic": "Ellipsis",
+        "concept": "Ellipsis in Comparative Clauses",
+        "formula": "than + subject + auxiliary",
+        "examples": [
+          "He is taller than <b>I am</b>.",
+          "She works harder than <b>he does</b>."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Select the correct verb pattern.",
+        "passage": "",
+        "question": "I regret ___ you that your application has been unsuccessful."
+      },
+      "options": {
+        "A": { "text": "telling" },
+        "B": { "text": "to tell", "correct": true },
+        "C": { "text": "tell" },
+        "D": { "text": "having told" }
+      },
+      "explanation": {
+        "text": "'Regret + to infinitive' is used to announce bad news formally. 'Regret + gerund' refers to feeling sorry about a past action.",
+        "topic": "Gerunds and Infinitives",
+        "concept": "Regret + to infinitive vs gerund",
+        "formula": "regret + to + verb (formal announcement)",
+        "examples": [
+          "I <b>regret to inform</b> you that you failed.",
+          "I <b>regret telling</b> him the secret."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 16,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct word to complete the noun clause.",
+        "passage": "",
+        "question": "The question remains ___ we can afford to expand the business at this time."
+      },
+      "options": {
+        "A": { "text": "that" },
+        "B": { "text": "whether", "correct": true },
+        "C": { "text": "if" },
+        "D": { "text": "what" }
+      },
+      "explanation": {
+        "text": "'Whether' is preferred over 'if' in formal contexts, especially after prepositions or when the clause is the subject/complement.",
+        "topic": "Noun Clauses",
+        "concept": "Whether vs If",
+        "formula": "whether + subject + verb (formal)",
+        "examples": [
+          "It depends on <b>whether</b> it rains.",
+          "The issue is <b>whether</b> we can proceed."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Select the correct concessive structure.",
+        "passage": "",
+        "question": "___ I admire his dedication, I cannot support his methods."
+      },
+      "options": {
+        "A": { "text": "Much as", "correct": true },
+        "B": { "text": "As much" },
+        "C": { "text": "Much though" },
+        "D": { "text": "However much" }
+      },
+      "explanation": {
+        "text": "'Much as' is a formal concessive conjunction meaning 'although' or 'even though'.",
+        "topic": "Concession",
+        "concept": "Much as",
+        "formula": "Much as + subject + verb",
+        "examples": [
+          "<b>Much as</b> I like her, I disagree with her.",
+          "<b>Much as</b> we tried, we failed."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 18,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct quantifier.",
+        "passage": "",
+        "question": "There is ___ evidence to suggest that the treatment is effective."
+      },
+      "options": {
+        "A": { "text": "a few" },
+        "B": { "text": "scarcely any", "correct": true },
+        "C": { "text": "many a" },
+        "D": { "text": "several" }
+      },
+      "explanation": {
+        "text": "'Evidence' is an uncountable noun. 'Scarcely any' correctly modifies uncountable nouns to mean 'almost no'.",
+        "topic": "Quantifiers",
+        "concept": "Quantifiers with Uncountable Nouns",
+        "formula": "scarcely any + uncountable noun",
+        "examples": [
+          "There is <b>scarcely any</b> water left.",
+          "He has <b>scarcely any</b> experience."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Identify the correct double comparative structure.",
+        "passage": "",
+        "question": "___ you practice, ___ you will become at playing the instrument."
+      },
+      "options": {
+        "A": { "text": "The more / the better", "correct": true },
+        "B": { "text": "More / better" },
+        "C": { "text": "The most / the best" },
+        "D": { "text": "More / the best" }
+      },
+      "explanation": {
+        "text": "The double comparative structure shows that two things change together.",
+        "topic": "Comparatives",
+        "concept": "Double Comparatives",
+        "formula": "The + comparative, the + comparative",
+        "examples": [
+          "<b>The harder</b> you work, <b>the more</b> you achieve.",
+          "<b>The sooner</b>, <b>the better</b>."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 20,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct phrasal verb.",
+        "passage": "",
+        "question": "The board decided to ___ the meeting until next week due to the CEO's absence."
+      },
+      "options": {
+        "A": { "text": "put off", "correct": true },
+        "B": { "text": "put away" },
+        "C": { "text": "put out" },
+        "D": { "text": "put up" }
+      },
+      "explanation": {
+        "text": "'Put off' means to postpone or delay an event.",
+        "topic": "Phrasal Verbs",
+        "concept": "Phrasal Verbs for Postponing",
+        "formula": "put off + noun/gerund",
+        "examples": [
+          "We had to <b>put off</b> the wedding.",
+          "Don't <b>put off</b> studying until the last minute."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Select the correct verb form after 'wish'.",
+        "passage": "",
+        "question": "I wish I ___ harder for the exam last semester."
+      },
+      "options": {
+        "A": { "text": "studied" },
+        "B": { "text": "had studied", "correct": true },
+        "C": { "text": "would study" },
+        "D": { "text": "have studied" }
+      },
+      "explanation": {
+        "text": "To express regret about a past situation, 'wish' is followed by the past perfect tense.",
+        "topic": "Wish and If Only",
+        "concept": "Past Regret",
+        "formula": "wish + past perfect",
+        "examples": [
+          "I wish I <b>had known</b> earlier.",
+          "If only she <b>had listened</b> to my advice."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 22,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form.",
+        "passage": "",
+        "question": "It is high time we ___ a decision on this matter."
+      },
+      "options": {
+        "A": { "text": "make" },
+        "B": { "text": "made", "correct": true },
+        "C": { "text": "have made" },
+        "D": { "text": "will make" }
+      },
+      "explanation": {
+        "text": "The expression 'It is high time' is followed by the past simple tense to indicate that something should have been done already.",
+        "topic": "Subjunctive / Fixed Expressions",
+        "concept": "It's high time + past simple",
+        "formula": "It's high time + subject + past simple",
+        "examples": [
+          "It's high time you <b>went</b> to bed.",
+          "It's high time we <b>left</b>."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Identify the correct inverted structure with 'so'.",
+        "passage": "",
+        "question": "So exhausted ___ that he fell asleep at his desk."
+      },
+      "options": {
+        "A": { "text": "he was" },
+        "B": { "text": "was he", "correct": true },
+        "C": { "text": "he had been" },
+        "D": { "text": "did he be" }
+      },
+      "explanation": {
+        "text": "When 'so + adjective' is fronted for emphasis, it triggers subject-auxiliary inversion.",
+        "topic": "Inversion",
+        "concept": "So + Adjective Inversion",
+        "formula": "So + adjective + auxiliary + subject + that",
+        "examples": [
+          "So <b>beautiful was</b> the view that we stayed.",
+          "So <b>quickly did</b> he run that he won."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 24,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct concessive structure.",
+        "passage": "",
+        "question": "___ he was, he managed to finish the marathon."
+      },
+      "options": {
+        "A": { "text": "Tired as", "correct": true },
+        "B": { "text": "As tired" },
+        "C": { "text": "Though tired" },
+        "D": { "text": "Despite tired" }
+      },
+      "explanation": {
+        "text": "'Adjective + as/though + subject + verb' is a formal concessive structure meaning 'although he was tired'.",
+        "topic": "Concession",
+        "concept": "Adjective + as/though",
+        "formula": "Adjective + as/though + subject + verb",
+        "examples": [
+          "<b>Young as</b> she is, she is very talented.",
+          "<b>Hard though</b> it was, we succeeded."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Select the correct tense to emphasize duration before a past event.",
+        "passage": "By the time the rescue team arrived, the climbers",
+        "question": "___ for three days."
+      },
+      "options": {
+        "A": { "text": "had been stranded", "correct": true },
+        "B": { "text": "were stranded" },
+        "C": { "text": "have been stranded" },
+        "D": { "text": "stranded" }
+      },
+      "explanation": {
+        "text": "The past perfect continuous (or passive equivalent) emphasizes the duration of an action leading up to another past event.",
+        "topic": "Advanced Tenses",
+        "concept": "Past Perfect Continuous/Passive",
+        "formula": "had been + past participle (passive) / had been + verb-ing",
+        "examples": [
+          "They <b>had been waiting</b> for hours.",
+          "The house <b>had been abandoned</b> for years."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 26,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct causative structure.",
+        "passage": "",
+        "question": "I need to get this document ___ before the meeting starts."
+      },
+      "options": {
+        "A": { "text": "translate" },
+        "B": { "text": "translating" },
+        "C": { "text": "translated", "correct": true },
+        "D": { "text": "to translate" }
+      },
+      "explanation": {
+        "text": "The causative 'get/have + object + past participle' means to arrange for someone else to do something.",
+        "topic": "Causative Forms",
+        "concept": "Get/Have something done",
+        "formula": "get/have + object + past participle",
+        "examples": [
+          "I must <b>have my hair cut</b>.",
+          "She <b>got her car repaired</b>."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Identify the sentence with correct object fronting for emphasis.",
+        "passage": "",
+        "question": "___"
+      },
+      "options": {
+        "A": { "text": "This book I highly recommend.", "correct": true },
+        "B": { "text": "Highly recommend I this book." },
+        "C": { "text": "I this book highly recommend." },
+        "D": { "text": "Recommend highly this book I." }
+      },
+      "explanation": {
+        "text": "Fronting the object to the beginning of the sentence adds emphasis and is grammatically sound in formal or literary English.",
+        "topic": "Fronting",
+        "concept": "Object Fronting",
+        "formula": "Object + subject + verb",
+        "examples": [
+          "<b>That movie</b> I absolutely loved.",
+          "<b>Him</b> I do not trust."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 28,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the appropriate discourse marker.",
+        "passage": "The project is over budget.",
+        "question": "___, we must continue to support it to ensure its success."
+      },
+      "options": {
+        "A": { "text": "Be that as it may", "correct": true },
+        "B": { "text": "Inasmuch as" },
+        "C": { "text": "Forasmuch" },
+        "D": { "text": "In light of" }
+      },
+      "explanation": {
+        "text": "'Be that as it may' is a formal discourse marker used to concede a point but state that it does not change the main argument.",
+        "topic": "Discourse Markers",
+        "concept": "Concessive Discourse Markers",
+        "formula": "Be that as it may, + main clause",
+        "examples": [
+          "It's expensive. <b>Be that as it may</b>, we need it.",
+          "<b>Be that as it may</b>, the rules must be followed."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Select the sentence that best uses nominalization for a formal tone.",
+        "passage": "",
+        "question": "___"
+      },
+      "options": {
+        "A": { "text": "The committee decided to investigate the matter, which caused a delay." },
+        "B": { "text": "The committee's decision to investigate the matter caused a delay.", "correct": true },
+        "C": { "text": "Because the committee decided to investigate, there was a delay." },
+        "D": { "text": "The committee decided on investigating, making a delay happen." }
+      },
+      "explanation": {
+        "text": "Nominalization (turning verbs/adjectives into nouns) creates a more formal, concise, and academic tone.",
+        "topic": "Nominalization",
+        "concept": "Verb to Noun Transformation",
+        "formula": "Subject's + nominalized verb + object",
+        "examples": [
+          "The <b>implementation</b> of the policy was swift.",
+          "His <b>refusal</b> to cooperate was noted."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 30,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct fixed expression with subjunctive.",
+        "passage": "We will proceed with the launch,",
+        "question": "___ the potential risks involved."
+      },
+      "options": {
+        "A": { "text": "come what may", "correct": true },
+        "B": { "text": "whatever comes" },
+        "C": { "text": "no matter what comes" },
+        "D": { "text": "however it comes" }
+      },
+      "explanation": {
+        "text": "'Come what may' is a fixed subjunctive expression meaning 'whatever happens'.",
+        "topic": "Fixed Expressions",
+        "concept": "Subjunctive in Idioms",
+        "formula": "come what may",
+        "examples": [
+          "We will stand by our decision, <b>come what may</b>.",
+          "He will finish the race, <b>come what may</b>."
+        ]
+      },
+      "config": {
+        "show_answer": false,
+        "show_explanation": false,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    }
+  ]
+}
