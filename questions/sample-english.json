@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Sample English Test",
-    "description": "Sample questions \u2014 Simple Present & Correction",
-    "info": "Demo file. Add files in /questions/ and list them in questions/index.json",
-    "author": "CAT Learning",
+    "title": "Test title",
+    "description": "Question Description",
+    "info": "Additional information about the test.",
+    "author": "Author Name",
     "config": {
       "show_answer": false,
       "show_explanation": false,
-      "no_timer": false,
+      "no_timer": true,
       "active": true
     }
   },
@@ -18,7 +18,7 @@
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
         "image": {
-          "url": "",
+          "url": "https://via.placeholder.com/400x200/sample-image.jpg",
           "orientation": "landscape"
         },
         "passage": "She is a fitness enthusiast and maintains a strict routine. <br>Every morning, she wakes up early and heads to the gym for her workout session. She <b>believes</b> that regular exercise is essential for a healthy lifestyle.",
@@ -55,8 +55,8 @@
         ]
       },
       "config": {
-        "show_answer": false,
-        "show_explanation": false,
+        "show_answer": true,
+        "show_explanation": true,
         "level": 1,
         "time_in_seconds": {
           "fast": 15,
@@ -141,8 +141,8 @@
         ]
       },
       "config": {
-        "show_answer": false,
-        "show_explanation": false,
+        "show_answer": true,
+        "show_explanation": true,
         "level": 4,
         "time_in_seconds": {
           "fast": 15,

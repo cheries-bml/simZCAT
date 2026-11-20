@@ -1,108 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CAT Learning — Test • Learn • Teach</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CAT Learning — Computer Assisted Test</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
 <!-- LOGIN -->
 <div id="loginView" class="login-wrap">
   <div class="login-card">
-    <div class="login-brand"><span class="material-symbols-outlined logo-ic">school</span><div><h1>CAT Learning</h1><p>Test • Learn • Teach</p></div></div>
-    <h2>Welcome back</h2><p class="muted">Sign in to continue.</p>
-    <form id="loginForm">
-      <label>Username<input id="username" autocomplete="username" placeholder="e.g. student" required></label>
-      <label>Password<input id="password" type="password" autocomplete="current-password" placeholder="••••••••" required></label>
+    <div class="login-brand">
+      <div class="logo"><span class="material-symbols-outlined">school</span></div>
+      <h1>CAT Learning</h1>
+      <p>Computer Assisted Test</p>
+    </div>
+    <form id="loginForm" autocomplete="on">
+      <label class="field-label" for="username">Username</label>
+      <div class="input"><span class="material-symbols-outlined">person</span><input id="username" type="text" placeholder="e.g. student" autocomplete="username" required /></div>
+      <label class="field-label" for="password">Password</label>
+      <div class="input"><span class="material-symbols-outlined">lock</span><input id="password" type="password" placeholder="Enter password" autocomplete="current-password" required /><button type="button" id="togglePass" class="icon-btn" aria-label="Show password"><span class="material-symbols-outlined">visibility</span></button></div>
       <div id="loginError" class="alert error hidden"></div>
-      <button class="btn primary full" type="submit"><span class="material-symbols-outlined">login</span> Sign in</button>
+      <button type="submit" id="loginBtn" class="btn primary block">Sign in <span class="material-symbols-outlined">arrow_forward</span></button>
+      <p class="login-hint">Demo accounts — ask your teacher for login.<br><span class="muted">All data loads via GET from JSON files. No database.</span></p>
     </form>
-    <p class="login-foot muted">Static site • JSON only • GET requests only</p>
+    <div class="login-demo">
+      <button type="button" class="chip" data-demo="student">Student demo</button>
+      <button type="button" class="chip" data-demo="teacher">Teacher demo</button>
+      <button type="button" class="chip" data-demo="super">Super demo</button>
+    </div>
   </div>
+  <p class="login-foot">Static site • GitHub Pages • Updates via GitHub push</p>
 </div>
 
 <!-- APP -->
-<div id="appView" class="hidden">
+<div id="appView" class="app hidden">
   <aside class="sidebar">
-    <div class="brand"><span class="material-symbols-outlined logo-ic">school</span><div><strong>CAT Learning</strong><span id="userRoleLabel">Student</span></div></div>
-    <nav id="mainNav">
-      <button data-view="dashboard" class="nav-btn active"><span class="material-symbols-outlined">dashboard</span> Dashboard</button>
-      <button data-view="tests" class="nav-btn" data-perm="take_test"><span class="material-symbols-outlined">quiz</span> Take Test</button>
-      <button data-view="teach" class="nav-btn" data-perm="teach"><span class="material-symbols-outlined">present_to_all</span> Teach</button>
-      <button data-view="materials" class="nav-btn" data-perm="view_materials"><span class="material-symbols-outlined">folder_open</span> Materials</button>
-      <button data-view="generator" class="nav-btn" data-perm="generate_test"><span class="material-symbols-outlined">tune</span> Generate Test</button>
-      <button data-view="system" class="nav-btn" data-perm="view_system"><span class="material-symbols-outlined">settings</span> System</button>
-    </nav>
-    <div class="sidebar-foot">
-      <div class="user-mini"><span class="avatar" id="avatarLetter">S</span><div><strong id="userNameLabel">—</strong><span id="userNameSub">—</span></div></div>
-      <button id="logoutBtn" class="btn ghost small full"><span class="material-symbols-outlined">logout</span> Log out</button>
+    <div class="side-brand">
+      <div class="logo small"><span class="material-symbols-outlined">school</span></div>
+      <div><strong>CAT Learning</strong><span>Computer Assisted Test</span></div>
+    </div>
+    <nav id="nav" class="nav"></nav>
+    <div class="side-user">
+      <div class="avatar" id="userAvatar">S</div>
+      <div class="u-meta"><strong id="userName">User</strong><span id="userRole">role</span></div>
+      <button id="logoutBtn" class="icon-btn" title="Sign out"><span class="material-symbols-outlined">logout</span></button>
     </div>
   </aside>
 
-  <main class="main">
-    <header class="topbar"><button id="menuBtn" class="icon-btn"><span class="material-symbols-outlined">menu</span></button><div><h2 id="pageTitle">Dashboard</h2><p id="pageSub" class="muted">Overview</p></div><span class="pill" id="statusPill">● Ready</span></header>
-
-    <!-- DASHBOARD -->
-    <section id="view-dashboard" class="view">
-      <div class="hero"><div><h3>Hello, <span id="helloName">—</span> 👋</h3><p>Pick a test, review with your teacher, or open materials.</p><div class="hero-actions"><button class="btn primary" data-goto="tests"><span class="material-symbols-outlined">play_arrow</span> Start a test</button><button class="btn" data-goto="materials"><span class="material-symbols-outlined">folder_open</span> Materials</button></div></div><div class="hero-stat"><span class="big" id="statTests">—</span><span>Test files</span></div></div>
-      <div class="grid3">
-        <div class="card"><span class="material-symbols-outlined ic blue">quiz</span><h4>Computer Assisted Test</h4><p>Timed questions, instant scoring.</p><button class="btn small" data-goto="tests">Open →</button></div>
-        <div class="card"><span class="material-symbols-outlined ic green">present_to_all</span><h4>Teaching Mode</h4><p>Discuss each question, reveal answer & explanation.</p><button class="btn small" data-goto="teach">Open →</button></div>
-        <div class="card"><span class="material-symbols-outlined ic amber">tune</span><h4>Generate Test</h4><p>Choose difficulty + number of questions.</p><button class="btn small" data-goto="generator">Open →</button></div>
+  <div class="main">
+    <header class="topbar">
+      <button id="menuBtn" class="icon-btn only-mobile"><span class="material-symbols-outlined">menu</span></button>
+      <div><h2 id="pageTitle">Dashboard</h2><p id="pageSub" class="muted">Welcome back</p></div>
+      <div class="top-actions">
+        <span class="pill" id="appStatus"><span class="dot"></span> Ready</span>
+        <button class="btn ghost" id="refreshBtn"><span class="material-symbols-outlined">refresh</span> Reload data</button>
       </div>
-      <div class="card"><h4>Available tests</h4><div id="dashTests" class="list"></div></div>
-    </section>
-
-    <!-- TESTS -->
-    <section id="view-tests" class="view hidden">
-      <div class="card"><h4>Choose a test</h4><p class="muted">All files come from <code>/questions/</code> via <code>questions/index.json</code>.</p><div id="testList" class="list"></div></div>
-      <div id="testRunner" class="hidden">
-        <div class="runner-head"><div><h3 id="runnerTitle">Test</h3><p class="muted" id="runnerMeta">—</p></div><div class="timer"><span class="material-symbols-outlined">timer</span><strong id="timerText">--:--</strong></div></div>
-        <div class="progress"><div id="progressBar"></div></div><p class="muted small" id="progressText">Question 1 of 1</p>
-        <div id="questionBox" class="card"></div>
-        <div class="runner-actions"><button id="prevBtn" class="btn">← Previous</button><span id="qDots" class="dots"></span><button id="nextBtn" class="btn">Next →</button><button id="finishBtn" class="btn primary"><span class="material-symbols-outlined">check</span> Finish</button></div>
-      </div>
-      <div id="resultBox" class="card hidden"></div>
-    </section>
-
-    <!-- TEACH -->
-    <section id="view-teach" class="view hidden">
-      <div class="card"><h4>Teaching Mode</h4><p class="muted">Teacher discusses one question at a time. Answers stay hidden until revealed.</p><label>Test file<select id="teachFile"></select></label><button id="teachLoad" class="btn primary"><span class="material-symbols-outlined">play_arrow</span> Load for teaching</button></div>
-      <div id="teachBox" class="card hidden"></div>
-      <div id="teachNav" class="runner-actions hidden"><button id="teachPrev" class="btn">← Previous</button><span id="teachCount" class="muted small"></span><button id="teachNext" class="btn">Next →</button></div>
-    </section>
-
-    <!-- MATERIALS -->
-    <section id="view-materials" class="view hidden">
-      <div class="card"><h4>Teacher Materials</h4><p class="muted">PDF, PNG, JPG, TXT, MD — files in <code>/materials/</code>, listed in <code>data/materials.json</code>.</p><div class="filters"><input id="matSearch" placeholder="Search materials…"><select id="matType"><option value="">All types</option><option value="pdf">PDF</option><option value="png">PNG</option><option value="jpg">JPG</option><option value="txt">TXT</option><option value="md">MD</option></select></div><div id="matList" class="grid2"></div></div>
-      <div id="matViewer" class="card hidden"></div>
-    </section>
-
-    <!-- GENERATOR -->
-    <section id="view-generator" class="view hidden">
-      <div class="card"><h4>Generate Test</h4><p class="muted">Builds a test from <code>/questions/*.json</code> — no database, no POST.</p>
-        <div class="form-grid">
-          <label>Source<select id="genSource"><option value="__all__">All files</option></select></label>
-          <label>Difficulty<select id="genLevel"><option value="easy">Easy (Level 1–2)</option><option value="intermediate">Intermediate (Level 3)</option><option value="advanced">Advanced (Level 4–5)</option><option value="mixed">Mixed — all levels</option></select></label>
-          <label>Number of questions<input id="genCount" type="number" min="1" max="100" value="10"></label>
-          <label>Timer pace<select id="genPace"><option value="normal">Normal</option><option value="fast">Fast</option><option value="easy">Easy (more time)</option></select></label>
-        </div>
-        <div class="row"><button id="genBtn" class="btn primary"><span class="material-symbols-outlined">auto_awesome</span> Generate</button><span id="genInfo" class="muted small"></span></div>
-      </div>
-      <div id="genResult" class="card hidden"></div>
-    </section>
-
-    <!-- SYSTEM (super only) -->
-    <section id="view-system" class="view hidden">
-      <div class="card"><h4>System</h4><p class="muted">Super only. No passwords or hashes shown here.</p><div id="sysInfo" class="sys-grid"></div></div>
-      <div class="card"><h4>Data files</h4><p class="muted">Edit JSON in GitHub / locally, then commit & push. App reads via GET only.</p><div id="sysFiles" class="list"></div><div class="row"><button id="dlConfig" class="btn small">Download config.json</button><button id="dlRoles" class="btn small">Download roles.json</button><button id="dlUsersSafe" class="btn small">Download users (no hashes)</button></div></div>
-      <div class="card"><h4>How to update</h4><ol class="steps"><li>Edit <code>data/*.json</code>, <code>questions/*.json</code> or add files to <code>materials/</code></li><li>Commit & push to <code>main</code></li><li>GitHub Pages redeploys automatically</li></ol></div>
-    </section>
-  </main>
+    </header>
+    <main id="view" class="view"></main>
+    <footer class="foot">CAT Learning • JSON only • GET only • Edit data by pushing to GitHub</footer>
+  </div>
 </div>
+
+<script src="js/utils.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/cat.js"></script>
+<script src="js/teach.js"></script>
+<script src="js/materials.js"></script>
+<script src="js/generator.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

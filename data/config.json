@@ -1,19 +1,23 @@
 {
   "appName": "CAT Learning",
-  "tagline": "Test \u2022 Learn \u2022 Teach",
-  "version": "1.0.0",
-  "requireLogin": true,
-  "timer": {
-    "defaultPace": "normal"
+  "tagline": "Computer Assisted Test",
+  "githubRepoUrl": "https://github.com/YOUR-USERNAME/YOUR-REPO",
+  "githubPagesUrl": "https://YOUR-USERNAME.github.io/YOUR-REPO/",
+  "dataFiles": [
+    "data/users.json",
+    "data/roles.json",
+    "data/config.json",
+    "questions/index.json",
+    "materials/index.json"
+  ],
+  "features": {
+    "cat": true,
+    "teach": true,
+    "materials": true,
+    "generator": true
   },
-  "github": {
-    "branch": "main",
-    "dataFolder": "data/",
-    "questionsFolder": "questions/",
-    "materialsFolder": "materials/"
-  },
-  "ui": {
-    "theme": "light",
-    "accent": "#4F46E5"
+  "defaults": {
+    "questionsPerTest": 10,
+    "timerMode": "normal"
   }
 }

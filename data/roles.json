@@ -1,34 +1,33 @@
 {
-  "roles": [
-    {
-      "id": "super",
-      "label": "Super Admin",
+  "roles": {
+    "super": {
+      "label": "Super",
       "permissions": [
+        "dashboard",
         "take_test",
         "teach",
-        "view_materials",
-        "generate_test",
-        "view_system",
+        "materials",
+        "generate",
         "manage_data"
       ]
     },
-    {
-      "id": "teacher",
+    "teacher": {
       "label": "Teacher",
       "permissions": [
+        "dashboard",
         "take_test",
         "teach",
-        "view_materials",
-        "generate_test"
+        "materials",
+        "generate"
       ]
     },
-    {
-      "id": "student",
+    "student": {
       "label": "Student",
       "permissions": [
+        "dashboard",
         "take_test",
-        "view_materials"
+        "materials"
       ]
     }
-  ]
+  }
 }
