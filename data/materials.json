@@ -1,1 +1,40 @@
-[{"file":"materials/sample-notes.md","id":"m1","subject":"Umum","title":"Catatan - Persiapan CAT","type":"md"},{"file":"materials/sample-notes.txt","id":"m2","subject":"Umum","title":"Catatan Teks - Tips Belajar","type":"txt"}]
+{
+  "materials": [
+    {
+      "id": "m1",
+      "title": "Simple Present Tense \u2014 Notes",
+      "file": "materials/simple-present.md",
+      "type": "md",
+      "subject": "English",
+      "forRole": [
+        "student",
+        "teacher",
+        "super"
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Sample Handout (PDF)",
+      "file": "materials/sample.pdf",
+      "type": "pdf",
+      "subject": "English",
+      "forRole": [
+        "student",
+        "teacher",
+        "super"
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Class Diagram (Image)",
+      "file": "materials/sample.jpg",
+      "type": "jpg",
+      "subject": "English",
+      "forRole": [
+        "student",
+        "teacher",
+        "super"
+      ]
+    }
+  ]
+}

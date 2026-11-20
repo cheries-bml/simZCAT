@@ -1,1 +1,34 @@
-{"student":{"label":"Student","permissions":["view_dashboard","take_test","view_materials"]},"super":{"label":"Super Admin","permissions":["view_dashboard","take_test","teach","view_materials","generate_test","view_admin"]},"teacher":{"label":"Teacher","permissions":["view_dashboard","take_test","teach","view_materials","generate_test"]}}
+{
+  "roles": [
+    {
+      "id": "super",
+      "label": "Super Admin",
+      "permissions": [
+        "take_test",
+        "teach",
+        "view_materials",
+        "generate_test",
+        "view_system",
+        "manage_data"
+      ]
+    },
+    {
+      "id": "teacher",
+      "label": "Teacher",
+      "permissions": [
+        "take_test",
+        "teach",
+        "view_materials",
+        "generate_test"
+      ]
+    },
+    {
+      "id": "student",
+      "label": "Student",
+      "permissions": [
+        "take_test",
+        "view_materials"
+      ]
+    }
+  ]
+}

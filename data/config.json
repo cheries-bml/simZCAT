@@ -1,1 +1,19 @@
-{"allowReviewAfterTest":true,"appName":"CAT Learning","materialsPath":"materials/","questionFiles":["questions/sample.json"],"questionsPath":"questions/","school":"Sekolah Demo","secondsPerQuestion":60}
+{
+  "appName": "CAT Learning",
+  "tagline": "Test \u2022 Learn \u2022 Teach",
+  "version": "1.0.0",
+  "requireLogin": true,
+  "timer": {
+    "defaultPace": "normal"
+  },
+  "github": {
+    "branch": "main",
+    "dataFolder": "data/",
+    "questionsFolder": "questions/",
+    "materialsFolder": "materials/"
+  },
+  "ui": {
+    "theme": "light",
+    "accent": "#4F46E5"
+  }
+}
