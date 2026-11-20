@@ -1,24 +1,83 @@
 {
-  "appName": "CAT Learn",
-  "tagline": "Computer Assisted Test \u2022 Teaching \u2022 Materials",
+  "appName": "CAT Learning",
+  "tagline": "Computer Assisted Test",
   "version": "1.0.0",
-  "sessionTimeoutMinutes": 480,
-  "passScorePercent": 60,
-  "questionsFiles": [
-    {
-      "id": "sample-test",
-      "file": "questions/sample-test.json",
-      "label": "Sample Test \u2014 English"
-    }
-  ],
+  "sessionKey": "cat_session",
   "features": {
-    "cat": true,
-    "teaching": true,
+    "login": true,
+    "test": true,
+    "teachingPeek": true,
     "materials": true,
-    "admin": true
+    "adminVerbose": true
   },
-  "ui": {
-    "theme": "light",
-    "accent": "#4F46E5"
-  }
+  "test": {
+    "difficulties": [
+      {
+        "id": "all",
+        "label": "All Levels",
+        "levels": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "easy",
+        "label": "Easy",
+        "levels": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "intermediate",
+        "label": "Intermediate",
+        "levels": [
+          3
+        ]
+      },
+      {
+        "id": "advanced",
+        "label": "Advanced",
+        "levels": [
+          4,
+          5
+        ]
+      }
+    ],
+    "defaultCount": 10,
+    "maxCount": 50,
+    "timerModes": [
+      {
+        "id": "normal",
+        "label": "Normal"
+      },
+      {
+        "id": "fast",
+        "label": "Fast"
+      },
+      {
+        "id": "easy",
+        "label": "Relaxed"
+      },
+      {
+        "id": "none",
+        "label": "No Timer"
+      }
+    ]
+  },
+  "verbosePages": [
+    "admin"
+  ],
+  "allowedMaterialTypes": [
+    "pdf",
+    "png",
+    "jpg",
+    "jpeg",
+    "txt",
+    "md"
+  ],
+  "notes": "Static site. All reads are GET. Updates are made by editing JSON files and pushing to GitHub."
 }

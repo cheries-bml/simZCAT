@@ -18,7 +18,7 @@
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
         "image": {
-          "url": "https://picsum.photos/800/400",
+          "url": "https://via.placeholder.com/400x200/sample-image.jpg",
           "orientation": "landscape"
         },
         "passage": "She is a fitness enthusiast and maintains a strict routine. <br>Every morning, she wakes up early and heads to the gym for her workout session. She <b>believes</b> that regular exercise is essential for a healthy lifestyle.",

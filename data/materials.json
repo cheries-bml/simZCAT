@@ -1,16 +1,34 @@
 [
   {
-    "id": "m1",
-    "title": "Sample Notes \u2014 Simple Present",
-    "file": "materials/sample-notes.md",
+    "id": "guide",
+    "title": "Teacher Guide",
+    "file": "guide.md",
     "type": "md",
-    "description": "Quick revision notes for Simple Present Tense."
+    "description": "How to run a CAT session and teaching mode.",
+    "subject": "General"
   },
   {
-    "id": "m2",
-    "title": "Sample Notes \u2014 Plain Text",
-    "file": "materials/sample-notes.txt",
+    "id": "notes",
+    "title": "Study Notes",
+    "file": "notes.txt",
     "type": "txt",
-    "description": "Plain-text handout for classroom discussion."
+    "description": "Short notes for students.",
+    "subject": "English"
+  },
+  {
+    "id": "sample-image",
+    "title": "Sample Image",
+    "file": "sample.jpg",
+    "type": "jpg",
+    "description": "Example image material.",
+    "subject": "General"
+  },
+  {
+    "id": "sample-pdf",
+    "title": "Sample PDF",
+    "file": "sample.pdf",
+    "type": "pdf",
+    "description": "Example PDF material.",
+    "subject": "General"
   }
 ]

@@ -1,36 +1,50 @@
-[
-  {
-    "id": "super",
+{
+  "super": {
     "label": "Super",
-    "description": "Full access. Can view Admin and all teaching content.",
-    "permissions": [
-      "cat.take",
-      "cat.review",
-      "teach.view",
-      "teach.manage",
-      "materials.view",
-      "materials.manage",
-      "admin.view"
-    ]
+    "description": "Full access. Only role that can open verbose / sensitive pages.",
+    "permissions": {
+      "canTakeTest": true,
+      "canTeach": true,
+      "canPeekAnswer": true,
+      "canPeekExplanation": true,
+      "canViewMaterials": true,
+      "canManageMaterials": false,
+      "canViewVerbose": true,
+      "canViewAdmin": true,
+      "canViewUsers": true,
+      "canViewConfig": true
+    }
   },
-  {
-    "id": "teacher",
+  "teacher": {
     "label": "Teacher",
-    "description": "Can run CAT and Teaching mode, view materials.",
-    "permissions": [
-      "cat.take",
-      "cat.review",
-      "teach.view",
-      "materials.view"
-    ]
+    "description": "Can teach on the same test page. Can peek answers and explanations.",
+    "permissions": {
+      "canTakeTest": true,
+      "canTeach": true,
+      "canPeekAnswer": true,
+      "canPeekExplanation": true,
+      "canViewMaterials": true,
+      "canManageMaterials": false,
+      "canViewVerbose": false,
+      "canViewAdmin": false,
+      "canViewUsers": false,
+      "canViewConfig": false
+    }
   },
-  {
-    "id": "student",
+  "student": {
     "label": "Student",
-    "description": "Can take CAT tests and view materials.",
-    "permissions": [
-      "cat.take",
-      "materials.view"
-    ]
+    "description": "Can take tests and view materials. Cannot peek answers.",
+    "permissions": {
+      "canTakeTest": true,
+      "canTeach": false,
+      "canPeekAnswer": false,
+      "canPeekExplanation": false,
+      "canViewMaterials": true,
+      "canManageMaterials": false,
+      "canViewVerbose": false,
+      "canViewAdmin": false,
+      "canViewUsers": false,
+      "canViewConfig": false
+    }
   }
-]
+}
