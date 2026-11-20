@@ -1,0 +1,9 @@
+CAT Learning - Instructions
+
+1. Login as student, teacher or super.
+2. CAT Test: choose a question file, difficulty and count, then start.
+3. Teaching: teacher opens the same questions and reveals answers + explanations.
+4. Materials: open PDF / image / TXT / MD files.
+5. Generator: create a new test set and download it as JSON.
+
+All data is loaded with GET from JSON files. To update data, edit the JSON / MD files and push to GitHub.

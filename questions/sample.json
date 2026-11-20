@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "title": "Sample - General Knowledge",
+    "subject": "General",
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "topic": "Math",
+      "difficulty": "easy",
+      "question": "What is 7 + 8?",
+      "options": [
+        "13",
+        "15",
+        "16",
+        "14"
+      ],
+      "answerIndex": 1,
+      "explanation": "7 + 8 = 15."
+    },
+    {
+      "id": "Q02",
+      "topic": "Science",
+      "difficulty": "easy",
+      "question": "Which planet is known as the Red Planet?",
+      "options": [
+        "Venus",
+        "Jupiter",
+        "Mars",
+        "Saturn"
+      ],
+      "answerIndex": 2,
+      "explanation": "Mars appears red due to iron oxide on its surface."
+    },
+    {
+      "id": "Q03",
+      "topic": "English",
+      "difficulty": "easy",
+      "question": "Choose the correct plural of 'child'.",
+      "options": [
+        "Childs",
+        "Children",
+        "Childes",
+        "Childrens"
+      ],
+      "answerIndex": 1,
+      "explanation": "The irregular plural of child is children."
+    },
+    {
+      "id": "Q04",
+      "topic": "Math",
+      "difficulty": "intermediate",
+      "question": "What is 15% of 200?",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "35"
+      ],
+      "answerIndex": 2,
+      "explanation": "15% of 200 = 0.15 x 200 = 30."
+    },
+    {
+      "id": "Q05",
+      "topic": "Science",
+      "difficulty": "intermediate",
+      "question": "What is the chemical symbol for water?",
+      "options": [
+        "CO2",
+        "O2",
+        "H2O",
+        "NaCl"
+      ],
+      "answerIndex": 2,
+      "explanation": "Water is H2O: two hydrogen, one oxygen."
+    },
+    {
+      "id": "Q06",
+      "topic": "Geography",
+      "difficulty": "intermediate",
+      "question": "What is the capital of Japan?",
+      "options": [
+        "Seoul",
+        "Beijing",
+        "Bangkok",
+        "Tokyo"
+      ],
+      "answerIndex": 3,
+      "explanation": "Tokyo is the capital of Japan."
+    },
+    {
+      "id": "Q07",
+      "topic": "Math",
+      "difficulty": "advanced",
+      "question": "Solve for x: 2x + 6 = 18",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "12"
+      ],
+      "answerIndex": 1,
+      "explanation": "2x = 12, so x = 6."
+    },
+    {
+      "id": "Q08",
+      "topic": "Science",
+      "difficulty": "advanced",
+      "question": "Which gas is most abundant in Earth's atmosphere?",
+      "options": [
+        "Oxygen",
+        "Carbon Dioxide",
+        "Nitrogen",
+        "Hydrogen"
+      ],
+      "answerIndex": 2,
+      "explanation": "Nitrogen is about 78% of the atmosphere."
+    },
+    {
+      "id": "Q09",
+      "topic": "Logic",
+      "difficulty": "advanced",
+      "question": "Next number: 2, 6, 12, 20, 30, ?",
+      "options": [
+        "40",
+        "42",
+        "44",
+        "36"
+      ],
+      "answerIndex": 1,
+      "explanation": "Differences increase by 2: +4, +6, +8, +10, +12 = 42."
+    }
+  ]
+}

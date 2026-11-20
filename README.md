@@ -1,40 +1,53 @@
-# SimpleAuth v4.0.0 — Rebuilt, works on file:// + GitHub Pages
+# CAT Learning — GitHub Pages App
 
-## What was fixed from v3
-1. **Login failed on file:// / http** — `crypto.subtle` only works on https/localhost. Now: try subtle, fallback to `passwordHint` compare. Login works everywhere.
-2. **fetch() failed on file://** — Now: if `fetch(data/*.json)` or `fetch(questions/*.json)` fails, app uses built-in fallback data (same demo users + same sample test). You still see the app, Test, and CAT.
-3. **CAT Next needed 2 clicks / was confusing** — Now: single primary button: `Check answer` → `Next →` → `Finish ✓`. One click per step.
-4. **Flag re-rendered question and lost typed corrections** — Now: Flag only toggles dot, does NOT re-render.
-5. **All DOM access guarded** — `if(el)` checks everywhere, global error banner instead of white screen.
-6. **Back navigation restores answers** — MCQ selections + correction inputs are restored when you go Prev.
+No database. No POST. All data is JSON / MD / TXT / PDF / images. All requests are GET (`fetch()`).
 
 ## Structure
 ```
-├── index.html
-├── assets/css/style.css
-├── assets/js/app.js  # auth, nav, overview, reports, fallback
-├── assets/js/cat.js  # discovery + CAT, fallback test
-├── data/config.json  # version 4.0.0
-├── data/roles.json
-├── data/users.json
-├── questions/manifest.json
-└── questions/sample_question.json
+index.html
+css/style.css
+js/
+  utils.js  auth.js  cat.js  teaching.js  materials.js  generator.js  admin.js  app.js
+data/
+  users.json  roles.json  config.json  materials.json
+questions/
+  index.json  sample.json   <- add your question files here
+materials/
+  sample-notes.md  sample.txt  <- add PDF / PNG / JPG / TXT / MD here
 ```
 
-## How to test locally (best way)
-Option A — GitHub Pages (recommended): push folder → Settings → Pages → main / (root)
-Option B — Local server: `npx serve .` or `python -m http.server 8000` then open `http://localhost:8000`
-Option C — Double-click `index.html`: works now via fallback, but to test real JSON files use A or B.
+## Demo logins (change before live use)
+- super / Super123! — full access, incl. Admin
+- teacher / Teacher123! — CAT, Teaching, Materials, Generator
+- student / Student123! — CAT, Teaching, Materials
 
-## Demo
-- admin / admin123
-- manager / manager123
-- staff / staff123
+Passwords are SHA-256 hashes in `data/users.json`. Generate a hash in browser console:
+```js
+await crypto.subtle.digest('SHA-256', new TextEncoder().encode('YourPass123'))
+// convert to hex, paste as passwordHash
+```
 
-## Test
-Nav: Overview | Test | Reports
-- Test page loads from `questions/manifest.json` via GET. Add file → add to manifest → Reload.
-- CAT: Q1 multiple_choice (2 correct: C + E), Q2 correction (tap s2, s5, type corrections).
+## Question file format — `questions/your-file.json`
+```json
+{
+  "meta": {"title": "Topic", "subject": "Math"},
+  "questions": [
+    {"id":"Q01","topic":"Math","difficulty":"easy","question":"...?","options":["A","B","C","D"],"answerIndex":1,"explanation":"..."}
+  ]
+}
+```
+Difficulty: `easy` | `intermediate` | `advanced`. Register the file in `questions/index.json`.
 
-## Note
-Demo only. `users.json` is public — don't use real passwords.
+## Materials
+Add file to `materials/` and entry to `data/materials.json`:
+`{"title":"...","file":"file.pdf","type":"pdf"}` — type: `pdf` | `png` | `jpg` | `txt` | `md`
+
+## Roles
+`data/roles.json` controls access. Only `super` can open **Admin**. Admin never shows passwords/hashes.
+
+## Deploy to GitHub Pages
+1. Create repo, push this folder contents to `main`.
+2. Repo → Settings → Pages → Source: Deploy from branch → Branch: `main` / `/ (root)` → Save.
+3. Open `https://<username>.github.io/<repo>/`
+
+To update: edit JSON/MD files locally, commit, push. Pages rebuilds automatically.

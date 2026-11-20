@@ -1,1 +1,20 @@
-{"users":[{"active":true,"avatar":"A","department":"IT","email":"admin@simpleauth.demo","id":1,"name":"Ayu Admin","passwordHash":"240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9","passwordHint":"admin123","roleId":"admin","username":"admin"},{"active":true,"avatar":"B","department":"Operations","email":"manager@simpleauth.demo","id":2,"name":"Budi Manager","passwordHash":"866485796cfa8d7c0cf7111640205b83076433547577511d81f8030ae99ecea5","passwordHint":"manager123","roleId":"manager","username":"manager"},{"active":true,"avatar":"C","department":"Support","email":"staff@simpleauth.demo","id":3,"name":"Citra Staff","passwordHash":"10176e7b7b24d317acfcf8d2064cfd2f24e154f7b5a96603077d5ef813d6a6b6","passwordHint":"staff123","roleId":"staff","username":"staff"}]}
+[
+  {
+    "username": "super",
+    "name": "Super Admin",
+    "role": "super",
+    "passwordHash": "6eb7d4e93479f9534588ef1084e7862a45e98ac3b378f9c6862757941b220b88"
+  },
+  {
+    "username": "teacher",
+    "name": "Teacher Demo",
+    "role": "teacher",
+    "passwordHash": "3641c3aac9354aa4b8ac3b3677d7b1a358c535aaafe160ce0821c8f89baa7f03"
+  },
+  {
+    "username": "student",
+    "name": "Student Demo",
+    "role": "student",
+    "passwordHash": "cb2433073edb25ca77f0445dcdbd7e7c568196eef1cd54da7228ddd227240e2e"
+  }
+]

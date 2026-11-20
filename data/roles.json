@@ -1,1 +1,26 @@
-{"roles":[{"color":"#e17055","dashboardWidgets":["users","reports","settings","activity"],"description":"Full access.","id":"admin","name":"Administrator","permissions":["view_dashboard","view_users","view_reports","manage_users","manage_settings","export_data"]},{"color":"#00b894","dashboardWidgets":["users","reports","activity"],"description":"Team + reports.","id":"manager","name":"Manager","permissions":["view_dashboard","view_users","view_reports","export_data"]},{"color":"#0984e3","dashboardWidgets":["reports"],"description":"Reports only.","id":"staff","name":"Staff","permissions":["view_dashboard","view_reports"]}]}
+{
+  "super": {
+    "label": "Super Admin",
+    "canAccessAdmin": true,
+    "canAccessCAT": true,
+    "canAccessTeaching": true,
+    "canAccessMaterials": true,
+    "canAccessGenerator": true
+  },
+  "teacher": {
+    "label": "Teacher",
+    "canAccessAdmin": false,
+    "canAccessCAT": true,
+    "canAccessTeaching": true,
+    "canAccessMaterials": true,
+    "canAccessGenerator": true
+  },
+  "student": {
+    "label": "Student",
+    "canAccessAdmin": false,
+    "canAccessCAT": true,
+    "canAccessTeaching": true,
+    "canAccessMaterials": true,
+    "canAccessGenerator": false
+  }
+}

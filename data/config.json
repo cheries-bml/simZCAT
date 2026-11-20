@@ -1,1 +1,11 @@
-{"allowRememberMe":true,"appName":"ZCat","brandColor":"#5b5ef4","footerText":"SimpleAuth v4.0.0","sessionKey":"simpleauth_session","sessionTimeoutMinutes":120,"tagline":"Sign in","version":"4.0.0"}
+{
+  "appName": "CAT Learning",
+  "school": "Your School",
+  "version": "1.0.0",
+  "cat": {
+    "defaultTimePerQuestionSec": 60,
+    "showResultImmediately": true
+  },
+  "questionsDir": "questions/",
+  "materialsDir": "materials/"
+}

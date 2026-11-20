@@ -1,0 +1,16 @@
+{
+  "materials": [
+    {
+      "title": "Sample Notes - Study Guide",
+      "file": "sample-notes.md",
+      "type": "md",
+      "description": "How to use CAT, Teaching and Generator."
+    },
+    {
+      "title": "Sample Text - Instructions",
+      "file": "sample.txt",
+      "type": "txt",
+      "description": "Plain text instructions for students."
+    }
+  ]
+}
