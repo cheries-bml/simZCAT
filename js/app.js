@@ -50,7 +50,7 @@ async function loadAll(){
     }
     $('#statTests').textContent=String(testFiles.length);
     renderTestLists(); renderMaterials(); renderGeneratorSources();
-  }catch(e){ console.error(e); $('#statusPill').textContent='● Data error'; }
+  }catch(e){ console.error(e); const pill=$('#statusPill'); if(pill) pill.textContent='● Data error'; const le=$('#loginError'); if(le && !USERS.length){ le.textContent='Cannot load JSON data. Open via http server / GitHub Pages, not file://.'; le.classList.remove('hidden'); } }
 }
 // LOGIN
 $('#loginForm')?.addEventListener('submit', async e=>{
@@ -58,10 +58,14 @@ $('#loginForm')?.addEventListener('submit', async e=>{
   const u=$('#username').value.trim().toLowerCase(), p=$('#password').value;
   const err=$('#loginError'); err.classList.add('hidden');
   if(!USERS.length){ try{ await loadAll(); }catch{} }
+  if(!USERS.length){
+    err.textContent='Cannot load data/users.json. Do not open via file:// — run: python3 -m http.server 8000, or use GitHub Pages.';
+    err.classList.remove('hidden'); return;
+  }
   const found=USERS.find(x=>x.username.toLowerCase()===u && x.active!==false);
   if(!found){ err.textContent='Invalid username or password.'; err.classList.remove('hidden'); return; }
   const h=await sha256(p);
-  if(h!==found.passwordHash){ err.textContent='Invalid username or password.'; err.classList.remove('hidden'); return; }
+  if(h!==found.passwordHash){ err.textContent='Invalid username or password. Check caps / spelling.'; err.classList.remove('hidden'); return; }
   user={username:found.username,name:found.name,role:found.role};
   const role=ROLES.find(r=>r.id===user.role); perms=new Set(role?.permissions||[]);
   sessionStorage.setItem('cat_user', JSON.stringify(user));

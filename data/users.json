@@ -5,22 +5,22 @@
       "name": "Super Admin",
       "role": "super",
       "active": true,
-      "passwordHash": "6eb7d4e93479f9534588ef1084e7862a45e98ac3b378f9c6862757941b220b88"
+      "passwordHash": "4e4c56e4a15f89f05c2f4c72613da2a18c9665d4f0d6acce16415eb06f9be776"
     },
     {
       "username": "teacher",
       "name": "Demo Teacher",
       "role": "teacher",
       "active": true,
-      "passwordHash": "3641c3aac9354aa4b8ac3b3677d7b1a358c535aaafe160ce0821c8f89baa7f03"
+      "passwordHash": "cde383eee8ee7a4400adf7a15f716f179a2eb97646b37e089eb8d6d04e663416"
     },
     {
       "username": "student",
       "name": "Demo Student",
       "role": "student",
       "active": true,
-      "passwordHash": "cb2433073edb25ca77f0445dcdbd7e7c568196eef1cd54da7228ddd227240e2e"
+      "passwordHash": "703b0a3d6ad75b649a28adde7d83c6251da457549263bc7ff45ec709b0a8448b"
     }
   ],
-  "_note": "passwordHash is SHA-256. Never commit plain passwords."
+  "_note": "passwordHash is SHA-256. Demo only - change before live use."
 }

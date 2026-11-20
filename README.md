@@ -32,9 +32,9 @@ Change these before going live. Passwords are stored as SHA-256 in `data/users.j
 
 | Username | Password | Role |
 |---|---|---|
-| `super` | `Super123!` | super — full access incl. System |
-| `teacher` | `Teacher123!` | teacher — teach, generate, materials |
-| `student` | `Student123!` | student — take test, materials |
+| `super` | `super123` | super — full access incl. System |
+| `teacher` | `teacher123` | teacher — teach, generate, materials |
+| `student` | `student123` | student — take test, materials |
 
 ### Change / add a user
 Generate hash:
