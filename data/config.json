@@ -1,11 +1,1 @@
-{
-  "appName": "CAT Learning",
-  "school": "Your School",
-  "version": "1.0.0",
-  "cat": {
-    "defaultTimePerQuestionSec": 60,
-    "showResultImmediately": true
-  },
-  "questionsDir": "questions/",
-  "materialsDir": "materials/"
-}
+{"allowReviewAfterTest":true,"appName":"CAT Learning","materialsPath":"materials/","questionFiles":["questions/sample.json"],"questionsPath":"questions/","school":"Sekolah Demo","secondsPerQuestion":60}

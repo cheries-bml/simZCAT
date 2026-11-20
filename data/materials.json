@@ -1,16 +1,1 @@
-{
-  "materials": [
-    {
-      "title": "Sample Notes - Study Guide",
-      "file": "sample-notes.md",
-      "type": "md",
-      "description": "How to use CAT, Teaching and Generator."
-    },
-    {
-      "title": "Sample Text - Instructions",
-      "file": "sample.txt",
-      "type": "txt",
-      "description": "Plain text instructions for students."
-    }
-  ]
-}
+[{"file":"materials/sample-notes.md","id":"m1","subject":"Umum","title":"Catatan - Persiapan CAT","type":"md"},{"file":"materials/sample-notes.txt","id":"m2","subject":"Umum","title":"Catatan Teks - Tips Belajar","type":"txt"}]

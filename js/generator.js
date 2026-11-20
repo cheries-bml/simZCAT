@@ -1,25 +1,34 @@
-let generated=null;
+// Generate Test - from /questions/*.json, difficulty + count. Client-side only.
+let genPool=[], genResult=null;
 async function initGenerator(){
-  const idx=await loadJSON('questions/index.json');
-  el('genFile').innerHTML=idx.files.map(f=>'<option value="'+f.file+'">'+escapeHtml(f.title)+'</option>').join('');
+  const sel=$('#genSource'); sel.innerHTML='';
+  (CONFIG.questionFiles||['questions/sample.json']).forEach(f=>{ const o=document.createElement('option'); o.value=f; o.textContent=f; sel.appendChild(o); });
+  genPool = await loadQuestionFile(sel.value);
+  sel.onchange=async()=>{ genPool = await loadQuestionFile(sel.value); };
+  $('#genFile').onchange = async (e)=>{ const file=e.target.files[0]; if(!file) return; try{ const txt=await file.text(); genPool=normalizeQuestions(JSON.parse(txt)); alert(`${genPool.length} soal dimuat dari file lokal.`); }catch{ alert('File JSON tidak valid.'); } };
+  $('#genBtn').onclick=generateTest;
+  $('#genPrint').onclick=()=>window.print();
+  $('#genDownload').onclick=downloadGen;
 }
-async function generateTest(){
-  const file=el('genFile').value, diff=el('genDifficulty').value, count=parseInt(el('genCount').value||'5');
-  const data=await loadJSON('questions/'+file);
-  let qs=data.questions||[];
-  if(diff!=='all') qs=qs.filter(q=>q.difficulty===diff);
-  qs=shuffle(qs).slice(0,count);
-  if(!qs.length){alert('No questions for this filter.');return;}
-  generated={meta:{title:'Generated Test',source:file,difficulty:diff,generatedAt:new Date().toISOString()},questions:qs};
-  const prev=el('genPreview'); prev.hidden=false;
-  prev.innerHTML='<h3>Preview — '+qs.length+' questions</h3><table><tr><th>#</th><th>Topic</th><th>Difficulty</th><th>Question</th></tr>'+qs.map((q,i)=>'<tr><td>'+(i+1)+'</td><td>'+escapeHtml(q.topic)+'</td><td>'+q.difficulty+'</td><td>'+escapeHtml(q.question)+'</td></tr>').join('')+'</table><p class="muted small">To save permanently, download this JSON as <code>questions/your-name.json</code>, add it to <code>questions/index.json</code>, and push to GitHub.</p>';
-  el('genStartCat').hidden=false; el('genDownload').hidden=false;
+function generateTest(){
+  const diff=$('#genDifficulty').value, count=parseInt($('#genCount').value||'10',10);
+  const filtered = diff==='all' ? [...genPool] : filterByDifficulty(genPool, diff);
+  // If mixed, try to balance difficulties
+  let picked = diff==='all' ? shuffle(filtered).slice(0,count) : shuffle(filtered).slice(0,count);
+  if(diff==='all' && filtered.length>=count){
+    const by={easy:[],intermediate:[],advanced:[]};
+    filtered.forEach(q=>{ const d=(q.difficulty||'easy').toLowerCase(); if(by[d]) by[d].push(q); });
+    const per=Math.floor(count/3); picked=[...shuffle(by.easy).slice(0,per),...shuffle(by.intermediate).slice(0,per),...shuffle(by.advanced).slice(0,count-per*2)];
+    picked=shuffle(picked);
+  }
+  genResult={ title:$('#genTitle').value||'Latihan CAT', generatedAt:new Date().toISOString().slice(0,10), difficulty:diff, questions:picked };
+  $('#genOutput').classList.remove('hidden'); $('#genOutputTitle').textContent=`${genResult.title} — ${picked.length} soal`;
+  const list=$('#genList'); list.innerHTML='';
+  picked.forEach((q,i)=>{ const d=document.createElement('div'); d.className='card'; d.innerHTML=`<strong>${i+1}. ${escapeHtml(q.question||'')}</strong><span class="chip">${escapeHtml(q.difficulty||'')}</span><div class="options">${(q.options||[]).map((o,j)=>`<div class="opt">${String.fromCharCode(65+j)}. ${escapeHtml(o)}</div>`).join('')}</div>`; list.appendChild(d); });
+  refreshIcons();
 }
-function startGeneratedAsCAT(){
-  if(!generated) return;
-  cat.questions=generated.questions; cat.index=0; cat.answers={}; cat.secondsLeft=generated.questions.length*60;
-  clearInterval(cat.timer);
-  cat.timer=setInterval(()=>{cat.secondsLeft--; el('catTimer').textContent=fmtTime(Math.max(0,cat.secondsLeft)); if(cat.secondsLeft<=0){clearInterval(cat.timer); submitCAT();}},1000);
-  showView('cat'); el('catSetup').hidden=true; el('catTest').hidden=false; el('catResult').hidden=true; el('catTimer').textContent=fmtTime(cat.secondsLeft); renderCAT();
+function downloadGen(){
+  if(!genResult) return;
+  const blob=new Blob([JSON.stringify(genResult,null,2)],{type:'application/json'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='generated-test.json'; a.click(); URL.revokeObjectURL(a.href);
 }
-function downloadGenerated(){ if(generated) downloadJSON('generated-test.json',generated); }

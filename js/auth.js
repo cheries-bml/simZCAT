@@ -1,37 +1,31 @@
-let currentUser=null;
-let _memSession=null;
-function getSession(){
-  try{ const v=sessionStorage.getItem('cat_session'); if(v) return JSON.parse(v); }catch(e){}
-  try{ const v=localStorage.getItem('cat_session'); if(v) return JSON.parse(v); }catch(e){}
-  return _memSession;
+// Auth - GET only. Session in sessionStorage. No POST.
+let CONFIG={}, ROLES={}, USERS=[], CURRENT_USER=null;
+
+async function loadAppData(){
+  CONFIG = await getJSON('data/config.json');
+  ROLES = await getJSON('data/roles.json');
+  USERS = await getJSON('data/users.json');
+  if(CONFIG.appName){ $('#appName').textContent = CONFIG.appName; document.title = CONFIG.appName; }
+  if(CONFIG.school) $('#schoolName').textContent = CONFIG.school;
 }
-function setSession(u){
-  _memSession=u;
-  try{ sessionStorage.setItem('cat_session', JSON.stringify(u)); }catch(e){}
-  try{ localStorage.setItem('cat_session', JSON.stringify(u)); }catch(e){}
+
+function getSession(){ try{ return JSON.parse(sessionStorage.getItem('cat_session')||'null'); }catch{ return null; } }
+function hasPermission(perm){ if(!CURRENT_USER) return false; const r = ROLES[CURRENT_USER.role]; return r?.permissions?.includes(perm) || CURRENT_USER.role==='super'; }
+function isSuper(){ return CURRENT_USER?.role==='super'; }
+
+async function tryLogin(username, password){
+  const user = USERS.find(u=>u.username===username);
+  if(!user) return false;
+  const hash = await sha256(password);
+  if(hash !== user.password_sha256) return false;
+  CURRENT_USER = { username:user.username, name:user.name||user.username, role:user.role };
+  sessionStorage.setItem('cat_session', JSON.stringify(CURRENT_USER));
+  return true;
 }
-function clearSession(){
-  _memSession=null;
-  try{ sessionStorage.removeItem('cat_session'); }catch(e){}
-  try{ localStorage.removeItem('cat_session'); }catch(e){}
-}
-async function doLogin(username,password){
-  const users=await loadJSON('data/users.json');
-  const clean=(username||'').trim();
-  const user=users.find(u=>u.username===clean);
-  if(!user) throw new Error('Invalid username or password.');
-  const hash=await sha256Hex(password||'');
-  if(hash!==user.passwordHash) throw new Error('Invalid username or password.');
-  const safe={username:user.username,name:user.name,role:user.role};
-  setSession(safe); currentUser=safe; return safe;
-}
-function doLogout(){
-  clearSession(); currentUser=null;
-  // No reload - just switch views (reload breaks file:// in some browsers)
-  try{
-    el('appShell').hidden=true;
-    el('loginScreen').hidden=false;
-    el('username').value=''; el('password').value='';
-    el('loginError').hidden=true;
-  }catch(e){ location.reload(); }
+function logout(){ sessionStorage.removeItem('cat_session'); location.reload(); }
+function restoreSession(){
+  const s=getSession(); if(!s) return false;
+  const found = USERS.find(u=>u.username===s.username && u.role===s.role);
+  if(!found) return false;
+  CURRENT_USER = s; return true;
 }

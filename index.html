@@ -1,152 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CAT Learning</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="css/style.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
 <!-- LOGIN -->
-<div id="loginScreen" class="login-wrap">
+<div id="loginView" class="login-wrap">
   <div class="login-card">
-    <div class="logo"><i class="fa-solid fa-graduation-cap"></i> CAT Learning</div>
-    <p class="muted">Computer Assisted Test &bull; Teaching &bull; Materials</p>
+    <div class="brand-lg"><span class="logo"><i data-lucide="graduation-cap"></i></span><div><h1>CAT Learning</h1><p>Computer Assisted Test</p></div></div>
     <form id="loginForm">
-      <label>Username</label>
-      <input id="username" autocomplete="username" placeholder="super / teacher / student" required>
-      <label>Password</label>
-      <input id="password" type="password" autocomplete="current-password" placeholder="••••••••" required>
-      <button id="loginBtn" type="submit" class="btn primary w-full"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
-      <p id="loginError" class="error" hidden></p>
+      <label>Username<input id="username" type="text" autocomplete="username" placeholder="username" required></label>
+      <label>Password<input id="password" type="password" autocomplete="current-password" placeholder="••••••••" required></label>
+      <p id="loginError" class="error hidden"></p>
+      <button type="submit" class="btn primary full"><i data-lucide="log-in"></i> Masuk</button>
     </form>
-    <div class="demo-box">
-      <strong>Demo accounts</strong><br>
-      super / Super123! &nbsp;•&nbsp; teacher / Teacher123! &nbsp;•&nbsp; student / Student123!<br>
-      <span>Change passwords in <code>data/users.json</code> (SHA-256 hash) before going live.<br>If login fails on <code>file://</code>, use a local server: <code>python -m http.server</code> then open <code>http://localhost:8000</code></span>
-    </div>
+    <p class="muted small center">Data dari <code>data/*.json</code> • Hanya GET • Tanpa database</p>
   </div>
 </div>
 
 <!-- APP -->
-<div id="appShell" class="shell" hidden>
-  <aside class="sidebar">
-    <div class="brand"><i class="fa-solid fa-graduation-cap"></i> CAT Learning <span id="appVersion" class="ver"></span></div>
-    <nav id="mainNav">
-      <button data-view="dashboard" class="active"><i class="fa-solid fa-house"></i> Dashboard</button>
-      <button data-view="cat"><i class="fa-solid fa-pen-to-square"></i> CAT Test</button>
-      <button data-view="teaching"><i class="fa-solid fa-chalkboard-user"></i> Teaching</button>
-      <button data-view="materials"><i class="fa-solid fa-folder-open"></i> Materials</button>
-      <button data-view="generator"><i class="fa-solid fa-wand-magic-sparkles"></i> Generate Test</button>
-      <button data-view="admin" id="navAdmin" hidden><i class="fa-solid fa-shield-halved"></i> Admin</button>
-    </nav>
-    <div class="sidebar-foot">
-      <div id="userChip" class="user-chip"></div>
-      <button id="logoutBtn" class="btn ghost w-full"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
-    </div>
-  </aside>
+<div id="appShell" class="hidden">
+  <header class="topbar">
+    <div class="top-left"><button id="menuBtn" class="icon-btn"><i data-lucide="menu"></i></button><span class="logo sm"><i data-lucide="graduation-cap"></i></span><strong id="appName">CAT Learning</strong><span id="schoolName" class="muted hide-mobile"></span></div>
+    <div class="top-right"><span id="userChip" class="chip"></span><button id="logoutBtn" class="btn ghost"><i data-lucide="log-out"></i><span class="hide-mobile">Keluar</span></button></div>
+  </header>
 
-  <main class="main">
-    <header class="topbar"><h1 id="pageTitle">Dashboard</h1><span id="roleBadge" class="badge"></span></header>
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <nav>
+        <button class="nav-item active" data-view="dashboard"><i data-lucide="layout-dashboard"></i> Dashboard</button>
+        <button class="nav-item" data-view="cat"><i data-lucide="monitor-check"></i> CAT Test</button>
+        <button class="nav-item" data-view="teach"><i data-lucide="presentation"></i> Teaching</button>
+        <button class="nav-item" data-view="materials"><i data-lucide="folder-open"></i> Materi</button>
+        <button class="nav-item" data-view="generator"><i data-lucide="sparkles"></i> Generate Test</button>
+        <button id="navAdmin" class="nav-item hidden" data-view="admin"><i data-lucide="shield-check"></i> Admin</button>
+      </nav>
+      <div class="side-foot"><p class="muted small">Edit data langsung di GitHub.<br>Semua perubahan via push.</p></div>
+    </aside>
 
-    <!-- DASHBOARD -->
-    <section id="view-dashboard" class="view">
-      <div class="grid-3" id="dashStats"></div>
-      <div class="card">
-        <h3><i class="fa-solid fa-bolt"></i> Quick actions</h3>
-        <div class="row wrap">
-          <button class="btn primary" data-goto="cat"><i class="fa-solid fa-play"></i> Start CAT Test</button>
-          <button class="btn" data-goto="teaching"><i class="fa-solid fa-chalkboard-user"></i> Open Teaching</button>
-          <button class="btn" data-goto="materials"><i class="fa-solid fa-book-open"></i> View Materials</button>
-          <button class="btn" data-goto="generator"><i class="fa-solid fa-wand-magic-sparkles"></i> Generate Test</button>
+    <main class="main">
+      <!-- DASHBOARD -->
+      <section id="view-dashboard" class="view">
+        <h2 id="welcomeText">Selamat datang</h2><p class="muted">Pilih menu untuk mulai.</p>
+        <div class="stats">
+          <div class="stat"><i data-lucide="file-question"></i><div><strong id="statQuestions">—</strong><span>Soal tersedia</span></div></div>
+          <div class="stat"><i data-lucide="book-open"></i><div><strong id="statMaterials">—</strong><span>Materi</span></div></div>
+          <div class="stat"><i data-lucide="users"></i><div><strong id="statRole">—</strong><span>Peran Anda</span></div></div>
         </div>
-      </div>
-      <div class="card"><h3><i class="fa-solid fa-circle-info"></i> How it works</h3>
-        <p class="muted">All data is JSON. No database, no POST. Edit <code>questions/</code>, <code>data/</code> or <code>materials/</code> and push to GitHub to update the live app.</p>
-      </div>
-    </section>
-
-    <!-- CAT -->
-    <section id="view-cat" class="view" hidden>
-      <div class="card" id="catSetup">
-        <h3><i class="fa-solid fa-pen-to-square"></i> CAT Test Setup</h3>
-        <div class="form-grid">
-          <div><label>Question file</label><select id="catFile"></select></div>
-          <div><label>Difficulty</label><select id="catDifficulty"><option value="all">All levels</option><option value="easy">Easy</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select></div>
-          <div><label>Number of questions</label><input id="catCount" type="number" min="1" max="100" value="5"></div>
+        <div class="grid-3">
+          <button class="action-card" data-goto="cat"><i data-lucide="monitor-check"></i><strong>Kerjakan CAT</strong><span>Ujian dengan timer & nilai</span></button>
+          <button class="action-card" data-goto="teach"><i data-lucide="presentation"></i><strong>Mode Mengajar</strong><span>Bahas soal + jawaban</span></button>
+          <button class="action-card" data-goto="materials"><i data-lucide="folder-open"></i><strong>Buka Materi</strong><span>PDF • Gambar • Teks • MD</span></button>
         </div>
-        <button id="catStartBtn" class="btn primary"><i class="fa-solid fa-play"></i> Start Test</button>
-        <p class="muted small">Timer = 60 sec per question. Answers are not shown until you submit.</p>
-      </div>
-      <div id="catTest" hidden>
-        <div class="card cat-head"><div><span id="catProgress"></span><div class="progress"><div id="catBar"></div></div></div><div class="timer"><i class="fa-regular fa-clock"></i> <span id="catTimer">--:--</span></div></div>
-        <div class="card"><h3 id="catQTitle"></h3><p id="catQText" class="q-text"></p><div id="catOptions" class="options"></div>
-          <div class="row between"><button id="catPrev" class="btn">← Prev</button><button id="catNext" class="btn primary">Next →</button></div>
+      </section>
+
+      <!-- CAT -->
+      <section id="view-cat" class="view hidden">
+        <h2>CAT Test</h2>
+        <div id="catSetup" class="card">
+          <div class="form-row"><label>Sumber Soal<select id="catSource"></select></label><label>Kesulitan<select id="catDifficulty"><option value="all">Semua</option><option value="easy">Easy</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select></label><label>Jumlah Soal<input id="catCount" type="number" min="1" max="100" value="10"></label></div>
+          <label class="check"><input id="catTimerOn" type="checkbox" checked> Gunakan timer</label>
+          <button id="catStart" class="btn primary"><i data-lucide="play"></i> Mulai Tes</button>
+          <p id="catSetupInfo" class="muted small"></p>
         </div>
-        <div class="card"><h4>Questions</h4><div id="catNav" class="q-nav"></div><button id="catSubmit" class="btn success"><i class="fa-solid fa-check"></i> Submit Test</button></div>
-      </div>
-      <div id="catResult" class="card" hidden></div>
-    </section>
-
-    <!-- TEACHING -->
-    <section id="view-teaching" class="view" hidden>
-      <div class="card">
-        <h3><i class="fa-solid fa-chalkboard-user"></i> Teaching Mode</h3>
-        <div class="form-grid">
-          <div><label>Question file</label><select id="teachFile"></select></div>
-          <div><label>Difficulty</label><select id="teachDifficulty"><option value="all">All levels</option><option value="easy">Easy</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select></div>
-          <div><label>Number of questions</label><input id="teachCount" type="number" min="1" max="100" value="5"></div>
+        <div id="catTest" class="card hidden">
+          <div class="cat-head"><span id="catProgress"></span><span id="catTimer" class="chip timer">--:--</span></div>
+          <div class="progress"><div id="catBar"></div></div>
+          <p id="catTopic" class="muted small"></p>
+          <h3 id="catQ"></h3><div id="catOptions" class="options"></div>
+          <div class="row-between"><button id="catPrev" class="btn">← Sebelumnya</button><button id="catNext" class="btn primary">Berikutnya →</button></div>
+          <button id="catFinish" class="btn success full">Selesaikan & Lihat Nilai</button>
         </div>
-        <button id="teachStartBtn" class="btn primary"><i class="fa-solid fa-play"></i> Start Discussion</button>
-      </div>
-      <div id="teachArea" hidden>
-        <div class="card"><span id="teachProgress" class="badge"></span><h3 id="teachQTitle"></h3><p id="teachQText" class="q-text"></p><div id="teachOptions" class="options"></div>
-          <button id="teachReveal" class="btn"><i class="fa-solid fa-eye"></i> Show correct answer & explanation</button>
-          <div id="teachAnswer" class="answer-box" hidden></div>
-          <div class="row between"><button id="teachPrev" class="btn">← Prev</button><button id="teachNext" class="btn primary">Next →</button></div>
-        </div>
-      </div>
-    </section>
+        <div id="catResult" class="card hidden"><h3>Hasil</h3><div class="score-big" id="catScore"></div><p id="catScoreDetail" class="muted"></p><div id="catReview"></div><button id="catRestart" class="btn">Tes Baru</button></div>
+      </section>
 
-    <!-- MATERIALS -->
-    <section id="view-materials" class="view" hidden>
-      <div class="grid-2"><div class="card"><h3><i class="fa-solid fa-folder-open"></i> Materials</h3><div id="materialList"></div></div>
-      <div class="card"><h3><i class="fa-solid fa-eye"></i> Viewer</h3><div id="materialViewer" class="viewer"><p class="muted">Select a material to preview. Supports PDF, PNG, JPG, TXT, MD.</p></div></div></div>
-    </section>
+      <!-- TEACH -->
+      <section id="view-teach" class="view hidden">
+        <h2>Teaching Mode</h2>
+        <div class="card"><div class="form-row"><label>Sumber<select id="teachSource"></select></label><label>Kesulitan<select id="teachDifficulty"><option value="all">Semua</option><option value="easy">Easy</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select></label><label>Cari<input id="teachSearch" placeholder="Cari soal..."></label></div></div>
+        <div id="teachCard" class="card"><p id="teachCount" class="muted small"></p><h3 id="teachQ"></h3><div id="teachOptions" class="options"></div><div id="teachExplain" class="explain hidden"><strong><i data-lucide="lightbulb"></i> Pembahasan</strong><p id="teachExplainText"></p></div><div class="row-between"><button id="teachPrev" class="btn">← Sebelumnya</button><button id="teachShow" class="btn primary">Tampilkan Jawaban</button><button id="teachNext" class="btn">Berikutnya →</button></div></div>
+      </section>
 
-    <!-- GENERATOR -->
-    <section id="view-generator" class="view" hidden>
-      <div class="card">
-        <h3><i class="fa-solid fa-wand-magic-sparkles"></i> Generate Test</h3>
-        <div class="form-grid">
-          <div><label>Question file</label><select id="genFile"></select></div>
-          <div><label>Difficulty</label><select id="genDifficulty"><option value="all">All levels</option><option value="easy">Easy</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select></div>
-          <div><label>How many questions?</label><input id="genCount" type="number" min="1" max="100" value="5"></div>
-        </div>
-        <div class="row wrap"><button id="genBtn" class="btn primary"><i class="fa-solid fa-wand-magic-sparkles"></i> Generate</button><button id="genStartCat" class="btn" hidden><i class="fa-solid fa-play"></i> Start as CAT</button><button id="genDownload" class="btn" hidden><i class="fa-solid fa-download"></i> Download JSON</button></div>
-      </div>
-      <div id="genPreview" class="card" hidden></div>
-    </section>
+      <!-- MATERIALS -->
+      <section id="view-materials" class="view hidden">
+        <h2>Materi Guru</h2><div id="materialsGrid" class="grid-3"></div>
+        <div id="materialViewer" class="card hidden"><div class="row-between"><h3 id="viewerTitle"></h3><button id="viewerClose" class="btn ghost">Tutup</button></div><div id="viewerBody"></div></div>
+      </section>
 
-    <!-- ADMIN - SUPER ONLY -->
-    <section id="view-admin" class="view" hidden>
-      <div class="card"><h3><i class="fa-solid fa-shield-halved"></i> Admin — Super only</h3><p class="muted">This page is visible only to role <strong>super</strong>. No passwords or hashes are shown here.</p><div id="adminContent"></div></div>
-    </section>
+      <!-- GENERATOR -->
+      <section id="view-generator" class="view hidden">
+        <h2>Generate Test</h2>
+        <div class="card"><div class="form-row"><label>Sumber Soal<select id="genSource"></select></label><label>Kesulitan<select id="genDifficulty"><option value="all">Campuran</option><option value="easy">Easy</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select></label><label>Jumlah<input id="genCount" type="number" min="1" max="100" value="10"></label></div><label>Judul Tes<input id="genTitle" value="Latihan CAT"></label><label>Atau upload file soal JSON (lokal, tanpa upload ke server)<input id="genFile" type="file" accept=".json"></label><button id="genBtn" class="btn primary"><i data-lucide="sparkles"></i> Generate</button></div>
+        <div id="genOutput" class="card hidden"><div class="row-between"><h3 id="genOutputTitle"></h3><div><button id="genPrint" class="btn">Print</button> <button id="genDownload" class="btn primary">Download JSON</button></div></div><div id="genList"></div></div>
+      </section>
 
-  </main>
+      <!-- ADMIN - SUPER ONLY -->
+      <section id="view-admin" class="view hidden">
+        <h2>Admin</h2><p class="muted">Hanya peran <strong>super</strong>.</p>
+        <div class="grid-3"><div class="card"><h3>Status Data</h3><p id="adminStatus" class="small"></p></div><div class="card"><h3>Konfigurasi</h3><p id="adminConfig" class="small"></p></div><div class="card"><h3>Cara Update Data</h3><p class="small">Edit file di <code>data/</code> & <code>questions/</code> di GitHub → Commit → Pages update otomatis. Tidak ada POST.</p></div></div>
+      </section>
+    </main>
+  </div>
 </div>
 
 <script src="js/utils.js"></script>
 <script src="js/auth.js"></script>
 <script src="js/cat.js"></script>
-<script src="js/teaching.js"></script>
+<script src="js/teach.js"></script>
 <script src="js/materials.js"></script>
 <script src="js/generator.js"></script>
-<script src="js/admin.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

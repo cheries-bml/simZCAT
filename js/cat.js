@@ -1,44 +1,57 @@
-let cat={questions:[],index:0,answers:{},timer:null,secondsLeft:0,meta:null};
-async function initCAT(){
-  const idx=await loadJSON('questions/index.json');
-  el('catFile').innerHTML=idx.files.map(f=>'<option value="'+f.file+'">'+escapeHtml(f.title)+'</option>').join('');
+// CAT Test - student mode. Explanation only after finish (if allowed).
+let catPool=[], catQuestions=[], catIdx=0, catAnswers={}, catTimerId=null, catSeconds=0;
+
+async function loadQuestionFile(path){
+  const data = await getJSON(path);
+  return normalizeQuestions(data);
 }
-async function startCAT(){
-  const file=el('catFile').value, diff=el('catDifficulty').value, count=parseInt(el('catCount').value||'5');
-  const data=await loadJSON('questions/'+file);
-  let qs=data.questions||[];
-  if(diff!=='all') qs=qs.filter(q=>q.difficulty===diff);
-  qs=shuffle(qs).slice(0,count);
-  if(!qs.length){alert('No questions for this filter.');return;}
-  cat.questions=qs; cat.index=0; cat.answers={}; cat.meta=data.meta||{};
-  cat.secondsLeft=qs.length*60;
-  el('catSetup').hidden=true; el('catTest').hidden=false; el('catResult').hidden=true;
-  clearInterval(cat.timer);
-  cat.timer=setInterval(()=>{cat.secondsLeft--; el('catTimer').textContent=fmtTime(Math.max(0,cat.secondsLeft)); if(cat.secondsLeft<=0){clearInterval(cat.timer); submitCAT();}},1000);
-  el('catTimer').textContent=fmtTime(cat.secondsLeft);
-  renderCAT();
+function filterByDifficulty(list, diff){
+  if(!diff || diff==='all') return list;
+  return list.filter(q=>String(q.difficulty||'').toLowerCase()===diff);
 }
-function renderCAT(){
-  const q=cat.questions[cat.index];
-  el('catProgress').textContent='Question '+(cat.index+1)+' of '+cat.questions.length+' • '+q.topic+' • '+q.difficulty;
-  el('catBar').style.width=((cat.index+1)/cat.questions.length*100)+'%';
-  el('catQTitle').textContent=q.id+' — '+q.topic;
-  el('catQText').textContent=q.question;
-  el('catOptions').innerHTML=q.options.map((o,i)=>'<label class="opt '+(cat.answers[cat.index]===i?'selected':'')+'"><input type="radio" name="catOpt" '+(cat.answers[cat.index]===i?'checked':'')+' onclick="selectCAT('+i+')"> '+escapeHtml(o)+'</label>').join('');
-  el('catNav').innerHTML=cat.questions.map((_,i)=>'<button class="'+(i===cat.index?'current':'')+' '+(cat.answers[i]!==undefined?'answered':'')+'" onclick="goCAT('+i+')">'+(i+1)+'</button>').join('');
-  el('catPrev').disabled=cat.index===0;
+async function initCat(){
+  const sel=$('#catSource'); sel.innerHTML='';
+  (CONFIG.questionFiles||['questions/sample.json']).forEach(f=>{ const o=document.createElement('option'); o.value=f; o.textContent=f; sel.appendChild(o); });
+  try{ catPool = await loadQuestionFile(sel.value); $('#catSetupInfo').textContent = `${catPool.length} soal dimuat dari ${sel.value}`; }catch{ $('#catSetupInfo').textContent='Gagal memuat soal.'; }
+  sel.onchange = async ()=>{ catPool = await loadQuestionFile(sel.value); $('#catSetupInfo').textContent = `${catPool.length} soal dimuat`; };
+  $('#catStart').onclick = startCat;
+  $('#catNext').onclick = ()=>{ saveCatAnswer(); if(catIdx<catQuestions.length-1){catIdx++; renderCat();} };
+  $('#catPrev').onclick = ()=>{ saveCatAnswer(); if(catIdx>0){catIdx--; renderCat();} };
+  $('#catFinish').onclick = finishCat;
+  $('#catRestart').onclick = ()=>{ $('#catResult').classList.add('hidden'); $('#catSetup').classList.remove('hidden'); };
 }
-function selectCAT(i){cat.answers[cat.index]=i; renderCAT();}
-function goCAT(i){cat.index=i; renderCAT();}
-function submitCAT(){
-  clearInterval(cat.timer);
-  let correct=0;
-  cat.questions.forEach((q,i)=>{if(cat.answers[i]===q.answerIndex) correct++;});
-  const score=Math.round(correct/cat.questions.length*100);
-  el('catTest').hidden=true;
-  el('catResult').hidden=false;
-  el('catResult').innerHTML='<h3><i class="fa-solid fa-chart-simple"></i> Result</h3><div class="stat-num">'+score+'%</div><p class="muted">'+correct+' correct out of '+cat.questions.length+'</p><p class="muted small">Review is available in Teaching mode. Result is stored locally only — to save it, download or push an update to GitHub.</p><div class="row wrap"><button class="btn primary" onclick="backToCATSetup()">Take another test</button><button class="btn" onclick="downloadCATResult()">Download result JSON</button></div>';
-  window._lastCAT={score,correct,total:cat.questions.length,answers:cat.answers,questions:cat.questions.map(q=>({id:q.id,topic:q.topic,difficulty:q.difficulty,question:q.question}))};
+function startCat(){
+  const diff=$('#catDifficulty').value;
+  const count=parseInt($('#catCount').value||'10',10);
+  const filtered=filterByDifficulty(catPool, diff);
+  if(!filtered.length){ alert('Tidak ada soal untuk filter ini.'); return; }
+  catQuestions = shuffle(filtered).slice(0, Math.min(count, filtered.length));
+  catAnswers={}; catIdx=0;
+  $('#catSetup').classList.add('hidden'); $('#catResult').classList.add('hidden'); $('#catTest').classList.remove('hidden');
+  if($('#catTimerOn').checked){ catSeconds = catQuestions.length * (CONFIG.secondsPerQuestion||60); startTimer(); } else { $('#catTimer').textContent='Tanpa timer'; }
+  renderCat();
 }
-function backToCATSetup(){el('catSetup').hidden=false; el('catTest').hidden=true; el('catResult').hidden=true;}
-function downloadCATResult(){if(window._lastCAT) downloadJSON('cat-result.json',window._lastCAT);}
+function startTimer(){ clearInterval(catTimerId); catTimerId=setInterval(()=>{ catSeconds--; $('#catTimer').textContent=fmtTime(Math.max(0,catSeconds)); if(catSeconds<=0){ clearInterval(catTimerId); finishCat(); } },1000); }
+function saveCatAnswer(){ const checked=document.querySelector('input[name="catOpt"]:checked'); if(checked) catAnswers[catIdx]=parseInt(checked.value,10); }
+function renderCat(){
+  const q=catQuestions[catIdx];
+  $('#catProgress').textContent = `Soal ${catIdx+1} / ${catQuestions.length}`;
+  $('#catBar').style.width = ((catIdx+1)/catQuestions.length*100)+'%';
+  $('#catTopic').textContent = [q.subject,q.topic,q.difficulty].filter(Boolean).join(' • ');
+  $('#catQ').textContent = q.question || q.text || '';
+  const box=$('#catOptions'); box.innerHTML='';
+  (q.options||[]).forEach((opt,i)=>{ const label=document.createElement('label'); label.className='opt'+(catAnswers[catIdx]===i?' selected':''); label.innerHTML=`<input type="radio" name="catOpt" value="${i}" ${catAnswers[catIdx]===i?'checked':''}> <span>${escapeHtml(opt)}</span>`; label.onclick=()=>{ saveCatAnswer(); renderCat(); }; box.appendChild(label); });
+  $('#catPrev').disabled = catIdx===0; $('#catNext').disabled = catIdx===catQuestions.length-1;
+}
+function finishCat(){
+  clearInterval(catTimerId); saveCatAnswer();
+  let correct=0; catQuestions.forEach((q,i)=>{ const ans = q.answer; const ansIdx = typeof ans==='number' ? ans : (q.options||[]).indexOf(ans); if(catAnswers[i]===ansIdx) correct++; });
+  const score = catQuestions.length ? Math.round(correct/catQuestions.length*100) : 0;
+  $('#catTest').classList.add('hidden'); const res=$('#catResult'); res.classList.remove('hidden');
+  $('#catScore').textContent = `${score} / 100`;
+  $('#catScoreDetail').textContent = `Benar ${correct} dari ${catQuestions.length} soal.`;
+  const rev=$('#catReview'); rev.innerHTML='';
+  if(CONFIG.allowReviewAfterTest!==false){
+    catQuestions.forEach((q,i)=>{ const ansIdx = typeof q.answer==='number' ? q.answer : (q.options||[]).indexOf(q.answer); const ok = catAnswers[i]===ansIdx; const d=document.createElement('div'); d.className='card'; d.innerHTML=`<strong>${i+1}. ${escapeHtml(q.question||'')}</strong><p class="${ok?'':'error'}">Jawaban Anda: ${escapeHtml(q.options?.[catAnswers[i]] ?? '-')} • Benar: ${escapeHtml(q.options?.[ansIdx] ?? '')}</p>${q.explanation?`<p class="muted small">${escapeHtml(q.explanation)}</p>`:''}`; rev.appendChild(d); });
+  }
+}
