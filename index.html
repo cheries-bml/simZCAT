@@ -21,13 +21,13 @@
       <input id="username" autocomplete="username" placeholder="super / teacher / student" required>
       <label>Password</label>
       <input id="password" type="password" autocomplete="current-password" placeholder="••••••••" required>
-      <button type="submit" class="btn primary w-full"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
-      <p id="loginError" class="error" hidden>Invalid username or password.</p>
+      <button id="loginBtn" type="submit" class="btn primary w-full"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
+      <p id="loginError" class="error" hidden></p>
     </form>
     <div class="demo-box">
       <strong>Demo accounts</strong><br>
       super / Super123! &nbsp;•&nbsp; teacher / Teacher123! &nbsp;•&nbsp; student / Student123!<br>
-      <span>Change passwords in <code>data/users.json</code> (SHA-256 hash) before going live.</span>
+      <span>Change passwords in <code>data/users.json</code> (SHA-256 hash) before going live.<br>If login fails on <code>file://</code>, use a local server: <code>python -m http.server</code> then open <code>http://localhost:8000</code></span>
     </div>
   </div>
 </div>

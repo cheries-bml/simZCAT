@@ -1,12 +1,30 @@
 let appConfig={appName:'CAT Learning',version:'1.0.0'};
 const TITLES={dashboard:'Dashboard',cat:'CAT Test',teaching:'Teaching',materials:'Materials',generator:'Generate Test',admin:'Admin'};
 async function init(){
-  try{ appConfig=await loadJSON('data/config.json'); }catch(e){}
+  try{ appConfig=await loadJSON('data/config.json'); }catch(e){ console.warn('config fallback', e); }
   el('appVersion').textContent='v'+(appConfig.version||'1.0.0');
   currentUser=getSession();
   if(!currentUser){ el('loginScreen').hidden=false; el('appShell').hidden=true; }
   else { el('loginScreen').hidden=true; el('appShell').hidden=false; setupShell(); }
-  el('loginForm').addEventListener('submit',async (e)=>{e.preventDefault(); try{ const u=await doLogin(el('username').value,el('password').value); currentUser=u; location.reload(); }catch(err){ el('loginError').hidden=false; }});
+  el('loginForm').addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    const btn=el('loginBtn'); const errEl=el('loginError');
+    errEl.hidden=true; errEl.textContent='';
+    btn.disabled=true; btn.innerHTML='<i class="fa-solid fa-circle-notch fa-spin"></i> Logging in...';
+    try{
+      const u=await doLogin(el('username').value, el('password').value);
+      currentUser=u;
+      // No reload - enter app directly
+      el('loginScreen').hidden=true; el('appShell').hidden=false;
+      setupShell(); showView('dashboard');
+    }catch(err){
+      console.error('Login failed:', err);
+      errEl.textContent = err.message || 'Login failed. Check username / password.';
+      errEl.hidden=false;
+    }finally{
+      btn.disabled=false; btn.innerHTML='<i class="fa-solid fa-right-to-bracket"></i> Login';
+    }
+  });
   el('logoutBtn').addEventListener('click',doLogout);
   document.querySelectorAll('#mainNav button').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
   document.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.goto)));
@@ -23,10 +41,12 @@ async function init(){
   el('genDownload').addEventListener('click',downloadGenerated);
 }
 function setupShell(){
+  // Reset nav visibility each login (student hides generator, super shows admin)
+  el('navAdmin').hidden = !(currentUser.role==='super');
+  const genBtn=document.querySelector('[data-view="generator"]');
+  if(genBtn) genBtn.style.display = (currentUser.role==='student') ? 'none' : '';
   el('userChip').innerHTML='<strong>'+escapeHtml(currentUser.name)+'</strong><br>@'+escapeHtml(currentUser.username)+' • '+escapeHtml(currentUser.role);
   el('roleBadge').textContent=currentUser.role;
-  if(currentUser.role==='super'){ el('navAdmin').hidden=false; }
-  if(currentUser.role==='student'){ document.querySelector('[data-view="generator"]').style.display='none'; }
   renderDashboard(); initCAT(); initTeaching(); initMaterials(); initGenerator();
 }
 async function renderDashboard(){
