@@ -1,18 +1,24 @@
 {
-  "appName": "EduCAT Static",
+  "appName": "CAT Learn",
+  "tagline": "Computer Assisted Test \u2022 Teaching \u2022 Materials",
   "version": "1.0.0",
-  "difficultyLevels": {
-    "easy": [
-      1,
-      2
-    ],
-    "intermediate": [
-      3
-    ],
-    "advanced": [
-      4,
-      5
-    ]
+  "sessionTimeoutMinutes": 480,
+  "passScorePercent": 60,
+  "questionsFiles": [
+    {
+      "id": "sample-test",
+      "file": "questions/sample-test.json",
+      "label": "Sample Test \u2014 English"
+    }
+  ],
+  "features": {
+    "cat": true,
+    "teaching": true,
+    "materials": true,
+    "admin": true
   },
-  "defaultQuestionCount": 5
+  "ui": {
+    "theme": "light",
+    "accent": "#4F46E5"
+  }
 }

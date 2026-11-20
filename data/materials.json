@@ -1,14 +1,16 @@
 [
   {
-    "id": "mat-1",
-    "title": "Grammar & Tense Reference",
+    "id": "m1",
+    "title": "Sample Notes \u2014 Simple Present",
+    "file": "materials/sample-notes.md",
     "type": "md",
-    "path": "materials/sample_notes.md"
+    "description": "Quick revision notes for Simple Present Tense."
   },
   {
-    "id": "mat-2",
-    "title": "Exam Guidelines",
+    "id": "m2",
+    "title": "Sample Notes \u2014 Plain Text",
+    "file": "materials/sample-notes.txt",
     "type": "txt",
-    "path": "materials/sample_guide.txt"
+    "description": "Plain-text handout for classroom discussion."
   }
 ]

@@ -1,28 +1,36 @@
-{
-  "super": {
-    "label": "Super Admin",
+[
+  {
+    "id": "super",
+    "label": "Super",
+    "description": "Full access. Can view Admin and all teaching content.",
     "permissions": [
-      "cat",
-      "teaching",
-      "materials",
-      "generator",
-      "admin"
+      "cat.take",
+      "cat.review",
+      "teach.view",
+      "teach.manage",
+      "materials.view",
+      "materials.manage",
+      "admin.view"
     ]
   },
-  "teacher": {
+  {
+    "id": "teacher",
     "label": "Teacher",
+    "description": "Can run CAT and Teaching mode, view materials.",
     "permissions": [
-      "cat",
-      "teaching",
-      "materials",
-      "generator"
+      "cat.take",
+      "cat.review",
+      "teach.view",
+      "materials.view"
     ]
   },
-  "student": {
+  {
+    "id": "student",
     "label": "Student",
+    "description": "Can take CAT tests and view materials.",
     "permissions": [
-      "cat",
-      "materials"
+      "cat.take",
+      "materials.view"
     ]
   }
-}
+]

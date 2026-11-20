@@ -1,6 +1,0 @@
-EXAM GUIDELINES
-===============
-1. Select your question bank, difficulty level, and question count before starting.
-2. For multiple-choice questions, select the single best option.
-3. For error-correction questions, click highlighted segments to enter the corrected phrase, or check 'No Error'.
-4. Click 'Submit Test' once all questions are answered.
