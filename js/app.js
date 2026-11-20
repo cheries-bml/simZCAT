@@ -2,41 +2,72 @@
 const App = {
   current:'dashboard',
   async init(){
-    try{ await Auth.loadAll(); }catch(e){
-      $('#loginError').textContent='Cannot load data files. Serve via HTTP (GitHub Pages / Live Server), not file:// — '+e.message;
-      $('#loginError').classList.remove('hidden');
-      return;
+    // 1) Bind login + UI FIRST - so Sign in always works even if data load is slow/fails
+    this.bindUI();
+    // 2) Load data (with fallback inside Auth). Never block login on this.
+    try{ await Auth.loadAll(); }catch(e){ console.warn('loadAll', e); }
+    if(Auth.usedFallback){
+      const el=$('#loginError');
+      if(el){ el.textContent='Note: running without server (file://). Using built-in data so login still works. For full data, serve via HTTP / GitHub Pages.'; el.classList.remove('hidden'); el.classList.remove('error'); el.classList.add('alert'); el.style.background='#eff6ff'; el.style.color='#1e40af'; el.style.borderColor='#bfdbfe'; }
     }
-    // login bindings
-    $('#loginForm').addEventListener('submit', async (e)=>{
-      e.preventDefault();
-      const btn=$('#loginBtn'); btn.disabled=true; btn.textContent='Signing in…';
-      try{
-        await Auth.login($('#username').value, $('#password').value);
-        this.showApp();
-      }catch(err){
-        const el=$('#loginError'); el.textContent=err.message; el.classList.remove('hidden');
-      } finally { btn.disabled=false; btn.innerHTML='Sign in <span class="material-symbols-outlined">arrow_forward</span>'; }
-    });
-    $('#togglePass').addEventListener('click', ()=>{
-      const p=$('#password'); const isPass=p.type==='password'; p.type=isPass?'text':'password';
-      $('#togglePass').innerHTML='<span class="material-symbols-outlined">'+(isPass?'visibility_off':'visibility')+'</span>';
-    });
-    $$('[data-demo]').forEach(b=>b.addEventListener('click', ()=>{
-      const u=b.dataset.demo;
-      $('#username').value=u;
-      $('#password').value = u==='super'?'Super123!': u==='teacher'?'Teach123!':'Student123!';
-      $('#loginError').classList.add('hidden');
-    }));
-    $('#logoutBtn').addEventListener('click', ()=>{ Auth.logout(); this.showLogin(); });
-    $('#refreshBtn').addEventListener('click', async ()=>{ try{ await Auth.loadAll(); this.navigate(this.current); }catch(e){ alert(e.message); } });
-    $('#menuBtn').addEventListener('click', ()=>{ $('.sidebar').classList.toggle('open'); });
-
+    // 3) Restore session if valid
     if(Auth.restore()){
-      // re-validate session user still exists
       const exists = Auth.usersRaw.find(u=>u.username===Auth.user.username && u.active);
-      if(exists) this.showApp(); else { Auth.logout(); this.showLogin(); }
-    } else this.showLogin();
+      if(exists) { this.showApp(); return; }
+      Auth.logout();
+    }
+    this.showLogin();
+  },
+  bindUI(){
+    const form=$('#loginForm');
+    if(form && !form.dataset.bound){
+      form.dataset.bound='1';
+      form.addEventListener('submit', async (e)=>{
+        e.preventDefault();
+        e.stopPropagation();
+        const btn=$('#loginBtn');
+        const err=$('#loginError');
+        if(err){ err.textContent=''; err.classList.add('hidden'); }
+        if(btn){ btn.disabled=true; btn.textContent='Signing in…'; }
+        try{
+          const u=$('#username').value;
+          const p=$('#password').value;
+          await Auth.login(u, p);
+          this.showApp();
+        }catch(err2){
+          console.warn('login failed', err2);
+          if(err){ err.textContent=err2.message||'Login failed. Try student / Student123!'; err.classList.remove('hidden'); err.style.background=''; err.style.color=''; err.style.borderColor=''; }
+        } finally {
+          if(btn){ btn.disabled=false; btn.innerHTML='Sign in <span class="material-symbols-outlined">arrow_forward</span>'; }
+        }
+      });
+    }
+    const tp=$('#togglePass');
+    if(tp && !tp.dataset.bound){
+      tp.dataset.bound='1';
+      tp.addEventListener('click', ()=>{
+        const p=$('#password'); const isPass=p.type==='password'; p.type=isPass?'text':'password';
+        tp.innerHTML='<span class="material-symbols-outlined">'+(isPass?'visibility_off':'visibility')+'</span>';
+      });
+    }
+    $$('[data-demo]').forEach(b=>{
+      if(b.dataset.bound) return; b.dataset.bound='1';
+      b.addEventListener('click', ()=>{
+        const u=b.dataset.demo;
+        $('#username').value=u;
+        $('#password').value = u==='super'?'Super123!': u==='teacher'?'Teach123!':'Student123!';
+        const err=$('#loginError'); if(err) err.classList.add('hidden');
+      });
+    });
+    const lo=$('#logoutBtn');
+    if(lo && !lo.dataset.bound){ lo.dataset.bound='1'; lo.addEventListener('click', ()=>{ Auth.logout(); this.showLogin(); }); }
+    const rf=$('#refreshBtn');
+    if(rf && !rf.dataset.bound){ rf.dataset.bound='1'; rf.addEventListener('click', async ()=>{ try{ await Auth.loadAll(); this.navigate(this.current); }catch(e){ alert(e.message); } }); }
+    const mn=$('#menuBtn');
+    if(mn && !mn.dataset.bound){ mn.dataset.bound='1'; mn.addEventListener('click', ()=>{ $('.sidebar').classList.toggle('open'); }); }
+    // Extra safety: if Sign in button is clicked without form submit (some browsers), handle it too
+    const lb=$('#loginBtn');
+    if(lb && !lb.dataset.bound){ lb.dataset.bound='1'; lb.addEventListener('click', (e)=>{ if(form && !form.dataset.bound){ /* form handler covers */ } }); }
   },
   showLogin(){ hide($('#appView')); show($('#loginView')); },
   showApp(){
@@ -60,7 +91,7 @@ const App = {
     nav.innerHTML=items.filter(i=>Auth.can(i.perm)).map(i=>'<button data-nav="'+i.id+'" class="'+(i.id===this.current?'active':'')+'"><span class="material-symbols-outlined">'+i.icon+'</span>'+i.label+'</button>').join('');
     $$('[data-nav]', nav).forEach(b=>b.addEventListener('click', ()=>this.navigate(b.dataset.nav)));
   },
-  setTitle(t, sub){ $('#pageTitle').textContent=t; $('#pageSub').textContent=sub||''; $('.sidebar').classList.remove('open'); },
+  setTitle(t, sub){ $('#pageTitle').textContent=t; $('#pageSub').textContent=sub||''; const sb=$('.sidebar'); if(sb) sb.classList.remove('open'); },
   navigate(view){
     if(view==='admin' && !Auth.isSuper()){
       $('#view').innerHTML='<div class="card"><h3>Restricted</h3><p>This page is for role <strong>super</strong> only.</p></div>';
@@ -117,7 +148,8 @@ const App = {
   async startCAT(){
     const file=$('#catFile').value; const diff=$('#catDiff').value; const count=parseInt($('#catCount').value||'10',10);
     this.setTitle('Test','In progress');
-    await CAT.startFromFile(file, {difficulty:diff, count});
+    try{ await CAT.startFromFile(file, {difficulty:diff, count}); }
+    catch(e){ $('#view').innerHTML='<div class="card"><h3>Could not load test</h3><p>'+esc(e.message)+'</p><button class="btn ghost" onclick="App.navigate(\'cat\')">Back</button></div>'; }
   },
   renderTeachSetup(){
     this.setTitle('Teach / Discuss','Show answer + explanation');
@@ -130,13 +162,13 @@ const App = {
   async startTeach(){
     const file=$('#teachFile').value;
     this.setTitle('Teach','Discussing questions');
-    await Teach.open(file);
+    try{ await Teach.open(file); }catch(e){ $('#view').innerHTML='<div class="card"><h3>Could not load</h3><p>'+esc(e.message)+'</p></div>'; }
   },
   renderAdmin(){
     if(!Auth.isSuper()){ $('#view').innerHTML='<div class="card"><h3>Restricted</h3><p>Super only.</p></div>'; return; }
     this.setTitle('Manage Data','Super only • Edit via GitHub push');
     const users = Auth.usersRaw.map(u=>'<tr><td><strong>'+esc(u.username)+'</strong></td><td>'+esc(u.name)+'</td><td><span class="badge '+esc(u.role)+'">'+esc(u.role)+'</span></td><td>'+(u.active?'Active':'Inactive')+'</td></tr>').join('');
-    const roles = Object.entries(Auth.roles).map(([k,v])=>'<tr><td><strong>'+esc(k)+'</strong></td><td>'+esc(v.label||k)+'</td><td>'+esc((v.permissions||[]).join(', '))+'</td></tr>').join('');
+    const roles = Object.entries(Auth.roles||{}).map(([k,v])=>'<tr><td><strong>'+esc(k)+'</strong></td><td>'+esc(v.label||k)+'</td><td>'+esc((v.permissions||[]).join(', '))+'</td></tr>').join('');
     $('#view').innerHTML=`
       <div class="alert info">To update data: edit the JSON file on GitHub → Commit → Push. The site reloads from the new file. No edits are made from this app.</div>
       <div class="grid cols2">

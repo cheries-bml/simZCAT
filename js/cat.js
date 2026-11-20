@@ -2,8 +2,7 @@
 const CAT = {
   meta:null, questions:[], answers:{}, idx:0, timerId:null, secondsLeft:0, useTimer:false, onFinish:null, sourceTitle:'',
   async loadFile(filePath){
-    const data = await fetchJSON(filePath);
-    return data;
+    return await loadQuestionsFile(filePath);
   },
   async startFromFile(filePath, opts={}){
     const data = await this.loadFile(filePath);

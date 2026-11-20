@@ -25,7 +25,7 @@ const Generator = {
     const file=$('#genFile').value; const diff=$('#genDiff').value; const count=parseInt($('#genCount').value||'10',10); const timer=$('#genTimer').value; const order=$('#genOrder').value;
     const out=$('#genResult'); out.innerHTML='<div class="alert info">Generating…</div>';
     try{
-      const data=await fetchJSON(file);
+      const data=await loadQuestionsFile(file);
       let qs=data.questions||[];
       const before=qs.length;
       if(diff!=='all') qs=qs.filter(q=>{ const l=levelOf(q); if(diff==='easy') return l<=2; if(diff==='intermediate') return l===3; return l>=4; });

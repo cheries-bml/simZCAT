@@ -2,7 +2,7 @@
 const Teach = {
   meta:null, questions:[], idx:0, title:'',
   async open(filePath){
-    const data = await fetchJSON(filePath);
+    const data = await loadQuestionsFile(filePath);
     this.meta=data.meta||{}; this.questions=data.questions||[]; this.idx=0; this.title=data.meta?.title||'Teach';
     this.renderList();
   },

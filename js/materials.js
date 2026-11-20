@@ -27,10 +27,10 @@ const Materials = {
       } else if(m.type==='png'||m.type==='jpg'||m.type==='jpeg'){
         viewer='<div class="material-viewer"><img src="'+esc(m.file)+'" alt="'+esc(m.title)+'"></div>';
       } else if(m.type==='md'){
-        const txt=await fetchText(m.file);
+        const txt=await loadMaterialText(m.file);
         viewer='<div class="card md">'+mdToHtml(txt)+'</div>';
       } else {
-        const txt=await fetchText(m.file);
+        const txt=await loadMaterialText(m.file);
         viewer='<pre class="pre">'+esc(txt)+'</pre>';
       }
       view.innerHTML='<div class="row between"><button class="btn ghost" onclick="Materials.renderList()">← Materials</button><a class="btn primary" href="'+esc(m.file)+'" download>Download</a></div><h3 style="margin:14px 0 6px">'+esc(m.title)+'</h3><p class="muted" style="margin:0 0 12px">'+esc(m.description||'')+' • '+esc(m.type.toUpperCase())+'</p>'+viewer;
