@@ -1,23 +1,28 @@
 {
-  "appName": "CAT Learning",
-  "tagline": "Computer Assisted Test",
-  "githubRepoUrl": "https://github.com/YOUR-USERNAME/YOUR-REPO",
-  "githubPagesUrl": "https://YOUR-USERNAME.github.io/YOUR-REPO/",
-  "dataFiles": [
-    "data/users.json",
-    "data/roles.json",
-    "data/config.json",
-    "questions/index.json",
-    "materials/index.json"
-  ],
-  "features": {
-    "cat": true,
-    "teach": true,
-    "materials": true,
-    "generator": true
+  "appName": "ZCat",
+  "designer": "Cheries",
+  "tagline": "Sign in to manage your workspace.",
+  "passwordSalt": "change-this-salt-before-going-live",
+  "sessionMinutes": 30,
+  "maxFailedAttempts": 5,
+  "lockoutMinutes": 5,
+  "defaultTimeInSeconds": {
+    "fast": 15,
+    "normal": 30,
+    "easy": 60
   },
-  "defaults": {
-    "questionsPerTest": 10,
-    "timerMode": "normal"
-  }
+  "defaultPage": "dashboard.html",
+  "loginPage": "index.html",
+  "questionsDir": "questions",
+  "questionsManifest": "manifests/questions-manifest.json",
+  "motivation": [
+    "If you’re not learning, you’re not improving.",
+    "Small steps every day beat big leaps once in a while.",
+    "Mistakes are proof that you are trying.",
+    "Practice turns effort into skill.",
+    "Progress, not perfection.",
+    "Every question you answer makes the next one easier.",
+    "Stay curious. The best learners never stop asking why.",
+    "Consistency is the quiet secret behind every skill."
+  ]
 }

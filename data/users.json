@@ -1,25 +1,9 @@
 {
   "users": [
-    {
-      "username": "super",
-      "name": "Super Admin",
-      "role": "super",
-      "active": true,
-      "passwordHash": "6eb7d4e93479f9534588ef1084e7862a45e98ac3b378f9c6862757941b220b88"
-    },
-    {
-      "username": "teacher",
-      "name": "Teacher Demo",
-      "role": "teacher",
-      "active": true,
-      "passwordHash": "202dd3a65ba14582551e6660d122172f09b0afaab70f5ad3b3b73d5a23f5ab1d"
-    },
-    {
-      "username": "student",
-      "name": "Student Demo",
-      "role": "student",
-      "active": true,
-      "passwordHash": "cb2433073edb25ca77f0445dcdbd7e7c568196eef1cd54da7228ddd227240e2e"
-    }
+    {"username": "admin", "name": "Ava Admin", "email": "ava@example.com", "roles": ["admin"], "active": true, "passwordHash": "3e1a7e0813a1d5d7a6e153104d08311ee322852ae0084bd03662ba70c8d58130"},
+    {"username": "editor", "name": "Eli Editor", "email": "eli@example.com", "roles": ["editor"], "active": true, "passwordHash": "1e87b64603f1094fd0c22530f5d7fba4932485abf759efdd0773cbd67a1170a6"},
+    {"username": "viewer", "name": "Vera Viewer", "email": "vera@example.com", "roles": ["viewer"], "active": true, "passwordHash": "bd22c6752168edc7e9a025032a40df233849fbfe4a501c44160ef90930ee8d9c"},
+    {"username": "sam", "name": "Sam Multi", "email": "sam@example.com", "roles": ["editor", "auditor"], "active": true, "passwordHash": "7c40a46a22193a2f14513c661e1e2c91641bee444760ed90fd7b25d72fab1dfe"},
+    {"username": "former", "name": "Finn Former", "email": "finn@example.com", "roles": ["viewer"], "active": false, "passwordHash": "bdee14578c739e727c9a2d38d3ce2abe10d5a49990b176fd24df8c40467cbb8c"}
   ]
 }

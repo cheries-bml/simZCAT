@@ -1,78 +1,152 @@
-# CAT Learning — Computer Assisted Test
+# Northfield Console
 
-Static web app for GitHub Pages. No database, no POST. All data via GET from JSON.
+Static login + computer-assisted test app for GitHub Pages. Plain HTML, CSS and JavaScript; users, roles, settings and questions all live in JSON files. The browser only ever makes GET requests for those files.
 
 ## Structure
+
 ```
-index.html
-css/style.css
-js/
-  utils.js
-  auth.js
-  cat.js
-  teach.js
-  materials.js
-  generator.js
-  app.js
-data/
-  users.json
-  roles.json
-  config.json
-questions/
-  index.json
-  sample-english.json
-materials/
-  index.json
-  sample-notes.md
-  sample-notes.txt
+.
+├── index.html                 Login page
+├── dashboard.html             App shell (Overview, Test, Reports, Users, Settings)
+├── assets/
+│   ├── css/styles.css
+│   └── js/
+│       ├── auth.js            Data loading, session, lockout, roles/permissions
+│       ├── util.js            DOM helpers + HTML allowlist sanitizer
+│       ├── login.js
+│       ├── dashboard.js       Sections shown by role permissions
+│       ├── password-tool.js   Admin page: generate / check password hashes
+│       ├── reports.js         Reports page (saved test attempts)
+│       ├── results.js         Saves attempts in localStorage
+│       ├── modal.js           Modal dialogs (replace alert / confirm)
+│       ├── home.js            Home page (the logo): welcome, newest tests, latest attempts, quotes
+│       ├── brand.js           The logo (icon + appName + "by designer")
+│       ├── icons.js           Inline icons (Material Design Icons)
+│       ├── catalog.js         Loads the tests listed in the index
+│       ├── test-engine.js     Scoring, timing, answer formatting (no DOM)
+│       └── test-ui.js         Test catalog, intro, runner, results
+├── data/
+│   └── config.json  roles.json  users.json
+├── manifests/
+│   └── questions-manifest.json   List of question files the app reads
+├── questions/                 Your question files, any folder depth
+│   └── sample_question.json
+├── scripts/hash_password.py   Optional: command-line password hasher
+├── scripts/build_manifest.py  Optional: scans /questions recursively -> manifests/questions-manifest.json
+└── .github/workflows/build-manifest.yml   Optional: rebuilds the manifest on every push
 ```
+
+## Adding tests
+
+The app reads `manifests/questions-manifest.json` to know which question files exist:
+
+```json
+{ "files": ["questions/sample_question.json", "questions/english/grammar.json"] }
+```
+
+1. Put a question JSON file anywhere under `questions/` (subfolders are fine; the folder name becomes the card label).
+2. Add its path to the manifest, either way:
+   - **By hand:** edit `manifests/questions-manifest.json`.
+   - **Generated:** run `python3 scripts/build_manifest.py`, which scans `questions/` recursively and rewrites the manifest. The included GitHub Action does the same on every push that touches `questions/`.
+
+Why a manifest? GitHub Pages is static, so a browser cannot list a folder. The browser loads the manifest, then each listed file, all with GET requests. Files without `meta` and a `questions` array are ignored, and `meta.config.active: false` hides a test.
+
+## Question file format
+
+- `meta`: `title`, `description`, `info`, `author`, `created` (optional date such as `2026-11-19`, used to rank "newest"), `config` (`active`, `no_timer`, `show_answer`, `show_explanation`).
+- `questions[]`: `id`, `type`, `data`, `explanation`, `config` (`level`, `show_answer`, `show_explanation`, `time_in_seconds`).
+- **`multiple_choice`**: `options` keyed by letter; options with `"correct": true` are the answers. Two or more correct options turn the question into select-all (checkboxes). Scoring is all-or-nothing.
+- **`correction`**: `multiErrorSegments`. The user clicks the clickable segments they think are wrong and types a fix; "No error" is also available. A question is correct when the marked segments are exactly those with `isError: true` and every typed fix matches one of `correctAnswers` (case, spacing and edge punctuation ignored). With no `isError` segments, "No error" is the right answer.
+- **Timer:** every test is timed (`meta.config.no_timer` is ignored). Clicking a test opens a dialog where the user picks a pace (`fast`, `normal`, `easy`); the total time is the sum of each question's `config.time_in_seconds[pace]`. A question without that value uses `defaultTimeInSeconds[pace]` from `data/config.json`. When time runs out the test is submitted automatically.
+- **Feedback:** correct answers and explanations appear in the results review. Question-level `show_answer` / `show_explanation` override the test-level values.
+- Light HTML (`<b>`, `<br>`, `<i>`, lists) is allowed in text fields; everything else is stripped.
+
+## Users and roles
+
+Users live in `data/users.json`; add a user by editing the file and pushing to GitHub:
+
+```json
+{ "username": "sam", "name": "Sam Multi", "email": "sam@example.com", "roles": ["editor", "auditor"], "active": true, "passwordHash": "<64 hex characters>" }
+```
+
+- `roles` is a list. A user's permissions are the union of the permissions of all their roles.
+- Role names and their permissions are defined in `data/roles.json`. A role name not listed there grants nothing.
+- Set `"active": false` to disable a user.
+
+### Passwords
+
+- `passwordHash` is the SHA-256 of `passwordSalt:username:password` as 64 hex characters. The salt is in `data/config.json`; the username is lowercase.
+- **Generate a hash:** sign in as an admin and open the **Passwords** page (it runs in your browser and sends nothing anywhere), or run `python3 scripts/hash_password.py sam` (prompts for the password, so it stays out of your shell history).
+- **A hash cannot be turned back into the password.** Hashing is one-way. To check a password, use "Check a password" on the Passwords page. To recover access, generate a new hash and replace the old one.
+- Renaming a user or changing `passwordSalt` invalidates the hash; generate it again.
+- Change `passwordSalt` before going live (then regenerate every hash).
+
+Demo accounts:
+
+| Username | Password  | Roles             |
+|----------|-----------|-------------------|
+| admin    | admin123  | admin             |
+| editor   | editor123 | editor            |
+| viewer   | viewer123 | viewer            |
+| sam      | sam123    | editor + auditor  |
+
+## Branding, home page and icons
+
+- The logo is the cat icon plus `appName` and `designer` from `data/config.json` ("ZCat by Cheries"). It replaces the Overview menu item and links to the home page.
+- The home page shows a welcome message, a **START TEST** button (opens the Test page), the 3 newest tests, the user's 3 latest attempts, and 3 motivational cards chosen from `motivation` in `config.json` (the selection rotates daily). Edit that list to change the sentences.
+- "Newest" means the latest `meta.created` date in a question file. Files without it rank by their position in `manifests/questions-manifest.json` (later = newer).
+- Icons are [Material Design Icons](https://pictogrammers.com/library/mdi/) (Apache License 2.0), copied inline into `assets/js/icons.js`, so the app makes no extra network requests for them. The favicon is `assets/img/favicon.svg`.
+
+## Permissions and special features
+
+Set per role in `data/roles.json`; a user gets the union of all their roles.
+
+```json
+"editor": { "label": "Editor", "permissions": ["overview.view", "test.view", "reports.view"], "special": ["show_answer", "timer_disabler"] }
+```
+
+`permissions` control which pages a user can open:
+
+| Permission | Allows |
+|---|---|
+| `overview.view`, `test.view`, `reports.view`, `users.view`, `settings.view` | Opening that page |
+| `reports.all` | Reports lists every user's results (without it, only your own) |
+| `passwords.tool` | The Passwords page |
+
+`special` features add abilities while a test is running:
+
+| Special feature | Allows |
+|---|---|
+| `show_answer` | A **Show answer** button (toggles; hidden again when you change question) |
+| `show_explanation` | An **Explanation** button (opens a modal) |
+| `timer_disabler` | **Pause / Resume** and **Disable timer / Enable timer** buttons |
+
+The `show_answer` / `show_explanation` flags inside question files only decide what the review after the test shows. Answers and explanations viewed during a test, and pausing or disabling the timer, are recorded and shown in Reports; they do not change the score.
+
+## Reports
+
+Each finished test is saved as an attempt in this browser's `localStorage` (the app has no server, so nothing is uploaded). Reports lists the attempts made in this browser: your own, or everyone's with `reports.all`. The newest 500 are kept. Results from other devices or browsers cannot appear here.
+
+Each row has **Retake** (opens that test's start page) and **Review** (shows the answers given in that attempt). Review is not available for results saved before this feature existed, or when the test's questions have changed since the attempt.
+
+## Dialogs
+
+Notices, errors and confirmations are in-page modal dialogs (`assets/js/modal.js`). The one native prompt left is the browser's "Leave site?" warning if you close or reload the tab during a test; browsers do not let pages restyle it.
 
 ## Run locally
-```bash
-python -m http.server 8000
-# open http://localhost:8000
+
+`fetch()` and ES modules need a web server (not `file://`):
+
 ```
-Do NOT open via file:// — fetch() needs HTTP.
+python3 -m http.server 8000
+```
 
 ## Deploy to GitHub Pages
-1. Push this folder to a repo (root or /docs).
-2. Repo → Settings → Pages → Source: Deploy from branch, Folder: / (root) or /docs.
-3. Open `https://YOUR-USERNAME.github.io/YOUR-REPO/`
-4. Update `data/config.json` → `githubRepoUrl` with your real repo URL.
 
-## Login
-- Passwords in `data/users.json` are SHA-256 hashes. Login hashes the entered password in the browser and compares.
-- Demo accounts (change passwords + hashes before real use):
-  - super / Super123! → role super (sees Manage Data)
-  - teacher / Teach123! → role teacher
-  - student / Student123! → role student
+Push to a repo, then Settings → Pages → Deploy from a branch → `main` / root. All paths are relative, so project sites under `/<repo>/` work.
 
-Generate a hash:
-```bash
-python -c "import hashlib; print(hashlib.sha256(b'YourPassword'.encode()).hexdigest())"
-```
+## Security note
 
-## Roles
-- `super`: dashboard, take_test, teach, materials, generate, manage_data
-- `teacher`: dashboard, take_test, teach, materials, generate
-- `student`: dashboard, take_test, materials
+This is static hosting: every JSON file, including question files with their correct answers, is publicly downloadable. The login controls what the interface shows but cannot protect secrets. Do not use it for high-stakes exams or private data.
 
-Only `super` sees Manage Data. Manage Data never shows password hashes.
-
-## Questions
-Add a file in `/questions/` (same shape as `sample-english.json`), then add an entry to `questions/index.json`:
-```json
-{"id":"my-test","file":"questions/my-test.json","title":"My Test","description":"...","count":10}
-```
-Levels: 1-2 = Easy, 3 = Intermediate, 4-5 = Advanced.
-Types: `multiple_choice` (set `correct:true` on correct options; multiple correct = checkbox) and `correction` (`multiErrorSegments` with `isError` + `correctAnswers`).
-
-## Materials
-Add file to `/materials/` and entry to `materials/index.json`:
-```json
-{"id":"x","title":"...","type":"pdf","file":"materials/x.pdf","description":"..."}
-```
-Types: pdf, png, jpg, txt, md.
-
-## Updating data
-Edit JSON in GitHub → Commit → Push. The app re-fetches on reload. No POST, no server.
+Passwords are stored as salted SHA-256 hashes. That hides them from casual reading, but SHA-256 is fast, and `users.json` is public, so anyone can try guesses offline. Use long, unique passwords.
