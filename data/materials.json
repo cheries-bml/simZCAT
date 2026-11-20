@@ -1,0 +1,14 @@
+[
+  {
+    "id": "mat-1",
+    "title": "Grammar & Tense Reference",
+    "type": "md",
+    "path": "materials/sample_notes.md"
+  },
+  {
+    "id": "mat-2",
+    "title": "Exam Guidelines",
+    "type": "txt",
+    "path": "materials/sample_guide.txt"
+  }
+]

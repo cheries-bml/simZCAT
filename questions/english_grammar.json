@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "title": "Test title",
+    "description": "Question Description",
+    "info": "Additional information about the test.",
+    "author": "Author Name",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/sample-image.jpg",
+          "orientation": "landscape | portrait | square"
+        },
+        "passage": "She is a fitness enthusiast and maintains a strict routine. <br>Every morning, she wakes up early and heads to the gym for her workout session. She <b>believes</b> that regular exercise is essential for a healthy lifestyle.",
+        "question": "She ___ to the gym every morning."
+      },
+      "options": {
+        "A": {
+          "text": "gone"
+        },
+        "B": {
+          "text": "going",
+          "correct": false
+        },
+        "C": {
+          "text": "goes",
+          "correct": true
+        },
+        "D": {
+          "text": "go"
+        },
+        "E": {
+          "text": "always goes",
+          "correct": true
+        }
+      },
+      "explanation": {
+        "text": "Third person singular subject 'She' requires the verb form 'goes' in the simple present tense. Also, 'always goes' is correct as it indicates a habitual action.",
+        "topic": "Simple Present Tense",
+        "concept": "Subject-Verb Agreement",
+        "formula": "Subject (He/She/It) + Verb (base form + s/es)",
+        "examples": [
+          "He <b>goes</b> to school every day.",
+          "She <b>likes</b> to read books."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Having",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "warning",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "been warned"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "about the risks,",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "the team,",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s5",
+          "text": "which were responsible",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "which was responsible",
+            "that was responsible"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": "for the safety checks,",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "proceeded cautiously,",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s8",
+          "text": "neither of the supervisors being aware",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s9",
+          "text": "of the final decision.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "The correct forms are 'been warned' instead of 'warning' and 'which was responsible' or 'that was responsible' instead of 'which were responsible'.",
+        "topic": "Subject-Verb Agreement",
+        "concept": "Correcting verb forms to match subject number and tense.",
+        "formula": "Subject (singular/plural) + Verb (correct form)",
+        "examples": [
+          "The team, which <b>was responsible</b> for the project, completed it on time.",
+          "Having <b>been warned</b> about the risks, they proceeded cautiously."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    }
+  ]
+}
