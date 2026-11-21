@@ -1,0 +1,1034 @@
+{
+  "meta": {
+    "title": "Advanced English Grammar Test (C1-C2)",
+    "description": "A comprehensive 30-question test covering advanced English grammar topics from C1 to C2 level.",
+    "info": "This test includes multiple-choice and error correction questions. Pay close attention to nuanced grammar rules, advanced syntax, and precise vocabulary usage.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": false,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option to complete the sentence.",
+        "question": "Rarely ______ such a profound impact on the scientific community."
+      },
+      "options": {
+        "A": { "text": "has a theory had", "correct": true },
+        "B": { "text": "a theory has had", "correct": false },
+        "C": { "text": "did a theory has", "correct": false },
+        "D": { "text": "a theory did have", "correct": false }
+      },
+      "explanation": {
+        "text": "When a sentence begins with a negative or restrictive adverb like 'rarely', subject-auxiliary inversion is required. The present perfect 'has a theory had' is the correct form here.",
+        "topic": "Inversion",
+        "concept": "Negative Adverbial Inversion",
+        "formula": "Rarely/Never/Seldom + Auxiliary + Subject + Main Verb",
+        "examples": [
+          "Rarely <b>has he seen</b> such a beautiful sunset.",
+          "Never <b>have I been</b> so insulted."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error.",
+        "question": "If he would have paid more attention to the details, we are not in this mess right now."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If he ", "clickable": false },
+        { "id": "s2", "text": "would have paid", "clickable": true, "isError": true, "correctAnswers": ["had paid"] },
+        { "id": "s3", "text": " more attention to the details, we ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "are not", "clickable": true, "isError": true, "correctAnswers": ["would not be"] },
+        { "id": "s5", "text": " in this mess right now.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This is a mixed conditional. The 'if' clause refers to a past unreal condition, requiring the past perfect ('had paid'). The main clause refers to a present unreal result, requiring 'would' + base verb ('would not be').",
+        "topic": "Mixed Conditionals",
+        "concept": "Unreal Past Condition with Present Result",
+        "formula": "If + Past Perfect, Subject + would + base verb",
+        "examples": [
+          "If I <b>had studied</b> harder, I <b>would be</b> a doctor now.",
+          "If she <b>had taken</b> the job, she <b>would live</b> in Paris."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct word to complete the cleft sentence.",
+        "question": "______ was the sheer determination of the team that led to the unexpected victory."
+      },
+      "options": {
+        "A": { "text": "It", "correct": true },
+        "B": { "text": "What", "correct": false },
+        "C": { "text": "That", "correct": false },
+        "D": { "text": "There", "correct": false }
+      },
+      "explanation": {
+        "text": "Cleft sentences use 'It + be + emphasized element + that/who clause' to highlight specific information. 'It' is the correct dummy subject here.",
+        "topic": "Cleft Sentences",
+        "concept": "It-Cleft Structure",
+        "formula": "It + be + emphasized element + that/who clause",
+        "examples": [
+          "<b>It</b> was John <b>who</b> broke the window.",
+          "<b>It</b> is the environment <b>that</b> we must protect."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form.",
+        "question": "Convincing by the overwhelming evidence, the jury reached a unanimous verdict."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Convincing", "clickable": true, "isError": true, "correctAnswers": ["Convinced"] },
+        { "id": "s2", "text": " by the overwhelming evidence, ", "clickable": true, "isError": false },
+        { "id": "s3", "text": "the jury reached a unanimous verdict.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "The participle clause must logically relate to the subject of the main clause. The jury was 'convinced' (passive meaning), so the past participle 'Convinced' is required, not the active 'Convincing'.",
+        "topic": "Participle Clauses",
+        "concept": "Past Participle for Passive Meaning",
+        "formula": "Past Participle + (object/complement), Main Clause",
+        "examples": [
+          "<b>Exhausted</b> by the journey, he fell asleep immediately.",
+          "<b>Written</b> in 1850, the novel remains a classic."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "The ancient manuscript is believed ______ in the 14th century."
+      },
+      "options": {
+        "A": { "text": "to have been written", "correct": true },
+        "B": { "text": "to be written", "correct": false },
+        "C": { "text": "having been written", "correct": false },
+        "D": { "text": "being written", "correct": false }
+      },
+      "explanation": {
+        "text": "The structure 'is believed to have + past participle' is used for advanced passive reporting about past events. 'To have been written' correctly places the action in the past relative to the present belief.",
+        "topic": "Advanced Passive",
+        "concept": "Passive Reporting Structures with Perfect Infinitive",
+        "formula": "Subject + is/are believed/said/thought + to have + past participle",
+        "examples": [
+          "He <b>is said to have stolen</b> the painting.",
+          "The castle <b>is thought to have been built</b> in the 12th century."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form.",
+        "question": "You must tell the manager about the issue earlier; it would have saved us a lot of trouble."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "You ", "clickable": true, "isError": false },
+        { "id": "s2", "text": "must tell", "clickable": true, "isError": true, "correctAnswers": ["should have told"] },
+        { "id": "s3", "text": " the manager about the issue earlier; it would have saved us a lot of trouble.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "To express a past obligation that was not fulfilled, 'should have + past participle' is used. 'Must tell' is present tense and does not fit the past context 'earlier'.",
+        "topic": "Modal Verbs in the Past",
+        "concept": "Unfulfilled Past Obligation",
+        "formula": "Subject + should have + past participle",
+        "examples": [
+          "You <b>should have called</b> me yesterday.",
+          "They <b>ought to have finished</b> the project by now."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "By the end of this month, I ______ at this company for exactly ten years."
+      },
+      "options": {
+        "A": { "text": "will work", "correct": false },
+        "B": { "text": "will have been working", "correct": true },
+        "C": { "text": "will be working", "correct": false },
+        "D": { "text": "am going to work", "correct": false }
+      },
+      "explanation": {
+        "text": "The Future Perfect Continuous ('will have been working') is used to emphasize the duration of an action up to a specific point in the future ('By the end of this month').",
+        "topic": "Future Perfect Continuous",
+        "concept": "Duration up to a Future Point",
+        "formula": "Subject + will have been + verb-ing",
+        "examples": [
+          "By next year, she <b>will have been living</b> here for a decade.",
+          "In December, we <b>will have been working</b> on this project for six months."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form.",
+        "question": "The CEO, who decision to invest in renewable energy was initially criticized, has now been vindicated."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The CEO, ", "clickable": true, "isError": false },
+        { "id": "s2", "text": "who", "clickable": true, "isError": true, "correctAnswers": ["whose"] },
+        { "id": "s3", "text": " decision to invest in renewable energy was initially criticized, has now been vindicated.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "'Whose' is the possessive relative pronoun used to indicate that the 'decision' belongs to the 'CEO'. 'Who' is a subject pronoun and cannot show possession.",
+        "topic": "Advanced Relative Clauses",
+        "concept": "Possessive Relative Pronouns",
+        "formula": "Noun + , + whose + noun + verb...",
+        "examples": [
+          "The author, <b>whose</b> book won the prize, is giving a talk.",
+          "I met a man <b>whose</b> brother is a famous actor."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option to complete the sentence.",
+        "question": "He promised to help, and ______."
+      },
+      "options": {
+        "A": { "text": "so he did", "correct": true },
+        "B": { "text": "so did he", "correct": false },
+        "C": { "text": "he did so", "correct": false },
+        "D": { "text": "did he so", "correct": false }
+      },
+      "explanation": {
+        "text": "'So + subject + auxiliary' is used to confirm or agree with a previous statement, emphasizing that the action indeed happened. 'So he did' means 'he indeed promised and did help'.",
+        "topic": "Ellipsis and Substitution",
+        "concept": "Confirmatory 'So'",
+        "formula": "So + Subject + Auxiliary Verb",
+        "examples": [
+          "\"It's raining.\" \"<b>So it is</b>.\"",
+          "\"You left the door open.\" \"<b>So I did</b>.\""
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form.",
+        "question": "I don't like this design. Let's try a different it."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I don't like ", "clickable": true, "isError": false },
+        { "id": "s2", "text": "this design. Let's try a different ", "clickable": true, "isError": false },
+        { "id": "s3", "text": "it", "clickable": true, "isError": true, "correctAnswers": ["one"] },
+        { "id": "s4", "text": ".", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "'One' is used as a pronoun to substitute a singular countable noun ('design') to avoid repetition. 'It' refers to the exact same specific object, which is incorrect here.",
+        "topic": "Substitution",
+        "concept": "Using 'One' as a Pronoun Substitute",
+        "formula": "Adjective + one",
+        "examples": [
+          "I lost my pen. I need to buy a new <b>one</b>.",
+          "This cake is good, but I prefer the chocolate <b>one</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct preposition to complete the sentence.",
+        "question": "The new policy is ______ the grounds that it will reduce operational costs."
+      },
+      "options": {
+        "A": { "text": "on", "correct": true },
+        "B": { "text": "in", "correct": false },
+        "C": { "text": "at", "correct": false },
+        "D": { "text": "by", "correct": false }
+      },
+      "explanation": {
+        "text": "The fixed phrase is 'on the grounds that', which means 'for the reason that'. Other prepositions do not collocate with 'grounds' in this context.",
+        "topic": "Advanced Prepositions",
+        "concept": "Fixed Prepositional Phrases",
+        "formula": "on the grounds that + clause",
+        "examples": [
+          "He was dismissed <b>on the grounds of</b> misconduct.",
+          "The appeal was rejected <b>on the grounds that</b> it lacked evidence."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form.",
+        "question": "I regret telling you that your application has been unsuccessful."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I ", "clickable": true, "isError": false },
+        { "id": "s2", "text": "regret", "clickable": true, "isError": false },
+        { "id": "s3", "text": "telling", "clickable": true, "isError": true, "correctAnswers": ["to tell"] },
+        { "id": "s4", "text": " you that your application has been unsuccessful.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "'Regret + to infinitive' is used to formally announce bad news. 'Regret + gerund' expresses remorse about a past action. Since the bad news is being delivered now, 'to tell' is correct.",
+        "topic": "Gerunds vs Infinitives",
+        "concept": "Verbs with Changed Meaning (Regret)",
+        "formula": "Regret + to infinitive (for present/future bad news)",
+        "examples": [
+          "I <b>regret to inform</b> you that your flight is cancelled.",
+          "I <b>regret saying</b> those harsh words yesterday."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct discourse marker to complete the sentence.",
+        "question": "______ the fact that the economy is slowing down, the company has reported record profits."
+      },
+      "options": {
+        "A": { "text": "Although", "correct": false },
+        "B": { "text": "Despite", "correct": true },
+        "C": { "text": "Even", "correct": false },
+        "D": { "text": "Whereas", "correct": false }
+      },
+      "explanation": {
+        "text": "'Despite' is a preposition and must be followed by a noun phrase or 'the fact that' + clause. 'Although' is a conjunction and would be followed directly by a clause without 'the fact that'.",
+        "topic": "Discourse Markers",
+        "concept": "Concession Markers",
+        "formula": "Despite + noun phrase / the fact that + clause",
+        "examples": [
+          "<b>Despite</b> the rain, we went for a walk.",
+          "<b>Despite the fact that</b> he was tired, he finished the race."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form.",
+        "question": "The board demanded that the CEO takes immediate responsibility for the financial discrepancy."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The board demanded that ", "clickable": true, "isError": false },
+        { "id": "s2", "text": "the CEO ", "clickable": true, "isError": false },
+        { "id": "s3", "text": "takes", "clickable": true, "isError": true, "correctAnswers": ["take"] },
+        { "id": "s4", "text": " immediate responsibility for the financial discrepancy.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "After verbs of demand, request, or suggestion (like 'demanded'), the subjunctive mood is used, which requires the base form of the verb ('take') without 's', regardless of the subject.",
+        "topic": "Subjunctive",
+        "concept": "Mandative Subjunctive",
+        "formula": "Verb of demand/suggest + that + subject + base verb",
+        "examples": [
+          "I suggest that he <b>study</b> harder.",
+          "It is essential that she <b>be</b> present."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct conjunction to complete the sentence.",
+        "question": "______ had I stepped outside than it started pouring with rain."
+      },
+      "options": {
+        "A": { "text": "No sooner", "correct": true },
+        "B": { "text": "Hardly", "correct": false },
+        "C": { "text": "Scarcely", "correct": false },
+        "D": { "text": "Barely", "correct": false }
+      },
+      "explanation": {
+        "text": "'No sooner' is always paired with 'than' to indicate that one event happened immediately after another. 'Hardly' and 'scarcely' are paired with 'when' or 'before'.",
+        "topic": "Advanced Conjunctions",
+        "concept": "Correlative Conjunctions for Time",
+        "formula": "No sooner + had + subject + past participle + than + clause",
+        "examples": [
+          "<b>No sooner</b> had I arrived <b>than</b> the phone rang.",
+          "<b>Hardly</b> had we started <b>when</b> it began to snow."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form.",
+        "question": "The implement of the new software has significantly improved our workflow efficiency."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The ", "clickable": true, "isError": false },
+        { "id": "s2", "text": "implement", "clickable": true, "isError": true, "correctAnswers": ["implementation"] },
+        { "id": "s3", "text": " of the new software ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "has significantly improved our workflow efficiency.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "Nominalization requires a noun form. 'Implementation' is the correct noun derived from the verb 'implement', fitting the grammatical structure after the definite article 'The'.",
+        "topic": "Nominalization",
+        "concept": "Verb to Noun Conversion",
+        "formula": "The + noun (derived from verb) + of + noun",
+        "examples": [
+          "The <b>development</b> of new technology is rapid.",
+          "The <b>application</b> of this rule is strict."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "On the table ______ an ancient, leather-bound book."
+      },
+      "options": {
+        "A": { "text": "laid", "correct": false },
+        "B": { "text": "lay", "correct": true },
+        "C": { "text": "lying", "correct": false },
+        "D": { "text": "did lie", "correct": false }
+      },
+      "explanation": {
+        "text": "Fronting the prepositional phrase 'On the table' triggers inversion with verbs of place or movement. 'Lay' is the past tense of 'lie' (to be situated), which correctly describes the book's position.",
+        "topic": "Fronting and Inversion",
+        "concept": "Locative Inversion",
+        "formula": "Prepositional phrase of place + verb of place/movement + subject",
+        "examples": [
+          "On the hill <b>stood</b> a lonely castle.",
+          "Under the bed <b>lay</b> a forgotten toy."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form.",
+        "question": "The more you practice, the good you will become at playing the piano."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The more you practice, ", "clickable": true, "isError": false },
+        { "id": "s2", "text": "the ", "clickable": true, "isError": false },
+        { "id": "s3", "text": "good", "clickable": true, "isError": true, "correctAnswers": ["better"] },
+        { "id": "s4", "text": " you will become at playing the piano.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "The double comparative structure requires 'the + comparative adjective'. 'Better' is the correct comparative form of 'good' to parallel 'The more'.",
+        "topic": "Advanced Comparatives",
+        "concept": "Double Comparatives",
+        "formula": "The + comparative ..., the + comparative ...",
+        "examples": [
+          "<b>The harder</b> you work, <b>the more</b> you achieve.",
+          "<b>The sooner</b> we leave, <b>the earlier</b> we will arrive."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "If only I ______ about the traffic; I would have left earlier."
+      },
+      "options": {
+        "A": { "text": "knew", "correct": false },
+        "B": { "text": "had known", "correct": true },
+        "C": { "text": "would know", "correct": false },
+        "D": { "text": "have known", "correct": false }
+      },
+      "explanation": {
+        "text": "'If only' followed by the past perfect ('had known') expresses a strong regret about a past situation. It aligns with the third conditional result 'would have left'.",
+        "topic": "Wish / If only",
+        "concept": "Regret about the Past",
+        "formula": "If only + subject + past perfect",
+        "examples": [
+          "<b>If only</b> I <b>had studied</b> harder for the exam.",
+          "I wish I <b>hadn't said</b> that."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form.",
+        "question": "The witness refused having seen the suspect at the scene of the crime."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The witness ", "clickable": true, "isError": false },
+        { "id": "s2", "text": "refused", "clickable": true, "isError": true, "correctAnswers": ["denied"] },
+        { "id": "s3", "text": "having seen", "clickable": true, "isError": false },
+        { "id": "s4", "text": " the suspect at the scene of the crime.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "'Denied' is the correct reporting verb followed by a gerund ('having seen') to state that someone claims something is not true. 'Refused' is followed by a to-infinitive and means declining to do something.",
+        "topic": "Reporting Verbs",
+        "concept": "Verb Patterns for Reporting",
+        "formula": "Deny + gerund / to-infinitive",
+        "examples": [
+          "He <b>denied stealing</b> the money.",
+          "She <b>admitted making</b> a mistake."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option to avoid a dangling modifier.",
+        "question": "______ the final chapter, the book was returned to the library."
+      },
+      "options": {
+        "A": { "text": "Reading", "correct": false },
+        "B": { "text": "Having read", "correct": false },
+        "C": { "text": "After reading", "correct": false },
+        "D": { "text": "When I had read", "correct": true }
+      },
+      "explanation": {
+        "text": "To avoid a dangling modifier, the subject of the participle clause must be the doer of the action. 'When I had read' correctly identifies 'I' as the reader, whereas 'the book' cannot read.",
+        "topic": "Dangling Modifiers",
+        "concept": "Logical Subject of Participle Clauses",
+        "formula": "Subordinate clause with clear subject + main clause",
+        "examples": [
+          "<b>When I opened</b> the door, the cat ran out.",
+          "<b>After finishing</b> his homework, he went to bed."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form.",
+        "question": "Would the weather improve, we will proceed with the outdoor event."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "", "clickable": true, "isError": false },
+        { "id": "s2", "text": "Would", "clickable": true, "isError": true, "correctAnswers": ["Should"] },
+        { "id": "s3", "text": " the weather improve, ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "we will proceed with the outdoor event.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "Inverted conditionals for real or likely future conditions use 'Should + subject + base verb'. 'Would' is not used in the 'if' clause or its inverted form.",
+        "topic": "Inverted Conditionals",
+        "concept": "Omission of 'If' with 'Should'",
+        "formula": "Should + subject + base verb, main clause",
+        "examples": [
+          "<b>Should</b> you need any help, please let me know.",
+          "<b>Were</b> I you, I would accept the offer."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "I need to get this document ______ before the meeting starts."
+      },
+      "options": {
+        "A": { "text": "translate", "correct": false },
+        "B": { "text": "translating", "correct": false },
+        "C": { "text": "translated", "correct": true },
+        "D": { "text": "to translate", "correct": false }
+      },
+      "explanation": {
+        "text": "The causative structure 'get + object + past participle' is used when we arrange for someone else to do something. 'Translated' is the correct past participle.",
+        "topic": "Causative Forms",
+        "concept": "Get + Object + Past Participle",
+        "formula": "Get + object + past participle",
+        "examples": [
+          "I need to <b>get my hair cut</b>.",
+          "She <b>got her car repaired</b> yesterday."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form.",
+        "question": "The committee decided to put away the proposal until the next fiscal year."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The committee ", "clickable": true, "isError": false },
+        { "id": "s2", "text": "decided to ", "clickable": true, "isError": false },
+        { "id": "s3", "text": "put away", "clickable": true, "isError": true, "correctAnswers": ["put off"] },
+        { "id": "s4", "text": " the proposal until the next fiscal year.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "'Put off' is the correct phrasal verb meaning to postpone or delay. 'Put away' means to store something in its proper place.",
+        "topic": "Phrasal Verbs",
+        "concept": "Phrasal Verbs for Postponement",
+        "formula": "Put off + noun/gerund",
+        "examples": [
+          "We had to <b>put off</b> the meeting.",
+          "Don't <b>put off</b> doing your homework."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct article(s) to complete the sentence.",
+        "question": "______ honesty is a virtue that is highly valued in ______ leadership."
+      },
+      "options": {
+        "A": { "text": "The / the", "correct": false },
+        "B": { "text": "An / a", "correct": false },
+        "C": { "text": "(no article) / (no article)", "correct": true },
+        "D": { "text": "The / (no article)", "correct": false }
+      },
+      "explanation": {
+        "text": "Abstract nouns like 'honesty' and 'leadership' generally do not take articles when used in a general, universal sense. Therefore, no article is needed in either blank.",
+        "topic": "Articles",
+        "concept": "Zero Article with Abstract Nouns",
+        "formula": "Zero article + abstract noun (general sense)",
+        "examples": [
+          "<b>Love</b> is a powerful emotion.",
+          "She has great respect for <b>authority</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form.",
+        "question": "There were far less people at the conference than we had initially anticipated."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "There were far ", "clickable": true, "isError": false },
+        { "id": "s2", "text": "less", "clickable": true, "isError": true, "correctAnswers": ["fewer"] },
+        { "id": "s3", "text": " people at the conference ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "than we had initially anticipated.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "'People' is a countable noun, so it requires the comparative quantifier 'fewer', not 'less'. 'Less' is used for uncountable nouns.",
+        "topic": "Quantifiers",
+        "concept": "Fewer vs. Less",
+        "formula": "Fewer + countable plural noun",
+        "examples": [
+          "There are <b>fewer</b> cars on the road today.",
+          "I have <b>less</b> time than I thought."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct conjunction to complete the sentence.",
+        "question": "______ exhausted he was, he managed to finish the marathon."
+      },
+      "options": {
+        "A": { "text": "However", "correct": true },
+        "B": { "text": "Whatever", "correct": false },
+        "C": { "text": "Although", "correct": false },
+        "D": { "text": "Despite", "correct": false }
+      },
+      "explanation": {
+        "text": "'However' is used with an adjective or adverb ('However exhausted he was') to mean 'no matter how'. 'Although' would require a different structure (e.g., 'Although he was exhausted').",
+        "topic": "Adverbial Clauses of Concession",
+        "concept": "However + Adjective/Adverb",
+        "formula": "However + adjective/adverb + subject + verb",
+        "examples": [
+          "<b>However hard</b> he tried, he couldn't solve the puzzle.",
+          "<b>However much</b> it costs, I will buy it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form.",
+        "question": "What I find most astonishing is the fact which he managed to complete the task without any assistance."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "What I find ", "clickable": true, "isError": false },
+        { "id": "s2", "text": "most astonishing is the fact ", "clickable": true, "isError": false },
+        { "id": "s3", "text": "which", "clickable": true, "isError": true, "correctAnswers": ["that"] },
+        { "id": "s4", "text": " he managed to complete the task without any assistance.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "The phrase 'the fact that' is a fixed nominal clause introducer. 'Which' is a relative pronoun and cannot correctly follow 'the fact' to introduce a noun clause in this context.",
+        "topic": "Emphatic Structures",
+        "concept": "The Fact That Clause",
+        "formula": "The fact that + subject + verb",
+        "examples": [
+          "I cannot ignore <b>the fact that</b> he was late.",
+          "<b>The fact that</b> she survived is a miracle."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "The manager objected to ______ the meeting until all stakeholders were present."
+      },
+      "options": {
+        "A": { "text": "postpone", "correct": false },
+        "B": { "text": "postponing", "correct": true },
+        "C": { "text": "having postpone", "correct": false },
+        "D": { "text": "be postponed", "correct": false }
+      },
+      "explanation": {
+        "text": "The verb 'object' is followed by the preposition 'to', which must be followed by a gerund ('postponing'), not a base verb or infinitive.",
+        "topic": "Verb Patterns",
+        "concept": "Preposition + Gerund",
+        "formula": "Verb + preposition + gerund",
+        "examples": [
+          "He <b>admitted to stealing</b> the money.",
+          "She <b>looks forward to seeing</b> you."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 40,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form.",
+        "question": "The company announced a new policy; therefore, many employees expressed their concerns."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The company announced a new policy; ", "clickable": true, "isError": false },
+        { "id": "s2", "text": "therefore", "clickable": true, "isError": true, "correctAnswers": ["nevertheless", "however"] },
+        { "id": "s3", "text": ", many employees ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "expressed their concerns.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "'Nevertheless' or 'however' is a conjunctive adverb indicating contrast or concession, which fits the context of employees expressing concerns despite a new policy. 'Therefore' indicates a result, which contradicts the logical flow.",
+        "topic": "Cohesion and Reference",
+        "concept": "Conjunctive Adverbs for Contrast",
+        "formula": "Clause; nevertheless/however, + clause",
+        "examples": [
+          "It was raining; <b>however</b>, we went for a walk.",
+          "The task was difficult; <b>nevertheless</b>, they succeeded."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    }
+  ]
+}
