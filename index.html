@@ -1,212 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CAT Learning — Computer Assisted Test</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
+  <script src="assets/js/theme-boot.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-<header class="topbar">
-  <div class="topbar-left">
-    <div class="logo"><span class="material-symbols-outlined">school</span></div>
-    <div>
-      <div class="brand" id="brandName">CAT Learning</div>
-      <div class="brand-sub" id="brandTagline">Computer Assisted Test</div>
-    </div>
-  </div>
-  <div class="topbar-right" id="topbarRight">
-    <span class="pill pill-muted" id="rolePill" style="display:none"></span>
-    <div class="user-chip" id="userChip" style="display:none">
-      <span class="avatar" id="userAvatar">S</span>
-      <span id="userNameLabel">User</span>
-    </div>
-    <button class="btn btn-ghost btn-sm" id="logoutBtn" style="display:none"><span class="material-symbols-outlined">logout</span> Log out</button>
-  </div>
-</header>
-
-<div class="layout">
-  <!-- Sidebar -->
-  <aside class="sidebar" id="sidebar" style="display:none">
-    <nav class="nav">
-      <button class="nav-item active" data-view="dashboard"><span class="material-symbols-outlined">dashboard</span> Dashboard</button>
-      <button class="nav-item" data-view="test"><span class="material-symbols-outlined">quiz</span> Test</button>
-      <button class="nav-item" data-view="materials"><span class="material-symbols-outlined">folder_open</span> Materials</button>
-      <button class="nav-item" data-view="admin" id="navAdmin" style="display:none"><span class="material-symbols-outlined">admin_panel_settings</span> Admin <span class="badge-super">SUPER</span></button>
-    </nav>
-    <div class="sidebar-card">
-      <div class="sidebar-card-title"><span class="material-symbols-outlined">info</span> How it works</div>
-      <p>Pick a test, choose difficulty &amp; question count, then start. Teachers can peek answers and show explanations on the same page.</p>
-      <button class="btn btn-ghost btn-sm w-full" id="howItWorksBtn">View guide</button>
-    </div>
-    <div class="sidebar-foot">JSON only • GET only • GitHub Pages ready</div>
+<body class="login-page">
+  <aside class="login-brand">
+    <h1 id="app-name" class="login-logo"></h1>
+    <p id="app-tagline"></p>
   </aside>
 
-  <main class="main">
-    <!-- LOGIN -->
-    <section id="view-login" class="view">
-      <div class="login-wrap">
-        <div class="login-card">
-          <div class="login-icon"><span class="material-symbols-outlined">lock</span></div>
-          <h1>Welcome back</h1>
-          <p class="muted">Log in to take tests, teach, and open materials.</p>
-          <form id="loginForm">
-            <label class="field-label" for="username">Username</label>
-            <div class="input-wrap"><span class="material-symbols-outlined">person</span><input id="username" autocomplete="username" placeholder="e.g. student" required /></div>
-            <label class="field-label" for="password">Password</label>
-            <div class="input-wrap"><span class="material-symbols-outlined">key</span><input id="password" type="password" autocomplete="current-password" placeholder="Enter password" required /><button type="button" class="eye-btn" id="togglePass" aria-label="Show password"><span class="material-symbols-outlined">visibility</span></button></div>
-            <div class="login-meta"><label class="check"><input type="checkbox" id="rememberMe" /> Keep me signed in on this device</label><button type="button" class="link-btn" id="forgotBtn">Need help?</button></div>
-            <button class="btn btn-primary w-full btn-lg" type="submit" id="loginBtn"><span class="material-symbols-outlined">login</span> Log in</button>
-            <p class="login-error" id="loginError" style="display:none"></p>
-          </form>
-          <div class="demo-box">
-            <div class="demo-title"><span class="material-symbols-outlined">science</span> Demo accounts <span class="pill pill-warn">Change in data/users.json</span></div>
-            <div class="demo-grid" id="demoGrid"></div>
-            <p class="tiny muted">Passwords are stored as SHA-256 hashes in <code>data/users.json</code>. No database. All data loads with GET.</p>
-          </div>
-        </div>
-        <div class="login-side">
-          <div class="login-side-card">
-            <span class="pill pill-primary"><span class="material-symbols-outlined">bolt</span> For students &amp; teachers</span>
-            <h2>One page for testing <br/>and teaching.</h2>
-            <p>Students take the test. Teachers stay on the same page, peek at the correct answer, and reveal the explanation when the moment is right.</p>
-            <ul class="check-list">
-              <li><span class="material-symbols-outlined">check_circle</span> Difficulty: Easy / Intermediate / Advanced</li>
-              <li><span class="material-symbols-outlined">check_circle</span> Multiple choice &amp; correction questions</li>
-              <li><span class="material-symbols-outlined">check_circle</span> Materials: PDF, PNG, JPG, TXT, MD</li>
-              <li><span class="material-symbols-outlined">check_circle</span> No backend — JSON files only</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+  <main class="login-panel">
+    <div class="login-theme" id="theme-controls"></div>
+    <form id="login-form" class="login-form" novalidate>
+      <h2>Sign in</h2>
 
-    <!-- DASHBOARD -->
-    <section id="view-dashboard" class="view" style="display:none">
-      <div class="page-head">
-        <div><h1 id="greeting">Hello 👋</h1><p class="muted" id="greetingSub">Ready to start a test?</p></div>
-        <button class="btn btn-primary" id="quickStartBtn"><span class="material-symbols-outlined">play_arrow</span> Quick start test</button>
-      </div>
+      <label for="username">Username</label>
+      <div class="input-wrap"><span class="input-icon" data-icon="user"></span><input id="username" name="username" type="text" autocomplete="username" required autofocus></div>
 
-      <div class="stats-grid" id="statsGrid"></div>
+      <label for="password">Password</label>
+      <div class="input-wrap"><span class="input-icon" data-icon="lock"></span><input id="password" name="password" type="password" autocomplete="current-password" required></div>
 
-      <div class="grid-2">
-        <div class="card">
-          <div class="card-head"><div><h3><span class="material-symbols-outlined">tune</span> Generate a test</h3><p class="muted">Questions are pulled from <code>/questions/</code></p></div><span class="pill pill-muted" id="poolCount">0 questions</span></div>
-          <div class="form-grid">
-            <div><label class="field-label">Test file</label><select id="testFileSelect" class="select"></select></div>
-            <div><label class="field-label">Difficulty</label><div class="seg" id="difficultySeg">
-              <button type="button" data-diff="easy" class="seg-btn">Easy</button>
-              <button type="button" data-diff="intermediate" class="seg-btn active">Intermediate</button>
-              <button type="button" data-diff="advanced" class="seg-btn">Advanced</button>
-              <button type="button" data-diff="mixed" class="seg-btn">Mixed</button>
-            </div></div>
-            <div><label class="field-label">Number of questions</label><div class="count-row"><button type="button" class="count-btn" data-count="5">5</button><button type="button" class="count-btn active" data-count="10">10</button><button type="button" class="count-btn" data-count="20">20</button><button type="button" class="count-btn" data-count="0">All</button><input id="customCount" type="number" min="1" max="100" placeholder="Custom" /></div><p class="tiny muted">Level mapping: Easy = 1–2, Intermediate = 3, Advanced = 4–5. Mixed uses all levels.</p></div>
-            <div><label class="field-label">Timer</label><select id="timerSelect" class="select"><option value="off">No timer</option><option value="normal">Normal pace</option><option value="fast">Fast pace</option><option value="easy">Relaxed pace</option></select><p class="tiny muted">Uses <code>time_in_seconds</code> from each question.</p></div>
-          </div>
-          <div class="card-foot">
-            <label class="check"><input type="checkbox" id="shuffleCheck" checked /> Shuffle questions &amp; options</label>
-            <button class="btn btn-primary" id="startTestBtn"><span class="material-symbols-outlined">play_arrow</span> Start test</button>
-          </div>
-          <div id="genPreview" class="preview-box"></div>
-        </div>
-
-        <div class="card">
-          <div class="card-head"><div><h3><span class="material-symbols-outlined">menu_book</span> Teacher materials</h3><p class="muted">PDF, images, text &amp; markdown</p></div><button class="btn btn-ghost btn-sm" data-nav="materials">View all <span class="material-symbols-outlined">arrow_forward</span></button></div>
-          <div id="materialsPreview" class="list"></div>
-          <div class="card-foot"><span class="tiny muted">Add files to <code>/materials/</code> and list them in <code>data/config.json</code></span></div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-head"><div><h3><span class="material-symbols-outlined">history</span> Recent results</h3><p class="muted">Saved only in this browser</p></div><button class="btn btn-ghost btn-sm" id="clearHistoryBtn">Clear</button></div>
-        <div id="historyList" class="list"></div>
-      </div>
-    </section>
-
-    <!-- TEST -->
-    <section id="view-test" class="view" style="display:none">
-      <div id="testEmpty" class="empty">
-        <span class="material-symbols-outlined">quiz</span>
-        <h3>No test started yet</h3>
-        <p>Generate a test from the Dashboard, or start one here.</p>
-        <button class="btn btn-primary" data-nav="dashboard">Go to Dashboard</button>
-      </div>
-
-      <div id="testActive" style="display:none">
-        <div class="test-head">
-          <div><h1 id="testTitle">Test</h1><p class="muted" id="testMeta"></p></div>
-          <div class="test-head-actions">
-            <span class="pill pill-muted" id="timerPill" style="display:none"><span class="material-symbols-outlined">timer</span> <span id="timerText">--:--</span></span>
-            <span class="pill pill-primary" id="progressPill">0 / 0 answered</span>
-          </div>
-        </div>
-
-        <!-- Teaching bar - visible only by role -->
-        <div class="teach-bar" id="teachBar" style="display:none">
-          <div class="teach-left"><span class="material-symbols-outlined">school</span><strong>Teaching mode</strong><span class="pill pill-warn">Same page • Teacher controls</span></div>
-          <div class="teach-controls">
-            <button class="toggle-btn" id="peekBtn"><span class="material-symbols-outlined">visibility</span> Peek answers <span class="toggle-dot"></span></button>
-            <button class="toggle-btn" id="explainBtn"><span class="material-symbols-outlined">lightbulb</span> Show explanations <span class="toggle-dot"></span></button>
-            <button class="btn btn-ghost btn-sm" id="revealAllBtn">Reveal all</button>
-          </div>
-          <p class="tiny muted">Students do not see these controls. Controlled by <code>data/roles.json</code>.</p>
-        </div>
-
-        <div class="progress-bar"><div id="progressFill"></div></div>
-        <div id="questionsList"></div>
-
-        <div class="test-actions">
-          <button class="btn btn-ghost" id="exitTestBtn"><span class="material-symbols-outlined">close</span> Exit</button>
-          <button class="btn btn-primary btn-lg" id="submitTestBtn"><span class="material-symbols-outlined">check_circle</span> Submit &amp; see score</button>
-        </div>
-      </div>
-
-      <div id="testResult" style="display:none"></div>
-    </section>
-
-    <!-- MATERIALS -->
-    <section id="view-materials" class="view" style="display:none">
-      <div class="page-head"><div><h1>Materials</h1><p class="muted">Open teacher materials without leaving the app.</p></div><div class="search-wrap"><span class="material-symbols-outlined">search</span><input id="materialSearch" placeholder="Search materials..." /></div></div>
-      <div class="filter-row" id="materialFilters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="pdf">PDF</button>
-        <button class="filter-btn" data-filter="image">Images</button>
-        <button class="filter-btn" data-filter="text">Text</button>
-        <button class="filter-btn" data-filter="markdown">Markdown</button>
-      </div>
-      <div id="materialsGrid" class="materials-grid"></div>
-      <div class="card"><h3><span class="material-symbols-outlined">upload</span> How to add a material</h3><p class="muted">1. Put the file in <code>/materials/</code> &nbsp; 2. Add an entry to <code>materials</code> in <code>data/config.json</code> &nbsp; 3. Push to GitHub. No POST, no database.</p></div>
-    </section>
-
-    <!-- ADMIN - SUPER ONLY -->
-    <section id="view-admin" class="view" style="display:none">
-      <div class="page-head"><div><h1><span class="material-symbols-outlined">admin_panel_settings</span> Admin</h1><p class="muted">Visible only to role <strong>super</strong>. No passwords are shown here.</p></div><span class="pill pill-warn">SUPER ONLY</span></div>
-      <div class="grid-2">
-        <div class="card"><h3>App config</h3><pre id="adminConfig" class="code"></pre></div>
-        <div class="card"><h3>Roles &amp; permissions</h3><pre id="adminRoles" class="code"></pre><p class="tiny muted">Edit in <code>data/roles.json</code> then push.</p></div>
-      </div>
-      <div class="card"><h3>Question bank overview</h3><div id="adminStats"></div><p class="tiny muted">Question files live in <code>/questions/</code>. This view shows counts only.</p></div>
-      <div class="card"><h3>Users (names &amp; roles only)</h3><div id="adminUsers" class="list"></div><p class="tiny muted">Passwords are hashed and never displayed.</p></div>
-    </section>
+      <button id="login-btn" type="submit" class="btn">Sign in</button>
+    </form>
   </main>
-</div>
 
-<!-- MODAL -->
-<div class="modal-backdrop" id="modalBackdrop" style="display:none">
-  <div class="modal" role="dialog" aria-modal="true">
-    <div class="modal-head"><h3 id="modalTitle">Title</h3><button class="icon-btn" id="modalClose"><span class="material-symbols-outlined">close</span></button></div>
-    <div class="modal-body" id="modalBody"></div>
-    <div class="modal-foot" id="modalFoot"></div>
-  </div>
-</div>
-
-<div class="toast" id="toast" style="display:none"><span class="material-symbols-outlined" id="toastIcon">check_circle</span><span id="toastText"></span></div>
-
-<script src="./js/app.js"></script>
+  <script type="module" src="assets/js/login.js"></script>
 </body>
 </html>

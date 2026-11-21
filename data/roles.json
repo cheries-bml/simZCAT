@@ -1,1 +1,10 @@
-{"roles":{"student":{"description":"Takes tests. Cannot peek answers or explanations during a test.","label":"Student","permissions":{"canPeekAnswer":false,"canShowExplanation":false,"canTakeTest":true,"canTeach":false,"canViewAdmin":false,"canViewMaterials":true,"canViewVerbose":false}},"super":{"description":"Full access. Only role that can open Admin / verbose pages.","label":"Super","permissions":{"canPeekAnswer":true,"canShowExplanation":true,"canTakeTest":true,"canTeach":true,"canViewAdmin":true,"canViewMaterials":true,"canViewVerbose":true}},"teacher":{"description":"Teaches on the same test page. Can peek answers and reveal explanations.","label":"Teacher","permissions":{"canPeekAnswer":true,"canShowExplanation":true,"canTakeTest":true,"canTeach":true,"canViewAdmin":false,"canViewMaterials":true,"canViewVerbose":false}}}}
+{
+  "roles": {
+    "admin": {"label": "Administrator", "permissions": ["overview.view", "test.view", "reports.view", "reports.all", "users.view", "passwords.tool", "settings.view"], "special": ["show_answer", "show_explanation", "timer_disabler", "configure_test"]},
+    "editor": {"label": "Editor", "permissions": ["overview.view", "test.view", "reports.view"], "special": ["show_answer", "timer_disabler"]},
+    "viewer": {"label": "Viewer", "permissions": ["overview.view", "test.view"], "special": []},
+    "auditor": {"label": "Auditor", "permissions": ["overview.view", "users.view"], "special": ["show_explanation"]},
+    "teacher": {"label": "Teacher", "permissions": ["overview.view", "test.view", "reports.view", "reports.all", "users.view"], "special": ["show_answer", "show_explanation", "timer_disabler", "configure_test"]},
+    "student": {"label": "Student", "permissions": ["overview.view", "test.view", "reports.view"], "special": []}
+  }
+}

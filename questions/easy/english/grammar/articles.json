@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "title": "Articles: a, an, the",
+    "description": "Choose the right article.",
+    "info": "Four short questions on a, an and the.",
+    "author": "Cheries",
+    "created": "2026-11-12",
+    "config": {
+      "show_answer": true,
+      "show_explanation": true,
+      "no_timer": false,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct answer.",
+        "question": "He wants to be ___ engineer."
+      },
+      "options": {
+        "A": {
+          "text": "a"
+        },
+        "B": {
+          "text": "an",
+          "correct": true
+        },
+        "C": {
+          "text": "the"
+        },
+        "D": {
+          "text": "no article"
+        }
+      },
+      "explanation": {
+        "text": "Use <b>an</b> before a vowel sound. 'Engineer' starts with the vowel sound /e/.",
+        "topic": "Articles",
+        "concept": "a / an",
+        "formula": "a + consonant sound, an + vowel sound",
+        "examples": [
+          "<b>an</b> apple",
+          "<b>a</b> book"
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct answer.",
+        "question": "___ sun rises in the east."
+      },
+      "options": {
+        "A": {
+          "text": "A"
+        },
+        "B": {
+          "text": "An"
+        },
+        "C": {
+          "text": "The",
+          "correct": true
+        },
+        "D": {
+          "text": "No article"
+        }
+      },
+      "explanation": {
+        "text": "Use <b>the</b> for something unique, like the sun or the moon.",
+        "topic": "Articles",
+        "concept": "Definite article",
+        "examples": [
+          "<b>The</b> moon is bright tonight."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct answer.",
+        "question": "She has ___ university degree."
+      },
+      "options": {
+        "A": {
+          "text": "a",
+          "correct": true
+        },
+        "B": {
+          "text": "an"
+        },
+        "C": {
+          "text": "the"
+        },
+        "D": {
+          "text": "no article"
+        }
+      },
+      "explanation": {
+        "text": "'University' begins with the consonant sound /j/, so we use <b>a</b>. What matters is the sound, not the letter.",
+        "topic": "Articles",
+        "concept": "Sound, not spelling",
+        "examples": [
+          "<b>a</b> uniform",
+          "<b>an</b> umbrella"
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct answer.",
+        "question": "Paris is ___ capital of France."
+      },
+      "options": {
+        "A": {
+          "text": "a"
+        },
+        "B": {
+          "text": "an"
+        },
+        "C": {
+          "text": "the",
+          "correct": true
+        },
+        "D": {
+          "text": "no article"
+        }
+      },
+      "explanation": {
+        "text": "There is only one capital of France, so we use <b>the</b>.",
+        "topic": "Articles",
+        "concept": "Definite article",
+        "examples": [
+          "Rome is <b>the</b> capital of Italy."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    }
+  ]
+}

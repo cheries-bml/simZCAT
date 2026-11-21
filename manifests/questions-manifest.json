@@ -1,0 +1,15 @@
+{
+  "files": [
+    "questions/advanced/english/grammar/conditionals.json",
+    "questions/advanced/english/reading/inference.json",
+    "questions/advanced/math/algebra/quadratics.json",
+    "questions/easy/english/grammar/articles.json",
+    "questions/easy/english/grammar/sample_question.json",
+    "questions/easy/english/vocabulary/opposites.json",
+    "questions/easy/math/arithmetic/fractions.json",
+    "questions/intermediate/english/grammar/subject-verb-agreement.json",
+    "questions/intermediate/english/tenses/past-and-perfect.json",
+    "questions/intermediate/math/algebra/linear-equations.json",
+    "questions/intermediate/math/geometry/area-perimeter.json"
+  ]
+}

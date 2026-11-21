@@ -1,1 +1,28 @@
-{"appName":"CAT Learning","materials":[{"description":"Simple Present Tense — quick notes","file":"sample-notes.md","title":"Simple Present Tense Notes","type":"markdown"},{"description":"Subject-verb agreement cheat sheet","file":"sample-notes.txt","title":"Subject-Verb Agreement","type":"text"},{"description":"Example worksheet (replace with your own PDF)","file":"sample-worksheet.pdf","title":"Example Worksheet","type":"pdf"}],"questionFiles":[{"file":"sample-english.json","label":"Sample English"}],"tagline":"Computer Assisted Test","timerModes":["off","fast","normal","easy"]}
+{
+  "appName": "ZCat",
+  "designer": "Cheries",
+  "tagline": "Sign in to manage your workspace.",
+  "passwordSalt": "change-this-salt-before-going-live",
+  "sessionMinutes": 30,
+  "maxFailedAttempts": 5,
+  "lockoutMinutes": 5,
+  "defaultTimeInSeconds": {
+    "fast": 15,
+    "normal": 30,
+    "easy": 60
+  },
+  "defaultPage": "dashboard.html",
+  "loginPage": "index.html",
+  "questionsDir": "questions",
+  "questionsManifest": "manifests/questions-manifest.json",
+  "motivation": [
+    "If you’re not learning, you’re not improving.",
+    "Small steps every day beat big leaps once in a while.",
+    "Mistakes are proof that you are trying.",
+    "Practice turns effort into skill.",
+    "Progress, not perfection.",
+    "Every question you answer makes the next one easier.",
+    "Stay curious. The best learners never stop asking why.",
+    "Consistency is the quiet secret behind every skill."
+  ]
+}
