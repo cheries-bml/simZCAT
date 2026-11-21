@@ -12,13 +12,9 @@
     "questions/intermediate/english/grammar/subject-verb-agreement.json",
     "questions/intermediate/english/tenses/past-and-perfect.json",
     "questions/intermediate/math/algebra/linear-equations.json",
-<<<<<<< HEAD
-    "questions/intermediate/math/geometry/area-perimeter.json"
-=======
     "questions/intermediate/math/geometry/area-perimeter.json",
     "questions/advanced/english/grammar/c1c2_01.json",
     "questions/advanced/english/grammar/c1c2_02.json",
     "questions/advanced/english/grammar/c1c2_03.json"
->>>>>>> d6fe773 (add question 'c1c2_03.json')
   ]
 }
