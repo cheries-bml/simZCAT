@@ -26,6 +26,8 @@ Static login + computer-assisted test app for GitHub Pages. Plain HTML, CSS and 
 │       ├── theme-boot.js      Applies the saved theme before first paint
 │       ├── filters.js         Test page toolbar and the Filter window
 │       ├── favorites.js       Favorite tests (per user, in this browser)
+│       ├── gentest.js         GenTest dialogs (random test from the question files)
+│       ├── mytests.js         MyTest: saved generated tests (per user, in this browser)
 │       ├── review.js          Opens a saved attempt for review (Reports and Home)
 │       ├── catalog.js         Loads the tests listed in the index
 │       ├── test-engine.js     Scoring, timing, answer formatting (no DOM)
@@ -60,6 +62,14 @@ questions/advanced/math/algebra/quadratics.json
 
 - **Filter:** the Filter button on the Test page opens a window with chips for Level, Course and Topic. Several chips in one group match any of them; chips from different groups combine (Easy + Math). Counts and available topics update as you choose; Apply saves it. Active filters show as removable chips next to the button.
 - **Favorites:** tap the star on a test card to favorite it; the **Favorites** button shows only favorites. Favorites are saved per user in this browser.
+
+## GenTest and MyTest
+
+- **GenTest** (button on the Test page) builds a random test from all question files. Pick a course, then enter how many questions you want for each **level and topic** (the table shows how many exist in each cell). Questions are drawn at random without repeats and ordered easy to advanced, or shuffled if you tick the option.
+- A preview lists the drawn questions. **Regenerate** draws again, **Back** changes the numbers, **Start test** opens the usual start dialog (pace, and the `configure_test` options if you have them), and **Save to MyTest** keeps it.
+- **MyTest** (next to Favorites) lists your saved tests. Open one to take it again with the same questions, or delete it with the bin icon. Saved tests, like Favorites and results, live in this browser's storage for that user.
+- Only files in `questions/<level>/<course>/<topic>/` are used. If a question or file is removed later, a saved test skips the missing questions and says so.
+- Generated tests also appear in Reports, and Retake / Review work for them, even if you never saved them.
 
 ## Test screen
 

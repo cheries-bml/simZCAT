@@ -50,10 +50,10 @@ export function renderHome({ config, session, roles, go }) {
           el("span", { className: "mini-sub", textContent: when(a.ts) })),
         el("span", { className: pctClass(a.percent), textContent: `${a.percent}%` }),
         el("span", { className: "mini-actions" },
-          el("button", { className: "btn btn-ghost btn-sm", type: "button", onclick: () => go("test", { path: a.testPath }) }, icon("replay", { size: 15 }), "Retake"),
+          el("button", { className: "btn btn-ghost btn-sm", type: "button", onclick: () => go("test", { path: a.testPath, gen: a.gen }) }, icon("replay", { size: 15 }), "Retake"),
           el("button", {
             className: "btn btn-ghost btn-sm", type: "button", disabled: !a.answers || !a.qids,
-            onclick: () => openReview({ root, config, attempt: a, onBack: draw, onRetake: () => go("test", { path: a.testPath }) }),
+            onclick: () => openReview({ root, config, attempt: a, onBack: draw, onRetake: () => go("test", { path: a.testPath, gen: a.gen }) }),
           }, icon("eye", { size: 15 }), "Review"))))
     : [el("li", { className: "muted", textContent: "No tests taken yet." })]));
 

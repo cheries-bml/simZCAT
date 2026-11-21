@@ -1,13 +1,14 @@
 import { loadCatalog } from "./catalog.js";
 import { alertModal } from "./modal.js";
-import { resolveQuestions } from "./test-engine.js";
+import { resolveQuestions, buildGenTest } from "./test-engine.js";
 import { showReview } from "./test-ui.js";
 
-/** Shows a saved attempt's answers inside `root`. */
+/** Shows a saved attempt's answers inside `root`. Works for catalog tests and generated (GenTest) tests. */
 export async function openReview({ root, config, attempt, onBack, onRetake }) {
   let test = null;
   try {
-    test = (await loadCatalog(config)).find((t) => t.path === attempt.testPath) ?? null;
+    const tests = await loadCatalog(config);
+    test = attempt.gen ? buildGenTest(attempt.gen, tests).test : tests.find((t) => t.path === attempt.testPath) ?? null;
   } catch (err) {
     console.error(err);
   }

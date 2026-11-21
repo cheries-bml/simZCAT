@@ -54,10 +54,10 @@ export function renderReports({ config, session, roles, onRetake }) {
         el("td", { textContent: fmtTime(a.seconds) + (a.timedOut ? " (time up)" : "") }),
         el("td", { textContent: assists(a) }),
         el("td", {}, el("div", { className: "row-actions" },
-          el("button", { className: "btn btn-ghost btn-sm", type: "button", textContent: "Retake", onclick: () => onRetake(a.testPath) }),
+          el("button", { className: "btn btn-ghost btn-sm", type: "button", textContent: "Retake", onclick: () => onRetake(a) }),
           el("button", {
             className: "btn btn-ghost btn-sm", type: "button", textContent: "Review", disabled: !a.answers || !a.qids,
-            onclick: () => openReview({ root, config, attempt: a, onBack: showList, onRetake: () => onRetake(a.testPath) }),
+            onclick: () => openReview({ root, config, attempt: a, onBack: showList, onRetake: () => onRetake(a) }),
           })))));
 
       mount(resultsSlot, rows.length

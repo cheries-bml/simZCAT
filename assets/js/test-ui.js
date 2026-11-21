@@ -5,6 +5,8 @@ import { openModal, alertModal, confirmModal } from "./modal.js";
 import { icon } from "./icons.js";
 import { renderToolbar, openFilterWindow } from "./filters.js";
 import { getFavorites, toggleFavorite } from "./favorites.js";
+import { openGenTest } from "./gentest.js";
+import { listMyTests, saveMyTest, deleteMyTest } from "./mytests.js";
 import { addAttempt, lastAttempt } from "./results.js";
 import * as E from "./test-engine.js";
 
@@ -32,18 +34,24 @@ export async function canLeave() {
 
 const heading = (title, lede) => [el("h1", { textContent: title }), lede ? el("p", { className: "lede", textContent: lede }) : null];
 
-/** openPath: optionally jump straight to a test's intro page (used by Reports > Retake). */
-export function renderTests(ctx, openPath) {
+/** open: optionally jump straight to a test's dialog ({ path } or, for a generated test, { path, gen }). */
+export function renderTests(ctx, open) {
   const root = el("div", { className: "test-root" });
-  if (openPath) openTest(root, ctx, openPath);
+  if (open?.path) openTest(root, ctx, open);
   else showCatalog(root, ctx);
   return [root];
 }
 
-async function openTest(root, ctx, path) {
+async function openTest(root, ctx, { path, gen }) {
   let test = null;
   try {
-    test = (await loadCatalog(ctx.config)).find((t) => t.path === path) ?? null;
+    const tests = await loadCatalog(ctx.config);
+    if (gen) {
+      const built = E.buildGenTest(gen, tests);
+      test = built.test.questions.length ? built.test : null;
+    } else {
+      test = tests.find((t) => t.path === path) ?? null;
+    }
   } catch (err) {
     console.error(err);
   }
@@ -53,9 +61,9 @@ async function openTest(root, ctx, path) {
 }
 
 // ================= Catalog =================
-// Selected filters and the favorites toggle are kept while the page stays open.
+// Filters and the current view are kept while the page stays open.
 const filters = { level: new Set(), course: new Set(), topic: new Set() };
-let onlyFav = false;
+let view = "all"; // "all" | "favorites" | "mytest"
 
 async function showCatalog(root, ctx) {
   stop();
@@ -79,21 +87,53 @@ async function showCatalog(root, ctx) {
   const gridSlot = el("div");
   mount(root, heading("Tests", "Pick a test to begin."), barSlot, gridSlot);
 
+  async function generate() {
+    const res = await openGenTest(tests, { initialCourse: filters.course.size === 1 ? [...filters.course][0] : undefined });
+    if (!res) return;
+    if (res.action === "save") {
+      saveMyTest(user, { ...res.gen, createdAt: Date.now() });
+      view = "mytest";
+      draw();
+    } else {
+      openIntro(root, ctx, E.buildGenTest(res.gen, tests).test);
+    }
+  }
+
+  function openMine(entry) {
+    const { test, missing } = E.buildGenTest(entry, tests);
+    if (!test.questions.length) { alertModal("Test unavailable", "The questions in this test are no longer available."); return; }
+    if (missing) test.meta.info = `${missing} question${missing > 1 ? "s are" : " is"} no longer available and ${missing > 1 ? "were" : "was"} skipped.`;
+    openIntro(root, ctx, test);
+  }
+
   function draw(focusSelector) {
     const favs = getFavorites(user);
-    const pool = onlyFav ? tests.filter((t) => favs.has(t.path)) : tests;
+    const mine = listMyTests(user);
+    const pool = view === "favorites" ? tests.filter((t) => favs.has(t.path)) : tests;
     const shown = E.applyFilters(pool, filters);
     mount(barSlot, renderToolbar({
-      filters, onlyFav, favCount: favs.size, shown: shown.length, total: tests.length,
+      filters, view, favCount: favs.size, myCount: mine.length, shown: shown.length, total: tests.length,
       onOpenFilter: async () => { await openFilterWindow(pool, filters); draw(".js-filter-btn"); },
-      onToggleFav: () => { onlyFav = !onlyFav; draw(); },
+      onToggleFav: () => { view = view === "favorites" ? "all" : "favorites"; draw(); },
+      onToggleMy: () => { view = view === "mytest" ? "all" : "mytest"; draw(); },
+      onGen: generate,
       onChange: () => draw(),
     }));
-    mount(gridSlot, shown.length
-      ? el("div", { className: "cards" }, ...shown.map((t) => card(t, lastAttempt(user, t.path), favs.has(t.path),
-          () => openIntro(root, ctx, t),
-          () => { toggleFavorite(user, t.path); draw(`.fav-btn[data-path="${CSS.escape(t.path)}"]`); })))
-      : el("p", { className: "panel", textContent: onlyFav && !favs.size ? "No favorites yet. Tap the star on a test to add it." : "No tests match." }));
+
+    if (view === "mytest") {
+      mount(gridSlot, mine.length
+        ? el("div", { className: "cards" }, ...mine.map((entry) => myCard(entry, lastAttempt(user, `gen:${entry.id}`), () => openMine(entry), async () => {
+            const ok = await confirmModal("Delete this test?", `“${entry.title}” will be removed from MyTest.`, { confirmLabel: "Delete", danger: true });
+            if (ok) { deleteMyTest(user, entry.id); draw(); }
+          })))
+        : el("p", { className: "panel", textContent: "No saved tests yet. Use GenTest to create one." }));
+    } else {
+      mount(gridSlot, shown.length
+        ? el("div", { className: "cards" }, ...shown.map((t) => card(t, lastAttempt(user, t.path), favs.has(t.path),
+            () => openIntro(root, ctx, t),
+            () => { toggleFavorite(user, t.path); draw(`.fav-btn[data-path="${CSS.escape(t.path)}"]`); })))
+        : el("p", { className: "panel", textContent: view === "favorites" && !favs.size ? "No favorites yet. Tap the star on a test to add it." : "No tests match." }));
+    }
     if (focusSelector) root.querySelector(focusSelector)?.focus();
   }
   draw();
@@ -115,6 +155,20 @@ function card(t, last, fav, onOpen, onFav) {
       type: "button", className: `fav-btn${fav ? " on" : ""}`, dataset: { path: t.path }, "aria-pressed": String(fav),
       "aria-label": `${fav ? "Remove from" : "Add to"} favorites: ${title}`, onclick: onFav,
     }, icon(fav ? "star-filled" : "star", { size: 20 })));
+}
+
+// A saved generated test (MyTest)
+function myCard(entry, last, onOpen, onDelete) {
+  return el("div", { className: "card-wrap" },
+    el("button", { className: "card", type: "button", onclick: onOpen },
+      el("span", { className: "card-tags" },
+        el("span", { className: "level-pill", textContent: "MyTest" }),
+        el("span", { className: "card-folder" }, icon("wand", { size: 16 }), E.facetLabel(entry.course))),
+      el("span", { className: "card-title", textContent: entry.title }),
+      el("span", { className: "card-desc", textContent: E.compositionText(entry.items) }),
+      el("span", { className: "card-meta", textContent: `${entry.items.length} questions · Saved ${new Date(entry.createdAt).toLocaleDateString()}` }),
+      last ? el("span", { className: "card-last", textContent: `Last score ${last.percent}%` }) : null),
+    el("button", { type: "button", className: "fav-btn del-btn", title: "Delete", "aria-label": `Delete ${entry.title}`, onclick: onDelete }, icon("trash", { size: 20 })));
 }
 
 // ================= Intro (modal) =================
@@ -441,6 +495,7 @@ function startRun(root, ctx, test, pace) {
       percent: sum.percent, correct: sum.correct, incorrect: sum.incorrect, unanswered: sum.unanswered, total: sum.total,
       seconds: Math.round(r.spent / 1000), timedOut, peeks: r.peeks.size, explained: r.explained.size,
       paused: r.usedPause, timerOff: r.usedTimerOff,
+      gen: test.gen, // lets Reports reopen a generated test even if it was never saved
       qids: test.questions.map((q) => q.id), // lets Reports check the test is unchanged before a review
       answers: Object.fromEntries(Object.entries(r.answers).filter(([i, a]) => E.isAnswered(test.questions[i], a))),
     });

@@ -5,23 +5,32 @@ import * as E from "./test-engine.js";
 
 const countActive = (filters) => E.FACETS.reduce((n, { key }) => n + filters[key].size, 0);
 
-/** One compact row: Filter button, Favorites toggle, removable active-filter chips, result count. */
-export function renderToolbar({ filters, onlyFav, favCount, shown, total, onOpenFilter, onToggleFav, onChange }) {
+/**
+ * One compact row: Filter, Favorites, MyTest, GenTest, removable filter chips and the result count.
+ * view: "all" | "favorites" | "mytest" (Filter and its chips only apply to the first two).
+ */
+export function renderToolbar({ filters, view, favCount, myCount, shown, total, onOpenFilter, onToggleFav, onToggleMy, onGen, onChange }) {
   const active = countActive(filters);
   const chips = E.FACETS.flatMap(({ key, label }) => [...filters[key]].map((value) =>
     el("button", {
       type: "button", className: "chip-btn active-chip", "aria-label": `Remove ${label} filter: ${E.facetLabel(value)}`,
       onclick: () => { filters[key].delete(value); onChange(); },
     }, E.facetLabel(value), icon("close", { size: 14 }))));
+  const filterable = view !== "mytest";
 
   return el("div", { className: "toolbar" },
-    el("button", { type: "button", className: "btn btn-ghost js-filter-btn", onclick: onOpenFilter },
-      icon("filter", { size: 18 }), "Filter", active ? el("span", { className: "filter-badge", textContent: String(active) }) : null),
-    el("button", { type: "button", className: "chip-btn", "aria-pressed": String(onlyFav), onclick: onToggleFav },
-      icon(onlyFav ? "star-filled" : "star", { size: 16 }), `Favorites ${favCount}`),
-    chips.length ? el("div", { className: "active-chips" }, ...chips) : null,
-    el("span", { className: "muted toolbar-count", textContent: `${shown} of ${total} tests` }),
-    active ? el("button", { type: "button", className: "link-btn", textContent: "Clear", onclick: () => { E.FACETS.forEach(({ key }) => filters[key].clear()); onChange(); } }) : null);
+    filterable
+      ? el("button", { type: "button", className: "btn btn-ghost js-filter-btn", onclick: onOpenFilter },
+          icon("filter", { size: 18 }), "Filter", active ? el("span", { className: "filter-badge", textContent: String(active) }) : null)
+      : null,
+    el("button", { type: "button", className: "chip-btn", "aria-pressed": String(view === "favorites"), onclick: onToggleFav },
+      icon(view === "favorites" ? "star-filled" : "star", { size: 16 }), `Favorites ${favCount}`),
+    el("button", { type: "button", className: "chip-btn js-mytest-btn", "aria-pressed": String(view === "mytest"), onclick: onToggleMy },
+      icon("folder", { size: 16 }), `MyTest ${myCount}`),
+    el("button", { type: "button", className: "btn js-gentest-btn", onclick: onGen }, icon("wand", { size: 18 }), "GenTest"),
+    filterable && chips.length ? el("div", { className: "active-chips" }, ...chips) : null,
+    el("span", { className: "muted toolbar-count", textContent: filterable ? `${shown} of ${total} tests` : `${myCount} saved ${myCount === 1 ? "test" : "tests"}` }),
+    filterable && active ? el("button", { type: "button", className: "link-btn", textContent: "Clear", onclick: () => { E.FACETS.forEach(({ key }) => filters[key].clear()); onChange(); } }) : null);
 }
 
 /** The Filter window. Edits a working copy; Apply writes it back into `filters`. Resolves true when applied. */

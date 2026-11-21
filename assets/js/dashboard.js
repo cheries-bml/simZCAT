@@ -13,8 +13,8 @@ import { renderPasswordTool } from "./password-tool.js";
 // "overview" is the home page; it is opened from the logo, not from the menu.
 const SECTIONS = [
   { id: "overview",  label: "Home",      permission: "overview.view",  render: () => renderHome({ config: data.config, session, roles: data.roles, go: show }) },
-  { id: "test",      label: "Test",      icon: "test",     permission: "test.view",      render: (opts) => renderTests({ config: data.config, session, roles: data.roles }, opts?.path) },
-  { id: "reports",   label: "Reports",   icon: "chart",    permission: "reports.view",   render: () => renderReports({ config: data.config, session, roles: data.roles, onRetake: (path) => show("test", { path }) }) },
+  { id: "test",      label: "Test",      icon: "test",     permission: "test.view",      render: (opts) => renderTests({ config: data.config, session, roles: data.roles }, opts) },
+  { id: "reports",   label: "Reports",   icon: "chart",    permission: "reports.view",   render: () => renderReports({ config: data.config, session, roles: data.roles, onRetake: (a) => show("test", { path: a.testPath, gen: a.gen }) }) },
   { id: "users",     label: "Users",     icon: "users",    permission: "users.view",     render: renderUsers },
   { id: "passwords", label: "Passwords", icon: "key",      permission: "passwords.tool", render: () => renderPasswordTool({ config: data.config, users: data.users }) },
   { id: "settings",  label: "Settings",  icon: "settings", permission: "settings.view",  render: renderSettings },

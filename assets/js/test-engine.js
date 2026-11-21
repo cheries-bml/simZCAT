@@ -196,3 +196,79 @@ export function resolveQuestions(test, attempt) {
   const out = attempt.qids.map((id) => byId.get(id));
   return out.every(Boolean) ? out : null;
 }
+
+// ----- generated tests (GenTest / MyTest) -----
+export const genKey = (level, topic) => `${level}|${topic}`;
+
+/** Courses that have questions filed under level/course/topic folders. */
+export const genCourses = (tests) => [...new Set(tests.filter((t) => t.level && t.course && t.topic).map((t) => t.course))].sort();
+
+/** Every question of one course, grouped by level and topic. */
+export function genPools(tests, course) {
+  const pools = new Map();
+  for (const t of tests) {
+    if (t.course !== course || !t.level || !t.topic) continue;
+    const key = genKey(t.level, t.topic);
+    if (!pools.has(key)) pools.set(key, []);
+    for (const q of t.questions) pools.get(key).push({ path: t.path, id: q.id, level: t.level, topic: t.topic });
+  }
+  const parts = [...pools.keys()].map((k) => k.split("|"));
+  return {
+    pools,
+    levels: sortValues("level", new Set(parts.map((p) => p[0]))),
+    topics: sortValues("topic", new Set(parts.map((p) => p[1]))),
+  };
+}
+
+/** plan = { "easy|grammar": 2, ... } (counts above the pool size are capped). */
+export const planTotal = (plan, gp) => Object.entries(plan).reduce((sum, [k, n]) => sum + Math.min(n, gp.pools.get(k)?.length ?? 0), 0);
+
+/** Picks distinct random questions per level/topic; ordered easy to advanced unless `shuffle`. */
+export function generateItems(gp, plan, { shuffle = false, rng = Math.random } = {}) {
+  let items = [];
+  for (const level of gp.levels) {
+    for (const topic of gp.topics) {
+      const pool = gp.pools.get(genKey(level, topic));
+      const n = Math.min(Math.max(Math.floor(plan[genKey(level, topic)]) || 0, 0), pool?.length ?? 0);
+      if (n) items.push(...pickQuestions(pool, { randomize: true, count: n }, rng));
+    }
+  }
+  if (shuffle) items = pickQuestions(items, { randomize: true }, rng);
+  return items;
+}
+
+export const defaultGenTitle = (course, n) => `${facetLabel(course)} mix · ${n} questions`;
+
+/** "Easy 3 · Intermediate 2" for a list of items. */
+export function compositionText(items) {
+  const counts = new Map();
+  for (const it of items) counts.set(it.level, (counts.get(it.level) || 0) + 1);
+  return sortValues("level", counts.keys()).map((l) => `${facetLabel(l)} ${counts.get(l)}`).join(" · ");
+}
+
+/**
+ * Turns saved items ({ path, id }) into a test the runner understands. Question ids become "<path>#<id>"
+ * (unique across files) and each question keeps the answer/explanation flags it would have had in its own test.
+ * `missing` counts items whose question no longer exists.
+ */
+export function buildGenTest(gen, tests) {
+  const byPath = new Map(tests.map((t) => [t.path, t]));
+  const questions = [];
+  let missing = 0;
+  for (const it of gen.items) {
+    const src = byPath.get(it.path);
+    const q = src?.questions.find((x) => x.id === it.id);
+    if (!q) { missing++; continue; }
+    const m = src.meta?.config || {};
+    questions.push({
+      ...q, id: `${it.path}#${it.id}`,
+      config: { ...q.config, show_answer: q.config?.show_answer ?? m.show_answer ?? false, show_explanation: q.config?.show_explanation ?? m.show_explanation ?? false },
+    });
+  }
+  const test = {
+    meta: { title: gen.title, description: `Generated test · ${facetLabel(gen.course)} · ${gen.items.length} questions`, author: "GenTest", config: { show_answer: false, show_explanation: false, active: true } },
+    questions, path: `gen:${gen.id}`, course: gen.course, level: "", topic: "", order: 0,
+    gen: { id: gen.id, title: gen.title, course: gen.course, items: gen.items.map(({ path, id, level, topic }) => ({ path, id, level, topic })) },
+  };
+  return { test, missing };
+}

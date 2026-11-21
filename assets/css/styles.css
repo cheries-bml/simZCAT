@@ -456,3 +456,26 @@ body.testing .topbar { display: none; }
 .report-filters .link-btn { margin: 0 0 .6rem; }
 .mini-item.has-actions { flex-wrap: wrap; }
 .mini-actions { flex-basis: 100%; display: flex; gap: .4rem; padding-left: 2.95rem; }
+
+/* ---------- GenTest / MyTest ---------- */
+.modal-foot { flex-wrap: wrap; }
+.del-btn:hover { background: var(--bg); color: var(--danger); }
+.gen-matrix { width: 100%; border-collapse: collapse; }
+.gen-matrix th, .gen-matrix td { padding: .5rem .6rem; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.gen-matrix thead th { font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.gen-matrix tbody th { font-weight: 600; }
+.gen-na { color: var(--neutral-line); }
+.gen-cell { display: flex; align-items: center; gap: .4rem; }
+.gen-cell input { width: 4.2rem; font: inherit; padding: .35rem .5rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.gen-cell span { font-size: .8rem; }
+.gen-foot { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin: .75rem 0; }
+.gen-foot .link-btn { margin: 0; }
+.gen-params .field { max-width: 16rem; margin-bottom: .75rem; }
+.gen-preview .field { margin-bottom: .75rem; }
+.gen-preview .field input { width: 100%; }
+.gen-list { list-style: none; margin: .75rem 0 0; padding: 0; max-height: 18rem; overflow-y: auto; border: 1px solid var(--line); border-radius: var(--radius); counter-reset: q; }
+.gen-list li { counter-increment: q; display: flex; align-items: center; gap: .6rem; padding: .5rem .75rem; border-bottom: 1px solid var(--line); }
+.gen-list li:last-child { border-bottom: 0; }
+.gen-list li::before { content: counter(q); width: 1.4rem; text-align: right; color: var(--muted); font-size: .8rem; flex: none; }
+.gen-topic { font-size: .8rem; color: var(--muted); flex: none; }
+.gen-q { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
