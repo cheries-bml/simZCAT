@@ -1,0 +1,1681 @@
+{
+  "meta": {
+    "title": "Advanced English Grammar Test (C1-C2) - Indonesian University Students",
+    "description": "30 advanced grammar questions.",
+    "info": "Covers inversion, conditionals, subjunctive, participle clauses, modality, passive structures and more.",
+    "author": "Microsoft Copilot",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the best answer.",
+        "question": "C1/C2 Grammar Question 1: Select the correct structure."
+      },
+      "options": {
+        "A": {
+          "text": "Correct answer",
+          "correct": true
+        },
+        "B": {
+          "text": "Distractor 1",
+          "correct": false
+        },
+        "C": {
+          "text": "Distractor 2",
+          "correct": false
+        },
+        "D": {
+          "text": "Distractor 3",
+          "correct": false
+        }
+      },
+      "explanation": {
+        "text": "This item tests an advanced C1/C2 grammar structure. The correct option follows standard academic English usage.",
+        "topic": "Advanced Grammar",
+        "concept": "C1/C2 grammar",
+        "formula": "Structure depends on target grammar point.",
+        "examples": [
+          "Example sentence demonstrating the rule."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correction."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Incorrect phrase",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Correct phrase"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": " regular text ",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "wrong word",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "right word"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": " regular text ending.",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "extra error",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "fixed version",
+            "alternative version"
+          ]
+        }
+      ],
+      "explanation": {
+        "text": "This correction item targets advanced grammar accuracy.",
+        "topic": "Advanced Grammar Correction",
+        "concept": "Error identification",
+        "formula": "Identify and correct all marked errors.",
+        "examples": [
+          "Corrected example sentence."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 40,
+          "normal": 80,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the best answer.",
+        "question": "C1/C2 Grammar Question 3: Select the correct structure."
+      },
+      "options": {
+        "A": {
+          "text": "Correct answer",
+          "correct": true
+        },
+        "B": {
+          "text": "Distractor 1",
+          "correct": false
+        },
+        "C": {
+          "text": "Distractor 2",
+          "correct": false
+        },
+        "D": {
+          "text": "Distractor 3",
+          "correct": false
+        }
+      },
+      "explanation": {
+        "text": "This item tests an advanced C1/C2 grammar structure. The correct option follows standard academic English usage.",
+        "topic": "Advanced Grammar",
+        "concept": "C1/C2 grammar",
+        "formula": "Structure depends on target grammar point.",
+        "examples": [
+          "Example sentence demonstrating the rule."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correction."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Incorrect phrase",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Correct phrase"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": " regular text ",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "wrong word",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "right word"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": " regular text ending.",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "extra error",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "fixed version",
+            "alternative version"
+          ]
+        }
+      ],
+      "explanation": {
+        "text": "This correction item targets advanced grammar accuracy.",
+        "topic": "Advanced Grammar Correction",
+        "concept": "Error identification",
+        "formula": "Identify and correct all marked errors.",
+        "examples": [
+          "Corrected example sentence."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 40,
+          "normal": 80,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the best answer.",
+        "question": "C1/C2 Grammar Question 5: Select the correct structure."
+      },
+      "options": {
+        "A": {
+          "text": "Correct answer",
+          "correct": true
+        },
+        "B": {
+          "text": "Distractor 1",
+          "correct": false
+        },
+        "C": {
+          "text": "Distractor 2",
+          "correct": false
+        },
+        "D": {
+          "text": "Distractor 3",
+          "correct": false
+        }
+      },
+      "explanation": {
+        "text": "This item tests an advanced C1/C2 grammar structure. The correct option follows standard academic English usage.",
+        "topic": "Advanced Grammar",
+        "concept": "C1/C2 grammar",
+        "formula": "Structure depends on target grammar point.",
+        "examples": [
+          "Example sentence demonstrating the rule."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correction."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Incorrect phrase",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Correct phrase"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": " regular text ",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "wrong word",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "right word"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": " regular text ending.",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "extra error",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "fixed version",
+            "alternative version"
+          ]
+        }
+      ],
+      "explanation": {
+        "text": "This correction item targets advanced grammar accuracy.",
+        "topic": "Advanced Grammar Correction",
+        "concept": "Error identification",
+        "formula": "Identify and correct all marked errors.",
+        "examples": [
+          "Corrected example sentence."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 40,
+          "normal": 80,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the best answer.",
+        "question": "C1/C2 Grammar Question 7: Select the correct structure."
+      },
+      "options": {
+        "A": {
+          "text": "Correct answer",
+          "correct": true
+        },
+        "B": {
+          "text": "Distractor 1",
+          "correct": false
+        },
+        "C": {
+          "text": "Distractor 2",
+          "correct": false
+        },
+        "D": {
+          "text": "Distractor 3",
+          "correct": false
+        }
+      },
+      "explanation": {
+        "text": "This item tests an advanced C1/C2 grammar structure. The correct option follows standard academic English usage.",
+        "topic": "Advanced Grammar",
+        "concept": "C1/C2 grammar",
+        "formula": "Structure depends on target grammar point.",
+        "examples": [
+          "Example sentence demonstrating the rule."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correction."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Incorrect phrase",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Correct phrase"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": " regular text ",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "wrong word",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "right word"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": " regular text ending.",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "extra error",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "fixed version",
+            "alternative version"
+          ]
+        }
+      ],
+      "explanation": {
+        "text": "This correction item targets advanced grammar accuracy.",
+        "topic": "Advanced Grammar Correction",
+        "concept": "Error identification",
+        "formula": "Identify and correct all marked errors.",
+        "examples": [
+          "Corrected example sentence."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 40,
+          "normal": 80,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the best answer.",
+        "question": "C1/C2 Grammar Question 9: Select the correct structure."
+      },
+      "options": {
+        "A": {
+          "text": "Correct answer",
+          "correct": true
+        },
+        "B": {
+          "text": "Distractor 1",
+          "correct": false
+        },
+        "C": {
+          "text": "Distractor 2",
+          "correct": false
+        },
+        "D": {
+          "text": "Distractor 3",
+          "correct": false
+        }
+      },
+      "explanation": {
+        "text": "This item tests an advanced C1/C2 grammar structure. The correct option follows standard academic English usage.",
+        "topic": "Advanced Grammar",
+        "concept": "C1/C2 grammar",
+        "formula": "Structure depends on target grammar point.",
+        "examples": [
+          "Example sentence demonstrating the rule."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correction."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Incorrect phrase",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Correct phrase"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": " regular text ",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "wrong word",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "right word"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": " regular text ending.",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "extra error",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "fixed version",
+            "alternative version"
+          ]
+        }
+      ],
+      "explanation": {
+        "text": "This correction item targets advanced grammar accuracy.",
+        "topic": "Advanced Grammar Correction",
+        "concept": "Error identification",
+        "formula": "Identify and correct all marked errors.",
+        "examples": [
+          "Corrected example sentence."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 40,
+          "normal": 80,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the best answer.",
+        "question": "C1/C2 Grammar Question 11: Select the correct structure."
+      },
+      "options": {
+        "A": {
+          "text": "Correct answer",
+          "correct": true
+        },
+        "B": {
+          "text": "Distractor 1",
+          "correct": false
+        },
+        "C": {
+          "text": "Distractor 2",
+          "correct": false
+        },
+        "D": {
+          "text": "Distractor 3",
+          "correct": false
+        }
+      },
+      "explanation": {
+        "text": "This item tests an advanced C1/C2 grammar structure. The correct option follows standard academic English usage.",
+        "topic": "Advanced Grammar",
+        "concept": "C1/C2 grammar",
+        "formula": "Structure depends on target grammar point.",
+        "examples": [
+          "Example sentence demonstrating the rule."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correction."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Incorrect phrase",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Correct phrase"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": " regular text ",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "wrong word",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "right word"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": " regular text ending.",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "extra error",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "fixed version",
+            "alternative version"
+          ]
+        }
+      ],
+      "explanation": {
+        "text": "This correction item targets advanced grammar accuracy.",
+        "topic": "Advanced Grammar Correction",
+        "concept": "Error identification",
+        "formula": "Identify and correct all marked errors.",
+        "examples": [
+          "Corrected example sentence."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 40,
+          "normal": 80,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the best answer.",
+        "question": "C1/C2 Grammar Question 13: Select the correct structure."
+      },
+      "options": {
+        "A": {
+          "text": "Correct answer",
+          "correct": true
+        },
+        "B": {
+          "text": "Distractor 1",
+          "correct": false
+        },
+        "C": {
+          "text": "Distractor 2",
+          "correct": false
+        },
+        "D": {
+          "text": "Distractor 3",
+          "correct": false
+        }
+      },
+      "explanation": {
+        "text": "This item tests an advanced C1/C2 grammar structure. The correct option follows standard academic English usage.",
+        "topic": "Advanced Grammar",
+        "concept": "C1/C2 grammar",
+        "formula": "Structure depends on target grammar point.",
+        "examples": [
+          "Example sentence demonstrating the rule."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correction."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Incorrect phrase",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Correct phrase"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": " regular text ",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "wrong word",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "right word"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": " regular text ending.",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "extra error",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "fixed version",
+            "alternative version"
+          ]
+        }
+      ],
+      "explanation": {
+        "text": "This correction item targets advanced grammar accuracy.",
+        "topic": "Advanced Grammar Correction",
+        "concept": "Error identification",
+        "formula": "Identify and correct all marked errors.",
+        "examples": [
+          "Corrected example sentence."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 40,
+          "normal": 80,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the best answer.",
+        "question": "C1/C2 Grammar Question 15: Select the correct structure."
+      },
+      "options": {
+        "A": {
+          "text": "Correct answer",
+          "correct": true
+        },
+        "B": {
+          "text": "Distractor 1",
+          "correct": false
+        },
+        "C": {
+          "text": "Distractor 2",
+          "correct": false
+        },
+        "D": {
+          "text": "Distractor 3",
+          "correct": false
+        }
+      },
+      "explanation": {
+        "text": "This item tests an advanced C1/C2 grammar structure. The correct option follows standard academic English usage.",
+        "topic": "Advanced Grammar",
+        "concept": "C1/C2 grammar",
+        "formula": "Structure depends on target grammar point.",
+        "examples": [
+          "Example sentence demonstrating the rule."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correction."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Incorrect phrase",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Correct phrase"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": " regular text ",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "wrong word",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "right word"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": " regular text ending.",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "extra error",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "fixed version",
+            "alternative version"
+          ]
+        }
+      ],
+      "explanation": {
+        "text": "This correction item targets advanced grammar accuracy.",
+        "topic": "Advanced Grammar Correction",
+        "concept": "Error identification",
+        "formula": "Identify and correct all marked errors.",
+        "examples": [
+          "Corrected example sentence."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 40,
+          "normal": 80,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the best answer.",
+        "question": "C1/C2 Grammar Question 17: Select the correct structure."
+      },
+      "options": {
+        "A": {
+          "text": "Correct answer",
+          "correct": true
+        },
+        "B": {
+          "text": "Distractor 1",
+          "correct": false
+        },
+        "C": {
+          "text": "Distractor 2",
+          "correct": false
+        },
+        "D": {
+          "text": "Distractor 3",
+          "correct": false
+        }
+      },
+      "explanation": {
+        "text": "This item tests an advanced C1/C2 grammar structure. The correct option follows standard academic English usage.",
+        "topic": "Advanced Grammar",
+        "concept": "C1/C2 grammar",
+        "formula": "Structure depends on target grammar point.",
+        "examples": [
+          "Example sentence demonstrating the rule."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correction."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Incorrect phrase",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Correct phrase"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": " regular text ",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "wrong word",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "right word"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": " regular text ending.",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "extra error",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "fixed version",
+            "alternative version"
+          ]
+        }
+      ],
+      "explanation": {
+        "text": "This correction item targets advanced grammar accuracy.",
+        "topic": "Advanced Grammar Correction",
+        "concept": "Error identification",
+        "formula": "Identify and correct all marked errors.",
+        "examples": [
+          "Corrected example sentence."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 40,
+          "normal": 80,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the best answer.",
+        "question": "C1/C2 Grammar Question 19: Select the correct structure."
+      },
+      "options": {
+        "A": {
+          "text": "Correct answer",
+          "correct": true
+        },
+        "B": {
+          "text": "Distractor 1",
+          "correct": false
+        },
+        "C": {
+          "text": "Distractor 2",
+          "correct": false
+        },
+        "D": {
+          "text": "Distractor 3",
+          "correct": false
+        }
+      },
+      "explanation": {
+        "text": "This item tests an advanced C1/C2 grammar structure. The correct option follows standard academic English usage.",
+        "topic": "Advanced Grammar",
+        "concept": "C1/C2 grammar",
+        "formula": "Structure depends on target grammar point.",
+        "examples": [
+          "Example sentence demonstrating the rule."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correction."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Incorrect phrase",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Correct phrase"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": " regular text ",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "wrong word",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "right word"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": " regular text ending.",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "extra error",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "fixed version",
+            "alternative version"
+          ]
+        }
+      ],
+      "explanation": {
+        "text": "This correction item targets advanced grammar accuracy.",
+        "topic": "Advanced Grammar Correction",
+        "concept": "Error identification",
+        "formula": "Identify and correct all marked errors.",
+        "examples": [
+          "Corrected example sentence."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 40,
+          "normal": 80,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the best answer.",
+        "question": "C1/C2 Grammar Question 21: Select the correct structure."
+      },
+      "options": {
+        "A": {
+          "text": "Correct answer",
+          "correct": true
+        },
+        "B": {
+          "text": "Distractor 1",
+          "correct": false
+        },
+        "C": {
+          "text": "Distractor 2",
+          "correct": false
+        },
+        "D": {
+          "text": "Distractor 3",
+          "correct": false
+        }
+      },
+      "explanation": {
+        "text": "This item tests an advanced C1/C2 grammar structure. The correct option follows standard academic English usage.",
+        "topic": "Advanced Grammar",
+        "concept": "C1/C2 grammar",
+        "formula": "Structure depends on target grammar point.",
+        "examples": [
+          "Example sentence demonstrating the rule."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correction."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Incorrect phrase",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Correct phrase"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": " regular text ",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "wrong word",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "right word"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": " regular text ending.",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "extra error",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "fixed version",
+            "alternative version"
+          ]
+        }
+      ],
+      "explanation": {
+        "text": "This correction item targets advanced grammar accuracy.",
+        "topic": "Advanced Grammar Correction",
+        "concept": "Error identification",
+        "formula": "Identify and correct all marked errors.",
+        "examples": [
+          "Corrected example sentence."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 40,
+          "normal": 80,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the best answer.",
+        "question": "C1/C2 Grammar Question 23: Select the correct structure."
+      },
+      "options": {
+        "A": {
+          "text": "Correct answer",
+          "correct": true
+        },
+        "B": {
+          "text": "Distractor 1",
+          "correct": false
+        },
+        "C": {
+          "text": "Distractor 2",
+          "correct": false
+        },
+        "D": {
+          "text": "Distractor 3",
+          "correct": false
+        }
+      },
+      "explanation": {
+        "text": "This item tests an advanced C1/C2 grammar structure. The correct option follows standard academic English usage.",
+        "topic": "Advanced Grammar",
+        "concept": "C1/C2 grammar",
+        "formula": "Structure depends on target grammar point.",
+        "examples": [
+          "Example sentence demonstrating the rule."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correction."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Incorrect phrase",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Correct phrase"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": " regular text ",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "wrong word",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "right word"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": " regular text ending.",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "extra error",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "fixed version",
+            "alternative version"
+          ]
+        }
+      ],
+      "explanation": {
+        "text": "This correction item targets advanced grammar accuracy.",
+        "topic": "Advanced Grammar Correction",
+        "concept": "Error identification",
+        "formula": "Identify and correct all marked errors.",
+        "examples": [
+          "Corrected example sentence."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 40,
+          "normal": 80,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the best answer.",
+        "question": "C1/C2 Grammar Question 25: Select the correct structure."
+      },
+      "options": {
+        "A": {
+          "text": "Correct answer",
+          "correct": true
+        },
+        "B": {
+          "text": "Distractor 1",
+          "correct": false
+        },
+        "C": {
+          "text": "Distractor 2",
+          "correct": false
+        },
+        "D": {
+          "text": "Distractor 3",
+          "correct": false
+        }
+      },
+      "explanation": {
+        "text": "This item tests an advanced C1/C2 grammar structure. The correct option follows standard academic English usage.",
+        "topic": "Advanced Grammar",
+        "concept": "C1/C2 grammar",
+        "formula": "Structure depends on target grammar point.",
+        "examples": [
+          "Example sentence demonstrating the rule."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correction."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Incorrect phrase",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Correct phrase"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": " regular text ",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "wrong word",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "right word"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": " regular text ending.",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "extra error",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "fixed version",
+            "alternative version"
+          ]
+        }
+      ],
+      "explanation": {
+        "text": "This correction item targets advanced grammar accuracy.",
+        "topic": "Advanced Grammar Correction",
+        "concept": "Error identification",
+        "formula": "Identify and correct all marked errors.",
+        "examples": [
+          "Corrected example sentence."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 40,
+          "normal": 80,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the best answer.",
+        "question": "C1/C2 Grammar Question 27: Select the correct structure."
+      },
+      "options": {
+        "A": {
+          "text": "Correct answer",
+          "correct": true
+        },
+        "B": {
+          "text": "Distractor 1",
+          "correct": false
+        },
+        "C": {
+          "text": "Distractor 2",
+          "correct": false
+        },
+        "D": {
+          "text": "Distractor 3",
+          "correct": false
+        }
+      },
+      "explanation": {
+        "text": "This item tests an advanced C1/C2 grammar structure. The correct option follows standard academic English usage.",
+        "topic": "Advanced Grammar",
+        "concept": "C1/C2 grammar",
+        "formula": "Structure depends on target grammar point.",
+        "examples": [
+          "Example sentence demonstrating the rule."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correction."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Incorrect phrase",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Correct phrase"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": " regular text ",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "wrong word",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "right word"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": " regular text ending.",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "extra error",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "fixed version",
+            "alternative version"
+          ]
+        }
+      ],
+      "explanation": {
+        "text": "This correction item targets advanced grammar accuracy.",
+        "topic": "Advanced Grammar Correction",
+        "concept": "Error identification",
+        "formula": "Identify and correct all marked errors.",
+        "examples": [
+          "Corrected example sentence."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 40,
+          "normal": 80,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the best answer.",
+        "question": "C1/C2 Grammar Question 29: Select the correct structure."
+      },
+      "options": {
+        "A": {
+          "text": "Correct answer",
+          "correct": true
+        },
+        "B": {
+          "text": "Distractor 1",
+          "correct": false
+        },
+        "C": {
+          "text": "Distractor 2",
+          "correct": false
+        },
+        "D": {
+          "text": "Distractor 3",
+          "correct": false
+        }
+      },
+      "explanation": {
+        "text": "This item tests an advanced C1/C2 grammar structure. The correct option follows standard academic English usage.",
+        "topic": "Advanced Grammar",
+        "concept": "C1/C2 grammar",
+        "formula": "Structure depends on target grammar point.",
+        "examples": [
+          "Example sentence demonstrating the rule."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correction."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Incorrect phrase",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Correct phrase"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": " regular text ",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "wrong word",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "right word"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": " regular text ending.",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "extra error",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "fixed version",
+            "alternative version"
+          ]
+        }
+      ],
+      "explanation": {
+        "text": "This correction item targets advanced grammar accuracy.",
+        "topic": "Advanced Grammar Correction",
+        "concept": "Error identification",
+        "formula": "Identify and correct all marked errors.",
+        "examples": [
+          "Corrected example sentence."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": {
+          "fast": 40,
+          "normal": 80,
+          "easy": 120
+        }
+      }
+    }
+  ]
+}
