@@ -29,17 +29,21 @@ Static login + computer-assisted test app for GitHub Pages. Plain HTML, CSS and 
 │       ├── gentest.js         GenTest dialogs (random test from the question files)
 │       ├── mytests.js         MyTest: saved generated tests (per user, in this browser)
 │       ├── review.js          Opens a saved attempt for review (Reports and Home)
+│       ├── files-ui.js        Files page: browse, filter, preview, open in new tab
+│       ├── markdown.js        Small safe Markdown renderer for the file viewer
 │       ├── catalog.js         Loads the tests listed in the index
 │       ├── test-engine.js     Scoring, timing, answer formatting (no DOM)
 │       └── test-ui.js         Test catalog, intro, runner, results
 ├── data/
 │   └── config.json  roles.json  users.json
 ├── manifests/
-│   └── questions-manifest.json   List of question files the app reads
+│   ├── questions-manifest.json   List of question files the app reads
+│   └── files-manifest.json       List of teaching files (path + size)
 ├── questions/                 Question files: questions/<level>/<course>/<topic>/<file>.json
 │   ├── easy/english/grammar/sample_question.json
 │   └── ...                    (easy | intermediate | advanced, then course, then topic)
-├── scripts/hash_password.py   Optional: command-line password hasher
+├── files/                     Teaching materials: files/<level>/<course>/[<topic>/]<file>
+│   └── easy/english/grammar-basics.md ...   (pdf, images, md, txt, audio, video, anything)
 ├── scripts/build_manifest.py  Optional: scans /questions recursively -> manifests/questions-manifest.json
 └── .github/workflows/build-manifest.yml   Optional: rebuilds the manifest on every push
 ```
@@ -55,7 +59,7 @@ questions/advanced/math/algebra/quadratics.json
 ```
 
 - Level 1 (`easy`, `intermediate`, `advanced`), level 2 (the course, e.g. `english`, `math`) and level 3 (the topic, e.g. `grammar`, `reading`, `algebra`) become the filters on the Test page. Use lowercase folder names; hyphens and underscores display as spaces. Other level, course and topic names work too.
-- The app reads the list of files from `manifests/questions-manifest.json`. Browsers cannot list folders on GitHub Pages, so rebuild the manifest after adding files: run `python3 scripts/build_manifest.py` (it scans `questions/` recursively), or let the GitHub Action do it on every push that touches `questions/`. You can also edit the manifest by hand.
+- The app reads the list of files from `manifests/questions-manifest.json`. Browsers cannot list folders on GitHub Pages, so rebuild the manifest after adding files: run `python3 scripts/build_manifest.py` (it scans `questions/` and `files/` recursively and rebuilds both manifests), or let the GitHub Action do it on every push that touches `questions/`. You can also edit the manifest by hand.
 - Files without `meta` and a `questions` array are ignored, and `meta.config.active: false` hides a test.
 
 ## Finding tests
@@ -70,6 +74,15 @@ questions/advanced/math/algebra/quadratics.json
 - **MyTest** (next to Favorites) lists your saved tests. Open one to take it again with the same questions, or delete it with the bin icon. Saved tests, like Favorites and results, live in this browser's storage for that user.
 - Only files in `questions/<level>/<course>/<topic>/` are used. If a question or file is removed later, a saved test skips the missing questions and says so.
 - Generated tests also appear in Reports, and Retake / Review work for them, even if you never saved them.
+
+## Files (teaching materials)
+
+- The **Files** menu lists everything under `files/`, laid out like `questions/`: `files/<level>/<course>/<file>` (an optional topic folder is allowed: `files/<level>/<course>/<topic>/<file>`). Use lowercase `easy` / `intermediate` / `advanced` for the level.
+- Like the question files, the list comes from `manifests/files-manifest.json` (static hosting cannot list folders). After adding files, run `python3 scripts/build_manifest.py`, or let the GitHub Action do it on every push that touches `files/`. Entries can be plain paths or `{ "path": "...", "size": 1234, "title": "...", "description": "..." }`; `title` and `description` are optional (the title defaults to the file name).
+- **Filter** (level, course, topic and file type) and a search box narrow the list. Each card has an **Open in new tab** icon, and the viewer has **Open in new tab** and **Download** buttons.
+- **Preview:** PDF (embedded), images (jpg, png, gif, webp, svg...), Markdown (rendered), text-like files (txt, csv, json...), audio and video. Other types (docx, zip...) show a message with Open in new tab and Download.
+- Markdown is rendered by a small built-in renderer (headings, lists, tables, quotes, code, links, images). File content is never inserted as HTML, so a hostile file cannot run scripts; only http, https and mailto links are kept, and links open in a new tab.
+- Everything in `files/` is public on GitHub Pages. Do not put private material there. Very large files make the page heavy to open.
 
 ## Test screen
 
@@ -141,7 +154,7 @@ Set per role in `data/roles.json`; a user gets the union of all their roles.
 
 | Permission | Allows |
 |---|---|
-| `overview.view`, `test.view`, `reports.view`, `users.view`, `settings.view` | Opening that page |
+| `overview.view`, `test.view`, `files.view`, `reports.view`, `users.view`, `settings.view` | Opening that page |
 | `reports.all` | Reports lists every user's results (without it, only your own) |
 | `passwords.tool` | The Passwords page |
 

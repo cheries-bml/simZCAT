@@ -3,7 +3,7 @@ import { icon } from "./icons.js";
 import { openModal } from "./modal.js";
 import * as E from "./test-engine.js";
 
-const countActive = (filters) => E.FACETS.reduce((n, { key }) => n + filters[key].size, 0);
+const countActive = (filters, facets = E.FACETS) => facets.reduce((n, { key }) => n + (filters[key]?.size ?? 0), 0);
 
 /**
  * One compact row: Filter, Favorites, MyTest, GenTest, removable filter chips and the result count.
@@ -33,36 +33,40 @@ export function renderToolbar({ filters, view, favCount, myCount, shown, total, 
     filterable && active ? el("button", { type: "button", className: "link-btn", textContent: "Clear", onclick: () => { E.FACETS.forEach(({ key }) => filters[key].clear()); onChange(); } }) : null);
 }
 
-/** The Filter window. Edits a working copy; Apply writes it back into `filters`. Resolves true when applied. */
-export async function openFilterWindow(tests, filters) {
-  const work = Object.fromEntries(E.FACETS.map(({ key }) => [key, new Set(filters[key])]));
+/**
+ * The Filter window. Edits a working copy; Apply writes it back into `filters`. Resolves true when applied.
+ * facets: the groups to show (default level / course / topic); a facet may carry format(value) for its labels.
+ */
+export async function openFilterWindow(items, filters, facets = E.FACETS, noun = "tests") {
+  const work = Object.fromEntries(facets.map(({ key }) => [key, new Set(filters[key])]));
   const body = el("div", { className: "filter-window" });
 
   function draw(changed) {
-    const matching = E.applyFilters(tests, work).length;
+    const matching = E.applyFilters(items, work, facets).length;
     mount(body,
-      E.FACETS.map(({ key, label }) => {
-        const options = E.facetOptions(tests, work, key);
+      facets.map(({ key, label, format }) => {
+        const options = E.facetOptions(items, work, key, facets);
         if (!options.length) return null;
+        const fmt = format ?? E.facetLabel;
         return el("div", { className: "filter-group", role: "group", "aria-label": label },
           el("span", { className: "filter-label", textContent: label }),
           el("div", { className: "filter-chips" }, ...options.map(({ value, count }) =>
             el("button", {
               type: "button", className: "filter-chip", dataset: { facet: key, value }, "aria-pressed": String(work[key].has(value)),
               onclick: () => { if (work[key].has(value)) work[key].delete(value); else work[key].add(value); draw({ key, value }); },
-            }, E.facetLabel(value), el("span", { className: "filter-count", textContent: String(count) })))));
+            }, fmt(value), el("span", { className: "filter-count", textContent: String(count) })))));
       }),
       el("div", { className: "filter-foot" },
-        el("span", { className: "muted", textContent: `${matching} of ${tests.length} tests match` }),
-        countActive(work) ? el("button", { type: "button", className: "link-btn", textContent: "Clear all", onclick: () => { E.FACETS.forEach(({ key }) => work[key].clear()); draw(); } }) : null));
+        el("span", { className: "muted", textContent: `${matching} of ${items.length} ${noun} match` }),
+        countActive(work, facets) ? el("button", { type: "button", className: "link-btn", textContent: "Clear all", onclick: () => { facets.forEach(({ key }) => work[key].clear()); draw(); } }) : null));
     if (changed) body.querySelector(`[data-facet="${changed.key}"][data-value="${changed.value}"]`)?.focus();
   }
   draw();
 
   const ok = await openModal({
-    title: "Filter tests", body, wide: true, dismissValue: false,
+    title: `Filter ${noun}`, body, wide: true, dismissValue: false,
     actions: [{ label: "Cancel", value: false }, { label: "Apply", value: true, primary: true }],
   });
-  if (ok) E.FACETS.forEach(({ key }) => { filters[key].clear(); work[key].forEach((v) => filters[key].add(v)); });
+  if (ok) facets.forEach(({ key }) => { filters[key].clear(); work[key].forEach((v) => filters[key].add(v)); });
   return ok;
 }

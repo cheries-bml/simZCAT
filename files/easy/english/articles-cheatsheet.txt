@@ -1,0 +1,8 @@
+ARTICLES CHEAT SHEET
+====================
+
+a   -> before a consonant sound   (a book, a university)
+an  -> before a vowel sound       (an apple, an hour)
+the -> something specific/unique  (the sun, the capital of France)
+
+No article: plural or uncountable things in general (Cats are cute. Water is vital.)

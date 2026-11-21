@@ -156,14 +156,14 @@ function sortValues(key, values) {
 }
 
 // filters: { level: Set, course: Set, topic: Set }. OR inside a group, AND between groups.
-const matches = (t, filters, skip) => FACETS.every(({ key }) => key === skip || !filters[key]?.size || filters[key].has(t[key]));
-export const applyFilters = (tests, filters) => tests.filter((t) => matches(t, filters));
-export const hasFilters = (filters) => FACETS.some(({ key }) => filters[key]?.size);
+const matches = (t, filters, skip, facets = FACETS) => facets.every(({ key }) => key === skip || !filters[key]?.size || filters[key].has(t[key]));
+export const applyFilters = (tests, filters, facets = FACETS) => tests.filter((t) => matches(t, filters, undefined, facets));
+export const hasFilters = (filters, facets = FACETS) => facets.some(({ key }) => filters[key]?.size);
 
 /** Options for one group with counts, taking the other groups' selections into account. */
-export function facetOptions(tests, filters, key) {
+export function facetOptions(tests, filters, key, facets = FACETS) {
   const counts = new Map();
-  for (const t of tests) if (t[key] && matches(t, filters, key)) counts.set(t[key], (counts.get(t[key]) || 0) + 1);
+  for (const t of tests) if (t[key] && matches(t, filters, key, facets)) counts.set(t[key], (counts.get(t[key]) || 0) + 1);
   for (const v of filters[key] || []) if (!counts.has(v)) counts.set(v, 0); // keep a selected value visible so it can be cleared
   return sortValues(key, counts.keys()).map((value) => ({ value, count: counts.get(value) }));
 }
@@ -271,4 +271,58 @@ export function buildGenTest(gen, tests) {
     gen: { id: gen.id, title: gen.title, course: gen.course, items: gen.items.map(({ path, id, level, topic }) => ({ path, id, level, topic })) },
   };
   return { test, missing };
+}
+
+// ----- teaching files (Files page): files/<level>/<course>/[<topic>/]<file> -----
+const FILE_KINDS = {
+  pdf: ["pdf"],
+  image: ["jpg", "jpeg", "png", "gif", "webp", "svg", "avif", "bmp"],
+  markdown: ["md", "markdown"],
+  text: ["txt", "csv", "json", "log", "yml", "yaml", "xml"],
+  video: ["mp4", "webm", "ogv", "mov"],
+  audio: ["mp3", "wav", "ogg", "m4a", "aac"],
+};
+export const KIND_LABELS = { pdf: "PDF", image: "Image", markdown: "Markdown", text: "Text", video: "Video", audio: "Audio", other: "Other" };
+
+export function kindOf(path) {
+  const ext = (path.split(".").pop() || "").toLowerCase();
+  for (const [kind, exts] of Object.entries(FILE_KINDS)) if (exts.includes(ext)) return kind;
+  return "other";
+}
+
+// Same level / course / topic groups as tests, plus the file type.
+export const FILE_FACETS = [...FACETS, { key: "kind", label: "Type", format: (v) => KIND_LABELS[v] ?? facetLabel(v) }];
+
+export const fileTitle = (path) => facetLabel(path.split("/").pop().replace(/\.[^.]+$/, ""));
+export const fileUrl = (path) => path.split("/").map(encodeURIComponent).join("/");
+
+export function humanSize(bytes) {
+  if (!Number.isFinite(bytes)) return "";
+  if (bytes < 1024) return `${bytes} B`;
+  const kb = bytes / 1024;
+  if (kb < 1024) return `${kb < 10 ? kb.toFixed(1) : Math.round(kb)} KB`;
+  const mb = kb / 1024;
+  return `${mb < 10 ? mb.toFixed(1) : Math.round(mb)} MB`;
+}
+
+/** A manifest entry (a path string, or { path, size, title?, description? }) as a file record. */
+export function fileInfo(entry, base = "files") {
+  const e = typeof entry === "string" ? { path: entry } : entry;
+  return {
+    path: e.path, name: e.path.split("/").pop(), title: e.title || fileTitle(e.path), description: e.description || "",
+    size: Number.isFinite(e.size) ? e.size : null, kind: kindOf(e.path), ...facetsFromPath(e.path, base),
+  };
+}
+
+export function compareFiles(a, b) {
+  const rank = (f) => (LEVEL_ORDER.includes(f.level) ? LEVEL_ORDER.indexOf(f.level) : LEVEL_ORDER.length);
+  return rank(a) - rank(b) || a.course.localeCompare(b.course) || a.topic.localeCompare(b.topic) || a.title.localeCompare(b.title);
+}
+
+/** Every word of the query must appear somewhere in the file's title, name, level, course, topic or description. */
+export function matchesQuery(f, query) {
+  const words = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  if (!words.length) return true;
+  const hay = [f.title, f.name, f.level, f.course, f.topic, f.description].join(" ").toLowerCase();
+  return words.every((w) => hay.includes(w));
 }

@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""Recursively scan ./questions for question files and write manifests/questions-manifest.json.
+"""Rebuild the manifests the app reads (static hosting cannot list folders):
 
-Static hosting cannot list folders, so the browser reads this manifest instead.
+  manifests/questions-manifest.json   every valid question file under ./questions (recursive)
+  manifests/files-manifest.json       every file under ./files (recursive), with its size in bytes
+
 Uses only the Python standard library (3.8+).
 """
 import json
@@ -10,10 +12,18 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 QUESTIONS_DIR = ROOT / "questions"
-OUT = ROOT / "manifests" / "questions-manifest.json"
+FILES_DIR = ROOT / "files"
+OUT_QUESTIONS = ROOT / "manifests" / "questions-manifest.json"
+OUT_FILES = ROOT / "manifests" / "files-manifest.json"
 
 
-def main() -> int:
+def write(path: Path, entries: list, label: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({"files": entries}, indent=2) + "\n", encoding="utf-8")
+    print(f"Indexed {len(entries)} {label} -> {path.relative_to(ROOT).as_posix()}")
+
+
+def build_questions() -> None:
     files = []
     for path in sorted(QUESTIONS_DIR.rglob("*")):
         if not path.is_file() or path.suffix.lower() != ".json":
@@ -28,10 +38,23 @@ def main() -> int:
             files.append(rel)
         else:
             print(f"skip (not a question file): {rel}", file=sys.stderr)
+    write(OUT_QUESTIONS, files, "test file(s)")
 
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps({"files": files}, indent=2) + "\n", encoding="utf-8")
-    print(f"Indexed {len(files)} test file(s) -> {OUT.relative_to(ROOT).as_posix()}")
+
+def build_files() -> None:
+    entries = []
+    if FILES_DIR.is_dir():
+        for path in sorted(FILES_DIR.rglob("*")):
+            parts = path.relative_to(FILES_DIR).parts
+            if not path.is_file() or any(p.startswith(".") for p in parts):  # skip dotfiles such as .gitkeep
+                continue
+            entries.append({"path": path.relative_to(ROOT).as_posix(), "size": path.stat().st_size})
+    write(OUT_FILES, entries, "teaching file(s)")
+
+
+def main() -> int:
+    build_questions()
+    build_files()
     return 0
 
 

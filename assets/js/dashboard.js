@@ -7,6 +7,7 @@ import { themeControls } from "./theme.js";
 import { renderHome } from "./home.js";
 import { renderTests, canLeave } from "./test-ui.js";
 import { renderReports } from "./reports.js";
+import { renderFiles } from "./files-ui.js";
 import { renderPasswordTool } from "./password-tool.js";
 
 // Each section is shown only if the user's roles grant the permission.
@@ -14,6 +15,7 @@ import { renderPasswordTool } from "./password-tool.js";
 const SECTIONS = [
   { id: "overview",  label: "Home",      permission: "overview.view",  render: () => renderHome({ config: data.config, session, roles: data.roles, go: show }) },
   { id: "test",      label: "Test",      icon: "test",     permission: "test.view",      render: (opts) => renderTests({ config: data.config, session, roles: data.roles }, opts) },
+  { id: "files",     label: "Files",     icon: "files",    permission: "files.view",     render: () => renderFiles({ config: data.config }) },
   { id: "reports",   label: "Reports",   icon: "chart",    permission: "reports.view",   render: () => renderReports({ config: data.config, session, roles: data.roles, onRetake: (a) => show("test", { path: a.testPath, gen: a.gen }) }) },
   { id: "users",     label: "Users",     icon: "users",    permission: "users.view",     render: renderUsers },
   { id: "passwords", label: "Passwords", icon: "key",      permission: "passwords.tool", render: () => renderPasswordTool({ config: data.config, users: data.users }) },

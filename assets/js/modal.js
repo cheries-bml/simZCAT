@@ -12,7 +12,7 @@ export function openModal({ title, body, actions = [{ label: "OK", value: true, 
   return new Promise((resolve) => {
     const titleId = `modal-title-${++counter}`;
     let result = dismissValue;
-    const dlg = el("dialog", { className: `modal${wide ? " modal-wide" : ""}`, "aria-labelledby": titleId });
+    const dlg = el("dialog", { className: `modal${wide ? " modal-wide" : ""}${wide === "xl" ? " modal-xl" : ""}`, "aria-labelledby": titleId });
     dlg.setAttribute("role", role);
     const close = (value) => { result = value; dlg.close(); };
 
@@ -21,12 +21,13 @@ export function openModal({ title, body, actions = [{ label: "OK", value: true, 
         el("h2", { id: titleId, textContent: title }),
         el("button", { type: "button", className: "modal-x", "aria-label": "Close", textContent: "×", onclick: () => close(dismissValue) })),
       el("div", { className: "modal-body" }, body),
-      el("div", { className: "modal-foot" }, ...actions.map((a) =>
-        el("button", {
-          type: "button", textContent: a.label, autofocus: !!a.primary,
-          className: `btn${a.primary ? "" : " btn-ghost"}${a.danger ? " btn-danger" : ""}`,
-          onclick: () => close(a.value),
-        })))));
+      el("div", { className: "modal-foot" }, ...actions.map((a) => {
+        const cls = `btn${a.primary ? "" : " btn-ghost"}${a.danger ? " btn-danger" : ""}`;
+        if (a.href) { // a link that leaves the dialog open: open in a new tab, or download
+          return el("a", { href: a.href, className: cls, ...(a.download ? { download: "" } : { target: "_blank", rel: "noopener noreferrer" }) }, a.icon ?? null, a.label);
+        }
+        return el("button", { type: "button", textContent: a.label, autofocus: !!a.primary, className: cls, onclick: () => close(a.value) });
+      }))));
 
     dlg.addEventListener("click", (e) => { if (e.target === dlg) close(dismissValue); }); // backdrop
     dlg.addEventListener("close", () => { dlg.remove(); resolve(result); });
