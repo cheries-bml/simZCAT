@@ -93,7 +93,7 @@ questions/advanced/math/algebra/quadratics.json
 
 ## Show answer highlighting
 
-With the `show_answer` special feature, **Show answer** colours the question: correct options turn green, a wrong choice turns red, error-correction parts that need a fix show the right text, and each text box you typed in turns green (right) or red (wrong, with the expected text). Colours follow the light and dark themes.
+With the `show_answer` special feature, **Show answer** colours the question: correct options turn green, a wrong choice turns red, error-correction parts that need a fix show the right text, and each text box you typed in turns green (right) or red (wrong, with the expected text). Colours follow the light and dark themes. For error-correction questions a **Hide wrong parts** button then removes the wrong text from the sentence, so the corrected sentence reads straight through (**Show wrong parts** brings it back). The sentence itself sits in a bordered panel.
 
 ## About page and contact details
 

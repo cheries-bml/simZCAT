@@ -28,6 +28,8 @@
   /* derived from the accent, so every theme and mode stays consistent */
   --accent-soft: color-mix(in srgb, var(--accent) 14%, var(--surface));
   --ok-soft: color-mix(in srgb, var(--ok) 14%, var(--surface));
+  --sentence-bg: color-mix(in srgb, var(--accent) 5%, var(--bg));
+  --sentence-line: color-mix(in srgb, var(--accent) 30%, var(--line));
   --accent-text: color-mix(in srgb, var(--accent) 62%, var(--ink));
   --hero-from: color-mix(in srgb, var(--accent) 22%, #0c1424);
   --hero-to: color-mix(in srgb, var(--accent) 62%, #0c1424);
@@ -231,7 +233,8 @@ pre { margin: 0; overflow-x: auto; font-size: .85rem; background: var(--bg); pad
 .opt input { accent-color: var(--accent); }
 .opt-key { font-weight: 700; color: var(--muted); width: 1.2rem; }
 
-.sentence { font-size: 1.15rem; line-height: 2.2; margin: 0 0 1rem; }
+.sentence { margin: 0 0 1rem; padding: .35rem 1rem; font-size: 1.15rem; line-height: 2.2; background: var(--sentence-bg); border: 1px solid var(--sentence-line); border-radius: var(--radius); }
+.sentence-tools { margin: 0 0 1rem; }
 .seg {
   font: inherit; color: inherit; background: var(--surface); cursor: pointer;
   border: 1px solid var(--seg-line); border-radius: 4px; padding: 0 .2rem; margin-top: 0.1rem; margin-bottom: 0.2rem; background-color: var(--seg-bg);

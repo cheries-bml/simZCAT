@@ -274,6 +274,7 @@ function startRun(root, ctx, test, pace, settings = {}) {
     explained: new Set(),   // questions whose explanation was opened
     remainingMs: limitMs, activeMs: 0, last: Date.now(),
     paused: false, timerOn: true, usedPause: false, usedTimerOff: false, waiting: false,
+    hideWrong: false,       // correction questions: hide the wrong parts while the answer is shown
   });
   window.onbeforeunload = (e) => { e.preventDefault(); e.returnValue = ""; };
 
@@ -361,6 +362,7 @@ function startRun(root, ctx, test, pace, settings = {}) {
   function go(i) {
     r.index = i;
     r.reveal = false; // a peek only lasts while you stay on the question
+    r.hideWrong = false;
     drawQuestion();
     drawPalette();
     window.scrollTo({ top: 0 });
@@ -399,7 +401,7 @@ function startRun(root, ctx, test, pace, settings = {}) {
           type: "button", className: "chip-btn js-reveal", textContent: r.reveal ? "Hide answer" : "Show answer",
           onclick: () => {
             r.reveal = !r.reveal;
-            if (r.reveal) r.peeks.add(i);
+            if (r.reveal) r.peeks.add(i); else r.hideWrong = false;
             drawQuestion();
             qArea.querySelector(".js-reveal")?.focus();
           },
@@ -477,6 +479,10 @@ function startRun(root, ctx, test, pace, settings = {}) {
     const segs = q.multiErrorSegments || [];
     const sentence = el("p", { className: "sentence" });
     const fixes = el("div", { className: "fixes" });
+    // With the answer shown, this hides the wrong parts so the corrected sentence can be read straight through.
+    const hasErrors = E.errorSegments(q).length > 0;
+    const hideBtn = el("button", { type: "button", className: "chip-btn", onclick: () => { r.hideWrong = !r.hideWrong; refresh(); } });
+    const tools = el("div", { className: "sentence-tools" }, hideBtn);
     const noErr = el("button", {
       type: "button", className: `chip-btn${r.reveal && !E.errorSegments(q).length ? " chip-correct" : ""}`, textContent: "No error",
       onclick: () => { a.noError = !a.noError; if (a.noError) a.fixes = {}; refresh(); },
@@ -519,12 +525,19 @@ function startRun(root, ctx, test, pace, settings = {}) {
 
     function refresh() {
       // While the answer is shown: segments that need a fix are marked and followed by the correct text; the rest get a check.
+      tools.hidden = !(r.reveal && hasErrors);
+      hideBtn.setAttribute("aria-pressed", String(r.hideWrong));
+      mount(hideBtn, icon(r.hideWrong ? "eye" : "eye-off", { size: 15 }), r.hideWrong ? "Show wrong parts" : "Hide wrong parts");
       mount(sentence, segs.flatMap((s) => {
         if (!s.clickable) return [el("span", { textContent: s.text }), " "];
         const state = r.reveal ? (s.isError ? " need-fix" : " is-ok") : "";
+        const answers = s.correctAnswers || [];
+        const hideThis = r.reveal && r.hideWrong && !!s.isError;
         return [
-          el("button", { type: "button", className: `seg${state}`, textContent: s.text, "aria-pressed": String(s.id in a.fixes), onclick: () => toggle(s) }),
-          r.reveal && s.isError ? el("span", { className: "seg-fix", textContent: `→ ${(s.correctAnswers || []).join(" / ")}` }) : null,
+          el("button", { type: "button", className: `seg${state}`, textContent: s.text, hidden: hideThis, "aria-pressed": String(s.id in a.fixes), onclick: () => toggle(s) }),
+          r.reveal && s.isError
+            ? el("span", { className: "seg-fix", textContent: r.hideWrong ? answers[0] ?? "" : `→ ${answers.join(" / ")}`, title: r.hideWrong && answers.length > 1 ? answers.join(" / ") : "" })
+            : null,
           " ",
         ];
       }));
@@ -538,7 +551,7 @@ function startRun(root, ctx, test, pace, settings = {}) {
     }
 
     refresh();
-    return el("div", {}, sentence, fixes, noErr);
+    return el("div", {}, sentence, tools, fixes, noErr);
   }
 
   async function submit() {
