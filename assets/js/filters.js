@@ -16,7 +16,10 @@ export function renderToolbar({ filters, view, favCount, myCount, shown, total, 
       type: "button", className: "chip-btn active-chip", "aria-label": `Remove ${label} filter: ${E.facetLabel(value)}`,
       onclick: () => { filters[key].delete(value); onChange(); },
     }, E.facetLabel(value), icon("close", { size: 14 }))));
-  const filterable = view !== "mytest";
+  const filterable = view === "all"; // Favorites and MyTest list their own items, so the filters do not apply there
+  const countText = view === "mytest" ? `${myCount} saved ${myCount === 1 ? "test" : "tests"}`
+    : view === "favorites" ? `${favCount} favorite ${favCount === 1 ? "test" : "tests"}`
+    : `${shown} of ${total} tests`;
 
   return el("div", { className: "toolbar" },
     filterable
@@ -29,7 +32,7 @@ export function renderToolbar({ filters, view, favCount, myCount, shown, total, 
       icon("folder", { size: 16 }), `MyTest ${myCount}`),
     el("button", { type: "button", className: "btn js-gentest-btn", onclick: onGen }, icon("wand", { size: 18 }), "GenTest"),
     filterable && chips.length ? el("div", { className: "active-chips" }, ...chips) : null,
-    el("span", { className: "muted toolbar-count", textContent: filterable ? `${shown} of ${total} tests` : `${myCount} saved ${myCount === 1 ? "test" : "tests"}` }),
+    el("span", { className: "muted toolbar-count", textContent: countText }),
     filterable && active ? el("button", { type: "button", className: "link-btn", textContent: "Clear", onclick: () => { E.FACETS.forEach(({ key }) => filters[key].clear()); onChange(); } }) : null);
 }
 

@@ -8,6 +8,7 @@ import { renderHome } from "./home.js";
 import { renderTests, canLeave } from "./test-ui.js";
 import { renderReports } from "./reports.js";
 import { renderFiles } from "./files-ui.js";
+import { renderAbout } from "./about.js";
 import { renderPasswordTool } from "./password-tool.js";
 
 // Each section is shown only if the user's roles grant the permission.
@@ -20,6 +21,7 @@ const SECTIONS = [
   { id: "users",     label: "Users",     icon: "users",    permission: "users.view",     render: renderUsers },
   { id: "passwords", label: "Passwords", icon: "key",      permission: "passwords.tool", render: () => renderPasswordTool({ config: data.config, users: data.users }) },
   { id: "settings",  label: "Settings",  icon: "settings", permission: "settings.view",  render: renderSettings },
+  { id: "about",     label: "About",     icon: "info",     permission: "about.view",     render: () => renderAbout({ config: data.config }) },
 ];
 
 const $ = (id) => document.getElementById(id);
@@ -83,7 +85,15 @@ async function init() {
 
   const allowed = SECTIONS.filter((s) => can(session, data.roles, s.permission));
   document.title = `Dashboard · ${data.config.appName}`;
-  mount($("theme-controls"), themeControls());
+  const reloadBtn = el("button", {
+    type: "button", className: "icon-btn", title: "Reload", "aria-label": "Reload the app",
+    onclick: async () => {
+      if (!(await canLeave())) return;
+      reloadBtn.classList.add("spin");
+      setTimeout(() => location.reload(), 250);
+    },
+  }, icon("refresh", { size: 20 }));
+  mount($("theme-controls"), [reloadBtn, ...themeControls()]);
   $("user-name").textContent = session.name;
   $("user-role").textContent = labels(session.roles);
   $("logout-btn").prepend(icon("logout", { size: 16 }));

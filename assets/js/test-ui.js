@@ -109,10 +109,11 @@ async function showCatalog(root, ctx) {
   function draw(focusSelector) {
     const favs = getFavorites(user);
     const mine = listMyTests(user);
-    const pool = view === "favorites" ? tests.filter((t) => favs.has(t.path)) : tests;
-    const shown = E.applyFilters(pool, filters);
+    const favTests = tests.filter((t) => favs.has(t.path)); // only favorites that still exist
+    const pool = tests;
+    const shown = view === "favorites" ? favTests : E.applyFilters(pool, filters);
     mount(barSlot, renderToolbar({
-      filters, view, favCount: favs.size, myCount: mine.length, shown: shown.length, total: tests.length,
+      filters, view, favCount: favTests.length, myCount: mine.length, shown: shown.length, total: tests.length,
       onOpenFilter: async () => { await openFilterWindow(pool, filters); draw(".js-filter-btn"); },
       onToggleFav: () => { view = view === "favorites" ? "all" : "favorites"; draw(); },
       onToggleMy: () => { view = view === "mytest" ? "all" : "mytest"; draw(); },
@@ -132,7 +133,7 @@ async function showCatalog(root, ctx) {
         ? el("div", { className: "cards" }, ...shown.map((t) => card(t, lastAttempt(user, t.path), favs.has(t.path),
             () => openIntro(root, ctx, t),
             () => { toggleFavorite(user, t.path); draw(`.fav-btn[data-path="${CSS.escape(t.path)}"]`); })))
-        : el("p", { className: "panel", textContent: view === "favorites" && !favs.size ? "No favorites yet. Tap the star on a test to add it." : "No tests match." }));
+        : el("p", { className: "panel", textContent: view === "favorites" && !favTests.length ? "No favorites yet. Tap the star on a test to add it." : "No tests match." }));
     }
     if (focusSelector) root.querySelector(focusSelector)?.focus();
   }
@@ -173,19 +174,21 @@ function myCard(entry, last, onOpen, onDelete) {
 
 // ================= Intro (modal) =================
 async function openIntro(root, ctx, test) {
-  const canConfigure = specialsOf(ctx.session, ctx.roles).includes("configure_test");
-  const opts = { pace: "normal", randomize: false, count: test.questions.length };
+  const special = new Set(specialsOf(ctx.session, ctx.roles));
+  const canConfigure = special.has("configure_test");
+  const canWait = special.has("show_waiting");
+  const opts = { pace: "normal", randomize: false, count: test.questions.length, wait: ctx.config.waitingTime?.default ?? 0 };
   const ok = await openModal({
     title: test.meta.title, wide: true, dismissValue: false,
-    body: introBody(ctx, test, opts, canConfigure),
+    body: introBody(ctx, test, opts, canConfigure, canWait),
     actions: [{ label: "Cancel", value: false }, { label: "Start test", value: true, primary: true }],
   });
   if (!ok) return;
   const questions = canConfigure ? E.pickQuestions(test.questions, opts) : test.questions;
-  startRun(root, ctx, { ...test, questions, source: test }, opts.pace);
+  startRun(root, ctx, { ...test, questions, source: test }, opts.pace, { wait: canWait ? opts.wait : 0 });
 }
 
-function introBody(ctx, test, opts, canConfigure) {
+function introBody(ctx, test, opts, canConfigure, canWait) {
   const total = test.questions.length;
   const defaults = ctx.config.defaultTimeInSeconds;
   const timeEls = {};
@@ -227,6 +230,21 @@ function introBody(ctx, test, opts, canConfigure) {
       el("label", { className: "count-row" }, el("span", { textContent: "Number of questions" }), countInput, el("span", { className: "muted", textContent: `of ${total}` })));
   }
 
+  let waitBox = null;
+  if (canWait) { // special feature: show_waiting
+    const max = ctx.config.waitingTime?.max ?? 30;
+    opts.wait = Math.min(Math.max(Math.floor(opts.wait) || 0, 0), max);
+    waitBox = el("fieldset", { className: "config" }, el("legend", { textContent: "Waiting time" }),
+      el("label", { className: "count-row" },
+        el("span", { textContent: "Pause after Next (seconds)" }),
+        el("input", {
+          type: "number", min: 0, max, value: opts.wait, "aria-label": "Waiting time in seconds",
+          oninput: (e) => { const v = parseInt(e.target.value, 10); if (Number.isInteger(v)) opts.wait = Math.min(Math.max(v, 0), max); },
+          onchange: (e) => { e.target.value = String(opts.wait); },
+        }),
+        el("span", { className: "muted", textContent: "0 = off" })));
+  }
+
   showTimes();
   return el("div", {},
     test.meta.description ? el("p", { textContent: test.meta.description }) : null,
@@ -235,23 +253,27 @@ function introBody(ctx, test, opts, canConfigure) {
       el("li", { textContent: `${total} questions` }),
       test.meta.author ? el("li", { textContent: `By ${test.meta.author}` }) : null),
     options,
+    waitBox,
     paces);
 }
 
 // ================= Runner =================
-function startRun(root, ctx, test, pace) {
+function startRun(root, ctx, test, pace, settings = {}) {
   stop();
   setTesting(true);
   const n = test.questions.length;
   const special = new Set(specialsOf(ctx.session, ctx.roles)); // show_answer, show_explanation, timer_disabler
   const limitMs = E.timeLimit(test, pace, ctx.config.defaultTimeInSeconds) * 1000;
+  // special feature show_waiting: a pause (with an animation) after Next, set in the start dialog
+  const waitMax = ctx.config.waitingTime?.max ?? 30;
+  const waitSeconds = special.has("show_waiting") ? Math.min(Math.max(Math.floor(settings.wait) || 0, 0), waitMax) : 0;
   const r = (run = {
     answers: {}, flagged: new Set(), index: 0, finished: false,
     reveal: false,          // is the correct answer currently shown for this question?
     peeks: new Set(),       // questions whose answer was shown
     explained: new Set(),   // questions whose explanation was opened
     remainingMs: limitMs, activeMs: 0, last: Date.now(),
-    paused: false, timerOn: true, usedPause: false, usedTimerOff: false,
+    paused: false, timerOn: true, usedPause: false, usedTimerOff: false, waiting: false,
   });
   window.onbeforeunload = (e) => { e.preventDefault(); e.returnValue = ""; };
 
@@ -288,7 +310,7 @@ function startRun(root, ctx, test, pace) {
   function account() {
     const now = Date.now(), delta = now - r.last;
     r.last = now;
-    if (r.paused) return;
+    if (r.paused || r.waiting) return; // pauses and waits are not work time
     r.activeMs += delta;
     if (r.timerOn) r.remainingMs -= delta;
   }
@@ -303,7 +325,7 @@ function startRun(root, ctx, test, pace) {
     touchSession(ctx.config); // an active test keeps the login alive
     account();
     drawTimer();
-    if (r.timerOn && !r.paused && r.remainingMs <= 0) finish(true);
+    if (r.timerOn && !r.paused && !r.waiting && r.remainingMs <= 0) finish(true);
   }
 
   function setPaused(v) {
@@ -323,6 +345,17 @@ function startRun(root, ctx, test, pace) {
     if (!v) r.usedTimerOff = true;
     timerBtn.textContent = v ? "Disable timer" : "Enable timer";
     drawTimer();
+  }
+
+  // Next: with a waiting time, show the waiting dialog first. The test timer stands still meanwhile.
+  async function goNext(target) {
+    if (!waitSeconds) { go(target); return; }
+    account();
+    r.waiting = true;
+    await openWaitModal(waitSeconds);
+    r.last = Date.now();
+    r.waiting = false;
+    if (!r.finished) go(target);
   }
 
   function go(i) {
@@ -401,27 +434,42 @@ function startRun(root, ctx, test, pace) {
       el("div", { className: "q-nav" },
         el("button", { className: "btn btn-ghost", type: "button", textContent: "← Previous", disabled: i === 0, onclick: () => go(i - 1) }),
         i < n - 1
-          ? el("button", { className: "btn", type: "button", textContent: "Next →", onclick: () => go(i + 1) })
+          ? el("button", { className: "btn", type: "button", textContent: "Next →", onclick: () => goNext(i + 1) })
           : el("button", { className: "btn", type: "button", textContent: "Finish test", onclick: () => submit() })));
   }
 
   function mcInput(q, i) {
     const opts = E.optionList(q), need = E.correctKeys(q).length, multi = need > 1;
     const a = (r.answers[i] ??= { selected: [] });
+    const rows = opts.map((o) => {
+      const tag = el("span", { className: "opt-tag" });
+      const input = el("input", {
+        type: multi ? "checkbox" : "radio", name: `q${i}`, value: o.key, checked: a.selected.includes(o.key),
+        onchange: (e) => {
+          a.selected = multi ? (e.target.checked ? [...a.selected, o.key] : a.selected.filter((k) => k !== o.key)) : [o.key];
+          drawPalette();
+          paint();
+        },
+      });
+      const label = el("label", { className: "opt" }, input, el("span", { className: "opt-key", textContent: o.key }), richText(o.text, "span", "opt-text"), tag);
+      return { o, label, tag };
+    });
+
+    // While the answer is shown: correct options are green and a wrong choice is red (updates as you change your choice).
+    function paint() {
+      const chosen = new Set(a.selected);
+      for (const { o, label, tag } of rows) {
+        const state = !r.reveal ? "" : o.correct ? "reveal-correct" : chosen.has(o.key) ? "reveal-wrong" : "";
+        label.className = `opt${state ? ` ${state}` : ""}`;
+        tag.className = `opt-tag${state === "reveal-wrong" ? " bad" : ""}`;
+        tag.textContent = state === "reveal-correct" ? "✓ Correct" : state === "reveal-wrong" ? "✗ Incorrect" : "";
+      }
+    }
+    paint();
+
     return el("div", {},
       multi ? el("p", { className: "multi-note", textContent: `Select ${need} answers.` }) : null,
-      el("div", { className: "opts", role: multi ? "group" : "radiogroup" },
-        ...opts.map((o) => el("label", { className: `opt${r.reveal && o.correct ? " reveal-correct" : ""}` },
-          el("input", {
-            type: multi ? "checkbox" : "radio", name: `q${i}`, value: o.key, checked: a.selected.includes(o.key),
-            onchange: (e) => {
-              a.selected = multi ? (e.target.checked ? [...a.selected, o.key] : a.selected.filter((k) => k !== o.key)) : [o.key];
-              drawPalette();
-            },
-          }),
-          el("span", { className: "opt-key", textContent: o.key }),
-          richText(o.text, "span", "opt-text"),
-          r.reveal && o.correct ? el("span", { className: "opt-tag", textContent: "Correct" }) : null))));
+      el("div", { className: "opts", role: multi ? "group" : "radiogroup" }, ...rows.map((x) => x.label)));
   }
 
   function correctionInput(q, i) {
@@ -441,6 +489,34 @@ function startRun(root, ctx, test, pace) {
       refresh();
     }
 
+    // One text box per marked part. While the answer is shown it is green when the fix is right and red when it is not.
+    function fixField(s) {
+      const input = el("input", {
+        type: "text", value: a.fixes[s.id], placeholder: "Type the correct form", autocomplete: "off",
+        oninput: (e) => { a.fixes[s.id] = e.target.value; paint(); },
+      });
+      const status = el("span", { className: "fix-status" });
+      const wrap = el("span", { className: "fix-input" }, input, status);
+      const hint = el("span", { className: "fix-hint" });
+      function paint() {
+        wrap.classList.remove("ok", "bad");
+        status.replaceChildren();
+        hint.textContent = "";
+        input.removeAttribute("aria-invalid");
+        if (!r.reveal) return;
+        const right = !!s.isError && (s.correctAnswers || []).some((c) => E.norm(c) === E.norm(a.fixes[s.id]));
+        wrap.classList.add(right ? "ok" : "bad");
+        status.append(icon(right ? "tick" : "close", { size: 18 }));
+        if (!right) {
+          input.setAttribute("aria-invalid", "true");
+          hint.textContent = s.isError ? `Expected: ${(s.correctAnswers || []).join(" / ")}` : "This part has no error.";
+        }
+      }
+      paint();
+      if (s.id === focusId) queueMicrotask(() => input.focus());
+      return el("label", { className: "fix" }, el("span", { textContent: `Replace “${s.text}” with:` }), wrap, hint);
+    }
+
     function refresh() {
       // While the answer is shown: segments that need a fix are marked and followed by the correct text; the rest get a check.
       mount(sentence, segs.flatMap((s) => {
@@ -454,13 +530,9 @@ function startRun(root, ctx, test, pace) {
       }));
       noErr.setAttribute("aria-pressed", String(a.noError));
       const marked = segs.filter((s) => s.id in a.fixes);
-      fixes.replaceChildren(...(marked.length
-        ? marked.map((s) => {
-            const input = el("input", { type: "text", value: a.fixes[s.id], placeholder: "Type the correct form", autocomplete: "off", oninput: (e) => { a.fixes[s.id] = e.target.value; } });
-            if (s.id === focusId) queueMicrotask(() => input.focus());
-            return el("label", { className: "fix" }, el("span", { textContent: `Replace “${s.text}” with:` }), input);
-          })
-        : [el("p", { className: "muted", textContent: a.noError ? "You chose “No error”." : "Click the parts that contain an error, or choose “No error”." })]));
+      mount(fixes, marked.length
+        ? marked.map(fixField)
+        : el("p", { className: "muted", textContent: a.noError ? "You chose “No error”." : "Click the parts that contain an error, or choose “No error”." }));
       focusId = null;
       drawPalette();
     }
@@ -507,6 +579,19 @@ function startRun(root, ctx, test, pace) {
   tick();
   drawQuestion();
   drawPalette();
+}
+
+function openWaitModal(seconds) {
+  const left = el("strong", { textContent: String(seconds) });
+  const bar = el("span", { className: "wait-bar" });
+  bar.style.setProperty("--dur", `${seconds}s`);
+  let remaining = seconds;
+  const timer = setInterval(() => { remaining -= 1; left.textContent = String(Math.max(remaining, 0)); }, 1000);
+  const body = el("div", { className: "wait" },
+    el("div", { className: "wait-spinner", "aria-hidden": "true" }),
+    el("p", { className: "wait-text", role: "status" }, "Next question in ", left, " s"),
+    el("div", { className: "wait-track" }, bar));
+  return openModal({ title: "Please wait", body, persistent: true, autoCloseMs: seconds * 1000 }).finally(() => clearInterval(timer));
 }
 
 function image(img) {

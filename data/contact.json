@@ -1,0 +1,19 @@
+{
+  "name": "Cheries",
+  "title": "Designer and maintainer",
+  "message": "Questions, feedback, or ideas for new teaching materials? Get in touch.",
+  "email": "hello@example.com",
+  "phone": "+00 000 000 0000",
+  "website": "https://example.com",
+  "address": "Your address or city",
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/your-username/your-repo"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://instagram.com/your-handle"
+    }
+  ]
+}

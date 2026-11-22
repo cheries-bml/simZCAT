@@ -1,7 +1,17 @@
 {
   "appName": "ZCat",
   "designer": "Cheries",
-  "tagline": "Sign in to manage your workspace.",
+  "tagline": "Practice, learn and track your progress.",
+  "description": "ZCat is a computer-assisted learning app for practising tests, reading teaching materials and following your progress. It runs entirely in the browser and is hosted as a static site.",
+  "version": "1.0.0",
+  "released": "2026",
+  "features": [
+    "Timed tests with fast, normal and easy pacing",
+    "Random test generation (GenTest) and saved tests (MyTest)",
+    "Teaching files with built-in preview",
+    "Reports with review and retake",
+    "Light and dark modes with several colour themes"
+  ],
   "passwordSalt": "change-this-salt-before-going-live",
   "sessionMinutes": 30,
   "maxFailedAttempts": 5,
@@ -11,12 +21,17 @@
     "normal": 30,
     "easy": 60
   },
+  "waitingTime": {
+    "default": 0,
+    "max": 30
+  },
   "defaultPage": "dashboard.html",
   "loginPage": "index.html",
   "questionsDir": "questions",
   "questionsManifest": "manifests/questions-manifest.json",
   "filesDir": "files",
   "filesManifest": "manifests/files-manifest.json",
+  "contactFile": "data/contact.json",
   "motivation": [
     "If you’re not learning, you’re not improving.",
     "Small steps every day beat big leaps once in a while.",

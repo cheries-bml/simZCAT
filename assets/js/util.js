@@ -36,3 +36,11 @@ export function safeHTML(html = "") {
 }
 
 export const richText = (html, tag = "div", className = "") => el(tag, { className }, safeHTML(html));
+
+/** An absolute URL only when its protocol is allowed (default http/https); otherwise null. */
+export function safeHref(url, allowed = ["http:", "https:"]) {
+  try {
+    const u = new URL(String(url).trim());
+    return allowed.includes(u.protocol) ? u.href : null;
+  } catch { return null; }
+}

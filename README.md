@@ -30,12 +30,13 @@ Static login + computer-assisted test app for GitHub Pages. Plain HTML, CSS and 
 │       ├── mytests.js         MyTest: saved generated tests (per user, in this browser)
 │       ├── review.js          Opens a saved attempt for review (Reports and Home)
 │       ├── files-ui.js        Files page: browse, filter, preview, open in new tab
+│       ├── about.js           About page (config.json + contact.json)
 │       ├── markdown.js        Small safe Markdown renderer for the file viewer
 │       ├── catalog.js         Loads the tests listed in the index
 │       ├── test-engine.js     Scoring, timing, answer formatting (no DOM)
 │       └── test-ui.js         Test catalog, intro, runner, results
 ├── data/
-│   └── config.json  roles.json  users.json
+│   └── config.json  roles.json  users.json  contact.json
 ├── manifests/
 │   ├── questions-manifest.json   List of question files the app reads
 │   └── files-manifest.json       List of teaching files (path + size)
@@ -65,7 +66,7 @@ questions/advanced/math/algebra/quadratics.json
 ## Finding tests
 
 - **Filter:** the Filter button on the Test page opens a window with chips for Level, Course and Topic. Several chips in one group match any of them; chips from different groups combine (Easy + Math). Counts and available topics update as you choose; Apply saves it. Active filters show as removable chips next to the button.
-- **Favorites:** tap the star on a test card to favorite it; the **Favorites** button shows only favorites. Favorites are saved per user in this browser.
+- **Favorites:** tap the star on a test card to favorite it; the **Favorites** button shows only favorites. The Favorites view lists your favorites that still exist (the count on the button matches the list; the filters do not apply there). Favorites are saved per user in this browser.
 
 ## GenTest and MyTest
 
@@ -90,9 +91,17 @@ questions/advanced/math/algebra/quadratics.json
 - Users with the `configure_test` special feature can randomize the questions and pick fewer questions in the start dialog. The timer is the total of the chosen questions (shown as an estimate when random).
 - On the results and review screens, **Correct**, **Incorrect** and **Unanswered** are buttons that filter the list of reviewed questions.
 
+## Show answer highlighting
+
+With the `show_answer` special feature, **Show answer** colours the question: correct options turn green, a wrong choice turns red, error-correction parts that need a fix show the right text, and each text box you typed in turns green (right) or red (wrong, with the expected text). Colours follow the light and dark themes.
+
+## About page and contact details
+
+The **About** menu shows the app's name, designer, version, description and feature list from `data/config.json` (`appName`, `designer`, `tagline`, `description`, `version`, `released`, `features`) and the contact card from `data/contact.json` (`name`, `title`, `message`, `email`, `phone`, `website`, `address`, `links`). Edit those two files to change the page. Only http(s) links and valid email addresses are shown; a missing contact file just hides the card. Nothing sensitive from `config.json` (such as the password salt) is displayed.
+
 ## Themes
 
-The sun / moon button switches light and dark mode; the palette button opens a window with six accent themes (Teal, Ocean, Violet, Rose, Forest, Sunset). The choice is saved in this browser; the first visit follows the system light / dark setting. Colors are CSS variables at the top of `assets/css/styles.css`; add a theme by adding a `data-accent` rule there and an entry in `ACCENTS` in `assets/js/theme.js`.
+The sun / moon button switches light and dark mode; the palette button opens a window with six accent themes (Teal, Ocean, Violet, Rose, Forest, Sunset). The choice is saved in this browser; the first visit follows the system light / dark setting. The refresh button next to them reloads the app (same as Ctrl+R) and keeps you signed in on the same page. Colors are CSS variables at the top of `assets/css/styles.css`; add a theme by adding a `data-accent` rule there and an entry in `ACCENTS` in `assets/js/theme.js`.
 
 ## Question file format
 
@@ -154,7 +163,7 @@ Set per role in `data/roles.json`; a user gets the union of all their roles.
 
 | Permission | Allows |
 |---|---|
-| `overview.view`, `test.view`, `files.view`, `reports.view`, `users.view`, `settings.view` | Opening that page |
+| `overview.view`, `test.view`, `files.view`, `reports.view`, `users.view`, `settings.view`, `about.view` | Opening that page |
 | `reports.all` | Reports lists every user's results (without it, only your own) |
 | `passwords.tool` | The Passwords page |
 
@@ -166,6 +175,7 @@ Set per role in `data/roles.json`; a user gets the union of all their roles.
 | `show_explanation` | An **Explanation** button (opens a modal) |
 | `timer_disabler` | **Pause / Resume** and **Disable timer / Enable timer** buttons |
 | `configure_test` | In the test dialog: **Randomize questions** and **Number of questions** (up to the size of the test) |
+| `show_waiting` | In the test dialog: **Waiting time** (seconds). After you click Next, a waiting dialog with an animation shows before the next question; the test timer stands still meanwhile. 0 = off |
 
 The `show_answer` / `show_explanation` flags inside question files only decide what the review after the test shows. Answers and explanations viewed during a test, and pausing or disabling the timer, are recorded and shown in Reports; they do not change the score.
 
