@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Advanced English Grammar Test (C1-C2) - Combined Topics",
-    "description": "A comprehensive test covering advanced English grammar topics, combining at least two advanced concepts per question.",
+    "description": "A comprehensive test covering advanced English grammar topics, combining at least two or more advanced concepts per question.",
     "info": "This test includes 30 questions focusing on combined C1-C2 level grammar structures such as inversion with conditionals, subjunctive with cleft sentences, and more.",
     "author": "Qwen3.7",
     "config": {
@@ -21,40 +21,61 @@
       "multiErrorSegments": [
         {
           "id": "s1",
-          "text": "Hardly the committee had",
+          "text": "Hardly the",
           "clickable": true,
           "isError": true,
           "correctAnswers": [
-            "Hardly had the committee"
+            "Hardly had the"
           ]
         },
         {
           "id": "s2",
-          "text": " approved the proposal when ",
+          "text": " committee had ",
           "clickable": false
         },
         {
           "id": "s3",
-          "text": "they realized it would",
-          "clickable": false
+          "text": "approved the",
+          "clickable": true,
+          "isError": false
         },
         {
           "id": "s4",
-          "text": " be better if they ",
-          "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            " have been better if they had "
-          ]
+          "text": " proposal when ",
+          "clickable": false
         },
         {
           "id": "s5",
-          "text": "consulted the experts.",
+          "text": "they realized",
           "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            "consulted the experts."
-          ]
+          "isError": false
+        },
+        {
+          "id": "s6",
+          "text": " it would ",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "have been",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s8",
+          "text": " better if ",
+          "clickable": false
+        },
+        {
+          "id": "s9",
+          "text": "they had",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s10",
+          "text": " consulted experts.",
+          "clickable": false
         }
       ],
       "explanation": {
@@ -131,35 +152,59 @@
       "multiErrorSegments": [
         {
           "id": "s1",
-          "text": "Been repeatedly warned about",
+          "text": "Having been",
           "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            "Having been repeatedly warned about"
-          ]
+          "isError": false
         },
         {
           "id": "s2",
-          "text": " the flaws, the system ",
+          "text": " repeatedly warned ",
           "clickable": false
         },
         {
           "id": "s3",
-          "text": "is believed having been",
+          "text": "about the",
           "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            "is believed to have been"
-          ]
+          "isError": false
         },
         {
           "id": "s4",
-          "text": " compromised prior the update.",
+          "text": " flaws, the ",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "system is",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s6",
+          "text": " believed having ",
           "clickable": true,
           "isError": true,
           "correctAnswers": [
-            " compromised prior to the update."
+            "believed to have"
           ]
+        },
+        {
+          "id": "s7",
+          "text": " been compromised ",
+          "clickable": false
+        },
+        {
+          "id": "s8",
+          "text": "prior the",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "prior to the"
+          ]
+        },
+        {
+          "id": "s9",
+          "text": " update.",
+          "clickable": false
         }
       ],
       "explanation": {
@@ -236,30 +281,52 @@
       "multiErrorSegments": [
         {
           "id": "s1",
-          "text": "The candidates selecting to",
-          "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            "The candidates selected to"
-          ]
-        },
-        {
-          "id": "s2",
-          "text": " present the project regret ",
+          "text": "The candidates",
           "clickable": false
         },
         {
-          "id": "s3",
-          "text": "having postpone the meeting",
+          "id": "s2",
+          "text": "selecting to",
           "clickable": true,
           "isError": true,
           "correctAnswers": [
-            "having postponed the meeting"
+            "selected to"
           ]
         },
         {
+          "id": "s3",
+          "text": " present the ",
+          "clickable": false
+        },
+        {
           "id": "s4",
-          "text": " due to unforeseen circumstances.",
+          "text": "project regret",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s5",
+          "text": " having postpone ",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "having postponed"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": " the meeting ",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "due to",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s8",
+          "text": " unforeseen circumstances.",
           "clickable": false
         }
       ],
@@ -337,36 +404,64 @@
       "multiErrorSegments": [
         {
           "id": "s1",
-          "text": "What makes this theory",
+          "text": "What makes",
           "clickable": false
         },
         {
           "id": "s2",
-          "text": " all the more compelling ",
+          "text": " this theory ",
           "clickable": false
         },
         {
           "id": "s3",
-          "text": "are that the more",
+          "text": "all the",
           "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            "is that the more"
-          ]
+          "isError": false
         },
         {
           "id": "s4",
-          "text": " data we analyzes, the ",
-          "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            " data we analyze, the "
-          ]
+          "text": " more compelling ",
+          "clickable": false
         },
         {
           "id": "s5",
-          "text": "less certain we become.",
+          "text": "are that",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "is that"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": " the more ",
           "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "data we",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s8",
+          "text": " analyzes, the ",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "analyze, the"
+          ]
+        },
+        {
+          "id": "s9",
+          "text": " less certain ",
+          "clickable": false
+        },
+        {
+          "id": "s10",
+          "text": "we become.",
+          "clickable": true,
+          "isError": false
         }
       ],
       "explanation": {
@@ -443,40 +538,60 @@
       "multiErrorSegments": [
         {
           "id": "s1",
-          "text": "He was oblivious to",
+          "text": "He was",
           "clickable": false
         },
         {
           "id": "s2",
-          "text": " the fact that it ",
-          "clickable": false
+          "text": "oblivious to",
+          "clickable": true,
+          "isError": false
         },
         {
           "id": "s3",
-          "text": "was an unique opportunity,",
-          "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            "was a unique opportunity,"
-          ]
-        },
-        {
-          "id": "s4",
-          "text": " making him wholly ",
+          "text": " the fact ",
           "clickable": false
         },
         {
+          "id": "s4",
+          "text": "that it",
+          "clickable": true,
+          "isError": false
+        },
+        {
           "id": "s5",
-          "text": "ill-equipped for the role.",
+          "text": " was an ",
           "clickable": true,
           "isError": true,
           "correctAnswers": [
-            "ill-equipped."
+            "was a"
           ]
+        },
+        {
+          "id": "s6",
+          "text": " unique opportunity, ",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "making him",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s8",
+          "text": " wholly ill-equipped ",
+          "clickable": false
+        },
+        {
+          "id": "s9",
+          "text": "for the role.",
+          "clickable": true,
+          "isError": false
         }
       ],
       "explanation": {
-        "text": "This combines adjective + preposition collocations ('oblivious to', 'ill-equipped') with article usage. 'Unique' starts with a consonant sound (/j/), so it takes 'a', not 'an'. 'Ill-equipped' does not need 'for the role' if the context is already clear, or it can stand alone as a predicate adjective.",
+        "text": "This combines adjective + preposition collocations ('oblivious to', 'ill-equipped') with article usage. 'Unique' starts with a consonant sound (/j/), so it takes 'a', not 'an'.",
         "topic": "Prepositions after Adjectives + Articles",
         "concept": "Adjective collocations and indefinite articles before consonant sounds",
         "formula": "Adjective + to + noun phrase + a + word starting with /j/ sound",
@@ -549,36 +664,58 @@
       "multiErrorSegments": [
         {
           "id": "s1",
-          "text": "If only the board",
+          "text": "If only",
           "clickable": false
         },
         {
           "id": "s2",
-          "text": " has acted sooner; it ",
-          "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            " had acted sooner; it "
-          ]
+          "text": " the board ",
+          "clickable": false
         },
         {
           "id": "s3",
-          "text": "is high time they",
-          "clickable": false
-        },
-        {
-          "id": "s4",
-          "text": " implement the new safety ",
+          "text": "has acted",
           "clickable": true,
           "isError": true,
           "correctAnswers": [
-            " implemented the new safety "
+            "had acted"
           ]
         },
         {
-          "id": "s5",
-          "text": "protocols immediately.",
+          "id": "s4",
+          "text": " sooner; it ",
           "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "is high time",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s6",
+          "text": " they ",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "implement the",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "implemented the"
+          ]
+        },
+        {
+          "id": "s8",
+          "text": " new safety ",
+          "clickable": false
+        },
+        {
+          "id": "s9",
+          "text": "protocols immediately.",
+          "clickable": true,
+          "isError": false
         }
       ],
       "explanation": {
@@ -655,41 +792,64 @@
       "multiErrorSegments": [
         {
           "id": "s1",
-          "text": "Had the merger been",
+          "text": "Had the",
           "clickable": false
         },
         {
           "id": "s2",
-          "text": " successful, not only the",
-          "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            " successful, not only would the"
-          ]
+          "text": " merger been ",
+          "clickable": false
         },
         {
           "id": "s3",
-          "text": " company have expanded its ",
-          "clickable": false
+          "text": "successful, not",
+          "clickable": true,
+          "isError": false
         },
         {
           "id": "s4",
-          "text": "market share, but it",
-          "clickable": false
-        },
-        {
-          "id": "s5",
-          "text": " also would have doubled ",
+          "text": " only the ",
           "clickable": true,
           "isError": true,
           "correctAnswers": [
-            " would also have doubled "
+            "only would the"
           ]
         },
         {
-          "id": "s6",
-          "text": "its revenue significantly.",
+          "id": "s5",
+          "text": "company have",
           "clickable": false
+        },
+        {
+          "id": "s6",
+          "text": " expanded its ",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "market share, but",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s8",
+          "text": " it also would ",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "it would also"
+          ]
+        },
+        {
+          "id": "s9",
+          "text": "have doubled its",
+          "clickable": false
+        },
+        {
+          "id": "s10",
+          "text": " revenue significantly.",
+          "clickable": true,
+          "isError": false
         }
       ],
       "explanation": {
@@ -766,30 +926,52 @@
       "multiErrorSegments": [
         {
           "id": "s1",
-          "text": "Should you needing further",
-          "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            "Should you need further"
-          ]
-        },
-        {
-          "id": "s2",
-          "text": " clarification, were I to ",
+          "text": "Should you",
           "clickable": false
         },
         {
-          "id": "s3",
-          "text": "explaining it again, I",
+          "id": "s2",
+          "text": " needing further ",
           "clickable": true,
           "isError": true,
           "correctAnswers": [
-            "explain it again, I"
+            "need further"
           ]
         },
         {
+          "id": "s3",
+          "text": "clarification, were",
+          "clickable": true,
+          "isError": false
+        },
+        {
           "id": "s4",
-          "text": " would use simpler terms.",
+          "text": " I to ",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "explaining it",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "explain it"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": " again, I ",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "would use",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s8",
+          "text": " simpler terms.",
           "clickable": false
         }
       ],
@@ -867,31 +1049,59 @@
       "multiErrorSegments": [
         {
           "id": "s1",
-          "text": "If the manager had",
+          "text": "If the",
           "clickable": false
         },
         {
           "id": "s2",
-          "text": " insisted that the team ",
+          "text": " manager had ",
           "clickable": false
         },
         {
           "id": "s3",
-          "text": "is more diligent, we",
+          "text": "insisted that",
           "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            "be more diligent, we"
-          ]
+          "isError": false
         },
         {
           "id": "s4",
-          "text": " would not be facing ",
+          "text": " the team ",
           "clickable": false
         },
         {
           "id": "s5",
-          "text": "this crisis right now.",
+          "text": "is more",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "be more"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": " diligent, we ",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "would not",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s8",
+          "text": " be facing ",
+          "clickable": false
+        },
+        {
+          "id": "s9",
+          "text": "this crisis",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s10",
+          "text": " right now.",
           "clickable": false
         }
       ],
@@ -969,35 +1179,62 @@
       "multiErrorSegments": [
         {
           "id": "s1",
-          "text": "He must have regretted",
+          "text": "He must",
           "clickable": false
         },
         {
           "id": "s2",
-          "text": " to make that decision, ",
-          "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            " making that decision, "
-          ]
-        },
-        {
-          "id": "s3",
-          "text": "as he can't have",
+          "text": " have regretted ",
           "clickable": false
         },
         {
-          "id": "s4",
-          "text": " enjoyed to face the ",
+          "id": "s3",
+          "text": "to make",
           "clickable": true,
           "isError": true,
           "correctAnswers": [
-            " enjoyed facing the "
+            "making"
           ]
         },
         {
+          "id": "s4",
+          "text": " that decision, ",
+          "clickable": false
+        },
+        {
           "id": "s5",
-          "text": "consequences of his actions.",
+          "text": "as he",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s6",
+          "text": " can't have ",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "enjoyed to",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "enjoyed facing"
+          ]
+        },
+        {
+          "id": "s8",
+          "text": " face the ",
+          "clickable": false
+        },
+        {
+          "id": "s9",
+          "text": "consequences of",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s10",
+          "text": " his actions.",
           "clickable": false
         }
       ],
@@ -1075,31 +1312,59 @@
       "multiErrorSegments": [
         {
           "id": "s1",
-          "text": "Whatever the outcome may",
+          "text": "Whatever the",
           "clickable": false
         },
         {
           "id": "s2",
-          "text": " be, therefore, it is ",
+          "text": " outcome may ",
           "clickable": false
         },
         {
           "id": "s3",
-          "text": "evident that what we",
-          "clickable": false
+          "text": "be, therefore,",
+          "clickable": true,
+          "isError": false
         },
         {
           "id": "s4",
-          "text": " needs are a comprehensive ",
-          "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            " need is a comprehensive "
-          ]
+          "text": " it is ",
+          "clickable": false
         },
         {
           "id": "s5",
-          "text": "strategy moving forward.",
+          "text": "evident that",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s6",
+          "text": " what we ",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "needs are",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "need is"
+          ]
+        },
+        {
+          "id": "s8",
+          "text": " a comprehensive ",
+          "clickable": false
+        },
+        {
+          "id": "s9",
+          "text": "strategy moving",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s10",
+          "text": " forward.",
           "clickable": false
         }
       ],
@@ -1177,35 +1442,60 @@
       "multiErrorSegments": [
         {
           "id": "s1",
-          "text": "Very few of the",
+          "text": "Very few",
           "clickable": false
         },
         {
           "id": "s2",
-          "text": " applicants lived up to ",
+          "text": " of the ",
           "clickable": false
         },
         {
           "id": "s3",
-          "text": "the expectations, and little",
+          "text": "applicants lived",
           "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            "expectations, and little"
-          ]
+          "isError": false
         },
         {
           "id": "s4",
-          "text": " of the feedback were ",
-          "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            " of the feedback was "
-          ]
+          "text": " up to ",
+          "clickable": false
         },
         {
           "id": "s5",
-          "text": "constructive or actionable.",
+          "text": "the expectations,",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s6",
+          "text": " and little ",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "of the",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s8",
+          "text": " feedback were ",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "feedback was"
+          ]
+        },
+        {
+          "id": "s9",
+          "text": "constructive or",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s10",
+          "text": " actionable.",
           "clickable": false
         }
       ],
@@ -1283,31 +1573,53 @@
       "multiErrorSegments": [
         {
           "id": "s1",
-          "text": "It is high time",
+          "text": "It is",
           "clickable": false
         },
         {
           "id": "s2",
-          "text": " he stops acting as ",
-          "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            " he stopped acting as "
-          ]
+          "text": " high time ",
+          "clickable": false
         },
         {
           "id": "s3",
-          "text": "though he know everything",
+          "text": "he stops",
           "clickable": true,
           "isError": true,
           "correctAnswers": [
-            "though he knew everything"
+            "he stopped"
           ]
         },
         {
           "id": "s4",
-          "text": " about the project details.",
+          "text": " acting as ",
           "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "though he",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s6",
+          "text": " know everything ",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "knew everything"
+          ]
+        },
+        {
+          "id": "s7",
+          "text": "about the",
+          "clickable": false
+        },
+        {
+          "id": "s8",
+          "text": " project details.",
+          "clickable": true,
+          "isError": false
         }
       ],
       "explanation": {
@@ -1384,31 +1696,62 @@
       "multiErrorSegments": [
         {
           "id": "s1",
-          "text": "Not only did the",
+          "text": "Not only",
           "clickable": false
         },
         {
           "id": "s2",
-          "text": " CEO resign, but little ",
+          "text": " did the ",
           "clickable": false
         },
         {
           "id": "s3",
-          "text": "the public knew that",
+          "text": "CEO resign,",
           "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            "did the public know that"
-          ]
+          "isError": false
         },
         {
           "id": "s4",
-          "text": " he was also under ",
+          "text": " but little ",
           "clickable": false
         },
         {
           "id": "s5",
-          "text": "intense federal investigation.",
+          "text": "the public",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "did the public"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": " knew that ",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "know that"
+          ]
+        },
+        {
+          "id": "s7",
+          "text": "he was",
+          "clickable": false
+        },
+        {
+          "id": "s8",
+          "text": " also under ",
+          "clickable": false
+        },
+        {
+          "id": "s9",
+          "text": "intense federal",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s10",
+          "text": " investigation.",
           "clickable": false
         }
       ],
@@ -1486,31 +1829,53 @@
       "multiErrorSegments": [
         {
           "id": "s1",
-          "text": "Were I to choosing,",
-          "clickable": true,
-          "isError": true,
-          "correctAnswers": [
-            "Were I to choose,"
-          ]
+          "text": "Were I",
+          "clickable": false
         },
         {
           "id": "s2",
-          "text": " it would be the ",
-          "clickable": false
-        },
-        {
-          "id": "s3",
-          "text": "second option that I",
-          "clickable": false
-        },
-        {
-          "id": "s4",
-          "text": " selects without any hesitation.",
+          "text": " to choosing,",
           "clickable": true,
           "isError": true,
           "correctAnswers": [
-            " would select without hesitation."
+            "to choose,"
           ]
+        },
+        {
+          "id": "s3",
+          "text": "it would",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s4",
+          "text": " be the ",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "second option",
+          "clickable": true,
+          "isError": false
+        },
+        {
+          "id": "s6",
+          "text": " that I ",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "selects without",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "would select without"
+          ]
+        },
+        {
+          "id": "s8",
+          "text": " any hesitation.",
+          "clickable": false
         }
       ],
       "explanation": {
