@@ -1214,7 +1214,7 @@
         },
         {
           "id": "s7",
-          "text": "enjoyed to",
+          "text": "enjoyed to face",
           "clickable": true,
           "isError": true,
           "correctAnswers": [
@@ -1223,17 +1223,12 @@
         },
         {
           "id": "s8",
-          "text": " face the ",
-          "clickable": false
-        },
-        {
-          "id": "s9",
-          "text": "consequences of",
+          "text": "the consequences of",
           "clickable": true,
           "isError": false
         },
         {
-          "id": "s10",
+          "id": "s9",
           "text": " his actions.",
           "clickable": false
         }
