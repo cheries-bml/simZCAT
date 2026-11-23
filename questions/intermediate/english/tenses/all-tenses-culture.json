@@ -152,10 +152,11 @@
         "question": "By next year, the angklung orchestra _____ in over 50 countries, proving that this traditional instrument _____ global appeal."
       },
       "options": {
-        "A": { "text": "will perform / has", "correct": false },
+        "A": { "text": "will perform / has", "correct": true },
         "B": { "text": "will have performed / has", "correct": true },
         "C": { "text": "performs / will have", "correct": false },
-        "D": { "text": "will be performing / had", "correct": false }
+        "D": { "text": "will be performing / had", "correct": false },
+        "E": { "text": "will perform / had", "correct": false }
       },
       "explanation": {
         "text": "This combines the Future Perfect tense ('will have performed') for an action completed before a future time, and the Present Simple tense ('has') for a general fact.",
