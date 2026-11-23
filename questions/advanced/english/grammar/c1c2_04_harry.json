@@ -1,0 +1,852 @@
+{
+  "meta": {
+    "title": "Advanced English Grammar Test (C1-C2) - Harry Potter Universe",
+    "description": "A comprehensive test covering advanced English grammar topics themed around the Harry Potter universe, combining at least two or more advanced concepts per question.",
+    "info": "This test includes 30 questions focusing on combined C1-C2 level grammar structures such as inversion with conditionals, subjunctive with cleft sentences, and more, featuring characters like Harry, Hermione, Dumbledore, and Voldemort.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Hardly Harry had", "clickable": true, "isError": true, "correctAnswers": ["Hardly had Harry"] },
+        { "id": "s2", "text": "cast the spell", "clickable": false },
+        { "id": "s3", "text": "when he realized", "clickable": false },
+        { "id": "s4", "text": "it would be", "clickable": true, "isError": true, "correctAnswers": ["it would have been"] },
+        { "id": "s5", "text": "safer if he", "clickable": false },
+        { "id": "s6", "text": "consulted Hermione.", "clickable": true, "isError": true, "correctAnswers": ["had consulted Hermione."] }
+      ],
+      "explanation": {
+        "text": "This combines negative adverbial inversion ('Hardly had Harry...') with a mixed conditional. The 'if' clause refers to a past unreal condition (past perfect 'had consulted'), and the main clause refers to a past unreal result ('would have been').",
+        "topic": "Inversion + Mixed Conditionals",
+        "concept": "Negative inversion with past unreal conditions",
+        "formula": "Hardly + had + subject + past participle ... would have + past participle + if + subject + had + past participle",
+        "examples": ["<b>Hardly had</b> he <b>cast</b> the spell when he realized it <b>would have been</b> safer if he <b>had consulted</b> her."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "It is imperative that it _____ Dumbledore who _____ the final decision regarding the Order of the Phoenix."
+      },
+      "options": {
+        "A": { "text": "is / makes", "correct": false },
+        "B": { "text": "be / makes", "correct": true },
+        "C": { "text": "be / make", "correct": false },
+        "D": { "text": "was / made", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the mandative subjunctive ('it is imperative that it be') with a cleft sentence. The relative pronoun 'who' refers to the singular 'Dumbledore', so the verb must be 'makes'.",
+        "topic": "Subjunctive Mood + Cleft Sentences",
+        "concept": "Mandative subjunctive in it-clefts",
+        "formula": "It is imperative that + subject + base verb + who/that + singular verb",
+        "examples": ["It is essential that it <b>be</b> the headmaster <b>who</b> <b>makes</b> the decision."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Having been expose", "clickable": true, "isError": true, "correctAnswers": ["Having been exposed"] },
+        { "id": "s2", "text": "to the basilisk's", "clickable": false },
+        { "id": "s3", "text": "gaze, the victims", "clickable": false },
+        { "id": "s4", "text": "are believe to", "clickable": true, "isError": true, "correctAnswers": ["are believed to"] },
+        { "id": "s5", "text": "have been cure", "clickable": true, "isError": true, "correctAnswers": ["have been cured"] },
+        { "id": "s6", "text": "by the Mandrake", "clickable": false },
+        { "id": "s7", "text": "restorative draught.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This sentence combines a perfect passive participle clause ('Having been exposed') with an advanced passive reporting structure ('are believed to have been cured').",
+        "topic": "Participle Clauses + Advanced Passive Structures",
+        "concept": "Perfect passive participles and passive reporting verbs",
+        "formula": "Having been + past participle, subject + is/are believed + to have been + past participle",
+        "examples": ["<b>Having been exposed</b> to the curse, the students <b>are believed to have been</b> healed."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "By the end of the term, Hermione will have been studying in the library for hundreds of hours, so she _____ an encyclopedic knowledge of spells."
+      },
+      "options": {
+        "A": { "text": "must have acquired", "correct": true },
+        "B": { "text": "should acquire", "correct": false },
+        "C": { "text": "must acquire", "correct": false },
+        "D": { "text": "can't have acquired", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the future perfect continuous ('will have been studying') with a modal verb of deduction about the past/present ('must have acquired'), indicating a strong logical conclusion based on duration.",
+        "topic": "Future Perfect Continuous + Modal Verbs of Deduction",
+        "concept": "Duration up to a future point leading to past/present deduction",
+        "formula": "Subject + will have been + verb-ing + for + time, so + subject + must have + past participle",
+        "examples": ["She <b>will have been studying</b> for years, so she <b>must have acquired</b> the knowledge."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The students select", "clickable": true, "isError": true, "correctAnswers": ["The students selected"] },
+        { "id": "s2", "text": "to attend the", "clickable": false },
+        { "id": "s3", "text": "advanced potions class", "clickable": false },
+        { "id": "s4", "text": "regret to have", "clickable": true, "isError": true, "correctAnswers": ["regret having"] },
+        { "id": "s5", "text": "miss the introductory", "clickable": true, "isError": true, "correctAnswers": ["missed the introductory"] },
+        { "id": "s6", "text": "lecture on time.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a reduced relative clause (past participle 'selected' for passive meaning) with a gerund pattern after 'regret' ('having missed' for a past action).",
+        "topic": "Reduced Relative Clauses + Gerunds vs. Infinitives",
+        "concept": "Past participle reduction and gerund after regret",
+        "formula": "Noun + past participle + verb + having + past participle",
+        "examples": ["The students <b>selected</b> for the team regret <b>having missed</b> the practice."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct words to complete the elliptical sentence with a discourse marker.",
+        "question": "Although _____ dangerous, the Forbidden Forest was, _____, a necessary path to reach the unicorn."
+      },
+      "options": {
+        "A": { "text": "seemingly / nevertheless", "correct": true },
+        "B": { "text": "it was seemingly / therefore", "correct": false },
+        "C": { "text": "seemingly / because", "correct": false },
+        "D": { "text": "it is seemingly / moreover", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines ellipsis in an adverbial clause of concession ('Although seemingly' omits 'it was') with a formal discourse marker of contrast ('nevertheless').",
+        "topic": "Ellipsis + Discourse Markers",
+        "concept": "Omission in adverbial clauses and contrast markers",
+        "formula": "Although + (subject + be) + adjective, clause, nevertheless, clause",
+        "examples": ["<b>Although (it was)</b> dangerous, the path was, <b>nevertheless,</b> necessary."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "What makes the", "clickable": false },
+        { "id": "s2", "text": "Elder Wand so", "clickable": false },
+        { "id": "s3", "text": "powerful are that", "clickable": true, "isError": true, "correctAnswers": ["powerful is that"] },
+        { "id": "s4", "text": "the more dark", "clickable": false },
+        { "id": "s5", "text": "magic it absorb,", "clickable": true, "isError": true, "correctAnswers": ["magic it absorbs,"] },
+        { "id": "s6", "text": "the more destructive", "clickable": false },
+        { "id": "s7", "text": "it become.", "clickable": true, "isError": true, "correctAnswers": ["it becomes."] }
+      ],
+      "explanation": {
+        "text": "This combines a noun clause acting as the subject ('What makes...') requiring a singular verb ('is'), with a double comparative structure ('the more... the more...'). 'It' takes the singular verbs 'absorbs' and 'becomes'.",
+        "topic": "Advanced Comparatives + Noun Clauses",
+        "concept": "Subject-verb agreement in noun clauses and double comparatives",
+        "formula": "What + singular verb + is + that + the + comparative + subject + singular verb, the + comparative + subject + singular verb",
+        "examples": ["What <b>is</b> important is that <b>the more</b> you practice, <b>the better</b> you <b>become</b>."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Snape is accustomed to _____ down on students, despite his colleagues warning him against _____ on their personal lives."
+      },
+      "options": {
+        "A": { "text": "look / prying", "correct": false },
+        "B": { "text": "looking / prying", "correct": true },
+        "C": { "text": "look / pry", "correct": false },
+        "D": { "text": "looking / pry", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines verb patterns requiring a gerund after a preposition ('accustomed to' + gerund, 'warning against' + gerund) with separable phrasal verbs ('look down on', 'pry on').",
+        "topic": "Verb Patterns + Phrasal Verbs",
+        "concept": "Preposition + gerund and phrasal verb usage",
+        "formula": "Subject + be + accustomed to + gerund + despite + noun + warning against + gerund",
+        "examples": ["He is <b>used to looking</b> down on others, despite them <b>warning</b> him <b>against prying</b>."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Voldemort was oblivious", "clickable": false },
+        { "id": "s2", "text": "for the fact", "clickable": true, "isError": true, "correctAnswers": ["to the fact"] },
+        { "id": "s3", "text": "that it was", "clickable": false },
+        { "id": "s4", "text": "an unique prophecy,", "clickable": true, "isError": true, "correctAnswers": ["a unique prophecy,"] },
+        { "id": "s5", "text": "making him wholly", "clickable": false },
+        { "id": "s6", "text": "susceptible for his", "clickable": true, "isError": true, "correctAnswers": ["susceptible to his"] },
+        { "id": "s7", "text": "own downfall.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines adjective + preposition collocations ('oblivious to', 'susceptible to') with article usage. 'Unique' starts with a consonant sound (/j/), so it takes 'a', not 'an'.",
+        "topic": "Prepositions after Adjectives + Articles",
+        "concept": "Adjective collocations and indefinite articles before consonant sounds",
+        "formula": "Adjective + to + noun phrase + a + word starting with /j/ sound",
+        "examples": ["He was <b>oblivious to</b> the fact that it was <b>a</b> unique chance, leaving him <b>susceptible to</b> failure."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to ensure subject-verb agreement.",
+        "question": "Neither of the Horcruxes _____ truly destroyed, although a number of dark artifacts _____ currently under Auror investigation."
+      },
+      "options": {
+        "A": { "text": "has been / remain", "correct": true },
+        "B": { "text": "have been / remains", "correct": false },
+        "C": { "text": "has been / remains", "correct": false },
+        "D": { "text": "have been / remain", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines quantifiers with subject-verb agreement rules. 'Neither of' takes a singular verb ('has been'), while 'a number of' means 'several' and takes a plural verb ('remain').",
+        "topic": "Quantifiers + Subject-Verb Agreement",
+        "concept": "Singular vs. plural verbs with specific quantifiers",
+        "formula": "Neither of + plural noun + singular verb; A number of + plural noun + plural verb",
+        "examples": ["<b>Neither of</b> the items <b>has been</b> found, but <b>a number of</b> clues <b>remain</b>."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If only Sirius", "clickable": false },
+        { "id": "s2", "text": "has escaped Azkaban", "clickable": true, "isError": true, "correctAnswers": ["had escaped Azkaban"] },
+        { "id": "s3", "text": "sooner; it is", "clickable": false },
+        { "id": "s4", "text": "high time he", "clickable": false },
+        { "id": "s5", "text": "seek justice for", "clickable": true, "isError": true, "correctAnswers": ["sought justice for"] },
+        { "id": "s6", "text": "his wrongful imprisonments.", "clickable": true, "isError": true, "correctAnswers": ["his wrongful imprisonment."] }
+      ],
+      "explanation": {
+        "text": "This combines 'If only' for past regret (requiring past perfect 'had escaped') with 'It's high time' for present urgency (requiring past simple 'sought').",
+        "topic": "Wish / If Only + It's High Time",
+        "concept": "Past regret and present urgency structures",
+        "formula": "If only + subject + past perfect; It is high time + subject + past simple",
+        "examples": ["<b>If only</b> he <b>had escaped</b>; <b>it is high time</b> he <b>sought</b> justice."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Draco behaves as though he _____ the rightful heir to Slytherin, and so arrogant _____ his demeanor that even Crabbe and Goyle hesitate to approach him."
+      },
+      "options": {
+        "A": { "text": "is / is", "correct": false },
+        "B": { "text": "were / is", "correct": true },
+        "C": { "text": "was / has been", "correct": false },
+        "D": { "text": "were / has", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an unreal comparison using 'as though' (requiring past subjunctive 'were') with 'so + adjective' inversion ('so arrogant is his demeanor').",
+        "topic": "As Though / As If + So / Such Inversion",
+        "concept": "Unreal comparisons and emphatic inversion",
+        "formula": "Subject + verb + as though + subject + past subjunctive, and so + adjective + be + subject",
+        "examples": ["He acts <b>as though</b> he <b>were</b> king, and <b>so</b> arrogant <b>is</b> he that no one speaks."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Had the Triwizard", "clickable": false },
+        { "id": "s2", "text": "Cup not been", "clickable": false },
+        { "id": "s3", "text": "a portkey, not", "clickable": false },
+        { "id": "s4", "text": "only Harry would", "clickable": true, "isError": true, "correctAnswers": ["only would Harry"] },
+        { "id": "s5", "text": "have survived unscathed,", "clickable": false },
+        { "id": "s6", "text": "but Cedric also", "clickable": true, "isError": true, "correctAnswers": ["but Cedric would"] },
+        { "id": "s7", "text": "would have lived.", "clickable": true, "isError": true, "correctAnswers": ["also have lived."] }
+      ],
+      "explanation": {
+        "text": "This combines third conditional inversion ('Had the Triwizard Cup not been') with 'not only... but also' inversion ('not only would Harry... but Cedric would also...').",
+        "topic": "Conditional Inversion + Not Only ... But Also",
+        "concept": "Inversion in conditionals and correlative conjunctions",
+        "formula": "Had + subject + past participle, not only + auxiliary + subject + verb, but + subject + would also + verb",
+        "examples": ["<b>Had</b> I <b>known</b>, <b>not only would</b> I <b>have</b> survived, <b>but</b> he <b>would also</b> have lived."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct inverted structures to complete the sentence.",
+        "question": "Little _____ that under no circumstances _____ the Ministry of Magic admit to the return of Voldemort."
+      },
+      "options": {
+        "A": { "text": "did he know / would", "correct": true },
+        "B": { "text": "he knew / would", "correct": false },
+        "C": { "text": "did he know / the Ministry would", "correct": false },
+        "D": { "text": "he knew / the Ministry would", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines two negative adverbial inversions. 'Little' at the beginning of a clause requires 'did he know', and 'under no circumstances' requires the auxiliary 'would' to precede the subject 'the Ministry'.",
+        "topic": "Little Did He Know + Under No Circumstances",
+        "concept": "Double negative adverbial inversion",
+        "formula": "Little + auxiliary + subject + verb + that + under no circumstances + auxiliary + subject + verb",
+        "examples": ["<b>Little did</b> he <b>know</b> that <b>under no circumstances would</b> they <b>admit</b> it."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Should you requiring", "clickable": true, "isError": true, "correctAnswers": ["Should you require"] },
+        { "id": "s2", "text": "any assistance with", "clickable": false },
+        { "id": "s3", "text": "Transfiguration, were I", "clickable": false },
+        { "id": "s4", "text": "to teaching you,", "clickable": true, "isError": true, "correctAnswers": ["to teach you,"] },
+        { "id": "s5", "text": "I will insist", "clickable": true, "isError": true, "correctAnswers": ["I would insist"] },
+        { "id": "s6", "text": "on absolute silence.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines first conditional inversion ('Should you require') with second conditional inversion ('were I to teach'). Both require the base form of the verb, and the main clause requires 'would' for hypothetical results.",
+        "topic": "Should You Need + Were I To",
+        "concept": "Conditional inversion for future possibility and hypothetical situations",
+        "formula": "Should + subject + base verb, were + subject + to + base verb, subject + would + base verb",
+        "examples": ["<b>Should you require</b> help, <b>were I to</b> <b>teach</b> you, I <b>would</b> insist on silence."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the Marauder's Map, revealing every secret passage, that _____ the twins to successfully prank Filch."
+      },
+      "options": {
+        "A": { "text": "It was / enabled", "correct": true },
+        "B": { "text": "It were / enabling", "correct": false },
+        "C": { "text": "There was / enabled", "correct": false },
+        "D": { "text": "It has been / enabling", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an it-cleft sentence ('It was the Marauder's Map... that enabled') with a present participle clause acting as a reduced relative clause ('revealing every secret passage').",
+        "topic": "Cleft Sentences + Participle Clauses",
+        "concept": "Emphasis using it-clefts and present participle reduction",
+        "formula": "It + was + noun + , + present participle + , + that + past tense verb",
+        "examples": ["<b>It was</b> the map, <b>revealing</b> the secrets, <b>that</b> <b>enabled</b> them."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If the Ministry", "clickable": false },
+        { "id": "s2", "text": "had demanded that", "clickable": false },
+        { "id": "s3", "text": "the truth is", "clickable": true, "isError": true, "correctAnswers": ["the truth be"] },
+        { "id": "s4", "text": "told, the wizarding", "clickable": false },
+        { "id": "s5", "text": "community will not", "clickable": true, "isError": true, "correctAnswers": ["community would not"] },
+        { "id": "s6", "text": "be living in", "clickable": false },
+        { "id": "s7", "text": "denial right now.", "clickable": true, "isError": true, "correctAnswers": ["denial today."] }
+      ],
+      "explanation": {
+        "text": "This combines a mixed conditional (past condition, present result) with the mandative subjunctive. After 'demanded that', the verb must be in the base form ('be'), and the main clause uses 'would not be' for a present unreal result.",
+        "topic": "Mixed Conditionals + Subjunctive Mood",
+        "concept": "Past unreal condition with present result and mandative subjunctive",
+        "formula": "If + subject + had + past participle + that + subject + base verb, subject + would + be + verb-ing",
+        "examples": ["If they <b>had</b> demanded that it <b>be</b> told, we <b>would not be</b> living in denial."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the relative clause.",
+        "question": "The prophecy, which _____ to have been recorded by Sybill Trelawney, was ultimately fulfilled by Harry."
+      },
+      "options": {
+        "A": { "text": "is said", "correct": true },
+        "B": { "text": "says", "correct": false },
+        "C": { "text": "is saying", "correct": false },
+        "D": { "text": "said", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a non-defining relative clause ('which is said') with an advanced passive reporting structure ('to have been recorded').",
+        "topic": "Advanced Passive + Relative Clauses",
+        "concept": "Passive reporting verbs in non-defining relative clauses",
+        "formula": "Noun, which + is/are + said/thought/believed + to have been + past participle, + main verb",
+        "examples": ["The artifact, which <b>is said</b> to have been cursed, <b>was</b> found."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Peter must of", "clickable": true, "isError": true, "correctAnswers": ["Peter must have"] },
+        { "id": "s2", "text": "regret to betray", "clickable": true, "isError": true, "correctAnswers": ["regret betraying"] },
+        { "id": "s3", "text": "his friends, as", "clickable": false },
+        { "id": "s4", "text": "he can't has", "clickable": true, "isError": true, "correctAnswers": ["he can't have"] },
+        { "id": "s5", "text": "enjoyed living as", "clickable": false },
+        { "id": "s6", "text": "a rat for", "clickable": false },
+        { "id": "s7", "text": "twelve years.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines modal verbs of deduction about the past ('must have', 'can't have') with gerund patterns. 'Regret' and 'enjoy' are both followed by a gerund ('betraying', 'enjoyed living') when referring to the action itself.",
+        "topic": "Modal Verbs of Deduction + Gerunds vs. Infinitives",
+        "concept": "Past deduction and verb patterns requiring gerunds",
+        "formula": "Subject + must/can't + have + verb + gerund",
+        "examples": ["He <b>must have</b> regretted <b>betraying</b> them, as he can't have <b>enjoyed</b> <b>living</b> as a rat."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structure to complete the comparative sentence.",
+        "question": "The more complex the curse, _____ to reverse it."
+      },
+      "options": {
+        "A": { "text": "the harder it is", "correct": true },
+        "B": { "text": "the harder is it", "correct": false },
+        "C": { "text": "the hardest it is", "correct": false },
+        "D": { "text": "the hardest is it", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the double comparative structure ('the more... the harder...') with standard word order (no inversion in the second clause).",
+        "topic": "Ellipsis + Advanced Comparatives",
+        "concept": "Double comparatives with standard word order",
+        "formula": "The + comparative + subject + verb, the + comparative + subject + verb",
+        "examples": ["<b>The more</b> complex it is, <b>the harder</b> it <b>is</b> to reverse."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Whatever the Sorting", "clickable": false },
+        { "id": "s2", "text": "Hat may decide,", "clickable": false },
+        { "id": "s3", "text": "therefore, it is", "clickable": true, "isError": true, "correctAnswers": ["however, it is"] },
+        { "id": "s4", "text": "evident that what", "clickable": false },
+        { "id": "s5", "text": "makes a true", "clickable": false },
+        { "id": "s6", "text": "Gryffindor are courage", "clickable": true, "isError": true, "correctAnswers": ["Gryffindor is courage"] },
+        { "id": "s7", "text": "and brave.", "clickable": true, "isError": true, "correctAnswers": ["and bravery."] }
+      ],
+      "explanation": {
+        "text": "This combines a discourse marker ('however' for contrast) with noun clauses. The subject clause 'what makes a true Gryffindor' is singular, so it requires the singular verb 'is', not 'are'.",
+        "topic": "Discourse Markers + Noun Clauses",
+        "concept": "Subject-verb agreement in noun clauses with discourse markers",
+        "formula": "Whatever + clause, discourse marker, it is evident that + what + subject + base verb + is + singular noun",
+        "examples": ["Whoever they are, <b>however</b>, it is clear that <b>what</b> matters <b>is</b> the result."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Neville is accustomed to _____ up to his grandmother, despite being prone to _____ his own abilities."
+      },
+      "options": {
+        "A": { "text": "live / doubting", "correct": false },
+        "B": { "text": "living / doubting", "correct": true },
+        "C": { "text": "live / doubt", "correct": false },
+        "D": { "text": "living / doubt", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines verb patterns where 'to' functions as a preposition ('accustomed to' + gerund) with an adjective + preposition collocation ('prone to' + gerund).",
+        "topic": "Verb Patterns + Prepositions after Adjectives",
+        "concept": "Preposition + gerund patterns",
+        "formula": "Subject + be + accustomed to + gerund + who + be + prone to + gerund",
+        "examples": ["He is <b>used to living</b> up to expectations, and is <b>prone to doubting</b> himself."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Few of the", "clickable": false },
+        { "id": "s2", "text": "spells work against", "clickable": true, "isError": true, "correctAnswers": ["spells worked against"] },
+        { "id": "s3", "text": "a Dementor, and", "clickable": false },
+        { "id": "s4", "text": "little of the", "clickable": false },
+        { "id": "s5", "text": "chocolate were sufficient", "clickable": true, "isError": true, "correctAnswers": ["chocolate was sufficient"] },
+        { "id": "s6", "text": "to restore his", "clickable": false },
+        { "id": "s7", "text": "faded souls.", "clickable": true, "isError": true, "correctAnswers": ["faded soul."] }
+      ],
+      "explanation": {
+        "text": "This combines quantifiers ('few of' for countable, 'little of' for uncountable) with a phrasal verb ('worked against'). 'Chocolate' is uncountable, so it requires the singular verb 'was'.",
+        "topic": "Phrasal Verbs + Quantifiers",
+        "concept": "Countable/uncountable quantifiers and phrasal verb usage",
+        "formula": "Few of + plural countable noun + past tense verb, and little of + uncountable noun + singular verb",
+        "examples": ["<b>Little of</b> the potion <b>was</b> useful, and <b>few of</b> the spells <b>worked</b>."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "I wish the entirety of the Hogwarts staff _____ aware of the danger, but the number of oblivious teachers _____ staggering."
+      },
+      "options": {
+        "A": { "text": "were / is", "correct": true },
+        "B": { "text": "was / are", "correct": false },
+        "C": { "text": "are / is", "correct": false },
+        "D": { "text": "were / are", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines 'wish' + past subjunctive for present unreal situations ('were' for the collective plural 'staff') with subject-verb agreement rules ('the number of' takes a singular verb 'is').",
+        "topic": "Subject-Verb Agreement + Wish / If Only",
+        "concept": "Past subjunctive after wish and singular verbs with 'the number of'",
+        "formula": "I wish + plural subject + were, but the number of + plural noun + singular verb",
+        "examples": ["I wish the students <b>were</b> quieter, but the number of disruptions <b>is</b> staggering."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "It is high", "clickable": false },
+        { "id": "s2", "text": "time the wizarding", "clickable": false },
+        { "id": "s3", "text": "world stops acting", "clickable": true, "isError": true, "correctAnswers": ["world stopped acting"] },
+        { "id": "s4", "text": "as though Voldemort", "clickable": false },
+        { "id": "s5", "text": "is merely a", "clickable": true, "isError": true, "correctAnswers": ["were merely a"] },
+        { "id": "s6", "text": "figment of their", "clickable": false },
+        { "id": "s7", "text": "imaginations.", "clickable": true, "isError": true, "correctAnswers": ["imagination."] }
+      ],
+      "explanation": {
+        "text": "This combines 'It's high time' + past simple ('stopped') for present urgency with 'as though' + past subjunctive ('were') for an unreal comparison.",
+        "topic": "It's High Time + As Though / As If",
+        "concept": "Past simple for present urgency and past subjunctive for unreal comparisons",
+        "formula": "It is high time + subject + past simple + as though + subject + past simple/subjunctive",
+        "examples": ["<b>It is high time</b> they <b>stopped</b> behaving <b>as though</b> he <b>were</b> a myth."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct words to complete the inverted sentence.",
+        "question": "_____ devastating was the Battle of Hogwarts that _____ the defenders not held the line, the school would have fallen."
+      },
+      "options": {
+        "A": { "text": "So / had", "correct": true },
+        "B": { "text": "Such / had", "correct": false },
+        "C": { "text": "So / did", "correct": false },
+        "D": { "text": "Such / did", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines 'so + adjective' inversion ('So devastating was') with third conditional inversion ('had the defenders not held'). 'Such' is used with nouns, while 'so' is used with adjectives.",
+        "topic": "So / Such Inversion + Conditional Inversion",
+        "concept": "Emphatic inversion and conditional inversion",
+        "formula": "So + adjective + be + subject + that + had + subject + not + past participle, subject + would have + past participle",
+        "examples": ["<b>So</b> dangerous <b>was</b> the battle that <b>had</b> they <b>not</b> held the line, it would have fallen."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Not only did", "clickable": false },
+        { "id": "s2", "text": "Snape protect Harry,", "clickable": false },
+        { "id": "s3", "text": "but little the", "clickable": true, "isError": true, "correctAnswers": ["but little did"] },
+        { "id": "s4", "text": "boy knew that", "clickable": true, "isError": true, "correctAnswers": ["boy know that"] },
+        { "id": "s5", "text": "the Potions Master", "clickable": false },
+        { "id": "s6", "text": "had love his", "clickable": true, "isError": true, "correctAnswers": ["had loved his"] },
+        { "id": "s7", "text": "mother all along.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines 'not only' inversion ('Not only did Snape protect') with 'little' inversion ('little did the boy know'). Both negative adverbials at the start of a clause require subject-auxiliary inversion.",
+        "topic": "Not Only ... But Also + Little Did He Know",
+        "concept": "Double negative adverbial inversion",
+        "formula": "Not only + auxiliary + subject + verb, but + little + auxiliary + subject + base verb",
+        "examples": ["<b>Not only did</b> he protect him, but <b>little did</b> the boy <b>know</b> the truth."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct inverted structures to complete the sentence.",
+        "question": "Under no circumstances _____ use Unforgivable Curses, _____ you wish to be sent to Azkaban."
+      },
+      "options": {
+        "A": { "text": "you should / should", "correct": false },
+        "B": { "text": "should you / should", "correct": true },
+        "C": { "text": "should you / if you will", "correct": false },
+        "D": { "text": "you should / if you will", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines negative adverbial inversion ('Under no circumstances should you') with first conditional inversion ('should you wish'). Both require the auxiliary verb to precede the subject.",
+        "topic": "Under No Circumstances + Should You Need",
+        "concept": "Negative inversion and conditional inversion",
+        "formula": "Under no circumstances + auxiliary + subject + base verb, should + subject + base verb",
+        "examples": ["<b>Under no circumstances should</b> you do this, <b>should</b> you value your freedom."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Were I to", "clickable": false },
+        { "id": "s2", "text": "choosing my Hogwarts", "clickable": true, "isError": true, "correctAnswers": ["choose my Hogwarts"] },
+        { "id": "s3", "text": "house, it would", "clickable": false },
+        { "id": "s4", "text": "be Ravenclaw which", "clickable": true, "isError": true, "correctAnswers": ["be Ravenclaw that"] },
+        { "id": "s5", "text": "I would selects", "clickable": true, "isError": true, "correctAnswers": ["I would select"] },
+        { "id": "s6", "text": "for its emphasis", "clickable": false },
+        { "id": "s7", "text": "on wisdom.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines second conditional inversion ('Were I to choose') with an it-cleft sentence ('it would be Ravenclaw that I would select'). 'Were I to' must be followed by the base verb.",
+        "topic": "Were I To + Cleft Sentences",
+        "concept": "Conditional inversion and emphasis using it-clefts",
+        "formula": "Were + subject + to + base verb, it would be + noun + that + subject + would + base verb",
+        "examples": ["<b>Were I to</b> <b>choose</b>, <b>it would be</b> this house <b>that</b> I <b>would select</b>."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the mixed conditional passive sentence.",
+        "question": "If the Chamber of Secrets _____ not _____, the students would not be considered safe at Hogwarts today."
+      },
+      "options": {
+        "A": { "text": "had / been opened", "correct": true },
+        "B": { "text": "was / been opened", "correct": false },
+        "C": { "text": "had / being opened", "correct": false },
+        "D": { "text": "were / been opened", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a mixed conditional (third conditional 'if' clause for a past unreal condition + second conditional main clause for a present unreal result) with advanced passive structures ('had not been opened', 'would be considered').",
+        "topic": "Mixed Conditionals + Advanced Passive Structures",
+        "concept": "Past unreal condition with present result in passive voice",
+        "formula": "If + subject + had + not + been + past participle, subject + would + be + past participle",
+        "examples": ["If the chamber <b>had not been</b> opened, they <b>would be</b> <b>considered</b> safe today."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    }
+  ]
+}
