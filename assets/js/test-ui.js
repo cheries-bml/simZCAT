@@ -491,7 +491,7 @@ function startRun(root, ctx, test, pace, settings = {}) {
 
     function toggle(s) {
       if (s.id in a.fixes) delete a.fixes[s.id];
-      else { a.fixes[s.id] = ""; a.noError = false; focusId = s.id; }
+      else { a.fixes[s.id] = s.text; a.noError = false; focusId = s.id; } // the box starts with the original, uncorrected text
       refresh();
     }
 
@@ -519,7 +519,7 @@ function startRun(root, ctx, test, pace, settings = {}) {
         }
       }
       paint();
-      if (s.id === focusId) queueMicrotask(() => input.focus());
+      if (s.id === focusId) queueMicrotask(() => { input.focus(); input.setSelectionRange(input.value.length, input.value.length); });
       return el("label", { className: "fix" }, el("span", { textContent: `Replace “${s.text}” with:` }), wrap, hint);
     }
 

@@ -93,7 +93,10 @@ export function userAnswerText(q, a) {
   if (!isAnswered(q, a)) return "No answer";
   if (q.type === "correction") {
     if (a.noError) return "No error";
-    return Object.entries(a.fixes).map(([id, t]) => `${segText(q, id)} → ${t.trim() || "(blank)"}`).join("; ");
+    return Object.entries(a.fixes).map(([id, t]) => {
+      const original = segText(q, id), typed = t.trim();
+      return `${original} → ${!typed ? "(blank)" : typed === original.trim() ? "(unchanged)" : typed}`;
+    }).join("; ");
   }
   return optionList(q).filter((o) => a.selected.includes(o.key)).map((o) => `${o.key}. ${o.text}`).join("; ");
 }
