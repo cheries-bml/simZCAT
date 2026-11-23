@@ -105,13 +105,17 @@ The sun / moon button switches light and dark mode; the palette button opens a w
 
 ## Question file format
 
-- `meta`: `title`, `description`, `info`, `author`, `created` (optional date such as `2026-11-19`, used to rank "newest"), `config` (`active`, `no_timer`, `show_answer`, `show_explanation`).
+- `meta`: `title`, `description`, `info`, `author`, `created` (optional date such as `2026-11-19`, the manifest builder lists newer files first), `config` (`active`, `no_timer`, `show_answer`, `show_explanation`).
 - `questions[]`: `id`, `type`, `data`, `explanation`, `config` (`level`, `show_answer`, `show_explanation`, `time_in_seconds`).
 - **`multiple_choice`**: `options` keyed by letter; options with `"correct": true` are the answers. Two or more correct options turn the question into select-all (checkboxes). Scoring is all-or-nothing.
 - **`correction`**: `multiErrorSegments`. The user clicks the clickable segments they think are wrong and types a fix; "No error" is also available. A question is correct when the marked segments are exactly those with `isError: true` and every typed fix matches one of `correctAnswers` (case, spacing and edge punctuation ignored). With no `isError` segments, "No error" is the right answer.
 - **Timer:** every test is timed (`meta.config.no_timer` is ignored). Clicking a test opens a dialog where the user picks a pace (`fast`, `normal`, `easy`); the total time is the sum of each question's `config.time_in_seconds[pace]`. A question without that value uses `defaultTimeInSeconds[pace]` from `data/config.json`. When time runs out the test is submitted automatically.
 - **Feedback:** correct answers and explanations appear in the results review. Question-level `show_answer` / `show_explanation` override the test-level values.
 - Light HTML (`<b>`, `<br>`, `<i>`, lists) is allowed in text fields; everything else is stripped.
+
+## Saving the login (less secure)
+
+The sign-in page has a **Save username and password** checkbox. When it is ticked and you sign in, the username and password are stored in this browser's `localStorage`, **unencrypted**, and the next time the sign-in page opens (for example in a new tab) the fields are already filled in. Unticking the box removes the saved login at once. Anyone who can use that device can read it, so use it only on a device you trust. The sign-in itself still uses the normal rules (the session ends when the tab closes; failed attempts still lock the form).
 
 ## Users and roles
 
@@ -147,8 +151,8 @@ Demo accounts:
 ## Branding, home page and icons
 
 - The logo is the cat icon plus `appName` and `designer` from `data/config.json` ("ZCat by Cheries"). It replaces the Overview menu item and links to the home page.
-- The home page shows a welcome message, a **START TEST** button (opens the Test page), the 3 newest tests, the user's 3 latest attempts, and 3 motivational cards chosen from `motivation` in `config.json` (the selection rotates daily). Edit that list to change the sentences.
-- "Newest" means the latest `meta.created` date in a question file. Files without it rank by their position in `manifests/questions-manifest.json` (later = newer).
+- The home page shows a welcome message, a **START TEST** button (opens the Test page), the 4 newest tests, the user's 3 latest attempts, and 3 motivational cards chosen from `motivation` in `config.json` (the selection rotates daily). Edit that list to change the sentences.
+- "Newest questions" shows the first four tests listed in `manifests/questions-manifest.json`: the top of that list is the newest. `scripts/build_manifest.py` writes the list newest first (by `meta.created`, undated files last); if you edit the manifest by hand, put new tests at the top.
 - Icons are [Material Design Icons](https://pictogrammers.com/library/mdi/) (Apache License 2.0), copied inline into `assets/js/icons.js`, so the app makes no extra network requests for them. The favicon is `assets/img/favicon.svg`.
 
 ## Permissions and special features

@@ -33,7 +33,7 @@
   --accent-text: color-mix(in srgb, var(--accent) 62%, var(--ink));
   --hero-from: color-mix(in srgb, var(--accent) 22%, #0c1424);
   --hero-to: color-mix(in srgb, var(--accent) 62%, #0c1424);
-  --hero-btn: color-mix(in srgb, var(--accent) 55%, #ffffff);
+  --hero-btn: color-mix(in srgb, var(--accent) 70%, #ffffff);
   --brand-bg: color-mix(in srgb, var(--accent) 14%, #0b1220);
   --radius: 6px;
   --font: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -583,3 +583,9 @@ pre code { padding: 0; background: none; border-radius: 0; }
 .contact-list small { display: block; color: var(--muted); }
 .contact-list a { color: var(--accent-text); font-weight: 600; word-break: break-word; }
 .about-foot { margin: 1.25rem 0 0; text-align: center; color: var(--muted); font-size: .85rem; }
+
+/* ---------- Login: save username and password ---------- */
+.login-form label.remember { display: flex; align-items: center; gap: .55rem; margin-top: .9rem; font-weight: 600; cursor: pointer; }
+.login-form input[type="checkbox"] { width: auto; padding: 0; border: 0; background: none; accent-color: var(--accent); }
+.remember-warn { display: flex; align-items: flex-start; gap: .5rem; margin: .5rem 0 0; padding: .55rem .7rem; font-size: .8rem; line-height: 1.45; color: var(--warn-ink); background: var(--warn-soft); border-left: 3px solid var(--warn-line); border-radius: var(--radius); }
+.remember-warn [data-icon] { flex: none; margin-top: .05rem; }

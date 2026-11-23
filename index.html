@@ -28,6 +28,12 @@
       <label for="password">Password</label>
       <div class="input-wrap"><span class="input-icon" data-icon="lock"></span><input id="password" name="password" type="password" autocomplete="current-password" required></div>
 
+      <label class="remember" for="remember"><input id="remember" name="remember" type="checkbox"> Save username and password</label>
+      <p class="remember-warn" id="remember-warn">
+        <span data-icon="warn" data-size="18"></span>
+        <span>Less secure: your username and password are saved unencrypted in this browser (localStorage), so anyone who can use this device can read them. Use this only on a device you trust, never on a shared or public computer.</span>
+      </p>
+
       <button id="login-btn" type="submit" class="btn">Sign in</button>
     </form>
   </main>

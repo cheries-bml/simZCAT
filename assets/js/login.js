@@ -1,4 +1,4 @@
-import { loadData, login, getSession } from "./auth.js";
+import { loadData, login, getSession, getSavedLogin, saveLogin, forgetLogin } from "./auth.js";
 import { alertModal } from "./modal.js";
 import { mount } from "./util.js";
 import { brandNodes } from "./brand.js";
@@ -29,6 +29,15 @@ async function init() {
     return;
   }
 
+  // Fill in a login saved earlier on this device.
+  const saved = getSavedLogin();
+  if (saved) {
+    form.username.value = saved.username;
+    form.password.value = saved.password;
+    form.remember.checked = true;
+  }
+  form.remember.addEventListener("change", () => { if (!form.remember.checked) forgetLogin(); }); // unticking forgets it right away
+
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const username = form.username.value;
@@ -42,6 +51,7 @@ async function init() {
     const result = await login(username, password, data);
     button.disabled = false;
     if (result.ok) {
+      if (form.remember.checked) saveLogin(username.trim(), password); else forgetLogin();
       location.replace(data.config.defaultPage);
     } else {
       form.password.value = "";

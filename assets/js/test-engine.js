@@ -116,10 +116,9 @@ export const sameQuestions = (test, a) =>
   Array.isArray(a.qids) && a.qids.length === test.questions.length && a.qids.every((id, i) => id === test.questions[i].id);
 
 // ----- home page -----
-/** Newest first: by meta.created when present, otherwise later entries in the manifest rank higher. */
-export function newestTests(tests, n = 3) {
-  const stamp = (t) => Date.parse(t.meta?.created) || 0;
-  return [...tests].sort((a, b) => stamp(b) - stamp(a) || (b.order ?? 0) - (a.order ?? 0)).slice(0, n);
+/** The newest tests are the first entries of questions-manifest.json (top of the list = newest). */
+export function newestTests(tests, n = 4) {
+  return [...tests].sort((a, b) => (a.order ?? 0) - (b.order ?? 0)).slice(0, n);
 }
 
 /** n quotes from the list; the selection rotates once a day. */

@@ -117,3 +117,21 @@ export async function login(username, password, { config, users }) {
   }));
   return { ok: true };
 }
+
+// ----- "Save username and password" (less secure: stored unencrypted in localStorage) -----
+const SAVED_KEY = "app.savedLogin";
+
+export function getSavedLogin() {
+  try {
+    const v = JSON.parse(localStorage.getItem(SAVED_KEY));
+    return v && typeof v.username === "string" && typeof v.password === "string" ? v : null;
+  } catch { return null; }
+}
+
+export function saveLogin(username, password) {
+  try { localStorage.setItem(SAVED_KEY, JSON.stringify({ username, password })); } catch { /* storage unavailable */ }
+}
+
+export function forgetLogin() {
+  try { localStorage.removeItem(SAVED_KEY); } catch { /* ignore */ }
+}

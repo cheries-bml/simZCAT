@@ -23,7 +23,7 @@ export function renderHome({ config, session, roles, go }) {
   if (canTest) {
     loadCatalog(config)
       .then((tests) => {
-        const top = newestTests(tests, 3);
+        const top = newestTests(tests, 4);
         mount(newestList, top.length
           ? top.map((t) => el("li", {},
               el("button", { className: "mini-item", type: "button", onclick: () => go("test", { path: t.path }) },
