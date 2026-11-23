@@ -843,7 +843,7 @@
         { "id": "s4", "text": "it would", "clickable": false },
         { "id": "s5", "text": "be the", "clickable": false },
         { "id": "s6", "text": "Mirror Dimension", "clickable": false },
-        { "id": "s7", "text": "which I", "clickable": true, "isError": true, "correctAnswers": ["that I"] },
+        { "id": "s7", "text": "will I", "clickable": true, "isError": true, "correctAnswers": ["that I","which I"] },
         { "id": "s8", "text": "would chooses", "clickable": true, "isError": true, "correctAnswers": ["would choose"] },
         { "id": "s9", "text": "for our", "clickable": false },
         { "id": "s10", "text": "training.", "clickable": false }
