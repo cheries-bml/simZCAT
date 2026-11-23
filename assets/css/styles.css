@@ -249,7 +249,7 @@ pre { margin: 0; overflow-x: auto; font-size: .85rem; background: var(--bg); pad
 .chip-correct { border-color: var(--accent); background: var(--accent-soft); }
 .fixes { display: grid; gap: .45rem; margin: 0 0 1rem; }
 .fix { display: grid; gap: .15rem; font-size: .9rem; }
-.fix input { font: inherit; padding: .3rem .55rem; border: 1px solid var(--line); border-radius: var(--radius); }
+.fix input { font: inherit; padding: .3rem .55rem; border: 1px solid var(--line); border-radius: var(--radius); font-size: 2rem; }
 .q-nav { display: flex; justify-content: space-between; gap: .5rem; margin-top: 1.5rem; }
 .q-nav .btn:disabled { cursor: not-allowed; }
 
