@@ -1,0 +1,1006 @@
+{
+  "meta": {
+    "title": "Int. English Tenses (B1-B2) - Indonesian Culture",
+    "description": "A comprehensive test covering English tenses themed around Indonesian culture, combining at least two or more tenses per question.",
+    "info": "This test includes 30 questions focusing on combined B1-B2 level grammar structures involving multiple English tenses, featuring cultural elements like Batik, Wayang, Borobudur, Rendang, and more.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Batik _____ by UNESCO since 2009, but it _____ in Indonesia for centuries before that."
+      },
+      "options": {
+        "A": { "text": "has been recognized / existed", "correct": true },
+        "B": { "text": "was recognized / has existed", "correct": false },
+        "C": { "text": "is recognized / existed", "correct": false },
+        "D": { "text": "has been recognized / has existed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect tense ('has been recognized') for an action starting in the past and continuing to the present, with the Past Simple tense ('existed') for a completed state in the past.",
+        "topic": "Present Perfect + Past Simple",
+        "concept": "Combining ongoing relevance with completed past states",
+        "formula": "Subject + has/have + past participle + since + time, but + subject + past simple verb",
+        "examples": [
+          "The temple <b>has been protected</b> since 1990, but it <b>stood</b> alone for centuries."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "While the dalang _____ the wayang kulit last night, a sudden power outage _____ the show."
+      },
+      "options": {
+        "A": { "text": "performed / interrupted", "correct": false },
+        "B": { "text": "was performing / interrupted", "correct": true },
+        "C": { "text": "had performed / was interrupting", "correct": false },
+        "D": { "text": "performs / interrupts", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Continuous tense ('was performing') for an ongoing action in the past, interrupted by a Past Simple action ('interrupted').",
+        "topic": "Past Continuous + Past Simple",
+        "concept": "Interrupted actions in the past",
+        "formula": "While + subject + was/were + verb-ing, subject + past simple verb",
+        "examples": [
+          "While I <b>was reading</b>, the phone <b>rang</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Rendang _____ the title of the world's most delicious food multiple times, and it _____ a staple at Indonesian weddings."
+      },
+      "options": {
+        "A": { "text": "won / remains", "correct": false },
+        "B": { "text": "has won / remains", "correct": true },
+        "C": { "text": "has won / remained", "correct": false },
+        "D": { "text": "wins / is remaining", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect tense ('has won') for repeated past actions with present relevance, and the Present Simple tense ('remains') for a general truth or habitual state.",
+        "topic": "Present Perfect + Present Simple",
+        "concept": "Combining past experiences with current facts",
+        "formula": "Subject + has/have + past participle + multiple times, and + subject + present simple verb",
+        "examples": [
+          "She <b>has visited</b> Bali three times, and she <b>loves</b> it every time."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "By the time archaeologists _____ the full extent of Borobudur in the 19th century, it _____ hidden under volcanic ash for centuries."
+      },
+      "options": {
+        "A": { "text": "discovered / had lain", "correct": true },
+        "B": { "text": "had discovered / lay", "correct": false },
+        "C": { "text": "discovered / lay", "correct": false },
+        "D": { "text": "had discovered / had lain", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Simple tense ('discovered') for a specific past event, and the Past Perfect tense ('had lain') for an action completed before that past event.",
+        "topic": "Past Simple + Past Perfect",
+        "concept": "Sequencing past events",
+        "formula": "By the time + subject + past simple verb, subject + had + past participle",
+        "examples": [
+          "By the time we <b>arrived</b>, the movie <b>had already started</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "By next year, the angklung orchestra _____ in over 50 countries, proving that this traditional instrument _____ global appeal."
+      },
+      "options": {
+        "A": { "text": "will perform / has", "correct": false },
+        "B": { "text": "will have performed / has", "correct": true },
+        "C": { "text": "performs / will have", "correct": false },
+        "D": { "text": "will be performing / had", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense ('will have performed') for an action completed before a future time, and the Present Simple tense ('has') for a general fact.",
+        "topic": "Future Perfect + Present Simple",
+        "concept": "Future completion and general truths",
+        "formula": "By + future time, subject + will have + past participle, proving that + subject + present simple verb",
+        "examples": [
+          "By tomorrow, I <b>will have finished</b> the report, which <b>shows</b> my dedication."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 6,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The musicians _____ the gamelan piece for three hours before the guest _____ at the palace."
+      },
+      "options": {
+        "A": { "text": "practiced / arrived", "correct": false },
+        "B": { "text": "had been practicing / arrived", "correct": true },
+        "C": { "text": "were practicing / had arrived", "correct": false },
+        "D": { "text": "had practiced / was arriving", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense ('had been practicing') to emphasize the duration of an action before another past action, which is in the Past Simple ('arrived').",
+        "topic": "Past Perfect Continuous + Past Simple",
+        "concept": "Duration before a past event",
+        "formula": "Subject + had been + verb-ing + for + time + before + subject + past simple verb",
+        "examples": [
+          "They <b>had been waiting</b> for an hour before the bus <b>came</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Scientists _____ the Komodo dragon for decades, yet it _____ one of nature's most mysterious predators."
+      },
+      "options": {
+        "A": { "text": "studied / remains", "correct": false },
+        "B": { "text": "have been studying / remains", "correct": true },
+        "C": { "text": "are studying / remained", "correct": false },
+        "D": { "text": "have studied / is remaining", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense ('have been studying') for an action starting in the past and continuing to the present, with the Present Simple tense ('remains') for a current state.",
+        "topic": "Present Perfect Continuous + Present Simple",
+        "concept": "Ongoing action and current state",
+        "formula": "Subject + has/have been + verb-ing + for + time, yet + subject + present simple verb",
+        "examples": [
+          "We <b>have been trying</b> to fix this for days, yet it <b>fails</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "This time tomorrow, the dancers _____ the Tari Kecak at Uluwatu, and the sun _____ behind them."
+      },
+      "options": {
+        "A": { "text": "will perform / sets", "correct": false },
+        "B": { "text": "will be performing / will set", "correct": true },
+        "C": { "text": "will have performed / will set", "correct": false },
+        "D": { "text": "are performing / will set", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense ('will be performing') for an action in progress at a specific future time, and the Future Simple tense ('will set') for a subsequent future event.",
+        "topic": "Future Continuous + Future Simple",
+        "concept": "Future actions in progress and future events",
+        "formula": "This time tomorrow, subject + will be + verb-ing, and + subject + will + base verb",
+        "examples": [
+          "At 8 PM, I <b>will be eating</b> dinner, and my brother <b>will arrive</b> soon after."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The artisan _____ that she _____ the wrong wax temperature, so she _____ the process again."
+      },
+      "options": {
+        "A": { "text": "has just realized / had been using / is starting", "correct": true },
+        "B": { "text": "just realized / was using / starts", "correct": false },
+        "C": { "text": "has realized / used / has started", "correct": false },
+        "D": { "text": "had realized / had used / is starting", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines three tenses: Present Perfect ('has just realized') for a recent discovery, Past Perfect Continuous ('had been using') for an ongoing action before that discovery, and Present Continuous ('is starting') for the current resulting action.",
+        "topic": "Present Perfect + Past Perfect Continuous + Present Continuous",
+        "concept": "Recent discovery of a past ongoing action leading to a present action",
+        "formula": "Subject + has/have + just + past participle + that + subject + had been + verb-ing, so + subject + is/are + verb-ing",
+        "examples": [
+          "He <b>has just noticed</b> that he <b>had been driving</b> the wrong way, so he <b>is turning</b> around."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Indonesia _____ its independence day every year since it _____ freedom in 1945, a milestone that _____ for by many heroes."
+      },
+      "options": {
+        "A": { "text": "has celebrated / gained / had been fought", "correct": true },
+        "B": { "text": "celebrated / has gained / was fought", "correct": false },
+        "C": { "text": "has celebrated / had gained / fought", "correct": false },
+        "D": { "text": "celebrates / gained / had fought", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines three tenses: Present Perfect ('has celebrated') for an action continuing from the past, Past Simple ('gained') for a specific past event, and Past Perfect Passive ('had been fought') for an action completed before that past event.",
+        "topic": "Present Perfect + Past Simple + Past Perfect Passive",
+        "concept": "Sequencing multiple past and present-related events",
+        "formula": "Subject + has/have + past participle + since + subject + past simple verb, which + had been + past participle",
+        "examples": [
+          "We <b>have honored</b> him since he <b>retired</b>, a position he <b>had earned</b> through hard work."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Usually, the traditional market _____ at dawn, but today it _____ closed due to the heavy rain."
+      },
+      "options": {
+        "A": { "text": "opens / is staying", "correct": true },
+        "B": { "text": "is opening / stays", "correct": false },
+        "C": { "text": "opens / stays", "correct": false },
+        "D": { "text": "opened / is staying", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Simple tense ('opens') for a habitual action, and the Present Continuous tense ('is staying') for a temporary situation happening today.",
+        "topic": "Present Simple + Present Continuous",
+        "concept": "Habitual actions vs. temporary situations",
+        "formula": "Usually, subject + present simple verb, but today + subject + is/are + verb-ing",
+        "examples": [
+          "He usually <b>drives</b> to work, but today he <b>is walking</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 12,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "While he _____ in Pencak Silat yesterday, he _____ his ankle."
+      },
+      "options": {
+        "A": { "text": "trained / twisted", "correct": false },
+        "B": { "text": "was training / twisted", "correct": true },
+        "C": { "text": "had trained / was twisting", "correct": false },
+        "D": { "text": "trains / twists", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Continuous tense ('was training') for an ongoing past action, interrupted by a Past Simple action ('twisted').",
+        "topic": "Past Continuous + Past Simple",
+        "concept": "Interrupted actions in the past",
+        "formula": "While + subject + was/were + verb-ing, subject + past simple verb",
+        "examples": [
+          "While I <b>was cooking</b>, I <b>cut</b> my finger."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The cultural group _____ funds for months, and they finally _____ new ondel-ondel costumes for the parade."
+      },
+      "options": {
+        "A": { "text": "has been raising / has purchased", "correct": true },
+        "B": { "text": "raised / had purchased", "correct": false },
+        "C": { "text": "has raised / is purchasing", "correct": false },
+        "D": { "text": "had been raising / purchased", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense ('has been raising') to emphasize the duration of an ongoing action, and the Present Perfect tense ('has purchased') for a recently completed action with present relevance.",
+        "topic": "Present Perfect Continuous + Present Perfect",
+        "concept": "Ongoing duration leading to a recent completion",
+        "formula": "Subject + has/have been + verb-ing + for + time, and + subject + has/have + past participle",
+        "examples": [
+          "I <b>have been saving</b> money for months, and I <b>have finally bought</b> a car."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 14,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "By the time the Ramayana Ballet _____ tonight, the performers _____ for over two hours."
+      },
+      "options": {
+        "A": { "text": "finishes / will have danced", "correct": true },
+        "B": { "text": "will finish / will dance", "correct": false },
+        "C": { "text": "finished / will have danced", "correct": false },
+        "D": { "text": "finishes / will be dancing", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Simple tense ('finishes') in a future time clause, and the Future Perfect tense ('will have danced') for an action that will be completed before that future time.",
+        "topic": "Present Simple (in time clause) + Future Perfect",
+        "concept": "Future completion relative to a future time marker",
+        "formula": "By the time + subject + present simple verb, subject + will have + past participle",
+        "examples": [
+          "By the time you <b>arrive</b>, we <b>will have eaten</b> dinner."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The family, which _____ its ancestors for generations, _____ money for years before they _____ the elaborate Rambu Solo ceremony last month."
+      },
+      "options": {
+        "A": { "text": "has honored / had saved / held", "correct": true },
+        "B": { "text": "honored / saved / had held", "correct": false },
+        "C": { "text": "has honored / saved / held", "correct": false },
+        "D": { "text": "had honored / has saved / held", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines three tenses: Present Perfect ('has honored') for a tradition continuing to the present, Past Perfect ('had saved') for an action completed before another past action, and Past Simple ('held') for that specific past event.",
+        "topic": "Present Perfect + Past Perfect + Past Simple",
+        "concept": "Sequencing ongoing traditions with specific past sequences",
+        "formula": "Subject + has/have + past participle + for + time, + had + past participle + before + subject + past simple verb",
+        "examples": [
+          "The company, which <b>has existed</b> for decades, <b>had prepared</b> for years before it <b>launched</b> the product."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 16,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Currently, the city _____ out traditional becaks, but they _____ a nostalgic symbol of old Jakarta for years to come."
+      },
+      "options": {
+        "A": { "text": "phases / will remain", "correct": false },
+        "B": { "text": "is phasing / will remain", "correct": true },
+        "C": { "text": "has phased / remain", "correct": false },
+        "D": { "text": "is phasing / are remaining", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense ('is phasing') for an action happening around now, and the Future Simple tense ('will remain') for a future state.",
+        "topic": "Present Continuous + Future Simple",
+        "concept": "Current trends and future predictions",
+        "formula": "Currently, subject + is/are + verb-ing, but + subject + will + base verb",
+        "examples": [
+          "We <b>are moving</b> houses now, but we <b>will miss</b> this neighborhood."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Before the modern guitar _____ popular in the 1900s, the sasando _____ the primary string instrument in East Nusa Tenggara."
+      },
+      "options": {
+        "A": { "text": "became / had been", "correct": true },
+        "B": { "text": "had become / was", "correct": false },
+        "C": { "text": "becomes / has been", "correct": false },
+        "D": { "text": "became / was", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Simple tense ('became') for a specific past event, and the Past Perfect tense ('had been') for a state that existed before that event.",
+        "topic": "Past Simple + Past Perfect",
+        "concept": "State before a past event",
+        "formula": "Before + subject + past simple verb, subject + had been + noun/adjective",
+        "examples": [
+          "Before cars <b>became</b> common, horses <b>had been</b> the main transport."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 18,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Each batik motif _____ a specific philosophical meaning, a tradition that artisans _____ for generations."
+      },
+      "options": {
+        "A": { "text": "carries / have preserved", "correct": true },
+        "B": { "text": "is carrying / preserved", "correct": false },
+        "C": { "text": "carried / have been preserving", "correct": false },
+        "D": { "text": "carries / preserve", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Simple tense ('carries') for a general truth, and the Present Perfect tense ('have preserved') for an action continuing from the past to the present.",
+        "topic": "Present Simple + Present Perfect",
+        "concept": "General truths and ongoing traditions",
+        "formula": "Subject + present simple verb + , a tradition that + subject + has/have + past participle",
+        "examples": [
+          "This recipe <b>contains</b> secret spices, a method chefs <b>have guarded</b> for years."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "By midnight tomorrow, the Balinese people _____ Nyepi, the Day of Silence, for 24 hours, and the entire island _____ completely silent."
+      },
+      "options": {
+        "A": { "text": "will have been observing / will be", "correct": true },
+        "B": { "text": "will observe / is", "correct": false },
+        "C": { "text": "will be observing / will be", "correct": false },
+        "D": { "text": "will have observed / is", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense ('will have been observing') to emphasize the duration of an action up to a future point, and the Future Simple tense ('will be') for the resulting future state.",
+        "topic": "Future Perfect Continuous + Future Simple",
+        "concept": "Future duration and future state",
+        "formula": "By + future time, subject + will have been + verb-ing + for + time, and + subject + will be + adjective",
+        "examples": [
+          "By 5 PM, I <b>will have been working</b> for 8 hours, and I <b>will be</b> exhausted."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 20,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The vendor _____ gudeg at that same street corner for ten years before the city _____ the market last year."
+      },
+      "options": {
+        "A": { "text": "sold / relocated", "correct": false },
+        "B": { "text": "had been selling / relocated", "correct": true },
+        "C": { "text": "was selling / had relocated", "correct": false },
+        "D": { "text": "had sold / was relocating", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense ('had been selling') to show duration before a past event, and the Past Simple tense ('relocated') for that specific past event.",
+        "topic": "Past Perfect Continuous + Past Simple",
+        "concept": "Duration before a specific past event",
+        "formula": "Subject + had been + verb-ing + for + time + before + subject + past simple verb",
+        "examples": [
+          "She <b>had been living</b> there for a decade before she <b>moved</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Wayang Orang _____ to modern themes recently, but it still _____ on classical Javanese storytelling techniques."
+      },
+      "options": {
+        "A": { "text": "adapted / relies", "correct": false },
+        "B": { "text": "has adapted / relies", "correct": true },
+        "C": { "text": "has been adapting / relied", "correct": false },
+        "D": { "text": "adapts / is relying", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect tense ('has adapted') for a recent change with present relevance, and the Present Simple tense ('relies') for a continuing general truth.",
+        "topic": "Present Perfect + Present Simple",
+        "concept": "Recent changes and enduring facts",
+        "formula": "Subject + has/have + past participle + recently, but + subject + still + present simple verb",
+        "examples": [
+          "The software <b>has updated</b> recently, but it still <b>requires</b> a password."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 22,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "While the tourists _____ the Rumah Gadang, they _____ that it _____ there since the 19th century."
+      },
+      "options": {
+        "A": { "text": "photographed / learned / had stood", "correct": false },
+        "B": { "text": "were photographing / learned / had stood", "correct": true },
+        "C": { "text": "were photographing / had learned / stood", "correct": false },
+        "D": { "text": "photographed / were learning / had been standing", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines three tenses: Past Continuous ('were photographing') for an ongoing past action, Past Simple ('learned') for an interrupting or simultaneous past event, and Past Perfect ('had stood') for a state existing before that past event.",
+        "topic": "Past Continuous + Past Simple + Past Perfect",
+        "concept": "Complex sequencing of past events",
+        "formula": "While + subject + was/were + verb-ing, subject + past simple verb + that + subject + had + past participle",
+        "examples": [
+          "While we <b>were walking</b>, we <b>found</b> out that the road <b>had closed</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The museum _____ a rare 15th-century keris, which experts believe _____ to a royal family centuries ago."
+      },
+      "options": {
+        "A": { "text": "has just acquired / belonged", "correct": true },
+        "B": { "text": "just acquired / has belonged", "correct": false },
+        "C": { "text": "has just acquired / has belonged", "correct": false },
+        "D": { "text": "had just acquired / belonged", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect tense ('has just acquired') for a very recent action with present relevance, and the Past Simple tense ('belonged') for a completed state in the distant past.",
+        "topic": "Present Perfect + Past Simple",
+        "concept": "Recent acquisition and historical fact",
+        "formula": "Subject + has/have + just + past participle + , which + subject + past simple verb + centuries ago",
+        "examples": [
+          "I <b>have just found</b> a coin that <b>dated</b> back to 1800."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 24,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Next semester, the school _____ angklung classes, and currently, the music department _____ the instruments."
+      },
+      "options": {
+        "A": { "text": "will introduce / is preparing", "correct": true },
+        "B": { "text": "introduces / prepares", "correct": false },
+        "C": { "text": "will introduce / prepares", "correct": false },
+        "D": { "text": "is introducing / will prepare", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Simple tense ('will introduce') for a future plan, and the Present Continuous tense ('is preparing') for an action happening around now in preparation for that future event.",
+        "topic": "Future Simple + Present Continuous",
+        "concept": "Future plans and current preparations",
+        "formula": "Next + time, subject + will + base verb, and currently, + subject + is/are + verb-ing",
+        "examples": [
+          "Tomorrow, we <b>will launch</b> the website, and currently, the team <b>is testing</b> it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "By the time the restoration team _____ at Candi Prambanan in the 1990s, the temple _____ from decades of neglect."
+      },
+      "options": {
+        "A": { "text": "arrived / had suffered", "correct": true },
+        "B": { "text": "had arrived / suffered", "correct": false },
+        "C": { "text": "arrived / suffered", "correct": false },
+        "D": { "text": "had arrived / had been suffering", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Simple tense ('arrived') for a specific past event, and the Past Perfect tense ('had suffered') for a state or action that occurred before that past event.",
+        "topic": "Past Simple + Past Perfect",
+        "concept": "Condition before a past event",
+        "formula": "By the time + subject + past simple verb, subject + had + past participle",
+        "examples": [
+          "By the time the doctor <b>arrived</b>, the patient <b>had recovered</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 26,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The weavers _____ this tenun cloth for three months, and now it _____ ready for the cultural exhibition."
+      },
+      "options": {
+        "A": { "text": "created / is", "correct": false },
+        "B": { "text": "have been creating / is", "correct": true },
+        "C": { "text": "are creating / has been", "correct": false },
+        "D": { "text": "have created / was", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense ('have been creating') to emphasize the duration of an action leading up to the present, and the Present Simple tense ('is') for the current state.",
+        "topic": "Present Perfect Continuous + Present Simple",
+        "concept": "Duration leading to a present state",
+        "formula": "Subject + has/have been + verb-ing + for + time, and now + subject + is/are + adjective",
+        "examples": [
+          "I <b>have been studying</b> for hours, and now I <b>am</b> tired."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Before the Suro rituals _____ last night, the community _____ the sacred wells."
+      },
+      "options": {
+        "A": { "text": "began / had cleaned", "correct": true },
+        "B": { "text": "had begun / cleaned", "correct": false },
+        "C": { "text": "began / cleaned", "correct": false },
+        "D": { "text": "had begun / had cleaned", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Simple tense ('began') for a specific past event, and the Past Perfect tense ('had cleaned') for an action completed before that past event.",
+        "topic": "Past Simple + Past Perfect",
+        "concept": "Preparation before a past event",
+        "formula": "Before + subject + past simple verb, subject + had + past participle",
+        "examples": [
+          "Before the meeting <b>started</b>, she <b>had prepared</b> the documents."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 28,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "By the end of this culinary tour, you _____ rendang, sate, and gado-gado, and you _____ why Indonesian food is so diverse."
+      },
+      "options": {
+        "A": { "text": "will taste / will understand", "correct": false },
+        "B": { "text": "will have tasted / will understand", "correct": true },
+        "C": { "text": "will be tasting / understand", "correct": false },
+        "D": { "text": "taste / will have understood", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense ('will have tasted') for an action completed before a future time, and the Future Simple tense ('will understand') for a subsequent future realization.",
+        "topic": "Future Perfect + Future Simple",
+        "concept": "Future completion leading to a future realization",
+        "formula": "By + future time, subject + will have + past participle, and + subject + will + base verb",
+        "examples": [
+          "By tomorrow, you <b>will have seen</b> the evidence, and you <b>will agree</b> with me."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The athletes _____ rigorously for six months before they _____ in the SEA Games."
+      },
+      "options": {
+        "A": { "text": "trained / competed", "correct": false },
+        "B": { "text": "had been training / competed", "correct": true },
+        "C": { "text": "were training / had competed", "correct": false },
+        "D": { "text": "had trained / were competing", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense ('had been training') to emphasize the duration of preparation, and the Past Simple tense ('competed') for the specific past event.",
+        "topic": "Past Perfect Continuous + Past Simple",
+        "concept": "Duration of preparation before a past event",
+        "formula": "Subject + had been + verb-ing + for + time + before + subject + past simple verb",
+        "examples": [
+          "She <b>had been practicing</b> for weeks before she <b>performed</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 30,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Every year, Indonesia _____ National Batik Day on October 2nd, a tradition that _____ significantly in popularity since its inception."
+      },
+      "options": {
+        "A": { "text": "celebrates / has grown", "correct": true },
+        "B": { "text": "is celebrating / grew", "correct": false },
+        "C": { "text": "celebrated / has been growing", "correct": false },
+        "D": { "text": "celebrates / grows", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Simple tense ('celebrates') for a recurring annual event, and the Present Perfect tense ('has grown') for a change that started in the past and continues to the present.",
+        "topic": "Present Simple + Present Perfect",
+        "concept": "Recurring events and ongoing trends",
+        "formula": "Every year, subject + present simple verb, a tradition that + has/have + past participle + since + time",
+        "examples": [
+          "Every year, the city <b>hosts</b> a festival, an event that <b>has attracted</b> more visitors since 2010."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    }
+  ]
+}
