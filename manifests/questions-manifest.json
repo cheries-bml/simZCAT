@@ -16,6 +16,7 @@
     "questions/intermediate/english/grammar/subject-verb-agreement.json",
     "questions/intermediate/english/tenses/past-and-perfect.json",
     "questions/intermediate/math/algebra/linear-equations.json",
-    "questions/intermediate/math/geometry/area-perimeter.json"
+    "questions/intermediate/math/geometry/area-perimeter.json",
+    "questions/trivial/sample_question.json"
   ]
 }
