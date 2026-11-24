@@ -1,0 +1,886 @@
+{
+  "meta": {
+    "title": "Tenses Test B1 & B2 (Correction) - Indonesian Culture",
+    "description": "A comprehensive test covering English tenses themed around Indonesian culture, combining at least two or more tenses per question.",
+    "info": "This test includes 30 correction-type questions focusing on combined B1-B2 level grammar structures involving multiple English tenses, featuring cultural elements like Batik, Wayang, Borobudur, Rendang, and more.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "While the artisan ", "clickable": false },
+        { "id": "s2", "text": "was apply", "clickable": true, "isError": true, "correctAnswers": ["was applying"] },
+        { "id": "s3", "text": " the wax, she realized she ", "clickable": false },
+        { "id": "s4", "text": "has used", "clickable": true, "isError": true, "correctAnswers": ["had used"] },
+        { "id": "s5", "text": " the wrong temperature, so she ", "clickable": false },
+        { "id": "s6", "text": "start", "clickable": true, "isError": true, "correctAnswers": ["started"] },
+        { "id": "s7", "text": " over immediately.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous ('was applying') for an ongoing past action, the Past Perfect ('had used') for an action completed before that past realization, and the Past Simple ('started') for the subsequent past action.",
+        "topic": "Past Continuous + Past Perfect + Past Simple",
+        "concept": "Sequencing ongoing and completed actions in the past",
+        "formula": "While + subject + was/were + verb-ing, subject + past simple + that + subject + had + past participle, so + subject + past simple",
+        "examples": ["While she <b>was drawing</b>, she realized she <b>had used</b> the wrong color, so she <b>started</b> again."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By the time archaeologists ", "clickable": false },
+        { "id": "s2", "text": "discover", "clickable": true, "isError": true, "correctAnswers": ["discovered"] },
+        { "id": "s3", "text": " the temple, it ", "clickable": false },
+        { "id": "s4", "text": "has been hide", "clickable": true, "isError": true, "correctAnswers": ["had been hidden"] },
+        { "id": "s5", "text": " for centuries, and now it ", "clickable": false },
+        { "id": "s6", "text": "became", "clickable": true, "isError": true, "correctAnswers": ["has become"] },
+        { "id": "s7", "text": " a global icon.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Simple ('discovered') for a specific past event, the Past Perfect Passive ('had been hidden') for a state existing before that event, and the Present Perfect ('has become') for a present result.",
+        "topic": "Past Simple + Past Perfect + Present Perfect",
+        "concept": "Sequencing past events with present relevance",
+        "formula": "By the time + subject + past simple, subject + had been + past participle, and now + subject + has/have + past participle",
+        "examples": ["By the time they <b>found</b> it, it <b>had been lost</b> for years, and now it <b>has become</b> famous."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By the time the sun ", "clickable": false },
+        { "id": "s2", "text": "set", "clickable": true, "isError": true, "correctAnswers": ["sets"] },
+        { "id": "s3", "text": " tomorrow, the island ", "clickable": false },
+        { "id": "s4", "text": "will been", "clickable": true, "isError": true, "correctAnswers": ["will have been"] },
+        { "id": "s5", "text": " silent for 24 hours, and tourists ", "clickable": false },
+        { "id": "s6", "text": "are remain", "clickable": true, "isError": true, "correctAnswers": ["are remaining"] },
+        { "id": "s7", "text": " indoors.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Simple ('sets') in a future time clause, the Future Perfect ('will have been') for an action completed before that future time, and the Present Continuous ('are remaining') for a current/ongoing temporary state.",
+        "topic": "Present Simple + Future Perfect + Present Continuous",
+        "concept": "Future completion relative to a time marker and ongoing states",
+        "formula": "By the time + subject + present simple, subject + will have + past participle, and + subject + is/are + verb-ing",
+        "examples": ["By the time he <b>arrives</b>, we <b>will have finished</b>, and they <b>are waiting</b> outside."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The musicians ", "clickable": false },
+        { "id": "s2", "text": "had practiced", "clickable": true, "isError": true, "correctAnswers": ["had been practicing"] },
+        { "id": "s3", "text": " for hours when the power ", "clickable": false },
+        { "id": "s4", "text": "was going", "clickable": true, "isError": true, "correctAnswers": ["went"] },
+        { "id": "s5", "text": " out, so they ", "clickable": false },
+        { "id": "s6", "text": "stop", "clickable": true, "isError": true, "correctAnswers": ["stopped"] },
+        { "id": "s7", "text": " playing immediately.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous ('had been practicing') to emphasize duration before a past event, the Past Simple ('went') for the interrupting event, and the Past Simple ('stopped') for the result.",
+        "topic": "Past Perfect Continuous + Past Simple",
+        "concept": "Duration before an interrupting past action",
+        "formula": "Subject + had been + verb-ing + when + subject + past simple, so + subject + past simple",
+        "examples": ["They <b>had been rehearsing</b> when the rain <b>started</b>, so they <b>ran</b> inside."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The chef ", "clickable": false },
+        { "id": "s2", "text": "is cooking", "clickable": true, "isError": true, "correctAnswers": ["has been cooking"] },
+        { "id": "s3", "text": " the rendang since morning, so it ", "clickable": false },
+        { "id": "s4", "text": "will tasting", "clickable": true, "isError": true, "correctAnswers": ["will taste"] },
+        { "id": "s5", "text": " delicious when we ", "clickable": false },
+        { "id": "s6", "text": "ate", "clickable": true, "isError": true, "correctAnswers": ["eat"] },
+        { "id": "s7", "text": " it tonight.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous ('has been cooking') for an action starting in the past and continuing to now, the Future Simple ('will taste') for a future prediction, and the Present Simple ('eat') in a future time clause.",
+        "topic": "Present Perfect Continuous + Future Simple + Present Simple",
+        "concept": "Ongoing action leading to a future result in a time clause",
+        "formula": "Subject + has/have been + verb-ing + since + time, so + subject + will + base verb + when + subject + present simple",
+        "examples": ["She <b>has been baking</b> all day, so it <b>will taste</b> great when we <b>eat</b> it."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The museum ", "clickable": false },
+        { "id": "s2", "text": "has acquired", "clickable": true, "isError": true, "correctAnswers": ["acquired"] },
+        { "id": "s3", "text": " a rare keris that ", "clickable": false },
+        { "id": "s4", "text": "belonged", "clickable": true, "isError": true, "correctAnswers": ["had belonged"] },
+        { "id": "s5", "text": " to a king, and it ", "clickable": false },
+        { "id": "s6", "text": "attracted", "clickable": true, "isError": true, "correctAnswers": ["has attracted"] },
+        { "id": "s7", "text": " many visitors since then.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Simple ('acquired') for a specific past event, the Past Perfect ('had belonged') for a state before that event, and the Present Perfect ('has attracted') for an action continuing from that past event to the present.",
+        "topic": "Past Simple + Past Perfect + Present Perfect",
+        "concept": "Sequencing historical facts with ongoing present results",
+        "formula": "Subject + past simple + noun + that + had + past participle, and + subject + has/have + past participle + since + time",
+        "examples": ["He <b>bought</b> a car that <b>had belonged</b> to a celebrity, and it <b>has attracted</b> attention since then."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "This time tomorrow, the dancers ", "clickable": false },
+        { "id": "s2", "text": "will perform", "clickable": true, "isError": true, "correctAnswers": ["will be performing"] },
+        { "id": "s3", "text": " the Kecak, and by the time the sun ", "clickable": false },
+        { "id": "s4", "text": "set", "clickable": true, "isError": true, "correctAnswers": ["sets"] },
+        { "id": "s5", "text": ", they ", "clickable": false },
+        { "id": "s6", "text": "will finished", "clickable": true, "isError": true, "correctAnswers": ["will have finished"] },
+        { "id": "s7", "text": " the show.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous ('will be performing') for an action in progress at a specific future time, the Present Simple ('sets') in a future time clause, and the Future Perfect ('will have finished') for an action completed before that future time.",
+        "topic": "Future Continuous + Present Simple + Future Perfect",
+        "concept": "Future actions in progress and completed before a time marker",
+        "formula": "This time + future, subject + will be + verb-ing, and by the time + subject + present simple, subject + will have + past participle",
+        "examples": ["This time tomorrow, I <b>will be flying</b>, and by the time the plane <b>lands</b>, I <b>will have slept</b>."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The government ", "clickable": false },
+        { "id": "s2", "text": "bans", "clickable": true, "isError": true, "correctAnswers": ["is banning"] },
+        { "id": "s3", "text": " becaks, although they ", "clickable": false },
+        { "id": "s4", "text": "have served", "clickable": true, "isError": true, "correctAnswers": ["served"] },
+        { "id": "s5", "text": " as the main transport for years, before the policy ", "clickable": false },
+        { "id": "s6", "text": "changes", "clickable": true, "isError": true, "correctAnswers": ["changed"] },
+        { "id": "s7", "text": ".", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous ('is banning') for a current ongoing trend, the Past Simple ('served') for a completed past state, and the Past Simple ('changed') for a specific past event.",
+        "topic": "Present Continuous + Past Simple",
+        "concept": "Current trends contrasting with completed past states",
+        "formula": "Subject + is/are + verb-ing + , although + subject + past simple + before + subject + past simple",
+        "examples": ["The city <b>is building</b> a bridge, although they <b>used</b> ferries before the plan <b>changed</b>."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The orchestra ", "clickable": false },
+        { "id": "s2", "text": "has toured", "clickable": true, "isError": true, "correctAnswers": ["had been touring"] },
+        { "id": "s3", "text": " Europe before they ", "clickable": false },
+        { "id": "s4", "text": "return", "clickable": true, "isError": true, "correctAnswers": ["returned"] },
+        { "id": "s5", "text": " home, and since then they ", "clickable": false },
+        { "id": "s6", "text": "gained", "clickable": true, "isError": true, "correctAnswers": ["have gained"] },
+        { "id": "s7", "text": " international fame.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous ('had been touring') for an ongoing action before a past event, the Past Simple ('returned') for that event, and the Present Perfect ('have gained') for a result continuing to the present.",
+        "topic": "Past Perfect Continuous + Past Simple + Present Perfect",
+        "concept": "Duration before a past event leading to a present result",
+        "formula": "Subject + had been + verb-ing + before + subject + past simple, and since then + subject + has/have + past participle",
+        "examples": ["She <b>had been studying</b> before she <b>graduated</b>, and since then she <b>has gained</b> experience."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I ", "clickable": false },
+        { "id": "s2", "text": "watched", "clickable": true, "isError": true, "correctAnswers": ["have watched"] },
+        { "id": "s3", "text": " wayang kulit many times, but I ", "clickable": false },
+        { "id": "s4", "text": "slept", "clickable": true, "isError": true, "correctAnswers": ["was sleeping"] },
+        { "id": "s5", "text": " when the dalang ", "clickable": false },
+        { "id": "s6", "text": "starts", "clickable": true, "isError": true, "correctAnswers": ["started"] },
+        { "id": "s7", "text": " the final scene.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect ('have watched') for life experience, the Past Continuous ('was sleeping') for an ongoing past action, and the Past Simple ('started') for an interrupting past action.",
+        "topic": "Present Perfect + Past Continuous + Past Simple",
+        "concept": "Life experience contrasting with a specific interrupted past event",
+        "formula": "Subject + has/have + past participle + , but + subject + was/were + verb-ing + when + subject + past simple",
+        "examples": ["I <b>have visited</b> Paris, but I <b>was sleeping</b> when the train <b>arrived</b>."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By next month, she ", "clickable": false },
+        { "id": "s2", "text": "will weave", "clickable": true, "isError": true, "correctAnswers": ["will have been weaving"] },
+        { "id": "s3", "text": " this tenun for a year, and it ", "clickable": false },
+        { "id": "s4", "text": "is", "clickable": true, "isError": true, "correctAnswers": ["will be"] },
+        { "id": "s5", "text": " her masterpiece when she ", "clickable": false },
+        { "id": "s6", "text": "finish", "clickable": true, "isError": true, "correctAnswers": ["finishes"] },
+        { "id": "s7", "text": ".", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous ('will have been weaving') for duration up to a future point, the Future Simple ('will be') for a future state, and the Present Simple ('finishes') in a future time clause.",
+        "topic": "Future Perfect Continuous + Future Simple + Present Simple",
+        "concept": "Future duration leading to a future state in a time clause",
+        "formula": "By + future time, subject + will have been + verb-ing, and + subject + will be + noun + when + subject + present simple",
+        "examples": ["By June, he <b>will have been working</b> here for a year, and it <b>will be</b> a milestone when he <b>gets</b> promoted."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The family ", "clickable": false },
+        { "id": "s2", "text": "has held", "clickable": true, "isError": true, "correctAnswers": ["held"] },
+        { "id": "s3", "text": " the ceremony after they ", "clickable": false },
+        { "id": "s4", "text": "saved", "clickable": true, "isError": true, "correctAnswers": ["had saved"] },
+        { "id": "s5", "text": " money for years, while the villagers ", "clickable": false },
+        { "id": "s6", "text": "prepared", "clickable": true, "isError": true, "correctAnswers": ["were preparing"] },
+        { "id": "s7", "text": " the feast.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Simple ('held') for a specific past event, the Past Perfect ('had saved') for an action completed before that event, and the Past Continuous ('were preparing') for an ongoing simultaneous past action.",
+        "topic": "Past Simple + Past Perfect + Past Continuous",
+        "concept": "Sequencing and simultaneous actions in the past",
+        "formula": "Subject + past simple + after + subject + had + past participle, while + subject + was/were + verb-ing",
+        "examples": ["They <b>ate</b> dinner after they <b>had cooked</b> for hours, while the guests <b>were arriving</b>."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "He ", "clickable": false },
+        { "id": "s2", "text": "is training", "clickable": true, "isError": true, "correctAnswers": ["trains"] },
+        { "id": "s3", "text": " in Pencak Silat every day, and he ", "clickable": false },
+        { "id": "s4", "text": "practiced", "clickable": true, "isError": true, "correctAnswers": ["has been practicing"] },
+        { "id": "s5", "text": " for years, so he ", "clickable": false },
+        { "id": "s6", "text": "wins", "clickable": true, "isError": true, "correctAnswers": ["will win"] },
+        { "id": "s7", "text": " the tournament.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Simple ('trains') for a habit, the Present Perfect Continuous ('has been practicing') for duration up to the present, and the Future Simple ('will win') for a future prediction.",
+        "topic": "Present Simple + Present Perfect Continuous + Future Simple",
+        "concept": "Habits and duration leading to a future prediction",
+        "formula": "Subject + present simple + every day, and + subject + has/have been + verb-ing + for + time, so + subject + will + base verb",
+        "examples": ["She <b>studies</b> daily, and she <b>has been preparing</b> for months, so she <b>will pass</b>."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Before the earthquake ", "clickable": false },
+        { "id": "s2", "text": "hits", "clickable": true, "isError": true, "correctAnswers": ["hit"] },
+        { "id": "s3", "text": ", the traditional house ", "clickable": false },
+        { "id": "s4", "text": "has stood", "clickable": true, "isError": true, "correctAnswers": ["had stood"] },
+        { "id": "s5", "text": " for a century, and now architects ", "clickable": false },
+        { "id": "s6", "text": "study", "clickable": true, "isError": true, "correctAnswers": ["are studying"] },
+        { "id": "s7", "text": " its resilience.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Simple ('hit') for a specific past event, the Past Perfect ('had stood') for a state before that event, and the Present Continuous ('are studying') for a current ongoing action.",
+        "topic": "Past Simple + Past Perfect + Present Continuous",
+        "concept": "Past states before an event and current ongoing actions",
+        "formula": "Before + subject + past simple, subject + had + past participle, and now + subject + is/are + verb-ing",
+        "examples": ["Before the storm <b>hit</b>, the tree <b>had stood</b> there for years, and now workers <b>are clearing</b> it."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Next week, the musician ", "clickable": false },
+        { "id": "s2", "text": "plays", "clickable": true, "isError": true, "correctAnswers": ["will play"] },
+        { "id": "s3", "text": " the sasando, while he ", "clickable": false },
+        { "id": "s4", "text": "records", "clickable": true, "isError": true, "correctAnswers": ["is recording"] },
+        { "id": "s5", "text": " an album that ", "clickable": false },
+        { "id": "s6", "text": "broke", "clickable": true, "isError": true, "correctAnswers": ["has broken"] },
+        { "id": "s7", "text": " streaming records.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Simple ('will play') for a future plan, the Present Continuous ('is recording') for a current ongoing action, and the Present Perfect ('has broken') for a recent past action with present relevance.",
+        "topic": "Future Simple + Present Continuous + Present Perfect",
+        "concept": "Future plans, current actions, and recent achievements",
+        "formula": "Next + time, subject + will + base verb, while + subject + is/are + verb-ing + noun + that + has/have + past participle",
+        "examples": ["Tomorrow, she <b>will sing</b>, while she <b>is currently rehearsing</b> a song that <b>has won</b> awards."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "While the vendor ", "clickable": false },
+        { "id": "s2", "text": "cooked", "clickable": true, "isError": true, "correctAnswers": ["was cooking"] },
+        { "id": "s3", "text": " gudeg, she realized she ", "clickable": false },
+        { "id": "s4", "text": "forgot", "clickable": true, "isError": true, "correctAnswers": ["had forgotten"] },
+        { "id": "s5", "text": " the teak leaves, so she ", "clickable": false },
+        { "id": "s6", "text": "stops", "clickable": true, "isError": true, "correctAnswers": ["stopped"] },
+        { "id": "s7", "text": " the process.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous ('was cooking') for an ongoing past action, the Past Perfect ('had forgotten') for an action completed before that past realization, and the Past Simple ('stopped') for the subsequent action.",
+        "topic": "Past Continuous + Past Perfect + Past Simple",
+        "concept": "Ongoing past action interrupted by a realization of a prior omission",
+        "formula": "While + subject + was/were + verb-ing, subject + past simple + that + subject + had + past participle, so + subject + past simple",
+        "examples": ["While he <b>was driving</b>, he realized he <b>had left</b> his wallet, so he <b>turned</b> back."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The theater group ", "clickable": false },
+        { "id": "s2", "text": "adapted", "clickable": true, "isError": true, "correctAnswers": ["has adapted"] },
+        { "id": "s3", "text": " to modern themes recently, after they ", "clickable": false },
+        { "id": "s4", "text": "struggle", "clickable": true, "isError": true, "correctAnswers": ["struggled"] },
+        { "id": "s5", "text": " for years, and tomorrow they ", "clickable": false },
+        { "id": "s6", "text": "will perform", "clickable": true, "isError": true, "correctAnswers": ["will be performing"] },
+        { "id": "s7", "text": " a new play.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect ('has adapted') for a recent change, the Past Simple ('struggled') for a completed past state, and the Future Continuous ('will be performing') for an action in progress at a specific future time.",
+        "topic": "Present Perfect + Past Simple + Future Continuous",
+        "concept": "Recent changes following past struggles and future scheduled actions",
+        "formula": "Subject + has/have + past participle + recently, after + subject + past simple, and tomorrow + subject + will be + verb-ing",
+        "examples": ["The company <b>has upgraded</b> recently, after it <b>failed</b> audits, and tomorrow we <b>will be launching</b> it."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The artisans ", "clickable": false },
+        { "id": "s2", "text": "preserved", "clickable": true, "isError": true, "correctAnswers": ["had been preserving"] },
+        { "id": "s3", "text": " the motif for generations before the government ", "clickable": false },
+        { "id": "s4", "text": "recognizes", "clickable": true, "isError": true, "correctAnswers": ["recognized"] },
+        { "id": "s5", "text": " it, and now it ", "clickable": false },
+        { "id": "s6", "text": "became", "clickable": true, "isError": true, "correctAnswers": ["has become"] },
+        { "id": "s7", "text": " a national treasure.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous ('had been preserving') for duration before a past event, the Past Simple ('recognized') for that event, and the Present Perfect ('has become') for the present result.",
+        "topic": "Past Perfect Continuous + Past Simple + Present Perfect",
+        "concept": "Long-term past actions leading to a past event and present result",
+        "formula": "Subject + had been + verb-ing + before + subject + past simple, and now + subject + has/have + past participle",
+        "examples": ["They <b>had been saving</b> before they <b>bought</b> the house, and now it <b>has become</b> their home."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By the end of the year, scientists ", "clickable": false },
+        { "id": "s2", "text": "studied", "clickable": true, "isError": true, "correctAnswers": ["will have studied"] },
+        { "id": "s3", "text": " the Komodo dragon for decades, although it ", "clickable": false },
+        { "id": "s4", "text": "remains", "clickable": true, "isError": true, "correctAnswers": ["remained"] },
+        { "id": "s5", "text": " a mystery when they first ", "clickable": false },
+        { "id": "s6", "text": "discover", "clickable": true, "isError": true, "correctAnswers": ["discovered"] },
+        { "id": "s7", "text": " it.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect ('will have studied') for an action completed before a future time, the Past Simple ('remained') for a past state, and the Past Simple ('discovered') for a specific past event.",
+        "topic": "Future Perfect + Past Simple",
+        "concept": "Future completion contrasting with historical past states",
+        "formula": "By + future time, subject + will have + past participle, although + subject + past simple + when + subject + past simple",
+        "examples": ["By 2030, we <b>will have explored</b> Mars, although it <b>seemed</b> impossible when we first <b>tried</b>."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The cultural group ", "clickable": false },
+        { "id": "s2", "text": "makes", "clickable": true, "isError": true, "correctAnswers": ["is making"] },
+        { "id": "s3", "text": " new ondel-ondel costumes because the old ones ", "clickable": false },
+        { "id": "s4", "text": "destroyed", "clickable": true, "isError": true, "correctAnswers": ["were destroyed"] },
+        { "id": "s5", "text": " after they ", "clickable": false },
+        { "id": "s6", "text": "used", "clickable": true, "isError": true, "correctAnswers": ["had been used"] },
+        { "id": "s7", "text": " for years.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous ('is making') for a current action, the Past Simple Passive ('were destroyed') for a past event, and the Past Perfect Passive ('had been used') for a state before that past event.",
+        "topic": "Present Continuous + Past Simple Passive + Past Perfect Passive",
+        "concept": "Current actions resulting from past passive events",
+        "formula": "Subject + is/are + verb-ing + because + subject + was/were + past participle + after + subject + had been + past participle",
+        "examples": ["He <b>is buying</b> a car because the old one <b>was stolen</b> after it <b>had been parked</b> outside."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The community ", "clickable": false },
+        { "id": "s2", "text": "has cleaned", "clickable": true, "isError": true, "correctAnswers": ["cleaned"] },
+        { "id": "s3", "text": " the sacred wells last night, and since then the water ", "clickable": false },
+        { "id": "s4", "text": "remained", "clickable": true, "isError": true, "correctAnswers": ["has remained"] },
+        { "id": "s5", "text": " pure, which ", "clickable": false },
+        { "id": "s6", "text": "blesses", "clickable": true, "isError": true, "correctAnswers": ["will bless"] },
+        { "id": "s7", "text": " the village tomorrow.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Simple ('cleaned') for a specific past event with a time marker, the Present Perfect ('has remained') for a state continuing from that past event, and the Future Simple ('will bless') for a future result.",
+        "topic": "Past Simple + Present Perfect + Future Simple",
+        "concept": "Past events leading to ongoing states and future results",
+        "formula": "Subject + past simple + last + time, and since then + subject + has/have + past participle, which + will + base verb",
+        "examples": ["They <b>planted</b> trees last year, and since then the air <b>has improved</b>, which <b>will help</b> the environment."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The athletes ", "clickable": false },
+        { "id": "s2", "text": "trained", "clickable": true, "isError": true, "correctAnswers": ["were training"] },
+        { "id": "s3", "text": " rigorously when the coach ", "clickable": false },
+        { "id": "s4", "text": "announces", "clickable": true, "isError": true, "correctAnswers": ["announced"] },
+        { "id": "s5", "text": " the roster, and by the opening ceremony, they ", "clickable": false },
+        { "id": "s6", "text": "will prepare", "clickable": true, "isError": true, "correctAnswers": ["will have prepared"] },
+        { "id": "s7", "text": " fully.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous ('were training') for an ongoing past action, the Past Simple ('announced') for an interrupting past action, and the Future Perfect ('will have prepared') for an action completed before a future time.",
+        "topic": "Past Continuous + Past Simple + Future Perfect",
+        "concept": "Interrupted past actions and future completion",
+        "formula": "Subject + was/were + verb-ing + when + subject + past simple, and by + future time, subject + will have + past participle",
+        "examples": ["I <b>was studying</b> when he <b>called</b>, and by tomorrow, I <b>will have finished</b> the book."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Indonesia ", "clickable": false },
+        { "id": "s2", "text": "celebrates", "clickable": true, "isError": true, "correctAnswers": ["has been celebrating"] },
+        { "id": "s3", "text": " National Batik Day every year since it ", "clickable": false },
+        { "id": "s4", "text": "starts", "clickable": true, "isError": true, "correctAnswers": ["started"] },
+        { "id": "s5", "text": ", and the tradition ", "clickable": false },
+        { "id": "s6", "text": "grew", "clickable": true, "isError": true, "correctAnswers": ["grows"] },
+        { "id": "s7", "text": " significantly.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous ('has been celebrating') for a recurring action starting in the past, the Past Simple ('started') for the specific past inception, and the Present Simple ('grows') for a general current truth.",
+        "topic": "Present Perfect Continuous + Past Simple + Present Simple",
+        "concept": "Recurring traditions from a past inception and current general truths",
+        "formula": "Subject + has/have been + verb-ing + every year since + subject + past simple, and + subject + present simple",
+        "examples": ["She <b>has been volunteering</b> every year since it <b>began</b>, and the charity <b>thrives</b> today."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The temple ", "clickable": false },
+        { "id": "s2", "text": "suffered", "clickable": true, "isError": true, "correctAnswers": ["had suffered"] },
+        { "id": "s3", "text": " from neglect before the restoration team ", "clickable": false },
+        { "id": "s4", "text": "arrives", "clickable": true, "isError": true, "correctAnswers": ["arrived"] },
+        { "id": "s5", "text": ", while locals ", "clickable": false },
+        { "id": "s6", "text": "tried", "clickable": true, "isError": true, "correctAnswers": ["were trying"] },
+        { "id": "s7", "text": " to protect it.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect ('had suffered') for a state before a past event, the Past Simple ('arrived') for that event, and the Past Continuous ('were trying') for an ongoing simultaneous past action.",
+        "topic": "Past Perfect + Past Simple + Past Continuous",
+        "concept": "States before an event and simultaneous ongoing past actions",
+        "formula": "Subject + had + past participle + before + subject + past simple, while + subject + was/were + verb-ing",
+        "examples": ["The car <b>had broken</b> down before the mechanic <b>arrived</b>, while we <b>were waiting</b> in the rain."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "This time next week, the dancers ", "clickable": false },
+        { "id": "s2", "text": "performs", "clickable": true, "isError": true, "correctAnswers": ["will be performing"] },
+        { "id": "s3", "text": " at Prambanan, a show that ", "clickable": false },
+        { "id": "s4", "text": "won", "clickable": true, "isError": true, "correctAnswers": ["has won"] },
+        { "id": "s5", "text": " awards and ", "clickable": false },
+        { "id": "s6", "text": "attracted", "clickable": true, "isError": true, "correctAnswers": ["attracts"] },
+        { "id": "s7", "text": " thousands.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous ('will be performing') for an action in progress at a future time, the Present Perfect ('has won') for past achievements with present relevance, and the Present Simple ('attracts') for a general current fact.",
+        "topic": "Future Continuous + Present Perfect + Present Simple",
+        "concept": "Future scheduled actions and general facts about an entity",
+        "formula": "This time + future, subject + will be + verb-ing, a noun + that + has/have + past participle + and + present simple",
+        "examples": ["Tomorrow, he <b>will be playing</b> a game that <b>has won</b> awards and <b>attracts</b> millions."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The market ", "clickable": false },
+        { "id": "s2", "text": "opens", "clickable": true, "isError": true, "correctAnswers": ["opened"] },
+        { "id": "s3", "text": " at dawn after the vendors ", "clickable": false },
+        { "id": "s4", "text": "set", "clickable": true, "isError": true, "correctAnswers": ["had been setting"] },
+        { "id": "s5", "text": " up their stalls for hours, and it ", "clickable": false },
+        { "id": "s6", "text": "was", "clickable": true, "isError": true, "correctAnswers": ["has been"] },
+        { "id": "s7", "text": " busy since then.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Simple ('opened') for a specific past event, the Past Perfect Continuous ('had been setting') for duration before that event, and the Present Perfect ('has been') for a state continuing from that past event to the present.",
+        "topic": "Past Simple + Past Perfect Continuous + Present Perfect",
+        "concept": "Past events following duration and continuing to the present",
+        "formula": "Subject + past simple + after + subject + had been + verb-ing, and + subject + has/have been + adjective + since then",
+        "examples": ["The store <b>opened</b> after they <b>had been preparing</b> for weeks, and it <b>has been</b> crowded since then."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Indonesia ", "clickable": false },
+        { "id": "s2", "text": "celebrated", "clickable": true, "isError": true, "correctAnswers": ["celebrates"] },
+        { "id": "s3", "text": " its independence every year, and by the centennial in 2045, the nation ", "clickable": false },
+        { "id": "s4", "text": "develops", "clickable": true, "isError": true, "correctAnswers": ["will have developed"] },
+        { "id": "s5", "text": " significantly since it ", "clickable": false },
+        { "id": "s6", "text": "gains", "clickable": true, "isError": true, "correctAnswers": ["gained"] },
+        { "id": "s7", "text": " freedom.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Simple ('celebrates') for a recurring annual event, the Future Perfect ('will have developed') for an action completed before a future time, and the Past Simple ('gained') for a specific past event.",
+        "topic": "Present Simple + Future Perfect + Past Simple",
+        "concept": "Recurring events, future completion, and historical past events",
+        "formula": "Subject + present simple + every year, and by + future time, subject + will have + past participle + since + subject + past simple",
+        "examples": ["He <b>runs</b> every year, and by 2030, he <b>will have completed</b> 50 marathons since he <b>started</b>."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "While the orchestra ", "clickable": false },
+        { "id": "s2", "text": "toured", "clickable": true, "isError": true, "correctAnswers": ["was touring"] },
+        { "id": "s3", "text": " Europe, they realized they ", "clickable": false },
+        { "id": "s4", "text": "gained", "clickable": true, "isError": true, "correctAnswers": ["have gained"] },
+        { "id": "s5", "text": " global appeal, so they ", "clickable": false },
+        { "id": "s6", "text": "returned", "clickable": true, "isError": true, "correctAnswers": ["will return"] },
+        { "id": "s7", "text": " next year.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous ('was touring') for an ongoing past action, the Present Perfect ('have gained') for a realization about a state continuing to the present, and the Future Simple ('will return') for a future plan.",
+        "topic": "Past Continuous + Present Perfect + Future Simple",
+        "concept": "Past ongoing actions leading to present realizations and future plans",
+        "formula": "While + subject + was/were + verb-ing, subject + past simple + that + subject + has/have + past participle, so + subject + will + base verb",
+        "examples": ["While I <b>was living</b> abroad, I realized I <b>have learned</b> a lot, so I <b>will travel</b> more."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The museum ", "clickable": false },
+        { "id": "s2", "text": "has acquired", "clickable": true, "isError": true, "correctAnswers": ["had acquired"] },
+        { "id": "s3", "text": " the keris before the exhibit ", "clickable": false },
+        { "id": "s4", "text": "opens", "clickable": true, "isError": true, "correctAnswers": ["opened"] },
+        { "id": "s5", "text": ", and now curators ", "clickable": false },
+        { "id": "s6", "text": "study", "clickable": true, "isError": true, "correctAnswers": ["are studying"] },
+        { "id": "s7", "text": " its royal origins.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect ('had acquired') for an action completed before a past event, the Past Simple ('opened') for that event, and the Present Continuous ('are studying') for a current ongoing action.",
+        "topic": "Past Perfect + Past Simple + Present Continuous",
+        "concept": "Actions completed before a past event and current ongoing actions",
+        "formula": "Subject + had + past participle + before + subject + past simple, and now + subject + is/are + verb-ing",
+        "examples": ["She <b>had finished</b> the report before the meeting <b>started</b>, and now she <b>is presenting</b> it."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The weavers ", "clickable": false },
+        { "id": "s2", "text": "created", "clickable": true, "isError": true, "correctAnswers": ["have been creating"] },
+        { "id": "s3", "text": " this cloth for months before the exhibition ", "clickable": false },
+        { "id": "s4", "text": "starts", "clickable": true, "isError": true, "correctAnswers": ["started"] },
+        { "id": "s5", "text": ", and tomorrow they ", "clickable": false },
+        { "id": "s6", "text": "demonstrate", "clickable": true, "isError": true, "correctAnswers": ["will be demonstrating"] },
+        { "id": "s7", "text": " the technique.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous ('have been creating') for duration up to the present/past, the Past Simple ('started') for a specific past event, and the Future Continuous ('will be demonstrating') for an action in progress at a specific future time.",
+        "topic": "Present Perfect Continuous + Past Simple + Future Continuous",
+        "concept": "Duration leading to a past event and future scheduled actions",
+        "formula": "Subject + has/have been + verb-ing + before + subject + past simple, and tomorrow + subject + will be + verb-ing",
+        "examples": ["I <b>have been writing</b> this book before it <b>published</b>, and tomorrow I <b>will be signing</b> copies."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    }
+  ]
+}
