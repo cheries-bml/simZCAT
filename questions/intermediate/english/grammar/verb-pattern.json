@@ -40,16 +40,16 @@
         },
         {
           "id": "s4",
-          "text": "avoids to",
+          "text": "avoids to use",
           "clickable": true,
           "isError": true,
           "correctAnswers": [
-            "avoids"
+            "avoids using"
           ]
         },
         {
           "id": "s5",
-          "text": "use artificial colors.",
+          "text": "artificial colors.",
           "clickable": false
         }
       ],
