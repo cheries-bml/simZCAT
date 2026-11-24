@@ -172,21 +172,16 @@
         },
         {
           "id": "s5",
-          "text": "before to",
+          "text": "before to handle",
           "clickable": true,
           "isError": true,
           "correctAnswers": [
-            "before"
+            "before handling"
           ]
         },
         {
           "id": "s6",
-          "text": "handle the",
-          "clickable": false
-        },
-        {
-          "id": "s7",
-          "text": "raw meat.",
+          "text": "the raw meat.",
           "clickable": false
         }
       ],
@@ -286,30 +281,25 @@
         },
         {
           "id": "s2",
-          "text": "mind to",
+          "text": "mind to chop",
           "clickable": true,
           "isError": true,
           "correctAnswers": [
-            "mind"
+            "mind chopping"
           ]
         },
         {
           "id": "s3",
-          "text": "chop the",
+          "text": "the vegetables, but",
           "clickable": false
         },
         {
           "id": "s4",
-          "text": "vegetables, but",
-          "clickable": false
-        },
-        {
-          "id": "s5",
           "text": "I refuse",
           "clickable": false
         },
         {
-          "id": "s6",
+          "id": "s5",
           "text": "cleaning the",
           "clickable": true,
           "isError": true,
@@ -318,7 +308,7 @@
           ]
         },
         {
-          "id": "s7",
+          "id": "s6",
           "text": "greasy pans.",
           "clickable": false
         }
@@ -1618,7 +1608,7 @@
         },
         {
           "id": "s4",
-          "text": "fiber, recommending",
+          "text": "fiber and recommended",
           "clickable": false
         },
         {
