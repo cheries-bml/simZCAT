@@ -146,7 +146,7 @@ body {
 .topbar-user { display: flex; align-items: center; gap: .6rem; font-size: .9rem; }
 .badge { background: var(--accent-soft); color: var(--accent-text); padding: .1rem .55rem; border-radius: 999px; font-size: .78rem; font-weight: 600; }
 
-.content { max-width: 70rem; margin: 0 auto; padding: 2rem clamp(1rem, 4vw, 2.5rem) 4rem; }
+.content { max-width: 75rem; margin: 0 auto; padding: 1rem clamp(1rem, 4vw, 2.5rem) 4rem; }
 .content h1 { margin: 0 0 .25rem; font-size: 1.75rem; letter-spacing: -.02em; }
 .lede { margin: 0 0 1.5rem; color: var(--muted); }
 .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem; margin-bottom: 1rem; }
