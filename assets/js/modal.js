@@ -12,7 +12,7 @@ export function openModal({ title, body, actions = [{ label: "OK", value: true, 
   return new Promise((resolve) => {
     const titleId = `modal-title-${++counter}`;
     let result = dismissValue;
-    const dlg = el("dialog", { className: `modal${wide ? " modal-wide" : ""}${wide === "xl" ? " modal-xl" : ""}`, "aria-labelledby": titleId });
+    const dlg = el("dialog", { className: `modal${wide ? " modal-wide" : ""}${wide === "xl" ? " modal-xl" : ""}${wide === "lg" ? " modal-lg" : ""}`, "aria-labelledby": titleId });
     dlg.setAttribute("role", role);
     const close = (value) => { result = value; dlg.close(); };
     if (persistent) { actions = []; dlg.addEventListener("cancel", (e) => e.preventDefault()); } // no Esc, no ×, no backdrop

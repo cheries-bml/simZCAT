@@ -413,7 +413,7 @@ function startRun(root, ctx, test, pace, settings = {}) {
           type: "button", className: "chip-btn", textContent: "Explanation",
           onclick: () => {
             r.explained.add(i);
-            openModal({ title: `Question ${i + 1}: explanation`, body: explanationNode(q.explanation), wide: true, actions: [{ label: "Close", primary: true }] });
+            openModal({ title: `Question ${i + 1}: explanation`, body: explanationNode(q.explanation), wide: "lg", actions: [{ label: "Close", primary: true }] });
           },
         })
       : null;
@@ -618,7 +618,8 @@ function image(img) {
 // Shared by the explanation modal (during a test) and the results review.
 function explanationNode(ex) {
   return el("div", { className: "explain" },
-    ex.topic || ex.concept ? el("p", { className: "muted", textContent: [ex.topic, ex.concept].filter(Boolean).join(" · ") }) : null,
+    ex.topic ? el("p", { className: "explain-meta" }, el("strong", { textContent: "Topic: " }), ex.topic) : null,
+    ex.concept ? el("p", { className: "explain-meta" }, el("strong", { textContent: "Concept: " }), ex.concept) : null,
     ex.text ? richText(ex.text, "p") : null,
     ex.formula ? el("p", { className: "formula", textContent: ex.formula }) : null,
     ex.examples?.length ? el("ul", {}, ...ex.examples.map((x) => richText(x, "li"))) : null);
