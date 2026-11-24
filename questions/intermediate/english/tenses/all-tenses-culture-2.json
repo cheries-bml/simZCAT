@@ -167,7 +167,7 @@
         { "id": "s1", "text": "The museum ", "clickable": false },
         { "id": "s2", "text": "has acquired", "clickable": true, "isError": true, "correctAnswers": ["acquired"] },
         { "id": "s3", "text": " a rare keris that ", "clickable": false },
-        { "id": "s4", "text": "belonged", "clickable": true, "isError": true, "correctAnswers": ["had belonged"] },
+        { "id": "s4", "text": "is belong", "clickable": true, "isError": true, "correctAnswers": ["had belonged", "belonged"] },
         { "id": "s5", "text": " to a king, and it ", "clickable": false },
         { "id": "s6", "text": "attracted", "clickable": true, "isError": true, "correctAnswers": ["has attracted"] },
         { "id": "s7", "text": " many visitors since then.", "clickable": false }

@@ -1,0 +1,2136 @@
+{
+  "meta": {
+    "title": "English Verb Patterns Test (B1-B2) - Food and Cooking",
+    "description": "A comprehensive test covering English verb patterns and gerunds themed around Food and Cooking, combining at least two or more topics per question.",
+    "info": "This test includes 30 correction-type questions focusing on combined B1-B2 level grammar structures involving verb patterns, gerunds, infinitives, and related topics.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "She enjoys",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "to bake,",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "baking,"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "but she",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "avoids to",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "avoids"
+          ]
+        },
+        {
+          "id": "s5",
+          "text": "use artificial colors.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "The verb 'enjoy' is followed by a gerund ('baking'), and 'avoid' is also followed by a gerund ('use' becomes 'using', so 'avoids using').",
+        "topic": "Verb Patterns + Gerunds",
+        "concept": "Verbs followed by gerunds",
+        "formula": "Subject + enjoy/avoid + verb-ing",
+        "examples": [
+          "I enjoy <b>cooking</b>, but I avoid <b>eating</b> raw meat."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "He stopped",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "checking the",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "to check the"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "oven, but",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "he forgot",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "turning off",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "to turn off"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": "the stove.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Stop to do' means to pause an action to do something else, while 'forget to do' means failing to perform an action.",
+        "topic": "Verb Patterns + Gerunds vs. Infinitives",
+        "concept": "Change in meaning with stop and forget",
+        "formula": "Stop + to-infinitive (purpose); Forget + to-infinitive (failed action)",
+        "examples": [
+          "He stopped <b>to check</b> the oven, but forgot <b>to turn</b> it off."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "The chef",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "encouraged the",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "staff washing",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "staff to wash"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": "their hands",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "before to",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "before"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": "handle the",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "raw meat.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Encourage' takes an object + to-infinitive ('staff to wash'). After the preposition 'before', we use a gerund ('handling'), so 'to' is removed.",
+        "topic": "Verb Patterns + Prepositions + Gerunds",
+        "concept": "Object + to-infinitive and preposition + gerund",
+        "formula": "Encourage + object + to-infinitive; Preposition + verb-ing",
+        "examples": [
+          "She encouraged him <b>to try</b> before <b>giving</b> up."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Having taste",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Having tasted"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": "the soup,",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "the critic",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "realized it",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "must have",
+          "clickable": false
+        },
+        {
+          "id": "s6",
+          "text": "been overseasoned.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "The perfect participle 'Having tasted' is used for an action completed before the main verb. 'Must have been' is a modal perfect passive for deduction.",
+        "topic": "Perfect Participles + Modal Verbs",
+        "concept": "Perfect participle and modal perfect passive",
+        "formula": "Having + past participle, subject + modal + have + been + past participle",
+        "examples": [
+          "<b>Having eaten</b> the cake, she knew it <b>must have been</b> baked fresh."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "I don't",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "mind to",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "mind"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "chop the",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "vegetables, but",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "I refuse",
+          "clickable": false
+        },
+        {
+          "id": "s6",
+          "text": "cleaning the",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "to clean the"
+          ]
+        },
+        {
+          "id": "s7",
+          "text": "greasy pans.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Mind' is followed by a gerund ('chopping'), so 'to' is removed. 'Refuse' is followed by a to-infinitive ('to clean').",
+        "topic": "Verb Patterns + Gerunds vs. Infinitives",
+        "concept": "Specific verb patterns",
+        "formula": "Mind + verb-ing; Refuse + to-infinitive",
+        "examples": [
+          "I don't mind <b>waiting</b>, but I refuse <b>to pay</b> extra."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "I remember",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "to add",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "adding"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "the salt,",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "but I",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "forgot adding",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "forgot to add"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": "the sugar",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "earlier.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Remember + gerund' refers to a past memory. 'Forget + to-infinitive' refers to failing to perform an action.",
+        "topic": "Verb Patterns + Gerunds vs. Infinitives",
+        "concept": "Change in meaning with remember and forget",
+        "formula": "Remember + verb-ing (past memory); Forget + to-infinitive (failed action)",
+        "examples": [
+          "I remember <b>locking</b> the door, but I forgot <b>to turn</b> off the lights."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 7,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "The cake",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "needs to",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "needs"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "bake at",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "baking at"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": "a lower",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "temperature, or",
+          "clickable": false
+        },
+        {
+          "id": "s6",
+          "text": "it risks",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "to burn",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "burning"
+          ]
+        },
+        {
+          "id": "s8",
+          "text": "on the",
+          "clickable": false
+        },
+        {
+          "id": "s9",
+          "text": "outside.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Need' can be followed by a gerund to express a passive meaning ('needs baking'). 'Risk' is always followed by a gerund ('burning').",
+        "topic": "Verb Patterns + Gerunds",
+        "concept": "Need + gerund (passive meaning) and risk + gerund",
+        "formula": "Subject + need + verb-ing; Subject + risk + verb-ing",
+        "examples": [
+          "The car needs <b>washing</b>, and it risks <b>rusting</b> if left outside."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "We appreciate",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "to have",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "having"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "you as",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "our guest,",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "and we",
+          "clickable": false
+        },
+        {
+          "id": "s6",
+          "text": "promise accommodating",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "promise to accommodate"
+          ]
+        },
+        {
+          "id": "s7",
+          "text": "your dietary",
+          "clickable": false
+        },
+        {
+          "id": "s8",
+          "text": "restrictions.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Appreciate' is followed by a gerund ('having'). 'Promise' is followed by a to-infinitive ('to accommodate').",
+        "topic": "Verb Patterns + Gerunds vs. Infinitives",
+        "concept": "Specific verb patterns",
+        "formula": "Appreciate + verb-ing; Promise + to-infinitive",
+        "examples": [
+          "We appreciate <b>hearing</b> from you and promise <b>to reply</b> soon."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 9,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "The head",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "chef made",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "the apprentices",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "to wash",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "wash"
+          ]
+        },
+        {
+          "id": "s5",
+          "text": "the knives",
+          "clickable": false
+        },
+        {
+          "id": "s6",
+          "text": "before letting",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "them to",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "them"
+          ]
+        },
+        {
+          "id": "s8",
+          "text": "go near",
+          "clickable": false
+        },
+        {
+          "id": "s9",
+          "text": "the stove.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Make' and 'let' are causative verbs followed by an object and the base form of the verb (without 'to').",
+        "topic": "Causative Verbs + Prepositions + Gerunds",
+        "concept": "Make/let + object + base verb",
+        "formula": "Make/Let + object + base verb; Preposition + verb-ing",
+        "examples": [
+          "She made him <b>clean</b> the room before letting him <b>play</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "I tried",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "slicing the",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "to slice the"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "onions thinly,",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "but I",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "couldn't help",
+          "clickable": false
+        },
+        {
+          "id": "s6",
+          "text": "to cry.",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "crying."
+          ]
+        }
+      ],
+      "explanation": {
+        "text": "'Try + to-infinitive' means to attempt something difficult. 'Can't help' is an expression followed by a gerund ('crying').",
+        "topic": "Verb Patterns + Gerunds vs. Infinitives",
+        "concept": "Try (attempt) and can't help (unable to stop)",
+        "formula": "Try + to-infinitive; Can't help + verb-ing",
+        "examples": [
+          "I tried <b>to lift</b> the box, but I couldn't help <b>dropping</b> it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 11,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "To learn",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Learning"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": "to cook",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "traditional dishes",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "requires to",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "requires"
+          ]
+        },
+        {
+          "id": "s5",
+          "text": "practice every",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "practicing every"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": "day.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "A gerund ('Learning') is preferred as the subject of a sentence describing a general activity. 'Require' is followed by a gerund ('practicing').",
+        "topic": "Gerunds as Subjects + Verb Patterns",
+        "concept": "Gerund as subject and require + gerund",
+        "formula": "Verb-ing + as subject + require + verb-ing",
+        "examples": [
+          "<b>Reading</b> requires <b>focusing</b> your attention."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "I suggest",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "to taste",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "tasting"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "the sauce",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "before serving",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "it, as it",
+          "clickable": false
+        },
+        {
+          "id": "s6",
+          "text": "might have",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "been underseasoned.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Suggest' is followed by a gerund ('tasting') or a that-clause, not a to-infinitive. 'Might have been' is a modal perfect passive.",
+        "topic": "Verb Patterns + Modal Perfect Passive",
+        "concept": "Suggest + gerund and modal perfect passive",
+        "formula": "Suggest + verb-ing; Modal + have + been + past participle",
+        "examples": [
+          "I suggest <b>checking</b> the oil, as it might have been <b>changed</b> recently."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 13,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "We decided",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "booking a",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "to book a"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "table in",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "advance to",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "avoid to",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "avoid"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": "wait in",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "waiting in"
+          ]
+        },
+        {
+          "id": "s7",
+          "text": "line.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Decide' is followed by a to-infinitive ('to book'). 'Avoid' is followed by a gerund ('waiting').",
+        "topic": "Verb Patterns + Gerunds vs. Infinitives",
+        "concept": "Decide + to-infinitive and avoid + gerund",
+        "formula": "Decide + to-infinitive; Avoid + verb-ing",
+        "examples": [
+          "We decided <b>to leave</b> early to avoid <b>getting</b> stuck in traffic."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "The manager",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "allowed the",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "interns observing",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "interns to observe"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": "the cooking",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "process, but",
+          "clickable": false
+        },
+        {
+          "id": "s6",
+          "text": "prohibited them",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "to touch",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "from touching"
+          ]
+        },
+        {
+          "id": "s8",
+          "text": "the equipment.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Allow' takes an object + to-infinitive ('interns to observe'). 'Prohibit' takes an object + from + gerund ('from touching').",
+        "topic": "Verb Patterns + Prepositions + Gerunds",
+        "concept": "Allow + object + to-infinitive and prohibit + object + from + gerund",
+        "formula": "Allow + object + to-infinitive; Prohibit + object + from + verb-ing",
+        "examples": [
+          "They allowed us <b>to enter</b> but prohibited us <b>from taking</b> photos."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 15,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "I can't",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "afford buying",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "afford to buy"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "organic produce",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "every week,",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "so I",
+          "clickable": false
+        },
+        {
+          "id": "s6",
+          "text": "plan growing",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "plan to grow"
+          ]
+        },
+        {
+          "id": "s7",
+          "text": "my own",
+          "clickable": false
+        },
+        {
+          "id": "s8",
+          "text": "vegetables.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Afford' and 'plan' are both followed by a to-infinitive ('to buy', 'to grow').",
+        "topic": "Verb Patterns + Infinitives",
+        "concept": "Verbs followed by to-infinitives",
+        "formula": "Afford/Plan + to-infinitive",
+        "examples": [
+          "I can't afford <b>to buy</b> it, so I plan <b>to save</b> money."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "He claimed",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "having followed",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "to have followed"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "the recipe",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "exactly, but",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "he denied",
+          "clickable": false
+        },
+        {
+          "id": "s6",
+          "text": "to use",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "using"
+          ]
+        },
+        {
+          "id": "s7",
+          "text": "stale flour.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Claim' is followed by a perfect infinitive ('to have followed') to refer to a past action. 'Deny' is followed by a gerund ('using').",
+        "topic": "Perfect Infinitives + Gerunds",
+        "concept": "Claim + perfect infinitive and deny + gerund",
+        "formula": "Claim + to have + past participle; Deny + verb-ing",
+        "examples": [
+          "He claimed <b>to have seen</b> it, but denied <b>taking</b> it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 17,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "We look",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "forward to",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "host you,",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "hosting you,"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": "and we",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "hope impressing",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "hope to impress"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": "you with",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "our new",
+          "clickable": false
+        },
+        {
+          "id": "s8",
+          "text": "menu.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Look forward to' is a phrasal verb where 'to' is a preposition, so it takes a gerund ('hosting'). 'Hope' is followed by a to-infinitive ('to impress').",
+        "topic": "Phrasal Verbs + Prepositions + Gerunds",
+        "concept": "Look forward to + gerund and hope + to-infinitive",
+        "formula": "Look forward to + verb-ing; Hope + to-infinitive",
+        "examples": [
+          "I look forward to <b>seeing</b> you and hope <b>to meet</b> your family."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "I intend",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "reducing my",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "to reduce my"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "sugar intake,",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "which means",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "to cut",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "cutting"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": "out soda",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "completely.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Intend' is typically followed by a to-infinitive ('to reduce'). 'Mean' (in the sense of 'involve') is followed by a gerund ('cutting').",
+        "topic": "Verb Patterns + Gerunds vs. Infinitives",
+        "concept": "Intend + to-infinitive and mean + gerund",
+        "formula": "Intend + to-infinitive; Mean + verb-ing",
+        "examples": [
+          "I intend <b>to study</b>, which means <b>giving</b> up parties."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 19,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "He dislikes",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "to be",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "being"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "interrupted while",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "he is",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "trying to",
+          "clickable": false
+        },
+        {
+          "id": "s6",
+          "text": "concentrate on",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "plating the",
+          "clickable": false
+        },
+        {
+          "id": "s8",
+          "text": "dish.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Dislike' is followed by a gerund. In the passive voice, this becomes 'being interrupted'. 'Try' is followed by a to-infinitive.",
+        "topic": "Verb Patterns + Passive Gerunds",
+        "concept": "Dislike + passive gerund and try + to-infinitive",
+        "formula": "Dislike + being + past participle; Try + to-infinitive",
+        "examples": [
+          "She dislikes <b>being</b> watched while she is trying <b>to work</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "She admitted",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "to make",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "making"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "a mistake",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "with the",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "seasoning, but",
+          "clickable": false
+        },
+        {
+          "id": "s6",
+          "text": "she managed",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "saving the",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "to save the"
+          ]
+        },
+        {
+          "id": "s8",
+          "text": "dish just",
+          "clickable": false
+        },
+        {
+          "id": "s9",
+          "text": "in time.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Admit' is followed by a gerund ('making'). 'Manage' is followed by a to-infinitive ('to save').",
+        "topic": "Verb Patterns + Gerunds vs. Infinitives",
+        "concept": "Admit + gerund and manage + to-infinitive",
+        "formula": "Admit + verb-ing; Manage + to-infinitive",
+        "examples": [
+          "He admitted <b>breaking</b> the vase but managed <b>to fix</b> it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 21,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "He insisted",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "to pay",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "on paying"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "the bill,",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "refusing to",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "let anyone",
+          "clickable": false
+        },
+        {
+          "id": "s6",
+          "text": "else contribute.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Insist' is followed by the preposition 'on' + gerund ('on paying'). 'Refuse' is followed by a to-infinitive ('to let').",
+        "topic": "Verb Patterns + Prepositions + Gerunds",
+        "concept": "Insist on + gerund and refuse + to-infinitive",
+        "formula": "Insist on + verb-ing; Refuse + to-infinitive",
+        "examples": [
+          "She insisted <b>on helping</b>, refusing <b>to leave</b> early."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "They kept",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "to experiment",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "experimenting"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "with the",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "recipe, but",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "they failed",
+          "clickable": false
+        },
+        {
+          "id": "s6",
+          "text": "achieving the",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "to achieve the"
+          ]
+        },
+        {
+          "id": "s7",
+          "text": "right texture.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Keep' is followed by a gerund ('experimenting'). 'Fail' is followed by a to-infinitive ('to achieve').",
+        "topic": "Verb Patterns + Gerunds vs. Infinitives",
+        "concept": "Keep + gerund and fail + to-infinitive",
+        "formula": "Keep + verb-ing; Fail + to-infinitive",
+        "examples": [
+          "He kept <b>trying</b>, but failed <b>to win</b> the race."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 23,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "The dietitian",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "advised him",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "eating more",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "to eat more"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": "fiber, recommending",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "to avoid",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "avoiding"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": "processed snacks.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Advise' takes an object + to-infinitive ('him to eat'). 'Recommend' is followed by a gerund ('avoiding').",
+        "topic": "Verb Patterns + Gerunds vs. Infinitives",
+        "concept": "Advise + object + to-infinitive and recommend + gerund",
+        "formula": "Advise + object + to-infinitive; Recommend + verb-ing",
+        "examples": [
+          "The doctor advised him <b>to rest</b>, recommending <b>taking</b> vitamins."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "We regret",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "informing you",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "to inform you"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "that we",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "are considering",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "to close",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "closing"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": "the restaurant",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "early tonight.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Regret + to-infinitive' is used for formal announcements of bad news. 'Consider' is followed by a gerund ('closing').",
+        "topic": "Verb Patterns + Gerunds vs. Infinitives",
+        "concept": "Regret (formal) + to-infinitive and consider + gerund",
+        "formula": "Regret + to-infinitive; Consider + verb-ing",
+        "examples": [
+          "We regret <b>to inform</b> you that we are considering <b>cancelling</b> the event."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 25,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "To master",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Mastering"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": "French cooking",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "requires to",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "requires"
+          ]
+        },
+        {
+          "id": "s4",
+          "text": "dedicate years",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "dedicating years"
+          ]
+        },
+        {
+          "id": "s5",
+          "text": "to practice.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "A gerund ('Mastering') is preferred as the subject of a sentence describing a general activity. 'Require' is followed by a gerund ('dedicating').",
+        "topic": "Gerunds as Subjects + Verb Patterns",
+        "concept": "Gerund as subject and require + gerund",
+        "formula": "Verb-ing + as subject + require + verb-ing",
+        "examples": [
+          "<b>Learning</b> a language requires <b>practicing</b> daily."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "She suggested",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "to bring",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "bringing"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "the dessert,",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "offering to",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "bake a",
+          "clickable": false
+        },
+        {
+          "id": "s6",
+          "text": "chocolate cake.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Suggest' is followed by a gerund ('bringing'). 'Offer' is followed by a to-infinitive ('to bake').",
+        "topic": "Verb Patterns + Gerunds vs. Infinitives",
+        "concept": "Suggest + gerund and offer + to-infinitive",
+        "formula": "Suggest + verb-ing; Offer + to-infinitive",
+        "examples": [
+          "He suggested <b>going</b> out, offering <b>to pay</b> for dinner."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 27,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "I hope",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "visiting my",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "to visit my"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "grandmother soon,",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "as I",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "miss to",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "miss"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": "eat her",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "eating her"
+          ]
+        },
+        {
+          "id": "s7",
+          "text": "homemade dumplings.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Hope' is followed by a to-infinitive ('to visit'). 'Miss' is followed by a gerund ('eating').",
+        "topic": "Verb Patterns + Gerunds vs. Infinitives",
+        "concept": "Hope + to-infinitive and miss + gerund",
+        "formula": "Hope + to-infinitive; Miss + verb-ing",
+        "examples": [
+          "I hope <b>to see</b> you, as I miss <b>talking</b> to you."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "I avoid",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "to consume",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "consuming"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "nuts, so",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "I must",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "to check",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "check"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": "the ingredients",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "carefully.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Avoid' is followed by a gerund ('consuming'). Modal verbs like 'must' are followed by the base form of the verb ('check') without 'to'.",
+        "topic": "Verb Patterns + Modal Verbs",
+        "concept": "Avoid + gerund and modal + base verb",
+        "formula": "Avoid + verb-ing; Modal + base verb",
+        "examples": [
+          "I avoid <b>driving</b> at night, so I must <b>take</b> the bus."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 29,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "We expect",
+          "clickable": false
+        },
+        {
+          "id": "s2",
+          "text": "serving over",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "to serve over"
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "200 guests,",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "anticipating",
+          "clickable": false
+        },
+        {
+          "id": "s5",
+          "text": "to have",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "having"
+          ]
+        },
+        {
+          "id": "s6",
+          "text": "to prepare",
+          "clickable": false
+        },
+        {
+          "id": "s7",
+          "text": "extra portions.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "'Expect' is followed by a to-infinitive ('to serve'). 'Anticipate' is followed by a gerund ('having').",
+        "topic": "Verb Patterns + Gerunds vs. Infinitives",
+        "concept": "Expect + to-infinitive and anticipate + gerund",
+        "formula": "Expect + to-infinitive; Anticipate + verb-ing",
+        "examples": [
+          "We expect <b>to finish</b> soon, anticipating <b>having</b> time to rest."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        {
+          "id": "s1",
+          "text": "Having win",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "Having won"
+          ]
+        },
+        {
+          "id": "s2",
+          "text": "the competition,",
+          "clickable": false
+        },
+        {
+          "id": "s3",
+          "text": "she decided",
+          "clickable": false
+        },
+        {
+          "id": "s4",
+          "text": "opening her",
+          "clickable": true,
+          "isError": true,
+          "correctAnswers": [
+            "to open her"
+          ]
+        },
+        {
+          "id": "s5",
+          "text": "own restaurant.",
+          "clickable": false
+        }
+      ],
+      "explanation": {
+        "text": "The perfect participle 'Having won' is used for an action completed before the main verb. 'Decide' is followed by a to-infinitive ('to open').",
+        "topic": "Perfect Participles + Verb Patterns",
+        "concept": "Perfect participle and decide + to-infinitive",
+        "formula": "Having + past participle, subject + decide + to-infinitive",
+        "examples": [
+          "<b>Having finished</b> her degree, she decided <b>to travel</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": {
+          "fast": 45,
+          "normal": 90,
+          "easy": 120
+        }
+      }
+    }
+  ]
+}
