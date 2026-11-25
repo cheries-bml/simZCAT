@@ -16,7 +16,7 @@ This guide is designed for **independent study**. Instead of memorizing dry rule
 * **English:** Normally, conditional sentences stay in one time frame (past with past, or present with present). **Mixed conditionals** mix two different time frames—usually **Past + Present** or **Present + Past**—to show how an unreal past event affects today, or how an unreal present situation affected the past.
 * **Bahasa Indonesia:** Biasanya, kalimat pengandaian berada dalam satu kerangka waktu yang sama. **Mixed conditionals** menggabungkan dua waktu yang berbeda—biasanya **Masa Lalu + Masa Kini** atau **Masa Kini + Masa Lalu**—untuk menunjukkan bagaimana kejadian tidak nyata di masa lalu memengaruhi keadaan hari ini, atau sebaliknya.
 
-### Pattern A: Past Action $\rightarrow$ Present Result (Masa Lalu $\rightarrow$ Hasil Sekarang)
+### Pattern A: Past Action ➡️ Present Result (Masa Lalu ➡️ Hasil Sekarang)
 * **Formula:** `If + Subject + had + V3, Subject + would/could/might + V1`
 * **Think of it as:** *"Because I didn't do X in the past, Y is happening right now."*
 
@@ -32,7 +32,7 @@ This guide is designed for **independent study**. Instead of memorizing dry rule
 5. **If they hadn't spent all their savings, they wouldn't be in debt today.**  
    *(Jika mereka tidak menghabiskan semua tabungan mereka, mereka tidak akan berutang hari ini.)*
 
-### Pattern B: Present Reality $\rightarrow$ Past Result (Keadaan Sekarang $\rightarrow$ Hasil Masa Lalu)
+### Pattern B: Present Reality ➡️ Past Result (Keadaan Sekarang ➡️ Hasil Masa Lalu)
 * **Formula:** `If + Subject + V2 / were, Subject + would/could/might + have + V3`
 * **Think of it as:** *"Because I am (not) like X in general, Y happened in the past."*
 
@@ -136,7 +136,7 @@ After words of urgency or recommendation, the verb in the *that*-clause **always
 | **2. Past Regret** *(Penyesalan masa lalu)* | `Wish / If only + S + had + V3` | **If only** I **had listened** to you! *(Fact: I didn't.)* |
 | **3. Annoyance / Complaint** *(Keluhan)* | `Wish / If only + S + would + V1` | I **wish** you **would stop** shouting. |
 
-> **Self-Check Tip:** Don't use *would* for a wish about yourself (e.g., *I wish I would be taller* $\rightarrow$ **Incorrect**). Say *I wish I **were** taller*. Only use *would* when you want **someone else or something external** to change.
+> **Self-Check Tip:** Don't use *would* for a wish about yourself (e.g., *I wish I would be taller* ➡️ **Incorrect**). Say *I wish I **were** taller*. Only use *would* when you want **someone else or something external** to change.
 
 **Examples:**
 1. **Present:** I **wish** I **lived** closer to my office. *(Saya berharap saya tinggal lebih dekat dengan kantor.)*
@@ -159,11 +159,11 @@ Complete each sentence with the correct form:
 6. He acts as though he ________ (knows / knew) everything about the project.
 
 ### Answer Key & Explanations
-1. **would be studying** *(or **would study**)* — Mixed Conditional (Past action $\rightarrow$ Present result, signaled by *right now*).
-2. **Should** — Inverted Conditional Type 1 (*If you should need...* $\rightarrow$ *Should you need...*).
+1. **would be studying** *(or **would study**)* — Mixed Conditional (Past action ➡️ Present result, signaled by *right now*).
+2. **Should** — Inverted Conditional Type 1 (*If you should need...* ➡️ *Should you need...*).
 3. **be** — Mandative Subjunctive triggered by *insisted that* (always base form).
 4. **hadn't eaten** — Past regret (*wish + Past Perfect*) because it happened *last night*.
-5. **Had** — Inverted Conditional Type 3 (*If I had known...* $\rightarrow$ *Had I known...*).
+5. **Had** — Inverted Conditional Type 3 (*If I had known...* ➡️ *Had I known...*).
 6. **knew** — Past Subjunctive after *as though* for an unreal present situation.
 
 ---
