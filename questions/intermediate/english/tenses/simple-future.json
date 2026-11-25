@@ -1,0 +1,908 @@
+{
+  "meta": {
+    "title": "English Future Tenses Test - Gen Z Themes",
+    "description": "A comprehensive test covering English Simple Future Tenses themed around Gen Z culture, combining at least two grammar topics per question.",
+    "info": "This test includes 30 questions focusing on combined grammar structures involving Future Simple, Future Continuous, Future Perfect, and Future Perfect Continuous, paired with topics like conditionals, passive voice, gerunds, and more, all within familiar Gen Z contexts.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "If the TikTok algorithm _____ my video, it _____ viral by tomorrow morning."
+      },
+      "options": {
+        "A": { "text": "pushes / will go", "correct": true },
+        "B": { "text": "will push / goes", "correct": false },
+        "C": { "text": "pushed / would go", "correct": false },
+        "D": { "text": "is pushing / will have gone", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the First Conditional with the Future Simple tense. The 'if' clause uses the present simple ('pushes'), and the main clause uses 'will' + base verb ('will go') to predict a future result.",
+        "topic": "Future Simple + First Conditional",
+        "concept": "Predicting future outcomes based on present conditions",
+        "formula": "If + subject + present simple, subject + will + base verb",
+        "examples": [
+          "If it <b>rains</b>, we <b>will cancel</b> the picnic."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By the time", "clickable": false },
+        { "id": "s2", "text": "the server", "clickable": false },
+        { "id": "s3", "text": "goes live,", "clickable": false },
+        { "id": "s4", "text": "I will be", "clickable": true, "isError": true, "correctAnswers": ["I will have"] },
+        { "id": "s5", "text": "been playing", "clickable": true, "isError": false },
+        { "id": "s6", "text": "the new update", "clickable": false },
+        { "id": "s7", "text": "since three", "clickable": true, "isError": true, "correctAnswers": ["for three"] },
+        { "id": "s8", "text": "hours.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with a time clause. 'Will have been playing' is required to show duration up to a future point, and 'for' is used with a period of time, not 'since'.",
+        "topic": "Future Perfect Continuous + Time Clauses",
+        "concept": "Expressing duration up to a specific future moment",
+        "formula": "By the time + present simple, subject + will have been + verb-ing + for + time",
+        "examples": [
+          "By the time you arrive, I <b>will have been waiting</b> <b>for</b> an hour."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "By 2030, single-use plastics _____ in many countries to protect the oceans."
+      },
+      "options": {
+        "A": { "text": "will ban", "correct": false },
+        "B": { "text": "will have been banned", "correct": true },
+        "C": { "text": "are going to ban", "correct": false },
+        "D": { "text": "will be banning", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense with the Passive Voice. The action will be completed before a future time ('By 2030'), and the subject receives the action.",
+        "topic": "Future Perfect + Passive Voice",
+        "concept": "Completed future actions in the passive voice",
+        "formula": "By + future time, subject + will have been + past participle",
+        "examples": [
+          "By next year, the bridge <b>will have been completed</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By next month,", "clickable": false },
+        { "id": "s2", "text": "the idol,", "clickable": false },
+        { "id": "s3", "text": "who has", "clickable": true, "isError": false },
+        { "id": "s4", "text": "practiced for", "clickable": false },
+        { "id": "s5", "text": "years, will", "clickable": false },
+        { "id": "s6", "text": "be training", "clickable": true, "isError": true, "correctAnswers": ["have been"] },
+        { "id": "s7", "text": "for five", "clickable": true, "isError": false },
+        { "id": "s8", "text": "years.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with a non-defining relative clause. 'Will have been training' is required to emphasize the duration of an action up to a future point.",
+        "topic": "Future Perfect Continuous + Relative Clauses",
+        "concept": "Duration up to a future point within a relative clause structure",
+        "formula": "By + future time, noun, who + has/have + past participle, will have been + verb-ing",
+        "examples": [
+          "By June, the band, which <b>has toured</b> extensively, <b>will have been performing</b> for a decade."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "I am considering _____ my screen time, so I _____ to delete some distracting apps."
+      },
+      "options": {
+        "A": { "text": "to reduce / will go", "correct": false },
+        "B": { "text": "reducing / am going", "correct": true },
+        "C": { "text": "reducing / will go", "correct": false },
+        "D": { "text": "to reduce / am going", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the 'be going to' future form with a gerund verb pattern. 'Consider' is followed by a gerund ('reducing'), and 'am going' expresses a planned future intention.",
+        "topic": "Future 'Going to' + Gerunds",
+        "concept": "Planned future actions and verbs followed by gerunds",
+        "formula": "Consider + verb-ing; Subject + am/is/are + going + to-infinitive",
+        "examples": [
+          "I am thinking about <b>moving</b>, so I <b>am going</b> to save money."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Employees", "clickable": false },
+        { "id": "s2", "text": "will can", "clickable": true, "isError": true, "correctAnswers": ["will be able"] },
+        { "id": "s3", "text": "work from", "clickable": false },
+        { "id": "s4", "text": "anywhere, which", "clickable": false },
+        { "id": "s5", "text": "will make", "clickable": true, "isError": false },
+        { "id": "s6", "text": "them more", "clickable": true, "isError": true, "correctAnswers": ["them"] },
+        { "id": "s7", "text": "happier.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Simple tense with modal verbs and comparatives. 'Will' cannot be directly followed by 'can'; 'will be able to' is the correct future form of 'can'. Also, 'more happier' is a double comparative error; 'happier' is sufficient.",
+        "topic": "Future Simple + Modal Verbs + Comparatives",
+        "concept": "Future ability and correct comparative forms",
+        "formula": "Subject + will be able to + base verb; Subject + will make + object + comparative adjective",
+        "examples": [
+          "Students <b>will be able to</b> learn online, which will make them <b>more independent</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "While you _____ your favorite true crime podcast, I _____ a guided meditation session."
+      },
+      "options": {
+        "A": { "text": "will listen / will lead", "correct": false },
+        "B": { "text": "are listening / will be leading", "correct": true },
+        "C": { "text": "listen / will have led", "correct": false },
+        "D": { "text": "will be listening / lead", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with a present continuous time clause. 'While' + present continuous sets the background action, and 'will be leading' describes another action in progress at that same future time.",
+        "topic": "Future Continuous + Time Clauses",
+        "concept": "Parallel actions in progress at a specific future time",
+        "formula": "While + subject + present continuous, subject + will be + verb-ing",
+        "examples": [
+          "While you <b>are studying</b>, I <b>will be cooking</b> dinner."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By the time", "clickable": false },
+        { "id": "s2", "text": "the app", "clickable": false },
+        { "id": "s3", "text": "launch, the", "clickable": true, "isError": true, "correctAnswers": ["launches, the"] },
+        { "id": "s4", "text": "developers promise", "clickable": true, "isError": false },
+        { "id": "s5", "text": "having fixed", "clickable": true, "isError": true, "correctAnswers": ["to have fixed"] },
+        { "id": "s6", "text": "all bugs.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect tense with a time clause and verb patterns. The time clause requires the present simple ('launches'). 'Promise' is followed by a to-infinitive, so 'to have fixed' is the correct perfect infinitive form.",
+        "topic": "Future Perfect + Time Clauses + Verb Patterns",
+        "concept": "Present simple in future time clauses and perfect infinitives",
+        "formula": "By the time + subject + present simple, subject + promise + to have + past participle",
+        "examples": [
+          "By the time he <b>arrives</b>, we promise <b>to have finished</b> the work."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Thrifting _____ more popular than fast fashion as Gen Z _____ more eco-conscious."
+      },
+      "options": {
+        "A": { "text": "will become / becomes", "correct": true },
+        "B": { "text": "becomes / will become", "correct": false },
+        "C": { "text": "will have become / will become", "correct": false },
+        "D": { "text": "is becoming / became", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Simple tense with a comparative structure and an 'as' clause indicating a simultaneous future trend. The main clause uses 'will become', and the subordinate clause uses the present simple 'becomes' to state a general future truth.",
+        "topic": "Future Simple + Comparatives",
+        "concept": "Predicting future trends and comparisons",
+        "formula": "Subject + will + base verb + comparative + as + subject + present simple",
+        "examples": [
+          "Electric cars <b>will become</b> cheaper as technology <b>improves</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By midnight,", "clickable": false },
+        { "id": "s2", "text": "I will be", "clickable": true, "isError": true, "correctAnswers": ["will have"] },
+        { "id": "s3", "text": "binge-watching", "clickable": false },
+        { "id": "s4", "text": "this series", "clickable": true, "isError": false },
+        { "id": "s5", "text": "since three", "clickable": true, "isError": true, "correctAnswers": ["for three"] },
+        { "id": "s6", "text": "hours.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with prepositions of time. 'Will have been' is required to show duration up to a future point ('By midnight'), and 'for' is used with a period of time, not 'since'.",
+        "topic": "Future Perfect Continuous + Prepositions",
+        "concept": "Duration up to a future point and correct time prepositions",
+        "formula": "By + future time, subject + will have been + verb-ing + for + period of time",
+        "examples": [
+          "By 5 PM, I <b>will have been</b> working <b>for</b> eight hours."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The university _____ a new mental health center next semester, which _____ a huge difference for students."
+      },
+      "options": {
+        "A": { "text": "will open / will make", "correct": true },
+        "B": { "text": "opens / makes", "correct": false },
+        "C": { "text": "will have opened / will have made", "correct": false },
+        "D": { "text": "is opening / made", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Simple tense with a non-defining relative clause. 'Will open' predicts a future event, and 'will make' predicts the future result of that event.",
+        "topic": "Future Simple + Relative Clauses",
+        "concept": "Predicting future events and their consequences",
+        "formula": "Subject + will + base verb + , which + will + base verb",
+        "examples": [
+          "The company <b>will launch</b> a new product, which <b>will change</b> the market."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "During the", "clickable": false },
+        { "id": "s2", "text": "festival, the", "clickable": false },
+        { "id": "s3", "text": "main stage", "clickable": false },
+        { "id": "s4", "text": "will be", "clickable": true, "isError": false },
+        { "id": "s5", "text": "decorating with", "clickable": true, "isError": true, "correctAnswers": ["decorated with"] },
+        { "id": "s6", "text": "LED lights.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with the Passive Voice. The stage receives the action, so the future passive 'will be decorated' is required, not the active 'will be decorating'.",
+        "topic": "Future Continuous + Passive Voice",
+        "concept": "Future actions in the passive voice",
+        "formula": "Subject + will be + past participle + by/with + agent",
+        "examples": [
+          "The house <b>will be painted</b> next week."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "By the time the food delivery arrives, I _____ starving, so I might regret _____ so much."
+      },
+      "options": {
+        "A": { "text": "will be / ordering", "correct": true },
+        "B": { "text": "will have been / to order", "correct": false },
+        "C": { "text": "am / to order", "correct": false },
+        "D": { "text": "will be / to order", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Simple tense with a gerund verb pattern. 'Will be' describes a future state, and 'regret' is followed by a gerund ('ordering') when referring to a past action that one feels sorry about.",
+        "topic": "Future Simple + Gerunds",
+        "concept": "Future states and verbs followed by gerunds",
+        "formula": "Subject + will be + adjective; regret + verb-ing",
+        "examples": [
+          "I <b>will be</b> tired, so I might regret <b>staying</b> up late."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I will buy", "clickable": true, "isError": false },
+        { "id": "s2", "text": "a little", "clickable": true, "isError": true, "correctAnswers": ["a few"] },
+        { "id": "s3", "text": "new plants,", "clickable": false },
+        { "id": "s4", "text": "because there", "clickable": false },
+        { "id": "s5", "text": "aren't much", "clickable": true, "isError": true, "correctAnswers": ["isn't much"] },
+        { "id": "s6", "text": "light in", "clickable": false },
+        { "id": "s7", "text": "my room.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Simple tense with quantifiers. 'A few' is used with countable plural nouns ('plants'), and 'isn't much' is used with uncountable nouns ('light').",
+        "topic": "Future Simple + Quantifiers",
+        "concept": "Correct quantifier usage with countable and uncountable nouns",
+        "formula": "Subject + will + base verb + a few + countable noun; there + isn't much + uncountable noun",
+        "examples": [
+          "I will buy <b>a few</b> books because there <b>isn't much</b> space."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "If I adopt a rescue dog, I _____ taking it to the park every morning."
+      },
+      "options": {
+        "A": { "text": "will be", "correct": true },
+        "B": { "text": "am", "correct": false },
+        "C": { "text": "will have been", "correct": false },
+        "D": { "text": "would be", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the First Conditional with the Future Continuous tense. The 'if' clause uses the present simple, and the main clause uses 'will be' + verb-ing to describe a habitual future action.",
+        "topic": "Future Continuous + First Conditional",
+        "concept": "Predicting habitual future actions based on a condition",
+        "formula": "If + subject + present simple, subject + will be + verb-ing",
+        "examples": [
+          "If I get the job, I <b>will be working</b> from home."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Once the sale", "clickable": false },
+        { "id": "s2", "text": "will start,", "clickable": true, "isError": true, "correctAnswers": ["starts,"] },
+        { "id": "s3", "text": "I will have", "clickable": true, "isError": false },
+        { "id": "s4", "text": "saved enough", "clickable": true, "isError": false },
+        { "id": "s5", "text": "money to", "clickable": false },
+        { "id": "s6", "text": "buy the", "clickable": false },
+        { "id": "s7", "text": "sneakers.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect tense with a time clause. In future time clauses introduced by 'once', 'when', or 'by the time', we use the present simple ('starts'), not the future simple ('will start').",
+        "topic": "Future Perfect + Time Clauses",
+        "concept": "Present simple in future time clauses",
+        "formula": "Once/When/By the time + subject + present simple, subject + will have + past participle",
+        "examples": [
+          "When she <b>arrives</b>, we will have finished dinner."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "By the end of the month, I _____ my workout streak for 30 days, so I _____ a reward."
+      },
+      "options": {
+        "A": { "text": "will maintain / will claim", "correct": false },
+        "B": { "text": "will have maintained / will claim", "correct": true },
+        "C": { "text": "will be maintaining / claim", "correct": false },
+        "D": { "text": "maintain / will have claimed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense with the Future Simple tense. 'Will have maintained' shows an action completed before a future time, and 'will claim' predicts the subsequent future action.",
+        "topic": "Future Perfect + Future Simple",
+        "concept": "Completed future actions leading to subsequent future actions",
+        "formula": "By + future time, subject + will have + past participle, so + subject + will + base verb",
+        "examples": [
+          "By Friday, I <b>will have finished</b> the report, so I <b>will take</b> a break."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The new podcast", "clickable": false },
+        { "id": "s2", "text": "episodes releases", "clickable": true, "isError": true, "correctAnswers": ["episodes will be released"] },
+        { "id": "s3", "text": "next week, and", "clickable": false },
+        { "id": "s4", "text": "the host are", "clickable": true, "isError": true, "correctAnswers": ["the host is"] },
+        { "id": "s5", "text": "going to interview", "clickable": true, "isError": false },
+        { "id": "s6", "text": "famous creators.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Passive voice with subject-verb agreement. 'Episodes' is plural and receives the action, requiring 'will be released'. 'Host' is singular, requiring 'is going to'.",
+        "topic": "Future Passive + Subject-Verb Agreement",
+        "concept": "Future passive constructions and singular/plural agreement",
+        "formula": "Plural subject + will be + past participle; Singular subject + is + going to + base verb",
+        "examples": [
+          "The letters <b>will be sent</b> tomorrow, and the manager <b>is</b> going to call."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "This time next summer, we _____ across the country, _____ in national parks."
+      },
+      "options": {
+        "A": { "text": "will drive / stay", "correct": false },
+        "B": { "text": "will be driving / staying", "correct": true },
+        "C": { "text": "will have driven / staying", "correct": false },
+        "D": { "text": "are driving / will stay", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with a present participle clause. 'Will be driving' describes an action in progress at a specific future time, and 'staying' provides additional simultaneous information.",
+        "topic": "Future Continuous + Participle Clauses",
+        "concept": "Actions in progress at a specific future time with additional context",
+        "formula": "This time + future, subject + will be + verb-ing, + verb-ing + prepositional phrase",
+        "examples": [
+          "This time tomorrow, I <b>will be flying</b>, <b>reading</b> a book."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The team", "clickable": false },
+        { "id": "s2", "text": "must will", "clickable": true, "isError": true, "correctAnswers": ["will"] },
+        { "id": "s3", "text": "win the", "clickable": true, "isError": false },
+        { "id": "s4", "text": "championship if", "clickable": false },
+        { "id": "s5", "text": "they practice", "clickable": true, "isError": false },
+        { "id": "s6", "text": "hard.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Simple tense with modal verbs and conditionals. Two modal verbs ('must' and 'will') cannot be used together. 'Will' is the correct choice for a First Conditional prediction.",
+        "topic": "Future Simple + Modal Verbs + Conditionals",
+        "concept": "Correct modal usage in future conditional sentences",
+        "formula": "Subject + will + base verb + if + subject + present simple",
+        "examples": [
+          "We <b>will</b> succeed if we try hard."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "To ace the exam, I _____ all night, so I _____ to drink a lot of coffee."
+      },
+      "options": {
+        "A": { "text": "will study / will go", "correct": false },
+        "B": { "text": "will be studying / am going", "correct": true },
+        "C": { "text": "will have studied / go", "correct": false },
+        "D": { "text": "study / will be going", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with the 'be going to' future form. 'Will be studying' emphasizes the duration of the future action, and 'am going' expresses a planned intention.",
+        "topic": "Future Continuous + Future 'Going to'",
+        "concept": "Emphasizing future duration and planned intentions",
+        "formula": "Subject + will be + verb-ing, so + subject + am/is/are + going + to-infinitive",
+        "examples": [
+          "I <b>will be working</b> late, so I <b>am going</b> to order dinner."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Tomorrow at noon,", "clickable": false },
+        { "id": "s2", "text": "I will be", "clickable": false },
+        { "id": "s3", "text": "to make a", "clickable": true, "isError": true, "correctAnswers": ["making a"] },
+        { "id": "s4", "text": "scrapbook, so", "clickable": false },
+        { "id": "s5", "text": "I will avoid", "clickable": true, "isError": false },
+        { "id": "s6", "text": "to be disturbed.", "clickable": true, "isError": true, "correctAnswers": ["being disturbed."] }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with gerund verb patterns. 'Will be' must be followed by a present participle ('making'). 'Avoid' is always followed by a gerund ('being').",
+        "topic": "Future Continuous + Gerunds",
+        "concept": "Future actions in progress and verbs followed by gerunds",
+        "formula": "Subject + will be + verb-ing; avoid + verb-ing",
+        "examples": [
+          "I <b>will be sleeping</b>, so I will avoid <b>being</b> woken up."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "By the time the photography exhibition opens, all the photos _____ by a professional."
+      },
+      "options": {
+        "A": { "text": "will edit", "correct": false },
+        "B": { "text": "will have been edited", "correct": true },
+        "C": { "text": "are going to edit", "correct": false },
+        "D": { "text": "will be editing", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense with the Passive Voice. The action will be completed before a specific future time ('By the time... opens'), and the subject receives the action.",
+        "topic": "Future Perfect + Passive Voice",
+        "concept": "Completed future actions in the passive voice",
+        "formula": "By the time + present simple, subject + will have been + past participle",
+        "examples": [
+          "By tomorrow, the house <b>will have been cleaned</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The sneakers who", "clickable": true, "isError": true, "correctAnswers": ["sneakers that"] },
+        { "id": "s2", "text": "I am going", "clickable": true, "isError": false },
+        { "id": "s3", "text": "to buy", "clickable": false },
+        { "id": "s4", "text": "tomorrow will", "clickable": false },
+        { "id": "s5", "text": "costs a", "clickable": true, "isError": true, "correctAnswers": ["cost a"] },
+        { "id": "s6", "text": "fortune.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the 'be going to' future form with a relative clause. 'That' or 'which' must be used for objects ('sneakers'), not 'who'. After 'will', the base form of the verb ('cost') is required.",
+        "topic": "Future 'Going to' + Relative Clauses",
+        "concept": "Relative pronouns for objects and base verbs after modals",
+        "formula": "Noun (object) + that/which + subject + am/is/are + going to + base verb, will + base verb",
+        "examples": [
+          "The book <b>that</b> I <b>am going to</b> read <b>will take</b> hours."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "By the end of this project, I _____ on it for six months, so I _____ a long vacation."
+      },
+      "options": {
+        "A": { "text": "will work / will take", "correct": false },
+        "B": { "text": "will have been working / will take", "correct": true },
+        "C": { "text": "will be working / take", "correct": false },
+        "D": { "text": "have worked / will be taking", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with the Future Simple tense. 'Will have been working' emphasizes the duration of an action up to a future point, leading to a future decision ('will take').",
+        "topic": "Future Perfect Continuous + Future Simple",
+        "concept": "Duration up to a future point leading to a future action",
+        "formula": "By + future time, subject + will have been + verb-ing, so + subject + will + base verb",
+        "examples": [
+          "By December, I <b>will have been saving</b> for a year, so I <b>will buy</b> a car."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I will order", "clickable": true, "isError": false },
+        { "id": "s2", "text": "a few water", "clickable": true, "isError": true, "correctAnswers": ["some water"] },
+        { "id": "s3", "text": "with my coffee,", "clickable": false },
+        { "id": "s4", "text": "because I", "clickable": false },
+        { "id": "s5", "text": "don't have many", "clickable": true, "isError": true, "correctAnswers": ["don't have much"] },
+        { "id": "s6", "text": "thirst.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Simple tense with quantifiers. 'Some' is used with uncountable nouns ('water'), and 'much' is used with uncountable nouns in negative sentences ('thirst').",
+        "topic": "Future Simple + Quantifiers",
+        "concept": "Correct quantifier usage with uncountable nouns",
+        "formula": "Subject + will + base verb + some + uncountable noun; don't have much + uncountable noun",
+        "examples": [
+          "I will buy <b>some</b> bread because I don't have <b>much</b> time."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "While you _____ the next episode, I _____ the snacks."
+      },
+      "options": {
+        "A": { "text": "will watch / will prepare", "correct": false },
+        "B": { "text": "are watching / will be preparing", "correct": true },
+        "C": { "text": "watch / will have prepared", "correct": false },
+        "D": { "text": "will be watching / prepare", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with a present continuous time clause. 'While' + present continuous sets the background action, and 'will be preparing' describes another action in progress simultaneously.",
+        "topic": "Future Continuous + Time Clauses",
+        "concept": "Parallel actions in progress at a specific future time",
+        "formula": "While + subject + present continuous, subject + will be + verb-ing",
+        "examples": [
+          "While you <b>are sleeping</b>, I <b>will be cleaning</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By next year,", "clickable": false },
+        { "id": "s2", "text": "the company expects", "clickable": true, "isError": false },
+        { "id": "s3", "text": "releasing a new", "clickable": true, "isError": true, "correctAnswers": ["to release a new"] },
+        { "id": "s4", "text": "phone that will", "clickable": false },
+        { "id": "s5", "text": "have change the", "clickable": true, "isError": true, "correctAnswers": ["have changed the"] },
+        { "id": "s6", "text": "market.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect tense with verb patterns. 'Expect' is followed by a to-infinitive ('to release'). The Future Perfect requires 'have' + past participle ('changed').",
+        "topic": "Future Perfect + Verb Patterns",
+        "concept": "Verbs followed by to-infinitives and past participles in perfect tenses",
+        "formula": "Subject + expects + to + base verb + that + will have + past participle",
+        "examples": [
+          "He expects <b>to finish</b> the project that will have <b>improved</b> sales."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "I _____ my old clothes to a thrift store tomorrow, because I enjoy _____ them a second life."
+      },
+      "options": {
+        "A": { "text": "will donate / giving", "correct": true },
+        "B": { "text": "will be donating / to give", "correct": false },
+        "C": { "text": "donate / giving", "correct": false },
+        "D": { "text": "will have donated / to give", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Simple tense with a gerund verb pattern. 'Will donate' expresses a future decision or promise, and 'enjoy' is always followed by a gerund ('giving').",
+        "topic": "Future Simple + Gerunds",
+        "concept": "Future decisions and verbs followed by gerunds",
+        "formula": "Subject + will + base verb; enjoy + verb-ing",
+        "examples": [
+          "I <b>will visit</b> my grandma because I enjoy <b>spending</b> time with her."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By the end", "clickable": false },
+        { "id": "s2", "text": "of the month,", "clickable": false },
+        { "id": "s3", "text": "the viral video", "clickable": true, "isError": false },
+        { "id": "s4", "text": "will have being", "clickable": true, "isError": true, "correctAnswers": ["will have been"] },
+        { "id": "s5", "text": "watched by millions", "clickable": true, "isError": false },
+        { "id": "s6", "text": "of users.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect tense with the Passive Voice. The correct structure is 'will have been' + past participle, not 'will have being'.",
+        "topic": "Future Perfect + Passive Voice",
+        "concept": "Correct formation of the future perfect passive",
+        "formula": "By + future time, subject + will have been + past participle + by + agent",
+        "examples": [
+          "By tomorrow, the work <b>will have been</b> completed by the team."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    }
+  ]
+}

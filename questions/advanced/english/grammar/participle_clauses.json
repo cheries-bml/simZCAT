@@ -1,0 +1,886 @@
+{
+  "meta": {
+    "title": "Advanced English Grammar Test (C1-C2) - Movies, Series, and Anime",
+    "description": "A comprehensive test covering English Participle Clauses themed around Movies, Series, and Anime, combining at least two advanced concepts per question.",
+    "info": "This test includes 30 questions focusing on combined C1-C2 level grammar structures, primarily featuring Participle Clauses paired with other complex topics like inversion, subjunctive mood, conditionals, and more.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "Having watched the entire series in one sitting, rarely _____ such a compelling plot twist."
+      },
+      "options": {
+        "A": { "text": "the audience has witnessed", "correct": false },
+        "B": { "text": "have I witnessed", "correct": true },
+        "C": { "text": "I have witnessed", "correct": false },
+        "D": { "text": "witnessed the audience", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect participle clause ('Having watched') with negative adverbial inversion. 'Rarely' at the beginning of the main clause triggers subject-auxiliary inversion ('have I witnessed').",
+        "topic": "Participle Clauses + Inversion",
+        "concept": "Perfect participle followed by negative adverbial inversion",
+        "formula": "Having + past participle, rarely + auxiliary + subject + past participle",
+        "examples": [
+          "Having seen the show, never <b>have I been</b> so moved."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Demanding that the director", "clickable": false },
+        { "id": "s2", "text": "cuts", "clickable": true, "isError": true, "correctAnswers": ["cut"] },
+        { "id": "s3", "text": " the controversial scene, the producer,", "clickable": false },
+        { "id": "s4", "text": "having reviewed", "clickable": true, "isError": false },
+        { "id": "s5", "text": " the footage, insisted it", "clickable": false },
+        { "id": "s6", "text": "is", "clickable": true, "isError": true, "correctAnswers": ["be"] },
+        { "id": "s7", "text": " removed immediately.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a present participle clause ('Demanding') with the mandative subjunctive. After 'demanding that', the verb must be in the base form ('cut'), and 'insisted it be' requires the base form 'be' for the subjunctive mood.",
+        "topic": "Participle Clauses + Subjunctive Mood",
+        "concept": "Present participle introducing a mandative subjunctive clause",
+        "formula": "Demanding that + subject + base verb, having + past participle, insisted + subject + base verb",
+        "examples": [
+          "<b>Demanding</b> that the band <b>rehearse</b>, the manager, <b>having arrived</b> early, insisted it <b>be</b> perfect."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Had the studio not intervened, the anime, having been adapted faithfully, _____ a commercial failure."
+      },
+      "options": {
+        "A": { "text": "would be", "correct": false },
+        "B": { "text": "will have been", "correct": false },
+        "C": { "text": "would have been", "correct": true },
+        "D": { "text": "had been", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect passive participle clause ('having been adapted') with a third conditional inversion ('Had the studio not intervened'), requiring 'would have been' in the main clause.",
+        "topic": "Participle Clauses + Conditional Inversion",
+        "concept": "Perfect passive participle embedded in a third conditional",
+        "formula": "Had + subject + not + past participle, noun, having been + past participle, would have + past participle",
+        "examples": [
+          "Had they not helped, the project, <b>having been</b> delayed, <b>would have failed</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "It were", "clickable": true, "isError": true, "correctAnswers": ["It was"] },
+        { "id": "s2", "text": " the cinematographer, having", "clickable": false },
+        { "id": "s3", "text": "capture", "clickable": true, "isError": true, "correctAnswers": ["captured"] },
+        { "id": "s4", "text": " the perfect shot, who", "clickable": false },
+        { "id": "s5", "text": "deserve", "clickable": true, "isError": true, "correctAnswers": ["deserves"] },
+        { "id": "s6", "text": " the award.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an it-cleft sentence with a perfect participle clause. 'It was' is required for singular emphasis. 'Having captured' is the correct perfect participle form. The relative pronoun 'who' refers to the singular 'cinematographer', requiring 'deserves'.",
+        "topic": "Participle Clauses + Cleft Sentences",
+        "concept": "Perfect participle within a cleft sentence structure",
+        "formula": "It + was + singular noun, having + past participle, who + singular verb",
+        "examples": [
+          "<b>It was</b> the artist, <b>having painted</b> the mural, who <b>deserves</b> the award."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "Believed to have been inspired by a true story, the film, recently discovered, _____ by critics."
+      },
+      "options": {
+        "A": { "text": "is currently being analyzed", "correct": true },
+        "B": { "text": "has currently analyzed", "correct": false },
+        "C": { "text": "is currently analyzing", "correct": false },
+        "D": { "text": "was currently analyzed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect passive participle clause ('Believed to have been inspired') with a present continuous passive structure ('is currently being analyzed') in the main clause.",
+        "topic": "Participle Clauses + Advanced Passive Structures",
+        "concept": "Perfect passive participle followed by present continuous passive",
+        "formula": "Believed to have been + past participle, noun, is/are + currently + being + past participle",
+        "examples": [
+          "<b>Thought to have been lost</b>, the artifact <b>is being examined</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By next year, having been", "clickable": false },
+        { "id": "s2", "text": "film", "clickable": true, "isError": true, "correctAnswers": ["filming"] },
+        { "id": "s3", "text": " for a decade, the cast", "clickable": false },
+        { "id": "s4", "text": "will be performing", "clickable": true, "isError": true, "correctAnswers": ["will have been performing"] },
+        { "id": "s5", "text": " their final scenes.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a perfect participle clause ('having been filming') with the future perfect continuous tense ('will have been performing') to emphasize duration up to a future point.",
+        "topic": "Participle Clauses + Future Perfect Continuous",
+        "concept": "Perfect participle indicating duration leading to future perfect continuous",
+        "formula": "By + future time, having been + verb-ing, subject + will have been + verb-ing",
+        "examples": [
+          "By 2025, <b>having been working</b> here for ten years, she <b>will have been managing</b> the team."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modal verb to complete the sentence.",
+        "question": "Having heard the raw audio, the sound engineer _____ impressed by the actor's exceptional range."
+      },
+      "options": {
+        "A": { "text": "must have been", "correct": true },
+        "B": { "text": "should be", "correct": false },
+        "C": { "text": "can't have been", "correct": false },
+        "D": { "text": "must be", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect participle clause ('Having heard') with a modal verb of deduction about the past ('must have been').",
+        "topic": "Participle Clauses + Modal Verbs of Deduction",
+        "concept": "Perfect participle leading to a past logical deduction",
+        "formula": "Having + past participle, subject + must have + been + adjective",
+        "examples": [
+          "<b>Having seen</b> the results, he <b>must have been</b> relieved."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The director, whose latest film", "clickable": false },
+        { "id": "s2", "text": "having been received", "clickable": true, "isError": true, "correctAnswers": ["having received"] },
+        { "id": "s3", "text": " critical acclaim, is", "clickable": false },
+        { "id": "s4", "text": "planning a sequel.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a non-defining relative clause with a perfect participle clause. 'Film' is the subject of the active action of receiving acclaim, requiring the active perfect participle 'having received', not the passive 'having been received'.",
+        "topic": "Participle Clauses + Relative Clauses",
+        "concept": "Perfect participle within relative clauses",
+        "formula": "Noun, whose + noun, having + past participle + object, + main verb",
+        "examples": [
+          "The author, whose book, <b>having sold</b> millions, is a bestseller."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Having decided _____ a career in animation, the artist avoided _____ her previous failures."
+      },
+      "options": {
+        "A": { "text": "to pursue / mentioning", "correct": true },
+        "B": { "text": "pursuing / to mention", "correct": false },
+        "C": { "text": "to pursue / to mention", "correct": false },
+        "D": { "text": "pursuing / mentioning", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect participle clause ('Having decided') with specific verb patterns. 'Decide' takes a to-infinitive ('to pursue'), and 'avoid' takes a gerund ('mentioning').",
+        "topic": "Participle Clauses + Gerunds vs. Infinitives",
+        "concept": "Perfect participle followed by specific verb patterns",
+        "formula": "Having decided + to-infinitive, subject + avoided + gerund",
+        "examples": [
+          "<b>Having chosen</b> <b>to leave</b>, she avoided <b>discussing</b> it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Although considering", "clickable": true, "isError": true, "correctAnswers": ["Although considered"] },
+        { "id": "s2", "text": " a cinematic masterpiece, the movie,", "clickable": false },
+        { "id": "s3", "text": "having been damaged", "clickable": true, "isError": false },
+        { "id": "s4", "text": " in the studio fire, requires", "clickable": false },
+        { "id": "s5", "text": "extensive restoration.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an elliptical adverbial clause with a perfect passive participle clause. 'Although considered' is the correct passive ellipsis (Although it is considered).",
+        "topic": "Participle Clauses + Ellipsis",
+        "concept": "Elliptical passive constructions with participle clauses",
+        "formula": "Although + past participle, noun, having been + past participle, + verb",
+        "examples": [
+          "<b>Although praised</b> by critics, the film, <b>having been</b> poorly marketed, failed."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct discourse marker to complete the sentence.",
+        "question": "Having faced numerous production delays, the series, _____, managed to secure a renewal."
+      },
+      "options": {
+        "A": { "text": "therefore", "correct": false },
+        "B": { "text": "nevertheless", "correct": true },
+        "C": { "text": "furthermore", "correct": false },
+        "D": { "text": "consequently", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect participle clause ('Having faced') with a contrastive discourse marker ('nevertheless') to show opposition to the expected outcome.",
+        "topic": "Participle Clauses + Discourse Markers",
+        "concept": "Perfect participle with contrastive discourse markers",
+        "formula": "Having + past participle + object, subject, nevertheless, + verb",
+        "examples": [
+          "<b>Having lost</b> funding, the project, <b>nevertheless</b>, continued."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The more the audience watched,", "clickable": false },
+        { "id": "s2", "text": "the more better", "clickable": true, "isError": true, "correctAnswers": ["the better"] },
+        { "id": "s3", "text": " the anime became,", "clickable": false },
+        { "id": "s4", "text": "having dedicated", "clickable": true, "isError": false },
+        { "id": "s5", "text": " immense effort to its animation.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a double comparative structure with a perfect participle clause. 'Better' is already comparative, so 'more' is incorrect.",
+        "topic": "Participle Clauses + Advanced Comparatives",
+        "concept": "Double comparatives followed by perfect participle clauses",
+        "formula": "The + comparative + subject + verb, the + comparative + subject + verb, having + past participle",
+        "examples": [
+          "<b>The harder</b> he trained, <b>the faster</b> he ran, <b>having focused</b> on his technique."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "What astonished the critics, _____ the premiere, was the sheer originality of the screenplay."
+      },
+      "options": {
+        "A": { "text": "having attended", "correct": true },
+        "B": { "text": "having been attended", "correct": false },
+        "C": { "text": "attending", "correct": false },
+        "D": { "text": "to have attended", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a noun clause acting as the subject ('What astonished the critics') with a perfect active participle clause ('having attended') modifying 'the critics'.",
+        "topic": "Participle Clauses + Noun Clauses",
+        "concept": "Perfect participle modifying the subject of a noun clause",
+        "formula": "What + verb + object, having + past participle + object, was + noun phrase",
+        "examples": [
+          "What surprised the guests, <b>having arrived</b> early, was the decoration."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The producer suggested to have", "clickable": true, "isError": true, "correctAnswers": ["suggested having"] },
+        { "id": "s2", "text": " the soundtrack remixed,", "clickable": false },
+        { "id": "s3", "text": "having realized", "clickable": true, "isError": false },
+        { "id": "s4", "text": " its commercial potential.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a perfect participle clause ('having realized') with a verb pattern. 'Suggest' must be followed by a gerund ('having'), not a to-infinitive.",
+        "topic": "Participle Clauses + Verb Patterns",
+        "concept": "Perfect participle following a gerund verb pattern",
+        "formula": "Subject + suggested + having + object + past participle, having + past participle",
+        "examples": [
+          "He <b>suggested going</b> out, <b>having finished</b> his work."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "Having run out of ideas, the showrunner decided to _____ the release date until further notice."
+      },
+      "options": {
+        "A": { "text": "put off", "correct": true },
+        "B": { "text": "put up", "correct": false },
+        "C": { "text": "put away", "correct": false },
+        "D": { "text": "put down", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect participle clause ('Having run out') with a separable phrasal verb ('put off', meaning to postpone).",
+        "topic": "Participle Clauses + Phrasal Verbs",
+        "concept": "Perfect participle followed by phrasal verb usage",
+        "formula": "Having run out of + noun, subject + decided to + phrasal verb + object",
+        "examples": [
+          "<b>Having run out</b> of time, we decided to <b>call off</b> the meeting."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Having been oblivious for", "clickable": true, "isError": true, "correctAnswers": ["oblivious to"] },
+        { "id": "s2", "text": " the emerging trend, the director", "clickable": false },
+        { "id": "s3", "text": "remained faithful to", "clickable": true, "isError": false },
+        { "id": "s4", "text": " his unique style.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a perfect passive participle clause ('Having been oblivious') with an adjective + preposition collocation. 'Oblivious' is followed by 'to', not 'for'.",
+        "topic": "Participle Clauses + Prepositions after Adjectives",
+        "concept": "Perfect participle with specific adjective-preposition collocations",
+        "formula": "Having been + adjective + to + noun, subject + verb",
+        "examples": [
+          "<b>Having been</b> <b>accustomed to</b> the noise, he slept soundly."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct article to complete the sentence.",
+        "question": "Having composed _____ unique melody for the soundtrack, the musician was widely praised by his peers."
+      },
+      "options": {
+        "A": { "text": "an", "correct": false },
+        "B": { "text": "a", "correct": true },
+        "C": { "text": "the", "correct": false },
+        "D": { "text": "no article", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect participle clause ('Having composed') with article usage. 'Unique' starts with a consonant sound (/j/), so it correctly takes the indefinite article 'a'.",
+        "topic": "Participle Clauses + Articles",
+        "concept": "Perfect participle followed by indefinite article before a consonant sound",
+        "formula": "Having + past participle + a + word starting with /j/ sound",
+        "examples": [
+          "<b>Having built</b> <b>a</b> unique structure, the architect won an award."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Having reviewed the scripts,", "clickable": false },
+        { "id": "s2", "text": "little of which", "clickable": true, "isError": true, "correctAnswers": ["few of which"] },
+        { "id": "s3", "text": " were promising, the network", "clickable": false },
+        { "id": "s4", "text": "decided to cancel", "clickable": true, "isError": false },
+        { "id": "s5", "text": " the show.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a perfect participle clause ('Having reviewed') with a quantifier in a relative clause. 'Scripts' is countable and plural, requiring 'few of which', not 'little of which'.",
+        "topic": "Participle Clauses + Quantifiers",
+        "concept": "Perfect participle followed by countable quantifiers in relative clauses",
+        "formula": "Having reviewed + plural countable noun, few of which + plural verb",
+        "examples": [
+          "<b>Having read</b> the books, <b>few of which</b> were interesting, he stopped."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to ensure subject-verb agreement.",
+        "question": "The number of episodes, having been reduced by the network, _____ decreased, while a number of plotlines _____ unresolved."
+      },
+      "options": {
+        "A": { "text": "has / remain", "correct": true },
+        "B": { "text": "have / remains", "correct": false },
+        "C": { "text": "has / remains", "correct": false },
+        "D": { "text": "have / remain", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect passive participle clause ('having been reduced') with subject-verb agreement rules. 'The number of' takes a singular verb ('has'), while 'a number of' takes a plural verb ('remain').",
+        "topic": "Participle Clauses + Subject-Verb Agreement",
+        "concept": "Perfect participle interrupting 'the number of' vs. 'a number of'",
+        "formula": "The number of + noun, having been + past participle, has + verb; a number of + noun + plural verb",
+        "examples": [
+          "<b>The number of</b> errors, <b>having been</b> noted, <b>has</b> dropped, while <b>a number of</b> issues <b>remain</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If only the studio has", "clickable": true, "isError": true, "correctAnswers": ["If only the studio had"] },
+        { "id": "s2", "text": " invested more in CGI, the film,", "clickable": false },
+        { "id": "s3", "text": "having relied", "clickable": true, "isError": false },
+        { "id": "s4", "text": " heavily on practical effects, would", "clickable": false },
+        { "id": "s5", "text": "have looked better.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a perfect participle clause ('having relied') with 'If only' for past regret, which requires the past perfect ('had invested').",
+        "topic": "Participle Clauses + Wish / If Only",
+        "concept": "Perfect participle embedded in a past regret structure",
+        "formula": "If only + subject + had + past participle, having + past participle, subject + would have + past participle",
+        "examples": [
+          "<b>If only</b> I <b>had studied</b>, <b>having understood</b> the material, I <b>would have passed</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "Having wasted enough time on minor details, it is high time the producers _____ the film."
+      },
+      "options": {
+        "A": { "text": "releases", "correct": false },
+        "B": { "text": "released", "correct": true },
+        "C": { "text": "will release", "correct": false },
+        "D": { "text": "has released", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect participle clause ('Having wasted') with the 'it's high time' structure, which requires the past subjunctive ('released') to indicate present urgency.",
+        "topic": "Participle Clauses + It's High Time",
+        "concept": "Perfect participle leading to 'it's high time' + past simple",
+        "formula": "Having + past participle + object, it is high time + subject + past simple",
+        "examples": [
+          "<b>Having waited</b> long enough, it is high time we <b>left</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The lead actor, having studied", "clickable": false },
+        { "id": "s2", "text": "the character deeply, behaves as though", "clickable": false },
+        { "id": "s3", "text": "he composes", "clickable": true, "isError": true, "correctAnswers": ["he composed"] },
+        { "id": "s4", "text": " the dialogue himself.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a perfect participle clause ('having studied') with 'as though' + past subjunctive ('composed') to describe an unreal or hypothetical present situation.",
+        "topic": "Participle Clauses + As Though / As If",
+        "concept": "Perfect participle followed by unreal comparison",
+        "formula": "Noun, having + past participle + object, behaves as though + subject + past simple",
+        "examples": [
+          "The actor, <b>having memorized</b> the lines, acts as though he <b>wrote</b> the script."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the inverted sentence.",
+        "question": "So captivating was the performance, _____ for months, that the audience gave a standing ovation."
+      },
+      "options": {
+        "A": { "text": "having been rehearsed", "correct": true },
+        "B": { "text": "having rehearsed", "correct": false },
+        "C": { "text": "being rehearsed", "correct": false },
+        "D": { "text": "rehearsing", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines 'so + adjective' inversion ('So captivating was') with a perfect passive participle clause ('having been rehearsed') for emphasis.",
+        "topic": "Participle Clauses + So / Such Inversion",
+        "concept": "Perfect passive participle within an inverted emphatic structure",
+        "formula": "So + adjective + be + subject, having been + past participle, that + clause",
+        "examples": [
+          "<b>So</b> intense <b>was</b> the storm, <b>having been</b> predicted, that roads closed."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Has the director not", "clickable": true, "isError": true, "correctAnswers": ["Had the director not"] },
+        { "id": "s2", "text": " lost his vision, the movie,", "clickable": false },
+        { "id": "s3", "text": "having been rushed", "clickable": true, "isError": false },
+        { "id": "s4", "text": " to meet the deadline, would", "clickable": false },
+        { "id": "s5", "text": "have been a success.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a perfect participle clause ('having been rushed') with third conditional inversion. The correct inversion for a past unreal condition is 'Had + subject + not + past participle'.",
+        "topic": "Participle Clauses + Conditional Inversion",
+        "concept": "Perfect participle embedded in a third conditional inversion",
+        "formula": "Had + subject + not + past participle, having + past participle, subject + would have + past participle",
+        "examples": [
+          "<b>Had</b> they <b>not</b> missed the train, <b>having left</b> late, they <b>would have arrived</b> on time."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "Not only did the writer create the universe, but having designed the characters as well, she _____ directed the pilot."
+      },
+      "options": {
+        "A": { "text": "also", "correct": true },
+        "B": { "text": "too", "correct": false },
+        "C": { "text": "as well", "correct": false },
+        "D": { "text": "either", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect participle clause ('having designed') with the correlative conjunction 'not only... but also' and inversion.",
+        "topic": "Participle Clauses + Not Only ... But Also",
+        "concept": "Perfect participle within a 'not only... but also' structure",
+        "formula": "Not only + auxiliary + subject + verb, but having + past participle + object, subject + also + verb",
+        "examples": [
+          "<b>Not only did</b> she design the dress, but <b>having sewn</b> it, she <b>also</b> modeled it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Little the creator knew,", "clickable": true, "isError": true, "correctAnswers": ["Little did the creator know,"] },
+        { "id": "s2", "text": "having signed", "clickable": true, "isError": false },
+        { "id": "s3", "text": " the contract, that he", "clickable": false },
+        { "id": "s4", "text": "would lose", "clickable": true, "isError": false },
+        { "id": "s5", "text": " the rights to his own anime.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a perfect participle clause ('having signed') with negative adverbial inversion. 'Little' at the beginning of a clause requires subject-auxiliary inversion ('did the creator know').",
+        "topic": "Participle Clauses + Little Did He Know",
+        "concept": "Perfect participle interrupting negative adverbial inversion",
+        "formula": "Little + auxiliary + subject + base verb, having + past participle, that + clause",
+        "examples": [
+          "<b>Little did</b> he <b>know</b>, <b>having agreed</b> to the terms, that he would regret it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "Under no circumstances should the unreleased episode, _____ leaked online, be distributed further."
+      },
+      "options": {
+        "A": { "text": "having been", "correct": true },
+        "B": { "text": "having", "correct": false },
+        "C": { "text": "being", "correct": false },
+        "D": { "text": "to have been", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines negative adverbial inversion ('Under no circumstances should') with a perfect passive participle clause ('having been leaked').",
+        "topic": "Participle Clauses + Under No Circumstances",
+        "concept": "Perfect passive participle within negative inversion",
+        "formula": "Under no circumstances + auxiliary + subject + verb, having been + past participle, + main verb",
+        "examples": [
+          "<b>Under no circumstances should</b> the document, <b>having been</b> classified, be shared."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Should you needing", "clickable": true, "isError": true, "correctAnswers": ["Should you need"] },
+        { "id": "s2", "text": " assistance with the subtitles,", "clickable": false },
+        { "id": "s3", "text": "having never used", "clickable": true, "isError": false },
+        { "id": "s4", "text": " this software before, please", "clickable": false },
+        { "id": "s5", "text": "contact the localization team.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a perfect participle clause ('having never used') with first conditional inversion. 'Should' must be followed by the base form of the verb ('need'), not the gerund.",
+        "topic": "Participle Clauses + Should You Need",
+        "concept": "Perfect participle following conditional inversion",
+        "formula": "Should + subject + base verb, having + past participle, imperative",
+        "examples": [
+          "<b>Should you require</b> help, <b>having never tried</b> this, please ask."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "Were I to choose a favorite scene, _____ the series multiple times, it would be the final battle."
+      },
+      "options": {
+        "A": { "text": "having watched", "correct": true },
+        "B": { "text": "having been watched", "correct": false },
+        "C": { "text": "watching", "correct": false },
+        "D": { "text": "to have watched", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines second conditional inversion ('Were I to choose') with a perfect active participle clause ('having watched').",
+        "topic": "Participle Clauses + Were I To",
+        "concept": "Perfect participle embedded in second conditional inversion",
+        "formula": "Were + subject + to + base verb, having + past participle, subject + would + base verb",
+        "examples": [
+          "<b>Were I to</b> <b>pick</b> one, <b>having seen</b> them all, it would be the red one."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Having been a fan", "clickable": false },
+        { "id": "s2", "text": "of the manga for years, she now", "clickable": false },
+        { "id": "s3", "text": "watch", "clickable": true, "isError": true, "correctAnswers": ["watches"] },
+        { "id": "s4", "text": " the anime adaptation, a transition", "clickable": false },
+        { "id": "s5", "text": "that has amazed", "clickable": true, "isError": false },
+        { "id": "s6", "text": " everyone.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a perfect participle clause ('Having been') with mixed tenses. The main clause is in the present ('now'), so the third-person singular subject 'she' requires the present simple verb 'watches'.",
+        "topic": "Participle Clauses + Mixed Tenses",
+        "concept": "Perfect participle indicating past duration leading to a present simple main clause",
+        "formula": "Having been + noun + for + time, subject + present simple verb",
+        "examples": [
+          "<b>Having lived</b> here for years, he now <b>knows</b> the city well."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    }
+  ]
+}

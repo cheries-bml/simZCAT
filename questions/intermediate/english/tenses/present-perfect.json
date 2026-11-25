@@ -1,0 +1,918 @@
+{
+  "meta": {
+    "title": "English Present Perfect Tenses Test - Gen Z Themes",
+    "description": "A comprehensive test covering English Present Perfect Tenses themed around Gen Z culture, combining at least two grammar topics per question.",
+    "info": "This test includes 30 questions focusing on combined grammar structures involving the Present Perfect tense paired with topics like relative clauses, gerunds, passive voice, conditionals, quantifiers, and more, all within familiar Gen Z contexts.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The K-pop group, which _____ three albums this year, _____ incredibly popular among Gen Z."
+      },
+      "options": {
+        "A": { "text": "has released / has become", "correct": true },
+        "B": { "text": "have released / have become", "correct": false },
+        "C": { "text": "released / became", "correct": false },
+        "D": { "text": "has released / became", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect tense with non-defining relative clauses. The singular subject 'group' requires the singular Present Perfect 'has released' and 'has become'.",
+        "topic": "Present Perfect + Relative Clauses",
+        "concept": "Subject-verb agreement in relative clauses using Present Perfect",
+        "formula": "Singular noun, which + has + past participle, + has + past participle",
+        "examples": [
+          "The band, which <b>has released</b> two singles, <b>has become</b> famous."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Several of the", "clickable": false },
+        { "id": "s2", "text": "sustainable brands", "clickable": false },
+        { "id": "s3", "text": "has launched", "clickable": true, "isError": true, "correctAnswers": ["have launched"] },
+        { "id": "s4", "text": "new collections,", "clickable": false },
+        { "id": "s5", "text": "and much", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": "of the inventory", "clickable": false },
+        { "id": "s7", "text": "have sold", "clickable": true, "isError": true, "correctAnswers": ["has sold"] },
+        { "id": "s8", "text": "out within hours.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect tense with quantifiers and subject-verb agreement. 'Several of the brands' is plural, requiring 'have launched'. 'Much of the inventory' is uncountable and singular, requiring 'has sold'.",
+        "topic": "Present Perfect + Quantifiers + Subject-Verb Agreement",
+        "concept": "Agreement with plural and uncountable quantifiers in Present Perfect",
+        "formula": "Plural quantifier + plural noun + have + past participle; Uncountable quantifier + singular noun + has + past participle",
+        "examples": [
+          "<b>Many of</b> the items <b>have sold</b> out, but <b>much of</b> the stock <b>has remained</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Since he started streaming, he _____ _____ toxic games to keep his community positive."
+      },
+      "options": {
+        "A": { "text": "has avoided / playing", "correct": true },
+        "B": { "text": "has avoided / to play", "correct": false },
+        "C": { "text": "have avoided / playing", "correct": false },
+        "D": { "text": "have avoided / to play", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect tense with gerund verb patterns. The singular subject 'he' requires 'has avoided', and the verb 'avoid' is always followed by a gerund ('playing').",
+        "topic": "Present Perfect + Gerunds",
+        "concept": "Present Perfect actions and verbs followed by gerunds",
+        "formula": "Subject + has/have + past participle + verb-ing",
+        "examples": [
+          "She <b>has avoided eating</b> sugar since last year."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The new update", "clickable": false },
+        { "id": "s2", "text": "has been blamed", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s3", "text": "by users for", "clickable": false },
+        { "id": "s4", "text": "the decline in", "clickable": false },
+        { "id": "s5", "text": "engagement, and", "clickable": false },
+        { "id": "s6", "text": "several features", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s7", "text": "have removed", "clickable": true, "isError": true, "correctAnswers": ["have been removed"] },
+        { "id": "s8", "text": "without warning.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect tense with the passive voice. The subject 'several features' receives the action, so it requires the Present Perfect passive 'have been removed', not the active 'have removed'.",
+        "topic": "Present Perfect + Passive Voice",
+        "concept": "Present Perfect passive constructions",
+        "formula": "Plural subject + have been + past participle",
+        "examples": [
+          "The posts <b>have been deleted</b> by the moderators."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct prepositions to complete the sentence.",
+        "question": "Many teenagers have become more aware _____ their mental health, and they have started talking _____ it openly."
+      },
+      "options": {
+        "A": { "text": "of / about", "correct": true },
+        "B": { "text": "about / of", "correct": false },
+        "C": { "text": "on / about", "correct": false },
+        "D": { "text": "of / on", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect tense with adjective and verb preposition collocations. 'Aware' is followed by 'of', and 'talking' (in this context) is followed by 'about'.",
+        "topic": "Present Perfect + Prepositions",
+        "concept": "Correct preposition usage after specific adjectives and verbs",
+        "formula": "Have/has become aware of + noun; have/has started talking about + noun",
+        "examples": [
+          "They have become aware <b>of</b> the issue and are talking <b>about</b> it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If I have", "clickable": false },
+        { "id": "s2", "text": "finished my", "clickable": false },
+        { "id": "s3", "text": "online classes", "clickable": false },
+        { "id": "s4", "text": "early, I", "clickable": false },
+        { "id": "s5", "text": "will have joined", "clickable": true, "isError": true, "correctAnswers": ["would have joined"] },
+        { "id": "s6", "text": "the virtual study", "clickable": false },
+        { "id": "s7", "text": "group, but I", "clickable": false },
+        { "id": "s8", "text": "haven't had the", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s9", "text": "time to focus.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect in a time/condition clause with a Third Conditional main clause. The hypothetical past result requires 'would have joined', while 'haven't had' correctly uses the Present Perfect to describe a past-to-present lack of time.",
+        "topic": "Present Perfect + Conditionals",
+        "concept": "Mixing Present Perfect facts with hypothetical past conditionals",
+        "formula": "If + subject + present perfect, subject + would have + past participle",
+        "examples": [
+          "If I <b>have finished</b> my work, I <b>would have gone</b> out (Note: Standard mixed conditional logic applies here for hypothetical past results)."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct conjunction to complete the sentence.",
+        "question": "_____ the anime has received mixed reviews, it has still managed to build a massive fanbase online."
+      },
+      "options": {
+        "A": { "text": "Although", "correct": true },
+        "B": { "text": "Because", "correct": false },
+        "C": { "text": "Since", "correct": false },
+        "D": { "text": "Unless", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect tense with concessive conjunctions. 'Although' introduces a contrast between the mixed reviews and the massive fanbase, both described using the Present Perfect.",
+        "topic": "Present Perfect + Conjunctions",
+        "concept": "Using concessive conjunctions with Present Perfect clauses",
+        "formula": "Although + subject + has/have + past participle, subject + has/have + past participle",
+        "examples": [
+          "<b>Although</b> it <b>has rained</b>, we <b>have enjoyed</b> the trip."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The digital artist", "clickable": false },
+        { "id": "s2", "text": "has created", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s3", "text": "more better", "clickable": true, "isError": true, "correctAnswers": ["better"] },
+        { "id": "s4", "text": "illustrations this year", "clickable": false },
+        { "id": "s5", "text": "than last year,", "clickable": false },
+        { "id": "s6", "text": "making her portfolio", "clickable": false },
+        { "id": "s7", "text": "much more impressive.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect tense with advanced comparatives. 'Better' is already the comparative form of 'good', so 'more' is redundant and must be removed.",
+        "topic": "Present Perfect + Advanced Comparatives",
+        "concept": "Correct comparative forms in Present Perfect sentences",
+        "formula": "Subject + has/have + past participle + better + noun",
+        "examples": [
+          "She <b>has drawn</b> <b>better</b> sketches this month."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modal and verb forms to complete the sentence.",
+        "question": "You _____ seen the new crypto regulations; they _____ been implemented just last week."
+      },
+      "options": {
+        "A": { "text": "must have / have", "correct": true },
+        "B": { "text": "should have / has", "correct": false },
+        "C": { "text": "can't have / have", "correct": false },
+        "D": { "text": "must have / has", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect with modal verbs of deduction. 'Must have' expresses a strong logical deduction about the past, and 'they' (plural) requires 'have' in the Present Perfect passive.",
+        "topic": "Present Perfect + Modal Verbs",
+        "concept": "Modal perfect for deduction and Present Perfect passive agreement",
+        "formula": "Subject + must have + past participle; plural subject + have + been + past participle",
+        "examples": [
+          "You <b>must have seen</b> the news; it <b>has been</b> reported everywhere."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Since we have", "clickable": false },
+        { "id": "s2", "text": "bought the van,", "clickable": false },
+        { "id": "s3", "text": "we have traveled", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s4", "text": "to over twenty", "clickable": false },
+        { "id": "s5", "text": "national parks,", "clickable": false },
+        { "id": "s6", "text": "and we never", "clickable": true, "isError": true, "correctAnswers": ["and we have"] },
+        { "id": "s7", "text": "have regretted it.", "clickable": true, "isError": true, "correctAnswers": ["never regretted it."] }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect tense with time clauses. 'Since' triggers the Present Perfect. The word order for the adverb 'never' in the Present Perfect is between the auxiliary 'have' and the past participle 'regretted'.",
+        "topic": "Present Perfect + Time Clauses",
+        "concept": "Adverb placement in Present Perfect sentences",
+        "formula": "Since + present perfect, subject + have + never + past participle",
+        "examples": [
+          "Since I <b>have started</b> this job, I <b>have</b> <b>never regretted</b> it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "I have considered _____ a monstera plant, but I have avoided _____ one because I don't have enough sunlight."
+      },
+      "options": {
+        "A": { "text": "buying / getting", "correct": true },
+        "B": { "text": "to buy / to get", "correct": false },
+        "C": { "text": "buying / to get", "correct": false },
+        "D": { "text": "to buy / getting", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect tense with gerund verb patterns. Both 'consider' and 'avoid' are verbs that must be followed by a gerund ('buying', 'getting').",
+        "topic": "Present Perfect + Gerunds",
+        "concept": "Specific verbs requiring gerund complements",
+        "formula": "Have/has considered + verb-ing; have/has avoided + verb-ing",
+        "examples": [
+          "I have considered <b>moving</b>, but I have avoided <b>deciding</b> yet."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Much of the", "clickable": true, "isError": true, "correctAnswers": ["Many of the"] },
+        { "id": "s2", "text": "coffee beans has", "clickable": true, "isError": true, "correctAnswers": ["coffee beans have"] },
+        { "id": "s3", "text": "been sourced ethically,", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s4", "text": "but few of", "clickable": false },
+        { "id": "s5", "text": "the customers have", "clickable": false },
+        { "id": "s6", "text": "noticed the difference.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect passive with quantifiers and subject-verb agreement. 'Coffee beans' is a countable plural noun, requiring 'Many of' and the plural auxiliary 'have'.",
+        "topic": "Present Perfect + Quantifiers + Subject-Verb Agreement",
+        "concept": "Countable vs. uncountable quantifiers with Present Perfect",
+        "formula": "Many of + plural countable noun + have + been + past participle",
+        "examples": [
+          "<b>Many of</b> the books <b>have been</b> read."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The new Pilates studio _____ by many influencers, and several classes _____ fully booked already."
+      },
+      "options": {
+        "A": { "text": "has been visited / have been", "correct": true },
+        "B": { "text": "have been visited / has been", "correct": false },
+        "C": { "text": "has visited / have been", "correct": false },
+        "D": { "text": "has been visited / has been", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect passive with subject-verb agreement. 'Studio' is singular, requiring 'has been visited'. 'Classes' is plural, requiring 'have been'.",
+        "topic": "Present Perfect + Passive Voice + Subject-Verb Agreement",
+        "concept": "Singular and plural agreement in Present Perfect passive",
+        "formula": "Singular subject + has been + past participle; plural subject + have been + past participle",
+        "examples": [
+          "The room <b>has been cleaned</b>, and the chairs <b>have been</b> arranged."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I have been", "clickable": false },
+        { "id": "s2", "text": "obsessed for", "clickable": true, "isError": true, "correctAnswers": ["obsessed with"] },
+        { "id": "s3", "text": "this new sunscreen,", "clickable": false },
+        { "id": "s4", "text": "and I have", "clickable": false },
+        { "id": "s5", "text": "relied on it", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": "protecting my skin", "clickable": true, "isError": true, "correctAnswers": ["to protect my"] },
+        { "id": "s7", "text": "all summer long.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect tense with preposition collocations and infinitive patterns. 'Obsessed' is followed by 'with', and 'relied on it' is followed by the to-infinitive 'to protect' to express purpose.",
+        "topic": "Present Perfect + Prepositions + Infinitives",
+        "concept": "Correct preposition and infinitive usage after specific verbs/adjectives",
+        "formula": "Have been obsessed with + noun; have relied on + noun + to-infinitive",
+        "examples": [
+          "I have been obsessed <b>with</b> this game, and I have relied on it <b>to relax</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The author, whose latest novel _____ the BookTok charts for weeks, _____ a massive following among young readers."
+      },
+      "options": {
+        "A": { "text": "has topped / has gained", "correct": true },
+        "B": { "text": "have topped / have gained", "correct": false },
+        "C": { "text": "has topped / have gained", "correct": false },
+        "D": { "text": "have topped / has gained", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect tense with possessive relative clauses. The singular subject 'novel' requires 'has topped', and the singular subject 'author' requires 'has gained'.",
+        "topic": "Present Perfect + Relative Clauses",
+        "concept": "Subject-verb agreement in possessive relative clauses",
+        "formula": "Singular noun, whose + singular noun + has + past participle, + has + past participle",
+        "examples": [
+          "The singer, whose song <b>has topped</b> the charts, <b>has gained</b> fame."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If I have", "clickable": true, "isError": true, "correctAnswers": ["If I had"] },
+        { "id": "s2", "text": "learned Python earlier,", "clickable": false },
+        { "id": "s3", "text": "I would have", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s4", "text": "automated my tasks,", "clickable": false },
+        { "id": "s5", "text": "but I have", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": "only started recently.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a Third Conditional hypothetical past with a Present Perfect factual statement. The hypothetical past condition requires the Past Perfect 'If I had learned', while the contrasting fact uses the Present Perfect 'I have only started'.",
+        "topic": "Present Perfect + Conditionals",
+        "concept": "Contrasting hypothetical past conditions with present perfect facts",
+        "formula": "If + subject + had + past participle, subject + would have + past participle, but + subject + has/have + past participle",
+        "examples": [
+          "If I <b>had known</b>, I would have helped, but I <b>have</b> only <b>found</b> out now."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "This year's festival lineup is _____ exciting than last year's, and more artists _____ confirmed to perform."
+      },
+      "options": {
+        "A": { "text": "far more / have been", "correct": true },
+        "B": { "text": "far more / has been", "correct": false },
+        "C": { "text": "much more / has been", "correct": false },
+        "D": { "text": "more / have been", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines comparatives with the Present Perfect passive. 'Far more' is the correct intensifier for the comparative 'exciting', and the plural subject 'artists' requires 'have been confirmed'.",
+        "topic": "Present Perfect + Comparatives + Passive Voice",
+        "concept": "Intensifying comparatives and plural agreement in Present Perfect passive",
+        "formula": "Far more + adjective + than; plural subject + have been + past participle",
+        "examples": [
+          "This movie is <b>far more</b> interesting, and many scenes <b>have been</b> praised."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I have finished", "clickable": false },
+        { "id": "s2", "text": "to listen to", "clickable": true, "isError": true, "correctAnswers": ["listening to"] },
+        { "id": "s3", "text": "three episodes of", "clickable": false },
+        { "id": "s4", "text": "that true crime", "clickable": false },
+        { "id": "s5", "text": "podcast, and I", "clickable": false },
+        { "id": "s6", "text": "can't stop to", "clickable": true, "isError": true, "correctAnswers": ["can't stop"] },
+        { "id": "s7", "text": "think about the", "clickable": true, "isError": true, "correctAnswers": ["thinking about the"] },
+        { "id": "s8", "text": "theories.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect tense with gerund verb patterns. 'Finish' and the expression 'can't stop' must both be followed by a gerund ('listening', 'thinking').",
+        "topic": "Present Perfect + Gerunds",
+        "concept": "Verbs and expressions requiring gerund complements",
+        "formula": "Have finished + verb-ing; can't stop + verb-ing",
+        "examples": [
+          "I have finished <b>reading</b>, and I can't stop <b>thinking</b> about it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct quantifiers to complete the sentence.",
+        "question": "_____ of the thrifted items have been upcycled creatively, and _____ of the waste has been reduced significantly."
+      },
+      "options": {
+        "A": { "text": "Many / much", "correct": true },
+        "B": { "text": "Much / many", "correct": false },
+        "C": { "text": "Much / much", "correct": false },
+        "D": { "text": "Many / many", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect passive with quantifiers. 'Items' is a countable plural noun, requiring 'Many'. 'Waste' is an uncountable noun, requiring 'much'.",
+        "topic": "Present Perfect + Quantifiers",
+        "concept": "Countable vs. uncountable quantifiers with Present Perfect",
+        "formula": "Many of + plural countable noun + have been; much of + uncountable noun + has been",
+        "examples": [
+          "<b>Many</b> of the books <b>have been</b> sold, and <b>much</b> of the time <b>has been</b> saved."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "You must have", "clickable": false },
+        { "id": "s2", "text": "saw the new", "clickable": true, "isError": true, "correctAnswers": ["seen the new"] },
+        { "id": "s3", "text": "VR headset review;", "clickable": false },
+        { "id": "s4", "text": "it has been", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s5", "text": "praised by everyone", "clickable": false },
+        { "id": "s6", "text": "who has tried", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s7", "text": "it so far.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines modal perfect deduction with the Present Perfect passive and relative clauses. 'Must have' must be followed by the past participle 'seen', not the past simple 'saw'.",
+        "topic": "Present Perfect + Modal Verbs + Relative Clauses",
+        "concept": "Past participle form after modal perfects",
+        "formula": "Subject + must have + past participle",
+        "examples": [
+          "You must have <b>heard</b> the news that has been shared."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Since I _____ Duolingo, I _____ my vocabulary significantly, and I have maintained a 100-day streak."
+      },
+      "options": {
+        "A": { "text": "have downloaded / have improved", "correct": true },
+        "B": { "text": "downloaded / have improved", "correct": false },
+        "C": { "text": "have downloaded / improved", "correct": false },
+        "D": { "text": "downloaded / improved", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect tense in both the 'since' clause and the main clause to show an action that started in the past and continues to have relevance in the present.",
+        "topic": "Present Perfect + Time Clauses",
+        "concept": "Using Present Perfect in 'since' clauses for ongoing relevance",
+        "formula": "Since + subject + has/have + past participle, subject + has/have + past participle",
+        "examples": [
+          "Since I <b>have moved</b> here, I <b>have made</b> many friends."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Because I have", "clickable": true, "isError": true, "correctAnswers": ["Although I have"] },
+        { "id": "s2", "text": "tried veganism for", "clickable": false },
+        { "id": "s3", "text": "a month, I", "clickable": false },
+        { "id": "s4", "text": "have missed cheese,", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s5", "text": "so I have", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": "decided to be", "clickable": false },
+        { "id": "s7", "text": "a flexitarian instead.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect tense with concessive conjunctions. 'Although' is required to show the contrast between trying veganism and missing cheese, rather than 'Because', which would imply causation.",
+        "topic": "Present Perfect + Conjunctions",
+        "concept": "Using concessive conjunctions to show contrast with Present Perfect",
+        "formula": "Although + subject + has/have + past participle, subject + has/have + past participle",
+        "examples": [
+          "<b>Although</b> I <b>have tried</b> it, I <b>have missed</b> it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Several universities _____ new scholarships for international students, and many applications _____ already processed."
+      },
+      "options": {
+        "A": { "text": "have introduced / have been", "correct": true },
+        "B": { "text": "has introduced / has been", "correct": false },
+        "C": { "text": "have introduced / has been", "correct": false },
+        "D": { "text": "has introduced / have been", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect active and passive voices with subject-verb agreement. 'Universities' is plural, requiring 'have introduced'. 'Applications' is plural, requiring 'have been processed'.",
+        "topic": "Present Perfect + Passive Voice + Subject-Verb Agreement",
+        "concept": "Plural agreement in Present Perfect active and passive",
+        "formula": "Plural subject + have + past participle; plural subject + have been + past participle",
+        "examples": [
+          "The managers <b>have approved</b> the plans, and the documents <b>have been</b> signed."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I have been", "clickable": false },
+        { "id": "s2", "text": "interested on", "clickable": true, "isError": true, "correctAnswers": ["interested in"] },
+        { "id": "s3", "text": "minimalism lately,", "clickable": false },
+        { "id": "s4", "text": "and I have", "clickable": false },
+        { "id": "s5", "text": "succeeded in", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": "decluttering my room", "clickable": false },
+        { "id": "s7", "text": "without feeling overwhelmed.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect tense with preposition collocations. The adjective 'interested' is always followed by the preposition 'in', not 'on'.",
+        "topic": "Present Perfect + Prepositions",
+        "concept": "Correct preposition usage after specific adjectives",
+        "formula": "Have/has been interested in + noun",
+        "examples": [
+          "I have been interested <b>in</b> art for years."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The esports team, which _____ the regional championship twice, _____ a reputation for their incredible teamwork."
+      },
+      "options": {
+        "A": { "text": "has won / has built", "correct": true },
+        "B": { "text": "have won / have built", "correct": false },
+        "C": { "text": "has won / have built", "correct": false },
+        "D": { "text": "have won / has built", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect tense with non-defining relative clauses. The collective noun 'team' is treated as singular here, requiring 'has won' and 'has built'.",
+        "topic": "Present Perfect + Relative Clauses",
+        "concept": "Singular agreement for collective nouns in relative clauses",
+        "formula": "Singular collective noun, which + has + past participle, + has + past participle",
+        "examples": [
+          "The committee, which <b>has met</b> twice, <b>has decided</b> the outcome."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I have decided", "clickable": false },
+        { "id": "s2", "text": "to take a", "clickable": false },
+        { "id": "s3", "text": "break from scrolling,", "clickable": false },
+        { "id": "s4", "text": "and I have", "clickable": false },
+        { "id": "s5", "text": "avoided to check", "clickable": true, "isError": true, "correctAnswers": ["avoided checking"] },
+        { "id": "s6", "text": "my phone during", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s7", "text": "meals every day.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect tense with gerund verb patterns. The verb 'avoid' must be followed by a gerund ('checking'), not a to-infinitive.",
+        "topic": "Present Perfect + Gerunds",
+        "concept": "Verbs requiring gerund complements in Present Perfect",
+        "formula": "Have/has avoided + verb-ing",
+        "examples": [
+          "I have avoided <b>eating</b> sugar."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "This indie game has received _____ positive reviews than the AAA titles, and its player base _____ grown exponentially."
+      },
+      "options": {
+        "A": { "text": "far more / has", "correct": true },
+        "B": { "text": "much more / have", "correct": false },
+        "C": { "text": "far more / have", "correct": false },
+        "D": { "text": "much more / has", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect tense with advanced comparatives. 'Far more' is the correct intensifier for the comparative 'positive reviews', and the singular subject 'player base' requires 'has grown'.",
+        "topic": "Present Perfect + Advanced Comparatives",
+        "concept": "Intensifying comparatives and singular agreement in Present Perfect",
+        "formula": "Has received + far more + plural noun + than; singular subject + has + past participle",
+        "examples": [
+          "It has received <b>far more</b> attention, and its popularity <b>has</b> surged."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Little of the", "clickable": true, "isError": true, "correctAnswers": ["Few of the"] },
+        { "id": "s2", "text": "remote workers have", "clickable": false },
+        { "id": "s3", "text": "reported higher productivity,", "clickable": false },
+        { "id": "s4", "text": "and many of", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s5", "text": "the companies has", "clickable": true, "isError": true, "correctAnswers": ["the companies have"] },
+        { "id": "s6", "text": "implemented hybrid models.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect tense with quantifiers and subject-verb agreement. 'Workers' is a countable plural noun, requiring 'Few of'. 'Companies' is plural, requiring 'have implemented'.",
+        "topic": "Present Perfect + Quantifiers + Subject-Verb Agreement",
+        "concept": "Countable quantifiers and plural agreement in Present Perfect",
+        "formula": "Few of + plural countable noun + have + past participle; many of + plural noun + have + past participle",
+        "examples": [
+          "<b>Few of</b> the students <b>have passed</b>, and <b>many of</b> the teachers <b>have</b> agreed."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modal and verb forms to complete the sentence.",
+        "question": "She _____ read your tarot cards by now; she _____ been practicing for years."
+      },
+      "options": {
+        "A": { "text": "must have / has", "correct": true },
+        "B": { "text": "should have / have", "correct": false },
+        "C": { "text": "can't have / has", "correct": false },
+        "D": { "text": "must have / have", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect with modal verbs of deduction. 'Must have' expresses a strong logical deduction about a completed action, and the singular subject 'she' requires 'has' in the Present Perfect continuous.",
+        "topic": "Present Perfect + Modal Verbs",
+        "concept": "Modal perfect for deduction and Present Perfect continuous agreement",
+        "formula": "Subject + must have + past participle; singular subject + has + been + verb-ing",
+        "examples": [
+          "He <b>must have finished</b>; he <b>has</b> been working all day."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If I have", "clickable": true, "isError": true, "correctAnswers": ["If I had"] },
+        { "id": "s2", "text": "known about this", "clickable": false },
+        { "id": "s3", "text": "fandom earlier, I", "clickable": false },
+        { "id": "s4", "text": "would have written", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s5", "text": "a story, but I", "clickable": false },
+        { "id": "s6", "text": "have only discovered", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s7", "text": "it very recently.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a Third Conditional hypothetical past with a Present Perfect factual statement. The hypothetical past condition requires the Past Perfect 'If I had known', while the contrasting fact uses the Present Perfect 'have only discovered'.",
+        "topic": "Present Perfect + Conditionals",
+        "concept": "Contrasting hypothetical past conditions with present perfect facts",
+        "formula": "If + subject + had + past participle, subject + would have + past participle, but + subject + has/have + past participle",
+        "examples": [
+          "If I <b>had known</b>, I would have helped, but I <b>have</b> only <b>found</b> out now."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    }
+  ]
+}
