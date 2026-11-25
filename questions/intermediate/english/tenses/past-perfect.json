@@ -1,0 +1,905 @@
+{
+  "meta": {
+    "title": "English Past Perfect Tenses Test - Gen Z Themes",
+    "description": "A comprehensive test covering English Past Perfect Tenses themed around Gen Z culture, combining at least two grammar topics per question.",
+    "info": "This test includes 30 questions focusing on combined grammar structures involving the Past Perfect tense paired with topics like conditionals, relative clauses, passive voice, gerunds, quantifiers, and more, all within familiar Gen Z contexts.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "By the time the streamer logged on, his chat _____ already _____ about the drama."
+      },
+      "options": {
+        "A": { "text": "has / been talking", "correct": false },
+        "B": { "text": "had / been talking", "correct": true },
+        "C": { "text": "had / talked", "correct": false },
+        "D": { "text": "was / talking", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with a time clause. 'Had been talking' emphasizes the duration of an action that was ongoing before another past action ('logged on').",
+        "topic": "Past Perfect Continuous + Time Clauses",
+        "concept": "Duration of an action before a specific past moment",
+        "formula": "By the time + past simple, subject + had been + verb-ing",
+        "examples": [
+          "By the time I arrived, they <b>had been waiting</b> for an hour."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The K-pop idol, who", "clickable": false },
+        { "id": "s2", "text": "have released", "clickable": true, "isError": true, "correctAnswers": ["had released"] },
+        { "id": "s3", "text": "three albums, ", "clickable": false },
+        { "id": "s4", "text": "had already sold", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s5", "text": "out her world tour", "clickable": false },
+        { "id": "s6", "text": "before the announcement.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect tense with non-defining relative clauses. The singular subject 'idol' requires the singular Past Perfect 'had released', not 'have released'.",
+        "topic": "Past Perfect + Relative Clauses",
+        "concept": "Subject-verb agreement in relative clauses using Past Perfect",
+        "formula": "Singular noun, who + had + past participle, + had + past participle",
+        "examples": [
+          "The artist, who <b>had painted</b> the mural, <b>had</b> already <b>left</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The vintage jacket I wanted _____ already _____ by the time I arrived at the thrift store."
+      },
+      "options": {
+        "A": { "text": "has / been sold", "correct": false },
+        "B": { "text": "had / been sold", "correct": true },
+        "C": { "text": "was / sold", "correct": false },
+        "D": { "text": "had / sold", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect tense with the passive voice. The action was completed before a specific past time ('by the time I arrived'), and the subject receives the action.",
+        "topic": "Past Perfect + Passive Voice",
+        "concept": "Completed past actions in the passive voice",
+        "formula": "Subject + had been + past participle + by the time + past simple",
+        "examples": [
+          "The tickets <b>had been sold</b> out by the time we got there."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "She admitted", "clickable": false },
+        { "id": "s2", "text": "to forget", "clickable": true, "isError": true, "correctAnswers": ["having forgotten"] },
+        { "id": "s3", "text": " that she ", "clickable": false },
+        { "id": "s4", "text": "had already posted", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s5", "text": " the video.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect tense with gerund verb patterns. The verb 'admit' must be followed by a gerund ('having forgotten'), not a to-infinitive.",
+        "topic": "Past Perfect + Gerunds",
+        "concept": "Verbs requiring gerund complements referencing past actions",
+        "formula": "Subject + admitted + having + past participle + that + subject + had + past participle",
+        "examples": [
+          "He admitted <b>having forgotten</b> that he had already sent the email."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "By the time the TikTok trend went viral, the original creator _____ already _____ on to a new aesthetic."
+      },
+      "options": {
+        "A": { "text": "has / moved", "correct": false },
+        "B": { "text": "had / moved", "correct": true },
+        "C": { "text": "was / moving", "correct": false },
+        "D": { "text": "has / been moving", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect tense with a time clause. 'Had moved' indicates an action completed before another past event ('went viral').",
+        "topic": "Past Perfect + Time Clauses",
+        "concept": "Action completed before a specific past moment",
+        "formula": "By the time + past simple, subject + had + past participle",
+        "examples": [
+          "By the time the movie started, we <b>had</b> already <b>bought</b> popcorn."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "No sooner", "clickable": false },
+        { "id": "s2", "text": "the coin had", "clickable": true, "isError": true, "correctAnswers": ["had the coin"] },
+        { "id": "s3", "text": " crashed than ", "clickable": false },
+        { "id": "s4", "text": "investors realized", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s5", "text": " they had lost ", "clickable": false },
+        { "id": "s6", "text": "their savings.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect tense with negative adverbial inversion. 'No sooner' at the beginning of a clause requires subject-auxiliary inversion ('had the coin').",
+        "topic": "Past Perfect + Inversion",
+        "concept": "Subject-auxiliary inversion with negative adverbials",
+        "formula": "No sooner + had + subject + past participle + than + past simple",
+        "examples": [
+          "<b>No sooner had</b> I arrived <b>than</b> it started raining."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "She mentioned that she _____ already _____ the group chat because it had become too toxic."
+      },
+      "options": {
+        "A": { "text": "has / muted", "correct": false },
+        "B": { "text": "had / muted", "correct": true },
+        "C": { "text": "was / muting", "correct": false },
+        "D": { "text": "have / muted", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect tense with reported speech. The original present perfect ('has muted') shifts to Past Perfect ('had muted') when reported in the past tense.",
+        "topic": "Past Perfect + Reported Speech",
+        "concept": "Backshifting tenses in reported speech",
+        "formula": "Subject + mentioned that + subject + had + past participle",
+        "examples": [
+          "He said that he <b>had</b> already <b>finished</b> his work."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Little of the", "clickable": true, "isError": true, "correctAnswers": ["Few of the"] },
+        { "id": "s2", "text": " collectors had ", "clickable": false },
+        { "id": "s3", "text": "realized that the ", "clickable": false },
+        { "id": "s4", "text": "limited edition drops", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s5", "text": " had already sold ", "clickable": false },
+        { "id": "s6", "text": "out.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect tense with quantifiers. 'Collectors' is a countable plural noun, requiring 'Few of', not 'Little of' (which is for uncountable nouns).",
+        "topic": "Past Perfect + Quantifiers",
+        "concept": "Countable vs. uncountable quantifiers with Past Perfect",
+        "formula": "Few of + plural countable noun + had + past participle",
+        "examples": [
+          "<b>Few of</b> the students <b>had</b> <b>studied</b> for the exam."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The study guide she _____ _____ was far more comprehensive than the one her friend had shared.",
+        "question": "The study guide she _____ _____ was far more comprehensive than the one her friend had shared."
+      },
+      "options": {
+        "A": { "text": "has / created", "correct": false },
+        "B": { "text": "had / created", "correct": true },
+        "C": { "text": "was / creating", "correct": false },
+        "D": { "text": "has / been creating", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect tense with advanced comparatives. 'Had created' shows an action completed before the past comparison, and 'far more comprehensive' is the correct comparative structure.",
+        "topic": "Past Perfect + Advanced Comparatives",
+        "concept": "Past actions preceding a past comparison",
+        "formula": "Subject + had + past participle + far more + adjective + than + subject + had + past participle",
+        "examples": [
+          "The book she <b>had read</b> was <b>far more</b> interesting than the movie."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "She had been", "clickable": false },
+        { "id": "s2", "text": "obsessed for", "clickable": true, "isError": true, "correctAnswers": ["obsessed with"] },
+        { "id": "s3", "text": " the new serum, ", "clickable": false },
+        { "id": "s4", "text": "but she had", "clickable": false },
+        { "id": "s5", "text": "forgotten to apply", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": " it before the moisturizer.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect tense with preposition collocations. The adjective 'obsessed' is always followed by the preposition 'with', not 'for'.",
+        "topic": "Past Perfect + Prepositions",
+        "concept": "Correct preposition usage after specific adjectives",
+        "formula": "Had been obsessed with + noun",
+        "examples": [
+          "He had been obsessed <b>with</b> the new game."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modal and verb forms to complete the sentence.",
+        "question": "They _____ missed the ticket drop because the website had already crashed."
+      },
+      "options": {
+        "A": { "text": "must have", "correct": true },
+        "B": { "text": "should have", "correct": false },
+        "C": { "text": "can't have", "correct": false },
+        "D": { "text": "would have", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect with modal verbs of deduction. 'Must have' expresses a strong logical deduction about a completed past action.",
+        "topic": "Past Perfect + Modal Verbs",
+        "concept": "Modal perfect for logical deduction about the past",
+        "formula": "Subject + must have + past participle + because + subject + had + past participle",
+        "examples": [
+          "She <b>must have forgotten</b> because she hadn't replied."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Many of the", "clickable": false },
+        { "id": "s2", "text": "monstera plants", "clickable": false },
+        { "id": "s3", "text": "that had been", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s4", "text": "overwatered has", "clickable": true, "isError": true, "correctAnswers": ["had"] },
+        { "id": "s5", "text": " died, while a", "clickable": false },
+        { "id": "s6", "text": "few had survived.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect passive with subject-verb agreement. The plural subject 'plants' requires the plural auxiliary 'had', not 'has'.",
+        "topic": "Past Perfect + Subject-Verb Agreement",
+        "concept": "Plural agreement in Past Perfect passive",
+        "formula": "Plural subject + had been + past participle",
+        "examples": [
+          "The documents that <b>had been</b> signed were filed."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "_____ that the lighting had changed, the photographer adjusted her camera settings."
+      },
+      "options": {
+        "A": { "text": "Having realized", "correct": true },
+        "B": { "text": "Having been realized", "correct": false },
+        "C": { "text": "Realizing", "correct": false },
+        "D": { "text": "To have realized", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect participle clause with the Past Perfect tense in the main clause. 'Having realized' indicates an action completed just before the main past action.",
+        "topic": "Past Perfect + Participle Clauses",
+        "concept": "Perfect participle indicating an action prior to the main past verb",
+        "formula": "Having + past participle, subject + past simple",
+        "examples": [
+          "<b>Having finished</b> her work, she went home."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The guild had", "clickable": false },
+        { "id": "s2", "text": "broke up", "clickable": true, "isError": true, "correctAnswers": ["broken up"] },
+        { "id": "s3", "text": " because the leader ", "clickable": false },
+        { "id": "s4", "text": "had given up", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s5", "text": " after they had ", "clickable": false },
+        { "id": "s6", "text": "lost the tournament.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect tense with phrasal verbs. The Past Perfect requires 'had' + past participle, so 'broke' must be corrected to 'broken'.",
+        "topic": "Past Perfect + Phrasal Verbs",
+        "concept": "Past participle form of phrasal verbs in Past Perfect",
+        "formula": "Subject + had + past participle of phrasal verb",
+        "examples": [
+          "They had <b>given up</b> after they had failed."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "I had already updated my operating system, but my roommate _____."
+      },
+      "options": {
+        "A": { "text": "didn't", "correct": false },
+        "B": { "text": "hadn't", "correct": true },
+        "C": { "text": "hasn't", "correct": false },
+        "D": { "text": "wasn't", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect tense with ellipsis. The auxiliary 'hadn't' is used to avoid repeating the full Past Perfect verb phrase ('had not updated').",
+        "topic": "Past Perfect + Ellipsis",
+        "concept": "Omitting repeated verb phrases in Past Perfect",
+        "formula": "Subject + had + past participle, but + subject + hadn't",
+        "examples": [
+          "She had finished her essay, but I <b>hadn't</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "It were", "clickable": true, "isError": true, "correctAnswers": ["It was"] },
+        { "id": "s2", "text": " the producer who", "clickable": false },
+        { "id": "s3", "text": "had mixed", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s4", "text": " the track that", "clickable": false },
+        { "id": "s5", "text": "had won", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": " the award.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect tense with cleft sentences. The singular subject 'It' requires the singular past tense 'was' for emphasis.",
+        "topic": "Past Perfect + Cleft Sentences",
+        "concept": "Subject-verb agreement in Past Perfect cleft structures",
+        "formula": "It + was + singular noun + who/that + had + past participle",
+        "examples": [
+          "<b>It was</b> the manager who <b>had approved</b> the budget."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "She knew that she would get the internship because she _____ already _____ the required portfolio."
+      },
+      "options": {
+        "A": { "text": "has / completed", "correct": false },
+        "B": { "text": "had / completed", "correct": true },
+        "C": { "text": "was / completing", "correct": false },
+        "D": { "text": "would / complete", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect tense with Future in the Past. 'Had completed' shows an action finished before the past moment of 'knew', justifying the future-in-the-past expectation.",
+        "topic": "Past Perfect + Future in the Past",
+        "concept": "Past Perfect justifying a future-in-the-past expectation",
+        "formula": "Subject + knew that + subject + would + base verb + because + subject + had + past participle",
+        "examples": [
+          "He knew he <b>would pass</b> because he <b>had studied</b> hard."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The vlogger had", "clickable": false },
+        { "id": "s2", "text": "planned a highly", "clickable": false },
+        { "id": "s3", "text": "productive day;", "clickable": false },
+        { "id": "s4", "text": "therefore, she", "clickable": true, "isError": true, "correctAnswers": ["however, she"] },
+        { "id": "s5", "text": "was disappointed", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": "when her camera", "clickable": false },
+        { "id": "s7", "text": "had broken.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect tense with discourse markers. 'However' is required to show the contrast between the planned productive day and the disappointment, rather than 'therefore' (which shows result).",
+        "topic": "Past Perfect + Discourse Markers",
+        "concept": "Using contrastive discourse markers with Past Perfect contexts",
+        "formula": "Subject + had + past participle; however, + subject + past simple",
+        "examples": [
+          "I <b>had prepared</b> thoroughly; <b>however</b>, I failed."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "What surprised the tech reviewers was that the company _____ the update without fixing the known bugs."
+      },
+      "options": {
+        "A": { "text": "has released", "correct": false },
+        "B": { "text": "had released", "correct": true },
+        "C": { "text": "was releasing", "correct": false },
+        "D": { "text": "would release", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect tense with noun clauses. 'Had released' indicates the action was completed before the past moment of surprise.",
+        "topic": "Past Perfect + Noun Clauses",
+        "concept": "Past Perfect in noun clauses following past tense verbs",
+        "formula": "What + past simple + was that + subject + had + past participle",
+        "examples": [
+          "What shocked me was that they <b>had left</b> early."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The barista regretted", "clickable": false },
+        { "id": "s2", "text": "to serve", "clickable": true, "isError": true, "correctAnswers": ["having served"] },
+        { "id": "s3", "text": " the oat milk latte ", "clickable": false },
+        { "id": "s4", "text": "after realizing the", "clickable": false },
+        { "id": "s5", "text": "customer had ordered", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": " almond milk.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect tense with gerund verb patterns. The verb 'regret' must be followed by a gerund ('having served') when referring to a past action one feels sorry about.",
+        "topic": "Past Perfect + Verb Patterns",
+        "concept": "Verbs requiring gerund complements for past actions",
+        "formula": "Subject + regretted + having + past participle + after + subject + had + past participle",
+        "examples": [
+          "She regretted <b>having said</b> that after she had thought about it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct relative pronoun and verb form to complete the sentence.",
+        "question": "The designer, _____ collection had been praised by Vogue, had already secured funding for the next season."
+      },
+      "options": {
+        "A": { "text": "who", "correct": false },
+        "B": { "text": "whom", "correct": false },
+        "C": { "text": "whose", "correct": true },
+        "D": { "text": "which", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect tense with possessive relative clauses. 'Whose' is the correct possessive relative pronoun to show the collection belongs to the designer.",
+        "topic": "Past Perfect + Relative Clauses",
+        "concept": "Possessive relative pronouns in Past Perfect contexts",
+        "formula": "Singular noun, whose + noun + had been + past participle, + had + past participle",
+        "examples": [
+          "The author, <b>whose</b> book had sold millions, had started a new project."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If she had", "clickable": false },
+        { "id": "s2", "text": "saved enough", "clickable": false },
+        { "id": "s3", "text": "money, she", "clickable": false },
+        { "id": "s4", "text": "would be traveling", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s5", "text": "to Japan right now,", "clickable": false },
+        { "id": "s6", "text": "but she has", "clickable": true, "isError": true, "correctAnswers": ["had"] },
+        { "id": "s7", "text": " spent it all on", "clickable": false },
+        { "id": "s8", "text": "concert tickets.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines Mixed Conditionals with the Past Perfect tense. The contrasting factual statement about the past requires the Past Perfect 'had spent' to match the hypothetical past condition, not the Present Perfect 'has spent'.",
+        "topic": "Past Perfect + Mixed Conditionals",
+        "concept": "Past Perfect in factual statements contrasting with hypothetical past conditions",
+        "formula": "If + subject + had + past participle, subject + would + be + verb-ing, but + subject + had + past participle",
+        "examples": [
+          "If I <b>had studied</b>, I would be passing now, but I <b>had wasted</b> my time."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Even though she _____ for months, she hadn't achieved her personal best in the marathon."
+      },
+      "options": {
+        "A": { "text": "has trained", "correct": false },
+        "B": { "text": "had trained", "correct": true },
+        "C": { "text": "was training", "correct": false },
+        "D": { "text": "trains", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect tense with adverbial clauses of concession. 'Had trained' shows an action completed before the past moment of not achieving the goal.",
+        "topic": "Past Perfect + Adverbial Clauses of Concession",
+        "concept": "Past Perfect in 'even though' clauses",
+        "formula": "Even though + subject + had + past participle, subject + hadn't + past participle",
+        "examples": [
+          "Even though he <b>had practiced</b>, he hadn't won."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The vintage store", "clickable": false },
+        { "id": "s2", "text": "had an unique", "clickable": true, "isError": true, "correctAnswers": ["had a unique"] },
+        { "id": "s3", "text": " aesthetic, but the", "clickable": false },
+        { "id": "s4", "text": "items that had been", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s5", "text": " displayed were", "clickable": false },
+        { "id": "s6", "text": "overpriced.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect tense with article usage. 'Unique' starts with a consonant sound (/j/), so it correctly takes the indefinite article 'a', not 'an'.",
+        "topic": "Past Perfect + Articles",
+        "concept": "Indefinite articles before consonant sounds in Past Perfect contexts",
+        "formula": "Subject + had + a + word starting with /j/ sound",
+        "examples": [
+          "The project had <b>a</b> unique approach."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The influencer was upset because her followers _____ already _____ the leaked photo before she had posted the official one."
+      },
+      "options": {
+        "A": { "text": "have / seen", "correct": false },
+        "B": { "text": "had / seen", "correct": true },
+        "C": { "text": "were / seeing", "correct": false },
+        "D": { "text": "has / seen", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect tense with conjunctions. 'Had seen' indicates an action completed before another past action ('had posted').",
+        "topic": "Past Perfect + Conjunctions",
+        "concept": "Sequencing past actions with 'before'",
+        "formula": "Subject + had + past participle + before + subject + had + past participle",
+        "examples": [
+          "He was mad because they <b>had</b> already <b>eaten</b> before he had arrived."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Hardly the server", "clickable": true, "isError": true, "correctAnswers": ["Hardly had the server"] },
+        { "id": "s2", "text": " gone online when ", "clickable": false },
+        { "id": "s3", "text": "the players realized", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s4", "text": " they had forgotten ", "clickable": false },
+        { "id": "s5", "text": "their passwords.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect tense with negative adverbial inversion. 'Hardly' at the beginning of a clause requires subject-auxiliary inversion ('Hardly had the server').",
+        "topic": "Past Perfect + Inversion",
+        "concept": "Subject-auxiliary inversion with 'Hardly'",
+        "formula": "Hardly + had + subject + past participle + when + past simple",
+        "examples": [
+          "<b>Hardly had</b> I sat down <b>when</b> the phone rang."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "After _____ her digital files, she felt relieved that she had finally cleared her desktop."
+      },
+      "options": {
+        "A": { "text": "having organized", "correct": true },
+        "B": { "text": "having been organized", "correct": false },
+        "C": { "text": "organizing", "correct": false },
+        "D": { "text": "to have organized", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect participle clause with the Past Perfect tense. 'Having organized' emphasizes that the action was fully completed before the feeling of relief.",
+        "topic": "Past Perfect + Gerunds/Participles",
+        "concept": "Perfect participle indicating completion before a past state",
+        "formula": "After + having + past participle, subject + past simple + that + subject + had + past participle",
+        "examples": [
+          "After <b>having finished</b> the race, he knew he had done his best."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The remix that", "clickable": false },
+        { "id": "s2", "text": "the DJ had", "clickable": false },
+        { "id": "s3", "text": "produced was", "clickable": false },
+        { "id": "s4", "text": "much more better", "clickable": true, "isError": true, "correctAnswers": ["much better"] },
+        { "id": "s5", "text": " than the original", "clickable": false },
+        { "id": "s6", "text": "track that had been", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s7", "text": "released last year.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect tense with advanced comparatives. 'Better' is already the comparative form of 'good', so 'more' is redundant and must be removed.",
+        "topic": "Past Perfect + Advanced Comparatives",
+        "concept": "Correct comparative forms in Past Perfect sentences",
+        "formula": "Subject + had + past participle + much better + than + subject + had been + past participle",
+        "examples": [
+          "The update he <b>had installed</b> was <b>much better</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "By the time the attendees had arrived, the venue _____ already _____."
+      },
+      "options": {
+        "A": { "text": "has / been decorated", "correct": false },
+        "B": { "text": "had / been decorated", "correct": true },
+        "C": { "text": "was / decorated", "correct": false },
+        "D": { "text": "had / decorated", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect tense with the passive voice and time clauses. 'Had been decorated' shows an action completed and received by the subject before another past action.",
+        "topic": "Past Perfect + Passive Voice + Time Clauses",
+        "concept": "Past Perfect passive preceding a past event",
+        "formula": "By the time + past perfect, subject + had been + past participle",
+        "examples": [
+          "By the time we arrived, the food <b>had been eaten</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "A number of the", "clickable": false },
+        { "id": "s2", "text": "books that had", "clickable": false },
+        { "id": "s3", "text": "been recommended", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s4", "text": "has sold out,", "clickable": true, "isError": true, "correctAnswers": ["had sold out,"] },
+        { "id": "s5", "text": "but the number", "clickable": false },
+        { "id": "s6", "text": "of copies available", "clickable": false },
+        { "id": "s7", "text": "were still high.", "clickable": true, "isError": true, "correctAnswers": ["was still high."] }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect tense with quantifiers and subject-verb agreement. 'A number of' takes a plural verb, but in the Past Perfect context, it must be 'had sold out'. 'The number of' is singular, requiring 'was'.",
+        "topic": "Past Perfect + Quantifiers + Subject-Verb Agreement",
+        "concept": "Agreement with 'a number of' vs. 'the number of' in Past Perfect",
+        "formula": "A number of + plural noun + had + past participle; the number of + singular noun + was",
+        "examples": [
+          "<b>A number of</b> the items <b>had</b> <b>sold</b> out, but <b>the number of</b> returns <b>was</b> low."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    }
+  ]
+}
