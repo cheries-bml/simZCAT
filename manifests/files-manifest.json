@@ -1,52 +1,18 @@
 {
   "files": [
-    {
-      "path": "files/advanced/english/conditionals_hypotheticals_mood.md",
-      "size": 519
-    },
-    {
-      "path": "files/advanced/math/practice-data.csv",
-      "size": 155
-    },
-    {
-      "path": "files/advanced/math/problem-set.zip",
-      "size": 162
-    },
-    {
-      "path": "files/advanced/math/quadratic-reference.md",
-      "size": 263
-    },
-    {
-      "path": "files/easy/english/articles-chart.png",
-      "size": 11751
-    },
-    {
-      "path": "files/easy/english/articles-cheatsheet.txt",
-      "size": 307
-    },
-    {
-      "path": "files/easy/english/grammar-basics.md",
-      "size": 579
-    },
-    {
-      "path": "files/easy/english/listening-sample.wav",
-      "size": 24044
-    },
-    {
-      "path": "files/easy/math/fractions-circles.png",
-      "size": 6162
-    },
-    {
-      "path": "files/easy/math/times-table.jpg",
-      "size": 76954
-    },
-    {
-      "path": "files/intermediate/english/tenses/verb-tenses-timeline.pdf",
-      "size": 2096
-    },
-    {
-      "path": "files/intermediate/math/algebra-cheat-sheet.pdf",
-      "size": 2047
-    }
+    { "path": "files/advanced/english/conditionals_hypotheticals_mood/subjunctive_mood.md" },
+    { "path": "files/advanced/english/conditionals_hypotheticals_mood/inverted_conditionals.md" },
+    { "path": "files/advanced/english/conditionals_hypotheticals_mood/conditionals.md" },
+    { "path": "files/advanced/math/practice-data.csv", "size": 155 },
+    { "path": "files/advanced/math/problem-set.zip", "size": 162 },
+    { "path": "files/advanced/math/quadratic-reference.md", "size": 263 },
+    { "path": "files/easy/english/articles-chart.png", "size": 11751 },
+    { "path": "files/easy/english/articles-cheatsheet.txt", "size": 307 },
+    { "path": "files/easy/english/grammar-basics.md", "size": 579 },
+    { "path": "files/easy/english/listening-sample.wav", "size": 24044 },
+    { "path": "files/easy/math/fractions-circles.png", "size": 6162 },
+    { "path": "files/easy/math/times-table.jpg", "size": 76954 },
+    { "path": "files/intermediate/english/tenses/verb-tenses-timeline.pdf", "size": 2096 },
+    { "path": "files/intermediate/math/algebra-cheat-sheet.pdf", "size": 2047 }
   ]
 }
