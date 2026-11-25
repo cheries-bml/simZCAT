@@ -1,0 +1,908 @@
+{
+  "meta": {
+    "title": "Advanced English Grammar Test (C1-C2) - Music and Artists",
+    "description": "A comprehensive test covering advanced English grammar topics themed around Music and Artists, combining at least two advanced concepts per question.",
+    "info": "This test includes 30 questions focusing on combined C1-C2 level grammar structures, primarily featuring Advanced Relative Clauses paired with other complex topics like inversion, subjunctive mood, conditionals, and more.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct relative pronouns to complete the sentence.",
+        "question": "The composer, to _____ the award was given, is the one without _____ the symphony would never have been completed."
+      },
+      "options": {
+        "A": { "text": "whom / whom", "correct": true },
+        "B": { "text": "who / who", "correct": false },
+        "C": { "text": "whom / who", "correct": false },
+        "D": { "text": "who / whom", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines advanced relative clauses with prepositions. 'To whom' is the correct object form after the preposition 'to', and 'without whom' is the correct object form after the preposition 'without'.",
+        "topic": "Advanced Relative Clauses + Prepositions",
+        "concept": "Preposition + relative pronoun (whom)",
+        "formula": "Preposition + whom (for people)",
+        "examples": [
+          "The artist, <b>to whom</b> I spoke, is the one <b>without whom</b> the project would fail."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The artist, whose latest album", "clickable": false },
+        { "id": "s2", "text": "have been", "clickable": true, "isError": true, "correctAnswers": ["has been"] },
+        { "id": "s3", "text": " a critical success,", "clickable": false },
+        { "id": "s4", "text": "demanded that the label", "clickable": false },
+        { "id": "s5", "text": "releases", "clickable": true, "isError": true, "correctAnswers": ["release"] },
+        { "id": "s6", "text": " the vinyl immediately.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an advanced non-defining relative clause with the mandative subjunctive. 'Album' is singular, requiring 'has been'. After 'demanded that', the subjunctive requires the base form 'release'.",
+        "topic": "Advanced Relative Clauses + Subjunctive Mood",
+        "concept": "Subject-verb agreement in relative clauses and mandative subjunctive",
+        "formula": "Noun, whose + singular noun + has/have + past participle, demanded that + subject + base verb",
+        "examples": [
+          "The director, whose film <b>has been</b> praised, demanded that the studio <b>release</b> it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "The song, _____ by a famous producer, _____ a global hit within weeks of its release."
+      },
+      "options": {
+        "A": { "text": "which produced / became", "correct": false },
+        "B": { "text": "produced / became", "correct": true },
+        "C": { "text": "which was producing / has become", "correct": false },
+        "D": { "text": "producing / becomes", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a reduced relative clause (past participle 'produced' for passive meaning) with a main clause in the past simple tense ('became').",
+        "topic": "Advanced Relative Clauses + Past Simple",
+        "concept": "Reduced passive relative clauses",
+        "formula": "Noun, + past participle + , + subject + past simple verb",
+        "examples": [
+          "The book, <b>written</b> by a novice, <b>became</b> a bestseller."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The band, all of whose members", "clickable": false },
+        { "id": "s2", "text": "is", "clickable": true, "isError": true, "correctAnswers": ["are"] },
+        { "id": "s3", "text": " classically trained,", "clickable": false },
+        { "id": "s4", "text": "has released several albums,", "clickable": false },
+        { "id": "s5", "text": "each of which have", "clickable": true, "isError": true, "correctAnswers": ["each of which has"] },
+        { "id": "s6", "text": " achieved commercial success.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines advanced relative clauses with quantifiers and subject-verb agreement. 'Members' is plural, requiring 'are'. 'Each' is singular, requiring 'has'.",
+        "topic": "Advanced Relative Clauses + Quantifiers + Subject-Verb Agreement",
+        "concept": "Agreement with quantifiers in relative clauses",
+        "formula": "Noun, all of whose + plural noun + plural verb; each of which + singular verb",
+        "examples": [
+          "The team, all of whose players <b>are</b> professionals, has won, each of whom <b>has</b> a trophy."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct relative pronouns to complete the sentence.",
+        "question": "The venue, in _____ the concert was held, must have been the one _____ acoustics are legendary."
+      },
+      "options": {
+        "A": { "text": "which / whose", "correct": true },
+        "B": { "text": "that / which", "correct": false },
+        "C": { "text": "which / which", "correct": false },
+        "D": { "text": "where / its", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a preposition + relative pronoun ('in which') with a possessive relative pronoun ('whose') referring to a thing (the venue's acoustics). 'Must have been' is a modal of deduction.",
+        "topic": "Advanced Relative Clauses + Modal Verbs of Deduction",
+        "concept": "Preposition + which and possessive whose for things",
+        "formula": "Noun, in which + clause, must have been + noun + whose + noun + verb",
+        "examples": [
+          "The building, in <b>which</b> they met, must have been the one <b>whose</b> doors were locked."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "It is the conductor", "clickable": false },
+        { "id": "s2", "text": "which leads", "clickable": true, "isError": true, "correctAnswers": ["who leads"] },
+        { "id": "s3", "text": " the orchestra", "clickable": false },
+        { "id": "s4", "text": "who the critics", "clickable": false },
+        { "id": "s5", "text": "praises", "clickable": true, "isError": true, "correctAnswers": ["praise"] },
+        { "id": "s6", "text": " the most.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a cleft sentence with an embedded relative clause. 'Conductor' is a person, requiring 'who' (not 'which'). 'Critics' is plural, requiring the plural verb 'praise'.",
+        "topic": "Advanced Relative Clauses + Cleft Sentences",
+        "concept": "Relative pronouns for people and subject-verb agreement in clefts",
+        "formula": "It is + person + who + verb + object + who/whom + plural subject + plural verb",
+        "examples": [
+          "It is the teacher <b>who</b> inspires the students whom the parents <b>praise</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the elliptical relative clause.",
+        "question": "The musician _____ playing the cello, _____ a master of the instrument, received a standing ovation."
+      },
+      "options": {
+        "A": { "text": "who was / being", "correct": true },
+        "B": { "text": "was / was", "correct": false },
+        "C": { "text": "who / being", "correct": false },
+        "D": { "text": "who was / was being", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an elliptical relative clause ('who was' can be reduced, but 'who was' is the full form) with a participle clause ('being') for additional description.",
+        "topic": "Advanced Relative Clauses + Ellipsis + Participle Clauses",
+        "concept": "Ellipsis in relative clauses and present participle phrases",
+        "formula": "Noun + who + was/were + verb-ing, + being + noun phrase, + main verb",
+        "examples": [
+          "The artist <b>who was</b> painting the mural, <b>being</b> a local hero, received applause."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The singer, who is known", "clickable": false },
+        { "id": "s2", "text": "for her ability", "clickable": false },
+        { "id": "s3", "text": "to hit high notes,", "clickable": false },
+        { "id": "s4", "text": "avoids to perform", "clickable": true, "isError": true, "correctAnswers": ["avoids performing"] },
+        { "id": "s5", "text": "live without", "clickable": false },
+        { "id": "s6", "text": "a proper warm-up.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a non-defining relative clause with verb patterns. The verb 'avoid' must be followed by a gerund ('performing'), not a to-infinitive.",
+        "topic": "Advanced Relative Clauses + Gerunds vs. Infinitives",
+        "concept": "Verb patterns following relative clauses",
+        "formula": "Noun, who + is known + to-infinitive, avoids + verb-ing",
+        "examples": [
+          "The chef, who is known <b>to cook</b> well, avoids <b>using</b> salt."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "The more complex the composition, _____ the musician, _____ reputation precedes him, finds it to play."
+      },
+      "options": {
+        "A": { "text": "the harder / whose", "correct": true },
+        "B": { "text": "the harder / who", "correct": false },
+        "C": { "text": "the hardest / whose", "correct": false },
+        "D": { "text": "the harder / whom", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a double comparative structure with a non-defining relative clause using the possessive relative pronoun 'whose'.",
+        "topic": "Advanced Relative Clauses + Advanced Comparatives",
+        "concept": "Double comparatives and possessive relative pronouns",
+        "formula": "The + comparative + subject + verb, the + comparative + subject, whose + noun + verb, + finds it + to-infinitive",
+        "examples": [
+          "<b>The harder</b> the task, <b>the more</b> the leader, <b>whose</b> skills are vast, enjoys it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The album, which", "clickable": false },
+        { "id": "s2", "text": "was highly anticipated,", "clickable": false },
+        { "id": "s3", "text": "therefore, failed", "clickable": true, "isError": true, "correctAnswers": ["however, failed"] },
+        { "id": "s4", "text": "to meet expectations,", "clickable": false },
+        { "id": "s5", "text": "which is a fact", "clickable": false },
+        { "id": "s6", "text": "that disappoints", "clickable": false },
+        { "id": "s7", "text": "many fans.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines non-defining relative clauses with discourse markers. 'However' is the correct contrastive marker here, not 'therefore', which indicates a result.",
+        "topic": "Advanced Relative Clauses + Discourse Markers",
+        "concept": "Contrastive discourse markers in relative clause structures",
+        "formula": "Noun, which + was + adjective, however, + verb + to-infinitive, which + is + noun",
+        "examples": [
+          "The event, which <b>was</b> planned carefully, <b>however,</b> failed, which <b>is</b> unfortunate."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct relative pronoun and conditional structure.",
+        "question": "The artist, _____ latest work revolutionized the genre, would have won the Grammy had it not been for the controversy."
+      },
+      "options": {
+        "A": { "text": "whose", "correct": true },
+        "B": { "text": "who", "correct": false },
+        "C": { "text": "whom", "correct": false },
+        "D": { "text": "which", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a possessive relative clause ('whose latest work') with a third conditional inversion ('had it not been').",
+        "topic": "Advanced Relative Clauses + Conditional Inversion",
+        "concept": "Possessive relative pronouns and inverted conditionals",
+        "formula": "Noun, whose + noun + verb, would have + past participle + had + subject + not + past participle",
+        "examples": [
+          "The inventor, <b>whose</b> device changed the world, would have been richer <b>had</b> he <b>not</b> sold the patent."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "A number of the songs,", "clickable": false },
+        { "id": "s2", "text": "which was written", "clickable": true, "isError": true, "correctAnswers": ["which were written"] },
+        { "id": "s3", "text": " by the same composer,", "clickable": false },
+        { "id": "s4", "text": "has topped", "clickable": true, "isError": true, "correctAnswers": ["have topped"] },
+        { "id": "s5", "text": " the charts, while", "clickable": false },
+        { "id": "s6", "text": "the number of albums", "clickable": false },
+        { "id": "s7", "text": "released are", "clickable": true, "isError": true, "correctAnswers": ["released is"] },
+        { "id": "s8", "text": " decreasing.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines advanced relative clauses with subject-verb agreement rules. 'A number of' takes a plural verb ('were', 'have'), while 'the number of' takes a singular verb ('is').",
+        "topic": "Advanced Relative Clauses + Subject-Verb Agreement",
+        "concept": "Agreement with 'a number of' vs. 'the number of'",
+        "formula": "A number of + plural noun, which + plural verb + have + past participle; the number of + plural noun + singular verb",
+        "examples": [
+          "<b>A number of</b> the books, which <b>were</b> written by her, <b>have</b> sold, while <b>the number of</b> copies <b>is</b> low."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "By next year, the orchestra, which _____ together for a decade, will have performed this symphony over fifty times."
+      },
+      "options": {
+        "A": { "text": "has been playing", "correct": true },
+        "B": { "text": "had played", "correct": false },
+        "C": { "text": "will play", "correct": false },
+        "D": { "text": "played", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a non-defining relative clause with the present perfect continuous tense to show an action continuing up to a future point, paired with the future perfect in the main clause.",
+        "topic": "Advanced Relative Clauses + Future Perfect + Present Perfect Continuous",
+        "concept": "Ongoing action in a relative clause leading to a future perfect main clause",
+        "formula": "By + future time, noun, which + has/have been + verb-ing, will have + past participle",
+        "examples": [
+          "By tomorrow, the team, which <b>has been training</b> for months, will have <b>finished</b> the project."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The artist, who", "clickable": false },
+        { "id": "s2", "text": "if he had practiced", "clickable": true, "isError": true, "correctAnswers": [", if he had practiced"] },
+        { "id": "s3", "text": " more, he", "clickable": true, "isError": true, "correctAnswers": [""] },
+        { "id": "s4", "text": "would be performing", "clickable": false },
+        { "id": "s5", "text": " at the main stage", "clickable": false },
+        { "id": "s6", "text": "now, is playing", "clickable": false },
+        { "id": "s7", "text": "in a small venue.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a non-defining relative clause with a mixed conditional. The relative pronoun 'who' acts as the subject of the conditional, so the second 'he' is redundant and must be removed.",
+        "topic": "Advanced Relative Clauses + Mixed Conditionals",
+        "concept": "Embedding conditionals within relative clauses",
+        "formula": "Noun, who, if + subject + had + past participle, would + be + verb-ing, + main verb",
+        "examples": [
+          "The student, <b>who</b>, if she <b>had studied</b>, would <b>be passing</b> now, is retaking the exam."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "The composer, who _____ to have written the manuscript in the 18th century, is considered a genius."
+      },
+      "options": {
+        "A": { "text": "is believed", "correct": true },
+        "B": { "text": "believes", "correct": false },
+        "C": { "text": "is believing", "correct": false },
+        "D": { "text": "has believed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a non-defining relative clause with an advanced passive reporting structure ('is believed to have written').",
+        "topic": "Advanced Relative Clauses + Advanced Passive Structures",
+        "concept": "Passive reporting verbs in relative clauses",
+        "formula": "Noun, who + is/are + believed/said/thought + to have + past participle",
+        "examples": [
+          "The inventor, who <b>is said</b> to have created the device, is famous."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The vocalist, who", "clickable": false },
+        { "id": "s2", "text": "not only she sings", "clickable": true, "isError": true, "correctAnswers": ["not only sings"] },
+        { "id": "s3", "text": " beautifully, but", "clickable": false },
+        { "id": "s4", "text": "she also plays", "clickable": true, "isError": true, "correctAnswers": ["also plays"] },
+        { "id": "s5", "text": " the piano, is", "clickable": false },
+        { "id": "s6", "text": "a true talent.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a non-defining relative clause with 'not only... but also' inversion. When 'not only' begins the relative clause, it triggers subject-auxiliary inversion, but since the relative pronoun 'who' is the subject, it becomes 'who not only sings'.",
+        "topic": "Advanced Relative Clauses + Not Only ... But Also",
+        "concept": "Correlative conjunctions within relative clauses",
+        "formula": "Noun, who + not only + verb, but + also + verb",
+        "examples": [
+          "The manager, who <b>not only leads</b> the team but <b>also mentors</b> them, is respected."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "The manager, _____ decisions the band resents, is someone it is high time they _____."
+      },
+      "options": {
+        "A": { "text": "whose / replaced", "correct": true },
+        "B": { "text": "whom / replace", "correct": false },
+        "C": { "text": "whose / replace", "correct": false },
+        "D": { "text": "who / replaced", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a possessive relative clause ('whose decisions') with the 'it's high time' structure, which requires the past subjunctive ('replaced').",
+        "topic": "Advanced Relative Clauses + It's High Time",
+        "concept": "Possessive relative pronouns and past subjunctive for urgency",
+        "formula": "Noun, whose + noun + subject + verb, is someone + it is high time + subject + past simple",
+        "examples": [
+          "The policy, <b>whose</b> effects we hate, is one it is high time we <b>changed</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The pianist, who", "clickable": false },
+        { "id": "s2", "text": "plays as though", "clickable": false },
+        { "id": "s3", "text": "he is", "clickable": true, "isError": true, "correctAnswers": ["he were"] },
+        { "id": "s4", "text": " a virtuoso,", "clickable": false },
+        { "id": "s5", "text": "is actually", "clickable": false },
+        { "id": "s6", "text": "a beginner.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a non-defining relative clause with 'as though' + past subjunctive ('were') to describe an unreal or hypothetical present situation.",
+        "topic": "Advanced Relative Clauses + As Though / As If",
+        "concept": "Unreal comparisons within relative clauses",
+        "formula": "Noun, who + verb + as though + subject + past subjunctive (were)",
+        "examples": [
+          "The child, who <b>acts</b> as though he <b>were</b> an adult, is very mature."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the inverted relative clause.",
+        "question": "The musician, _____ talented was he that he mastered the violin in a year, is now a teacher."
+      },
+      "options": {
+        "A": { "text": "so", "correct": true },
+        "B": { "text": "such", "correct": false },
+        "C": { "text": "very", "correct": false },
+        "D": { "text": "too", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a non-defining relative clause with 'so + adjective' inversion ('so talented was he') for emphasis.",
+        "topic": "Advanced Relative Clauses + So / Such Inversion",
+        "concept": "Emphatic inversion within relative clauses",
+        "formula": "Noun, so + adjective + be + subject + that + clause",
+        "examples": [
+          "The storm, <b>so</b> fierce was it that it destroyed the roof, is remembered."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The artist, under no", "clickable": false },
+        { "id": "s2", "text": "circumstances who", "clickable": true, "isError": true, "correctAnswers": ["circumstances, who"] },
+        { "id": "s3", "text": " should be", "clickable": true, "isError": true, "correctAnswers": ["should under no circumstances be"] },
+        { "id": "s4", "text": " interrupted while", "clickable": false },
+        { "id": "s5", "text": "recording, is", "clickable": false },
+        { "id": "s6", "text": "very sensitive.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a non-defining relative clause with negative adverbial inversion. The phrase 'under no circumstances' must follow the relative pronoun and trigger inversion ('should under no circumstances be').",
+        "topic": "Advanced Relative Clauses + Negative Adverbial Inversion",
+        "concept": "Negative inversion within relative clauses",
+        "formula": "Noun, who + should + under no circumstances + be + past participle",
+        "examples": [
+          "The document, which <b>should under no circumstances be</b> leaked, is secure."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "The sound engineer, _____ you need any assistance, is the one to _____ you must speak."
+      },
+      "options": {
+        "A": { "text": "should / whom", "correct": true },
+        "B": { "text": "if / who", "correct": false },
+        "C": { "text": "should / who", "correct": false },
+        "D": { "text": "would / whom", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a conditional inversion ('should you need') embedded as a relative clause modifier, with a preposition + relative pronoun ('to whom').",
+        "topic": "Advanced Relative Clauses + Conditional Inversion",
+        "concept": "Conditional inversion and preposition + whom",
+        "formula": "Noun, should + subject + verb, is the one + preposition + whom + subject + verb",
+        "examples": [
+          "The guide, <b>should</b> you need help, is the person <b>to whom</b> you should talk."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The composer, were I", "clickable": false },
+        { "id": "s2", "text": "choosing a", "clickable": true, "isError": true, "correctAnswers": ["to choose a"] },
+        { "id": "s3", "text": " favorite, is", "clickable": false },
+        { "id": "s4", "text": "the one whose", "clickable": false },
+        { "id": "s5", "text": "symphonies I", "clickable": false },
+        { "id": "s6", "text": "admire most.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a non-defining relative clause structure with second conditional inversion. 'Were I' must be followed by the to-infinitive 'to choose', not the gerund 'choosing'.",
+        "topic": "Advanced Relative Clauses + Conditional Inversion",
+        "concept": "Inversion with 'were' for hypothetical situations",
+        "formula": "Noun, were + subject + to + base verb, is the one + whose + noun + subject + verb",
+        "examples": [
+          "The book, <b>were I to</b> <b>pick</b> one, is the one <b>whose</b> cover I like."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "The singer, _____ three platinum albums, who is now retiring, will give a farewell concert."
+      },
+      "options": {
+        "A": { "text": "having released", "correct": true },
+        "B": { "text": "having been released", "correct": false },
+        "C": { "text": "releasing", "correct": false },
+        "D": { "text": "having release", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect participle clause ('having released') indicating an action completed before the main verb, with a non-defining relative clause ('who is now retiring').",
+        "topic": "Advanced Relative Clauses + Perfect Participles",
+        "concept": "Perfect participle clauses preceding relative clauses",
+        "formula": "Noun, having + past participle + object, who + is/are + verb-ing, + will + verb",
+        "examples": [
+          "The athlete, <b>having won</b> gold, who is now retiring, will give a speech."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The band, which", "clickable": false },
+        { "id": "s2", "text": "is an unique", "clickable": true, "isError": true, "correctAnswers": ["is a unique"] },
+        { "id": "s3", "text": " phenomenon in", "clickable": false },
+        { "id": "s4", "text": "the music industry,", "clickable": false },
+        { "id": "s5", "text": "has won", "clickable": false },
+        { "id": "s6", "text": "a Grammy.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a non-defining relative clause with article usage. 'Unique' starts with a consonant sound (/j/), so it correctly takes the indefinite article 'a', not 'an'.",
+        "topic": "Advanced Relative Clauses + Articles",
+        "concept": "Indefinite articles before consonant sounds in relative clauses",
+        "formula": "Noun, which + is + a + word starting with /j/ sound",
+        "examples": [
+          "The idea, which is <b>a</b> unique concept, has won awards."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct relative pronouns to complete the sentence.",
+        "question": "The instrument, without _____ the melody would be incomplete, is the one to _____ the composer was most attached."
+      },
+      "options": {
+        "A": { "text": "which / which", "correct": true },
+        "B": { "text": "that / that", "correct": false },
+        "C": { "text": "which / that", "correct": false },
+        "D": { "text": "that / which", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines two advanced relative clauses with prepositions. After a preposition ('without', 'to'), 'which' must be used for things, not 'that'.",
+        "topic": "Advanced Relative Clauses + Prepositions",
+        "concept": "Preposition + which for inanimate objects",
+        "formula": "Noun, without which + clause, is the one + to which + clause",
+        "examples": [
+          "The tool, without <b>which</b> we cannot work, is the one to <b>which</b> we are accustomed."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "What makes", "clickable": false },
+        { "id": "s2", "text": "the artist, who", "clickable": false },
+        { "id": "s3", "text": "everyone knows", "clickable": false },
+        { "id": "s4", "text": "is a genius,", "clickable": false },
+        { "id": "s5", "text": "so compelling are", "clickable": true, "isError": true, "correctAnswers": ["so compelling is"] },
+        { "id": "s6", "text": "his innovative", "clickable": false },
+        { "id": "s7", "text": "lyrics.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a non-defining relative clause with a noun clause acting as the subject. The subject 'What makes the artist... so compelling' is singular, requiring the singular verb 'is'.",
+        "topic": "Advanced Relative Clauses + Noun Clauses",
+        "concept": "Subject-verb agreement with complex noun clause subjects",
+        "formula": "What + makes + noun, who + clause, + singular verb + adjective",
+        "examples": [
+          "What <b>makes</b> the book, which <b>is</b> long, interesting <b>is</b> the plot."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct relative pronoun and phrasal verb structure.",
+        "question": "The producer, _____ the band looks up to, is the one who came up with the idea."
+      },
+      "options": {
+        "A": { "text": "whom", "correct": true },
+        "B": { "text": "who", "correct": false },
+        "C": { "text": "which", "correct": false },
+        "D": { "text": "whose", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a non-defining relative clause with a phrasal verb ('looks up to'). The relative pronoun is the object of the preposition 'to', requiring the objective case 'whom'.",
+        "topic": "Advanced Relative Clauses + Phrasal Verbs",
+        "concept": "Relative pronouns as objects of prepositions in phrasal verbs",
+        "formula": "Noun, whom + subject + phrasal verb (verb + preposition), is the one",
+        "examples": [
+          "The mentor, <b>whom</b> we rely on, is the one who helps."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The musician, who", "clickable": false },
+        { "id": "s2", "text": "if only he had", "clickable": true, "isError": true, "correctAnswers": [", if only he had"] },
+        { "id": "s3", "text": " more time, he", "clickable": true, "isError": true, "correctAnswers": [""] },
+        { "id": "s4", "text": "would compose", "clickable": false },
+        { "id": "s5", "text": "a masterpiece,", "clickable": false },
+        { "id": "s6", "text": "is currently", "clickable": false },
+        { "id": "s7", "text": "on a break.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a non-defining relative clause with 'if only' for past regret. The relative pronoun 'who' acts as the subject, so the second 'he' is redundant and must be removed.",
+        "topic": "Advanced Relative Clauses + Wish / If Only",
+        "concept": "Embedding 'if only' within relative clauses",
+        "formula": "Noun, who, if only + subject + had + past participle, would + verb",
+        "examples": [
+          "The player, <b>who</b>, if only he <b>had</b> trained, would <b>have won</b>, is retired."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "The more famous the artist becomes, the more pressure, _____ is often underestimated, he faces."
+      },
+      "options": {
+        "A": { "text": "which", "correct": true },
+        "B": { "text": "that", "correct": false },
+        "C": { "text": "what", "correct": false },
+        "D": { "text": "who", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a double comparative structure with a non-defining relative clause. 'Which' is the correct relative pronoun for things ('pressure') in a non-defining clause.",
+        "topic": "Advanced Relative Clauses + Advanced Comparatives",
+        "concept": "Non-defining relative clauses interrupting double comparatives",
+        "formula": "The + comparative + subject + verb, the + comparative + noun, which + verb, + subject + verb",
+        "examples": [
+          "<b>The harder</b> it rains, <b>the more</b> water, <b>which</b> is dangerous, we get."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The song, which", "clickable": false },
+        { "id": "s2", "text": "if it had been", "clickable": true, "isError": true, "correctAnswers": [", had it been"] },
+        { "id": "s3", "text": " promoted better,", "clickable": false },
+        { "id": "s4", "text": "it would be", "clickable": true, "isError": true, "correctAnswers": ["would be"] },
+        { "id": "s5", "text": " a hit today,", "clickable": false },
+        { "id": "s6", "text": "was ignored", "clickable": false },
+        { "id": "s7", "text": "by the label.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a non-defining relative clause with a mixed conditional inversion. The relative pronoun 'which' acts as the subject, so 'if it' and the second 'it' are redundant. The correct form is 'which, had it been promoted better, would be a hit today'.",
+        "topic": "Advanced Relative Clauses + Mixed Conditionals + Passive",
+        "concept": "Embedding inverted mixed conditionals within relative clauses",
+        "formula": "Noun, which, had + subject + been + past participle, would + be + noun",
+        "examples": [
+          "The project, <b>which</b>, <b>had it been</b> funded, <b>would be</b> successful, was canceled."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    }
+  ]
+}
