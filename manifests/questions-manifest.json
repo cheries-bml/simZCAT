@@ -1,8 +1,8 @@
 {
   "files": [
     "questions/intermediate/english/grammar/verb-pattern.json",
-    "questions/intermediate/english/tenses/all-tenses-culture-2.json",
-    "questions/intermediate/english/tenses/all-tenses-culture.json",
+    "questions/intermediate/english/mixed/all-tenses-culture-2.json",
+    "questions/intermediate/english/mixed/all-tenses-culture.json",
 
     "questions/intermediate/english/tenses/future-perfect-continuous.json",
     "questions/intermediate/english/tenses/future-continuous.json",
