@@ -5,8 +5,8 @@
     "info": "This test includes 30 questions focusing on combined C1-C2 level grammar structures such as inversion with conditionals, subjunctive with cleft sentences, and more, featuring characters like Dr. Strange, Hulk, Iron Man, and others.",
     "author": "Qwen3.7",
     "config": {
-      "show_answer": false,
-      "show_explanation": false,
+      "show_answer": true,
+      "show_explanation": true,
       "no_timer": true,
       "active": true
     }
