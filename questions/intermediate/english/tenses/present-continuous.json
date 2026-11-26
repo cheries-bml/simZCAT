@@ -1,0 +1,914 @@
+{
+  "meta": {
+    "title": "English Present Continuous Tenses Test - Gen Z Themes",
+    "description": "A comprehensive test covering English Present Continuous Tenses themed around Gen Z culture, combining at least one or more grammar topics per question.",
+    "info": "This test includes 30 questions focusing on combined grammar structures involving the Present Continuous tense paired with topics like gerunds, relative clauses, passive voice, quantifiers, prepositions, and more, all within familiar Gen Z contexts.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "I am currently considering _____ a Twitch channel, so I am _____ speaking to my camera every day."
+      },
+      "options": {
+        "A": { "text": "to start / practicing", "correct": false },
+        "B": { "text": "starting / practicing", "correct": true },
+        "C": { "text": "starting / to practice", "correct": false },
+        "D": { "text": "to start / to practice", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense with gerund verb patterns. 'Consider' is followed by a gerund ('starting'), and 'am practicing' is the correct Present Continuous form.",
+        "topic": "Present Continuous + Gerunds",
+        "concept": "Verbs requiring gerund complements in Present Continuous contexts",
+        "formula": "Subject + am/is/are + considering + verb-ing; subject + am/is/are + verb-ing",
+        "examples": [
+          "I am considering <b>moving</b>, so I am <b>practicing</b> my new language."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 15, "normal": 30, "easy": 60 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Many of the", "clickable": false },
+        { "id": "s2", "text": "vintage clothes is", "clickable": true, "isError": true, "correctAnswers": ["vintage clothes are"] },
+        { "id": "s3", "text": "selling fast,", "clickable": false },
+        { "id": "s4", "text": "and a little of", "clickable": true, "isError": true, "correctAnswers": ["and a few of"] },
+        { "id": "s5", "text": "the shoppers are", "clickable": false },
+        { "id": "s6", "text": "trying to finding", "clickable": true, "isError": true, "correctAnswers": ["trying to find"] },
+        { "id": "s7", "text": "Y2K styles.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous tense with quantifiers and verb patterns. 'Clothes' is plural, requiring 'are'. 'Shoppers' is countable, requiring 'a few'. 'Try' is followed by a to-infinitive ('to find').",
+        "topic": "Present Continuous + Quantifiers + Verb Patterns",
+        "concept": "Subject-verb agreement, countable quantifiers, and infinitive patterns",
+        "formula": "Many of + plural noun + are + verb-ing; a few of + plural noun + are + trying to + base verb",
+        "examples": [
+          "<b>Many of</b> the items <b>are selling</b>, and <b>a few of</b> the buyers are <b>trying to find</b> deals."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct prepositions to complete the sentence.",
+        "question": "She is currently focusing _____ her mental health and is talking _____ a therapist about her anxiety."
+      },
+      "options": {
+        "A": { "text": "on / to", "correct": true },
+        "B": { "text": "in / with", "correct": false },
+        "C": { "text": "on / about", "correct": false },
+        "D": { "text": "at / to", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense with preposition collocations. 'Focusing' is followed by 'on', and 'talking' (in this context) is followed by 'to'.",
+        "topic": "Present Continuous + Prepositions",
+        "concept": "Correct preposition usage after specific verbs",
+        "formula": "Am/is/are focusing on + noun; am/is/are talking to + noun",
+        "examples": [
+          "He is focusing <b>on</b> his goals and talking <b>to</b> his mentor."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 15, "normal": 30, "easy": 60 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The idols, who", "clickable": false },
+        { "id": "s2", "text": "is currently touring", "clickable": true, "isError": true, "correctAnswers": ["are currently touring"] },
+        { "id": "s3", "text": "the world, is", "clickable": true, "isError": true, "correctAnswers": ["the world, are"] },
+        { "id": "s4", "text": "breaking a records", "clickable": true, "isError": true, "correctAnswers": ["breaking records"] },
+        { "id": "s5", "text": "with their new", "clickable": false },
+        { "id": "s6", "text": "album right now.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous tense with non-defining relative clauses. The plural subject 'idols' requires the plural auxiliary 'are'. 'Records' is plural and does not take 'a'.",
+        "topic": "Present Continuous + Relative Clauses",
+        "concept": "Subject-verb agreement in plural relative clauses",
+        "formula": "Plural noun, who + are + verb-ing, + are + verb-ing + plural noun",
+        "examples": [
+          "The artists, who <b>are currently touring</b>, <b>are breaking</b> <b>records</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "My roommate _____ always _____ their dirty dishes in the sink while I am trying to cook."
+      },
+      "options": {
+        "A": { "text": "is / leaving", "correct": true },
+        "B": { "text": "are / leaving", "correct": false },
+        "C": { "text": "is / leave", "correct": false },
+        "D": { "text": "has / left", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense with adverbs of frequency to express annoyance. 'Is always leaving' is the correct structure for a recurring, irritating action.",
+        "topic": "Present Continuous + Adverbs of Frequency",
+        "concept": "Using 'always' with Present Continuous for annoyance",
+        "formula": "Subject + am/is/are + always + verb-ing",
+        "examples": [
+          "He <b>is</b> <b>always</b> <b>interrupting</b> me during meetings."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 15, "normal": 30, "easy": 60 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "A new update", "clickable": false },
+        { "id": "s2", "text": "are currently being", "clickable": true, "isError": true, "correctAnswers": ["is currently being"] },
+        { "id": "s3", "text": "developed by the", "clickable": false },
+        { "id": "s4", "text": "studio, and players", "clickable": false },
+        { "id": "s5", "text": "is expecting new", "clickable": true, "isError": true, "correctAnswers": ["are expecting new"] },
+        { "id": "s6", "text": "features to being", "clickable": true, "isError": true, "correctAnswers": ["features to be"] },
+        { "id": "s7", "text": "released soon.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous passive voice with subject-verb agreement. 'Update' is singular, requiring 'is'. 'Players' is plural, requiring 'are'. 'To be' is the correct infinitive form.",
+        "topic": "Present Continuous + Passive Voice + Subject-Verb Agreement",
+        "concept": "Singular and plural agreement in Present Continuous passive",
+        "formula": "Singular subject + is being + past participle; plural subject + are + expecting + to be + past participle",
+        "examples": [
+          "The app <b>is being</b> updated, and users <b>are</b> expecting it <b>to be</b> fixed."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "We _____ the music festival next weekend, so we _____ our outfits right now."
+      },
+      "options": {
+        "A": { "text": "attend / buy", "correct": false },
+        "B": { "text": "are attending / are buying", "correct": true },
+        "C": { "text": "will attend / buy", "correct": false },
+        "D": { "text": "are attending / will buy", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense for future arrangements with the Present Continuous for actions happening right now.",
+        "topic": "Present Continuous (Future Arrangements) + Present Continuous (Current Actions)",
+        "concept": "Using Present Continuous for fixed future plans and current actions",
+        "formula": "Subject + am/is/are + verb-ing (future) + , so + subject + am/is/are + verb-ing (now)",
+        "examples": [
+          "We <b>are meeting</b> tomorrow, so we <b>are preparing</b> today."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 15, "normal": 30, "easy": 60 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I am try to", "clickable": true, "isError": true, "correctAnswers": ["I am trying to"] },
+        { "id": "s2", "text": "cutting down on", "clickable": true, "isError": true, "correctAnswers": ["cut down on"] },
+        { "id": "s3", "text": "my screen time,", "clickable": false },
+        { "id": "s4", "text": "so I am turning", "clickable": false },
+        { "id": "s5", "text": "off my notifications", "clickable": false },
+        { "id": "s6", "text": "while I am study.", "clickable": true, "isError": true, "correctAnswers": ["while I am studying."] }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous tense with phrasal verbs and verb patterns. 'Am trying' is the correct continuous form. 'Try to' is followed by the base verb ('cut'). 'Am studying' is the correct continuous form.",
+        "topic": "Present Continuous + Phrasal Verbs + Verb Patterns",
+        "concept": "Correct verb forms in continuous and infinitive structures",
+        "formula": "Subject + am/is/are + trying + to + base verb; subject + am/is/are + verb-ing",
+        "examples": [
+          "I <b>am trying</b> <b>to eat</b> healthier while I <b>am working</b> out."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Sustainable fashion _____ more popular than fast fashion, and brands _____ their strategies accordingly."
+      },
+      "options": {
+        "A": { "text": "is becoming / are adapting", "correct": true },
+        "B": { "text": "becomes / adapt", "correct": false },
+        "C": { "text": "is becoming / adapt", "correct": false },
+        "D": { "text": "becomes / are adapting", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense with advanced comparatives. 'Is becoming' shows a current trend, and 'are adapting' shows an ongoing action.",
+        "topic": "Present Continuous + Advanced Comparatives",
+        "concept": "Describing current trends and ongoing adaptations",
+        "formula": "Subject + is/are + becoming + more + adjective + than + noun; subject + are + verb-ing",
+        "examples": [
+          "Electric cars <b>are becoming</b> cheaper, and companies <b>are adapting</b> quickly."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 15, "normal": 30, "easy": 60 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "He can't be play", "clickable": true, "isError": true, "correctAnswers": ["He can't be playing"] },
+        { "id": "s2", "text": "video games right", "clickable": false },
+        { "id": "s3", "text": "now; he is", "clickable": false },
+        { "id": "s4", "text": "suppose to be", "clickable": true, "isError": true, "correctAnswers": ["supposed to be"] },
+        { "id": "s5", "text": "prepare for his", "clickable": true, "isError": true, "correctAnswers": ["preparing for his"] },
+        { "id": "s6", "text": "finals at the", "clickable": false },
+        { "id": "s7", "text": "moment.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous tense with modal verbs of deduction. 'Can't be playing' is the correct modal continuous form. 'Supposed to be' is the correct adjective phrase, followed by the continuous 'preparing'.",
+        "topic": "Present Continuous + Modal Verbs",
+        "concept": "Modal continuous for deduction and 'supposed to be' + verb-ing",
+        "formula": "Subject + can't be + verb-ing; subject + is supposed to be + verb-ing",
+        "examples": [
+          "She <b>can't be sleeping</b>; she is <b>supposed to be</b> <b>studying</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "While I _____ my vlog, my friend _____ the best hashtags to use."
+      },
+      "options": {
+        "A": { "text": "edit / researches", "correct": false },
+        "B": { "text": "am editing / is researching", "correct": true },
+        "C": { "text": "am editing / researches", "correct": false },
+        "D": { "text": "edit / is researching", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense with conjunctions of time. 'While' + Present Continuous sets the background action, and the main clause uses Present Continuous for a simultaneous action.",
+        "topic": "Present Continuous + Conjunctions",
+        "concept": "Parallel actions in progress at the same time",
+        "formula": "While + subject + am/is/are + verb-ing, subject + am/is/are + verb-ing",
+        "examples": [
+          "While I <b>am cooking</b>, she <b>is setting</b> the table."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 15, "normal": 30, "easy": 60 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I am binge-watch", "clickable": true, "isError": true, "correctAnswers": ["I am binge-watching"] },
+        { "id": "s2", "text": "a new series,", "clickable": false },
+        { "id": "s3", "text": "and my brother", "clickable": false },
+        { "id": "s4", "text": "is do the same", "clickable": true, "isError": true, "correctAnswers": ["is doing the same"] },
+        { "id": "s5", "text": "while we is", "clickable": true, "isError": true, "correctAnswers": ["while we are"] },
+        { "id": "s6", "text": "relaxing at home.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous tense with ellipsis and subject-verb agreement. 'Am binge-watching' and 'is doing' are the correct continuous forms. 'We' requires the plural auxiliary 'are'.",
+        "topic": "Present Continuous + Subject-Verb Agreement",
+        "concept": "Correct continuous forms and plural agreement",
+        "formula": "Subject + am/is/are + verb-ing; plural subject + are + verb-ing",
+        "examples": [
+          "I <b>am reading</b>, and he <b>is doing</b> the same while we <b>are</b> resting."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 15, "normal": 30, "easy": 60 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Currently, many young activists _____ for climate action; nevertheless, some politicians _____ their demands."
+      },
+      "options": {
+        "A": { "text": "protest / ignore", "correct": false },
+        "B": { "text": "are protesting / are ignoring", "correct": true },
+        "C": { "text": "are protesting / ignore", "correct": false },
+        "D": { "text": "protest / are ignoring", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense with discourse markers. 'Are protesting' and 'are ignoring' describe ongoing current actions, contrasted by 'nevertheless'.",
+        "topic": "Present Continuous + Discourse Markers",
+        "concept": "Describing ongoing actions with contrastive markers",
+        "formula": "Currently, subject + are + verb-ing; nevertheless, subject + are + verb-ing",
+        "examples": [
+          "People <b>are demanding</b> change; nevertheless, leaders <b>are delaying</b> action."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I am trying avoid", "clickable": true, "isError": true, "correctAnswers": ["I am trying to avoid"] },
+        { "id": "s2", "text": "checking my phone", "clickable": false },
+        { "id": "s3", "text": "constantly, and I", "clickable": false },
+        { "id": "s4", "text": "am enjoy reading", "clickable": true, "isError": true, "correctAnswers": ["am enjoying reading"] },
+        { "id": "s5", "text": "physical books instead", "clickable": false },
+        { "id": "s6", "text": "of scroll online.", "clickable": true, "isError": true, "correctAnswers": ["of scrolling online."] }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous tense with gerund verb patterns. 'Trying to avoid' is the correct infinitive pattern. 'Am enjoying' is the correct continuous form. 'Of' is followed by a gerund ('scrolling').",
+        "topic": "Present Continuous + Gerunds",
+        "concept": "Verbs and prepositions requiring gerund complements",
+        "formula": "Am/is/are trying to avoid + verb-ing; am/is/are enjoying + verb-ing; of + verb-ing",
+        "examples": [
+          "I am trying to avoid <b>eating</b> sugar, and I am enjoying <b>drinking</b> water instead of <b>consuming</b> soda."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "If the algorithm _____ my video right now, I will get more views by tomorrow."
+      },
+      "options": {
+        "A": { "text": "pushes", "correct": false },
+        "B": { "text": "is pushing", "correct": true },
+        "C": { "text": "will push", "correct": false },
+        "D": { "text": "pushed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense with First Conditionals. 'Is pushing' describes an action happening right now that serves as the condition for a future result.",
+        "topic": "Present Continuous + Conditionals",
+        "concept": "Present Continuous in 'if' clauses for current ongoing conditions",
+        "formula": "If + subject + am/is/are + verb-ing, subject + will + base verb",
+        "examples": [
+          "If it <b>is raining</b> now, we will stay inside."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 15, "normal": 30, "easy": 60 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "She is creating an", "clickable": true, "isError": true, "correctAnswers": ["She is creating a"] },
+        { "id": "s2", "text": "unique aesthetic for", "clickable": false },
+        { "id": "s3", "text": "her Instagram feed,", "clickable": false },
+        { "id": "s4", "text": "and she are", "clickable": true, "isError": true, "correctAnswers": ["and she is"] },
+        { "id": "s5", "text": "choosing a specific", "clickable": false },
+        { "id": "s6", "text": "color palettes right", "clickable": true, "isError": true, "correctAnswers": ["color palette right"] },
+        { "id": "s7", "text": "now.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous tense with article usage and subject-verb agreement. 'Unique' starts with a consonant sound (/j/), requiring 'a'. 'She' requires 'is'. 'A specific' requires the singular 'palette'.",
+        "topic": "Present Continuous + Articles + Subject-Verb Agreement",
+        "concept": "Indefinite articles before consonant sounds and singular agreement",
+        "formula": "Subject + is + creating + a + word starting with /j/ sound; subject + is + choosing + a + singular noun",
+        "examples": [
+          "He is designing <b>a</b> <b>unique</b> logo, and he <b>is</b> choosing <b>a</b> specific <b>color</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct prepositions to complete the sentence.",
+        "question": "He is currently interested _____ learning how to code, and he is good _____ solving logic puzzles."
+      },
+      "options": {
+        "A": { "text": "in / at", "correct": true },
+        "B": { "text": "on / in", "correct": false },
+        "C": { "text": "at / on", "correct": false },
+        "D": { "text": "in / in", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense with preposition collocations. 'Interested' is followed by 'in', and 'good' is followed by 'at'.",
+        "topic": "Present Continuous + Prepositions",
+        "concept": "Correct preposition usage after specific adjectives",
+        "formula": "Am/is/are interested in + verb-ing; am/is/are good at + verb-ing",
+        "examples": [
+          "She is interested <b>in</b> painting and good <b>at</b> drawing."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 15, "normal": 30, "easy": 60 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "It are the DJ", "clickable": true, "isError": true, "correctAnswers": ["It is the DJ"] },
+        { "id": "s2", "text": "who is mixing", "clickable": false },
+        { "id": "s3", "text": "the tracks right", "clickable": false },
+        { "id": "s4", "text": "now, and the", "clickable": false },
+        { "id": "s5", "text": "crowd are loving", "clickable": true, "isError": true, "correctAnswers": ["crowd is loving"] },
+        { "id": "s6", "text": "the energys of", "clickable": true, "isError": true, "correctAnswers": ["the energy of"] },
+        { "id": "s7", "text": "the performance.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous tense with cleft sentences. 'It is' is required for singular emphasis. 'Crowd' is a collective noun treated as singular here, requiring 'is'. 'Energy' is uncountable and does not take 's'.",
+        "topic": "Present Continuous + Cleft Sentences",
+        "concept": "Subject-verb agreement and uncountable nouns in cleft structures",
+        "formula": "It + is + singular noun + who/that + is + verb-ing; singular collective noun + is + verb-ing + uncountable noun",
+        "examples": [
+          "<b>It is</b> the chef who <b>is cooking</b>, and the audience <b>is</b> loving the <b>energy</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "The anime that _____ currently _____ on streaming platforms is getting a lot of attention from fans."
+      },
+      "options": {
+        "A": { "text": "is / airing", "correct": true },
+        "B": { "text": "are / airing", "correct": false },
+        "C": { "text": "is / air", "correct": false },
+        "D": { "text": "has / aired", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense with relative clauses. The singular subject 'anime' requires the singular auxiliary 'is' and the present participle 'airing'.",
+        "topic": "Present Continuous + Relative Clauses",
+        "concept": "Singular agreement in relative clauses using Present Continuous",
+        "formula": "Singular noun + that + is + verb-ing + is + verb-ing",
+        "examples": [
+          "The show that <b>is</b> currently <b>airing</b> is getting praise."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 15, "normal": 30, "easy": 60 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Many of the", "clickable": false },
+        { "id": "s2", "text": "new skincare brands", "clickable": false },
+        { "id": "s3", "text": "is launching eco-friendly", "clickable": true, "isError": true, "correctAnswers": ["are launching eco-friendly"] },
+        { "id": "s4", "text": "packaging, and much", "clickable": false },
+        { "id": "s5", "text": "of the waste", "clickable": false },
+        { "id": "s6", "text": "are being reduced", "clickable": true, "isError": true, "correctAnswers": ["is being reduced"] },
+        { "id": "s7", "text": "by this companies.", "clickable": true, "isError": true, "correctAnswers": ["by these companies."] }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous passive with quantifiers and subject-verb agreement. 'Brands' is plural, requiring 'are'. 'Waste' is uncountable, requiring 'is'. 'Companies' is plural, requiring 'these'.",
+        "topic": "Present Continuous + Quantifiers + Subject-Verb Agreement",
+        "concept": "Plural and uncountable agreement in Present Continuous",
+        "formula": "Many of + plural noun + are + verb-ing; much of + uncountable noun + is + being + past participle; these + plural noun",
+        "examples": [
+          "<b>Many of</b> the stores <b>are opening</b>, and <b>much of</b> the trash <b>is being</b> recycled by <b>these</b> groups."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "When I _____ to Japan next month, I _____ all the major anime studios."
+      },
+      "options": {
+        "A": { "text": "travel / visit", "correct": false },
+        "B": { "text": "am traveling / am going to visit", "correct": true },
+        "C": { "text": "will travel / visit", "correct": false },
+        "D": { "text": "am traveling / will visited", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense for future arrangements with 'be going to' for future intentions. 'Am traveling' is the fixed plan, and 'am going to visit' is the intention.",
+        "topic": "Present Continuous (Future) + Future 'Going to'",
+        "concept": "Future arrangements and intentions in time clauses",
+        "formula": "When + subject + am/is/are + verb-ing, subject + am/is/are + going to + base verb",
+        "examples": [
+          "When I <b>am flying</b> tomorrow, I <b>am going to read</b> a book."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 15, "normal": 30, "easy": 60 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We are setting up", "clickable": false },
+        { "id": "s2", "text": "the new console,", "clickable": false },
+        { "id": "s3", "text": "and my brother", "clickable": false },
+        { "id": "s4", "text": "is plugging in it", "clickable": true, "isError": true, "correctAnswers": ["is plugging it in"] },
+        { "id": "s5", "text": "right now, so", "clickable": false },
+        { "id": "s6", "text": "we can starts", "clickable": true, "isError": true, "correctAnswers": ["we can start"] },
+        { "id": "s7", "text": "to playing immediately.", "clickable": true, "isError": true, "correctAnswers": ["playing immediately."] }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous tense with separable phrasal verbs and modal verb patterns. 'Plugging it in' is the correct pronoun placement. 'Can' is followed by the base verb 'start'. 'Start' is followed by the gerund 'playing'.",
+        "topic": "Present Continuous + Phrasal Verbs + Modal Verbs",
+        "concept": "Pronoun placement in phrasal verbs and base verb after modals",
+        "formula": "Subject + am/is/are + verb + pronoun + particle; modal + base verb + verb-ing",
+        "examples": [
+          "I am turning <b>it</b> <b>on</b>, so we can <b>start</b> <b>working</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "I am currently _____ trying out new vegan recipes, and I am _____ washing the dishes afterward."
+      },
+      "options": {
+        "A": { "text": "enjoying / dreading", "correct": true },
+        "B": { "text": "enjoy / dread", "correct": false },
+        "C": { "text": "to enjoy / to dread", "correct": false },
+        "D": { "text": "enjoying / to dread", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense with gerund verb patterns. 'Am enjoying' and 'am dreading' are the correct continuous forms, both followed by gerunds ('trying', 'washing').",
+        "topic": "Present Continuous + Gerunds",
+        "concept": "Continuous forms of emotion verbs followed by gerunds",
+        "formula": "Am/is/are + enjoying/dreading + verb-ing",
+        "examples": [
+          "I am <b>loving</b> <b>eating</b> this, and I am <b>hating</b> <b>cleaning</b> up."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 15, "normal": 30, "easy": 60 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The gaming community", "clickable": false },
+        { "id": "s2", "text": "are currently demanding", "clickable": true, "isError": true, "correctAnswers": ["is currently demanding"] },
+        { "id": "s3", "text": "better anti-cheat software,", "clickable": false },
+        { "id": "s4", "text": "and the developers", "clickable": false },
+        { "id": "s5", "text": "is working on", "clickable": true, "isError": true, "correctAnswers": ["are working on"] },
+        { "id": "s6", "text": "a fixs for", "clickable": true, "isError": true, "correctAnswers": ["a fix for"] },
+        { "id": "s7", "text": "the issues right", "clickable": false },
+        { "id": "s8", "text": "now.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous tense with subject-verb agreement. 'Community' is a collective noun treated as singular here, requiring 'is'. 'Developers' is plural, requiring 'are'. 'Fix' is singular and does not take 's'.",
+        "topic": "Present Continuous + Subject-Verb Agreement",
+        "concept": "Collective singular and plural agreement",
+        "formula": "Singular collective noun + is + verb-ing; plural noun + are + verb-ing + singular noun",
+        "examples": [
+          "The team <b>is</b> practicing, and the coaches <b>are</b> planning a <b>fix</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "She _____ the new dance routine flawlessly right now, and her followers _____ her progress closely."
+      },
+      "options": {
+        "A": { "text": "is currently practicing / are watching", "correct": true },
+        "B": { "text": "currently practices / watch", "correct": false },
+        "C": { "text": "is currently practicing / watch", "correct": false },
+        "D": { "text": "practices / are watching", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense with adverbs of manner. 'Is currently practicing' and 'are watching' describe actions happening at the moment of speaking.",
+        "topic": "Present Continuous + Adverbs of Manner",
+        "concept": "Describing current actions and how they are performed",
+        "formula": "Subject + is/are + currently + verb-ing + adverb; subject + are + verb-ing + adverb",
+        "examples": [
+          "He <b>is</b> <b>currently playing</b> well, and we <b>are watching</b> closely."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 15, "normal": 30, "easy": 60 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We are currently", "clickable": false },
+        { "id": "s2", "text": "relying in cloud", "clickable": true, "isError": true, "correctAnswers": ["relying on cloud"] },
+        { "id": "s3", "text": "storage for our", "clickable": false },
+        { "id": "s4", "text": "projects, and we", "clickable": false },
+        { "id": "s5", "text": "are depending at", "clickable": true, "isError": true, "correctAnswers": ["are depending on"] },
+        { "id": "s6", "text": "a stable internet", "clickable": false },
+        { "id": "s7", "text": "connections right now.", "clickable": true, "isError": true, "correctAnswers": ["connection right now."] }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous tense with preposition collocations. 'Relying' and 'depending' are both followed by 'on'. 'A stable' requires the singular 'connection'.",
+        "topic": "Present Continuous + Prepositions",
+        "concept": "Correct preposition usage after specific verbs",
+        "formula": "Am/is/are relying on + noun; am/is/are depending on + singular noun",
+        "examples": [
+          "We are relying <b>on</b> the data and depending <b>on</b> a stable <b>connection</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "As the semester _____ more demanding, students _____ out more study groups."
+      },
+      "options": {
+        "A": { "text": "gets / seek", "correct": false },
+        "B": { "text": "is getting / are seeking", "correct": true },
+        "C": { "text": "is getting / seek", "correct": false },
+        "D": { "text": "gets / are seeking", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense with conjunctions of time. 'Is getting' and 'are seeking' describe changing situations and ongoing actions happening around the present time.",
+        "topic": "Present Continuous + Conjunctions",
+        "concept": "Describing changing situations with 'as'",
+        "formula": "As + subject + is/are + verb-ing, subject + is/are + verb-ing",
+        "examples": [
+          "As the weather <b>is getting</b> colder, people <b>are buying</b> more coats."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 15, "normal": 30, "easy": 60 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The vintage jackets,", "clickable": false },
+        { "id": "s2", "text": "which is being", "clickable": true, "isError": true, "correctAnswers": ["which are being"] },
+        { "id": "s3", "text": "sold at the", "clickable": false },
+        { "id": "s4", "text": "thrift store, is", "clickable": true, "isError": true, "correctAnswers": ["thrift store, are"] },
+        { "id": "s5", "text": "becoming very popular", "clickable": false },
+        { "id": "s6", "text": "among Gen Z", "clickable": false },
+        { "id": "s7", "text": "shoppers at this", "clickable": false },
+        { "id": "s8", "text": "moments.", "clickable": true, "isError": true, "correctAnswers": ["moment."] }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous passive with relative clauses. 'Jackets' is plural, requiring 'are being' and 'are becoming'. 'At this' requires the singular 'moment'.",
+        "topic": "Present Continuous + Relative Clauses + Passive Voice",
+        "concept": "Plural agreement in passive relative clauses",
+        "formula": "Plural noun, which + are being + past participle, + are + verb-ing + at this + singular noun",
+        "examples": [
+          "The shoes, which <b>are being</b> sold, <b>are</b> popular at this <b>moment</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "We _____ at the coffee shop at 3 PM, and we _____ the group project then."
+      },
+      "options": {
+        "A": { "text": "meet / discuss", "correct": false },
+        "B": { "text": "are meeting / are discussing", "correct": true },
+        "C": { "text": "will meet / will discuss", "correct": false },
+        "D": { "text": "are meeting / will discussed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense for future arrangements. 'Are meeting' and 'are discussing' describe fixed plans for a specific future time.",
+        "topic": "Present Continuous (Future Arrangements)",
+        "concept": "Using Present Continuous for fixed future plans",
+        "formula": "Subject + am/is/are + verb-ing (future time) + , and + subject + am/is/are + verb-ing (future time)",
+        "examples": [
+          "We <b>are having</b> dinner at 7, and we <b>are watching</b> a movie then."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 15, "normal": 30, "easy": 60 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I am considering", "clickable": false },
+        { "id": "s2", "text": "to move to", "clickable": true, "isError": true, "correctAnswers": ["moving to"] },
+        { "id": "s3", "text": "a new city,", "clickable": false },
+        { "id": "s4", "text": "and my friends", "clickable": false },
+        { "id": "s5", "text": "are suggesting to", "clickable": true, "isError": true, "correctAnswers": ["are suggesting"] },
+        { "id": "s6", "text": "look for apartments", "clickable": true, "isError": true, "correctAnswers": ["looking for apartments"] },
+        { "id": "s7", "text": "near the subway.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous tense with gerund verb patterns. 'Considering' and 'suggesting' must both be followed by a gerund ('moving', 'looking'), not a to-infinitive.",
+        "topic": "Present Continuous + Gerunds",
+        "concept": "Verbs requiring gerund complements in Present Continuous",
+        "formula": "Am/is/are + considering/suggesting + verb-ing",
+        "examples": [
+          "I am considering <b>changing</b> jobs, and they are suggesting <b>applying</b> online."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    }
+  ]
+}

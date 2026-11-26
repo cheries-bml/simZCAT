@@ -7,7 +7,9 @@
     "config": {
       "show_answer": true,
       "show_explanation": true,
-      "no_timer": true,
+      "timer_disabler": true,
+      "configure_test": true,
+      "show_waiting": true,
       "active": true
     }
   },
