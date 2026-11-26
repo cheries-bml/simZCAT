@@ -51,7 +51,7 @@
         { "id": "s1", "text": "The cats", "clickable": false },
         { "id": "s2", "text": "is currently", "clickable": true, "isError": true, "correctAnswers": ["are currently"] },
         { "id": "s3", "text": "sleeping on", "clickable": false },
-        { "id": "s4", "text": "the warm radiator", "clickable": false },
+        { "id": "s4", "text": "the warm", "clickable": false },
         { "id": "s5", "text": "radiator while", "clickable": true, "isError": false },
         { "id": "s6", "text": "the dog", "clickable": false },
         { "id": "s7", "text": "bark outside.", "clickable": true, "isError": true, "correctAnswers": ["is barking outside."] },
