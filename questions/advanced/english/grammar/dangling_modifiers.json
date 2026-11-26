@@ -1,0 +1,867 @@
+{
+  "meta": {
+    "title": "Advanced English Grammar Test (C1-C2) - Indonesian Politics and Government",
+    "description": "A comprehensive test covering English Dangling Modifiers themed around Indonesian Politics and Government.",
+    "info": "This test includes 30 questions focusing on combined C1-C2 level grammar structures, primarily featuring Dangling Modifiers paired with other complex topics like passive voice, conditionals, inversion, and relative clauses.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modifier to complete the sentence.",
+        "question": "_____ by the Constitutional Court, the new election law was immediately implemented by the KPU."
+      },
+      "options": {
+        "A": { "text": "Having been upheld", "correct": true },
+        "B": { "text": "Having upheld", "correct": false },
+        "C": { "text": "Upholding", "correct": false },
+        "D": { "text": "To uphold", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect passive participle (avoiding a dangling modifier by correctly modifying 'the new election law') with a passive voice main clause.",
+        "topic": "Dangling Modifiers + Passive Voice",
+        "concept": "Perfect passive participles correctly modifying the subject of a passive main clause",
+        "formula": "Having been + past participle, subject + was/were + past participle",
+        "examples": [
+          "<b>Having been approved</b> by the board, the policy <b>was implemented</b> immediately."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Drafting the new omnibus law,", "clickable": true, "isError": true, "correctAnswers": ["While drafting the new omnibus law,"] },
+        { "id": "s2", "text": "several articles", "clickable": false },
+        { "id": "s3", "text": "was", "clickable": true, "isError": true, "correctAnswers": ["were"] },
+        { "id": "s4", "text": "criticized by civil society organizations.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a participle clause with subject-verb agreement. 'Drafting' is a dangling modifier because 'several articles' did not draft the law. Changing it to 'While drafting' creates an elliptical clause, or changing the main subject to 'the government' fixes the dangling modifier. 'Articles' is plural, requiring 'were'.",
+        "topic": "Dangling Modifiers + Subject-Verb Agreement",
+        "concept": "Fixing dangling modifiers and ensuring plural agreement",
+        "formula": "While + subject + verb-ing, plural subject + were + past participle",
+        "examples": [
+          "<b>While drafting</b> the report, <b>several errors were</b> found."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structure to complete the sentence.",
+        "question": "_____ effectively, the decentralization policy will empower local governments across the archipelago."
+      },
+      "options": {
+        "A": { "text": "If implemented", "correct": true },
+        "B": { "text": "Implementing", "correct": false },
+        "C": { "text": "Having implemented", "correct": false },
+        "D": { "text": "To implement", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an elliptical conditional clause (avoiding a dangling modifier by implying 'If it is implemented') with the future simple tense.",
+        "topic": "Dangling Modifiers + Conditionals",
+        "concept": "Elliptical conditional clauses correctly modifying the main subject",
+        "formula": "If + past participle, subject + will + base verb",
+        "examples": [
+          "<b>If handled</b> properly, the crisis will be resolved quickly."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Demanding that the minister resigns,", "clickable": true, "isError": true, "correctAnswers": ["Demanding that the minister resign,"] },
+        { "id": "s2", "text": "the corruption scandal", "clickable": true, "isError": true, "correctAnswers": ["the protesters"] },
+        { "id": "s3", "text": "forced the president to reshuffle the cabinet.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a participle clause with the mandative subjunctive. 'Demanding' is a dangling modifier because a 'scandal' cannot demand; 'the protesters' must be the subject. The subjunctive requires the base form 'resign'.",
+        "topic": "Dangling Modifiers + Subjunctive Mood",
+        "concept": "Ensuring the modifier's implied subject matches the main clause subject, plus mandative subjunctive",
+        "formula": "Demanding that + subject + base verb, plural subject + past simple verb",
+        "examples": [
+          "<b>Demanding that</b> the CEO <b>step</b> down, <b>the shareholders</b> voted against the board."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modifier to complete the sentence.",
+        "question": "_____ such extensive bureaucratic red tape, rarely have foreign investors felt welcomed in the sector."
+      },
+      "options": {
+        "A": { "text": "Frustrated by", "correct": true },
+        "B": { "text": "Frustrating", "correct": false },
+        "C": { "text": "Having frustrated", "correct": false },
+        "D": { "text": "To frustrate", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a past participle modifier (correctly modifying 'foreign investors') with negative adverbial inversion.",
+        "topic": "Dangling Modifiers + Inversion",
+        "concept": "Past participle modifiers correctly matching the inverted subject",
+        "formula": "Past participle + by + noun, rarely + auxiliary + subject + past participle",
+        "examples": [
+          "<b>Overwhelmed by</b> the workload, <b>seldom do</b> employees leave on time."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "After reviewing the budget proposal,", "clickable": true, "isError": true, "correctAnswers": ["After the committee reviewed the budget proposal,"] },
+        { "id": "s2", "text": "the allocation of funds", "clickable": true, "isError": true, "correctAnswers": ["the committee"] },
+        { "id": "s3", "text": "were approved.", "clickable": true, "isError": true, "correctAnswers": ["approved the allocation of funds."] }
+      ],
+      "explanation": {
+        "text": "This combines a prepositional phrase with a gerund (dangling modifier) and subject-verb agreement. The 'allocation of funds' did not review the proposal. The subject must be 'the committee', which takes the singular verb 'approved'.",
+        "topic": "Dangling Modifiers + Gerunds",
+        "concept": "Fixing dangling gerund phrases by aligning the subject",
+        "formula": "After + subject + verb-ing + object, subject + past simple verb + object",
+        "examples": [
+          "<b>After reviewing</b> the documents, <b>the manager approved</b> the request."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modifier to complete the sentence.",
+        "question": "_____ more transparently than its predecessor, the current administration has gained significantly higher public trust."
+      },
+      "options": {
+        "A": { "text": "Governing", "correct": true },
+        "B": { "text": "Governed", "correct": false },
+        "C": { "text": "Having been governed", "correct": false },
+        "D": { "text": "To govern", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a present participle modifier (correctly modifying 'the current administration') with advanced comparatives.",
+        "topic": "Dangling Modifiers + Advanced Comparatives",
+        "concept": "Present participle modifiers with comparative structures",
+        "formula": "Verb-ing + comparative + than + noun, subject + has/have + past participle",
+        "examples": [
+          "<b>Performing</b> better than the previous model, the new software <b>has received</b> praise."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Lacking transparency in the procurement process,", "clickable": true, "isError": true, "correctAnswers": ["Due to a lack of transparency in the procurement process,"] },
+        { "id": "s2", "text": "several contracts", "clickable": true, "isError": true, "correctAnswers": ["the ministry"] },
+        { "id": "s3", "text": "were awarded to affiliated companies.", "clickable": true, "isError": true, "correctAnswers": ["awarded several contracts to affiliated companies."] }
+      ],
+      "explanation": {
+        "text": "This combines a participle phrase (dangling modifier) with passive voice. 'Contracts' cannot lack transparency; the 'ministry' does. Changing the modifier to a prepositional phrase or making 'the ministry' the subject fixes the error.",
+        "topic": "Dangling Modifiers + Passive Voice",
+        "concept": "Converting dangling modifiers to prepositional phrases or active subjects",
+        "formula": "Due to + noun phrase, subject + past simple verb + object",
+        "examples": [
+          "<b>Due to heavy rain</b>, <b>the organizers canceled</b> the event."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modifier to complete the sentence.",
+        "question": "_____ the controversial bill last month, the parliament is now facing intense backlash from labor unions."
+      },
+      "options": {
+        "A": { "text": "Having passed", "correct": true },
+        "B": { "text": "Passing", "correct": false },
+        "C": { "text": "To have passed", "correct": false },
+        "D": { "text": "Passed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect active participle (avoiding a dangling modifier by correctly modifying 'the parliament') with the present continuous tense.",
+        "topic": "Dangling Modifiers + Perfect Participles",
+        "concept": "Perfect active participles indicating an action completed before the main clause",
+        "formula": "Having + past participle + object, subject + is/are + verb-ing",
+        "examples": [
+          "<b>Having finished</b> the report, she <b>is</b> now <b>relaxing</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Looking into the allegations of corruption,", "clickable": true, "isError": true, "correctAnswers": ["Looking into the allegations of corruption,"] },
+        { "id": "s2", "text": "several irregularities", "clickable": true, "isError": true, "correctAnswers": ["the KPK"] },
+        { "id": "s3", "text": "was found", "clickable": true, "isError": true, "correctAnswers": ["found several irregularities"] },
+        { "id": "s4", "text": "by the KPK in the ministry's accounts.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a participle phrase (dangling modifier) with subject-verb agreement. 'Irregularities' did not look into the allegations; 'the KPK' did. 'Found' is the correct active verb.",
+        "topic": "Dangling Modifiers + Phrasal Verbs",
+        "concept": "Aligning the participle modifier with the correct active subject",
+        "formula": "Verb-ing + preposition + object, subject + past simple verb + object",
+        "examples": [
+          "<b>Looking into</b> the issue, <b>the team found</b> several errors."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modifier to complete the sentence.",
+        "question": "_____ that the infrastructure project was over budget, the auditor general requested a full investigation."
+      },
+      "options": {
+        "A": { "text": "Discovering", "correct": true },
+        "B": { "text": "Discovered", "correct": false },
+        "C": { "text": "Having been discovered", "correct": false },
+        "D": { "text": "To discover", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a present participle modifier (correctly modifying 'the auditor general') with a noun clause.",
+        "topic": "Dangling Modifiers + Noun Clauses",
+        "concept": "Present participle modifiers introducing a noun clause",
+        "formula": "Verb-ing + that + clause, subject + past simple verb",
+        "examples": [
+          "<b>Realizing</b> that the deadline was near, he <b>worked</b> overtime."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Representing the interests of the indigenous communities,", "clickable": true, "isError": true, "correctAnswers": ["Representing the interests of the indigenous communities,"] },
+        { "id": "s2", "text": "many of the new policies", "clickable": true, "isError": true, "correctAnswers": ["the activists argued that many of the new policies"] },
+        { "id": "s3", "text": "ignores", "clickable": true, "isError": true, "correctAnswers": ["ignore"] },
+        { "id": "s4", "text": "their traditional land rights.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a participle phrase (dangling modifier) with quantifiers and subject-verb agreement. 'Policies' do not represent interests; 'activists' do. 'Many of the new policies' is plural, requiring 'ignore'.",
+        "topic": "Dangling Modifiers + Quantifiers",
+        "concept": "Fixing dangling modifiers and ensuring plural agreement with quantifiers",
+        "formula": "Verb-ing + object, subject + verb + that + plural quantifier + plural verb",
+        "examples": [
+          "<b>Representing</b> the workers, <b>the union stated</b> that <b>many of</b> the demands <b>are</b> valid."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modifier to complete the sentence.",
+        "question": "_____ the historic peace agreement in 2005, it was the former president who facilitated the negotiations in Helsinki."
+      },
+      "options": {
+        "A": { "text": "Having brokered", "correct": true },
+        "B": { "text": "Brokering", "correct": false },
+        "C": { "text": "Brokered", "correct": false },
+        "D": { "text": "To broker", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect active participle (correctly modifying 'the former president' in the cleft sentence) with an it-cleft structure.",
+        "topic": "Dangling Modifiers + Cleft Sentences",
+        "concept": "Perfect participle modifiers aligning with the emphasized subject in a cleft sentence",
+        "formula": "Having + past participle + object, it was + noun + who + past simple verb",
+        "examples": [
+          "<b>Having designed</b> the prototype, it was the engineer who <b>presented</b> it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Seeking an unique solution to the traffic congestion in Jakarta,", "clickable": true, "isError": true, "correctAnswers": ["Seeking a unique solution to the traffic congestion in Jakarta,"] },
+        { "id": "s2", "text": "the new transit policy", "clickable": true, "isError": true, "correctAnswers": ["the governor"] },
+        { "id": "s3", "text": "was implemented", "clickable": true, "isError": true, "correctAnswers": ["implemented the new transit policy"] },
+        { "id": "s4", "text": "by the governor.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a participle phrase (dangling modifier) with article usage. 'Policy' cannot seek a solution; 'the governor' can. 'Unique' starts with a consonant sound (/j/), requiring 'a'.",
+        "topic": "Dangling Modifiers + Articles",
+        "concept": "Fixing dangling modifiers and using correct indefinite articles",
+        "formula": "Verb-ing + a + word starting with /j/ sound, subject + past simple verb + object",
+        "examples": [
+          "<b>Seeking a unique</b> approach, <b>the team developed</b> a new strategy."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modifier to complete the sentence.",
+        "question": "_____ without proper environmental impact assessments, the new mining regulations must have caused significant ecological damage."
+      },
+      "options": {
+        "A": { "text": "Drafted", "correct": true },
+        "B": { "text": "Drafting", "correct": false },
+        "C": { "text": "Having drafted", "correct": false },
+        "D": { "text": "To draft", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a past participle modifier (passive meaning, correctly modifying 'regulations') with a modal verb of deduction in the perfect form.",
+        "topic": "Dangling Modifiers + Modal Verbs of Deduction",
+        "concept": "Past participle modifiers with passive meaning matching the subject",
+        "formula": "Past participle + without + noun, subject + must have + past participle",
+        "examples": [
+          "<b>Released</b> without testing, the software <b>must have contained</b> bugs."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Although considered a milestone in democratic reforms,", "clickable": true, "isError": true, "correctAnswers": ["Although considered a milestone in democratic reforms,"] },
+        { "id": "s2", "text": "heavy criticism", "clickable": true, "isError": true, "correctAnswers": ["the new electoral regulations"] },
+        { "id": "s3", "text": "was faced", "clickable": true, "isError": true, "correctAnswers": ["faced heavy criticism"] },
+        { "id": "s4", "text": "by the electoral commission for the new regulations.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an elliptical adverbial clause (dangling modifier) with passive voice. 'Heavy criticism' was not considered a milestone; 'the new electoral regulations' were. The active voice 'faced heavy criticism' resolves the dangling modifier.",
+        "topic": "Dangling Modifiers + Ellipsis",
+        "concept": "Ensuring the implied subject of an elliptical clause matches the main clause subject",
+        "formula": "Although + past participle + object, subject + past simple verb + object",
+        "examples": [
+          "<b>Although praised</b> by critics, <b>the film faced</b> low attendance."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modifier to complete the sentence.",
+        "question": "_____ by the end of the year, the new capital city of Nusantara will have absorbed billions in state budget allocations."
+      },
+      "options": {
+        "A": { "text": "Once completed", "correct": true },
+        "B": { "text": "Completing", "correct": false },
+        "C": { "text": "Having completed", "correct": false },
+        "D": { "text": "To complete", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an elliptical adverbial clause (avoiding a dangling modifier) with the future perfect tense.",
+        "topic": "Dangling Modifiers + Future Perfect",
+        "concept": "Elliptical clauses correctly modifying the subject of a future perfect main clause",
+        "formula": "Once + past participle, subject + will have + past participle",
+        "examples": [
+          "<b>Once finished</b>, the project <b>will have cost</b> millions."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Serving as the backbone of the nation's agriculture,", "clickable": true, "isError": true, "correctAnswers": ["Serving as the backbone of the nation's agriculture,"] },
+        { "id": "s2", "text": "the number of farmers", "clickable": true, "isError": true, "correctAnswers": ["farmers"] },
+        { "id": "s3", "text": "have", "clickable": true, "isError": true, "correctAnswers": ["have"] },
+        { "id": "s4", "text": "declined significantly over the past decade.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a participle phrase (dangling modifier) with subject-verb agreement. 'The number' does not serve as the backbone; 'farmers' do. 'Farmers' is plural, correctly taking 'have'.",
+        "topic": "Dangling Modifiers + Subject-Verb Agreement",
+        "concept": "Aligning participle modifiers with the correct plural subject",
+        "formula": "Verb-ing + object, plural subject + have + past participle",
+        "examples": [
+          "<b>Acting</b> as the team's captain, <b>the players</b> have <b>improved</b> their coordination."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modifier to complete the sentence.",
+        "question": "_____ the widespread public outcry, the government, nevertheless, proceeded with the controversial fuel subsidy reduction."
+      },
+      "options": {
+        "A": { "text": "Ignoring", "correct": true },
+        "B": { "text": "Ignored", "correct": false },
+        "C": { "text": "Having been ignored", "correct": false },
+        "D": { "text": "To ignore", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a present participle modifier (correctly modifying 'the government') with a contrastive discourse marker.",
+        "topic": "Dangling Modifiers + Discourse Markers",
+        "concept": "Present participle modifiers with contrastive discourse markers",
+        "formula": "Verb-ing + object, subject, nevertheless, + past simple verb",
+        "examples": [
+          "<b>Despite</b> the warnings, he, <b>however</b>, <b>proceeded</b> with the plan."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Wishing for a more transparent government,", "clickable": true, "isError": true, "correctAnswers": ["Wishing for a more transparent government,"] },
+        { "id": "s2", "text": "the new anti-corruption law", "clickable": true, "isError": true, "correctAnswers": ["the citizens"] },
+        { "id": "s3", "text": "was passed", "clickable": true, "isError": true, "correctAnswers": ["celebrated when the parliament passed the new anti-corruption law"] },
+        { "id": "s4", "text": "by the parliament last year.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a participle phrase (dangling modifier) with passive voice. A 'law' cannot wish; 'citizens' can. Changing the main clause to an active structure with 'citizens' as the subject fixes the dangling modifier.",
+        "topic": "Dangling Modifiers + Wish / If Only",
+        "concept": "Aligning participle modifiers expressing desire with the correct subject",
+        "formula": "Verb-ing + object, subject + past simple verb + object",
+        "examples": [
+          "<b>Hoping for</b> a better outcome, <b>the team practiced</b> harder."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modifier to complete the sentence.",
+        "question": "_____ the country's economic stability, the minister spoke as though he had complete control over the global market."
+      },
+      "options": {
+        "A": { "text": "Downplaying", "correct": true },
+        "B": { "text": "Downplayed", "correct": false },
+        "C": { "text": "Having been downplayed", "correct": false },
+        "D": { "text": "To downplay", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a present participle modifier (correctly modifying 'the minister') with an unreal comparison using 'as though'.",
+        "topic": "Dangling Modifiers + As Though / As If",
+        "concept": "Present participle modifiers with unreal comparisons",
+        "formula": "Verb-ing + object, subject + past simple verb + as though + subject + past perfect",
+        "examples": [
+          "<b>Ignoring</b> the risks, he acted <b>as though</b> he <b>had</b> a safety net."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "So complex was the new tax regulation that,", "clickable": false },
+        { "id": "s2", "text": "having been drafted in haste,", "clickable": true, "isError": true, "correctAnswers": ["having been drafted in haste,"] },
+        { "id": "s3", "text": "several loopholes", "clickable": true, "isError": true, "correctAnswers": ["it contained several loopholes"] },
+        { "id": "s4", "text": "was exploited by corporations.", "clickable": true, "isError": true, "correctAnswers": ["exploited by corporations."] }
+      ],
+      "explanation": {
+        "text": "This combines 'so + adjective' inversion with a perfect passive participle (dangling modifier) and subject-verb agreement. 'Loopholes' were not drafted; 'it' (the regulation) was. 'Contained' resolves the dangling modifier.",
+        "topic": "Dangling Modifiers + So / Such Inversion",
+        "concept": "Ensuring participle modifiers align with the subject in inverted structures",
+        "formula": "So + adjective + be + subject + that, having been + past participle, it + past simple verb + object",
+        "examples": [
+          "So difficult was the test that, <b>having been designed</b> poorly, <b>it confused</b> the students."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modifier to complete the sentence.",
+        "question": "_____ the necessary parliamentary approval, the decree would have been struck down by the Constitutional Court."
+      },
+      "options": {
+        "A": { "text": "Lacking", "correct": true },
+        "B": { "text": "Lacked", "correct": false },
+        "C": { "text": "Having lacked", "correct": false },
+        "D": { "text": "To lack", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a present participle modifier (correctly modifying 'the decree') with third conditional inversion.",
+        "topic": "Dangling Modifiers + Conditional Inversion",
+        "concept": "Present participle modifiers matching the subject of an inverted conditional",
+        "formula": "Verb-ing + object, subject + would have + past participle",
+        "examples": [
+          "<b>Missing</b> the deadline, the application <b>would have been</b> rejected."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Not only did the policy fail to reduce poverty,", "clickable": false },
+        { "id": "s2", "text": "but having been implemented without proper funding,", "clickable": true, "isError": true, "correctAnswers": ["but having been implemented without proper funding,"] },
+        { "id": "s3", "text": "the rural communities", "clickable": true, "isError": true, "correctAnswers": ["it caused the rural communities"] },
+        { "id": "s4", "text": "suffered greatly.", "clickable": true, "isError": true, "correctAnswers": ["to suffer greatly."] }
+      ],
+      "explanation": {
+        "text": "This combines 'not only... but also' inversion with a perfect passive participle (dangling modifier). 'Communities' did not implement the policy; 'it' (the policy) did. Restructuring the main clause fixes the dangling modifier.",
+        "topic": "Dangling Modifiers + Not Only ... But Also",
+        "concept": "Aligning participle modifiers with the correct subject in correlative conjunctions",
+        "formula": "Not only + auxiliary + subject + verb, but having been + past participle, it + past simple verb + object + to-infinitive",
+        "examples": [
+          "Not only did the plan fail, but <b>having been rushed</b>, <b>it caused</b> the team <b>to panic</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modifier to complete the sentence.",
+        "question": "_____ the depths of the political scandal, little did the newly appointed minister know that his career was about to end."
+      },
+      "options": {
+        "A": { "text": "Unaware of", "correct": true },
+        "B": { "text": "Unawareness of", "correct": false },
+        "C": { "text": "Unawaring", "correct": false },
+        "D": { "text": "To be unaware", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an adjective phrase (correctly modifying 'the newly appointed minister') with negative adverbial inversion.",
+        "topic": "Dangling Modifiers + Little Did He Know",
+        "concept": "Adjective phrases correctly modifying the subject of an inverted clause",
+        "formula": "Adjective + preposition + object, little + auxiliary + subject + base verb",
+        "examples": [
+          "<b>Oblivious to</b> the danger, little <b>did</b> he <b>know</b> what was coming."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Under no circumstances should the classified documents be leaked,", "clickable": true, "isError": true, "correctAnswers": ["Under no circumstances should the intelligence agency leak the classified documents,"] },
+        { "id": "s2", "text": "having marked them", "clickable": true, "isError": false },
+        { "id": "s3", "text": "as top secret.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines negative adverbial inversion with a perfect active participle (dangling modifier). The 'documents' did not mark themselves; 'the intelligence agency' did. Making 'the intelligence agency' the subject of the main clause fixes the dangling modifier.",
+        "topic": "Dangling Modifiers + Under No Circumstances",
+        "concept": "Aligning participle modifiers with the subject in negative inversion",
+        "formula": "Under no circumstances + auxiliary + subject + base verb + object, having + past participle + object",
+        "examples": [
+          "<b>Under no circumstances should</b> you <b>share</b> the password, <b>having promised</b> to keep it secret."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modifier to complete the sentence.",
+        "question": "_____ any clarification regarding the new voting procedures, the public is advised to contact the election officials."
+      },
+      "options": {
+        "A": { "text": "Needing", "correct": true },
+        "B": { "text": "Needed", "correct": false },
+        "C": { "text": "Having needed", "correct": false },
+        "D": { "text": "To need", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a present participle modifier (correctly modifying 'the public') with a formal conditional structure in the main clause.",
+        "topic": "Dangling Modifiers + Conditionals",
+        "concept": "Present participle modifiers implying a condition for the main subject",
+        "formula": "Verb-ing + object, subject + is/are + advised + to-infinitive",
+        "examples": [
+          "<b>Requiring</b> assistance, the patient is advised to call the nurse."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Were I to become the president,", "clickable": false },
+        { "id": "s2", "text": "prioritizing education reform,", "clickable": true, "isError": true, "correctAnswers": ["prioritizing education reform,"] },
+        { "id": "s3", "text": "the national budget", "clickable": true, "isError": true, "correctAnswers": ["I would reallocate the national budget"] },
+        { "id": "s4", "text": "will be reallocated significantly.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines second conditional inversion with a present participle (dangling modifier). The 'national budget' does not prioritize reform; 'I' do. Changing the main clause subject to 'I' and using 'would reallocate' fixes the dangling modifier and conditional mismatch.",
+        "topic": "Dangling Modifiers + Were I To",
+        "concept": "Aligning participle modifiers with the subject in inverted conditionals",
+        "formula": "Were + subject + to + base verb, verb-ing + object, subject + would + base verb + object",
+        "examples": [
+          "<b>Were I to</b> lead the project, <b>focusing</b> on quality, <b>I would allocate</b> more resources."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct modifier to complete the sentence.",
+        "question": "_____ by a special committee, the proposed amendment, which aims to strengthen judicial independence, is currently under review."
+      },
+      "options": {
+        "A": { "text": "Drafted", "correct": true },
+        "B": { "text": "Drafting", "correct": false },
+        "C": { "text": "Having drafted", "correct": false },
+        "D": { "text": "To draft", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a past participle modifier (passive meaning, correctly modifying 'the proposed amendment') with a non-defining relative clause.",
+        "topic": "Dangling Modifiers + Advanced Passive + Relative Clause",
+        "concept": "Past participle modifiers with passive meaning matching the subject of a relative clause",
+        "formula": "Past participle + by + agent, subject, which + verb + s/es + object, + is/are + preposition + noun",
+        "examples": [
+          "<b>Written</b> by an expert, the report, which <b>details</b> the findings, is ready."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Had the coalition not collapsed last year,", "clickable": false },
+        { "id": "s2", "text": "implementing the new infrastructure plan,", "clickable": true, "isError": true, "correctAnswers": ["implementing the new infrastructure plan"] },
+        { "id": "s3", "text": "the economy", "clickable": true, "isError": true, "correctAnswers": ["the government's implementation of the new infrastructure plan"] },
+        { "id": "s4", "text": "would be much stronger today.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines third conditional inversion with a present participle (dangling modifier) and a mixed conditional main clause. The 'economy' did not implement the plan; 'the government's implementation' did. Restructuring the subject fixes the dangling modifier.",
+        "topic": "Dangling Modifiers + Mixed Conditionals",
+        "concept": "Aligning participle modifiers with the correct subject in mixed conditionals",
+        "formula": "Had + subject + not + past participle, subject's + verb-ing + of + object + would + be + adjective",
+        "examples": [
+          "Had the team not disbanded, <b>their execution of</b> the strategy <b>would be</b> successful today."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    }
+  ]
+}
