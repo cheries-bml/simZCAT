@@ -1,0 +1,902 @@
+{
+  "meta": {
+    "title": "English Past Perfect Continuous Tenses Test - Work and Office Theme",
+    "description": "A comprehensive test covering English Past Perfect Continuous Tenses themed around work and office environments, combining at least one or more grammar topics per question.",
+    "info": "This test includes 30 questions focusing on combined grammar structures involving the Past Perfect Continuous tense paired with topics like passive voice, relative clauses, gerunds, inversion, conditionals, and more, all within familiar workplace contexts.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "By the time the CEO arrived, the staff _____ for the board meeting for over two hours."
+      },
+      "options": {
+        "A": { "text": "prepared", "correct": false },
+        "B": { "text": "had been preparing", "correct": true },
+        "C": { "text": "were preparing", "correct": false },
+        "D": { "text": "have been preparing", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with a time clause. 'Had been preparing' emphasizes the duration of an ongoing action that was completed right before another past action ('arrived').",
+        "topic": "Past Perfect Continuous + Time Clauses",
+        "concept": "Using Past Perfect Continuous for actions in progress up to a specific past moment",
+        "formula": "By the time + past simple, subject + had been + verb-ing",
+        "examples": [
+          "By the time the boss <b>called</b>, we <b>had been working</b> on the report for hours."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The manager", "clickable": false },
+        { "id": "s2", "text": "had been knowing", "clickable": true, "isError": true, "correctAnswers": ["had known"] },
+        { "id": "s3", "text": "about the budget", "clickable": false },
+        { "id": "s4", "text": "before the audit", "clickable": false },
+        { "id": "s5", "text": "started last week.", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": "He ignored it.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with stative verbs. Verbs expressing mental states like 'know' are generally not used in continuous tenses; the Past Perfect ('had known') must be used instead.",
+        "topic": "Past Perfect Continuous + Stative Verbs",
+        "concept": "Avoiding continuous forms for stative verbs in past narratives",
+        "formula": "Subject + had + past participle (stative verb)",
+        "examples": [
+          "She <b>had understood</b> the policy before the meeting started."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "The software developers, who _____ all night to fix the critical bug, were completely exhausted by morning."
+      },
+      "options": {
+        "A": { "text": "coded", "correct": false },
+        "B": { "text": "had been coding", "correct": true },
+        "C": { "text": "have been coding", "correct": false },
+        "D": { "text": "were coding", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with non-defining relative clauses. 'Had been coding' describes an ongoing action in the past that continued up to another past moment ('were exhausted').",
+        "topic": "Past Perfect Continuous + Relative Clauses",
+        "concept": "Using Past Perfect Continuous in relative clauses to describe duration before a past event",
+        "formula": "Noun, who + had been + verb-ing, + past simple verb",
+        "examples": [
+          "The team, which <b>had been negotiating</b> for weeks, finally signed the deal."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "After having been", "clickable": false },
+        { "id": "s2", "text": "working for ten", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s3", "text": "hours, she avoided", "clickable": false },
+        { "id": "s4", "text": "to take a", "clickable": true, "isError": true, "correctAnswers": ["taking a"] },
+        { "id": "s5", "text": "short break today.", "clickable": false },
+        { "id": "s6", "text": "She was exhausted.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with gerund verb patterns. The verb 'avoid' must be followed by a gerund ('taking'), not a to-infinitive.",
+        "topic": "Past Perfect Continuous + Gerunds",
+        "concept": "Verbs requiring gerund complements in past narratives",
+        "formula": "Subject + avoided + verb-ing",
+        "examples": [
+          "He <b>avoided answering</b> the difficult questions during the interview."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "Before the merger was officially announced, the executives _____ in secret for several months."
+      },
+      "options": {
+        "A": { "text": "negotiated", "correct": false },
+        "B": { "text": "had been negotiating", "correct": true },
+        "C": { "text": "were negotiating", "correct": false },
+        "D": { "text": "have negotiated", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with conjunctions of time. 'Had been negotiating' emphasizes the duration of the action leading up to the past event ('was announced').",
+        "topic": "Past Perfect Continuous + Conjunctions",
+        "concept": "Using Past Perfect Continuous with 'before' to show duration prior to a past event",
+        "formula": "Before + past simple, subject + had been + verb-ing",
+        "examples": [
+          "Before the project launched, they <b>had been testing</b> it for months."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Many of the", "clickable": false },
+        { "id": "s2", "text": "employees had been", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s3", "text": "complaining loudly,", "clickable": false },
+        { "id": "s4", "text": "but few of", "clickable": true, "isError": true, "correctAnswers": ["little of"] },
+        { "id": "s5", "text": "the feedback was", "clickable": false },
+        { "id": "s6", "text": "addressed promptly.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with quantifiers. 'Feedback' is an uncountable noun, so it must be preceded by 'little of', not 'few of' (which is used for countable nouns).",
+        "topic": "Past Perfect Continuous + Quantifiers",
+        "concept": "Correct quantifier usage with uncountable nouns in past narratives",
+        "formula": "Little of + uncountable noun + past simple verb",
+        "examples": [
+          "<b>Little of</b> the advice was useful."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structure to complete the inverted sentence.",
+        "question": "Rarely _____ so harmoniously before that major project was completed."
+      },
+      "options": {
+        "A": { "text": "the team had been working", "correct": false },
+        "B": { "text": "had the team been working", "correct": true },
+        "C": { "text": "the team was working", "correct": false },
+        "D": { "text": "did the team work", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with negative adverbial inversion. 'Rarely' at the beginning of a sentence triggers subject-auxiliary inversion ('had the team been working').",
+        "topic": "Past Perfect Continuous + Inversion",
+        "concept": "Subject-auxiliary inversion with negative adverbs in Past Perfect Continuous",
+        "formula": "Rarely + had + subject + been + verb-ing",
+        "examples": [
+          "<b>Never had</b> the department <b>been performing</b> so well."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "They had been", "clickable": false },
+        { "id": "s2", "text": "relying in the", "clickable": true, "isError": true, "correctAnswers": ["relying on the"] },
+        { "id": "s3", "text": "old software until", "clickable": false },
+        { "id": "s4", "text": "it crashed yesterday.", "clickable": false },
+        { "id": "s5", "text": "The system failed.", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": "We need an upgrade.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with preposition collocations. The verb 'rely' is always followed by the preposition 'on', not 'in'.",
+        "topic": "Past Perfect Continuous + Prepositions",
+        "concept": "Correct preposition usage after specific verbs in continuous tenses",
+        "formula": "Subject + had been + relying on + noun",
+        "examples": [
+          "We <b>had been relying on</b> the old database for years."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the mixed conditional sentence.",
+        "question": "If she _____ overtime last month, she wouldn't be so exhausted at work right now."
+      },
+      "options": {
+        "A": { "text": "didn't work", "correct": false },
+        "B": { "text": "hadn't been working", "correct": true },
+        "C": { "text": "hasn't been working", "correct": false },
+        "D": { "text": "wouldn't have worked", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with mixed conditionals. The 'if' clause refers to an ongoing past action ('hadn't been working'), while the main clause refers to a present result ('wouldn't be').",
+        "topic": "Past Perfect Continuous + Mixed Conditionals",
+        "concept": "Using Past Perfect Continuous in the 'if' clause of a mixed conditional",
+        "formula": "If + subject + hadn't been + verb-ing, subject + would + base verb",
+        "examples": [
+          "If I <b>hadn't been driving</b> so fast, I wouldn't be so stressed now."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The number of", "clickable": false },
+        { "id": "s2", "text": "interns had been", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s3", "text": "increasing steadily,", "clickable": false },
+        { "id": "s4", "text": "while a number", "clickable": false },
+        { "id": "s5", "text": "of managers was", "clickable": true, "isError": true, "correctAnswers": ["of managers were"] },
+        { "id": "s6", "text": "leaving the company.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with subject-verb agreement rules. 'The number of' takes a singular verb, while 'a number of' means 'several' and takes a plural verb ('were').",
+        "topic": "Past Perfect Continuous + Subject-Verb Agreement",
+        "concept": "Agreement with 'the number of' vs. 'a number of'",
+        "formula": "The number of + singular verb; a number of + plural noun + plural verb",
+        "examples": [
+          "<b>The number of</b> errors <b>has</b> dropped, but <b>a number of</b> issues <b>remain</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct discourse marker to complete the sentence.",
+        "question": "The department had been underfunded for years; _____, they had been achieving remarkable results."
+      },
+      "options": {
+        "A": { "text": "therefore", "correct": false },
+        "B": { "text": "nevertheless", "correct": true },
+        "C": { "text": "furthermore", "correct": false },
+        "D": { "text": "consequently", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with contrastive discourse markers. 'Nevertheless' is required to show the contrast between being underfunded and achieving remarkable results.",
+        "topic": "Past Perfect Continuous + Discourse Markers",
+        "concept": "Using contrastive discourse markers with past perfect continuous contexts",
+        "formula": "Past perfect continuous clause; nevertheless, + past perfect continuous clause",
+        "examples": [
+          "They <b>had been struggling</b> with budget cuts; <b>nevertheless</b>, they <b>had been delivering</b> quality work."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We had been", "clickable": false },
+        { "id": "s2", "text": "looking forward to", "clickable": false },
+        { "id": "s3", "text": "meet the new", "clickable": true, "isError": true, "correctAnswers": ["meeting the new"] },
+        { "id": "s4", "text": "clients, but they", "clickable": false },
+        { "id": "s5", "text": "canceled the meeting.", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": "We were disappointed.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with gerund verb patterns. The phrasal verb 'look forward to' uses 'to' as a preposition, so it must be followed by a gerund ('meeting'), not a base verb.",
+        "topic": "Past Perfect Continuous + Gerunds",
+        "concept": "Using gerunds after prepositional phrasal verbs in continuous tenses",
+        "formula": "Subject + had been + looking forward to + verb-ing",
+        "examples": [
+          "I <b>had been looking forward to</b> <b>seeing</b> the new office layout."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the cleft sentence.",
+        "question": "It was the marketing team that _____ the campaign's success before the rebrand."
+      },
+      "options": {
+        "A": { "text": "drove", "correct": false },
+        "B": { "text": "had been driving", "correct": true },
+        "C": { "text": "has been driving", "correct": false },
+        "D": { "text": "was driving", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with cleft sentences for emphasis. 'Had been driving' highlights the duration of the action leading up to a specific past point ('the rebrand').",
+        "topic": "Past Perfect Continuous + Cleft Sentences",
+        "concept": "Using Past Perfect Continuous in it-cleft structures",
+        "formula": "It + was + noun + that + had been + verb-ing",
+        "examples": [
+          "<b>It was</b> the IT department <b>that had been resolving</b> the issues all night."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The analysts", "clickable": false },
+        { "id": "s2", "text": "constantly had been", "clickable": true, "isError": true, "correctAnswers": ["had been constantly"] },
+        { "id": "s3", "text": "reviewing the data", "clickable": false },
+        { "id": "s4", "text": "before the presentation", "clickable": false },
+        { "id": "s5", "text": "started yesterday morning.", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": "The results were clear.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with adverb placement. Adverbs of frequency like 'constantly' must be placed between the auxiliary 'had' and 'been', or after 'been', but standard placement is 'had been constantly reviewing' or 'had constantly been reviewing'. 'Had been constantly' is the most natural fit here.",
+        "topic": "Past Perfect Continuous + Adverb Placement",
+        "concept": "Correct positioning of frequency adverbs in past perfect continuous tenses",
+        "formula": "Subject + had been + adverb + verb-ing",
+        "examples": [
+          "He <b>had been constantly checking</b> his emails."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "The servers crashed because they _____ continuously for weeks without proper maintenance."
+      },
+      "options": {
+        "A": { "text": "ran", "correct": false },
+        "B": { "text": "had been running", "correct": true },
+        "C": { "text": "were running", "correct": false },
+        "D": { "text": "have been running", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with cause-and-effect conjunctions. 'Had been running' explains the ongoing past action that led to the past result ('crashed').",
+        "topic": "Past Perfect Continuous + Conjunctions",
+        "concept": "Using Past Perfect Continuous to show the cause of a past event",
+        "formula": "Past simple result + because + subject + had been + verb-ing",
+        "examples": [
+          "The pipe burst because it <b>had been freezing</b> all night."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The developers had", "clickable": false },
+        { "id": "s2", "text": "been debugging the", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s3", "text": "code, and the", "clickable": false },
+        { "id": "s4", "text": "testers had been", "clickable": true, "isError": true, "correctAnswers": ["testers had been as well"] },
+        { "id": "s5", "text": "too, which was", "clickable": false },
+        { "id": "s6", "text": "very efficient today.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with ellipsis. In parallel structures, 'too' is less formal than 'as well' when ellipsing the continuous verb phrase, but more importantly, 'had been as well' correctly parallels the continuous aspect without the awkward 'had been too'.",
+        "topic": "Past Perfect Continuous + Ellipsis",
+        "concept": "Omitting repeated verbs in parallel past perfect continuous structures",
+        "formula": "Subject + had been + verb-ing, and + subject + had been + as well",
+        "examples": [
+          "The managers <b>had been planning</b> the event, and the staff <b>had been as well</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct comparative structure to complete the sentence.",
+        "question": "The longer the contract negotiations _____, the more frustrated the stakeholders became."
+      },
+      "options": {
+        "A": { "text": "had been dragging on", "correct": true },
+        "B": { "text": "were dragging on", "correct": false },
+        "C": { "text": "dragged on", "correct": false },
+        "D": { "text": "have been dragging on", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with advanced comparative structures. 'Had been dragging on' emphasizes the accumulating duration of the action leading up to the past result.",
+        "topic": "Past Perfect Continuous + Advanced Comparatives",
+        "concept": "Using Past Perfect Continuous in double comparative structures",
+        "formula": "The longer + subject + had been + verb-ing, the more + adjective + subject + past simple",
+        "examples": [
+          "The harder he <b>had been working</b>, the more tired he <b>became</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "She had been", "clickable": false },
+        { "id": "s2", "text": "working as an", "clickable": true, "isError": true, "correctAnswers": ["working as a"] },
+        { "id": "s3", "text": "unique consultant for", "clickable": false },
+        { "id": "s4", "text": "the firm before", "clickable": false },
+        { "id": "s5", "text": "she got promoted.", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": "Her performance was excellent.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with article usage. 'Unique' starts with a consonant sound (/j/), so it correctly takes the indefinite article 'a', not 'an'.",
+        "topic": "Past Perfect Continuous + Articles",
+        "concept": "Indefinite articles before words starting with a /j/ sound",
+        "formula": "Subject + had been + verb-ing + a + word starting with /j/ sound",
+        "examples": [
+          "He <b>had been using</b> <b>a</b> <b>unique</b> strategy."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the noun clause.",
+        "question": "What surprised the board was that the compliance committee _____ the warning signs for months."
+      },
+      "options": {
+        "A": { "text": "ignored", "correct": false },
+        "B": { "text": "had been ignoring", "correct": true },
+        "C": { "text": "has been ignoring", "correct": false },
+        "D": { "text": "was ignoring", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with noun clauses. 'Had been ignoring' indicates an ongoing action in the past that continued up to the moment of surprise.",
+        "topic": "Past Perfect Continuous + Noun Clauses",
+        "concept": "Using Past Perfect Continuous in noun clauses following past tense verbs",
+        "formula": "What + past simple + was that + subject + had been + verb-ing",
+        "examples": [
+          "What shocked me was that they <b>had been lying</b> all along."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The employees which", "clickable": true, "isError": true, "correctAnswers": ["The employees who"] },
+        { "id": "s2", "text": "had been requesting", "clickable": false },
+        { "id": "s3", "text": "remote work were", "clickable": false },
+        { "id": "s4", "text": "finally granted the", "clickable": false },
+        { "id": "s5", "text": "option last Friday.", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": "They are happy now.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with relative pronouns. The relative pronoun referring to a person ('employees') must be 'who' (or 'that'), not 'which' (which is used for things).",
+        "topic": "Past Perfect Continuous + Relative Pronouns",
+        "concept": "Choosing the correct relative pronoun for people in continuous relative clauses",
+        "formula": "Noun (people) + who + had been + verb-ing",
+        "examples": [
+          "The staff <b>who</b> <b>had been waiting</b> were finally called in."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structure to complete the inverted sentence.",
+        "question": "Not only _____ its sales quotas, but the department had also been mentoring new hires."
+      },
+      "options": {
+        "A": { "text": "the department had been exceeding", "correct": false },
+        "B": { "text": "had the department been exceeding", "correct": true },
+        "C": { "text": "did the department exceed", "correct": false },
+        "D": { "text": "the department exceeded", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with 'not only... but also' inversion. 'Not only' at the beginning of a clause triggers subject-auxiliary inversion ('had the department been exceeding').",
+        "topic": "Past Perfect Continuous + Inversion",
+        "concept": "Subject-auxiliary inversion with 'not only' in past perfect continuous structures",
+        "formula": "Not only + had + subject + been + verb-ing, but + subject + had + also + been + verb-ing",
+        "examples": [
+          "<b>Not only had</b> she <b>been leading</b> the project, but she <b>had</b> also <b>been training</b> the team."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "It is high", "clickable": false },
+        { "id": "s2", "text": "time we recognize", "clickable": true, "isError": true, "correctAnswers": ["time we recognized"] },
+        { "id": "s3", "text": "that the IT", "clickable": false },
+        { "id": "s4", "text": "department have been", "clickable": true, "isError": true, "correctAnswers": ["department has been"] },
+        { "id": "s5", "text": "struggling with outdated", "clickable": false },
+        { "id": "s6", "text": "hardware for years.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with the 'it's high time' structure. 'It's high time' requires the past subjunctive ('recognized'). Additionally, 'department' is a singular collective noun, requiring 'has been'.",
+        "topic": "Past Perfect Continuous + It's High Time",
+        "concept": "Past subjunctive and singular agreement in 'it's high time' structures",
+        "formula": "It is high time + subject + past simple + that + singular subject + has been + verb-ing",
+        "examples": [
+          "<b>It is high time</b> we <b>acknowledged</b> that the team <b>has been</b> <b>working</b> overtime."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "He acted as though he _____ the company for decades, even though he was just a new intern."
+      },
+      "options": {
+        "A": { "text": "managed", "correct": false },
+        "B": { "text": "had been managing", "correct": true },
+        "C": { "text": "has been managing", "correct": false },
+        "D": { "text": "was managing", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with 'as though' unreal comparisons. 'Had been managing' describes an unreal, ongoing past situation that contradicts the reality ('was just a new intern').",
+        "topic": "Past Perfect Continuous + As Though / As If",
+        "concept": "Using Past Perfect Continuous for unreal comparisons about the past",
+        "formula": "Subject + past simple + as though + subject + had been + verb-ing",
+        "examples": [
+          "She spoke as though she <b>had been working</b> there for years."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "So long had", "clickable": false },
+        { "id": "s2", "text": "the employees been", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s3", "text": "waiting for a", "clickable": false },
+        { "id": "s4", "text": "promotion that many", "clickable": false },
+        { "id": "s5", "text": "had been resigning.", "clickable": true, "isError": true, "correctAnswers": ["had resigned."] },
+        { "id": "s6", "text": "The turnover was high.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines 'so + adjective/adverb' inversion with the Past Perfect Continuous. The result clause should use the Simple Past ('had resigned') to show the completed action resulting from the prolonged waiting, not the continuous form.",
+        "topic": "Past Perfect Continuous + So / Such Inversion",
+        "concept": "Using Simple Past for the result of a 'so... that' inversion with Past Perfect Continuous",
+        "formula": "So + adverb + had + subject + been + verb-ing + that + subject + past simple",
+        "examples": [
+          "<b>So long had</b> they <b>been waiting</b> that they <b>gave</b> up."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structure to complete the inverted sentence.",
+        "question": "Under no circumstances _____ about the financial discrepancies before the official audit was published."
+      },
+      "options": {
+        "A": { "text": "the auditors had been informed", "correct": false },
+        "B": { "text": "had the auditors been informed", "correct": true },
+        "C": { "text": "the auditors were informed", "correct": false },
+        "D": { "text": "were the auditors informed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous passive tense with negative adverbial inversion. 'Under no circumstances' at the beginning triggers subject-auxiliary inversion ('had the auditors been informed').",
+        "topic": "Past Perfect Continuous + Negative Adverbial Inversion",
+        "concept": "Subject-auxiliary inversion with negative phrases in Past Perfect Continuous passive",
+        "formula": "Under no circumstances + had + subject + been + past participle",
+        "examples": [
+          "<b>Under no circumstances had</b> the data <b>been compromised</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Had the team", "clickable": false },
+        { "id": "s2", "text": "been fail to", "clickable": true, "isError": true, "correctAnswers": ["been failing to"] },
+        { "id": "s3", "text": "meet deadlines, we", "clickable": false },
+        { "id": "s4", "text": "would have intervened", "clickable": false },
+        { "id": "s5", "text": "immediately to help.", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": "The project succeeded.", "clickable": true, "isError": false, "correctAnswers": [] }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with conditional inversion. 'Had' must be followed by 'been' + present participle ('failing') to form the Past Perfect Continuous, not the base verb 'fail'.",
+        "topic": "Past Perfect Continuous + Conditional Inversion",
+        "concept": "Forming the continuous aspect after inverted conditional 'had'",
+        "formula": "Had + subject + been + verb-ing, subject + would have + past participle",
+        "examples": [
+          "<b>Had</b> the system <b>been failing</b>, we would have noticed."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "Little did the new hire know that the department _____ a major restructuring for months."
+      },
+      "options": {
+        "A": { "text": "underwent", "correct": false },
+        "B": { "text": "had been undergoing", "correct": true },
+        "C": { "text": "was undergoing", "correct": false },
+        "D": { "text": "has been undergoing", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with negative adverbial inversion ('Little did... know'). 'Had been undergoing' emphasizes the ongoing duration of the restructuring up to the moment the new hire found out.",
+        "topic": "Past Perfect Continuous + Little Did He Know",
+        "concept": "Using Past Perfect Continuous in noun clauses following inverted past simple verbs",
+        "formula": "Little + did + subject + know + that + subject + had been + verb-ing",
+        "examples": [
+          "<b>Little did</b> I <b>know</b> that they <b>had been planning</b> a surprise."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Having been work", "clickable": true, "isError": true, "correctAnswers": ["Having been working"] },
+        { "id": "s2", "text": "at the company", "clickable": false },
+        { "id": "s3", "text": "for a decade,", "clickable": false },
+        { "id": "s4", "text": "she was offered", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s5", "text": "a sabbatical last", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": "month to recharge.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with perfect participle clauses. The perfect passive/continuous participle requires 'Having been' + present participle ('working') to show an action completed before the main past action.",
+        "topic": "Past Perfect Continuous + Participle Clauses",
+        "concept": "Using perfect continuous participles to show duration before a past event",
+        "formula": "Having been + verb-ing, subject + past simple verb",
+        "examples": [
+          "<b>Having been working</b> all day, he was exhausted."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "I wish I _____ more attention during the compliance training sessions last month."
+      },
+      "options": {
+        "A": { "text": "paid", "correct": false },
+        "B": { "text": "had been paying", "correct": true },
+        "C": { "text": "was paying", "correct": false },
+        "D": { "text": "have been paying", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with 'wish' for past regret. 'Had been paying' expresses regret about an ongoing action (or lack thereof) in the past.",
+        "topic": "Past Perfect Continuous + Wish / If Only",
+        "concept": "Using Past Perfect Continuous to express regret about past ongoing actions",
+        "formula": "I wish + subject + had been + verb-ing",
+        "examples": [
+          "I wish I <b>had been listening</b> more carefully."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "She knew that", "clickable": false },
+        { "id": "s2", "text": "by the end", "clickable": false },
+        { "id": "s3", "text": "of the year,", "clickable": false },
+        { "id": "s4", "text": "she will have", "clickable": true, "isError": true, "correctAnswers": ["she would have"] },
+        { "id": "s5", "text": "been leading the", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s6", "text": "division for five", "clickable": true, "isError": false, "correctAnswers": [] },
+        { "id": "s7", "text": "years by then.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with 'future in the past'. When describing a future perfect continuous action from the perspective of the past ('knew'), 'will' must be backshifted to 'would'.",
+        "topic": "Future Perfect Continuous + Future in the Past",
+        "concept": "Backshifting 'will' to 'would' in future perfect continuous contexts reported from the past",
+        "formula": "Subject + past simple + that + subject + would have been + verb-ing",
+        "examples": [
+          "He knew that he <b>would have been working</b> there for a decade by then."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    }
+  ]
+}
