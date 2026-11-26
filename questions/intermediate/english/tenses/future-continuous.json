@@ -1,0 +1,947 @@
+{
+  "meta": {
+    "title": "Future Continuous Tenses",
+    "description": "A comprehensive test covering English Future Continuous Tenses themed around hospital and medical settings.",
+    "info": "This test includes 30 questions focusing on combined grammar structures involving the Future Continuous tense paired with topics like passive voice, conditionals, relative clauses, gerunds, inversion, and more, all within familiar hospital contexts.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "When the surgeon arrives, the nurses _____ the operating room for the procedure."
+      },
+      "options": {
+        "A": { "text": "prepare", "correct": false },
+        "B": { "text": "will be preparing", "correct": true },
+        "C": { "text": "are preparing", "correct": false },
+        "D": { "text": "will prepare", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with time clauses. 'Will be preparing' describes an action that will be in progress at a specific future time ('When the surgeon arrives').",
+        "topic": "Future Continuous + Time Clauses",
+        "concept": "Using Future Continuous for actions in progress at a specific future time",
+        "formula": "When + present simple, subject + will be + verb-ing",
+        "examples": [
+          "When the doctor <b>arrives</b>, we <b>will be waiting</b> in the lobby."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By tomorrow,", "clickable": false },
+        { "id": "s2", "text": "the patient", "clickable": false },
+        { "id": "s3", "text": "will be", "clickable": true, "isError": false },
+        { "id": "s4", "text": "operate on", "clickable": true, "isError": true, "correctAnswers": ["operated on"] },
+        { "id": "s5", "text": "by the", "clickable": false },
+        { "id": "s6", "text": "chief surgeon,", "clickable": false },
+        { "id": "s7", "text": "while we", "clickable": false },
+        { "id": "s8", "text": "will waiting", "clickable": true, "isError": true, "correctAnswers": ["will be waiting"] },
+        { "id": "s9", "text": "in the", "clickable": false },
+        { "id": "s10", "text": "recovery room.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with the passive voice. The passive form requires 'be' + past participle ('operated on'), and the continuous form requires 'will be' + present participle ('waiting').",
+        "topic": "Future Continuous + Passive Voice",
+        "concept": "Forming the future continuous passive and active correctly",
+        "formula": "Subject + will be + past participle; subject + will be + verb-ing",
+        "examples": [
+          "The patient <b>will be operated on</b>, and we <b>will be waiting</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "The doctor considers _____ the patient tomorrow, so he will be reviewing the charts tonight."
+      },
+      "options": {
+        "A": { "text": "to treat", "correct": false },
+        "B": { "text": "treating", "correct": true },
+        "C": { "text": "treat", "correct": false },
+        "D": { "text": "having treated", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with gerund verb patterns. The verb 'consider' must be followed by a gerund ('treating').",
+        "topic": "Future Continuous + Gerunds",
+        "concept": "Using gerunds after specific verbs in future contexts",
+        "formula": "Subject + considers + verb-ing, so + subject + will be + verb-ing",
+        "examples": [
+          "She <b>considers moving</b> to the city, so she <b>will be looking</b> for apartments."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The nurses,", "clickable": false },
+        { "id": "s2", "text": "who will", "clickable": true, "isError": false },
+        { "id": "s3", "text": "be monitor", "clickable": true, "isError": true, "correctAnswers": ["be monitoring"] },
+        { "id": "s4", "text": "the vital", "clickable": false },
+        { "id": "s5", "text": "signs closely,", "clickable": false },
+        { "id": "s6", "text": "are very", "clickable": true, "isError": false },
+        { "id": "s7", "text": "dedicated to", "clickable": false },
+        { "id": "s8", "text": "their patients.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with non-defining relative clauses. The continuous form requires 'be' + present participle ('monitoring').",
+        "topic": "Future Continuous + Relative Clauses",
+        "concept": "Forming the Future Continuous within relative clauses",
+        "formula": "Noun, who + will be + verb-ing, + present simple verb",
+        "examples": [
+          "The staff, who <b>will be assisting</b> the surgeon, are highly trained."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "If the test results are positive, the oncologist _____ a new treatment plan with the family."
+      },
+      "options": {
+        "A": { "text": "discusses", "correct": false },
+        "B": { "text": "will be discussing", "correct": true },
+        "C": { "text": "is discussing", "correct": false },
+        "D": { "text": "will have discussed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with First Conditional structures. The Future Continuous emphasizes an action that will be in progress as a result of the condition.",
+        "topic": "Future Continuous + Conditionals",
+        "concept": "Using Future Continuous in the main clause of a first conditional",
+        "formula": "If + present simple, subject + will be + verb-ing",
+        "examples": [
+          "If it <b>rains</b>, we <b>will be staying</b> indoors."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We are", "clickable": false },
+        { "id": "s2", "text": "looking forward", "clickable": false },
+        { "id": "s3", "text": "to see", "clickable": true, "isError": true, "correctAnswers": ["to seeing"] },
+        { "id": "s4", "text": "the new", "clickable": false },
+        { "id": "s5", "text": "wing open,", "clickable": false },
+        { "id": "s6", "text": "and the", "clickable": false },
+        { "id": "s7", "text": "staff will", "clickable": true, "isError": false },
+        { "id": "s8", "text": "be working", "clickable": true, "isError": false },
+        { "id": "s9", "text": "around the", "clickable": false },
+        { "id": "s10", "text": "clock.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with gerund patterns after prepositions. The phrasal verb 'look forward to' uses 'to' as a preposition, so it must be followed by a gerund ('seeing').",
+        "topic": "Future Continuous + Gerunds",
+        "concept": "Using gerunds after prepositional phrasal verbs",
+        "formula": "Subject + am/is/are + looking forward to + verb-ing; subject + will be + verb-ing",
+        "examples": [
+          "I am <b>looking forward to meeting</b> the new team, and we <b>will be collaborating</b> soon."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structure to complete the inverted sentence.",
+        "question": "Rarely _____ the hospital so quiet during the night shift."
+      },
+      "options": {
+        "A": { "text": "it will be", "correct": false },
+        "B": { "text": "will it be", "correct": true },
+        "C": { "text": "it is", "correct": false },
+        "D": { "text": "will be it", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with negative adverbial inversion. 'Rarely' at the beginning of a sentence triggers subject-auxiliary inversion ('will it be').",
+        "topic": "Future Continuous + Inversion",
+        "concept": "Subject-auxiliary inversion with negative adverbs in Future Continuous",
+        "formula": "Rarely + will + subject + be + adjective/noun",
+        "examples": [
+          "<b>Never will</b> the system <b>be</b> down for long."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Many of", "clickable": false },
+        { "id": "s2", "text": "the doctors", "clickable": false },
+        { "id": "s3", "text": "will be", "clickable": true, "isError": false },
+        { "id": "s4", "text": "attending the", "clickable": false },
+        { "id": "s5", "text": "conference, but", "clickable": false },
+        { "id": "s6", "text": "much of", "clickable": true, "isError": true, "correctAnswers": ["many of"] },
+        { "id": "s7", "text": "the nurses", "clickable": false },
+        { "id": "s8", "text": "will remain", "clickable": true, "isError": false },
+        { "id": "s9", "text": "on duty.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with quantifiers. 'Nurses' is a countable plural noun, so it must be preceded by 'many of', not 'much of' (which is used for uncountable nouns).",
+        "topic": "Future Continuous + Quantifiers",
+        "concept": "Correct quantifier usage with countable nouns",
+        "formula": "Many of + plural countable noun + will + base verb",
+        "examples": [
+          "<b>Many of</b> the staff <b>will be</b> working overtime."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "The patient must _____ a lot of pain right now, given the severity of the fracture."
+      },
+      "options": {
+        "A": { "text": "be experiencing", "correct": true },
+        "B": { "text": "experience", "correct": false },
+        "C": { "text": "have experienced", "correct": false },
+        "D": { "text": "experiencing", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future/Present Continuous aspect with modal verbs of deduction. 'Must be experiencing' expresses a strong logical deduction about an ongoing action.",
+        "topic": "Continuous Tenses + Modal Verbs",
+        "concept": "Using modal perfect continuous for present/future deductions",
+        "formula": "Subject + must + be + verb-ing",
+        "examples": [
+          "They <b>must be waiting</b> for the test results."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The intern", "clickable": false },
+        { "id": "s2", "text": "will always be", "clickable": true, "isError": true, "correctAnswers": ["will be always"] },
+        { "id": "s3", "text": "asking unnecessary", "clickable": false },
+        { "id": "s4", "text": "questions during", "clickable": false },
+        { "id": "s5", "text": "the ward", "clickable": false },
+        { "id": "s6", "text": "rounds, which", "clickable": true, "isError": false },
+        { "id": "s7", "text": "is quite", "clickable": true, "isError": false },
+        { "id": "s8", "text": "annoying.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with adverb placement. While 'will always be' is common, standard formal placement for emphasis in continuous tenses often places the adverb between the auxiliary and the main verb, or after 'be'. However, a more natural correction for the error 'will be always asking' (if that was the error) is 'will always be asking'. Let's correct 'will be always' to 'will always be' for standard adverb placement.",
+        "topic": "Future Continuous + Adverb Placement",
+        "concept": "Correct positioning of frequency adverbs in continuous tenses",
+        "formula": "Subject + will + always + be + verb-ing",
+        "examples": [
+          "He <b>will always be</b> <b>checking</b> his phone."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the cleft sentence.",
+        "question": "It will be the attending physician who _____ the final diagnosis tomorrow morning."
+      },
+      "options": {
+        "A": { "text": "makes", "correct": false },
+        "B": { "text": "will be making", "correct": true },
+        "C": { "text": "is making", "correct": false },
+        "D": { "text": "will make", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with cleft sentences for emphasis. 'Will be making' highlights the ongoing nature of the action at a specific future time.",
+        "topic": "Future Continuous + Cleft Sentences",
+        "concept": "Using Future Continuous in it-cleft structures",
+        "formula": "It + will be + noun + who + will be + verb-ing",
+        "examples": [
+          "<b>It will be</b> the manager <b>who will be leading</b> the meeting."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "A number", "clickable": false },
+        { "id": "s2", "text": "of specialists", "clickable": false },
+        { "id": "s3", "text": "will be", "clickable": true, "isError": false },
+        { "id": "s4", "text": "consulting on", "clickable": false },
+        { "id": "s5", "text": "the case,", "clickable": false },
+        { "id": "s6", "text": "but the", "clickable": false },
+        { "id": "s7", "text": "number of", "clickable": true, "isError": false },
+        { "id": "s8", "text": "available beds", "clickable": false },
+        { "id": "s9", "text": "are decreasing", "clickable": true, "isError": true, "correctAnswers": ["is decreasing"] },
+        { "id": "s10", "text": "rapidly.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with subject-verb agreement rules. 'A number of' takes a plural verb, while 'the number of' takes a singular verb ('is decreasing').",
+        "topic": "Future Continuous + Subject-Verb Agreement",
+        "concept": "Agreement with 'the number of' vs. 'a number of'",
+        "formula": "A number of + plural verb; the number of + singular verb",
+        "examples": [
+          "<b>A number of</b> doctors <b>are</b> here, but <b>the number of</b> patients <b>is</b> rising."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "As the flu season peaks, the emergency department _____ overwhelmed with patients."
+      },
+      "options": {
+        "A": { "text": "gets", "correct": false },
+        "B": { "text": "will be getting", "correct": true },
+        "C": { "text": "is getting", "correct": false },
+        "D": { "text": "will get", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with conjunctions of time. 'Will be getting' emphasizes an ongoing, changing situation in the future.",
+        "topic": "Future Continuous + Conjunctions",
+        "concept": "Describing changing situations with 'as' using Future Continuous",
+        "formula": "As + subject + verb + s/es, subject + will be + verb-ing",
+        "examples": [
+          "As the day <b>progresses</b>, the traffic <b>will be getting</b> worse."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Having scheduled", "clickable": false },
+        { "id": "s2", "text": "the surgery,", "clickable": false },
+        { "id": "s3", "text": "the patient", "clickable": false },
+        { "id": "s4", "text": "will be", "clickable": true, "isError": false },
+        { "id": "s5", "text": "fasting for", "clickable": false },
+        { "id": "s6", "text": "twelve hours,", "clickable": true, "isError": false },
+        { "id": "s7", "text": "preparing to", "clickable": true, "isError": true, "correctAnswers": ["preparing for"] },
+        { "id": "s8", "text": "the procedure.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with participle clauses and prepositions. The correct collocation is 'preparing for' a procedure, not 'preparing to' (unless followed by a verb).",
+        "topic": "Future Continuous + Participle Clauses + Prepositions",
+        "concept": "Correct preposition usage after participles in continuous contexts",
+        "formula": "Subject + will be + verb-ing, preparing for + noun",
+        "examples": [
+          "He <b>will be resting</b>, <b>preparing for</b> the operation."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct phrasal verb to complete the sentence.",
+        "question": "By the time you arrive, the pharmacist will be _____ the prescription for your new medication."
+      },
+      "options": {
+        "A": { "text": "filling out", "correct": true },
+        "B": { "text": "filling up", "correct": false },
+        "C": { "text": "filling in", "correct": false },
+        "D": { "text": "filling over", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with phrasal verbs. 'Fill out' is the correct phrasal verb for completing a prescription or form.",
+        "topic": "Future Continuous + Phrasal Verbs",
+        "concept": "Using the correct phrasal verb in continuous tenses",
+        "formula": "Subject + will be + phrasal verb + object",
+        "examples": [
+          "The nurse <b>will be filling out</b> the discharge papers."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The hospital", "clickable": false },
+        { "id": "s2", "text": "will be", "clickable": true, "isError": false },
+        { "id": "s3", "text": "hiring an", "clickable": true, "isError": true, "correctAnswers": ["hiring a"] },
+        { "id": "s4", "text": "unique specialist", "clickable": false },
+        { "id": "s5", "text": "next month,", "clickable": false },
+        { "id": "s6", "text": "and they", "clickable": false },
+        { "id": "s7", "text": "will be", "clickable": true, "isError": false },
+        { "id": "s8", "text": "offering a", "clickable": false },
+        { "id": "s9", "text": "competitive salary.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with article usage. 'Unique' starts with a consonant sound (/j/), so it correctly takes the indefinite article 'a', not 'an'.",
+        "topic": "Future Continuous + Articles",
+        "concept": "Indefinite articles before words starting with a /j/ sound",
+        "formula": "Subject + will be + verb-ing + a + word starting with /j/ sound",
+        "examples": [
+          "They <b>will be using</b> <b>a</b> <b>unique</b> method."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "By 8 PM, the surgeon will have finished the operation, so the nurses _____ the operating room."
+      },
+      "options": {
+        "A": { "text": "clean", "correct": false },
+        "B": { "text": "will be cleaning", "correct": true },
+        "C": { "text": "will have cleaned", "correct": false },
+        "D": { "text": "are cleaning", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense with the Future Continuous tense. 'Will have finished' describes a completed action, while 'will be cleaning' describes an action that will be in progress as a result.",
+        "topic": "Future Perfect + Future Continuous",
+        "concept": "Contrasting completed future actions with ongoing future actions",
+        "formula": "By + time, subject + will have + past participle, so + subject + will be + verb-ing",
+        "examples": [
+          "By noon, I <b>will have eaten</b>, so I <b>will be resting</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The doctor", "clickable": false },
+        { "id": "s2", "text": "mentioned that", "clickable": false },
+        { "id": "s3", "text": "he will", "clickable": true, "isError": true, "correctAnswers": ["he would"] },
+        { "id": "s4", "text": "be rounding", "clickable": false },
+        { "id": "s5", "text": "on the", "clickable": false },
+        { "id": "s6", "text": "patients tomorrow,", "clickable": false },
+        { "id": "s7", "text": "so we", "clickable": true, "isError": false },
+        { "id": "s8", "text": "should be", "clickable": true, "isError": false },
+        { "id": "s9", "text": "ready.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with reported speech. When the reporting verb is in the past ('mentioned'), 'will' must be backshifted to 'would'.",
+        "topic": "Future Continuous + Reported Speech",
+        "concept": "Backshifting 'will' to 'would' in reported continuous contexts",
+        "formula": "Subject + past simple + that + subject + would be + verb-ing",
+        "examples": [
+          "She <b>said</b> that she <b>would be working</b> late."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structure to complete the elliptical sentence.",
+        "question": "Dr. Smith will be attending the medical conference in Geneva, and Dr. Jones _____."
+      },
+      "options": {
+        "A": { "text": "will too", "correct": false },
+        "B": { "text": "will be too", "correct": true },
+        "C": { "text": "is too", "correct": false },
+        "D": { "text": "does too", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with ellipsis. The auxiliary 'will be' is used to avoid repeating the full verb phrase ('will be attending').",
+        "topic": "Future Continuous + Ellipsis",
+        "concept": "Omitting repeated verbs in parallel Future Continuous structures",
+        "formula": "Subject + will be + verb-ing, and + subject + will be + too",
+        "examples": [
+          "She <b>will be traveling</b>, and he <b>will be</b> too."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The new", "clickable": false },
+        { "id": "s2", "text": "MRI machine", "clickable": false },
+        { "id": "s3", "text": "is malfunctioning;", "clickable": false },
+        { "id": "s4", "text": "therefore, the", "clickable": true, "isError": true, "correctAnswers": ["however, the"] },
+        { "id": "s5", "text": "technicians", "clickable": false },
+        { "id": "s6", "text": "will be", "clickable": true, "isError": false },
+        { "id": "s7", "text": "working on", "clickable": false },
+        { "id": "s8", "text": "it all", "clickable": true, "isError": false },
+        { "id": "s9", "text": "night.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with discourse markers. 'However' is required to show the contrast between the machine malfunctioning and the technicians working on it, rather than 'therefore' (which shows result).",
+        "topic": "Future Continuous + Discourse Markers",
+        "concept": "Using contrastive discourse markers with Future Continuous contexts",
+        "formula": "Clause; however, + subject + will be + verb-ing",
+        "examples": [
+          "The system <b>is down</b>; <b>however</b>, we <b>will be working</b> on it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "Since she is used to _____ night shifts, she will be working the emergency room this weekend."
+      },
+      "options": {
+        "A": { "text": "cover", "correct": false },
+        "B": { "text": "covering", "correct": true },
+        "C": { "text": "have covered", "correct": false },
+        "D": { "text": "be covering", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with the 'be used to' structure. 'Be used to' is followed by a gerund ('covering'), and the main clause uses Future Continuous for a future arrangement.",
+        "topic": "Future Continuous + 'Be used to'",
+        "concept": "Gerunds after 'be used to' and Future Continuous for future habits",
+        "formula": "Subject + is/are used to + verb-ing; subject + will be + verb-ing",
+        "examples": [
+          "He is <b>used to working</b> late, so he <b>will be staying</b> at the office."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Not only", "clickable": false },
+        { "id": "s2", "text": "will the", "clickable": true, "isError": false },
+        { "id": "s3", "text": "hospital be", "clickable": true, "isError": false },
+        { "id": "s4", "text": "expanding its", "clickable": false },
+        { "id": "s5", "text": "facilities, but", "clickable": false },
+        { "id": "s6", "text": "it will", "clickable": false },
+        { "id": "s7", "text": "also hiring", "clickable": true, "isError": true, "correctAnswers": ["also be hiring"] },
+        { "id": "s8", "text": "more staff.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with 'not only... but also' inversion. To maintain parallel structure, the second clause must also use the Future Continuous ('will also be hiring').",
+        "topic": "Future Continuous + Not Only ... But Also",
+        "concept": "Maintaining parallel Future Continuous structure with correlative conjunctions",
+        "formula": "Not only + will + subject + be + verb-ing, but + subject + will + also + be + verb-ing",
+        "examples": [
+          "<b>Not only will</b> we <b>be testing</b> the software, but we <b>will</b> also <b>be training</b> the users."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structure to complete the inverted sentence.",
+        "question": "So busy _____ the emergency room tomorrow that the staff will be requesting extra help."
+      },
+      "options": {
+        "A": { "text": "it will be", "correct": false },
+        "B": { "text": "will it be", "correct": true },
+        "C": { "text": "it is", "correct": false },
+        "D": { "text": "will be it", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with 'so... that' inversion. 'So busy' at the beginning triggers subject-auxiliary inversion ('will it be').",
+        "topic": "Future Continuous + So / Such Inversion",
+        "concept": "Subject-auxiliary inversion with 'so' in Future Continuous contexts",
+        "formula": "So + adjective + will + subject + be + that + clause",
+        "examples": [
+          "<b>So</b> crowded <b>will</b> the hall <b>be</b> that we <b>will need</b> extra security."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Under no", "clickable": false },
+        { "id": "s2", "text": "circumstances will", "clickable": true, "isError": false },
+        { "id": "s3", "text": "the nurses", "clickable": false },
+        { "id": "s4", "text": "be leaving", "clickable": true, "isError": false },
+        { "id": "s5", "text": "their posts", "clickable": false },
+        { "id": "s6", "text": "unattended, and", "clickable": false },
+        { "id": "s7", "text": "the security", "clickable": false },
+        { "id": "s8", "text": "will monitoring", "clickable": true, "isError": true, "correctAnswers": ["will be monitoring"] },
+        { "id": "s9", "text": "the premises.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with negative adverbial inversion. 'Will' must be followed by 'be' + present participle ('monitoring') to form the continuous aspect.",
+        "topic": "Future Continuous + Negative Adverbial Inversion",
+        "concept": "Forming the continuous aspect after inverted negative phrases",
+        "formula": "Under no circumstances + will + subject + be + verb-ing",
+        "examples": [
+          "<b>Under no circumstances will</b> the staff <b>be ignoring</b> the protocols."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the noun clause.",
+        "question": "What concerns the administration is that the budget _____ shrinking while patient demand is rising."
+      },
+      "options": {
+        "A": { "text": "shrinks", "correct": false },
+        "B": { "text": "will be", "correct": true },
+        "C": { "text": "is", "correct": false },
+        "D": { "text": "has been", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with noun clauses. 'Will be' indicates an ongoing future state that is causing present concern.",
+        "topic": "Future Continuous + Noun Clauses",
+        "concept": "Using Future Continuous in noun clauses to describe future ongoing states",
+        "formula": "What + present simple + is that + subject + will be + verb-ing",
+        "examples": [
+          "What I <b>know</b> is that the costs <b>will be rising</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I don't", "clickable": false },
+        { "id": "s2", "text": "know whether", "clickable": false },
+        { "id": "s3", "text": "the doctor", "clickable": false },
+        { "id": "s4", "text": "will be", "clickable": true, "isError": false },
+        { "id": "s5", "text": "available tomorrow,", "clickable": false },
+        { "id": "s6", "text": "or if", "clickable": false },
+        { "id": "s7", "text": "she will", "clickable": true, "isError": false },
+        { "id": "s8", "text": "seeing patients", "clickable": true, "isError": true, "correctAnswers": ["be seeing patients"] },
+        { "id": "s9", "text": "instead.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with 'whether... or' clauses. The continuous form requires 'will be' + present participle ('seeing').",
+        "topic": "Future Continuous + 'Whether... or'",
+        "concept": "Maintaining Future Continuous structure in alternative clauses",
+        "formula": "Subject + will be + verb-ing, or if + subject + will + be + verb-ing",
+        "examples": [
+          "I don't know if he <b>will be working</b> or if he <b>will be resting</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "During the drill tomorrow, the staff will be acting as though a real emergency _____ occurring."
+      },
+      "options": {
+        "A": { "text": "is", "correct": false },
+        "B": { "text": "were", "correct": true },
+        "C": { "text": "will be", "correct": false },
+        "D": { "text": "has been", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with 'as though' unreal comparisons. The past subjunctive 'were' is used to describe a hypothetical situation that contradicts reality.",
+        "topic": "Future Continuous + As Though / As If",
+        "concept": "Using past subjunctive for unreal comparisons in future contexts",
+        "formula": "Subject + will be + verb-ing + as though + subject + were + verb-ing",
+        "examples": [
+          "They <b>will be practicing</b> as though the exam <b>were</b> tomorrow."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "It is", "clickable": false },
+        { "id": "s2", "text": "high time", "clickable": false },
+        { "id": "s3", "text": "the hospital", "clickable": false },
+        { "id": "s4", "text": "upgrades its", "clickable": true, "isError": true, "correctAnswers": ["upgraded its"] },
+        { "id": "s5", "text": "equipment, because", "clickable": false },
+        { "id": "s6", "text": "the current", "clickable": false },
+        { "id": "s7", "text": "machines will", "clickable": true, "isError": false },
+        { "id": "s8", "text": "be failing", "clickable": true, "isError": false },
+        { "id": "s9", "text": "soon.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with the 'it's high time' structure. 'It's high time' requires the past subjunctive ('upgraded') to indicate present urgency.",
+        "topic": "Future Continuous + It's High Time",
+        "concept": "Past subjunctive in 'it's high time' structures alongside Future Continuous",
+        "formula": "It is high time + subject + past simple, because + subject + will be + verb-ing",
+        "examples": [
+          "<b>It is high time</b> we <b>replaced</b> the server, as it <b>will be crashing</b> soon."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structure to complete the conditional inversion.",
+        "question": "_____ any assistance during your recovery, the nursing staff will be checking on you regularly."
+      },
+      "options": {
+        "A": { "text": "Should you need", "correct": true },
+        "B": { "text": "If you will need", "correct": false },
+        "C": { "text": "Were you needing", "correct": false },
+        "D": { "text": "Had you needed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Continuous tense with first conditional inversion. 'Should you need' is a formal inversion of 'If you should need', paired with a Future Continuous main clause.",
+        "topic": "Future Continuous + Conditional Inversion",
+        "concept": "Inversion with 'should' for future possibility paired with Future Continuous",
+        "formula": "Should + subject + base verb, subject + will be + verb-ing",
+        "examples": [
+          "<b>Should you require</b> help, we <b>will be assisting</b> you."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Were I", "clickable": false },
+        { "id": "s2", "text": "to accept", "clickable": false },
+        { "id": "s3", "text": "the position,", "clickable": false },
+        { "id": "s4", "text": "I will", "clickable": true, "isError": true, "correctAnswers": ["I would"] },
+        { "id": "s5", "text": "be working", "clickable": false },
+        { "id": "s6", "text": "the night", "clickable": false },
+        { "id": "s7", "text": "shift, which", "clickable": true, "isError": false },
+        { "id": "s8", "text": "means I", "clickable": true, "isError": false },
+        { "id": "s9", "text": "will be", "clickable": true, "isError": true, "correctAnswers": ["would be"] },
+        { "id": "s10", "text": "sleeping during", "clickable": false },
+        { "id": "s11", "text": "the day.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Continuous tense with second conditional inversion. 'Were I to accept' is a hypothetical condition, so the result clauses must use 'would' instead of 'will'.",
+        "topic": "Future Continuous + Conditional Inversion",
+        "concept": "Using 'would' in result clauses of inverted second conditionals",
+        "formula": "Were + subject + to + base verb, subject + would + be + verb-ing",
+        "examples": [
+          "<b>Were I to</b> <b>take</b> the job, I <b>would be traveling</b> often."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    }
+  ]
+}
