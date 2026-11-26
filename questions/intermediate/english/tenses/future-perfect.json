@@ -1,0 +1,913 @@
+{
+  "meta": {
+    "title": "English Future Perfect Tenses Test",
+    "description": "A comprehensive test covering English Future Perfect Tenses themed around mobile gaming.",
+    "info": "This test includes 30 questions focusing on combined grammar structures involving the Future Perfect tense paired with topics like passive voice, conditionals, relative clauses, gerunds, quantifiers, inversion, and more, all within familiar mobile game contexts.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "By the time the server maintenance ends, the new patch _____ to all regions."
+      },
+      "options": {
+        "A": { "text": "will have been deployed", "correct": true },
+        "B": { "text": "will be deploying", "correct": false },
+        "C": { "text": "will have deployed", "correct": false },
+        "D": { "text": "is deployed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense with the passive voice. The action will be completed before a specific future time ('By the time... ends'), and the subject receives the action.",
+        "topic": "Future Perfect + Passive Voice",
+        "concept": "Completed future actions in the passive voice",
+        "formula": "By the time + present simple, subject + will have been + past participle",
+        "examples": [
+          "By tomorrow, the update <b>will have been installed</b> on all devices."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If the developers", "clickable": false },
+        { "id": "s2", "text": "releases", "clickable": true, "isError": true, "correctAnswers": ["release"] },
+        { "id": "s3", "text": " the update tomorrow,", "clickable": false },
+        { "id": "s4", "text": "the players", "clickable": false },
+        { "id": "s5", "text": "will have downloaded", "clickable": true, "isError": false },
+        { "id": "s6", "text": " it by Friday.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect tense with a First Conditional structure. The 'if' clause requires the present simple tense, and the plural subject 'developers' requires the base verb 'release'.",
+        "topic": "Future Perfect + Conditionals",
+        "concept": "Present simple in 'if' clauses predicting a future perfect result",
+        "formula": "If + plural subject + base verb, subject + will have + past participle",
+        "examples": [
+          "If they <b>announce</b> the event today, we <b>will have prepared</b> by tomorrow."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The guild, which _____ the raid boss by midnight, will claim the exclusive rewards."
+      },
+      "options": {
+        "A": { "text": "will have farmed", "correct": true },
+        "B": { "text": "will have been farming", "correct": false },
+        "C": { "text": "has farmed", "correct": false },
+        "D": { "text": "will farm", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense with a non-defining relative clause. 'Will have farmed' indicates an action that will be completed before a specific future time ('by midnight').",
+        "topic": "Future Perfect + Relative Clauses",
+        "concept": "Future Perfect in relative clauses describing completion before a future point",
+        "formula": "Noun, which + will have + past participle + by + future time, + will + base verb",
+        "examples": [
+          "The team, which <b>will have finished</b> the project by Friday, will celebrate."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By next month,", "clickable": false },
+        { "id": "s2", "text": "the player will have finished", "clickable": true, "isError": false },
+        { "id": "s3", "text": "to grind", "clickable": true, "isError": true, "correctAnswers": ["grinding"] },
+        { "id": "s4", "text": " the materials,", "clickable": false },
+        { "id": "s5", "text": "allowing them", "clickable": true, "isError": false },
+        { "id": "s6", "text": "to craft", "clickable": true, "isError": false },
+        { "id": "s7", "text": " the legendary weapon.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect tense with gerund verb patterns. The verb 'finish' must be followed by a gerund ('grinding'), not a to-infinitive.",
+        "topic": "Future Perfect + Gerunds vs. Infinitives",
+        "concept": "Verbs requiring gerund complements in Future Perfect contexts",
+        "formula": "Subject + will have + finished + verb-ing",
+        "examples": [
+          "She will have finished <b>reading</b> the guide by tonight."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct quantifiers to complete the sentence.",
+        "question": "By the end of the season, _____ players will have spent a significant amount of gems, while _____ will have reached the top rank."
+      },
+      "options": {
+        "A": { "text": "many / few", "correct": true },
+        "B": { "text": "much / little", "correct": false },
+        "C": { "text": "many / little", "correct": false },
+        "D": { "text": "much / few", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense with quantifiers. 'Players' is a countable plural noun, requiring 'many'. The implied noun for the second blank is also countable ('players'), requiring 'few'.",
+        "topic": "Future Perfect + Quantifiers",
+        "concept": "Countable quantifiers with Future Perfect subjects",
+        "formula": "Many + plural noun + will have + past participle; few + will have + past participle",
+        "examples": [
+          "<b>Many</b> users <b>will have upgraded</b>, but <b>few</b> <b>will have</b> mastered it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By the time the event", "clickable": false },
+        { "id": "s2", "text": "concludes,", "clickable": false },
+        { "id": "s3", "text": "the developers will have", "clickable": true, "isError": false },
+        { "id": "s4", "text": "distributed", "clickable": true, "isError": false },
+        { "id": "s5", "text": " rewards", "clickable": false },
+        { "id": "s6", "text": "depending on", "clickable": true, "isError": false },
+        { "id": "s7", "text": "their final standings.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This question contains no errors. It correctly combines the Future Perfect tense with an adverbial clause of time and a prepositional phrase ('depending on').",
+        "topic": "Future Perfect + Prepositions + Time Clauses",
+        "concept": "Correct usage of Future Perfect with time clauses and prepositions",
+        "formula": "By the time + present simple, subject + will have + past participle + depending on + noun",
+        "examples": [
+          "By the time the match <b>ends</b>, they <b>will have distributed</b> prizes <b>depending on</b> the score."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structure to complete the inverted sentence.",
+        "question": "Rarely _____ such a generous login bonus before the anniversary event concludes."
+      },
+      "options": {
+        "A": { "text": "will the developers have released", "correct": true },
+        "B": { "text": "the developers will have released", "correct": false },
+        "C": { "text": "will have the developers released", "correct": false },
+        "D": { "text": "the developers have released", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense with negative adverbial inversion. 'Rarely' at the beginning of the sentence triggers subject-auxiliary inversion ('will the developers have released').",
+        "topic": "Future Perfect + Inversion",
+        "concept": "Subject-auxiliary inversion with negative adverbs in Future Perfect",
+        "formula": "Rarely + will + subject + have + past participle",
+        "examples": [
+          "<b>Never will</b> the system <b>have processed</b> so many requests."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By next week,", "clickable": false },
+        { "id": "s2", "text": "the number of active players", "clickable": false },
+        { "id": "s3", "text": "will have", "clickable": true, "isError": false },
+        { "id": "s4", "text": "increased,", "clickable": false },
+        { "id": "s5", "text": "while a number of bugs", "clickable": false },
+        { "id": "s6", "text": "will has", "clickable": true, "isError": true, "correctAnswers": ["will have"] },
+        { "id": "s7", "text": " been patched.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect tense with subject-verb agreement rules. 'The number of' takes a singular verb ('will have'), and 'a number of' takes a plural verb ('will have', not 'will has').",
+        "topic": "Future Perfect + Subject-Verb Agreement",
+        "concept": "Agreement with 'the number of' vs. 'a number of' in Future Perfect",
+        "formula": "The number of + noun + will have + past participle; a number of + noun + will have + been + past participle",
+        "examples": [
+          "<b>The number of</b> errors <b>will have</b> dropped, while <b>a number of</b> issues <b>will have</b> been resolved."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "By the time the new season begins, the current meta _____ significantly."
+      },
+      "options": {
+        "A": { "text": "will shift", "correct": false },
+        "B": { "text": "will have shifted", "correct": true },
+        "C": { "text": "is shifting", "correct": false },
+        "D": { "text": "has shifted", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense with an adverbial clause of time. 'Will have shifted' indicates an action that will be completed before the future event ('the new season begins').",
+        "topic": "Future Perfect + Adverbial Clauses of Time",
+        "concept": "Future Perfect for actions completed before a future time marker",
+        "formula": "By the time + present simple, subject + will have + past participle",
+        "examples": [
+          "By the time the movie <b>starts</b>, we <b>will have arrived</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By the end of the tournament,", "clickable": false },
+        { "id": "s2", "text": "the champion must has", "clickable": true, "isError": true, "correctAnswers": ["the champion must have"] },
+        { "id": "s3", "text": " practiced", "clickable": true, "isError": false },
+        { "id": "s4", "text": " for hundreds of hours,", "clickable": false },
+        { "id": "s5", "text": "and they", "clickable": false },
+        { "id": "s6", "text": "will have mastered", "clickable": true, "isError": false },
+        { "id": "s7", "text": " every character.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect tense with modal verbs of deduction in the perfect form. Modal verbs ('must') are always followed by the base form 'have', never 'has'.",
+        "topic": "Future Perfect + Modal Verbs",
+        "concept": "Base form of 'have' after modal verbs in perfect constructions",
+        "formula": "Subject + must + have + past participle; subject + will have + past participle",
+        "examples": [
+          "He <b>must have</b> <b>trained</b> for months, and he <b>will have</b> <b>perfected</b> his strategy."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct discourse marker to complete the sentence.",
+        "question": "The game has been struggling with server issues; _____, by next month, the company will have upgraded its infrastructure."
+      },
+      "options": {
+        "A": { "text": "however", "correct": false },
+        "B": { "text": "therefore", "correct": true },
+        "C": { "text": "nevertheless", "correct": false },
+        "D": { "text": "although", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous with the Future Perfect tense and a resultative discourse marker. 'Therefore' correctly links the ongoing problem with the future solution.",
+        "topic": "Future Perfect + Discourse Markers",
+        "concept": "Using resultative discourse markers with Future Perfect contexts",
+        "formula": "Present perfect continuous clause; therefore, + subject + will have + past participle",
+        "examples": [
+          "The system is outdated; <b>therefore</b>, we <b>will have replaced</b> it by Friday."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "It are", "clickable": true, "isError": true, "correctAnswers": ["It is"] },
+        { "id": "s2", "text": " the dedicated players", "clickable": false },
+        { "id": "s3", "text": "who", "clickable": false },
+        { "id": "s4", "text": "will have completed", "clickable": true, "isError": false },
+        { "id": "s5", "text": " the achievement", "clickable": false },
+        { "id": "s6", "text": "by the deadline,", "clickable": false },
+        { "id": "s7", "text": "not the casual ones.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect tense with a cleft sentence for emphasis. 'It is' is required for singular emphasis on 'the dedicated players'.",
+        "topic": "Future Perfect + Cleft Sentences",
+        "concept": "Subject-verb agreement in it-cleft structures with Future Perfect",
+        "formula": "It + is + plural noun + who + will have + past participle",
+        "examples": [
+          "<b>It is</b> the developers who <b>will have fixed</b> the bugs by tomorrow."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structure to complete the sentence.",
+        "question": "_____ for weeks, the player will have maxed out their character's level by the time the new expansion launches."
+      },
+      "options": {
+        "A": { "text": "Having grinded", "correct": false },
+        "B": { "text": "Having ground", "correct": true },
+        "C": { "text": "Grinding", "correct": false },
+        "D": { "text": "To have grinded", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect participle clause with the Future Perfect tense. 'Having ground' (past participle of grind) indicates an action completed before the main Future Perfect action.",
+        "topic": "Future Perfect + Participle Clauses",
+        "concept": "Perfect participle indicating an action prior to the Future Perfect main verb",
+        "formula": "Having + past participle, subject + will have + past participle + by the time + present simple",
+        "examples": [
+          "<b>Having studied</b> all night, she <b>will have mastered</b> the material by the exam."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By the end of the month,", "clickable": false },
+        { "id": "s2", "text": "the game will have become", "clickable": true, "isError": false },
+        { "id": "s3", "text": "more popularer than", "clickable": true, "isError": true, "correctAnswers": ["more popular than"] },
+        { "id": "s4", "text": "its predecessor,", "clickable": false },
+        { "id": "s5", "text": "attracting a larger", "clickable": true, "isError": false },
+        { "id": "s6", "text": "player base.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect tense with advanced comparatives. 'Popular' is a multi-syllable adjective, so it requires 'more popular', not 'more popularer' (which is a double comparative error).",
+        "topic": "Future Perfect + Advanced Comparatives",
+        "concept": "Correct comparative forms in Future Perfect sentences",
+        "formula": "Subject + will have + become + more + adjective + than + noun",
+        "examples": [
+          "The app <b>will have become</b> <b>more efficient</b> than the old version."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "By the time the maintenance is over, the devs will have _____ the controversial changes and _____ the servers back online."
+      },
+      "options": {
+        "A": { "text": "rolled back / brought", "correct": true },
+        "B": { "text": "rolled back / bring", "correct": false },
+        "C": { "text": "rolling back / brought", "correct": false },
+        "D": { "text": "roll back / bring", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense with phrasal verbs. After 'will have', both phrasal verbs must be in their past participle forms ('rolled back', 'brought').",
+        "topic": "Future Perfect + Phrasal Verbs",
+        "concept": "Past participle forms of phrasal verbs in Future Perfect",
+        "formula": "Subject + will have + past participle of phrasal verb + and + past participle of phrasal verb",
+        "examples": [
+          "They <b>will have</b> <b>shut down</b> the system and <b>restarted</b> it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By next year,", "clickable": false },
+        { "id": "s2", "text": "the studio will have released", "clickable": true, "isError": false },
+        { "id": "s3", "text": "an unique", "clickable": true, "isError": true, "correctAnswers": ["a unique"] },
+        { "id": "s4", "text": " mobile game", "clickable": false },
+        { "id": "s5", "text": "that", "clickable": false },
+        { "id": "s6", "text": "will have captured", "clickable": true, "isError": false },
+        { "id": "s7", "text": " a global audience.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect tense with article usage. 'Unique' starts with a consonant sound (/j/), so it correctly takes the indefinite article 'a', not 'an'.",
+        "topic": "Future Perfect + Articles",
+        "concept": "Indefinite articles before words starting with a /j/ sound",
+        "formula": "Subject + will have + released + a + word starting with /j/ sound",
+        "examples": [
+          "They <b>will have built</b> <b>a</b> <b>unique</b> platform by then."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the elliptical sentence.",
+        "question": "The veterans will have mastered the new mechanics by tomorrow, but the newcomers _____."
+      },
+      "options": {
+        "A": { "text": "won't have", "correct": true },
+        "B": { "text": "don't", "correct": false },
+        "C": { "text": "haven't", "correct": false },
+        "D": { "text": "won't", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense with ellipsis. The auxiliary 'won't have' is used to avoid repeating the full Future Perfect verb phrase ('will have mastered').",
+        "topic": "Future Perfect + Ellipsis",
+        "concept": "Omitting repeated verb phrases in Future Perfect using auxiliary verbs",
+        "formula": "Subject + will have + past participle, but + subject + won't have",
+        "examples": [
+          "She <b>will have finished</b> her work, but I <b>won't have</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If only the devs", "clickable": false },
+        { "id": "s2", "text": "had listened", "clickable": true, "isError": false },
+        { "id": "s3", "text": " to the community earlier,", "clickable": false },
+        { "id": "s4", "text": "the game will have avoided", "clickable": true, "isError": true, "correctAnswers": ["the game would have avoided"] },
+        { "id": "s5", "text": " the massive backlash", "clickable": false },
+        { "id": "s6", "text": "it is facing now.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a past unreal conditional ('If only... had listened') with a Third Conditional main clause. The result of a past unreal condition requires 'would have avoided', not 'will have avoided'.",
+        "topic": "Future Perfect + Mixed Conditionals",
+        "concept": "Correct modal usage in hypothetical past conditionals",
+        "formula": "If only + subject + had + past participle, subject + would have + past participle",
+        "examples": [
+          "If only I <b>had studied</b>, I <b>would have passed</b> the exam."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "Not only _____ the update introduced new characters, but it _____ also rebalanced the existing roster."
+      },
+      "options": {
+        "A": { "text": "will / will have", "correct": true },
+        "B": { "text": "will have / will", "correct": false },
+        "C": { "text": "has / will have", "correct": false },
+        "D": { "text": "will have / has", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense with 'not only... but also' inversion. 'Not only' triggers subject-auxiliary inversion ('will the update have introduced'), and the second clause uses 'will have' to maintain the Future Perfect tense.",
+        "topic": "Future Perfect + Not Only ... But Also",
+        "concept": "Subject-auxiliary inversion with 'not only' in Future Perfect",
+        "formula": "Not only + will + subject + have + past participle, but + subject + will + also + have + past participle",
+        "examples": [
+          "<b>Not only will</b> she <b>have finished</b> the report, but she <b>will</b> also <b>have</b> <b>presented</b> it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Under no circumstances", "clickable": false },
+        { "id": "s2", "text": "the account will have", "clickable": true, "isError": true, "correctAnswers": ["will the account have"] },
+        { "id": "s3", "text": " been banned", "clickable": true, "isError": false },
+        { "id": "s4", "text": " without a prior", "clickable": false },
+        { "id": "s5", "text": "warning from", "clickable": true, "isError": false },
+        { "id": "s6", "text": " the moderation team.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect passive with negative adverbial inversion. 'Under no circumstances' at the beginning of a clause requires subject-auxiliary inversion ('will the account have').",
+        "topic": "Future Perfect + Negative Adverbial Inversion",
+        "concept": "Subject-auxiliary inversion with negative phrases in Future Perfect",
+        "formula": "Under no circumstances + will + subject + have + been + past participle",
+        "examples": [
+          "<b>Under no circumstances will</b> the data <b>have been</b> compromised."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ assistance, the support team will have already prepared a comprehensive guide by the time you contact them."
+      },
+      "options": {
+        "A": { "text": "Should you need", "correct": true },
+        "B": { "text": "If you will need", "correct": false },
+        "C": { "text": "Were you needing", "correct": false },
+        "D": { "text": "Had you needed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines first conditional inversion ('Should you need') with the Future Perfect tense in the main clause to describe an action completed before another future action.",
+        "topic": "Future Perfect + Conditional Inversion",
+        "concept": "Inversion with 'should' for future possibility paired with Future Perfect",
+        "formula": "Should + subject + base verb, subject + will have + past participle + by the time + present simple",
+        "examples": [
+          "<b>Should you require</b> help, we <b>will have</b> already <b>prepared</b> the documents."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The developers insist", "clickable": false },
+        { "id": "s2", "text": "that the new patch", "clickable": false },
+        { "id": "s3", "text": "will have been", "clickable": true, "isError": true, "correctAnswers": ["be"] },
+        { "id": "s4", "text": " thoroughly tested", "clickable": true, "isError": false },
+        { "id": "s5", "text": " before it", "clickable": false },
+        { "id": "s6", "text": "goes live.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the mandative subjunctive with a future time clause. After 'insist that', the verb must be in the base form ('be'), not the Future Perfect 'will have been'.",
+        "topic": "Future Perfect + Subjunctive Mood",
+        "concept": "Mandative subjunctive overriding Future Perfect in 'insist that' clauses",
+        "formula": "Subject + insist + that + subject + base verb + before + present simple",
+        "examples": [
+          "They insist that the system <b>be</b> updated before it launches."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The new update will have been so transformative that it will seem as though the game _____ entirely rebuilt."
+      },
+      "options": {
+        "A": { "text": "is", "correct": false },
+        "B": { "text": "were", "correct": true },
+        "C": { "text": "has been", "correct": false },
+        "D": { "text": "will be", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect passive with 'as though' + past subjunctive ('were') to describe an unreal or hypothetical comparison resulting from the future action.",
+        "topic": "Future Perfect + As Though / As If",
+        "concept": "Past subjunctive for unreal comparisons following Future Perfect",
+        "formula": "Subject + will have been + so + adjective + that + it will seem as though + subject + were + past participle",
+        "examples": [
+          "The renovation <b>will have been</b> so complete that it will seem as though the house <b>were</b> new."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "So addictive", "clickable": false },
+        { "id": "s2", "text": "will the new gameplay loop", "clickable": true, "isError": true, "correctAnswers": ["will the new gameplay loop have"] },
+        { "id": "s3", "text": " become", "clickable": true, "isError": true, "correctAnswers": ["become"] },
+        { "id": "s4", "text": " that players", "clickable": false },
+        { "id": "s5", "text": "will have spent", "clickable": true, "isError": false },
+        { "id": "s6", "text": " countless hours", "clickable": false },
+        { "id": "s7", "text": "on it by the end of the week.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines 'so + adjective' inversion with the Future Perfect tense. The correct inversion is 'will the new gameplay loop have become', placing the auxiliary 'will' before the subject and 'have' after it.",
+        "topic": "Future Perfect + So / Such Inversion",
+        "concept": "Subject-auxiliary inversion with 'so' in Future Perfect",
+        "formula": "So + adjective + will + subject + have + past participle + that + clause",
+        "examples": [
+          "<b>So</b> difficult <b>will</b> the test <b>have been</b> that students <b>will have</b> struggled."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "What the community does not realize is that the developers _____ already _____ the next three seasons by the end of this month."
+      },
+      "options": {
+        "A": { "text": "will have / planned", "correct": true },
+        "B": { "text": "will / plan", "correct": false },
+        "C": { "text": "have / planned", "correct": false },
+        "D": { "text": "will have been / planning", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense with a noun clause acting as the subject complement. 'Will have planned' indicates an action completed before a specific future time.",
+        "topic": "Future Perfect + Noun Clauses",
+        "concept": "Future Perfect in noun clauses following present tense verbs",
+        "formula": "What + subject + present simple verb + is that + subject + will have + past participle + by + future time",
+        "examples": [
+          "What they don't know is that we <b>will have</b> already <b>finished</b> by Friday."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The guild leader expects", "clickable": false },
+        { "id": "s2", "text": "having recruited", "clickable": true, "isError": true, "correctAnswers": ["to have recruited"] },
+        { "id": "s3", "text": " enough members", "clickable": false },
+        { "id": "s4", "text": "by Friday,", "clickable": false },
+        { "id": "s5", "text": "meaning they", "clickable": true, "isError": false },
+        { "id": "s6", "text": "will have formed", "clickable": true, "isError": false },
+        { "id": "s7", "text": " a full raid team", "clickable": false },
+        { "id": "s8", "text": "before the reset.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect tense with verb patterns. 'Expect' is followed by a perfect infinitive ('to have recruited') to refer to a future completed action, not a gerund.",
+        "topic": "Future Perfect + Verb Patterns",
+        "concept": "Perfect infinitives following 'expect' to indicate future completion",
+        "formula": "Subject + expects + to have + past participle + by + future time, meaning + subject + will have + past participle",
+        "examples": [
+          "She expects <b>to have finished</b> the project by Monday, meaning she <b>will have</b> <b>met</b> the deadline."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct prepositions to complete the sentence.",
+        "question": "By the end of the event, the players will be accustomed _____ the new mechanics, and the developers will have been responsive _____ their feedback."
+      },
+      "options": {
+        "A": { "text": "to / to", "correct": true },
+        "B": { "text": "with / for", "correct": false },
+        "C": { "text": "to / for", "correct": false },
+        "D": { "text": "with / to", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense with preposition collocations. 'Accustomed' is followed by 'to', and 'responsive' is also followed by 'to'.",
+        "topic": "Future Perfect + Prepositions after Adjectives",
+        "concept": "Correct preposition usage after specific adjectives in Future Perfect contexts",
+        "formula": "Subject + will be accustomed to + noun; subject + will have been responsive to + noun",
+        "examples": [
+          "They <b>will be</b> <b>accustomed to</b> the rules, and the staff <b>will have been</b> <b>responsive to</b> complaints."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By the time", "clickable": false },
+        { "id": "s2", "text": "the mobile game reaches", "clickable": true, "isError": false },
+        { "id": "s3", "text": " its fifth anniversary,", "clickable": false },
+        { "id": "s4", "text": "it will have generated", "clickable": true, "isError": false },
+        { "id": "s5", "text": " billions in revenue,", "clickable": false },
+        { "id": "s6", "text": "and the original creators", "clickable": false },
+        { "id": "s7", "text": "will has", "clickable": true, "isError": true, "correctAnswers": ["will have"] },
+        { "id": "s8", "text": " long since moved on", "clickable": true, "isError": false },
+        { "id": "s9", "text": " to new projects.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect tense with sequence of tenses and subject-verb agreement. The plural subject 'creators' requires the plural auxiliary 'will have', not 'will has'.",
+        "topic": "Future Perfect + Sequence of Tenses",
+        "concept": "Plural agreement in compound Future Perfect sentences",
+        "formula": "By the time + present simple, subject + will have + past participle, and + plural subject + will have + past participle",
+        "examples": [
+          "By the time the company <b>expands</b>, it <b>will have</b> <b>grown</b>, and the founders <b>will have</b> <b>stepped</b> down."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "It is widely expected that the new expansion _____ by millions of players before the end of the year."
+      },
+      "options": {
+        "A": { "text": "will have been downloaded", "correct": true },
+        "B": { "text": "will have downloaded", "correct": false },
+        "C": { "text": "is downloaded", "correct": false },
+        "D": { "text": "will be downloading", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect tense with passive reporting structures. 'Will have been downloaded' indicates a future completed action in the passive voice.",
+        "topic": "Future Perfect + Advanced Passive Structures",
+        "concept": "Future Perfect passive in reporting structures",
+        "formula": "It is expected that + subject + will have been + past participle + by + future time",
+        "examples": [
+          "It is believed that the bridge <b>will have been</b> <b>completed</b> by December."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By the time", "clickable": false },
+        { "id": "s2", "text": "the players notice", "clickable": true, "isError": false },
+        { "id": "s3", "text": " the nerf,", "clickable": false },
+        { "id": "s4", "text": "the developers will have", "clickable": true, "isError": false },
+        { "id": "s5", "text": "already adjusted", "clickable": true, "isError": false },
+        { "id": "s6", "text": " the character's stats.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This question contains no errors. It correctly combines the Future Perfect tense with an adverbial clause of time, using the present simple 'notice' in the time clause and 'will have adjusted' in the main clause.",
+        "topic": "Future Perfect + Future Time Clauses",
+        "concept": "Present simple in future time clauses with Future Perfect main clauses",
+        "formula": "By the time + subject + present simple, subject + will have + already + past participle",
+        "examples": [
+          "By the time you <b>arrive</b>, we <b>will have</b> already <b>started</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    }
+  ]
+}

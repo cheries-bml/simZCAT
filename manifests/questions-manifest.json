@@ -3,12 +3,21 @@
     "questions/intermediate/english/grammar/verb-pattern.json",
     "questions/intermediate/english/tenses/all-tenses-culture-2.json",
     "questions/intermediate/english/tenses/all-tenses-culture.json",
+
+    "questions/intermediate/english/tenses/future-perfect-continuous.json",
+    "questions/intermediate/english/tenses/future-continuous.json",
+    "questions/intermediate/english/tenses/future-perfect.json",
+    "questions/intermediate/english/tenses/simple-future.json",
+
     "questions/intermediate/english/tenses/present-perfect-continuous.json",
     "questions/intermediate/english/tenses/present-continuous.json",
     "questions/intermediate/english/tenses/present-perfect.json",
-    "questions/intermediate/english/tenses/past-perfect.json",
-    "questions/intermediate/english/tenses/simple-future.json",
     "questions/intermediate/english/tenses/simple-present.json",
+
+    "questions/intermediate/english/tenses/past-perfect.json",
+    "questions/intermediate/english/tenses/past-continuous.json",
+    "questions/intermediate/english/tenses/simple-past.json",
+
     "questions/advanced/english/grammar/adverbial_of_concession.json",
     "questions/advanced/english/grammar/dangling_modifiers.json",
     "questions/advanced/english/grammar/participle_clauses.json",

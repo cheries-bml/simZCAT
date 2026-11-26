@@ -1,0 +1,896 @@
+{
+  "meta": {
+    "title": "English Past Continuous Tenses Test",
+    "description": "A comprehensive test covering English Past Continuous Tenses combined with other grammar topics, themed around love, dating, and romance.",
+    "info": "This test includes 30 questions focusing on combined grammar structures involving the Past Continuous tense paired with topics like simple past, stative verbs, passive voice, inversion, and more, all within familiar romantic contexts.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "While we ___ along the Seine, it suddenly ___ to rain."
+      },
+      "options": {
+        "A": { "text": "were walking / started", "correct": true },
+        "B": { "text": "walked / was starting", "correct": false },
+        "C": { "text": "were walking / was starting", "correct": false },
+        "D": { "text": "walked / started", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Continuous tense with the Simple Past tense. 'Were walking' describes an ongoing background action in the past, while 'started' describes a sudden, completed action that interrupted it.",
+        "topic": "Past Continuous + Simple Past",
+        "concept": "Interrupted actions in the past using 'while' and 'when'",
+        "formula": "While + subject + was/were + verb-ing, subject + past simple verb",
+        "examples": [
+          "While we <b>were having</b> a romantic dinner, the lights <b>went</b> out."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I ", "clickable": false },
+        { "id": "s2", "text": "was needing", "clickable": true, "isError": true, "correctAnswers": ["needed"] },
+        { "id": "s3", "text": " to tell him ", "clickable": false },
+        { "id": "s4", "text": "I loved him, but ", "clickable": false },
+        { "id": "s5", "text": "I was fearing", "clickable": true, "isError": true, "correctAnswers": ["I feared"] },
+        { "id": "s6", "text": " rejection.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous tense with stative verbs. Verbs expressing states, emotions, or mental processes like 'need' and 'fear' are generally not used in continuous tenses; the Simple Past ('needed', 'feared') must be used instead.",
+        "topic": "Past Continuous + Stative Verbs",
+        "concept": "Avoiding continuous forms for stative verbs in past narratives",
+        "formula": "Subject + past simple (stative verb) + object",
+        "examples": [
+          "I <b>wanted</b> to kiss him, but I <b>feared</b> ruining our friendship."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "The romantic dinner ___ by the hotel staff when the couple unexpectedly arrived early."
+      },
+      "options": {
+        "A": { "text": "was being prepared", "correct": true },
+        "B": { "text": "was preparing", "correct": false },
+        "C": { "text": "had been prepared", "correct": false },
+        "D": { "text": "were being prepared", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Continuous tense with the passive voice. The action was ongoing in the past ('was being'), and the subject received the action ('prepared'), requiring the past continuous passive form.",
+        "topic": "Past Continuous + Passive Voice",
+        "concept": "Forming the past continuous passive for ongoing past actions received by the subject",
+        "formula": "Subject + was/were + being + past participle",
+        "examples": [
+          "The love letter <b>was being written</b> when the phone rang."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The lovers ", "clickable": false },
+        { "id": "s2", "text": "was walking", "clickable": true, "isError": true, "correctAnswers": ["were walking"] },
+        { "id": "s3", "text": " hand in hand, and ", "clickable": false },
+        { "id": "s4", "text": "neither of them ", "clickable": false },
+        { "id": "s5", "text": "were looking", "clickable": true, "isError": true, "correctAnswers": ["was looking"] },
+        { "id": "s6", "text": " at their phones.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous tense with subject-verb agreement. 'Lovers' is plural, requiring 'were walking'. 'Neither' is grammatically singular, requiring the singular auxiliary 'was looking'.",
+        "topic": "Past Continuous + Subject-Verb Agreement",
+        "concept": "Plural and singular agreement in past continuous structures",
+        "formula": "Plural subject + were + verb-ing; neither + was + verb-ing",
+        "examples": [
+          "The couple <b>were arguing</b>, and neither <b>was listening</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "He ___ constantly ___ about his ex-girlfriend during our romantic dates, which drove me crazy."
+      },
+      "options": {
+        "A": { "text": "was / complaining", "correct": true },
+        "B": { "text": "is / complaining", "correct": false },
+        "C": { "text": "had / complained", "correct": false },
+        "D": { "text": "would / complain", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Continuous tense with adverbs of frequency to express annoyance. Using 'always' or 'constantly' with the past continuous emphasizes a repeated, irritating past habit.",
+        "topic": "Past Continuous + Adverbs of Frequency",
+        "concept": "Using past continuous with 'always/constantly' to express past annoyance",
+        "formula": "Subject + was/were + constantly/always + verb-ing",
+        "examples": [
+          "She <b>was always checking</b> her phone while we were on a date."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "While they ", "clickable": false },
+        { "id": "s2", "text": "had been arguing", "clickable": true, "isError": true, "correctAnswers": ["were arguing"] },
+        { "id": "s3", "text": " about their future, she ", "clickable": false },
+        { "id": "s4", "text": "suddenly realized", "clickable": false },
+        { "id": "s5", "text": " she didn't love ", "clickable": false },
+        { "id": "s6", "text": " him anymore.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous tense with the Past Perfect Continuous. Since the argument was an ongoing background action that was interrupted by a sudden realization, the Past Continuous ('were arguing') is the correct choice, not the Past Perfect Continuous.",
+        "topic": "Past Continuous + Past Perfect Continuous",
+        "concept": "Distinguishing between ongoing interrupted actions and actions completed before another past action",
+        "formula": "While + subject + was/were + verb-ing, subject + past simple verb",
+        "examples": [
+          "While they <b>were dancing</b>, she suddenly <b>realized</b> he was the one."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "The mysterious man who ___ alone at the bar turned out to be her blind date."
+      },
+      "options": {
+        "A": { "text": "was sitting", "correct": true },
+        "B": { "text": "sat", "correct": false },
+        "C": { "text": "has been sitting", "correct": false },
+        "D": { "text": "is sitting", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Continuous tense with relative clauses. The relative clause describes an ongoing background state or action at a specific time in the past, requiring the past continuous.",
+        "topic": "Past Continuous + Relative Clauses",
+        "concept": "Using past continuous in defining relative clauses to describe ongoing past actions",
+        "formula": "Noun + who/which + was/were + verb-ing",
+        "examples": [
+          "The woman who <b>was wearing</b> the red dress caught his eye."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "You ", "clickable": false },
+        { "id": "s2", "text": "weren't expecting", "clickable": false },
+        { "id": "s3", "text": " a marriage proposal ", "clickable": false },
+        { "id": "s4", "text": "tonight, ", "clickable": false },
+        { "id": "s5", "text": "wasn't you?", "clickable": true, "isError": true, "correctAnswers": ["were you?"] },
+        { "id": "s6", "text": "", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous tense with question tags. A negative past continuous statement ('weren't expecting') requires a positive question tag with the matching auxiliary verb ('were you?').",
+        "topic": "Past Continuous + Question Tags",
+        "concept": "Forming correct question tags for past continuous statements",
+        "formula": "Subject + wasn't/weren't + verb-ing, + was/were + subject?",
+        "examples": [
+          "They <b>were</b> <b>falling</b> in love, <b>weren't they</b>?"
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "He whispered that he ___ for her under the clock tower when the rain started."
+      },
+      "options": {
+        "A": { "text": "was waiting", "correct": true },
+        "B": { "text": "is waiting", "correct": false },
+        "C": { "text": "waited", "correct": false },
+        "D": { "text": "has waited", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Continuous tense with reported speech. When reporting a past continuous action ('I was waiting'), the tense remains in the past continuous ('he was waiting') or shifts to past perfect continuous depending on the context, but 'was waiting' correctly maintains the ongoing aspect relative to the past reporting verb.",
+        "topic": "Past Continuous + Reported Speech",
+        "concept": "Maintaining or backshifting continuous tenses in reported speech",
+        "formula": "Subject + past simple reporting verb + that + subject + was/were + verb-ing",
+        "examples": [
+          "She said that she <b>was thinking</b> about our future together."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "They ", "clickable": false },
+        { "id": "s2", "text": "must been", "clickable": true, "isError": true, "correctAnswers": ["must have been"] },
+        { "id": "s3", "text": " planning a surprise wedding, ", "clickable": false },
+        { "id": "s4", "text": "because they ", "clickable": false },
+        { "id": "s5", "text": "were secretly booking", "clickable": false },
+        { "id": "s6", "text": " a venue.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous tense with modal verbs of past deduction. To express a logical deduction about an ongoing past action, the structure 'must have been' + present participle is required.",
+        "topic": "Past Continuous + Modal Verbs of Deduction",
+        "concept": "Using modal perfect continuous for past deductions",
+        "formula": "Subject + must have been + verb-ing",
+        "examples": [
+          "They <b>must have been</b> <b>dating</b> secretly for months."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct conjunction to complete the inverted sentence.",
+        "question": "Scarcely ___ walking down the aisle when she started crying tears of joy."
+      },
+      "options": {
+        "A": { "text": "had they been", "correct": true },
+        "B": { "text": "they had been", "correct": false },
+        "C": { "text": "were they", "correct": false },
+        "D": { "text": "they were", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Perfect Continuous tense with negative adverbial inversion. 'Scarcely' at the beginning of a sentence triggers subject-auxiliary inversion ('had they been'), emphasizing the duration of an action right before another past event.",
+        "topic": "Past Perfect Continuous + Inversion",
+        "concept": "Subject-auxiliary inversion with 'scarcely' to emphasize duration before a past event",
+        "formula": "Scarcely + had + subject + been + verb-ing + when + past simple",
+        "examples": [
+          "<b>Scarcely had</b> they <b>been</b> <b>dating</b> for a month when he proposed."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "It ", "clickable": false },
+        { "id": "s2", "text": "were while", "clickable": true, "isError": true, "correctAnswers": ["was while"] },
+        { "id": "s3", "text": " we were dancing ", "clickable": false },
+        { "id": "s4", "text": "that he ", "clickable": false },
+        { "id": "s5", "text": "finally proposed", "clickable": false },
+        { "id": "s6", "text": " to me.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous tense with cleft sentences for emphasis. The dummy subject 'It' in a cleft sentence always takes the singular verb 'was', regardless of the plural subject in the relative clause.",
+        "topic": "Past Continuous + Cleft Sentences",
+        "concept": "Subject-verb agreement in it-cleft structures emphasizing a past continuous time clause",
+        "formula": "It + was + while + subject + was/were + verb-ing + that + clause",
+        "examples": [
+          "<b>It was</b> while we <b>were stargazing</b> that he confessed his love."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "While she was looking forward to ___ him, he was preparing a diamond ring."
+      },
+      "options": {
+        "A": { "text": "meeting", "correct": true },
+        "B": { "text": "meet", "correct": false },
+        "C": { "text": "met", "correct": false },
+        "D": { "text": "have met", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Continuous tense with gerund verb patterns. The phrasal verb 'look forward to' uses 'to' as a preposition, so it must be followed by a gerund ('meeting'), not a base verb.",
+        "topic": "Past Continuous + Gerunds",
+        "concept": "Using gerunds after prepositional phrasal verbs in continuous tenses",
+        "formula": "Subject + was/were + looking forward to + verb-ing",
+        "examples": [
+          "I <b>was looking forward to</b> <b>seeing</b> my partner after a long trip."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I didn't know ", "clickable": false },
+        { "id": "s2", "text": "that we ", "clickable": false },
+        { "id": "s3", "text": "are getting", "clickable": true, "isError": true, "correctAnswers": ["were getting"] },
+        { "id": "s4", "text": " married so soon ", "clickable": false },
+        { "id": "s5", "text": "after we ", "clickable": false },
+        { "id": "s6", "text": "met.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous tense with the 'future in the past' concept. When describing a future arrangement from the perspective of the past ('didn't know'), the past continuous ('were getting') is used instead of the present continuous.",
+        "topic": "Past Continuous + Future in the Past",
+        "concept": "Using past continuous to express future arrangements from a past perspective",
+        "formula": "Subject + past simple + that + subject + was/were + verb-ing",
+        "examples": [
+          "She told me they <b>were moving</b> in together the next week."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structure to complete the inverted sentence.",
+        "question": "Not only ___ falling in love, but they were also moving in together."
+      },
+      "options": {
+        "A": { "text": "were they", "correct": true },
+        "B": { "text": "they were", "correct": false },
+        "C": { "text": "did they", "correct": false },
+        "D": { "text": "they did", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Continuous tense with negative adverbial inversion. When a clause begins with 'Not only', it triggers subject-auxiliary inversion ('were they'), maintaining the continuous aspect of the verb.",
+        "topic": "Past Continuous + Inversion",
+        "concept": "Subject-auxiliary inversion with 'not only' in past continuous structures",
+        "formula": "Not only + was/were + subject + verb-ing, but + subject + was/were + also + verb-ing",
+        "examples": [
+          "<b>Not only were</b> they <b>arguing</b>, but they were also breaking up."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "While most of the guests ", "clickable": false },
+        { "id": "s2", "text": "were dancing, ", "clickable": false },
+        { "id": "s3", "text": "much of", "clickable": true, "isError": true, "correctAnswers": ["many of"] },
+        { "id": "s4", "text": " the couples ", "clickable": false },
+        { "id": "s5", "text": "were enjoying", "clickable": false },
+        { "id": "s6", "text": " the romantic music.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous tense with quantifiers. 'Couples' is a countable plural noun, so it must be preceded by 'many of', not 'much of' (which is used for uncountable nouns).",
+        "topic": "Past Continuous + Quantifiers",
+        "concept": "Correct quantifier usage with countable nouns in continuous tenses",
+        "formula": "Many of + plural countable noun + were + verb-ing",
+        "examples": [
+          "<b>Many of</b> the singles <b>were mingling</b> at the wedding reception."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct article to complete the sentence.",
+        "question": "He was playing ___ unique melody on the guitar while she was listening intently."
+      },
+      "options": {
+        "A": { "text": "a", "correct": true },
+        "B": { "text": "an", "correct": false },
+        "C": { "text": "the", "correct": false },
+        "D": { "text": "no article", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Continuous tense with article usage. The word 'unique' begins with a consonant sound (/j/), so it correctly takes the indefinite article 'a', not 'an'.",
+        "topic": "Past Continuous + Articles",
+        "concept": "Indefinite articles before words starting with a /j/ sound in continuous contexts",
+        "formula": "Subject + was/were + verb-ing + a + word starting with /j/ sound",
+        "examples": [
+          "She <b>was wearing</b> <b>a</b> <b>uniform</b> when we first met."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "They were arguing ", "clickable": false },
+        { "id": "s2", "text": "for their", "clickable": true, "isError": true, "correctAnswers": ["about their"] },
+        { "id": "s3", "text": " future plans ", "clickable": false },
+        { "id": "s4", "text": "when the phone ", "clickable": false },
+        { "id": "s5", "text": "suddenly rang.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous tense with preposition collocations. The verb 'argue' is followed by the preposition 'about' when referring to the topic of the argument, not 'for'.",
+        "topic": "Past Continuous + Prepositions",
+        "concept": "Correct preposition usage after specific verbs in continuous tenses",
+        "formula": "Subject + was/were + arguing + about + noun",
+        "examples": [
+          "We <b>were talking</b> <b>about</b> our honeymoon destination."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct comparative structure to complete the sentence.",
+        "question": "She was getting ___ jealous while he was talking to his female friends."
+      },
+      "options": {
+        "A": { "text": "more and more", "correct": true },
+        "B": { "text": "most and most", "correct": false },
+        "C": { "text": "much and much", "correct": false },
+        "D": { "text": "more and much", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Continuous tense with advanced comparative structures. 'More and more' is used with multi-syllable adjectives to express a continuously increasing state or feeling in the past.",
+        "topic": "Past Continuous + Advanced Comparatives",
+        "concept": "Using double comparatives to express increasing states in the past",
+        "formula": "Subject + was/were + getting + more and more + adjective",
+        "examples": [
+          "He <b>was becoming</b> <b>more and more</b> attached to her."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I couldn't understand ", "clickable": false },
+        { "id": "s2", "text": "why was she", "clickable": true, "isError": true, "correctAnswers": ["why she was"] },
+        { "id": "s3", "text": " crying while ", "clickable": false },
+        { "id": "s4", "text": "watching the ", "clickable": false },
+        { "id": "s5", "text": "romantic comedy.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous tense with noun clauses. In an embedded question (noun clause), the word order must be statement order (subject + verb), not question order ('why she was', not 'why was she').",
+        "topic": "Past Continuous + Noun Clauses",
+        "concept": "Maintaining statement word order in embedded questions with past continuous",
+        "formula": "Subject + past simple + question word + subject + was/were + verb-ing",
+        "examples": [
+          "I wondered where he <b>was taking</b> me for our anniversary."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct preposition to complete the phrasal verb.",
+        "question": "While they were making out, someone was breaking ___ the room."
+      },
+      "options": {
+        "A": { "text": "into", "correct": true },
+        "B": { "text": "in", "correct": false },
+        "C": { "text": "out", "correct": false },
+        "D": { "text": "up", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Continuous tense with phrasal verbs. 'Break into' is a transitive phrasal verb meaning to enter forcibly, requiring the preposition 'into' before the object ('the room').",
+        "topic": "Past Continuous + Phrasal Verbs",
+        "concept": "Using transitive phrasal verbs correctly in continuous tenses",
+        "formula": "Subject + was/were + breaking into + object",
+        "examples": [
+          "Someone <b>was breaking</b> <b>into</b> our apartment while we were on our honeymoon."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "He was writing ", "clickable": false },
+        { "id": "s2", "text": "a love letter, and ", "clickable": false },
+        { "id": "s3", "text": "she is", "clickable": true, "isError": true, "correctAnswers": ["she"] },
+        { "id": "s4", "text": " a poem.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous tense with ellipsis. In parallel structures, the auxiliary verb and main verb can be omitted to avoid repetition. 'She' is sufficient to imply 'she was writing'.",
+        "topic": "Past Continuous + Ellipsis",
+        "concept": "Omitting repeated verbs in parallel past continuous structures",
+        "formula": "Subject + was/were + verb-ing + object, and + subject + object",
+        "examples": [
+          "He <b>was planning</b> a surprise, and she <b>a romantic getaway</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct discourse marker to complete the sentence.",
+        "question": "They were deeply in love; ___, they were constantly arguing about petty things."
+      },
+      "options": {
+        "A": { "text": "nevertheless", "correct": true },
+        "B": { "text": "therefore", "correct": false },
+        "C": { "text": "furthermore", "correct": false },
+        "D": { "text": "consequently", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Continuous tense with contrastive discourse markers. 'Nevertheless' is required to show the contrast between being deeply in love and constantly arguing.",
+        "topic": "Past Continuous + Discourse Markers",
+        "concept": "Using contrastive discourse markers with past continuous contexts",
+        "formula": "Past continuous clause; nevertheless, + past continuous clause",
+        "examples": [
+          "They <b>were trying</b> to make it work; <b>nevertheless</b>, they <b>were drifting</b> apart."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Walked hand in hand, ", "clickable": true, "isError": true, "correctAnswers": ["Walking"] },
+        { "id": "s2", "text": "they were watching ", "clickable": false },
+        { "id": "s3", "text": "the sunset and ", "clickable": false },
+        { "id": "s4", "text": "dreaming about ", "clickable": false },
+        { "id": "s5", "text": "their future.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous tense with present participle clauses. The present participle 'Walking' is used to introduce a simultaneous action performed by the subject of the main clause ('they were watching').",
+        "topic": "Past Continuous + Participle Clauses",
+        "concept": "Using present participles to show simultaneous actions with past continuous main clauses",
+        "formula": "Verb-ing + object, subject + was/were + verb-ing",
+        "examples": [
+          "<b>Holding</b> hands, they <b>were strolling</b> through the park."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the sentence with the correct adverb placement.",
+        "question": "Which sentence correctly places the adverb in the past continuous tense?"
+      },
+      "options": {
+        "A": { "text": "She was always dreaming about a fairy-tale romance.", "correct": true },
+        "B": { "text": "Always she was dreaming about a fairy-tale romance.", "correct": false },
+        "C": { "text": "She always was dreaming about a fairy-tale romance.", "correct": false },
+        "D": { "text": "She was dreaming always about a fairy-tale romance.", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Continuous tense with adverb placement rules. Adverbs of frequency like 'always' are placed between the auxiliary verb ('was') and the main verb ('dreaming').",
+        "topic": "Past Continuous + Adverb Placement",
+        "concept": "Correct positioning of frequency adverbs in continuous tenses",
+        "formula": "Subject + was/were + adverb + verb-ing",
+        "examples": [
+          "He <b>was</b> <b>constantly</b> <b>buying</b> her flowers."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "While I ", "clickable": false },
+        { "id": "s2", "text": "used to live", "clickable": true, "isError": true, "correctAnswers": ["was living"] },
+        { "id": "s3", "text": " in Paris, I ", "clickable": false },
+        { "id": "s4", "text": "was meeting", "clickable": true, "isError": true, "correctAnswers": ["met"] },
+        { "id": "s5", "text": " him at the cafe ", "clickable": false },
+        { "id": "s6", "text": "every Sunday.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous tense with 'used to' and simple past habits. 'Was living' sets the ongoing background situation, while 'met' (or 'used to meet') describes the repeated past habit triggered by 'every Sunday'.",
+        "topic": "Past Continuous + Past Habits",
+        "concept": "Contrasting ongoing past situations with repeated past habits",
+        "formula": "While + subject + was/were + verb-ing, subject + past simple (habit)",
+        "examples": [
+          "While we <b>were dating</b>, we <b>went</b> to the cinema every Friday."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct preposition to complete the sentence.",
+        "question": "She was afraid ___ losing him while he was traveling abroad for work."
+      },
+      "options": {
+        "A": { "text": "of", "correct": true },
+        "B": { "text": "for", "correct": false },
+        "C": { "text": "about", "correct": false },
+        "D": { "text": "with", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Continuous tense with prepositions following adjectives. The adjective 'afraid' is strictly followed by the preposition 'of' when expressing fear about a specific outcome.",
+        "topic": "Past Continuous + Prepositions after Adjectives",
+        "concept": "Correct preposition usage after specific adjectives in continuous contexts",
+        "formula": "Subject + was/were + afraid of + verb-ing",
+        "examples": [
+          "He <b>was terrified</b> <b>of</b> <b>committing</b> to a long-term relationship."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If I ", "clickable": false },
+        { "id": "s2", "text": "was not", "clickable": true, "isError": true, "correctAnswers": ["were not"] },
+        { "id": "s3", "text": " dating him, I ", "clickable": false },
+        { "id": "s4", "text": "would be ", "clickable": false },
+        { "id": "s5", "text": "much happier ", "clickable": false },
+        { "id": "s6", "text": "right now.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous tense with Type 2 conditionals. In formal English, the subjunctive 'were' is preferred for all subjects in the 'if' clause of hypothetical present/future situations, even when using continuous forms.",
+        "topic": "Past Continuous + Conditionals (Type 2)",
+        "concept": "Using the past subjunctive 'were' in continuous hypothetical conditions",
+        "formula": "If + subject + were + not + verb-ing, subject + would + base verb",
+        "examples": [
+          "If she <b>were</b> <b>seeing</b> someone else, she <b>would tell</b> me."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct word order to complete the reported question.",
+        "question": "She asked me where ___ on our anniversary."
+      },
+      "options": {
+        "A": { "text": "I was going", "correct": true },
+        "B": { "text": "was I going", "correct": false },
+        "C": { "text": "I am going", "correct": false },
+        "D": { "text": "am I going", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Past Continuous tense with reported questions. In indirect questions, the word order must follow statement structure (subject + verb), and the tense backshifts to the past continuous.",
+        "topic": "Past Continuous + Reported Speech (Questions)",
+        "concept": "Statement word order and backshifting in reported continuous questions",
+        "formula": "Subject + asked + question word + subject + was/were + verb-ing",
+        "examples": [
+          "He asked what I <b>was wearing</b> to the gala."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The woman ", "clickable": false },
+        { "id": "s2", "text": "which was", "clickable": true, "isError": true, "correctAnswers": ["who was"] },
+        { "id": "s3", "text": " sitting next to me ", "clickable": false },
+        { "id": "s4", "text": "on the train ", "clickable": false },
+        { "id": "s5", "text": "turned out to be ", "clickable": false },
+        { "id": "s6", "text": "my soulmate.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Past Continuous tense with relative pronouns. The relative pronoun referring to a person ('woman') must be 'who' (or 'that'), not 'which' (which is used for things).",
+        "topic": "Past Continuous + Relative Pronouns",
+        "concept": "Choosing the correct relative pronoun for people in continuous relative clauses",
+        "formula": "Noun (person) + who + was/were + verb-ing",
+        "examples": [
+          "The man <b>who</b> <b>was holding</b> the roses smiled at her."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    }
+  ]
+}

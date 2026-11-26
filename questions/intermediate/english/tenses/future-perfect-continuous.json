@@ -1,0 +1,959 @@
+{
+  "meta": {
+    "title": "English Future Perfect Continuous Tenses Test",
+    "description": "A comprehensive test covering English Future Perfect Continuous Tenses themed around family, combining at least one or more grammar topics per question.",
+    "info": "This test includes 30 questions focusing on combined grammar structures involving the Future Perfect Continuous tense paired with topics like conditionals, relative clauses, gerunds, inversion, and more, all within familiar family contexts.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "By the time the baby turns one, we _____ in this house for a decade."
+      },
+      "options": {
+        "A": { "text": "will have been living", "correct": true },
+        "B": { "text": "will live", "correct": false },
+        "C": { "text": "are living", "correct": false },
+        "D": { "text": "will be living", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with a time clause. 'Will have been living' emphasizes the duration of an action up to a specific future point.",
+        "topic": "Future Perfect Continuous + Time Clauses",
+        "concept": "Using Future Perfect Continuous for actions in progress up to a future time",
+        "formula": "By the time + present simple, subject + will have been + verb-ing",
+        "examples": [
+          "By next year, I <b>will have been working</b> here for a decade."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "My grandparents,", "clickable": false },
+        { "id": "s2", "text": "who will", "clickable": true, "isError": false },
+        { "id": "s3", "text": "have been", "clickable": true, "isError": false },
+        { "id": "s4", "text": "celebrate", "clickable": true, "isError": true, "correctAnswers": ["celebrating"] },
+        { "id": "s5", "text": "their 50th", "clickable": false },
+        { "id": "s6", "text": "anniversary next", "clickable": false },
+        { "id": "s7", "text": "month, are", "clickable": true, "isError": false },
+        { "id": "s8", "text": "planning a", "clickable": false },
+        { "id": "s9", "text": "big party.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with a non-defining relative clause. 'Will have been' must be followed by the present participle 'celebrating'.",
+        "topic": "Future Perfect Continuous + Relative Clauses",
+        "concept": "Forming the Future Perfect Continuous within relative clauses",
+        "formula": "Noun, who + will have been + verb-ing, + present continuous verb",
+        "examples": [
+          "My parents, who <b>will have been married</b> for 30 years, are celebrating."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "I look forward to seeing my cousins, as we _____ each other for years by the time of the reunion."
+      },
+      "options": {
+        "A": { "text": "will have been missing", "correct": true },
+        "B": { "text": "will miss", "correct": false },
+        "C": { "text": "are missing", "correct": false },
+        "D": { "text": "will be missing", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with gerund verb patterns. 'Will have been missing' emphasizes the ongoing duration of the feeling up to the future event.",
+        "topic": "Future Perfect Continuous + Gerunds",
+        "concept": "Future Perfect Continuous following prepositional phrases requiring gerunds",
+        "formula": "Look forward to + verb-ing, as + subject + will have been + verb-ing",
+        "examples": [
+          "I look forward to <b>seeing</b> them, as we <b>will have been waiting</b> for months."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "A number", "clickable": false },
+        { "id": "s2", "text": "of my", "clickable": false },
+        { "id": "s3", "text": "relatives will", "clickable": true, "isError": false },
+        { "id": "s4", "text": "have been", "clickable": true, "isError": false },
+        { "id": "s5", "text": "traveling for", "clickable": false },
+        { "id": "s6", "text": "days, while", "clickable": false },
+        { "id": "s7", "text": "the number", "clickable": false },
+        { "id": "s8", "text": "of guests", "clickable": false },
+        { "id": "s9", "text": "have been", "clickable": true, "isError": true, "correctAnswers": ["has been"] },
+        { "id": "s10", "text": "small today.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with quantifiers and subject-verb agreement. 'A number of' takes a plural verb, while 'the number of' takes a singular verb ('has been').",
+        "topic": "Future Perfect Continuous + Quantifiers + Subject-Verb Agreement",
+        "concept": "Agreement with 'a number of' vs. 'the number of'",
+        "formula": "A number of + plural noun + will have been + verb-ing; the number of + singular verb",
+        "examples": [
+          "<b>A number of</b> cars <b>have arrived</b>, but <b>the number of</b> spots <b>has</b> decreased."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "If the flight is delayed, we _____ at the airport for over six hours by midnight."
+      },
+      "options": {
+        "A": { "text": "will have been waiting", "correct": true },
+        "B": { "text": "will wait", "correct": false },
+        "C": { "text": "are waiting", "correct": false },
+        "D": { "text": "will be waiting", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with a First Conditional structure. The Future Continuous aspect emphasizes the duration of the waiting up to the future time marker.",
+        "topic": "Future Perfect Continuous + Conditionals",
+        "concept": "Using Future Perfect Continuous in the main clause of a first conditional",
+        "formula": "If + present simple, subject + will have been + verb-ing + by + future time",
+        "examples": [
+          "If it <b>rains</b>, we <b>will have been waiting</b> for hours."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By next", "clickable": false },
+        { "id": "s2", "text": "year, my", "clickable": false },
+        { "id": "s3", "text": "sister will", "clickable": true, "isError": false },
+        { "id": "s4", "text": "have been", "clickable": true, "isError": false },
+        { "id": "s5", "text": "relying in", "clickable": true, "isError": true, "correctAnswers": ["relying on"] },
+        { "id": "s6", "text": "her new", "clickable": false },
+        { "id": "s7", "text": "job to", "clickable": false },
+        { "id": "s8", "text": "support the", "clickable": false },
+        { "id": "s9", "text": "family for", "clickable": false },
+        { "id": "s10", "text": "a decade.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with preposition collocations. The verb 'rely' is always followed by the preposition 'on', not 'in'.",
+        "topic": "Future Perfect Continuous + Prepositions",
+        "concept": "Correct preposition usage after specific verbs in continuous tenses",
+        "formula": "Subject + will have been + relying on + noun",
+        "examples": [
+          "He <b>will have been relying on</b> his savings for months."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "The family business has been struggling; therefore, by next month, my father _____ overtime for a full year."
+      },
+      "options": {
+        "A": { "text": "will have been working", "correct": true },
+        "B": { "text": "will work", "correct": false },
+        "C": { "text": "is working", "correct": false },
+        "D": { "text": "will be working", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with discourse markers. 'Therefore' links the ongoing struggle to the future completed duration of working overtime.",
+        "topic": "Future Perfect Continuous + Discourse Markers",
+        "concept": "Using resultative discourse markers with Future Perfect Continuous contexts",
+        "formula": "Present perfect continuous clause; therefore, + subject + will have been + verb-ing",
+        "examples": [
+          "Sales are down; <b>therefore</b>, we <b>will have been cutting</b> costs for a year."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Rarely the", "clickable": true, "isError": true, "correctAnswers": ["Rarely will"] },
+        { "id": "s2", "text": "children will", "clickable": true, "isError": true, "correctAnswers": ["children"] },
+        { "id": "s3", "text": "have been", "clickable": true, "isError": false },
+        { "id": "s4", "text": "behave so", "clickable": true, "isError": true, "correctAnswers": ["behaving so"] },
+        { "id": "s5", "text": "well for", "clickable": false },
+        { "id": "s6", "text": "such an", "clickable": false },
+        { "id": "s7", "text": "extended period", "clickable": false },
+        { "id": "s8", "text": "without any", "clickable": false },
+        { "id": "s9", "text": "complaints.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with negative adverbial inversion. 'Rarely' at the beginning triggers subject-auxiliary inversion ('Rarely will the children'), and 'have been' requires the present participle 'behaving'.",
+        "topic": "Future Perfect Continuous + Inversion",
+        "concept": "Subject-auxiliary inversion with negative adverbs in Future Perfect Continuous",
+        "formula": "Rarely + will + subject + have been + verb-ing",
+        "examples": [
+          "<b>Never will</b> the team <b>have been playing</b> this well."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "It is my mother who _____ the household finances for the longest time by the time she retires."
+      },
+      "options": {
+        "A": { "text": "will have been managing", "correct": true },
+        "B": { "text": "will manage", "correct": false },
+        "C": { "text": "is managing", "correct": false },
+        "D": { "text": "will be managing", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with a cleft sentence for emphasis. 'Will have been managing' highlights the duration of the action up to a future point.",
+        "topic": "Future Perfect Continuous + Cleft Sentences",
+        "concept": "Using Future Perfect Continuous in it-cleft structures",
+        "formula": "It is + noun + who + will have been + verb-ing + by the time + present simple",
+        "examples": [
+          "<b>It is</b> the teacher <b>who will have been preparing</b> the lessons for weeks."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By the", "clickable": false },
+        { "id": "s2", "text": "time we", "clickable": false },
+        { "id": "s3", "text": "arrive, my", "clickable": false },
+        { "id": "s4", "text": "brother must", "clickable": true, "isError": false },
+        { "id": "s5", "text": "has been", "clickable": true, "isError": true, "correctAnswers": ["have been"] },
+        { "id": "s6", "text": "drive for", "clickable": true, "isError": true, "correctAnswers": ["driving for"] },
+        { "id": "s7", "text": "ten hours", "clickable": false },
+        { "id": "s8", "text": "straight, which", "clickable": false },
+        { "id": "s9", "text": "is exhausting.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with modal verbs of deduction. Modal verbs ('must') are always followed by the base form 'have', and the continuous aspect requires the present participle 'driving'.",
+        "topic": "Future Perfect Continuous + Modal Verbs",
+        "concept": "Modal perfect continuous constructions",
+        "formula": "Subject + must + have been + verb-ing",
+        "examples": [
+          "He <b>must have been working</b> all night."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "As the family grows, the parents _____ their parenting styles continuously to meet new challenges."
+      },
+      "options": {
+        "A": { "text": "will have been adapting", "correct": true },
+        "B": { "text": "will adapt", "correct": false },
+        "C": { "text": "are adapting", "correct": false },
+        "D": { "text": "will be adapting", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with conjunctions of time. 'Will have been adapting' emphasizes the ongoing, changing nature of the action leading up to a future point.",
+        "topic": "Future Perfect Continuous + Conjunctions",
+        "concept": "Describing changing situations with 'as' using Future Perfect Continuous",
+        "formula": "As + subject + verb + s/es, subject + will have been + verb-ing",
+        "examples": [
+          "As the child <b>grows</b>, the parents <b>will have been adapting</b> their methods."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "My uncle", "clickable": false },
+        { "id": "s2", "text": "will have", "clickable": true, "isError": false },
+        { "id": "s3", "text": "been renovating", "clickable": true, "isError": false },
+        { "id": "s4", "text": "the old", "clickable": false },
+        { "id": "s5", "text": "family home", "clickable": false },
+        { "id": "s6", "text": "by December,", "clickable": false },
+        { "id": "s7", "text": "but my", "clickable": false },
+        { "id": "s8", "text": "aunt will", "clickable": true, "isError": false },
+        { "id": "s9", "text": "not have", "clickable": true, "isError": false },
+        { "id": "s10", "text": "renovating it.", "clickable": true, "isError": true, "correctAnswers": ["been renovating"] }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with ellipsis. To maintain the parallel Future Perfect Continuous structure, 'not have' must be followed by 'been renovating', not just 'renovating'.",
+        "topic": "Future Perfect Continuous + Ellipsis",
+        "concept": "Maintaining parallel Future Perfect Continuous structure in compound sentences",
+        "formula": "Subject + will have been + verb-ing, but + subject + will not have + been + verb-ing",
+        "examples": [
+          "I <b>will have been studying</b>, but she <b>will not have been</b> <b>studying</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "The more the toddler cries, the more exhausted the parents _____ by the end of the week."
+      },
+      "options": {
+        "A": { "text": "will have been feeling", "correct": true },
+        "B": { "text": "will feel", "correct": false },
+        "C": { "text": "are feeling", "correct": false },
+        "D": { "text": "will be feeling", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with advanced comparative structures. 'Will have been feeling' emphasizes the accumulating duration of exhaustion.",
+        "topic": "Future Perfect Continuous + Advanced Comparatives",
+        "concept": "Using Future Perfect Continuous in double comparative structures",
+        "formula": "The more + subject + verb + s/es, the more + adjective + subject + will have been + verb-ing",
+        "examples": [
+          "<b>The harder</b> it rains, <b>the more</b> flooded the streets <b>will have been getting</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By the", "clickable": false },
+        { "id": "s2", "text": "time the", "clickable": false },
+        { "id": "s3", "text": "reunion starts,", "clickable": false },
+        { "id": "s4", "text": "we will", "clickable": true, "isError": false },
+        { "id": "s5", "text": "have been", "clickable": true, "isError": false },
+        { "id": "s6", "text": "catch up", "clickable": true, "isError": true, "correctAnswers": ["catching up"] },
+        { "id": "s7", "text": "on years", "clickable": false },
+        { "id": "s8", "text": "of lost", "clickable": false },
+        { "id": "s9", "text": "time together.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with phrasal verbs. 'Will have been' must be followed by the present participle 'catching' to form the continuous aspect of the phrasal verb 'catch up'.",
+        "topic": "Future Perfect Continuous + Phrasal Verbs",
+        "concept": "Forming the continuous aspect of separable and inseparable phrasal verbs",
+        "formula": "Subject + will have been + verb-ing + particle",
+        "examples": [
+          "They <b>will have been</b> <b>catching up</b> for hours."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "We _____ a unique family tradition for twenty years by next Christmas, making it a truly special milestone."
+      },
+      "options": {
+        "A": { "text": "will have been celebrating", "correct": true },
+        "B": { "text": "will celebrate", "correct": false },
+        "C": { "text": "are celebrating", "correct": false },
+        "D": { "text": "will be celebrating", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with article usage. 'Unique' starts with a consonant sound (/j/), so it correctly takes the indefinite article 'a', and 'will have been celebrating' marks the duration.",
+        "topic": "Future Perfect Continuous + Articles",
+        "concept": "Indefinite articles before words starting with a /j/ sound in Future Perfect Continuous contexts",
+        "formula": "Subject + will have been + verb-ing + a + word starting with /j/ sound",
+        "examples": [
+          "They <b>will have been</b> <b>building</b> <b>a</b> <b>unique</b> legacy."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Not only", "clickable": false },
+        { "id": "s2", "text": "will the", "clickable": true, "isError": false },
+        { "id": "s3", "text": "grandparents have", "clickable": true, "isError": false },
+        { "id": "s4", "text": "been fund", "clickable": true, "isError": true, "correctAnswers": ["been funding"] },
+        { "id": "s5", "text": "the education,", "clickable": false },
+        { "id": "s6", "text": "but they", "clickable": false },
+        { "id": "s7", "text": "will also", "clickable": false },
+        { "id": "s8", "text": "have been", "clickable": true, "isError": false },
+        { "id": "s9", "text": "providing emotional", "clickable": false },
+        { "id": "s10", "text": "support.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with 'not only... but also' inversion. 'Will have been' must be followed by the present participle 'funding' to maintain the continuous aspect.",
+        "topic": "Future Perfect Continuous + Not Only ... But Also",
+        "concept": "Subject-auxiliary inversion with 'not only' in Future Perfect Continuous",
+        "formula": "Not only + will + subject + have been + verb-ing, but + subject + will + also + have been + verb-ing",
+        "examples": [
+          "<b>Not only will</b> she <b>have been</b> <b>teaching</b>, but she <b>will</b> also <b>have been</b> <b>mentoring</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "Under no circumstances _____ such disrespectful behavior from the teenagers, especially after all the sacrifices we have made."
+      },
+      "options": {
+        "A": { "text": "will the parents have been tolerating", "correct": true },
+        "B": { "text": "the parents will have been tolerating", "correct": false },
+        "C": { "text": "will the parents have tolerated", "correct": false },
+        "D": { "text": "the parents will tolerate", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with negative adverbial inversion. 'Under no circumstances' at the beginning triggers subject-auxiliary inversion ('will the parents have been tolerating').",
+        "topic": "Future Perfect Continuous + Negative Adverbial Inversion",
+        "concept": "Subject-auxiliary inversion with negative phrases in Future Perfect Continuous",
+        "formula": "Under no circumstances + will + subject + have been + verb-ing",
+        "examples": [
+          "<b>Under no circumstances will</b> we <b>have been</b> <b>accepting</b> this."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Should you", "clickable": false },
+        { "id": "s2", "text": "need any", "clickable": false },
+        { "id": "s3", "text": "help with", "clickable": false },
+        { "id": "s4", "text": "the baby,", "clickable": false },
+        { "id": "s5", "text": "I will", "clickable": true, "isError": false },
+        { "id": "s6", "text": "have been", "clickable": true, "isError": false },
+        { "id": "s7", "text": "babysit my", "clickable": true, "isError": true, "correctAnswers": ["babysitting my"] },
+        { "id": "s8", "text": "niece all", "clickable": false },
+        { "id": "s9", "text": "week, so", "clickable": false },
+        { "id": "s10", "text": "I am", "clickable": false },
+        { "id": "s11", "text": "experienced.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with conditional inversion. 'Will have been' must be followed by the present participle 'babysitting' to form the continuous aspect.",
+        "topic": "Future Perfect Continuous + Conditional Inversion",
+        "concept": "Forming the continuous aspect after inverted conditional clauses",
+        "formula": "Should + subject + base verb, subject + will have been + verb-ing",
+        "examples": [
+          "<b>Should you need</b> help, I <b>will have been</b> <b>preparing</b> for this."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "Were I to move back to my hometown, I realize I _____ my extended family for too long by the time I actually visit."
+      },
+      "options": {
+        "A": { "text": "will have been missing", "correct": true },
+        "B": { "text": "will miss", "correct": false },
+        "C": { "text": "am missing", "correct": false },
+        "D": { "text": "will be missing", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with second conditional inversion. 'Will have been missing' emphasizes the accumulating duration of the feeling up to the hypothetical future visit.",
+        "topic": "Future Perfect Continuous + Conditional Inversion",
+        "concept": "Future Perfect Continuous in the main clause of an inverted second conditional",
+        "formula": "Were + subject + to + base verb, subject + will have been + verb-ing",
+        "examples": [
+          "<b>Were I to</b> <b>leave</b>, I <b>will have been</b> <b>regretting</b> it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If my", "clickable": false },
+        { "id": "s2", "text": "parents had", "clickable": false },
+        { "id": "s3", "text": "saved more", "clickable": false },
+        { "id": "s4", "text": "money, we", "clickable": false },
+        { "id": "s5", "text": "would be", "clickable": false },
+        { "id": "s6", "text": "in a", "clickable": false },
+        { "id": "s7", "text": "better position", "clickable": false },
+        { "id": "s8", "text": "now, even", "clickable": false },
+        { "id": "s9", "text": "though we", "clickable": true, "isError": false },
+        { "id": "s10", "text": "will has", "clickable": true, "isError": true, "correctAnswers": ["will have"] },
+        { "id": "s11", "text": "been struggling", "clickable": true, "isError": false },
+        { "id": "s12", "text": "financially for", "clickable": false },
+        { "id": "s13", "text": "years.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with mixed conditionals. The plural subject 'we' requires the plural auxiliary 'will have', not 'will has'.",
+        "topic": "Future Perfect Continuous + Mixed Conditionals",
+        "concept": "Subject-verb agreement in Future Perfect Continuous within mixed conditional structures",
+        "formula": "If + past perfect, subject + would + base verb, even though + subject + will have + been + verb-ing",
+        "examples": [
+          "If I <b>had studied</b>, I <b>would be</b> smarter, even though I <b>will have been</b> <b>trying</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "It is high time we acknowledged that the babysitter _____ for us for five years by next month."
+      },
+      "options": {
+        "A": { "text": "will have been working", "correct": true },
+        "B": { "text": "will work", "correct": false },
+        "C": { "text": "is working", "correct": false },
+        "D": { "text": "will be working", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with the 'it's high time' structure. 'Will have been working' correctly marks the duration of the action up to the future point.",
+        "topic": "Future Perfect Continuous + It's High Time",
+        "concept": "Using Future Perfect Continuous in noun clauses following 'it's high time'",
+        "formula": "It is high time + subject + past simple + that + subject + will have been + verb-ing",
+        "examples": [
+          "<b>It is high time</b> we <b>recognized</b> that he <b>will have been</b> <b>leading</b> for a decade."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "My father", "clickable": false },
+        { "id": "s2", "text": "act as", "clickable": true, "isError": true, "correctAnswers": ["acts as"] },
+        { "id": "s3", "text": "though he", "clickable": false },
+        { "id": "s4", "text": "will have", "clickable": true, "isError": false },
+        { "id": "s5", "text": "been run", "clickable": true, "isError": true, "correctAnswers": ["been running"] },
+        { "id": "s6", "text": "this household", "clickable": false },
+        { "id": "s7", "text": "forever, even", "clickable": false },
+        { "id": "s8", "text": "though he", "clickable": false },
+        { "id": "s9", "text": "just moved", "clickable": false },
+        { "id": "s10", "text": "in.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with 'as though' unreal comparisons. 'Acts' is the correct third-person singular present simple, and 'will have been' requires the present participle 'running'.",
+        "topic": "Future Perfect Continuous + As Though / As If",
+        "concept": "Forming the continuous aspect in unreal comparisons",
+        "formula": "Subject + acts + as though + subject + will have been + verb-ing",
+        "examples": [
+          "He <b>acts</b> as though he <b>will have been</b> <b>knowing</b> the answer."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "So demanding will the toddler's schedule be that the parents _____ sleep for months by the time he turns two."
+      },
+      "options": {
+        "A": { "text": "will have been losing", "correct": true },
+        "B": { "text": "will lose", "correct": false },
+        "C": { "text": "are losing", "correct": false },
+        "D": { "text": "will be losing", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with 'so... that' inversion. 'Will have been losing' emphasizes the accumulating duration of the action up to the future point.",
+        "topic": "Future Perfect Continuous + So / Such Inversion",
+        "concept": "Subject-auxiliary inversion with 'so' in Future Perfect Continuous contexts",
+        "formula": "So + adjective + will + subject + be + that + subject + will have been + verb-ing",
+        "examples": [
+          "<b>So</b> difficult <b>will</b> it <b>be</b> that we <b>will have been</b> <b>struggling</b> for months."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "What surprises", "clickable": false },
+        { "id": "s2", "text": "me most", "clickable": false },
+        { "id": "s3", "text": "is that", "clickable": false },
+        { "id": "s4", "text": "my siblings", "clickable": false },
+        { "id": "s5", "text": "will has", "clickable": true, "isError": true, "correctAnswers": ["will have"] },
+        { "id": "s6", "text": "been living", "clickable": true, "isError": false },
+        { "id": "s7", "text": "abroad for", "clickable": false },
+        { "id": "s8", "text": "a decade", "clickable": false },
+        { "id": "s9", "text": "by the", "clickable": false },
+        { "id": "s10", "text": "time they", "clickable": true, "isError": false },
+        { "id": "s11", "text": "finally visit.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with noun clauses. The plural subject 'siblings' requires the plural auxiliary 'will have', not 'will has'.",
+        "topic": "Future Perfect Continuous + Noun Clauses",
+        "concept": "Subject-verb agreement in Future Perfect Continuous within noun clauses",
+        "formula": "What + present simple + is that + plural subject + will have + been + verb-ing",
+        "examples": [
+          "What I <b>know</b> is that they <b>will have</b> <b>been</b> <b>working</b> for years."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "I intend to visit my relatives soon, as I _____ our family bond for too long, and I feel guilty about it."
+      },
+      "options": {
+        "A": { "text": "will have been neglecting", "correct": true },
+        "B": { "text": "will neglect", "correct": false },
+        "C": { "text": "am neglecting", "correct": false },
+        "D": { "text": "will be neglecting", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with verb patterns. 'Will have been neglecting' emphasizes the ongoing duration of the action leading up to the present/future realization.",
+        "topic": "Future Perfect Continuous + Verb Patterns",
+        "concept": "Using Future Perfect Continuous to express duration following intention verbs",
+        "formula": "Subject + intend + to-infinitive, as + subject + will have been + verb-ing",
+        "examples": [
+          "I <b>intend</b> <b>to call</b> him, as I <b>will have been</b> <b>ignoring</b> his messages."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By the", "clickable": false },
+        { "id": "s2", "text": "time the", "clickable": false },
+        { "id": "s3", "text": "adoption is", "clickable": false },
+        { "id": "s4", "text": "finalized, the", "clickable": false },
+        { "id": "s5", "text": "couple will", "clickable": true, "isError": false },
+        { "id": "s6", "text": "have been", "clickable": true, "isError": false },
+        { "id": "s7", "text": "accustomed for", "clickable": true, "isError": true, "correctAnswers": ["accustomed to"] },
+        { "id": "s8", "text": "fostering children", "clickable": false },
+        { "id": "s9", "text": "for several", "clickable": false },
+        { "id": "s10", "text": "years.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with preposition collocations after adjectives. 'Accustomed' is always followed by the preposition 'to', not 'for'.",
+        "topic": "Future Perfect Continuous + Prepositions after Adjectives",
+        "concept": "Correct preposition usage after specific adjectives in Future Perfect Continuous contexts",
+        "formula": "Subject + will have been + accustomed to + verb-ing",
+        "examples": [
+          "They <b>will have been</b> <b>accustomed to</b> <b>living</b> here."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "Few of the extended family members _____ the annual gatherings, while little of the family heirloom has been preserved."
+      },
+      "options": {
+        "A": { "text": "will have been attending", "correct": true },
+        "B": { "text": "will attend", "correct": false },
+        "C": { "text": "are attending", "correct": false },
+        "D": { "text": "will be attending", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with quantifiers. 'Few of' is used with countable plural nouns ('members'), and 'will have been attending' emphasizes the duration up to a future point.",
+        "topic": "Future Perfect Continuous + Quantifiers",
+        "concept": "Countable quantifiers with Future Perfect Continuous subjects",
+        "formula": "Few of + plural countable noun + will have been + verb-ing",
+        "examples": [
+          "<b>Few of</b> the students <b>will have been</b> <b>studying</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Having been", "clickable": false },
+        { "id": "s2", "text": "raise three", "clickable": true, "isError": true, "correctAnswers": ["raising three"] },
+        { "id": "s3", "text": "children alone,", "clickable": false },
+        { "id": "s4", "text": "my mother", "clickable": false },
+        { "id": "s5", "text": "will have", "clickable": true, "isError": false },
+        { "id": "s6", "text": "been exhaust", "clickable": true, "isError": true, "correctAnswers": ["been exhausted"] },
+        { "id": "s7", "text": "by the", "clickable": false },
+        { "id": "s8", "text": "time the", "clickable": false },
+        { "id": "s9", "text": "youngest graduates.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with perfect participle clauses. 'Having been' requires the present participle 'raising', and the passive Future Perfect Continuous requires the past participle 'exhausted'.",
+        "topic": "Future Perfect Continuous + Participle Clauses",
+        "concept": "Perfect participle clauses paired with Future Perfect Continuous passive",
+        "formula": "Having been + verb-ing, subject + will have been + past participle",
+        "examples": [
+          "<b>Having been</b> <b>working</b> all day, he <b>will have been</b> <b>exhausted</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "The family insists that the estate _____ properly by the time it is handed down to the next generation."
+      },
+      "options": {
+        "A": { "text": "will have been maintained", "correct": true },
+        "B": { "text": "will maintain", "correct": false },
+        "C": { "text": "is maintaining", "correct": false },
+        "D": { "text": "will be maintaining", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Future Perfect Passive tense with the mandative subjunctive. 'Insists that' can be followed by a future perfect passive construction to emphasize completion before a future event.",
+        "topic": "Future Perfect Passive + Subjunctive Mood",
+        "concept": "Future Perfect Passive in noun clauses following verbs of insistence",
+        "formula": "Subject + insists + that + subject + will have been + past participle",
+        "examples": [
+          "They <b>insist</b> that the project <b>will have been</b> <b>completed</b> by Friday."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "My teenage", "clickable": false },
+        { "id": "s2", "text": "son will", "clickable": true, "isError": false },
+        { "id": "s3", "text": "have been", "clickable": true, "isError": false },
+        { "id": "s4", "text": "constantly ask", "clickable": true, "isError": true, "correctAnswers": ["constantly asking"] },
+        { "id": "s5", "text": "for money,", "clickable": false },
+        { "id": "s6", "text": "which is", "clickable": false },
+        { "id": "s7", "text": "frustrating for", "clickable": false },
+        { "id": "s8", "text": "the parents.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Future Perfect Continuous tense with adverb placement. 'Will have been' must be followed by the present participle 'asking' to form the continuous aspect, and the adverb 'constantly' is correctly placed before it.",
+        "topic": "Future Perfect Continuous + Adverb Placement",
+        "concept": "Forming the continuous aspect with intervening adverbs",
+        "formula": "Subject + will have been + adverb + verb-ing",
+        "examples": [
+          "He <b>will have been</b> <b>constantly</b> <b>complaining</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    }
+  ]
+}

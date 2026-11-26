@@ -1,0 +1,893 @@
+{
+  "meta": {
+    "title": "English Simple Past Tenses Test",
+    "description": "A comprehensive test covering English Simple Past Tenses themed around vacations, combining at least one or more grammar topics per question.",
+    "info": "This test includes 30 questions focusing on combined grammar structures involving the Simple Past tense paired with topics like passive voice, conjunctions, gerunds, quantifiers, relative clauses, and more, all within familiar vacation contexts.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "We _____ at the hotel late last night, so we _____ to order room service."
+      },
+      "options": {
+        "A": { "text": "arrived / decided", "correct": true },
+        "B": { "text": "arrive / decide", "correct": false },
+        "C": { "text": "arrived / decide", "correct": false },
+        "D": { "text": "arrive / decided", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Past tense with coordinating conjunctions. Both actions happened in the past, so the regular past tense forms 'arrived' and 'decided' are required.",
+        "topic": "Simple Past + Coordinating Conjunctions",
+        "concept": "Using Simple Past for sequential completed actions linked by 'so'",
+        "formula": "Subject + past verb, so + subject + past verb",
+        "examples": [
+          "We <b>missed</b> the bus, so we <b>walked</b> home."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The tourists", "clickable": false },
+        { "id": "s2", "text": "was excited", "clickable": true, "isError": true, "correctAnswers": ["were excited"] },
+        { "id": "s3", "text": " about the trip,", "clickable": false },
+        { "id": "s4", "text": "and they", "clickable": false },
+        { "id": "s5", "text": "arrived to", "clickable": true, "isError": true, "correctAnswers": ["arrived in"] },
+        { "id": "s6", "text": " Paris yesterday.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Past tense with subject-verb agreement and prepositions. 'Tourists' is plural, requiring 'were'. The verb 'arrive' takes the preposition 'in' for cities and countries.",
+        "topic": "Simple Past + Subject-Verb Agreement + Prepositions",
+        "concept": "Plural agreement and correct preposition usage with 'arrive'",
+        "formula": "Plural subject + were + adjective, and + subject + arrived in + city",
+        "examples": [
+          "The students <b>were</b> happy, and they <b>arrived in</b> London."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The luggage _____ by the airline, but it _____ a day later."
+      },
+      "options": {
+        "A": { "text": "lost / found", "correct": false },
+        "B": { "text": "was lost / was found", "correct": true },
+        "C": { "text": "was lost / found", "correct": false },
+        "D": { "text": "lost / was found", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Past tense with the passive voice. The luggage received the action, so the past passive forms 'was lost' and 'was found' are required.",
+        "topic": "Simple Past + Passive Voice",
+        "concept": "Using Simple Past passive for completed past actions where the subject receives the action",
+        "formula": "Subject + was/were + past participle",
+        "examples": [
+          "The tickets <b>were booked</b> online, and the room <b>was cleaned</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We decided", "clickable": false },
+        { "id": "s2", "text": "visiting the", "clickable": true, "isError": true, "correctAnswers": ["to visit the"] },
+        { "id": "s3", "text": " museum,", "clickable": false },
+        { "id": "s4", "text": "and we", "clickable": false },
+        { "id": "s5", "text": "enjoyed to see", "clickable": true, "isError": true, "correctAnswers": ["enjoyed seeing"] },
+        { "id": "s6", "text": " the ancient artifacts.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Past tense with verb patterns. 'Decide' is followed by a to-infinitive ('to visit'), and 'enjoy' is followed by a gerund ('seeing').",
+        "topic": "Simple Past + Gerunds vs. Infinitives",
+        "concept": "Specific verbs requiring infinitive or gerund complements in the past",
+        "formula": "Subject + decided + to-infinitive, and + subject + enjoyed + verb-ing",
+        "examples": [
+          "She <b>decided to go</b>, and she <b>enjoyed exploring</b> the city."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct quantifiers to complete the sentence.",
+        "question": "There weren't _____ people at the beach, so we had _____ trouble finding a good spot."
+      },
+      "options": {
+        "A": { "text": "much / few", "correct": false },
+        "B": { "text": "many / little", "correct": true },
+        "C": { "text": "many / few", "correct": false },
+        "D": { "text": "much / little", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Past tense with quantifiers. 'People' is a countable plural noun, requiring 'many'. 'Trouble' is an uncountable noun, requiring 'little' (meaning not much).",
+        "topic": "Simple Past + Quantifiers",
+        "concept": "Countable vs. uncountable quantifiers in Simple Past negative and affirmative sentences",
+        "formula": "There weren't + many + countable noun; we had + little + uncountable noun",
+        "examples": [
+          "There weren't <b>many</b> cars, so we had <b>little</b> traffic."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We", "clickable": false },
+        { "id": "s2", "text": "yesterday went", "clickable": true, "isError": true, "correctAnswers": ["went yesterday"] },
+        { "id": "s3", "text": " to the beach", "clickable": false },
+        { "id": "s4", "text": "and swam", "clickable": true, "isError": false },
+        { "id": "s5", "text": " happily", "clickable": true, "isError": false },
+        { "id": "s6", "text": "in the ocean.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Past tense with adverb placement. Time expressions like 'yesterday' typically go at the end of the clause or at the very beginning, not between the subject and the verb.",
+        "topic": "Simple Past + Adverb Placement",
+        "concept": "Correct positioning of time adverbs in Simple Past sentences",
+        "formula": "Subject + past verb + object + time adverb",
+        "examples": [
+          "We <b>visited</b> the museum <b>last week</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The guide _____ us through the ancient ruins, which _____ built centuries ago."
+      },
+      "options": {
+        "A": { "text": "lead / was", "correct": false },
+        "B": { "text": "led / were", "correct": true },
+        "C": { "text": "led / was", "correct": false },
+        "D": { "text": "lead / were", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Past tense with irregular verbs and relative clauses. The past tense of 'lead' is 'led', and the plural relative pronoun 'which' (referring to 'ruins') requires the plural past verb 'were'.",
+        "topic": "Simple Past + Irregular Verbs + Relative Clauses",
+        "concept": "Irregular past forms and subject-verb agreement in relative clauses",
+        "formula": "Subject + irregular past verb + object, which + were + past participle",
+        "examples": [
+          "The chef <b>made</b> the dishes, which <b>were</b> delicious."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We stayed at", "clickable": false },
+        { "id": "s2", "text": "a unique", "clickable": true, "isError": true, "correctAnswers": ["a unique"] },
+        { "id": "s3", "text": " hotel,", "clickable": false },
+        { "id": "s4", "text": "and we took", "clickable": false },
+        { "id": "s5", "text": "a unforgettable", "clickable": true, "isError": true, "correctAnswers": ["an unforgettable"] },
+        { "id": "s6", "text": " hike in the", "clickable": false },
+        { "id": "s7", "text": "mountains.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Past tense with article usage. 'Unique' starts with a consonant sound (/j/), so it correctly takes 'a'. 'Unforgettable' starts with a vowel sound, requiring 'an'.",
+        "topic": "Simple Past + Articles",
+        "concept": "Indefinite articles before words starting with specific consonant and vowel sounds",
+        "formula": "Subject + past verb + a + word starting with /j/ sound; subject + past verb + an + word starting with vowel sound",
+        "examples": [
+          "We saw <b>a</b> <b>unicorn</b> and <b>an</b> <b>elephant</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms and comparatives to complete the sentence.",
+        "question": "The second day of the trip _____ better than the first, and the weather _____ worse than expected."
+      },
+      "options": {
+        "A": { "text": "was / was", "correct": true },
+        "B": { "text": "were / were", "correct": false },
+        "C": { "text": "is / is", "correct": false },
+        "D": { "text": "was / were", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Past tense with comparative adjectives. Both 'day' and 'weather' are singular subjects, requiring the singular past verb 'was'.",
+        "topic": "Simple Past + Comparatives",
+        "concept": "Subject-verb agreement with singular subjects and comparative adjectives in the past",
+        "formula": "Singular subject + was + comparative adjective",
+        "examples": [
+          "The movie <b>was</b> <b>better</b> than the book, and the acting <b>was</b> <b>superior</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We checked in", "clickable": true, "isError": true, "correctAnswers": ["checked into"] },
+        { "id": "s2", "text": " the hotel,", "clickable": false },
+        { "id": "s3", "text": "and then we", "clickable": false },
+        { "id": "s4", "text": "set off to", "clickable": true, "isError": false },
+        { "id": "s5", "text": " explore the city.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Past tense with phrasal verbs. When followed by a direct object ('the hotel'), 'check in' becomes the transitive phrasal verb 'check into'.",
+        "topic": "Simple Past + Phrasal Verbs",
+        "concept": "Using transitive phrasal verbs in the Simple Past",
+        "formula": "Subject + past tense phrasal verb + object",
+        "examples": [
+          "We <b>checked into</b> the resort and <b>set off</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "I _____ to travel a lot for work, but last year I _____ home to spend time with my family."
+      },
+      "options": {
+        "A": { "text": "used / stayed", "correct": true },
+        "B": { "text": "use / stayed", "correct": false },
+        "C": { "text": "used / stay", "correct": false },
+        "D": { "text": "was used / staying", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Past tense with 'used to' for past habits and a regular Simple Past verb for a specific past action.",
+        "topic": "Simple Past + 'Used to'",
+        "concept": "Expressing past habits and specific past actions",
+        "formula": "Subject + used to + base verb, but + subject + past verb",
+        "examples": [
+          "He <b>used to</b> <b>smoke</b>, but he <b>quit</b> last year."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I visited", "clickable": false },
+        { "id": "s2", "text": "Rome last summer,", "clickable": false },
+        { "id": "s3", "text": "and my sister", "clickable": false },
+        { "id": "s4", "text": "did visited", "clickable": true, "isError": true, "correctAnswers": ["did visit"] },
+        { "id": "s5", "text": " Florence.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Past tense with ellipsis and emphasis. When using 'did' for emphasis or in elliptical structures, it must be followed by the base form of the verb ('visit'), not the past tense.",
+        "topic": "Simple Past + Ellipsis / Emphasis",
+        "concept": "Using 'did' + base verb for emphasis in Simple Past",
+        "formula": "Subject + past verb, and + subject + did + base verb",
+        "examples": [
+          "I <b>called</b> him, and she <b>did call</b> him too."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct discourse marker and verb form to complete the sentence.",
+        "question": "We missed our train; _____, we _____ a cheaper alternative that worked out perfectly."
+      },
+      "options": {
+        "A": { "text": "therefore / find", "correct": false },
+        "B": { "text": "however / found", "correct": true },
+        "C": { "text": "however / find", "correct": false },
+        "D": { "text": "furthermore / found", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Past tense with contrastive discourse markers. 'However' shows the contrast between missing the train and finding a good alternative, and 'found' is the correct past tense.",
+        "topic": "Simple Past + Discourse Markers",
+        "concept": "Using contrastive discourse markers with Simple Past verbs",
+        "formula": "Simple Past clause; however, + subject + past verb",
+        "examples": [
+          "It rained heavily; <b>however</b>, we <b>enjoyed</b> the trip."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "It were", "clickable": true, "isError": true, "correctAnswers": ["It was"] },
+        { "id": "s2", "text": " the local cuisine", "clickable": false },
+        { "id": "s3", "text": "that impressed", "clickable": true, "isError": false },
+        { "id": "s4", "text": " us the most", "clickable": false },
+        { "id": "s5", "text": "during our trip.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Past tense with cleft sentences for emphasis. The singular subject 'It' requires the singular past verb 'was'.",
+        "topic": "Simple Past + Cleft Sentences",
+        "concept": "Subject-verb agreement in Simple Past it-cleft structures",
+        "formula": "It + was + singular noun + that + past verb",
+        "examples": [
+          "<b>It was</b> the guide who <b>explained</b> everything."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "After we _____ our bags, we _____ a taxi to the airport."
+      },
+      "options": {
+        "A": { "text": "pack / call", "correct": false },
+        "B": { "text": "packed / called", "correct": true },
+        "C": { "text": "had packed / called", "correct": false },
+        "D": { "text": "packed / had called", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Past tense with time clauses. When 'after' links two sequential past actions, the Simple Past is commonly used for both.",
+        "topic": "Simple Past + Time Clauses",
+        "concept": "Using Simple Past for sequential actions linked by 'after'",
+        "formula": "After + subject + past verb, subject + past verb",
+        "examples": [
+          "After we <b>ate</b> dinner, we <b>went</b> for a walk."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We must to buy", "clickable": true, "isError": true, "correctAnswers": ["had to buy"] },
+        { "id": "s2", "text": " tickets in advance,", "clickable": false },
+        { "id": "s3", "text": "and we", "clickable": false },
+        { "id": "s4", "text": "had to wait", "clickable": true, "isError": false },
+        { "id": "s5", "text": " in line for hours.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Past tense with past modal equivalents. 'Must' does not have a past tense form; 'had to' is used to express past obligation.",
+        "topic": "Simple Past + Modal Verbs",
+        "concept": "Using 'had to' for past obligation in Simple Past contexts",
+        "formula": "Subject + had to + base verb",
+        "examples": [
+          "I <b>had to</b> <b>leave</b> early yesterday."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct question tag to complete the sentence.",
+        "question": "You booked the flight yesterday, _____ you?"
+      },
+      "options": {
+        "A": { "text": "did", "correct": false },
+        "B": { "text": "didn't", "correct": true },
+        "C": { "text": "don't", "correct": false },
+        "D": { "text": "weren't", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Past tense with question tags. A positive Simple Past statement ('booked') requires a negative question tag with the auxiliary 'did' ('didn't').",
+        "topic": "Simple Past + Question Tags",
+        "concept": "Forming negative question tags for positive Simple Past statements",
+        "formula": "Subject + past verb, didn't + subject?",
+        "examples": [
+          "She <b>visited</b> Paris, <b>didn't</b> she?"
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "He told me", "clickable": false },
+        { "id": "s2", "text": "that he visit", "clickable": true, "isError": true, "correctAnswers": ["that he visited"] },
+        { "id": "s3", "text": " the castle", "clickable": false },
+        { "id": "s4", "text": "the previous day", "clickable": false },
+        { "id": "s5", "text": "and see", "clickable": true, "isError": true, "correctAnswers": ["and saw"] },
+        { "id": "s6", "text": " the exhibit.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Past tense with reported speech. When reporting past events, the verbs in the reported clause must also be in the past tense ('visited', 'saw').",
+        "topic": "Simple Past + Reported Speech",
+        "concept": "Maintaining Simple Past tense in reported speech for past events",
+        "formula": "Subject + told + object + that + subject + past verb + and + past verb",
+        "examples": [
+          "She <b>said</b> that she <b>went</b> to the store and <b>bought</b> milk."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct prepositions to complete the sentence.",
+        "question": "We arrived _____ the airport _____ 6 PM."
+      },
+      "options": {
+        "A": { "text": "in / on", "correct": false },
+        "B": { "text": "at / at", "correct": true },
+        "C": { "text": "to / at", "correct": false },
+        "D": { "text": "at / on", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Past tense with prepositions of place and time. We use 'at' for specific locations like 'the airport' and 'at' for specific times like '6 PM'.",
+        "topic": "Simple Past + Prepositions",
+        "concept": "Correct preposition usage for specific places and times in the past",
+        "formula": "Subject + arrived + at + place + at + time",
+        "examples": [
+          "We <b>arrived at</b> the station <b>at</b> noon."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We bought", "clickable": false },
+        { "id": "s2", "text": "many luggages", "clickable": true, "isError": true, "correctAnswers": ["much luggage"] },
+        { "id": "s3", "text": " and", "clickable": false },
+        { "id": "s4", "text": "much souvenirs", "clickable": true, "isError": true, "correctAnswers": ["many souvenirs"] },
+        { "id": "s5", "text": " at the market.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Past tense with countable/uncountable nouns and quantifiers. 'Luggage' is uncountable, requiring 'much'. 'Souvenirs' is countable, requiring 'many'.",
+        "topic": "Simple Past + Countable/Uncountable Nouns",
+        "concept": "Correct quantifier usage with countable and uncountable nouns in the past",
+        "formula": "Subject + past verb + much + uncountable noun + and + many + countable noun",
+        "examples": [
+          "We <b>bought</b> <b>much</b> <b>furniture</b> and <b>many</b> <b>chairs</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the inverted sentence.",
+        "question": "Rarely _____ we _____ such a beautiful sunset during our vacation."
+      },
+      "options": {
+        "A": { "text": "did / see", "correct": true },
+        "B": { "text": "do / see", "correct": false },
+        "C": { "text": "did / saw", "correct": false },
+        "D": { "text": "have / seen", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Past tense with negative adverbial inversion. 'Rarely' at the beginning of a sentence triggers subject-auxiliary inversion ('did we see').",
+        "topic": "Simple Past + Inversion",
+        "concept": "Subject-auxiliary inversion with negative adverbs in Simple Past",
+        "formula": "Rarely + did + subject + base verb",
+        "examples": [
+          "<b>Never did</b> I <b>expect</b> such a surprise."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The flight", "clickable": false },
+        { "id": "s2", "text": "was delayed,", "clickable": false },
+        { "id": "s3", "text": "but we", "clickable": true, "isError": true, "correctAnswers": ["so we"] },
+        { "id": "s4", "text": " missed", "clickable": true, "isError": false },
+        { "id": "s5", "text": "our connection.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Past tense with coordinating conjunctions. 'So' is the correct conjunction to show the result of the flight being delayed, not 'but' (which shows contrast).",
+        "topic": "Simple Past + Coordinating Conjunctions",
+        "concept": "Using resultative conjunctions with Simple Past clauses",
+        "formula": "Simple Past clause, so + Simple Past clause",
+        "examples": [
+          "It rained, <b>so</b> we <b>stayed</b> inside."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct relative pronouns to complete the sentence.",
+        "question": "The resort _____ we stayed was amazing, and the staff _____ worked there were very friendly."
+      },
+      "options": {
+        "A": { "text": "which / that", "correct": false },
+        "B": { "text": "where / who", "correct": true },
+        "C": { "text": "where / which", "correct": false },
+        "D": { "text": "that / who", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Past tense with relative clauses. 'Where' is used for places ('resort'), and 'who' is used for people ('staff').",
+        "topic": "Simple Past + Relative Pronouns",
+        "concept": "Choosing the correct relative pronoun for places and people in past contexts",
+        "formula": "Noun (place) + where + subject + past verb, and + noun (people) + who + past verb",
+        "examples": [
+          "The city <b>where</b> we <b>lived</b> was small, and the neighbors <b>who</b> <b>knew</b> us were kind."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We planed", "clickable": true, "isError": true, "correctAnswers": ["planned"] },
+        { "id": "s2", "text": " our itinerary", "clickable": false },
+        { "id": "s3", "text": "carefully and", "clickable": false },
+        { "id": "s4", "text": "stoped at", "clickable": true, "isError": true, "correctAnswers": ["stopped at"] },
+        { "id": "s5", "text": " a scenic viewpoint.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Past tense with spelling rules for regular verbs. Verbs ending in a consonant-vowel-consonant pattern ('plan', 'stop') require doubling the final consonant before adding '-ed' ('planned', 'stopped').",
+        "topic": "Simple Past + Spelling Rules",
+        "concept": "Doubling the final consonant for regular past tense verbs",
+        "formula": "Subject + verb(consonant-vowel-consonant) + ed",
+        "examples": [
+          "We <b>dropped</b> the bags and <b>packed</b> them."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct adjective order to complete the sentence.",
+        "question": "We stayed in a _____ hotel during our trip."
+      },
+      "options": {
+        "A": { "text": "wooden old beautiful", "correct": false },
+        "B": { "text": "beautiful old wooden", "correct": true },
+        "C": { "text": "old beautiful wooden", "correct": false },
+        "D": { "text": "beautiful wooden old", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Past tense with adjective order. The correct order is opinion ('beautiful'), age ('old'), and material ('wooden').",
+        "topic": "Simple Past + Adjective Order",
+        "concept": "Correct sequencing of multiple adjectives before a noun in past contexts",
+        "formula": "Subject + past verb + article + opinion + age + material + noun",
+        "examples": [
+          "We <b>bought</b> a <b>lovely new leather</b> jacket."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "My family", "clickable": false },
+        { "id": "s2", "text": "lost there", "clickable": true, "isError": true, "correctAnswers": ["lost their"] },
+        { "id": "s3", "text": " passports,", "clickable": false },
+        { "id": "s4", "text": "so we had", "clickable": false },
+        { "id": "s5", "text": "to renew our's", "clickable": true, "isError": true, "correctAnswers": ["to renew ours"] },
+        { "id": "s6", "text": " quickly.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Past tense with possessive adjectives and pronouns. 'Their' is the possessive adjective for 'family', and 'ours' is the correct possessive pronoun (without an apostrophe).",
+        "topic": "Simple Past + Possessives",
+        "concept": "Correct usage of possessive adjectives and pronouns in past narratives",
+        "formula": "Subject + past verb + possessive adjective + noun, so + subject + past verb + possessive pronoun",
+        "examples": [
+          "They <b>forgot</b> <b>their</b> keys, so we <b>used</b> <b>ours</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "_____ a long line at customs, but _____ any major issues."
+      },
+      "options": {
+        "A": { "text": "There was / there weren't", "correct": true },
+        "B": { "text": "There were / there wasn't", "correct": false },
+        "C": { "text": "There was / there wasn't", "correct": false },
+        "D": { "text": "There were / there weren't", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Past tense with 'there was/were'. 'Line' is singular, requiring 'There was'. 'Issues' is plural, requiring 'there weren't'.",
+        "topic": "Simple Past + There was/were",
+        "concept": "Subject-verb agreement with 'there was/were' for singular and plural nouns",
+        "formula": "There was + singular noun, but + there weren't + plural noun",
+        "examples": [
+          "<b>There was</b> a problem, but <b>there weren't</b> any delays."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We explored", "clickable": false },
+        { "id": "s2", "text": "the city,", "clickable": true, "isError": true, "correctAnswers": ["the city, and we"] },
+        { "id": "s3", "text": "we also", "clickable": true, "isError": true, "correctAnswers": ["also"] },
+        { "id": "s4", "text": "tried the", "clickable": false },
+        { "id": "s5", "text": "local street food.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Past tense with compound sentences. Two independent clauses must be joined by a coordinating conjunction (like 'and') or a semicolon to avoid a comma splice.",
+        "topic": "Simple Past + Compound Sentences",
+        "concept": "Correctly joining independent Simple Past clauses",
+        "formula": "Subject + past verb + object, and + subject + past verb + object",
+        "examples": [
+          "We <b>visited</b> the museum, <b>and</b> we <b>ate</b> lunch."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct question words and auxiliary verbs to complete the sentence.",
+        "question": "_____ did you stay in Tokyo, and what _____ you do there?"
+      },
+      "options": {
+        "A": { "text": "How long / did", "correct": true },
+        "B": { "text": "How long / do", "correct": false },
+        "C": { "text": "When / did", "correct": false },
+        "D": { "text": "When / do", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Past tense with Wh- questions. 'How long' asks for duration, and 'did' is the correct past auxiliary for the second question.",
+        "topic": "Simple Past + Wh- Questions",
+        "concept": "Forming Wh- questions with duration and past auxiliary verbs",
+        "formula": "How long + did + subject + base verb, and + what + did + subject + base verb",
+        "examples": [
+          "<b>How long</b> <b>did</b> you wait, and what <b>did</b> you buy?"
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We didn't went", "clickable": true, "isError": true, "correctAnswers": ["didn't go"] },
+        { "id": "s2", "text": " to the mountains", "clickable": false },
+        { "id": "s3", "text": "because we", "clickable": false },
+        { "id": "s4", "text": "didn't had", "clickable": true, "isError": true, "correctAnswers": ["didn't have"] },
+        { "id": "s5", "text": " enough time.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Past tense with negative forms. After the auxiliary 'didn't', the main verb must always be in its base form ('go', 'have'), not the past tense.",
+        "topic": "Simple Past + Negative Forms",
+        "concept": "Using base verbs after 'didn't' in Simple Past negative sentences",
+        "formula": "Subject + didn't + base verb, because + subject + didn't + base verb",
+        "examples": [
+          "We <b>didn't see</b> the show because we <b>didn't buy</b> tickets."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    }
+  ]
+}
