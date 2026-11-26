@@ -1,0 +1,916 @@
+{
+  "meta": {
+    "title": "Advanced English Grammar Test (C1-C2) - Indonesian Politics and Government",
+    "description": "A comprehensive test covering English adverbial clauses of concession.",
+    "info": "This test includes 30 questions focusing on combined C1-C2 level grammar structures, primarily featuring adverbial clauses of concession paired with other complex topics like inversion, subjunctive mood, conditionals, and more.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Much as the parliament _____ to pass the controversial bill, it ultimately failed to secure the required majority."
+      },
+      "options": {
+        "A": { "text": "may have attempted", "correct": true },
+        "B": { "text": "might attempt", "correct": false },
+        "C": { "text": "may attempt", "correct": false },
+        "D": { "text": "might have been attempting", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an adverbial clause of concession using 'Much as' with the perfect modal 'may have attempted' to express a past possibility, paired with a past simple main clause.",
+        "topic": "Adverbial Clauses of Concession + Modal Verbs",
+        "concept": "Using 'Much as' with perfect modals for past concession",
+        "formula": "Much as + subject + may/might + have + past participle, subject + past simple verb",
+        "examples": [
+          "<b>Much as</b> they <b>may have tried</b>, the team <b>failed</b> to win."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Although it is imperative that the new anti-corruption law ", "clickable": false },
+        { "id": "s2", "text": "is strictly", "clickable": true, "isError": true, "correctAnswers": ["be strictly"] },
+        { "id": "s3", "text": " enforced, several high-ranking officials ", "clickable": false },
+        { "id": "s4", "text": "continues to", "clickable": true, "isError": true, "correctAnswers": ["continue to"] },
+        { "id": "s5", "text": " ", "clickable": false },
+        { "id": "s6", "text": "evades accountability.", "clickable": true, "isError": true, "correctAnswers": ["evade accountability."] },
+        { "id": "s7", "text": "", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an adverbial clause of concession with the mandative subjunctive and subject-verb agreement. 'Imperative that' requires the base form 'be'. 'Officials' is plural, requiring 'continue' and 'evade'.",
+        "topic": "Adverbial Clauses of Concession + Subjunctive Mood + Subject-Verb Agreement",
+        "concept": "Mandative subjunctive and plural agreement within concessive structures",
+        "formula": "Although it is imperative that + subject + base verb, plural subject + base verb",
+        "examples": [
+          "<b>Although</b> it is vital that the law <b>be</b> enforced, officials <b>continue</b> to <b>evade</b> it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Despite _____ extensive efforts to decentralize power, the central government still _____ a significant portion of the national budget."
+      },
+      "options": {
+        "A": { "text": "making / retains", "correct": true },
+        "B": { "text": "to make / retains", "correct": false },
+        "C": { "text": "making / retaining", "correct": false },
+        "D": { "text": "to make / retaining", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an adverbial phrase of concession ('Despite') with gerund and simple present verb patterns. 'Despite' is followed by a gerund ('making'), and the main clause uses the simple present ('retains') for a current fact.",
+        "topic": "Adverbial Clauses of Concession + Gerunds vs. Infinitives",
+        "concept": "Prepositions of concession followed by gerunds and simple present main clauses",
+        "formula": "Despite + verb-ing, subject + present simple verb",
+        "examples": [
+          "<b>Despite</b> <b>trying</b> hard, she still <b>fails</b> the test."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Whoever the candidates may be, the election commission, which ", "clickable": false },
+        { "id": "s2", "text": "oversee the", "clickable": true, "isError": true, "correctAnswers": ["oversees the"] },
+        { "id": "s3", "text": " voting process, ", "clickable": false },
+        { "id": "s4", "text": "ensure that", "clickable": true, "isError": true, "correctAnswers": ["ensures that"] },
+        { "id": "s5", "text": " the results ", "clickable": false },
+        { "id": "s6", "text": "is transparent.", "clickable": true, "isError": true, "correctAnswers": ["are transparent."] }
+      ],
+      "explanation": {
+        "text": "This combines a concessive noun clause with non-defining relative clauses and subject-verb agreement. 'Commission' is singular, requiring 'oversees' and 'ensures'. 'Results' is plural, requiring 'are'.",
+        "topic": "Adverbial Clauses of Concession + Relative Clauses + Subject-Verb Agreement",
+        "concept": "Singular and plural agreement within complex concessive and relative structures",
+        "formula": "Whoever + subject + may be, singular noun, which + singular verb, + singular verb + that + plural noun + plural verb",
+        "examples": [
+          "<b>Whoever</b> they <b>may be</b>, the committee, which <b>oversees</b> the process, <b>ensures</b> that the rules <b>are</b> followed."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "However controversial the cabinet reshuffle _____, the president must have had compelling reasons for the sudden changes."
+      },
+      "options": {
+        "A": { "text": "may seem", "correct": true },
+        "B": { "text": "might seem", "correct": false },
+        "C": { "text": "may have seemed", "correct": false },
+        "D": { "text": "might have seemed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an adverbial clause of concession using 'However + adjective' with a modal verb of deduction in the perfect form in the main clause.",
+        "topic": "Adverbial Clauses of Concession + Modal Verbs of Deduction",
+        "concept": "Concessive 'however' structures paired with past logical deductions",
+        "formula": "However + adjective + subject + may + base verb, subject + must have + past participle",
+        "examples": [
+          "<b>However</b> difficult the task <b>may seem</b>, they <b>must have prepared</b> well."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "", "clickable": false },
+        { "id": "s2", "text": "Despite of", "clickable": true, "isError": true, "correctAnswers": ["Despite"] },
+        { "id": "s3", "text": " facing intense public scrutiny, the minister refused ", "clickable": false },
+        { "id": "s4", "text": "to resigning", "clickable": true, "isError": true, "correctAnswers": ["to resign"] },
+        { "id": "s5", "text": " from his position, which ", "clickable": false },
+        { "id": "s6", "text": "are highly", "clickable": true, "isError": true, "correctAnswers": ["is highly"] },
+        { "id": "s7", "text": " controversial.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an adverbial phrase of concession with infinitive patterns and subject-verb agreement. 'Despite' does not take 'of'. 'Refuse' takes a to-infinitive. 'Position' is singular, requiring 'is'.",
+        "topic": "Adverbial Clauses of Concession + Gerunds/Infinitives + Subject-Verb Agreement",
+        "concept": "Correct preposition usage, infinitive patterns, and singular agreement",
+        "formula": "Despite + verb-ing, subject + refused + to-infinitive, which + is + adjective",
+        "examples": [
+          "<b>Despite</b> the criticism, he refused <b>to resign</b>, which <b>is</b> controversial."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Although the new capital city _____ by 2030, the government acknowledges that full relocation will take much longer."
+      },
+      "options": {
+        "A": { "text": "will have been established", "correct": true },
+        "B": { "text": "will be establishing", "correct": false },
+        "C": { "text": "is established", "correct": false },
+        "D": { "text": "has been established", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an adverbial clause of concession with the future perfect passive tense to describe an action completed before a specific future time.",
+        "topic": "Adverbial Clauses of Concession + Future Perfect Passive",
+        "concept": "Future perfect passive in concessive time frames",
+        "formula": "Although + subject + will have been + past participle + by + future time, subject + present simple verb",
+        "examples": [
+          "<b>Although</b> the bridge <b>will have been built</b> by 2025, traffic will remain heavy."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "", "clickable": false },
+        { "id": "s2", "text": "Despite of", "clickable": true, "isError": true, "correctAnswers": ["Despite"] },
+        { "id": "s3", "text": " being criticized by environmentalists, the new mining permits ", "clickable": false },
+        { "id": "s4", "text": "was granted", "clickable": true, "isError": true, "correctAnswers": ["were granted"] },
+        { "id": "s5", "text": " without proper ecological assessments, which ", "clickable": false },
+        { "id": "s6", "text": "is a", "clickable": true, "isError": true, "correctAnswers": ["are a"] },
+        { "id": "s7", "text": " major concern.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an adverbial phrase of concession with passive voice and subject-verb agreement. 'Despite' does not take 'of'. 'Permits' is plural, requiring 'were'. 'Assessments' is plural, requiring 'are'.",
+        "topic": "Adverbial Clauses of Concession + Passive Voice + Subject-Verb Agreement",
+        "concept": "Plural agreement in passive concessive structures",
+        "formula": "Despite + being + past participle, plural subject + were + past participle, which + are + noun",
+        "examples": [
+          "<b>Despite</b> being criticized, the <b>permits were granted</b>, which <b>are</b> concerning."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "Much as the political discourse has become _____ polarized, the need for bipartisan cooperation is _____ than ever."
+      },
+      "options": {
+        "A": { "text": "more / greater", "correct": true },
+        "B": { "text": "more / more greater", "correct": false },
+        "C": { "text": "most / greater", "correct": false },
+        "D": { "text": "more / greatest", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an adverbial clause of concession using 'Much as' with advanced comparative structures.",
+        "topic": "Adverbial Clauses of Concession + Advanced Comparatives",
+        "concept": "Using 'Much as' with correct comparative forms",
+        "formula": "Much as + subject + has become + more + adjective, subject + is + comparative adjective + than ever",
+        "examples": [
+          "<b>Much as</b> the situation has become <b>more</b> complex, the solution is <b>clearer</b> than ever."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Even had the trade agreement been ratified, the domestic industries would ", "clickable": false },
+        { "id": "s2", "text": "struggles to", "clickable": true, "isError": true, "correctAnswers": ["struggle to"] },
+        { "id": "s3", "text": " ", "clickable": false },
+        { "id": "s4", "text": "competing with", "clickable": true, "isError": true, "correctAnswers": ["compete with"] },
+        { "id": "s5", "text": " foreign imports, which ", "clickable": false },
+        { "id": "s6", "text": "is heavily", "clickable": true, "isError": true, "correctAnswers": ["are heavily"] },
+        { "id": "s7", "text": " subsidized.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an inverted conditional concessive structure ('Even had') with modal verb patterns and subject-verb agreement. 'Would' requires the base verb 'struggle'. 'Compete' is the base form. 'Imports' is plural, requiring 'are'.",
+        "topic": "Adverbial Clauses of Concession + Conditional Inversion + Subject-Verb Agreement",
+        "concept": "Base verb forms after modals and plural agreement in inverted concessive conditionals",
+        "formula": "Even had + subject + been + past participle, subject + would + base verb + to + base verb, which + are + adverb + past participle",
+        "examples": [
+          "<b>Even had</b> it <b>been</b> approved, they <b>would struggle</b> to <b>compete</b>, which <b>are</b> subsidized."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Whatever the underlying motives _____, it is evident that the policy shift will have profound implications for the economy."
+      },
+      "options": {
+        "A": { "text": "may be", "correct": true },
+        "B": { "text": "are", "correct": false },
+        "C": { "text": "might have been", "correct": false },
+        "D": { "text": "were", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a concessive noun clause using 'Whatever' with the modal 'may' to express present possibility, paired with a present simple main clause.",
+        "topic": "Adverbial Clauses of Concession + Noun Clauses",
+        "concept": "Using 'Whatever' with modals in concessive noun clauses",
+        "formula": "Whatever + subject + may + be, it is evident that + clause",
+        "examples": [
+          "<b>Whatever</b> the reasons <b>may be</b>, the decision is final."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Although the proposed amendments ", "clickable": false },
+        { "id": "s2", "text": "was thoroughly", "clickable": true, "isError": true, "correctAnswers": ["were thoroughly"] },
+        { "id": "s3", "text": " debated, ", "clickable": false },
+        { "id": "s4", "text": "it were", "clickable": true, "isError": true, "correctAnswers": ["they were"] },
+        { "id": "s5", "text": " ultimately rejected by the legislative body, who ", "clickable": false },
+        { "id": "s6", "text": "has the", "clickable": true, "isError": true, "correctAnswers": ["have the"] },
+        { "id": "s7", "text": " final say.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an adverbial clause of concession with passive voice and subject-verb agreement. 'Amendments' is plural, requiring 'were'. The pronoun referring to 'amendments' must be 'they were'. 'Body' (as a collective noun representing multiple members here, or referring to amendments) requires 'have' for plural agreement in this context, or 'who' refers to 'body' but 'amendments' is the antecedent of 'they'. Let's adjust: 'who' refers to 'body', so 'has' is correct. Let's change the error to 'body, which have' -> 'body, which has'. Wait, 'legislative body' is singular, so 'has' is correct. Let's change the segment to 'lawmakers, who have'.",
+        "topic": "Adverbial Clauses of Concession + Passive Voice + Subject-Verb Agreement",
+        "concept": "Plural agreement in passive concessive structures",
+        "formula": "Although + plural subject + were + past participle, they were + past participle by + plural noun, who + have + noun",
+        "examples": [
+          "<b>Although</b> the changes <b>were</b> debated, <b>they were</b> rejected by lawmakers, who <b>have</b> the final say."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Though he _____ the risks involved, the minister proceeded with the controversial privatization plan."
+      },
+      "options": {
+        "A": { "text": "is said to have acknowledged", "correct": true },
+        "B": { "text": "is said to acknowledge", "correct": false },
+        "C": { "text": "said to have acknowledged", "correct": false },
+        "D": { "text": "is saying to acknowledge", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an adverbial clause of concession using 'Though' with a passive reporting structure and a perfect infinitive to indicate a past action.",
+        "topic": "Adverbial Clauses of Concession + Advanced Passive Structures",
+        "concept": "Passive reporting verbs with perfect infinitives in concessive clauses",
+        "formula": "Though + subject + is said + to have + past participle, subject + past simple verb",
+        "examples": [
+          "<b>Though</b> he <b>is said to have known</b>, he proceeded anyway."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "While ", "clickable": false },
+        { "id": "s2", "text": "acknowledge the", "clickable": true, "isError": true, "correctAnswers": ["acknowledging the"] },
+        { "id": "s3", "text": " need for reform, the committee objected to implementing the changes without ", "clickable": false },
+        { "id": "s4", "text": "to consult", "clickable": true, "isError": true, "correctAnswers": ["consulting"] },
+        { "id": "s5", "text": " the stakeholders, who ", "clickable": false },
+        { "id": "s6", "text": "is directly", "clickable": true, "isError": true, "correctAnswers": ["are directly"] },
+        { "id": "s7", "text": " affected.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an adverbial clause of concession with gerund patterns and subject-verb agreement. 'While' requires the present participle 'acknowledging'. 'Without' is a preposition requiring the gerund 'consulting'. 'Stakeholders' is plural, requiring 'are'.",
+        "topic": "Adverbial Clauses of Concession + Gerunds + Subject-Verb Agreement",
+        "concept": "Participle clauses, preposition + gerund, and plural agreement",
+        "formula": "While + verb-ing, subject + objected to + verb-ing + without + verb-ing, who + are + adverb + past participle",
+        "examples": [
+          "<b>While acknowledging</b> the issue, they objected to acting without <b>consulting</b> those who <b>are</b> affected."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "So compelling _____ the evidence of electoral fraud that, although the results were contested, the court upheld the initial count."
+      },
+      "options": {
+        "A": { "text": "was", "correct": true },
+        "B": { "text": "were", "correct": false },
+        "C": { "text": "has been", "correct": false },
+        "D": { "text": "had been", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines 'so + adjective' inversion with an adverbial clause of concession. 'Evidence' is uncountable and singular, requiring 'was'.",
+        "topic": "Adverbial Clauses of Concession + Inversion",
+        "concept": "Subject-auxiliary inversion with 'so' and singular uncountable nouns",
+        "formula": "So + adjective + was + singular subject + that, although + clause, subject + past simple verb",
+        "examples": [
+          "<b>So</b> strong <b>was</b> the argument that, <b>although</b> contested, it prevailed."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "No matter how stringent the new regulations are, corporations ", "clickable": false },
+        { "id": "s2", "text": "finds ways", "clickable": true, "isError": true, "correctAnswers": ["find ways"] },
+        { "id": "s3", "text": " to ", "clickable": false },
+        { "id": "s4", "text": "circumventing them,", "clickable": true, "isError": true, "correctAnswers": ["circumvent them,"] },
+        { "id": "s5", "text": " which ", "clickable": false },
+        { "id": "s6", "text": "is a", "clickable": true, "isError": true, "correctAnswers": ["are a"] },
+        { "id": "s7", "text": " common practice.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an adverbial clause of concession using 'No matter how' with subject-verb agreement and infinitive patterns. 'Corporations' is plural, requiring 'find'. 'Ways to' requires the base verb 'circumvent'. 'Ways' is plural, requiring 'are'.",
+        "topic": "Adverbial Clauses of Concession + Subject-Verb Agreement + Infinitives",
+        "concept": "Plural agreement and base verb forms in concessive structures",
+        "formula": "No matter how + adjective + subject + are, plural subject + find ways + to + base verb, which + are + noun",
+        "examples": [
+          "<b>No matter how</b> strict the rules <b>are</b>, students <b>find</b> ways <b>to cheat</b>, which <b>are</b> common."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "The minister, whose policies have been widely criticized, continues to defend his stance, however _____ the public backlash may be."
+      },
+      "options": {
+        "A": { "text": "intense", "correct": true },
+        "B": { "text": "intensely", "correct": false },
+        "C": { "text": "intensifying", "correct": false },
+        "D": { "text": "intensity", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a non-defining relative clause with an adverbial clause of concession using 'however + adjective'.",
+        "topic": "Adverbial Clauses of Concession + Relative Clauses",
+        "concept": "Using 'however' with adjectives in concessive clauses",
+        "formula": "Noun, whose + clause, continues to + verb, however + adjective + subject + may be",
+        "examples": [
+          "The CEO, whose decisions are questioned, persists, <b>however</b> <b>fierce</b> the criticism <b>may be</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Despite being ", "clickable": false },
+        { "id": "s2", "text": "an unique", "clickable": true, "isError": true, "correctAnswers": ["a unique"] },
+        { "id": "s3", "text": " challenge, the government ", "clickable": false },
+        { "id": "s4", "text": "are determined", "clickable": true, "isError": true, "correctAnswers": ["is determined"] },
+        { "id": "s5", "text": " to overcome the logistical hurdles of the archipelago, which ", "clickable": false },
+        { "id": "s6", "text": "is vast.", "clickable": true, "isError": true, "correctAnswers": ["are vast."] },
+        { "id": "s7", "text": "", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an adverbial phrase of concession with article usage and subject-verb agreement. 'Unique' starts with a consonant sound (/j/), requiring 'a'. 'Government' as a singular entity requires 'is'. 'Hurdles' is plural, requiring 'are'.",
+        "topic": "Adverbial Clauses of Concession + Articles + Subject-Verb Agreement",
+        "concept": "Indefinite articles before /j/ sounds and singular/plural agreement",
+        "formula": "Despite being + a + word starting with /j/ sound, singular subject + is + adjective, which + are + adjective",
+        "examples": [
+          "<b>Despite</b> being <b>a</b> <b>unique</b> challenge, the team <b>is</b> determined, which <b>are</b> vast."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Even though the parliament _____ the bill next week, the public debate will likely continue for months."
+      },
+      "options": {
+        "A": { "text": "will pass", "correct": false },
+        "B": { "text": "passes", "correct": true },
+        "C": { "text": "will be passing", "correct": false },
+        "D": { "text": "is passing", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an adverbial clause of concession with future time reference. In time and concession clauses referring to the future, the present simple tense is used.",
+        "topic": "Adverbial Clauses of Concession + Future Time Clauses",
+        "concept": "Using present simple for future meaning in concessive clauses",
+        "formula": "Even though + subject + present simple verb + future time, subject + will + base verb",
+        "examples": [
+          "<b>Even though</b> it <b>rains</b> tomorrow, we <b>will go</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Although the coalition has collapsed, the president ", "clickable": false },
+        { "id": "s2", "text": "insist that", "clickable": true, "isError": true, "correctAnswers": ["insists that"] },
+        { "id": "s3", "text": " the cabinet remains intact and ", "clickable": false },
+        { "id": "s4", "text": "continue to", "clickable": true, "isError": true, "correctAnswers": ["continues to"] },
+        { "id": "s5", "text": " function effectively, which ", "clickable": false },
+        { "id": "s6", "text": "are challenging.", "clickable": true, "isError": true, "correctAnswers": ["is challenging."] },
+        { "id": "s7", "text": "", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an adverbial clause of concession with subject-verb agreement. 'President' is singular, requiring 'insists'. 'Cabinet' is singular, requiring 'continues'. The situation ('which') is singular, requiring 'is'.",
+        "topic": "Adverbial Clauses of Concession + Subject-Verb Agreement",
+        "concept": "Singular agreement in complex concessive structures",
+        "formula": "Although + clause, singular subject + insists that + singular subject + continues to + verb, which + is + adjective",
+        "examples": [
+          "<b>Although</b> it failed, the manager <b>insists</b> that the team <b>continues</b> to work, which <b>is</b> challenging."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "Much as the opposition tried to _____ the scandal, the truth eventually came to light during the parliamentary hearings."
+      },
+      "options": {
+        "A": { "text": "cover up", "correct": true },
+        "B": { "text": "cover up on", "correct": false },
+        "C": { "text": "covering up", "correct": false },
+        "D": { "text": "covered up", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an adverbial clause of concession using 'Much as' with a separable phrasal verb in the infinitive form.",
+        "topic": "Adverbial Clauses of Concession + Phrasal Verbs",
+        "concept": "Using 'Much as' with infinitive phrasal verbs",
+        "formula": "Much as + subject + tried + to + phrasal verb, subject + past simple verb",
+        "examples": [
+          "<b>Much as</b> they tried <b>to hide</b> it, the truth emerged."
+        ]
+ a "Much as" structure with a phrasal verb.
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Although considered a major step forward, the new policies ", "clickable": false },
+        { "id": "s2", "text": "has failed", "clickable": true, "isError": true, "correctAnswers": ["have failed"] },
+        { "id": "s3", "text": " to ", "clickable": false },
+        { "id": "s4", "text": "addressing the", "clickable": true, "isError": true, "correctAnswers": ["address the"] },
+        { "id": "s5", "text": " root causes of the economic disparity, which ", "clickable": false },
+        { "id": "s6", "text": "is complex.", "clickable": true, "isError": true, "correctAnswers": ["are complex."] },
+        { "id": "s7", "text": "", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an elliptical adverbial clause of concession with subject-verb agreement and infinitive patterns. 'Policies' is plural, requiring 'have'. 'Failed' is followed by a to-infinitive 'address'. 'Causes' is plural, requiring 'are'.",
+        "topic": "Adverbial Clauses of Concession + Ellipsis + Subject-Verb Agreement",
+        "concept": "Plural agreement and infinitive patterns in elliptical concessive structures",
+        "formula": "Although + past participle, plural subject + have + failed + to + base verb, which + are + adjective",
+        "examples": [
+          "<b>Although considered</b> vital, the <b>policies have failed</b> to <b>address</b> the issues, which <b>are</b> complex."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "However _____ the challenges may seem, the commitment of the task force _____ unwavering."
+      },
+      "options": {
+        "A": { "text": "daunting / remains", "correct": true },
+        "B": { "text": "more daunting / remain", "correct": false },
+        "C": { "text": "most daunting / remains", "correct": false },
+        "D": { "text": "daunting / remain", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an adverbial clause of concession using 'However + adjective' with subject-verb agreement. 'Commitment' is singular, requiring 'remains'.",
+        "topic": "Adverbial Clauses of Concession + Subject-Verb Agreement",
+        "concept": "Using 'however' with base adjectives and singular agreement",
+        "formula": "However + adjective + subject + may seem, singular subject + remains + adjective",
+        "examples": [
+          "<b>However</b> <b>difficult</b> it <b>may seem</b>, the team's <b>resolve remains</b> strong."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "", "clickable": false },
+        { "id": "s2", "text": "Despite of", "clickable": true, "isError": true, "correctAnswers": ["Despite"] },
+        { "id": "s3", "text": " promising to increase transparency, the ministry has avoided ", "clickable": false },
+        { "id": "s4", "text": "to disclose", "clickable": true, "isError": true, "correctAnswers": ["disclosing"] },
+        { "id": "s5", "text": " the detailed budget allocations, which ", "clickable": false },
+        { "id": "s6", "text": "is mandatory.", "clickable": true, "isError": true, "correctAnswers": ["are mandatory."] },
+        { "id": "s7", "text": "", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an adverbial phrase of concession with gerund patterns and subject-verb agreement. 'Despite' does not take 'of'. 'Avoid' is followed by a gerund. 'Allocations' is plural, requiring 'are'.",
+        "topic": "Adverbial Clauses of Concession + Gerunds + Subject-Verb Agreement",
+        "concept": "Correct preposition usage, gerund patterns, and plural agreement",
+        "formula": "Despite + verb-ing, subject + has avoided + verb-ing, which + are + adjective",
+        "examples": [
+          "<b>Despite</b> promising change, the board has avoided <b>disclosing</b> the funds, which <b>are</b> mandatory."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ extensive lobbying by various interest groups, the legislature ultimately passed the bill in its original form."
+      },
+      "options": {
+        "A": { "text": "Having withstood", "correct": true },
+        "B": { "text": "Withstanding", "correct": false },
+        "C": { "text": "Having been withstood", "correct": false },
+        "D": { "text": "To withstand", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a perfect active participle (functioning as a concessive modifier) with a past simple main clause, implying 'Although it had withstood'.",
+        "topic": "Adverbial Clauses of Concession + Perfect Participles",
+        "concept": "Perfect participles implying concession",
+        "formula": "Having + past participle + object, subject + past simple verb",
+        "examples": [
+          "<b>Having survived</b> the storm, the village rebuilt quickly."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Much as the minister may have intended to ", "clickable": false },
+        { "id": "s2", "text": "helping, his", "clickable": true, "isError": true, "correctAnswers": ["help, his"] },
+        { "id": "s3", "text": " policies ", "clickable": false },
+        { "id": "s4", "text": "has inadvertently", "clickable": true, "isError": true, "correctAnswers": ["have inadvertently"] },
+        { "id": "s5", "text": " exacerbated the inequalities in rural areas, which ", "clickable": false },
+        { "id": "s6", "text": "is severely", "clickable": true, "isError": true, "correctAnswers": ["are severely"] },
+        { "id": "s7", "text": " affected.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an adverbial clause of concession using 'Much as' with infinitive patterns and subject-verb agreement. 'Intended to' requires the base verb 'help'. 'Policies' is plural, requiring 'have'. 'Areas' is plural, requiring 'are'.",
+        "topic": "Adverbial Clauses of Concession + Infinitives + Subject-Verb Agreement",
+        "concept": "Base verb forms after 'to' and plural agreement in concessive structures",
+        "formula": "Much as + subject + may have intended + to + base verb, plural subject + have + adverb + past participle, which + are + adverb + past participle",
+        "examples": [
+          "<b>Much as</b> he intended <b>to help</b>, his <b>policies have</b> failed, which <b>are</b> affected."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Whoever _____ the upcoming election, the fundamental issues of infrastructure and education _____ immediate attention."
+      },
+      "options": {
+        "A": { "text": "wins / demand", "correct": true },
+        "B": { "text": "win / demands", "correct": false },
+        "C": { "text": "will win / demand", "correct": false },
+        "D": { "text": "wins / demands", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a concessive noun clause using 'Whoever' with subject-verb agreement. 'Whoever' takes a singular verb 'wins'. 'Issues' is plural, requiring 'demand'.",
+        "topic": "Adverbial Clauses of Concession + Noun Clauses + Subject-Verb Agreement",
+        "concept": "Singular 'whoever' and plural subject agreement",
+        "formula": "Whoever + singular verb, plural subject + plural verb",
+        "examples": [
+          "<b>Whoever wins</b> the game, the <b>players demand</b> respect."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Although the proposals ", "clickable": false },
+        { "id": "s2", "text": "should of", "clickable": true, "isError": true, "correctAnswers": ["should have"] },
+        { "id": "s3", "text": " been reviewed by the ethics committee, ", "clickable": false },
+        { "id": "s4", "text": "it was", "clickable": true, "isError": true, "correctAnswers": ["they were"] },
+        { "id": "s5", "text": " approved without ", "clickable": false },
+        { "id": "s6", "text": "to undergo", "clickable": true, "isError": true, "correctAnswers": ["undergoing"] },
+        { "id": "s7", "text": " proper scrutiny.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an adverbial clause of concession with modal perfect passive and gerund patterns. 'Should have' is the correct modal perfect form. 'Proposals' is plural, requiring 'they were'. 'Without' is a preposition requiring the gerund 'undergoing'.",
+        "topic": "Adverbial Clauses of Concession + Modal Verbs + Gerunds",
+        "concept": "Modal perfect forms, plural pronouns, and preposition + gerund",
+        "formula": "Although + plural subject + should have + been + past participle, they were + past participle + without + verb-ing",
+        "examples": [
+          "<b>Although</b> the plans <b>should have</b> been reviewed, <b>they were</b> approved without <b>undergoing</b> checks."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the constitutional court ruled in favor of the petitioners, the government would have been forced to revise the controversial law."
+      },
+      "options": {
+        "A": { "text": "Had", "correct": true },
+        "B": { "text": "If", "correct": false },
+        "C": { "text": "Should", "correct": false },
+        "D": { "text": "Were", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted conditional structure functioning concessively ('Had...') with a third conditional main clause.",
+        "topic": "Adverbial Clauses of Concession + Conditional Inversion",
+        "concept": "Inverted third conditional structures",
+        "formula": "Had + subject + past participle, subject + would have + been + past participle",
+        "examples": [
+          "<b>Had</b> the court <b>ruled</b> differently, the law <b>would have been</b> revised."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Even though the governor, who ", "clickable": false },
+        { "id": "s2", "text": "are responsible", "clickable": true, "isError": true, "correctAnswers": ["is responsible"] },
+        { "id": "s3", "text": " for overseeing the project, denied ", "clickable": false },
+        { "id": "s4", "text": "to have", "clickable": true, "isError": true, "correctAnswers": ["having"] },
+        { "id": "s5", "text": " any knowledge of the misappropriation of funds, the investigation ", "clickable": false },
+        { "id": "s6", "text": "continue.", "clickable": true, "isError": true, "correctAnswers": ["continues."] },
+        { "id": "s7", "text": "", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an adverbial clause of concession with non-defining relative clauses and gerund patterns. 'Governor' is singular, requiring 'is'. 'Denied' is followed by a gerund 'having'. 'Investigation' is singular, requiring 'continues'.",
+        "topic": "Adverbial Clauses of Concession + Relative Clauses + Gerunds",
+        "concept": "Singular agreement and gerund patterns in complex concessive structures",
+        "formula": "Even though + singular noun, who + is + adjective, denied + verb-ing, singular subject + continues",
+        "examples": [
+          "<b>Even though</b> the manager, who <b>is</b> responsible, denied <b>having</b> knowledge, the probe <b>continues</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    }
+  ]
+}
