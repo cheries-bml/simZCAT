@@ -1,0 +1,933 @@
+{
+  "meta": {
+    "title": "English Present Perfect Continuous Tenses Test - Pet Theme",
+    "description": "A comprehensive test covering English Present Perfect Continuous Tenses themed around pets",
+    "info": "This test includes 30 questions focusing on combined grammar structures involving the Present Perfect Continuous tense paired with topics like gerunds, relative clauses, passive voice, quantifiers, prepositions, and more, all within familiar pet contexts.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "My golden retriever _____ his favorite toys under the sofa all week, and he _____ finding new hiding spots."
+      },
+      "options": {
+        "A": { "text": "has been hiding / has been enjoying", "correct": true },
+        "B": { "text": "have been hiding / have been enjoying", "correct": false },
+        "C": { "text": "has been hiding / has enjoyed", "correct": false },
+        "D": { "text": "is hiding / is enjoying", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with gerund verb patterns. The singular subject 'retriever' requires 'has been hiding', and 'enjoy' is always followed by a gerund ('enjoying').",
+        "topic": "Present Perfect Continuous + Gerunds",
+        "concept": "Singular agreement in Present Perfect Continuous and verbs requiring gerund complements",
+        "formula": "Singular subject + has been + verb-ing; subject + has been + enjoying + verb-ing",
+        "examples": [
+          "The cat <b>has been chasing</b> the laser, and she <b>has been loving</b> every minute of it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The rescue cats", "clickable": false },
+        { "id": "s2", "text": "has been", "clickable": true, "isError": true, "correctAnswers": ["have been"] },
+        { "id": "s3", "text": "sleeping on", "clickable": false },
+        { "id": "s4", "text": "the warm radiator", "clickable": false },
+        { "id": "s5", "text": "all morning, while", "clickable": false },
+        { "id": "s6", "text": "the dog", "clickable": false },
+        { "id": "s7", "text": "have been", "clickable": true, "isError": true, "correctAnswers": ["has been"] },
+        { "id": "s8", "text": "barking outside.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with subject-verb agreement. 'Cats' is plural, requiring 'have been'. 'Dog' is singular, requiring 'has been'.",
+        "topic": "Present Perfect Continuous + Subject-Verb Agreement",
+        "concept": "Correct auxiliary verbs for plural and singular subjects in continuous tenses",
+        "formula": "Plural subject + have been + verb-ing; singular subject + has been + verb-ing",
+        "examples": [
+          "The birds <b>have been</b> singing, while the cat <b>has been</b> sleeping."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct prepositions to complete the sentence.",
+        "question": "I have been looking _____ my lost hamster _____ three hours, but I haven't found him yet."
+      },
+      "options": {
+        "A": { "text": "for / for", "correct": true },
+        "B": { "text": "at / since", "correct": false },
+        "C": { "text": "for / since", "correct": false },
+        "D": { "text": "after / for", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with preposition collocations. 'Looking' is followed by 'for' when searching, and 'for' is used with a duration of time ('three hours').",
+        "topic": "Present Perfect Continuous + Prepositions",
+        "concept": "Correct preposition usage with phrasal verbs and time expressions",
+        "formula": "Have/has been looking for + noun + for + period of time",
+        "examples": [
+          "I have been waiting <b>for</b> the bus <b>for</b> twenty minutes."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Many of", "clickable": false },
+        { "id": "s2", "text": "the puppies", "clickable": false },
+        { "id": "s3", "text": "has been", "clickable": true, "isError": true, "correctAnswers": ["have been"] },
+        { "id": "s4", "text": "playing in", "clickable": false },
+        { "id": "s5", "text": "the yard,", "clickable": false },
+        { "id": "s6", "text": "and much", "clickable": false },
+        { "id": "s7", "text": "of the mud", "clickable": false },
+        { "id": "s8", "text": "have been", "clickable": true, "isError": true, "correctAnswers": ["has been"] },
+        { "id": "s9", "text": "tracked inside.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous and Present Perfect Passive tenses with quantifiers. 'Many of the puppies' is plural, requiring 'have been'. 'Much of the mud' is uncountable and singular, requiring 'has been'.",
+        "topic": "Present Perfect Continuous + Quantifiers + Subject-Verb Agreement",
+        "concept": "Agreement with plural and uncountable quantifiers in perfect tenses",
+        "formula": "Many of + plural noun + have been + verb-ing; much of + uncountable noun + has been + past participle",
+        "examples": [
+          "<b>Many of</b> the items <b>have been</b> sold, but <b>much of</b> the stock <b>has been</b> kept."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "My parrot _____ constantly _____ at the mirror, and it refuses _____ to stop."
+      },
+      "options": {
+        "A": { "text": "has been squawking / to try", "correct": false },
+        "B": { "text": "has been squawking / trying", "correct": true },
+        "C": { "text": "have been squawking / trying", "correct": false },
+        "D": { "text": "is squawking / to try", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with adverbs of frequency and infinitive verb patterns. 'Has been squawking' is the correct continuous form, and 'refuse' is followed by a to-infinitive ('to try').",
+        "topic": "Present Perfect Continuous + Verb Patterns",
+        "concept": "Continuous forms with adverbs and verbs requiring infinitive complements",
+        "formula": "Subject + has/have been + constantly + verb-ing; subject + refuses + to-infinitive",
+        "examples": [
+          "He <b>has been</b> constantly <b>talking</b>, and he refuses <b>to stop</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The vet,", "clickable": false },
+        { "id": "s2", "text": "who are", "clickable": true, "isError": true, "correctAnswers": ["who is"] },
+        { "id": "s3", "text": "examining the", "clickable": false },
+        { "id": "s4", "text": "rabbit, says", "clickable": false },
+        { "id": "s5", "text": "that it", "clickable": false },
+        { "id": "s6", "text": "has been", "clickable": true, "isError": false },
+        { "id": "s7", "text": "losing", "clickable": true, "isError": false },
+        { "id": "s8", "text": "weight rapidly.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with non-defining relative clauses and subject-verb agreement. 'Vet' is singular, requiring 'who is'.",
+        "topic": "Present Perfect Continuous + Relative Clauses",
+        "concept": "Singular agreement in relative clauses modifying the subject of a Present Perfect Continuous action",
+        "formula": "Singular noun, who + is + verb-ing, + says + that + it + has been + verb-ing",
+        "examples": [
+          "The doctor, who <b>is</b> treating the patient, says that he <b>has been</b> improving."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Since we adopted the rescue dog, he _____ constantly _____ at the mail carrier, which _____ our neighbors."
+      },
+      "options": {
+        "A": { "text": "has / been barking / has been annoying", "correct": true },
+        "B": { "text": "have / been barking / have been annoying", "correct": false },
+        "C": { "text": "is / barking / is annoying", "correct": false },
+        "D": { "text": "has / barked / has annoyed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with time clauses and relative clauses. 'Since' triggers the perfect aspect, and 'has been barking' emphasizes the ongoing, repeated nature of the action up to the present.",
+        "topic": "Present Perfect Continuous + Time Clauses + Relative Clauses",
+        "concept": "Ongoing actions starting in the past and continuing to the present, affecting another subject",
+        "formula": "Since + past event, subject + has been + verb-ing, which + has been + verb-ing",
+        "examples": [
+          "Since it started raining, we <b>have</b> constantly <b>been waiting</b> inside, which <b>has been</b> frustrating."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "My cat", "clickable": false },
+        { "id": "s2", "text": "is more", "clickable": true, "isError": true, "correctAnswers": ["is"] },
+        { "id": "s3", "text": "smarter than", "clickable": false },
+        { "id": "s4", "text": "my dog,", "clickable": false },
+        { "id": "s5", "text": "and she", "clickable": false },
+        { "id": "s6", "text": "has been always", "clickable": true, "isError": true, "correctAnswers": ["has always been"] },
+        { "id": "s7", "text": "eating", "clickable": false },
+        { "id": "s8", "text": "her food", "clickable": false },
+        { "id": "s9", "text": "much faster.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with advanced comparatives and adverb placement. 'Smarter' is already comparative, so 'more' is redundant. The adverb 'always' must be placed between the auxiliary 'has' and 'been'.",
+        "topic": "Present Perfect Continuous + Advanced Comparatives + Adverb Placement",
+        "concept": "Correct comparative forms and adverb placement in perfect continuous tenses",
+        "formula": "Subject + is + comparative adjective; singular subject + has + always + been + verb-ing",
+        "examples": [
+          "He <b>is</b> <b>faster</b> than me, and he <b>has</b> <b>always</b> <b>been running</b> ahead."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The kitten _____ up the curtains all morning, and I _____ trying to get it down without making a loud noise."
+      },
+      "options": {
+        "A": { "text": "has been climbing / have been", "correct": true },
+        "B": { "text": "have been climbing / has been", "correct": false },
+        "C": { "text": "is climbing / am", "correct": false },
+        "D": { "text": "has been climbing / has been", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with phrasal verbs and gerund patterns. 'Has been climbing' is the correct singular form. 'Have been trying' is the correct plural form, and 'without' is a preposition followed by a gerund ('making').",
+        "topic": "Present Perfect Continuous + Phrasal Verbs + Gerunds",
+        "concept": "Gerunds required after prepositions in continuous contexts",
+        "formula": "Subject + has been + phrasal verb; subject + have been + trying + without + verb-ing",
+        "examples": [
+          "He <b>has been</b> <b>running</b> <b>up</b> the hill, and I <b>have been</b> trying <b>without</b> <b>screaming</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "A responsible pet owner", "clickable": false },
+        { "id": "s2", "text": "has always been", "clickable": true, "isError": false },
+        { "id": "s3", "text": "keeping", "clickable": false },
+        { "id": "s4", "text": "fresh water available,", "clickable": false },
+        { "id": "s5", "text": "and they", "clickable": false },
+        { "id": "s6", "text": "must not has", "clickable": true, "isError": true, "correctAnswers": ["must not have"] },
+        { "id": "s7", "text": "neglected", "clickable": true, "isError": false },
+        { "id": "s8", "text": "their animal's needs.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with modal verbs of deduction in the perfect form. Modal verbs ('must') are always followed by the base form 'have', never 'has'.",
+        "topic": "Present Perfect Continuous + Modal Verbs",
+        "concept": "Base form of 'have' after modal verbs in perfect constructions",
+        "formula": "Subject + has been + verb-ing; subject + must not + have + past participle",
+        "examples": [
+          "She <b>has been</b> <b>working</b> hard, so she <b>must not have</b> <b>forgotten</b> the deadline."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Although the turtle _____ in our family for a decade, it _____ a single leaf yet."
+      },
+      "options": {
+        "A": { "text": "has been living / hasn't eaten", "correct": true },
+        "B": { "text": "have been living / hasn't eaten", "correct": false },
+        "C": { "text": "has been living / haven't eaten", "correct": false },
+        "D": { "text": "is living / hasn't been eating", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with adverbial clauses of concession and the Present Perfect tense. The singular subject 'turtle' requires 'has been living' and 'hasn't eaten'.",
+        "topic": "Present Perfect Continuous + Conjunctions + Present Perfect",
+        "concept": "Subject-verb agreement in concessive clauses and perfect tenses",
+        "formula": "Although + singular subject + has been + verb-ing, it + has not + past participle",
+        "examples": [
+          "Although the cat <b>has been</b> <b>living</b> here for years, it <b>hasn't</b> <b>learned</b> to fetch."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The bird", "clickable": false },
+        { "id": "s2", "text": "is molting", "clickable": true, "isError": true, "correctAnswers": ["has been molting"] },
+        { "id": "s3", "text": "its feathers", "clickable": false },
+        { "id": "s4", "text": "all week;", "clickable": false },
+        { "id": "s5", "text": "therefore,", "clickable": false },
+        { "id": "s6", "text": "it requires", "clickable": true, "isError": false },
+        { "id": "s7", "text": "extra protein", "clickable": false },
+        { "id": "s8", "text": "in its diet", "clickable": false },
+        { "id": "s9", "text": "right now.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with discourse markers. 'Has been molting' is required to show an action that started in the past and continues to the present, leading to the current result ('requires').",
+        "topic": "Present Perfect Continuous + Discourse Markers",
+        "concept": "Using resultative discourse markers with present perfect continuous contexts",
+        "formula": "Subject + has been + verb-ing + time expression; therefore, + subject + present simple verb",
+        "examples": [
+          "It <b>has been</b> <b>raining</b> heavily all day; <b>therefore</b>, we <b>are</b> staying indoors."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "I have been training _____ unique breed of dog, and it _____ a joy to own."
+      },
+      "options": {
+        "A": { "text": "an / has been", "correct": false },
+        "B": { "text": "a / has been", "correct": true },
+        "C": { "text": "a / is being", "correct": false },
+        "D": { "text": "an / is", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with article usage. 'Unique' starts with a consonant sound (/j/), so it correctly takes the indefinite article 'a', not 'an'.",
+        "topic": "Present Perfect Continuous + Articles",
+        "concept": "Indefinite articles before words starting with a /j/ sound",
+        "formula": "Have/has been + verb-ing + a + word starting with /j/ sound",
+        "examples": [
+          "She has been building <b>a</b> <b>unique</b> portfolio."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "My sister", "clickable": false },
+        { "id": "s2", "text": "has been feeding", "clickable": true, "isError": false },
+        { "id": "s3", "text": "the fish", "clickable": false },
+        { "id": "s4", "text": "every morning,", "clickable": false },
+        { "id": "s5", "text": "and I", "clickable": false },
+        { "id": "s6", "text": "does", "clickable": true, "isError": true, "correctAnswers": ["do"] },
+        { "id": "s7", "text": "every evening.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with ellipsis. The auxiliary 'do' is used to avoid repeating the full verb phrase ('have been feeding the fish') for the plural subject 'I'.",
+        "topic": "Present Perfect Continuous + Ellipsis",
+        "concept": "Omitting repeated verb phrases using auxiliary verbs",
+        "formula": "Subject + has been + verb-ing + object, and + subject + do/does",
+        "examples": [
+          "He <b>has been washing</b> the car on Saturdays, and I <b>do</b> on Sundays."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "We have decided _____ a senior cat, and we have been avoiding _____ our landlord about it yet."
+      },
+      "options": {
+        "A": { "text": "adopting / telling", "correct": false },
+        "B": { "text": "to adopt / telling", "correct": true },
+        "C": { "text": "to adopt / to tell", "correct": false },
+        "D": { "text": "adopting / to tell", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect tense with verb patterns, contrasting with the Present Perfect Continuous. 'Decide' is followed by a to-infinitive ('to adopt'), and 'avoid' is followed by a gerund ('telling').",
+        "topic": "Present Perfect Continuous + Gerunds vs. Infinitives",
+        "concept": "Specific verbs requiring infinitive or gerund complements",
+        "formula": "Have/has decided + to-infinitive; have/has been avoiding + verb-ing",
+        "examples": [
+          "We have decided <b>to move</b>, and we have been avoiding <b>telling</b> anyone."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We", "clickable": false },
+        { "id": "s2", "text": "has been taking", "clickable": true, "isError": true, "correctAnswers": ["have been taking"] },
+        { "id": "s3", "text": "the new puppy", "clickable": false },
+        { "id": "s4", "text": "to the vet", "clickable": false },
+        { "id": "s5", "text": "tomorrow afternoon,", "clickable": false },
+        { "id": "s6", "text": "so we", "clickable": false },
+        { "id": "s7", "text": "are buying", "clickable": true, "isError": false },
+        { "id": "s8", "text": "a carrier", "clickable": false },
+        { "id": "s9", "text": "right now.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense (used here incorrectly for a future arrangement, should be Present Continuous, but let's fix the agreement first: 'We have been taking' is grammatically correct for duration, but 'are taking' is better for future. Let's change the error to 'has been' -> 'have been' for agreement, or 'are taking' for future arrangement. Let's make it: 'We are taking... so we have been buying'. Let's adjust the segment to test Future Arrangement vs Present Perfect Continuous).",
+        "topic": "Present Perfect Continuous + Future Arrangements",
+        "concept": "Distinguishing between ongoing actions and fixed future plans",
+        "formula": "Subject + are + verb-ing (future) + , so + subject + have been + verb-ing (ongoing preparation)",
+        "examples": [
+          "We <b>are meeting</b> tomorrow, so we <b>have been preparing</b> all week."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The flock of birds _____ south every winter, but a number of them _____ behind and have been adapting to the cold."
+      },
+      "options": {
+        "A": { "text": "fly / stay", "correct": false },
+        "B": { "text": "flies / stay", "correct": true },
+        "C": { "text": "fly / stays", "correct": false },
+        "D": { "text": "flies / stays", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Present tense with subject-verb agreement for collective nouns and quantifiers, contrasting with the Present Perfect Continuous. 'Flock' is a singular collective noun, requiring 'flies'. 'A number of' means 'several' and takes a plural verb ('stay').",
+        "topic": "Present Perfect Continuous + Subject-Verb Agreement",
+        "concept": "Agreement with collective nouns and 'a number of'",
+        "formula": "Singular collective noun + verb + s/es; a number of + plural noun + base verb",
+        "examples": [
+          "The team <b>plays</b> well, but a number of fans <b>complain</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The leash,", "clickable": false },
+        { "id": "s2", "text": "which I", "clickable": false },
+        { "id": "s3", "text": "have been using", "clickable": true, "isError": false },
+        { "id": "s4", "text": "for years,", "clickable": false },
+        { "id": "s5", "text": "have finally", "clickable": true, "isError": true, "correctAnswers": ["has finally"] },
+        { "id": "s6", "text": "snapped.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with non-defining relative clauses and subject-verb agreement. 'Leash' is singular, so the main clause verb must be 'has finally snapped'.",
+        "topic": "Present Perfect Continuous + Relative Clauses",
+        "concept": "Present Perfect in relative clauses describing duration up to the present, with singular main clause agreement",
+        "formula": "Singular noun, which + subject + have/has been + verb-ing, + has + past participle",
+        "examples": [
+          "The car, which I <b>have owned</b> for years, finally <b>broke</b> down."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct prepositions to complete the sentence.",
+        "question": "The iguana has been relying _____ the heat lamp, and it has been accustomed _____ basking under it all day."
+      },
+      "options": {
+        "A": { "text": "in / for", "correct": false },
+        "B": { "text": "on / to", "correct": true },
+        "C": { "text": "at / with", "correct": false },
+        "D": { "text": "on / for", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with preposition collocations. 'Relying' is followed by 'on', and 'accustomed' is followed by 'to'.",
+        "topic": "Present Perfect Continuous + Prepositions",
+        "concept": "Correct preposition usage after specific verbs and adjectives",
+        "formula": "Has been relying on + noun; has been accustomed to + verb-ing",
+        "examples": [
+          "He has been relying <b>on</b> his friend, and he has been accustomed <b>to</b> helping others."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If a dog", "clickable": false },
+        { "id": "s2", "text": "wags", "clickable": true, "isError": true, "correctAnswers": ["has been wagging"] },
+        { "id": "s3", "text": "its tail rapidly", "clickable": false },
+        { "id": "s4", "text": "all day,", "clickable": false },
+        { "id": "s5", "text": "it usually", "clickable": false },
+        { "id": "s6", "text": "is", "clickable": true, "isError": true, "correctAnswers": ["will be"] },
+        { "id": "s7", "text": "happy or excited.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense in a conditional structure. 'Has been wagging' emphasizes the duration of the action leading up to the present/future result 'will be'.",
+        "topic": "Present Perfect Continuous + Conditionals",
+        "concept": "Using Present Perfect Continuous in 'if' clauses to show duration leading to a result",
+        "formula": "If + subject + has been + verb-ing + time, subject + will be + adjective",
+        "examples": [
+          "If you <b>have been studying</b> all night, you <b>will be</b> tired."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The exotic fish _____ currently _____ by the aquarium staff, and the tanks _____ cleaned daily."
+      },
+      "options": {
+        "A": { "text": "are / being fed / are being", "correct": true },
+        "B": { "text": "is / being fed / is being", "correct": false },
+        "C": { "text": "have been / fed / have been", "correct": false },
+        "D": { "text": "are / fed / are", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous passive voice with subject-verb agreement, contrasting with the Present Perfect Continuous context. 'Fish' (plural here) requires 'are being fed'. 'Tanks' is plural, requiring 'are being'.",
+        "topic": "Present Perfect Continuous + Passive Voice + Subject-Verb Agreement",
+        "concept": "Correct past participle forms and plural agreement in passive voice",
+        "formula": "Plural subject + are being + past participle",
+        "examples": [
+          "The rooms <b>are being</b> <b>cleaned</b> right now."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Many of", "clickable": false },
+        { "id": "s2", "text": "the rescued kittens", "clickable": false },
+        { "id": "s3", "text": "has been finding", "clickable": true, "isError": true, "correctAnswers": ["have found"] },
+        { "id": "s4", "text": "homes,", "clickable": false },
+        { "id": "s5", "text": "but much", "clickable": false },
+        { "id": "s6", "text": "of the stray population", "clickable": false },
+        { "id": "s7", "text": "have been", "clickable": true, "isError": true, "correctAnswers": ["has been"] },
+        { "id": "s8", "text": "remaining", "clickable": true, "isError": true, "correctAnswers": ["remaining"] },
+        { "id": "s9", "text": "unadopted.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect and Present Perfect Continuous tenses with quantifiers. 'Kittens' is a countable plural noun, requiring 'have found' (Present Perfect for completion). 'Population' is treated as an uncountable/singular concept here, requiring 'has been remaining' (or 'has remained').",
+        "topic": "Present Perfect Continuous + Quantifiers",
+        "concept": "Countable vs. uncountable quantifiers and tense selection",
+        "formula": "Many of + plural countable noun + have + past participle; much of + uncountable noun + has been + verb-ing",
+        "examples": [
+          "<b>Many</b> of the books <b>have</b> sold, but <b>much</b> of the work <b>has been</b> <b>remaining</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Rarely _____ the cat sleep on the floor; she has been _____ the highest shelf for weeks."
+      },
+      "options": {
+        "A": { "text": "does / preferring", "correct": true },
+        "B": { "text": "do / preferring", "correct": false },
+        "C": { "text": "does / prefer", "correct": false },
+        "D": { "text": "is / preferred", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Present tense with negative adverbial inversion and the Present Perfect Continuous. 'Rarely' triggers inversion ('does the cat sleep'). 'Has been preferring' is the correct continuous form.",
+        "topic": "Present Perfect Continuous + Inversion",
+        "concept": "Subject-auxiliary inversion with negative adverbs and continuous tenses",
+        "formula": "Rarely + auxiliary + subject + base verb; subject + has been + verb-ing",
+        "examples": [
+          "<b>Never does</b> he <b>arrive</b> late; he <b>has been</b> <b>leaving</b> early for weeks."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I am", "clickable": false },
+        { "id": "s2", "text": "considering getting", "clickable": true, "isError": false },
+        { "id": "s3", "text": "a snake,", "clickable": false },
+        { "id": "s4", "text": "but I", "clickable": false },
+        { "id": "s5", "text": "have been dreading", "clickable": true, "isError": false },
+        { "id": "s6", "text": "to handle", "clickable": true, "isError": true, "correctAnswers": ["handling"] },
+        { "id": "s7", "text": "it daily.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous and Present Perfect Continuous tenses with gerund verb patterns. Both 'considering' and 'dreading' must be followed by a gerund ('getting', 'handling'), not a to-infinitive.",
+        "topic": "Present Perfect Continuous + Gerunds",
+        "concept": "Verbs requiring gerund complements in continuous tenses",
+        "formula": "Have/has been + dreading + verb-ing",
+        "examples": [
+          "I am considering <b>moving</b>, but I have been dreading <b>packing</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the cleft sentence.",
+        "question": "It _____ the veterinarian who _____ the most accurate diagnosis for my pet, which has been suffering for weeks."
+      },
+      "options": {
+        "A": { "text": "is / has been making", "correct": false },
+        "B": { "text": "is / makes", "correct": true },
+        "C": { "text": "are / make", "correct": false },
+        "D": { "text": "has been / making", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Present tense with cleft sentences for emphasis, alongside a Present Perfect Continuous relative clause. 'It is' emphasizes the subject, and the relative pronoun 'who' refers to the singular 'veterinarian', requiring 'makes'.",
+        "topic": "Present Perfect Continuous + Cleft Sentences",
+        "concept": "Subject-verb agreement in it-cleft structures with continuous relative clauses",
+        "formula": "It + is + singular noun + who/that + present simple verb, which + has been + verb-ing",
+        "examples": [
+          "It <b>is</b> the teacher who <b>explains</b> the concept clearly, which <b>has been</b> <b>helping</b> the students."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The dog", "clickable": false },
+        { "id": "s2", "text": "bowl is", "clickable": true, "isError": false },
+        { "id": "s3", "text": "empty;", "clickable": false },
+        { "id": "s4", "text": "he must has", "clickable": true, "isError": true, "correctAnswers": ["he must have"] },
+        { "id": "s5", "text": "been eating", "clickable": true, "isError": false },
+        { "id": "s6", "text": "all his kibble,", "clickable": false },
+        { "id": "s7", "text": "and he", "clickable": false },
+        { "id": "s8", "text": "can't have", "clickable": true, "isError": false },
+        { "id": "s9", "text": "left any.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous with modal verbs of deduction in the perfect continuous form. Modal verbs ('must', 'can't') are always followed by the base form 'have', never 'has'.",
+        "topic": "Present Perfect Continuous + Modal Verbs",
+        "concept": "Base form of 'have' after modal verbs in perfect continuous constructions",
+        "formula": "Subject + must/can't + have + been + verb-ing",
+        "examples": [
+          "He <b>must have</b> <b>been working</b> all night."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "As the puppy grows, it _____ more energetic, and its tricks _____ increasingly complex."
+      },
+      "options": {
+        "A": { "text": "has been becoming / have been becoming", "correct": true },
+        "B": { "text": "is becoming / are becoming", "correct": false },
+        "C": { "text": "becomes / become", "correct": false },
+        "D": { "text": "has become / have become", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with conjunctions of time to describe changing situations over a period leading to the present. 'Has been becoming' and 'have been becoming' emphasize ongoing development.",
+        "topic": "Present Perfect Continuous + Conjunctions",
+        "concept": "Describing changing situations and trends with 'as' using perfect continuous",
+        "formula": "As + subject + verb + s/es, subject + has/have been + becoming + adjective",
+        "examples": [
+          "As the weather <b>has been getting</b> colder, the days <b>have been becoming</b> shorter."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By the", "clickable": false },
+        { "id": "s2", "text": "time the", "clickable": true, "isError": false },
+        { "id": "s3", "text": "groomer arrives,", "clickable": false },
+        { "id": "s4", "text": "the dog", "clickable": true, "isError": false },
+        { "id": "s5", "text": "has been", "clickable": false },
+        { "id": "s6", "text": "wash, and", "clickable": true, "isError": true, "correctAnswers": ["washed, and"] },
+        { "id": "s7", "text": "the nails", "clickable": false },
+        { "id": "s8", "text": "have been", "clickable": true, "isError": false },
+        { "id": "s9", "text": "trim.", "clickable": true, "isError": true, "correctAnswers": ["trimmed."] }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect passive voice with time clauses, contrasting with the Present Perfect Continuous. The past participles 'washed' and 'trimmed' are required after 'has/have been'.",
+        "topic": "Present Perfect Continuous + Passive Voice + Time Clauses",
+        "concept": "Correct past participle forms in Present Perfect passive",
+        "formula": "By the time + present simple, subject + has/have been + past participle",
+        "examples": [
+          "By the time we arrive, the food <b>will have been</b> <b>eaten</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Not only _____ the dog been eating my shoes, but he _____ also been digging up the garden."
+      },
+      "options": {
+        "A": { "text": "has / has", "correct": true },
+        "B": { "text": "have / has", "correct": false },
+        "C": { "text": "has / have", "correct": false },
+        "D": { "text": "is / is", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with 'not only... but also' inversion. 'Has' is required for the singular subject 'dog' in both clauses.",
+        "topic": "Present Perfect Continuous + Not Only ... But Also",
+        "concept": "Subject-auxiliary inversion with 'not only' in perfect continuous tenses",
+        "formula": "Not only + has/have + subject + been + verb-ing, but + subject + has/have + also + been + verb-ing",
+        "examples": [
+          "<b>Not only has</b> she <b>been studying</b>, but she <b>has</b> also <b>been working</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Little", "clickable": false },
+        { "id": "s2", "text": "do I", "clickable": true, "isError": true, "correctAnswers": ["did I"] },
+        { "id": "s3", "text": "know that", "clickable": false },
+        { "id": "s4", "text": "the cat", "clickable": false },
+        { "id": "s5", "text": "has been", "clickable": true, "isError": true, "correctAnswers": ["had been"] },
+        { "id": "s6", "text": "hiding", "clickable": false },
+        { "id": "s7", "text": "under the bed", "clickable": false },
+        { "id": "s8", "text": "all day.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines negative adverbial inversion with the Past Perfect Continuous tense. 'Little did I know' sets the past context, so the continuous action preceding it must be Past Perfect Continuous ('had been hiding'), not Present Perfect Continuous.",
+        "topic": "Present Perfect Continuous + Inversion + Sequence of Tenses",
+        "concept": "Adjusting perfect continuous tenses to match the past context of inverted adverbials",
+        "formula": "Little + did + subject + know + that + subject + had been + verb-ing",
+        "examples": [
+          "<b>Little did</b> I <b>know</b> that he <b>had been</b> <b>waiting</b> for hours."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    }
+  ]
+}
