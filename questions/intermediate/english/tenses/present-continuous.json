@@ -859,8 +859,8 @@
       },
       "options": {
         "A": { "text": "meet / discuss", "correct": false },
-        "B": { "text": "are meeting / are discussing", "correct": true },
-        "C": { "text": "will meet / will discuss", "correct": false },
+        "B": { "text": "are meeting / are going to discuss", "correct": true },
+        "C": { "text": "will meet / will discuss", "correct": true },
         "D": { "text": "are meeting / will discussed", "correct": false }
       },
       "explanation": {
