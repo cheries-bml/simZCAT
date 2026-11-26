@@ -1,0 +1,939 @@
+{
+  "meta": {
+    "title": "English Present Tenses Test - Pet Theme",
+    "description": "A comprehensive test covering English Present Tenses.",
+    "info": "This test includes 30 questions focusing on combined grammar structures involving Simple Present, Present Continuous, Present Perfect, and Present Perfect Continuous tenses, paired with topics like gerunds, relative clauses, passive voice, quantifiers, and more, all within familiar pet contexts.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "My golden retriever usually _____ his favorite toys under the sofa, but today he _____ them in the kitchen."
+      },
+      "options": {
+        "A": { "text": "hides / is leaving", "correct": true },
+        "B": { "text": "is hiding / leaves", "correct": false },
+        "C": { "text": "hides / leaves", "correct": false },
+        "D": { "text": "is hiding / is leaving", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Present tense for habitual actions ('usually hides') with the Present Continuous tense for actions happening around the present moment ('is leaving').",
+        "topic": "Simple Present + Present Continuous",
+        "concept": "Contrasting habitual actions with current temporary actions",
+        "formula": "Subject + usually + base verb + s/es, but today + subject + am/is/are + verb-ing",
+        "examples": [
+          "She usually <b>drinks</b> coffee, but today she <b>is drinking</b> tea."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The cats", "clickable": false },
+        { "id": "s2", "text": "is currently", "clickable": true, "isError": true, "correctAnswers": ["are currently"] },
+        { "id": "s3", "text": "sleeping on", "clickable": false },
+        { "id": "s4", "text": "the warm radiator", "clickable": false },
+        { "id": "s5", "text": "radiator while", "clickable": true, "isError": false },
+        { "id": "s6", "text": "the dog", "clickable": false },
+        { "id": "s7", "text": "bark outside.", "clickable": true, "isError": true, "correctAnswers": ["is barking outside."] },
+        { "id": "s8", "text": "He needs", "clickable": true, "isError": false },
+        { "id": "s9", "text": "to go out.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous tense with subject-verb agreement. 'Cats' is plural, requiring 'are'. 'Dog' is singular, requiring 'is barking'.",
+        "topic": "Present Continuous + Subject-Verb Agreement",
+        "concept": "Correct auxiliary verbs for plural and singular subjects in continuous tenses",
+        "formula": "Plural subject + are + verb-ing; singular subject + is + verb-ing",
+        "examples": [
+          "The birds <b>are</b> singing, while the cat <b>is</b> sleeping."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct prepositions to complete the sentence.",
+        "question": "I have been looking _____ my lost hamster _____ three hours, but I haven't found him yet."
+      },
+      "options": {
+        "A": { "text": "for / for", "correct": true },
+        "B": { "text": "at / since", "correct": false },
+        "C": { "text": "for / since", "correct": false },
+        "D": { "text": "after / for", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with preposition collocations. 'Looking' is followed by 'for' when searching, and 'for' is used with a duration of time ('three hours').",
+        "topic": "Present Perfect Continuous + Prepositions",
+        "concept": "Correct preposition usage with phrasal verbs and time expressions",
+        "formula": "Have/has been looking for + noun + for + period of time",
+        "examples": [
+          "I have been waiting <b>for</b> the bus <b>for</b> twenty minutes."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Many of", "clickable": false },
+        { "id": "s2", "text": "the puppies", "clickable": true, "isError": false },
+        { "id": "s3", "text": "has been", "clickable": true, "isError": true, "correctAnswers": ["have been"] },
+        { "id": "s4", "text": "playing in", "clickable": false },
+        { "id": "s5", "text": "the yard,", "clickable": true, "isError": false },
+        { "id": "s6", "text": "and much", "clickable": false },
+        { "id": "s7", "text": "of the mud", "clickable": true, "isError": false },
+        { "id": "s8", "text": "have been", "clickable": true, "isError": true, "correctAnswers": ["has been"] },
+        { "id": "s9", "text": "tracked inside.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous and Present Perfect Passive tenses with quantifiers. 'Many of the puppies' is plural, requiring 'have been'. 'Much of the mud' is uncountable and singular, requiring 'has been'.",
+        "topic": "Present Perfect + Quantifiers + Subject-Verb Agreement",
+        "concept": "Agreement with plural and uncountable quantifiers in perfect tenses",
+        "formula": "Many of + plural noun + have been + verb-ing; much of + uncountable noun + has been + past participle",
+        "examples": [
+          "<b>Many of</b> the items <b>have been</b> sold, but <b>much of</b> the stock <b>has been</b> kept."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "My parrot enjoys _____ seeds, but it refuses _____ vegetables."
+      },
+      "options": {
+        "A": { "text": "eating / to eat", "correct": true },
+        "B": { "text": "to eat / eating", "correct": false },
+        "C": { "text": "eating / eating", "correct": false },
+        "D": { "text": "to eat / to eat", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Present tense with gerund and infinitive verb patterns. 'Enjoy' is always followed by a gerund ('eating'), while 'refuse' is followed by a to-infinitive ('to eat').",
+        "topic": "Simple Present + Gerunds vs. Infinitives",
+        "concept": "Specific verbs requiring gerund or infinitive complements",
+        "formula": "Subject + enjoys + verb-ing, but + subject + refuses + to-infinitive",
+        "examples": [
+          "She enjoys <b>reading</b>, but she refuses <b>to study</b> math."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The vet,", "clickable": false },
+        { "id": "s2", "text": "who are", "clickable": true, "isError": true, "correctAnswers": ["who is"] },
+        { "id": "s3", "text": "examining the", "clickable": false },
+        { "id": "s4", "text": "rabbit, say", "clickable": true, "isError": true, "correctAnswers": ["rabbit, says"] },
+        { "id": "s5", "text": "that it", "clickable": false },
+        { "id": "s6", "text": "need a", "clickable": true, "isError": true, "correctAnswers": ["needs a"] },
+        { "id": "s7", "text": "special diet.", "clickable": false },
+        { "id": "s8", "text": "for recovery.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous tense with non-defining relative clauses and Simple Present subject-verb agreement. 'Vet' is singular, requiring 'who is' and 'says'. 'It' is singular, requiring 'needs'.",
+        "topic": "Present Continuous + Relative Clauses + Subject-Verb Agreement",
+        "concept": "Singular agreement in relative clauses and main clauses",
+        "formula": "Singular noun, who + is + verb-ing, + says + that + it + needs",
+        "examples": [
+          "The doctor, who <b>is</b> treating the patient, <b>says</b> that he <b>needs</b> rest."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The new aquarium _____ already _____ by the marine biologist, so the fish can move in tomorrow."
+      },
+      "options": {
+        "A": { "text": "has / been set up", "correct": true },
+        "B": { "text": "have / been set up", "correct": false },
+        "C": { "text": "has / set up", "correct": false },
+        "D": { "text": "is / being set up", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect tense with the passive voice. The singular subject 'aquarium' requires 'has', and the passive structure requires 'been' + past participle ('set up').",
+        "topic": "Present Perfect + Passive Voice",
+        "concept": "Completed actions in the present perfect passive",
+        "formula": "Singular subject + has + been + past participle",
+        "examples": [
+          "The room <b>has</b> already <b>been cleaned</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "My cat", "clickable": false },
+        { "id": "s2", "text": "is more", "clickable": true, "isError": true, "correctAnswers": ["is"] },
+        { "id": "s3", "text": "smarter than", "clickable": false },
+        { "id": "s4", "text": "my dog,", "clickable": true, "isError": false },
+        { "id": "s5", "text": "and she", "clickable": false },
+        { "id": "s6", "text": "always eat", "clickable": true, "isError": true, "correctAnswers": ["always eats"] },
+        { "id": "s7", "text": "her food", "clickable": false },
+        { "id": "s8", "text": "much faster.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous (as a state) with advanced comparatives and Simple Present subject-verb agreement. 'Smarter' is already comparative, so 'more' is redundant. 'She' requires the singular verb 'eats'.",
+        "topic": "Present Tenses + Advanced Comparatives",
+        "concept": "Correct comparative forms and third-person singular agreement",
+        "formula": "Subject + is + comparative adjective; singular subject + always + verb + s/es",
+        "examples": [
+          "He <b>is</b> <b>faster</b> than me, and he always <b>runs</b> ahead."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Since we adopted the rescue dog, he _____ constantly _____ at the mail carrier."
+      },
+      "options": {
+        "A": { "text": "has / been barking", "correct": true },
+        "B": { "text": "have / been barking", "correct": false },
+        "C": { "text": "is / barking", "correct": false },
+        "D": { "text": "has / barked", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with time clauses. 'Since' triggers the perfect aspect, and 'constantly' with 'has been barking' emphasizes the ongoing, repeated nature of the action up to the present.",
+        "topic": "Present Perfect Continuous + Time Clauses",
+        "concept": "Ongoing actions starting in the past and continuing to the present",
+        "formula": "Since + past event, subject + has/have + been + verb-ing",
+        "examples": [
+          "Since it started raining, we <b>have</b> constantly <b>been waiting</b> inside."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The kitten", "clickable": false },
+        { "id": "s2", "text": "is currently", "clickable": true, "isError": false },
+        { "id": "s3", "text": "climbing up", "clickable": false },
+        { "id": "s4", "text": "the curtains,", "clickable": true, "isError": false },
+        { "id": "s5", "text": "and I", "clickable": false },
+        { "id": "s6", "text": "am trying", "clickable": true, "isError": false },
+        { "id": "s7", "text": "to get", "clickable": false },
+        { "id": "s8", "text": "it down", "clickable": true, "isError": false },
+        { "id": "s9", "text": "without to", "clickable": true, "isError": true, "correctAnswers": ["without"] },
+        { "id": "s10", "text": "make a", "clickable": true, "isError": true, "correctAnswers": ["making a"] },
+        { "id": "s11", "text": "loud noise.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous tense with phrasal verbs and gerund patterns. 'Without' is a preposition and must be followed by a gerund ('making'), not a to-infinitive.",
+        "topic": "Present Continuous + Prepositions + Gerunds",
+        "concept": "Gerunds required after prepositions",
+        "formula": "Subject + am/is/are + verb-ing + without + verb-ing",
+        "examples": [
+          "He is running <b>without</b> <b>making</b> a sound."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "A responsible pet owner always _____ fresh water available, and they _____ neglect their animal's needs."
+      },
+      "options": {
+        "A": { "text": "keeps / must not", "correct": true },
+        "B": { "text": "keep / must not", "correct": false },
+        "C": { "text": "keeps / can not", "correct": false },
+        "D": { "text": "is keeping / should not", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Present tense with adverbs of frequency and modal verbs. 'Owner' is singular, requiring 'keeps'. 'Must not' expresses a strong prohibition or obligation.",
+        "topic": "Simple Present + Modal Verbs",
+        "concept": "Third-person singular agreement and modal expressions of obligation",
+        "formula": "Singular subject + always + verb + s/es; subject + must not + base verb",
+        "examples": [
+          "A good driver always <b>checks</b> the mirrors, and they <b>must not</b> use a phone."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Although the", "clickable": false },
+        { "id": "s2", "text": "turtle have", "clickable": true, "isError": true, "correctAnswers": ["turtle has"] },
+        { "id": "s3", "text": "lived in", "clickable": false },
+        { "id": "s4", "text": "our family", "clickable": true, "isError": false },
+        { "id": "s5", "text": "for a", "clickable": false },
+        { "id": "s6", "text": "decade, it", "clickable": true, "isError": false },
+        { "id": "s7", "text": "has never", "clickable": false },
+        { "id": "s8", "text": "eaten a", "clickable": true, "isError": false },
+        { "id": "s9", "text": "single leaf.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect tense with adverbial clauses of concession. The singular subject 'turtle' requires the singular auxiliary 'has', not 'have'.",
+        "topic": "Present Perfect + Conjunctions",
+        "concept": "Subject-verb agreement in concessive clauses",
+        "formula": "Although + singular subject + has + past participle",
+        "examples": [
+          "Although the cat <b>has</b> lived here for years, it is still shy."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct discourse marker to complete the sentence.",
+        "question": "The bird is molting its feathers; _____, it requires extra protein in its diet right now."
+      },
+      "options": {
+        "A": { "text": "however", "correct": false },
+        "B": { "text": "therefore", "correct": true },
+        "C": { "text": "nevertheless", "correct": false },
+        "D": { "text": "although", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense with discourse markers. 'Therefore' is used to show a logical result or consequence of the ongoing action (molting requires extra protein).",
+        "topic": "Present Continuous + Discourse Markers",
+        "concept": "Using resultative discourse markers with present continuous contexts",
+        "formula": "Subject + is/are + verb-ing; therefore, + subject + requires",
+        "examples": [
+          "It is raining heavily; <b>therefore</b>, we are staying indoors."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I have", "clickable": false },
+        { "id": "s2", "text": "been training", "clickable": true, "isError": false },
+        { "id": "s3", "text": "an unique", "clickable": true, "isError": true, "correctAnswers": ["a unique"] },
+        { "id": "s4", "text": "breed of", "clickable": false },
+        { "id": "s5", "text": "dog, and", "clickable": true, "isError": false },
+        { "id": "s6", "text": "it is", "clickable": false },
+        { "id": "s7", "text": "a joy", "clickable": true, "isError": false },
+        { "id": "s8", "text": "to own.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with article usage. 'Unique' starts with a consonant sound (/j/), so it correctly takes the indefinite article 'a', not 'an'.",
+        "topic": "Present Perfect Continuous + Articles",
+        "concept": "Indefinite articles before words starting with a /j/ sound",
+        "formula": "Have/has been + verb-ing + a + word starting with /j/ sound",
+        "examples": [
+          "She has been building <b>a</b> <b>unique</b> portfolio."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the elliptical sentence.",
+        "question": "My sister feeds the fish every morning, and I _____ every evening."
+      },
+      "options": {
+        "A": { "text": "do", "correct": true },
+        "B": { "text": "does", "correct": false },
+        "C": { "text": "am", "correct": false },
+        "D": { "text": "feed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Present tense with ellipsis. The auxiliary 'do' is used to avoid repeating the full verb phrase ('feed the fish').",
+        "topic": "Simple Present + Ellipsis",
+        "concept": "Omitting repeated verb phrases using auxiliary verbs",
+        "formula": "Subject + base verb + s/es + object, and + subject + do/does",
+        "examples": [
+          "He washes the car on Saturdays, and I <b>do</b> on Sundays."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We have", "clickable": false },
+        { "id": "s2", "text": "decided adopting", "clickable": true, "isError": true, "correctAnswers": ["decided to adopt"] },
+        { "id": "s3", "text": "a senior", "clickable": false },
+        { "id": "s4", "text": "cat, and", "clickable": true, "isError": false },
+        { "id": "s5", "text": "we have", "clickable": false },
+        { "id": "s6", "text": "avoided to", "clickable": true, "isError": true, "correctAnswers": ["avoided"] },
+        { "id": "s7", "text": "tell our", "clickable": true, "isError": true, "correctAnswers": ["telling our"] },
+        { "id": "s8", "text": "landlord yet.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect tense with verb patterns. 'Decide' is followed by a to-infinitive ('to adopt'), and 'avoid' is followed by a gerund ('telling').",
+        "topic": "Present Perfect + Gerunds vs. Infinitives",
+        "concept": "Specific verbs requiring infinitive or gerund complements",
+        "formula": "Have/has decided + to-infinitive; have/has avoided + verb-ing",
+        "examples": [
+          "We have decided <b>to move</b>, and we have avoided <b>telling</b> anyone."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "We _____ the new puppy to the vet tomorrow afternoon, so we _____ a carrier right now."
+      },
+      "options": {
+        "A": { "text": "take / buy", "correct": false },
+        "B": { "text": "are taking / are buying", "correct": true },
+        "C": { "text": "will take / buy", "correct": false },
+        "D": { "text": "are taking / will buy", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense for future arrangements with the Present Continuous for actions happening right now.",
+        "topic": "Present Continuous (Future) + Present Continuous (Current)",
+        "concept": "Using Present Continuous for fixed future plans and current actions",
+        "formula": "Subject + am/is/are + verb-ing (future) + , so + subject + am/is/are + verb-ing (now)",
+        "examples": [
+          "We <b>are meeting</b> tomorrow, so we <b>are preparing</b> today."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The flock", "clickable": false },
+        { "id": "s2", "text": "of birds", "clickable": true, "isError": false },
+        { "id": "s3", "text": "fly south", "clickable": true, "isError": true, "correctAnswers": ["flies south"] },
+        { "id": "s4", "text": "every winter,", "clickable": false },
+        { "id": "s5", "text": "but a", "clickable": true, "isError": false },
+        { "id": "s6", "text": "number of", "clickable": false },
+        { "id": "s7", "text": "them stays", "clickable": true, "isError": true, "correctAnswers": ["them stay"] },
+        { "id": "s8", "text": "behind.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Present tense with subject-verb agreement for collective nouns and quantifiers. 'Flock' is a singular collective noun, requiring 'flies'. 'A number of' means 'several' and takes a plural verb ('stay').",
+        "topic": "Simple Present + Subject-Verb Agreement",
+        "concept": "Agreement with collective nouns and 'a number of'",
+        "formula": "Singular collective noun + verb + s/es; a number of + plural noun + base verb",
+        "examples": [
+          "The team <b>plays</b> well, but a number of fans <b>complain</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "The leash, which I _____ for years, has finally snapped."
+      },
+      "options": {
+        "A": { "text": "use", "correct": false },
+        "B": { "text": "am using", "correct": false },
+        "C": { "text": "have used", "correct": true },
+        "D": { "text": "had used", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect tense with non-defining relative clauses. 'Have used' indicates an action that started in the past and continues up to the present moment of snapping.",
+        "topic": "Present Perfect + Relative Clauses",
+        "concept": "Present Perfect in relative clauses describing duration up to the present",
+        "formula": "Noun, which + subject + have/has + past participle, + present perfect/present simple",
+        "examples": [
+          "The car, which I <b>have owned</b> for years, finally broke down."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The iguana", "clickable": false },
+        { "id": "s2", "text": "has been", "clickable": true, "isError": false },
+        { "id": "s3", "text": "relying in", "clickable": true, "isError": true, "correctAnswers": ["relying on"] },
+        { "id": "s4", "text": "the heat", "clickable": false },
+        { "id": "s5", "text": "lamp, and", "clickable": true, "isError": false },
+        { "id": "s6", "text": "it is", "clickable": false },
+        { "id": "s7", "text": "accustomed for", "clickable": true, "isError": true, "correctAnswers": ["accustomed to"] },
+        { "id": "s8", "text": "basking under", "clickable": false },
+        { "id": "s9", "text": "it all day.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous and Present Continuous tenses with preposition collocations. 'Relying' is followed by 'on', and 'accustomed' is followed by 'to'.",
+        "topic": "Present Tenses + Prepositions",
+        "concept": "Correct preposition usage after specific verbs and adjectives",
+        "formula": "Has been relying on + noun; is accustomed to + verb-ing",
+        "examples": [
+          "He has been relying <b>on</b> his friend, and he is accustomed <b>to</b> helping others."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "If a dog _____ its tail rapidly, it usually _____ happy or excited."
+      },
+      "options": {
+        "A": { "text": "wags / is", "correct": true },
+        "B": { "text": "is wagging / is", "correct": false },
+        "C": { "text": "wags / has been", "correct": false },
+        "D": { "text": "will wag / is", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Present tense in a Zero Conditional structure. Both the 'if' clause and the main clause use the Simple Present to express a general truth or scientific fact.",
+        "topic": "Simple Present + Zero Conditional",
+        "concept": "Expressing general truths with 'if' + present simple",
+        "formula": "If + singular subject + verb + s/es, subject + is/are + adjective",
+        "examples": [
+          "If water <b>reaches</b> 100°C, it <b>boils</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The exotic", "clickable": false },
+        { "id": "s2", "text": "fish are", "clickable": true, "isError": false },
+        { "id": "s3", "text": "currently being", "clickable": false },
+        { "id": "s4", "text": "feed by", "clickable": true, "isError": true, "correctAnswers": ["fed by"] },
+        { "id": "s5", "text": "the aquarium", "clickable": false },
+        { "id": "s6", "text": "staff, and", "clickable": true, "isError": false },
+        { "id": "s7", "text": "the tanks", "clickable": false },
+        { "id": "s8", "text": "is being", "clickable": true, "isError": true, "correctAnswers": ["are being"] },
+        { "id": "s9", "text": "cleaned daily.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous passive voice with subject-verb agreement. 'Feed' must be the past participle 'fed'. 'Tanks' is plural, requiring 'are being'.",
+        "topic": "Present Continuous + Passive Voice",
+        "concept": "Correct past participle forms and plural agreement in passive voice",
+        "formula": "Plural subject + are being + past participle",
+        "examples": [
+          "The rooms <b>are being</b> <b>cleaned</b> right now."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct quantifiers to complete the sentence.",
+        "question": "_____ of the rescued kittens have found homes, but _____ of the stray population remains unadopted."
+      },
+      "options": {
+        "A": { "text": "Many / much", "correct": true },
+        "B": { "text": "Much / many", "correct": false },
+        "C": { "text": "Many / many", "correct": false },
+        "D": { "text": "Much / much", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect and Simple Present tenses with quantifiers. 'Kittens' is a countable plural noun, requiring 'Many'. 'Population' is treated as an uncountable/singular concept here, requiring 'much'.",
+        "topic": "Present Tenses + Quantifiers",
+        "concept": "Countable vs. uncountable quantifiers",
+        "formula": "Many of + plural countable noun + have + past participle; much of + uncountable noun + remains",
+        "examples": [
+          "<b>Many</b> of the books <b>have</b> sold, but <b>much</b> of the work <b>remains</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Rarely", "clickable": false },
+        { "id": "s2", "text": "the cat", "clickable": true, "isError": false },
+        { "id": "s3", "text": "sleeps on", "clickable": false },
+        { "id": "s4", "text": "the floor;", "clickable": true, "isError": false },
+        { "id": "s5", "text": "she always", "clickable": false },
+        { "id": "s6", "text": "prefer the", "clickable": true, "isError": true, "correctAnswers": ["prefers the"] },
+        { "id": "s7", "text": "highest shelf.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Present tense with adverbs of frequency and subject-verb agreement. 'She' requires the singular verb 'prefers'. (Note: 'Rarely the cat sleeps' is acceptable in some poetic contexts, but standard inversion 'Rarely does the cat sleep' is preferred. However, 'prefer' is definitively an error).",
+        "topic": "Simple Present + Subject-Verb Agreement",
+        "concept": "Third-person singular agreement with adverbs of frequency",
+        "formula": "Singular subject + always + verb + s/es",
+        "examples": [
+          "He always <b>prefers</b> tea over coffee."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct conjunction to complete the sentence.",
+        "question": "The horse has been galloping in the pasture all morning, _____ it looks exhausted now."
+      },
+      "options": {
+        "A": { "text": "although", "correct": false },
+        "B": { "text": "so", "correct": true },
+        "C": { "text": "because", "correct": false },
+        "D": { "text": "unless", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Perfect Continuous tense with conjunctions of result. 'So' correctly links the ongoing past-to-present action (galloping) with its present result (looks exhausted).",
+        "topic": "Present Perfect Continuous + Conjunctions",
+        "concept": "Using resultative conjunctions with perfect continuous contexts",
+        "formula": "Subject + has/have been + verb-ing + all + time, so + subject + present simple",
+        "examples": [
+          "It has been raining all day, <b>so</b> the ground is wet."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I am", "clickable": true, "isError": false },
+        { "id": "s2", "text": "considering getting", "clickable": false },
+        { "id": "s3", "text": "a snake,", "clickable": true, "isError": false },
+        { "id": "s4", "text": "but I", "clickable": false },
+        { "id": "s5", "text": "am dreading", "clickable": true, "isError": false },
+        { "id": "s6", "text": "to handle", "clickable": true, "isError": true, "correctAnswers": ["handling"] },
+        { "id": "s7", "text": "it daily.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Present Continuous tense with gerund verb patterns. Both 'considering' and 'dreading' must be followed by a gerund ('getting', 'handling'), not a to-infinitive.",
+        "topic": "Present Continuous + Gerunds",
+        "concept": "Verbs requiring gerund complements in continuous tenses",
+        "formula": "Am/is/are + considering/dreading + verb-ing",
+        "examples": [
+          "I am considering <b>moving</b>, but I am dreading <b>packing</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the cleft sentence.",
+        "question": "It _____ the veterinarian who _____ the most accurate diagnosis for my pet."
+      },
+      "options": {
+        "A": { "text": "is / makes", "correct": true },
+        "B": { "text": "are / make", "correct": false },
+        "C": { "text": "is / make", "correct": false },
+        "D": { "text": "has been / making", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Simple Present tense with cleft sentences for emphasis. 'It is' emphasizes the subject, and the relative pronoun 'who' refers to the singular 'veterinarian', requiring 'makes'.",
+        "topic": "Simple Present + Cleft Sentences",
+        "concept": "Subject-verb agreement in it-cleft structures",
+        "formula": "It + is + singular noun + who/that + verb + s/es",
+        "examples": [
+          "It <b>is</b> the teacher who <b>explains</b> the concept clearly."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The dog", "clickable": false },
+        { "id": "s2", "text": "bowl is", "clickable": true, "isError": false },
+        { "id": "s3", "text": "empty; he", "clickable": false },
+        { "id": "s4", "text": "must has", "clickable": true, "isError": true, "correctAnswers": ["must have"] },
+        { "id": "s5", "text": "eaten all", "clickable": false },
+        { "id": "s6", "text": "his kibble,", "clickable": true, "isError": false },
+        { "id": "s7", "text": "and he", "clickable": false },
+        { "id": "s8", "text": "can't have", "clickable": true, "isError": false },
+        { "id": "s9", "text": "left any.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the Simple Present with modal verbs of deduction in the perfect form. Modal verbs ('must', 'can't') are always followed by the base form 'have', never 'has'.",
+        "topic": "Simple Present + Modal Verbs of Deduction",
+        "concept": "Base form of 'have' after modal verbs",
+        "formula": "Subject + must/can't + have + past participle",
+        "examples": [
+          "He <b>must have</b> forgotten his keys."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "As the puppy grows, it _____ more energetic, and its tricks _____ increasingly complex."
+      },
+      "options": {
+        "A": { "text": "is becoming / are becoming", "correct": true },
+        "B": { "text": "becomes / become", "correct": false },
+        "C": { "text": "is becoming / become", "correct": false },
+        "D": { "text": "becomes / are becoming", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the Present Continuous tense with conjunctions of time to describe changing situations. 'Is becoming' and 'are becoming' emphasize ongoing development.",
+        "topic": "Present Continuous + Conjunctions",
+        "concept": "Describing changing situations and trends with 'as'",
+        "formula": "As + subject + verb + s/es, subject + is/are + becoming + adjective",
+        "examples": [
+          "As the weather <b>is getting</b> colder, the days <b>are becoming</b> shorter."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 3,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "By the", "clickable": false },
+        { "id": "s2", "text": "time the", "clickable": true, "isError": false },
+        { "id": "s3", "text": "groomer arrives,", "clickable": false },
+        { "id": "s4", "text": "the dog", "clickable": true, "isError": false },
+        { "id": "s5", "text": "has been", "clickable": false },
+        { "id": "s6", "text": "wash, and", "clickable": true, "isError": true, "correctAnswers": ["washed, and"] },
+        { "id": "s7", "text": "the nails", "clickable": false },
+        { "id": "s8", "text": "have been", "clickable": true, "isError": false },
+        { "id": "s9", "text": "trim.", "clickable": true, "isError": true, "correctAnswers": ["trimmed."] }
+      ],
+      "explanation": {
+        "text": "This combines the Present Perfect passive voice with time clauses. The past participles 'washed' and 'trimmed' are required after 'has/have been'.",
+        "topic": "Present Perfect + Passive Voice + Time Clauses",
+        "concept": "Correct past participle forms in Present Perfect passive",
+        "formula": "By the time + present simple, subject + has/have been + past participle",
+        "examples": [
+          "By the time we arrive, the food <b>will have been</b> <b>eaten</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 30, "normal": 60, "easy": 90 }
+      }
+    }
+  ]
+}
