@@ -1,0 +1,421 @@
+{
+  "meta": {
+    "title": "Listening about Vacation",
+    "description": "Listen to short recordings about vacation scenarios and answer the questions.",
+    "info": "Each listening question has a Listen button. Read the question before listening to focus on the key details.",
+    "author": "Cheries",
+    "created": "2026-11-27",
+    "soundpath": "./qsound/intermediate/english/listening/vacation/",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "allow_random": true,
+      "allow_start": true,
+      "allow_end": true,
+      "no_timer": false,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "Where are they going for their summer vacation?",
+        "passage": "We are going to Hawaii for our summer vacation. I can't wait to swim in the ocean.",
+        "sound": "vacation_q1.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "Hawaii",
+          "correct": true
+        },
+        "B": {
+          "text": "Florida"
+        },
+        "C": {
+          "text": "Paris"
+        },
+        "D": {
+          "text": "London"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: 'We are going to Hawaii for our summer vacation.' The speaker explicitly states their destination is Hawaii.",
+        "topic": "Listening",
+        "concept": "Listening for specific details (destination)"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 25,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "What does the speaker remind the listener to pack?",
+        "passage": "Don't forget to pack your sunscreen and sunglasses. It will be very sunny at the beach.",
+        "sound": "vacation_q2.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "An umbrella"
+        },
+        "B": {
+          "text": "Sunscreen and sunglasses",
+          "correct": true
+        },
+        "C": {
+          "text": "A winter coat"
+        },
+        "D": {
+          "text": "A camera"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: 'Don't forget to pack your sunscreen and sunglasses.' The speaker directly advises packing these two items for the sunny beach.",
+        "topic": "Listening",
+        "concept": "Listening for specific details (items)"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 25,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "What time does the flight leave?",
+        "passage": "Our flight to Tokyo leaves at 10:00 AM, so we need to arrive at the airport by 8:00 AM.",
+        "sound": "vacation_q3.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "8:00 AM"
+        },
+        "B": {
+          "text": "9:00 AM"
+        },
+        "C": {
+          "text": "10:00 AM",
+          "correct": true
+        },
+        "D": {
+          "text": "11:00 AM"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: 'Our flight to Tokyo leaves at 10:00 AM...' The departure time is explicitly stated as 10:00 AM, while 8:00 AM is the arrival time at the airport.",
+        "topic": "Listening",
+        "concept": "Listening for specific details (time)"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 25,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "What is included in the hotel booking?",
+        "passage": "We booked a small hotel near the city center. It has a free breakfast and Wi-Fi.",
+        "sound": "vacation_q4.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "A swimming pool"
+        },
+        "B": {
+          "text": "Free breakfast and Wi-Fi",
+          "correct": true
+        },
+        "C": {
+          "text": "A gym"
+        },
+        "D": {
+          "text": "Airport pickup"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: 'It has a free breakfast and Wi-Fi.' The speaker clearly mentions these two amenities as part of the hotel booking.",
+        "topic": "Listening",
+        "concept": "Listening for specific details (amenities)"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 25,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "What will they do first on their trip?",
+        "passage": "On the first day of our trip, we plan to visit the local museum and then try some traditional food.",
+        "sound": "vacation_q5.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "Go shopping"
+        },
+        "B": {
+          "text": "Visit the local museum",
+          "correct": true
+        },
+        "C": {
+          "text": "Relax at the beach"
+        },
+        "D": {
+          "text": "Go hiking"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: '...we plan to visit the local museum and then try some traditional food.' The word 'first' in the question aligns with the first activity mentioned, which is visiting the museum.",
+        "topic": "Listening",
+        "concept": "Listening for sequence of events"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 25,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 6,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "Why should they bring a light jacket?",
+        "passage": "The weather forecast says it might rain in the afternoon, so let's bring a light jacket just in case.",
+        "sound": "vacation_q6.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "Because it will be very cold"
+        },
+        "B": {
+          "text": "Because it might rain in the afternoon",
+          "correct": true
+        },
+        "C": {
+          "text": "Because it is windy"
+        },
+        "D": {
+          "text": "Because it is required by the hotel"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: 'The weather forecast says it might rain in the afternoon, so let's bring a light jacket just in case.' The reason for the jacket is directly linked to the possibility of afternoon rain.",
+        "topic": "Listening",
+        "concept": "Listening for cause and effect"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 25,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "How long will they stay in Rome?",
+        "passage": "We will stay in Rome for five days, and then we will take a train to Florence for the weekend.",
+        "sound": "vacation_q7.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "Three days"
+        },
+        "B": {
+          "text": "Five days",
+          "correct": true
+        },
+        "C": {
+          "text": "One week"
+        },
+        "D": {
+          "text": "Two weeks"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: 'We will stay in Rome for five days...' The duration of the stay in Rome is explicitly stated as five days.",
+        "topic": "Listening",
+        "concept": "Listening for specific details (duration)"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 25,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "What does the $1,200 cover?",
+        "passage": "The total cost of the vacation package is $1,200 per person, which includes flights and accommodation.",
+        "sound": "vacation_q8.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "Only flights"
+        },
+        "B": {
+          "text": "Flights and accommodation",
+          "correct": true
+        },
+        "C": {
+          "text": "Food and drinks"
+        },
+        "D": {
+          "text": "Tour guide fees"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: '...which includes flights and accommodation.' The speaker specifies exactly what the $1,200 package price covers.",
+        "topic": "Listening",
+        "concept": "Listening for specific details (cost and inclusions)"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 25,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "Where is the passport now?",
+        "passage": "I lost my passport at the restaurant, but the manager found it and gave it to the front desk.",
+        "sound": "vacation_q9.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "At the restaurant"
+        },
+        "B": {
+          "text": "With the manager"
+        },
+        "C": {
+          "text": "At the front desk",
+          "correct": true
+        },
+        "D": {
+          "text": "In the taxi"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: '...the manager found it and gave it to the front desk.' Although it was lost at the restaurant and found by the manager, its current location is the front desk.",
+        "topic": "Listening",
+        "concept": "Listening for inference and current state"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 25,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "When are they flying back home?",
+        "passage": "Our vacation was amazing, but we have to fly back home tomorrow morning to get ready for work.",
+        "sound": "vacation_q10.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "Tonight"
+        },
+        "B": {
+          "text": "Tomorrow morning",
+          "correct": true
+        },
+        "C": {
+          "text": "Next week"
+        },
+        "D": {
+          "text": "In two days"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: '...we have to fly back home tomorrow morning...' The speaker clearly states the return flight is scheduled for tomorrow morning.",
+        "topic": "Listening",
+        "concept": "Listening for specific details (time/schedule)"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 25,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    }
+  ]
+}

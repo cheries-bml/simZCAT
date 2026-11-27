@@ -7,9 +7,12 @@
     "created": "2026-11-05",
     "soundpath": "./qsound/easy/english/listening/sample/",
     "config": {
-      "show_answer": true,
-      "show_explanation": true,
-      "no_timer": false,
+      "show_answer": false,
+      "show_explanation": false,
+      "allow_random": true,
+      "allow_start": true,
+      "allow_end": true,
+      "no_timer": true,
       "active": true
     }
   },
@@ -20,6 +23,7 @@
       "data": {
         "hint": "Listen to the audio, then choose the best answer.",
         "question": "What does she do every morning?",
+        "passage": "She goes to the gym every morning",
         "sound": "q1.mp3"
       },
       "options": {
@@ -59,6 +63,7 @@
       "data": {
         "hint": "Listen to the audio, then choose the best answer.",
         "question": "What time does the meeting start?",
+        "passage": "The meeting starts at half past three.",
         "sound": "q2.wav"
       },
       "options": {
@@ -98,6 +103,7 @@
       "data": {
         "hint": "Listen to the audio, then choose the best answer.",
         "question": "What does the speaker order?",
+        "passage": "I would like two apples and a glass of water, please.",
         "sound": "q3.ogg"
       },
       "options": {
