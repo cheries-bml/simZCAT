@@ -1,0 +1,902 @@
+{
+  "meta": {
+    "title": "Conditionals",
+    "description": "A comprehensive test covering advanced English Conditionals themed around Samurai and Ninja.",
+    "info": "This test includes 30 questions focusing on combined C1-C2 level grammar structures, primarily featuring advanced Conditionals (mixed, inverted, third, second) paired with other complex topics like inversion, passive voice, relative clauses, and participle clauses.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the shogun not been informed of the betrayal, the entire clan _____ by now."
+      },
+      "options": {
+        "A": { "text": "If / would be destroyed", "correct": false },
+        "B": { "text": "Had / would have been destroyed", "correct": true },
+        "C": { "text": "Had / would be destroyed", "correct": false },
+        "D": { "text": "Should / will be destroyed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted third conditional ('Had the shogun not been informed') with a mixed conditional main clause ('would be destroyed by now'), indicating a past condition with a present result.",
+        "topic": "Conditionals + Inversion",
+        "concept": "Inverted third conditional paired with mixed conditional results",
+        "formula": "Had + subject + not + been + past participle, subject + would + base verb + time marker",
+        "examples": [
+          "<b>Had</b> he <b>known</b> the truth, he <b>would be</b> furious now."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The ninja, ", "clickable": false },
+        { "id": "s2", "text": "who has been trained", "clickable": true, "isError": true, "correctAnswers": ["who had been trained"] },
+        { "id": "s3", "text": " in Iga, ", "clickable": false },
+        { "id": "s4", "text": "would be lead", "clickable": true, "isError": true, "correctAnswers": ["would be leading"] },
+        { "id": "s5", "text": " the mission today ", "clickable": false },
+        { "id": "s6", "text": "if he had not be", "clickable": true, "isError": true, "correctAnswers": ["if he had not been"] },
+        { "id": "s7", "text": " injured.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a mixed conditional with a non-defining relative clause. The past perfect requires 'had been trained'. The result clause requires 'would be leading', and the condition requires 'had not been'.",
+        "topic": "Conditionals + Relative Clauses",
+        "concept": "Past perfect formation and continuous aspects within mixed conditionals",
+        "formula": "Noun, who + had + been + past participle, + would + be + verb-ing + if + subject + had + not + been + past participle",
+        "examples": [
+          "The warrior, who <b>had sworn</b> an oath, <b>would be leading</b> the charge if he <b>had not been</b> wounded."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "If the samurai were to avoid _____ his blade, he would risk _____ his honor."
+      },
+      "options": {
+        "A": { "text": "to draw / to lose", "correct": false },
+        "B": { "text": "drawing / losing", "correct": true },
+        "C": { "text": "drawing / to lose", "correct": false },
+        "D": { "text": "to draw / losing", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a second conditional with gerund verb patterns. Both 'avoid' and 'risk' must be followed by a gerund ('drawing', 'losing').",
+        "topic": "Conditionals + Gerunds vs. Infinitives",
+        "concept": "Gerund complements following specific verbs in conditional clauses",
+        "formula": "If + subject + were + to + avoid + verb-ing, subject + would + risk + verb-ing",
+        "examples": [
+          "If he <b>were to avoid</b> <b>answering</b>, he would risk <b>losing</b> their trust."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Should the enemy breach the gates, ", "clickable": false },
+        { "id": "s2", "text": "the guards will have", "clickable": true, "isError": true, "correctAnswers": ["the guards will have to"] },
+        { "id": "s3", "text": " prepare for a ", "clickable": false },
+        { "id": "s4", "text": "lengthy sieges.", "clickable": true, "isError": true, "correctAnswers": ["lengthy siege."] },
+        { "id": "s5", "text": " starting today ", "clickable": false },
+        { "id": "s6", "text": "without delays.", "clickable": true, "isError": true, "correctAnswers": ["without delay."] }
+      ],
+      "explanation": {
+        "text": "This combines a first conditional inversion with modal verbs and countable nouns. 'Will have' must be followed by 'to' for obligation. 'Siege' and 'delay' should be singular here.",
+        "topic": "Conditionals + Modal Verbs",
+        "concept": "Inverted first conditional paired with modal verbs of obligation",
+        "formula": "Should + subject + base verb, subject + will have to + base verb + singular noun",
+        "examples": [
+          "<b>Should</b> the storm <b>hit</b>, we <b>will have to</b> secure the <b>shelter</b> <b>without delay</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the blade himself, the smith would have been praised had the daimyo not _____ unexpectedly."
+      },
+      "options": {
+        "A": { "text": "Having forged / died", "correct": true },
+        "B": { "text": "Forging / had died", "correct": false },
+        "C": { "text": "Having been forged / died", "correct": false },
+        "D": { "text": "To have forged / had died", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a third conditional with a perfect active participle clause. 'Having forged' indicates an action completed by the subject before the conditional past event.",
+        "topic": "Conditionals + Participle Clauses",
+        "concept": "Perfect active participles introducing third conditional sentences",
+        "formula": "Having + past participle + object, subject + would have + been + past participle + had + subject + not + past participle",
+        "examples": [
+          "<b>Having prepared</b> the ambush, they <b>would have won</b> had the enemy <b>not retreated</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "It were", "clickable": true, "isError": true, "correctAnswers": ["It was"] },
+        { "id": "s2", "text": " the poisoned dart that, ", "clickable": false },
+        { "id": "s3", "text": "would have killed", "clickable": true, "isError": false },
+        { "id": "s4", "text": " the warlord if the armor ", "clickable": false },
+        { "id": "s5", "text": "had not be", "clickable": true, "isError": true, "correctAnswers": ["had not been"] },
+        { "id": "s6", "text": " properly reinforced ", "clickable": false },
+        { "id": "s7", "text": "in time.", "clickable": true, "isError": true, "correctAnswers": ["on time."] }
+      ],
+      "explanation": {
+        "text": "This combines a third conditional with a cleft sentence and passive voice. The singular subject 'It' in a cleft sentence requires 'was'. The past perfect passive requires 'had not been'.",
+        "topic": "Conditionals + Cleft Sentences + Passive Voice",
+        "concept": "Subject-verb agreement and passive formation in it-cleft structures containing conditionals",
+        "formula": "It + was + noun + that + would have + past participle + if + subject + had + not + been + past participle",
+        "examples": [
+          "<b>It was</b> the storm that <b>would have destroyed</b> the village if the dam <b>had not been</b> <b>built</b> <b>on time</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "Even if the shinobi were discovered, he would, _____, have a hidden escape route prepared."
+      },
+      "options": {
+        "A": { "text": "therefore", "correct": false },
+        "B": { "text": "nevertheless", "correct": true },
+        "C": { "text": "furthermore", "correct": false },
+        "D": { "text": "consequently", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a second conditional with an adverbial clause of concession and a contrastive discourse marker. 'Nevertheless' correctly contrasts the discovery with the prepared escape route.",
+        "topic": "Conditionals + Discourse Markers",
+        "concept": "Using contrastive discourse markers in second conditional sentences",
+        "formula": "Even if + subject + were + past participle, subject + would, nevertheless, + have + past participle",
+        "examples": [
+          "<b>Even if</b> the plan <b>were</b> <b>flawed</b>, they <b>would</b>, <b>nevertheless</b>, <b>have</b> <b>tried</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If little of", "clickable": true, "isError": true, "correctAnswers": ["If few of"] },
+        { "id": "s2", "text": " the provisions had been ", "clickable": false },
+        { "id": "s3", "text": "poisoned, the squad ", "clickable": false },
+        { "id": "s4", "text": "would has survived", "clickable": true, "isError": true, "correctAnswers": ["would have survived"] },
+        { "id": "s5", "text": " the journey ", "clickable": false },
+        { "id": "s6", "text": "through the mountains.", "clickable": true, "isError": true, "correctAnswers": ["through the mountains."] }
+      ],
+      "explanation": {
+        "text": "This combines a third conditional with quantifiers. 'Provisions' is a countable plural noun, requiring 'few', not 'little'. The modal 'would' must be followed by the base form 'have'.",
+        "topic": "Conditionals + Quantifiers",
+        "concept": "Countable quantifiers and modal verb formation in third conditional clauses",
+        "formula": "If + few + of + plural countable noun + had + been + past participle, subject + would + have + past participle",
+        "examples": [
+          "If <b>few</b> of the <b>supplies</b> <b>had been</b> <b>lost</b>, the expedition <b>would have succeeded</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the secret scroll to be intercepted by the rival clan, the mission _____ immediately."
+      },
+      "options": {
+        "A": { "text": "Were / would be compromised", "correct": true },
+        "B": { "text": "If / will be compromised", "correct": false },
+        "C": { "text": "Should / would have been compromised", "correct": false },
+        "D": { "text": "Had / would be compromised", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted second conditional ('Were the secret scroll to be intercepted') with a standard second conditional passive result clause ('would be compromised').",
+        "topic": "Conditionals + Inversion + Passive Voice",
+        "concept": "Inverted second conditional with passive infinitive structures",
+        "formula": "Were + subject + to + be + past participle, subject + would + be + past participle",
+        "examples": [
+          "<b>Were</b> the treaty <b>to be</b> <b>signed</b>, peace <b>would be</b> <b>ensured</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If the ronin had remained ", "clickable": false },
+        { "id": "s2", "text": "loyal for", "clickable": true, "isError": true, "correctAnswers": ["loyal to"] },
+        { "id": "s3", "text": " his master, he ", "clickable": false },
+        { "id": "s4", "text": "would not be wandering", "clickable": true, "isError": false },
+        { "id": "s5", "text": " the countryside ", "clickable": false },
+        { "id": "s6", "text": "without purposes.", "clickable": true, "isError": true, "correctAnswers": ["without purpose."] }
+      ],
+      "explanation": {
+        "text": "This combines a mixed conditional with preposition collocations. The adjective 'loyal' is followed by the preposition 'to'. 'Purpose' is used as an uncountable abstract noun here.",
+        "topic": "Conditionals + Prepositions",
+        "concept": "Correct preposition usage after adjectives in mixed conditional clauses",
+        "formula": "If + subject + had + remained + loyal to + noun, subject + would + not + be + verb-ing + without purpose",
+        "examples": [
+          "If he <b>were</b> <b>loyal to</b> the cause, he <b>would not be</b> <b>wandering</b> <b>without purpose</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the elliptical sentence.",
+        "question": "If the ambush had succeeded, the warlord would have claimed the province, and his rivals _____."
+      },
+      "options": {
+        "A": { "text": "would have too", "correct": false },
+        "B": { "text": "would have done so too", "correct": true },
+        "C": { "text": "will have too", "correct": false },
+        "D": { "text": "had done so too", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a third conditional with ellipsis. 'Would have done so too' correctly elliptically replaces the full verb phrase 'would have claimed the province too' while maintaining the perfect modal structure.",
+        "topic": "Conditionals + Ellipsis",
+        "concept": "Elliptical conditional clauses paired with perfect modal verbs",
+        "formula": "If + past perfect, subject + would have + past participle, and + subject + would have + done so + too",
+        "examples": [
+          "If the plan <b>had worked</b>, we <b>would have won</b>, and they <b>would have done so too</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If either of the brothers ", "clickable": false },
+        { "id": "s2", "text": "break the", "clickable": true, "isError": true, "correctAnswers": ["breaks the"] },
+        { "id": "s3", "text": " bushido code, ", "clickable": false },
+        { "id": "s4", "text": "the elders will demands", "clickable": true, "isError": true, "correctAnswers": ["the elders will demand"] },
+        { "id": "s5", "text": " their exile ", "clickable": false },
+        { "id": "s6", "text": "immediately.", "clickable": true, "isError": true, "correctAnswers": ["immediately."] }
+      ],
+      "explanation": {
+        "text": "This combines a first conditional with subject-verb agreement. 'Either' is singular, requiring 'breaks'. After the modal 'will', the base form 'demand' must be used.",
+        "topic": "Conditionals + Subject-Verb Agreement",
+        "concept": "Singular agreement with 'either' and base verb forms following modal verbs",
+        "formula": "If + either + of + plural noun + singular verb, subject + will + base verb",
+        "examples": [
+          "If either of them <b>fails</b>, the manager <b>will</b> <b>fire</b> them <b>immediately</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "If that shadow were truly a master ninja, it _____ no trace, which _____ the guards completely."
+      },
+      "options": {
+        "A": { "text": "would have left / must have baffled", "correct": true },
+        "B": { "text": "will leave / must baffle", "correct": false },
+        "C": { "text": "would leave / must have baffled", "correct": false },
+        "D": { "text": "had left / must baffle", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a second conditional with a modal verb of past deduction in a relative clause. 'Would have left' pairs with the hypothetical condition, and 'must have baffled' deduces a past reaction.",
+        "topic": "Conditionals + Modal Verbs of Deduction",
+        "concept": "Second conditional results paired with past modal deductions",
+        "formula": "If + subject + were + noun, subject + would have + past participle, which + must have + past participle",
+        "examples": [
+          "If he <b>were</b> a genius, he <b>would have solved</b> it, which <b>must have amazed</b> everyone."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If the monk had not ", "clickable": false },
+        { "id": "s2", "text": "interrupted the session, the ", "clickable": false },
+        { "id": "s3", "text": "samurai would be enjoying ", "clickable": true, "isError": false },
+        { "id": "s4", "text": " to achieve ", "clickable": true, "isError": true, "correctAnswers": ["achieving"] },
+        { "id": "s5", "text": " a state of ", "clickable": false },
+        { "id": "s6", "text": "perfect clarity now.", "clickable": true, "isError": true, "correctAnswers": ["perfect clarity today."] }
+      ],
+      "explanation": {
+        "text": "This combines a mixed conditional with gerund verb patterns. The verb 'enjoy' must be followed by a gerund ('achieving'), not a to-infinitive.",
+        "topic": "Conditionals + Gerunds vs. Infinitives",
+        "concept": "Gerund complements following specific verbs in mixed conditional main clauses",
+        "formula": "If + subject + had + past participle, subject + would + be + enjoying + verb-ing",
+        "examples": [
+          "If it <b>had not rained</b>, we <b>would be</b> <b>enjoying</b> <b>swimming</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the Koga and Iga clans not signed the historic truce, the region _____ in perpetual warfare."
+      },
+      "options": {
+        "A": { "text": "If / would be", "correct": false },
+        "B": { "text": "Had / would have been engulfed", "correct": true },
+        "C": { "text": "Should / would have been engulfed", "correct": false },
+        "D": { "text": "Were / would be engulfed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted third conditional ('Had the clans not signed') with a third conditional passive result clause ('would have been engulfed').",
+        "topic": "Conditionals + Inversion + Passive Voice",
+        "concept": "Inverted third conditionals with passive voice in the result clause",
+        "formula": "Had + subject + not + past participle, subject + would have + been + past participle",
+        "examples": [
+          "<b>Had</b> they <b>not</b> <b>negotiated</b>, the city <b>would have been</b> <b>destroyed</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "It were", "clickable": true, "isError": true, "correctAnswers": ["It would be"] },
+        { "id": "s2", "text": " the Masamune blade that, ", "clickable": false },
+        { "id": "s3", "text": "if it were in his hands, ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "would makes", "clickable": true, "isError": true, "correctAnswers": ["would make"] },
+        { "id": "s5", "text": " him unstoppable ", "clickable": false },
+        { "id": "s6", "text": "in battle.", "clickable": true, "isError": true, "correctAnswers": ["in combat."] }
+      ],
+      "explanation": {
+        "text": "This combines a second conditional with a cleft sentence. The hypothetical nature of the condition requires 'would be' in the cleft structure. The modal 'would' must be followed by the base verb 'make'.",
+        "topic": "Conditionals + Cleft Sentences",
+        "concept": "Using 'would be' in it-cleft structures for hypothetical second conditional scenarios",
+        "formula": "It + would be + noun + that, + if + subject + were + prepositional phrase, + would + base verb",
+        "examples": [
+          "<b>It would be</b> the artifact that, <b>if</b> it <b>were</b> found, <b>would change</b> history."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the scout report enemy movements; _____, the commander will mobilize the troops immediately."
+      },
+      "options": {
+        "A": { "text": "Should / therefore", "correct": false },
+        "B": { "text": "If / however", "correct": false },
+        "C": { "text": "Should / consequently", "correct": true },
+        "D": { "text": "Were / furthermore", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a first conditional inversion ('Should the scout report') with a resultative discourse marker ('consequently').",
+        "topic": "Conditionals + Discourse Markers",
+        "concept": "Inverted first conditionals paired with resultative discourse markers",
+        "formula": "Should + subject + base verb; consequently, + subject + will + base verb",
+        "examples": [
+          "<b>Should</b> the alarm <b>sound</b>; <b>consequently</b>, the guards <b>will</b> <b>seal</b> the gates."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If the castle walls had been ", "clickable": false },
+        { "id": "s2", "text": "reinforced, the fortress would ", "clickable": false },
+        { "id": "s3", "text": "not be fell", "clickable": true, "isError": true, "correctAnswers": ["not be falling"] },
+        { "id": "s4", "text": " to the siege ", "clickable": false },
+        { "id": "s5", "text": "today.", "clickable": true, "isError": true, "correctAnswers": ["now."] },
+        { "id": "s6", "text": "despite the odds.", "clickable": true, "isError": true, "correctAnswers": ["despite the odds."] }
+      ],
+      "explanation": {
+        "text": "This combines a mixed conditional with the present continuous tense. The present result of a past unreal condition requires 'would not be' + present participle ('falling'), not the past participle 'fell'.",
+        "topic": "Conditionals + Mixed Tenses",
+        "concept": "Mixed conditionals requiring present continuous in the result clause",
+        "formula": "If + subject + had + been + past participle, subject + would + not + be + verb-ing",
+        "examples": [
+          "If the dam <b>had been</b> <b>built</b>, the town <b>would not be</b> <b>flooding</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "The grappling hook, _____ the shinobi had forged himself, would have saved him if the rope _____."
+      },
+      "options": {
+        "A": { "text": "which / had not snapped", "correct": true },
+        "B": { "text": "that / did not snap", "correct": false },
+        "C": { "text": "who / had not snapped", "correct": false },
+        "D": { "text": "which / would not have snapped", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a third conditional with a non-defining relative clause. 'Which' correctly refers to the inanimate object 'grappling hook', and the 'if' clause requires the past perfect ('had not snapped').",
+        "topic": "Conditionals + Relative Clauses",
+        "concept": "Non-defining relative clauses with 'which' embedded in third conditional sentences",
+        "formula": "Noun, which + subject + had + past participle, + would have + past participle + if + subject + had + not + past participle",
+        "examples": [
+          "The shield, <b>which</b> he <b>had</b> <b>polished</b>, <b>would have protected</b> him if the blow <b>had not been</b> so strong."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If the ronin were to draw ", "clickable": false },
+        { "id": "s2", "text": "his blade, his opponent ", "clickable": false },
+        { "id": "s3", "text": "will do", "clickable": true, "isError": true, "correctAnswers": ["would do"] },
+        { "id": "s4", "text": " the same ", "clickable": true, "isError": true, "correctAnswers": ["the same"] },
+        { "id": "s5", "text": "without hesitation.", "clickable": true, "isError": true, "correctAnswers": ["without hesitation."] }
+      ],
+      "explanation": {
+        "text": "This combines a second conditional inversion ('were to draw') with ellipsis. The hypothetical result clause requires 'would' to match the second conditional, not 'will'.",
+        "topic": "Conditionals + Ellipsis",
+        "concept": "Maintaining conditional mood consistency in elliptical result clauses",
+        "formula": "If + subject + were + to + base verb, subject + would + base verb + too",
+        "examples": [
+          "If she <b>were to</b> <b>speak</b>, he <b>would</b> too."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the assassin to strike from the shadows, having masked his presence, the target _____ completely off guard."
+      },
+      "options": {
+        "A": { "text": "Were / would be caught", "correct": true },
+        "B": { "text": "If / will be caught", "correct": false },
+        "C": { "text": "Should / would have been caught", "correct": false },
+        "D": { "text": "Had / would be caught", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted second conditional ('Were the assassin to strike') with a participle clause and a second conditional passive result.",
+        "topic": "Conditionals + Participle Clauses + Passive Voice",
+        "concept": "Inverted second conditionals containing participle clauses and passive results",
+        "formula": "Were + subject + to + base verb, having + past participle, subject + would + be + past participle",
+        "examples": [
+          "<b>Were</b> the storm <b>to</b> <b>hit</b>, <b>having</b> <b>gained</b> strength, the coast <b>would be</b> <b>flooded</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If the messenger had not been ", "clickable": false },
+        { "id": "s2", "text": "intercepted, the reinforcements ", "clickable": false },
+        { "id": "s3", "text": "would have must have", "clickable": true, "isError": true, "correctAnswers": ["must have"] },
+        { "id": "s4", "text": " arrived by dawn ", "clickable": false },
+        { "id": "s5", "text": "to save the castle.", "clickable": true, "isError": true, "correctAnswers": ["to save the castle."] },
+        { "id": "s6", "text": "from destruction.", "clickable": true, "isError": true, "correctAnswers": ["from destruction."] }
+      ],
+      "explanation": {
+        "text": "This combines a third conditional with modal verbs of deduction. The double modal 'would have must have' is incorrect; 'must have' is the correct form to express a logical deduction about the past.",
+        "topic": "Conditionals + Modal Verbs of Deduction",
+        "concept": "Using modal perfect for past deductions in third conditional result clauses",
+        "formula": "If + subject + had + not + been + past participle, subject + must + have + past participle",
+        "examples": [
+          "If the road <b>had not been</b> <b>blocked</b>, they <b>must have</b> <b>arrived</b> by now."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "What the tactician failed to realize was that if the cavalry _____ earlier, the battle _____."
+      },
+      "options": {
+        "A": { "text": "had flanked / would have been won", "correct": true },
+        "B": { "text": "flanked / would be won", "correct": false },
+        "C": { "text": "had flanked / will be won", "correct": false },
+        "D": { "text": "would have flanked / had been won", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a third conditional with a noun clause and passive voice. The 'if' clause requires the past perfect ('had flanked'), and the result clause requires the third conditional passive ('would have been won').",
+        "topic": "Conditionals + Noun Clauses + Passive Voice",
+        "concept": "Third conditional passive within noun clauses",
+        "formula": "What + subject + past simple + was that + if + subject + had + past participle, subject + would have + been + past participle",
+        "examples": [
+          "What he <b>knew</b> was that if the trap <b>had been</b> <b>set</b>, the prey <b>would have been</b> <b>caught</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If the alarm sounds, the ", "clickable": false },
+        { "id": "s2", "text": "shinobi will be blew out", "clickable": true, "isError": true, "correctAnswers": ["shinobi will blow out"] },
+        { "id": "s3", "text": " the candles and ", "clickable": false },
+        { "id": "s4", "text": "slipping away.", "clickable": true, "isError": true, "correctAnswers": ["slip away."] },
+        { "id": "s5", "text": "into the shadows.", "clickable": true, "isError": true, "correctAnswers": ["into the shadows."] }
+      ],
+      "explanation": {
+        "text": "This combines a first conditional with phrasal verbs and parallel structure. The future simple 'will' must be followed by the base form 'blow out', and the coordinated verb must also be in the base form 'slip away'.",
+        "topic": "Conditionals + Phrasal Verbs",
+        "concept": "Using correct base forms for parallel phrasal verbs in first conditionals",
+        "formula": "If + present simple, subject + will + base verb + object + and + base verb",
+        "examples": [
+          "If the alarm <b>sounds</b>, we <b>will</b> <b>shut down</b> the system and <b>evacuate</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the trap not been sprung prematurely, the enemy _____."
+      },
+      "options": {
+        "A": { "text": "If / would be annihilated", "correct": false },
+        "B": { "text": "Had / would have been annihilated", "correct": true },
+        "C": { "text": "Should / will have been annihilated", "correct": false },
+        "D": { "text": "Were / would be annihilated", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted third conditional ('Had the trap not been sprung') with a third conditional passive result clause ('would have been annihilated').",
+        "topic": "Conditionals + Inversion + Passive Voice",
+        "concept": "Inverted third conditionals with passive voice in the result clause",
+        "formula": "Had + subject + not + been + past participle, subject + would have + been + past participle",
+        "examples": [
+          "<b>Had</b> the signal <b>not been</b> <b>missed</b>, the fleet <b>would have been</b> <b>saved</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The daimyo, whose lineage ", "clickable": false },
+        { "id": "s2", "text": "are ancient, would have been ", "clickable": true, "isError": true, "correctAnswers": ["is ancient, would have been"] },
+        { "id": "s3", "text": " overthrown by now if he ", "clickable": false },
+        { "id": "s4", "text": "had not secured the ", "clickable": true, "isError": false },
+        { "id": "s5", "text": "emperor's favor ", "clickable": false },
+        { "id": "s6", "text": "at the last moment.", "clickable": true, "isError": true, "correctAnswers": ["at the last moment."] }
+      ],
+      "explanation": {
+        "text": "This combines a mixed conditional with a possessive relative clause. The singular noun 'lineage' requires the singular verb 'is', not 'are'.",
+        "topic": "Conditionals + Relative Clauses",
+        "concept": "Subject-verb agreement in possessive relative clauses within mixed conditionals",
+        "formula": "Noun, whose + singular noun + is + adjective, + would have been + past participle + if + subject + had + past participle",
+        "examples": [
+          "The king, whose <b>power</b> <b>is</b> absolute, <b>would have been</b> <b>challenged</b> if he <b>had shown</b> weakness."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "If the poison _____ administered slowly, the victim _____ not even notice the symptoms until it was too late."
+      },
+      "options": {
+        "A": { "text": "were / might", "correct": true },
+        "B": { "text": "was / might", "correct": false },
+        "C": { "text": "had been / might have", "correct": false },
+        "D": { "text": "were / might have", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a second conditional passive ('were administered') with a modal verb of possibility ('might') in the result clause.",
+        "topic": "Conditionals + Modal Verbs",
+        "concept": "Second conditional passive structures paired with modals of possibility",
+        "formula": "If + subject + were + past participle, subject + might + not + base verb",
+        "examples": [
+          "If the letter <b>were</b> <b>sent</b> today, he <b>might</b> <b>receive</b> it tomorrow."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Even if the guards had been ", "clickable": false },
+        { "id": "s2", "text": "vigilant, the infiltration would have ", "clickable": false },
+        { "id": "s3", "text": "succeeded, although the ninja ", "clickable": false },
+        { "id": "s4", "text": "have been wounded", "clickable": true, "isError": true, "correctAnswers": ["had been wounded"] },
+        { "id": "s5", "text": " during the escape ", "clickable": false },
+        { "id": "s6", "text": "through the forest.", "clickable": true, "isError": true, "correctAnswers": ["through the forest."] },
+        { "id": "s7", "text": "under cover of darkness.", "clickable": true, "isError": true, "correctAnswers": ["under cover of darkness."] }
+      ],
+      "explanation": {
+        "text": "This combines a third conditional with an adverbial clause of concession. The concession clause refers to a past event simultaneous with the hypothetical past, requiring the past perfect ('had been wounded').",
+        "topic": "Conditionals + Adverbial Clauses of Concession",
+        "concept": "Past perfect formation in concessive clauses paired with third conditionals",
+        "formula": "Even if + subject + had + been + past participle, subject + would have + past participle, although + subject + had + been + past participle",
+        "examples": [
+          "<b>Even if</b> they <b>had been</b> <b>prepared</b>, the mission <b>would have failed</b>, although they <b>had been</b> <b>trained</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the daimyo consider abdicating, his advisors _____ strongly against making such a hasty decision."
+      },
+      "options": {
+        "A": { "text": "Should / will advise", "correct": true },
+        "B": { "text": "If / would advise", "correct": false },
+        "C": { "text": "Were / will advise", "correct": false },
+        "D": { "text": "Had / would have advised", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a first conditional inversion ('Should the daimyo consider') with a gerund verb pattern ('advise against making') in the main clause.",
+        "topic": "Conditionals + Gerunds vs. Infinitives",
+        "concept": "Inverted first conditionals paired with verbs requiring gerund complements",
+        "formula": "Should + subject + base verb, subject + will + verb + against + verb-ing",
+        "examples": [
+          "<b>Should</b> he <b>consider</b> resigning, they <b>will</b> <b>advise</b> against <b>doing</b> so."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If the general had not ordered ", "clickable": false },
+        { "id": "s2", "text": "the charge, he would be ", "clickable": false },
+        { "id": "s3", "text": "believed having acted", "clickable": true, "isError": true, "correctAnswers": ["believed to have acted"] },
+        { "id": "s4", "text": " cowardly by his peers ", "clickable": false },
+        { "id": "s5", "text": "today.", "clickable": true, "isError": true, "correctAnswers": ["today."] },
+        { "id": "s6", "text": "despite his past victories.", "clickable": true, "isError": true, "correctAnswers": ["despite his past victories."] }
+      ],
+      "explanation": {
+        "text": "This combines a mixed conditional with a perfect infinitive passive structure. 'Believed' is followed by the perfect infinitive 'to have acted' to refer to a past action from a present perspective.",
+        "topic": "Conditionals + Perfect Infinitives",
+        "concept": "Mixed conditionals paired with passive reporting verbs and perfect infinitives",
+        "formula": "If + subject + had + past participle, subject + would be + believed + to have + past participle",
+        "examples": [
+          "If she <b>had not spoken</b>, she <b>would be</b> <b>believed to have</b> <b>agreed</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    }
+  ]
+}

@@ -3,6 +3,8 @@ import { touchSession, specialsOf } from "./auth.js";
 import { loadCatalog } from "./catalog.js";
 import { openModal, alertModal, confirmModal } from "./modal.js";
 import { icon } from "./icons.js";
+import { sounds } from "./sound.js";
+import { createSoundPlayer } from "./sound-ui.js";
 import { renderToolbar, openFilterWindow } from "./filters.js";
 import { getFavorites, toggleFavorite } from "./favorites.js";
 import { openGenTest } from "./gentest.js";
@@ -20,6 +22,7 @@ function stop() {
   run = null;
   window.onbeforeunload = null;
   setTesting(false);
+  sounds.stop();
 }
 
 /** Called by the dashboard before switching sections or signing out. */
@@ -332,7 +335,7 @@ function startRun(root, ctx, test, pace, settings = {}) {
   function setPaused(v) {
     account();
     r.paused = v;
-    if (v) r.usedPause = true;
+    if (v) { r.usedPause = true; sounds.pause(); }
     mount(pauseBtn, icon(v ? "play" : "pause", { size: 15 }), v ? "Resume" : "Pause");
     runner.classList.toggle("paused", v);
     qArea.inert = v;
@@ -363,6 +366,7 @@ function startRun(root, ctx, test, pace, settings = {}) {
     r.index = i;
     r.reveal = false; // a peek only lasts while you stay on the question
     r.hideWrong = false;
+    sounds.stop(); // a sound belongs to its question
     drawQuestion();
     drawPalette();
     window.scrollTo({ top: 0 });
@@ -387,6 +391,7 @@ function startRun(root, ctx, test, pace, settings = {}) {
 
   function drawQuestion() {
     const i = r.index, q = test.questions[i], d = q.data || {};
+    const sound = E.soundFile(test, q); // null = a regular question, no Listen button
     const flagBtn = el("button", {
       type: "button", className: "chip-btn", textContent: "Flag for review", "aria-pressed": String(r.flagged.has(i)),
       onclick: () => {
@@ -426,6 +431,7 @@ function startRun(root, ctx, test, pace, settings = {}) {
         el("span", { className: "badge badge-soft", textContent: q.type === "correction" ? "Error correction" : "Multiple choice" }),
         flagBtn, answerBtn, explainBtn),
       d.hint ? el("p", { className: "hint-box", textContent: d.hint }) : null,
+      sound ? createSoundPlayer(sound) : null,
       image(d.image),
       d.passage ? richText(d.passage, "div", "passage") : null,
       d.question ? richText(d.question, "h2", "q-text") : null,
@@ -569,6 +575,7 @@ function startRun(root, ctx, test, pace, settings = {}) {
     r.finished = true;
     clearInterval(r.timer);
     setTesting(false);
+    sounds.stop();
     window.onbeforeunload = null;
     document.querySelectorAll("dialog.modal[open]").forEach((d) => d.close()); // e.g. an open confirm or explanation
     account();
@@ -702,6 +709,7 @@ function reviewItem(test, q, i, a, status) {
       el("span", { className: "mark", textContent: { correct: "✓", incorrect: "✗", unanswered: "–" }[status], "aria-label": status }),
       el("span", { textContent: `${i + 1}. ${E.questionTitle(q)}` })),
     el("div", { className: "review-body" },
+      E.soundFile(test, q) ? createSoundPlayer(E.soundFile(test, q)) : null,
       row("Your answer:", E.userAnswerText(q, a)),
       f.showAnswer ? row("Correct answer:", E.correctAnswerText(q)) : null,
       f.showExplanation && E.hasExplanation(q) ? explanationNode(q.explanation) : null));

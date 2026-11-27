@@ -30,6 +30,8 @@ Static login + computer-assisted test app for GitHub Pages. Plain HTML, CSS and 
 │       ├── mytests.js         MyTest: saved generated tests (per user, in this browser)
 │       ├── review.js          Opens a saved attempt for review (Reports and Home)
 │       ├── files-ui.js        Files page: browse, filter, preview, open in new tab
+│       ├── sound.js           SoundManager: reusable audio player (Audio API)
+│       ├── sound-ui.js        The Listen button, progress bar and time
 │       ├── about.js           About page (config.json + contact.json)
 │       ├── markdown.js        Small safe Markdown renderer for the file viewer
 │       ├── catalog.js         Loads the tests listed in the index
@@ -43,6 +45,7 @@ Static login + computer-assisted test app for GitHub Pages. Plain HTML, CSS and 
 ├── questions/                 Question files: questions/<level>/<course>/<topic>/<file>.json
 │   ├── easy/english/grammar/sample_question.json
 │   └── ...                    (easy | intermediate | advanced, then course, then topic)
+├── qsound/                    Sound files for listening questions: qsound/<level>/<course>/<topic>/<test>/qN.mp3
 ├── files/                     Teaching materials: files/<level>/<course>/[<topic>/]<file>
 │   └── easy/english/grammar-basics.md ...   (pdf, images, md, txt, audio, video, anything)
 ├── scripts/build_manifest.py  Optional: scans /questions recursively -> manifests/questions-manifest.json
@@ -90,6 +93,28 @@ questions/advanced/math/algebra/quadratics.json
 - Starting a test hides the top menu to leave more room. It returns when you submit, cancel (the **Cancel** button) or when time is up.
 - Users with the `configure_test` special feature can randomize the questions and pick fewer questions in the start dialog. The timer is the total of the chosen questions (shown as an estimate when random).
 - On the results and review screens, **Correct**, **Incorrect** and **Unanswered** are buttons that filter the list of reviewed questions.
+
+## Questions with sound (listening)
+
+A question can have a sound, played with a **Listen** button. Two keys in the question file switch it on:
+
+```json
+{
+  "meta": { "title": "Listening: sample", "soundpath": "./qsound/easy/english/listening/sample/", ... },
+  "questions": [
+    { "id": 1, "type": "multiple_choice", "data": { "question": "What does she do every morning?", "sound": "q1.mp3" }, ... }
+  ]
+}
+```
+
+- The sound file is `meta.soundpath` + `data.sound`, here `./qsound/easy/english/listening/sample/q1.mp3`. Each question has its own file.
+- If `meta.soundpath` is missing, or the question has no `data.sound`, the question is a regular one with no Listen button. You can mix both kinds in one test.
+- Put the files in `qsound/` at the **root of the repository** (next to `questions/` and `files/`). The path is relative to the page, so it works at `https://user.github.io/` and at a project site such as `https://user.github.io/my-repo/`. File and folder names are case-sensitive on GitHub Pages, so `q1.mp3` and `Q1.mp3` are different files.
+- Formats: **mp3, wav, ogg** (also oga, opus, m4a, aac, flac). The browser is asked whether it supports the format; if not, the button is disabled with a message. A missing file shows "The sound could not be loaded" and a Try again button, without revealing the path.
+- The button shows Listen, Pause, Resume and Listen again, with a progress bar and the time. Only one sound plays at a time; moving to another question, pausing the test, submitting or leaving the page stops it. The player also appears in the results review, and generated tests (GenTest / MyTest) keep the sounds of the questions they use.
+- `soundpath` may also be an `https://` address. Other protocols are ignored.
+- `python3 scripts/build_manifest.py` prints a warning for every sound file that a question refers to but that is missing from the repository.
+- Code: `assets/js/sound.js` is a reusable `SoundManager` (play / pause / stop / toggle, state events, one shared instance) built on the browser's `Audio` object.
 
 ## Show answer highlighting
 

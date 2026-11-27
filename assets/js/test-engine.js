@@ -199,6 +199,23 @@ export function resolveQuestions(test, attempt) {
   return out.every(Boolean) ? out : null;
 }
 
+// ----- sound (listening questions) -----
+/**
+ * The sound of a question: meta.soundpath + data.sound, e.g. "./qsound/easy/english/listening/sample/" + "q1.mp3".
+ * Returns null when either key is missing, so the question is a regular one (no Listen button).
+ */
+export function soundFile(test, q) {
+  const baked = q.data?.soundUrl; // GenTest copies the finished path here, because it mixes tests with different soundpaths
+  if (typeof baked === "string" && baked.trim()) return baked.trim();
+  let base = test.meta?.soundpath;
+  const file = q.data?.sound;
+  if (typeof base !== "string" || !base.trim() || typeof file !== "string" || !file.trim()) return null;
+  base = base.trim();
+  if (/^[a-z][a-z0-9+.-]*:/i.test(base) && !/^https?:/i.test(base)) return null; // only relative paths or http(s)
+  if (/^\/(?!\/)/.test(base)) base = `.${base}`; // "/qsound/" would leave a GitHub Pages project site; keep it inside the site
+  return base.replace(/\/*$/, "/") + file.trim().replace(/^(\.?\/)+/, "");
+}
+
 // ----- generated tests (GenTest / MyTest) -----
 export const genKey = (level, topic) => `${level}|${topic}`;
 
@@ -262,8 +279,9 @@ export function buildGenTest(gen, tests) {
     const q = src?.questions.find((x) => x.id === it.id);
     if (!q) { missing++; continue; }
     const m = src.meta?.config || {};
+    const sound = soundFile(src, q);
     questions.push({
-      ...q, id: `${it.path}#${it.id}`,
+      ...q, ...(sound ? { data: { ...q.data, soundUrl: sound } } : {}), id: `${it.path}#${it.id}`,
       config: { ...q.config, show_answer: q.config?.show_answer ?? m.show_answer ?? false, show_explanation: q.config?.show_explanation ?? m.show_explanation ?? false },
     });
   }

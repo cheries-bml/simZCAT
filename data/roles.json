@@ -4,15 +4,7 @@
     "editor": {"label": "Editor", "permissions": ["overview.view", "test.view", "files.view", "reports.view", "about.view"], "special": ["show_answer", "timer_disabler"]},
     "viewer": {"label": "Viewer", "permissions": ["overview.view", "test.view", "files.view", "about.view"], "special": []},
     "auditor": {"label": "Auditor", "permissions": ["overview.view", "files.view", "users.view", "about.view"], "special": ["show_explanation"]},
-    "teacher": {
-      "label": "Teacher",
-      "permissions": ["overview.view", "test.view", "files.view", "reports.view", "reports.all", "users.view", "about.view"],
-      "special": ["show_answer", "show_explanation", "timer_disabler", "configure_test", "show_waiting"]
-    },
-    "student": {
-      "label": "Student",
-      "permissions": ["overview.view", "test.view", "files.view", "reports.view", "about.view"],
-      "special": []
-    }
+    "teacher": {"label": "Teacher", "permissions": ["overview.view", "test.view", "files.view", "reports.view", "reports.all", "users.view", "about.view"], "special": ["show_answer", "show_explanation", "timer_disabler", "configure_test", "show_waiting"]},
+    "student": {"label": "Student", "permissions": ["overview.view", "test.view", "files.view", "reports.view", "about.view"], "special": []}
   }
 }

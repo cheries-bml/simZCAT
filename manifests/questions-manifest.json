@@ -19,14 +19,20 @@
     "questions/intermediate/english/tenses/past-continuous.json",
     "questions/intermediate/english/tenses/simple-past.json",
 
-    "questions/advanced/english/grammar/adverbial_of_concession.json",
-    "questions/advanced/english/grammar/dangling_modifiers.json",
-    "questions/advanced/english/grammar/participle_clauses.json",
-    "questions/advanced/english/grammar/adv_relative_clauses.json",
-    "questions/advanced/english/grammar/c1c2_04_harry.json",
-    "questions/advanced/english/grammar/c1c2_03_avenger.json",
-    "questions/advanced/english/grammar/c1c2_02.json",
-    "questions/advanced/english/grammar/c1c2_01.json",
+    "questions/advanced/english/Conditionals, Hypotheticals And Mood/conditionals.json",
+    "questions/advanced/english/Conditionals, Hypotheticals And Mood/inverted_conditionals.json",
+    "questions/advanced/english/Conditionals, Hypotheticals And Mood/subjunctive_mood.json",
+
+    "questions/advanced/english/Clauses, Reduction And Modifiers/adverbial_of_concession.json",
+    "questions/advanced/english/Clauses, Reduction And Modifiers/dangling_modifiers.json",
+    "questions/advanced/english/Clauses, Reduction And Modifiers/participle_clauses.json",
+    "questions/advanced/english/Clauses, Reduction And Modifiers/adv_relative_clauses.json",
+
+    "questions/advanced/english/mixed/c1c2_04_harry.json",
+    "questions/advanced/english/mixed/c1c2_03_avenger.json",
+    "questions/advanced/english/mixed/c1c2_02.json",
+    "questions/advanced/english/mixed/c1c2_01.json",
+
     "questions/easy/math/arithmetic/fractions.json",
     "questions/trivial/passage.json",
     "questions/trivial/sample.json"

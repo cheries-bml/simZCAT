@@ -8,6 +8,9 @@
     "config": {
       "show_answer": false,
       "show_explanation": false,
+      "allow_random": true,
+      "allow_start": true,
+      "allow_end": true,
       "no_timer": true,
       "active": true
     }
@@ -44,8 +47,6 @@
         ]
       },
       "config": {
-        "show_answer": true,
-        "show_explanation": true,
         "level": 1,
         "time_in_seconds": {
           "fast": 15,
@@ -60,7 +61,7 @@
       "data": {
         "hint": "Click the incorrect parts and type the correct form (may contain 0, 1 or multiple errors). If no error, choose No Error."
       },
-      "multiErrorSegments": [
+      "segments": [
         { "id": "s1", "text": "Having", "clickable": false },
         { "id": "s2", "text": "warning", "clickable": true, "isError": true, "correctAnswers": ["been warned"] },
         { "id": "s3", "text": "about the risks,", "clickable": false },
@@ -82,8 +83,6 @@
         ]
       },
       "config": {
-        "show_answer": true,
-        "show_explanation": true,
         "level": 4,
         "time_in_seconds": {
           "fast": 15,

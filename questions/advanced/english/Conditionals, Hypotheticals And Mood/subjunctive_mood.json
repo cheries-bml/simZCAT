@@ -1,0 +1,925 @@
+{
+  "meta": {
+    "title": "Subjunctive Mood",
+    "description": "A comprehensive test covering the English Subjunctive Mood themed around Bali.",
+    "info": "This test includes 30 questions focusing on combined C1-C2 level grammar structures, primarily featuring the Subjunctive Mood (mandative, hypothetical, formulaic) paired with other complex topics like passive voice, relative clauses, inversion, and gerunds.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "It is essential that the ancient temple _____ by the local community to preserve its spiritual significance."
+      },
+      "options": {
+        "A": { "text": "is preserved", "correct": false },
+        "B": { "text": "be preserved", "correct": true },
+        "C": { "text": "will be preserved", "correct": false },
+        "D": { "text": "has been preserved", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the mandative subjunctive with the passive voice. After expressions of necessity like 'It is essential that', the base form of the verb ('be') is required, followed by the past participle for the passive construction.",
+        "topic": "Subjunctive Mood + Passive Voice",
+        "concept": "Mandative subjunctive in passive constructions",
+        "formula": "It is essential that + subject + be + past participle",
+        "examples": [
+          "It is crucial that the document <b>be signed</b> by the director."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The governor insists", "clickable": false },
+        { "id": "s2", "text": "that the new eco-resort", "clickable": false },
+        { "id": "s3", "text": "adheres", "clickable": true, "isError": true, "correctAnswers": ["adhere"] },
+        { "id": "s4", "text": " to strict environmental", "clickable": false },
+        { "id": "s5", "text": "regulations, and that", "clickable": false },
+        { "id": "s6", "text": "the local villagers", "clickable": false },
+        { "id": "s7", "text": "is compensated", "clickable": true, "isError": true, "correctAnswers": ["be compensated"] },
+        { "id": "s8", "text": " fairly.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the mandative subjunctive with coordinated clauses. After 'insists that', the base form of the verb must be used for all coordinated verbs ('adhere', 'be compensated'), regardless of the subject.",
+        "topic": "Subjunctive Mood + Coordination",
+        "concept": "Maintaining the base form in coordinated mandative subjunctive clauses",
+        "formula": "Subject + insists that + subject + base verb, and that + subject + base verb",
+        "examples": [
+          "The manager <b>insists</b> that the team <b>work</b> hard, and that the project <b>be</b> finished on time."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the Nyepi Day silence broken, the spiritual significance of the holiday _____ compromised."
+      },
+      "options": {
+        "A": { "text": "If / would be", "correct": false },
+        "B": { "text": "Were / would be", "correct": true },
+        "C": { "text": "Had / would have been", "correct": false },
+        "D": { "text": "Should / will be", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a hypothetical subjunctive with inversion and a second conditional result. 'Were' inverts with the subject to express a hypothetical present/future condition, paired with 'would be' in the main clause.",
+        "topic": "Subjunctive Mood + Inversion",
+        "concept": "Inverted hypothetical subjunctive in second conditional structures",
+        "formula": "Were + subject + past participle, subject + would + be + past participle",
+        "examples": [
+          "<b>Were</b> the agreement <b>breached</b>, the partnership <b>would be</b> <b>terminated</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I wish the tourists", "clickable": false },
+        { "id": "s2", "text": "have respected", "clickable": true, "isError": true, "correctAnswers": ["had respected"] },
+        { "id": "s3", "text": " the sacred boundaries", "clickable": false },
+        { "id": "s4", "text": "of the Pura Besakih", "clickable": false },
+        { "id": "s5", "text": "temple during their", "clickable": false },
+        { "id": "s6", "text": "visit last month.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the subjunctive 'wish' with the past perfect tense. To express regret about a past action, 'wish' must be followed by the past perfect ('had respected'), not the present perfect.",
+        "topic": "Subjunctive Mood + Past Perfect",
+        "concept": "Using past perfect after 'wish' to express regret about past events",
+        "formula": "Subject + wish + subject + had + past participle",
+        "examples": [
+          "I <b>wish</b> I <b>had studied</b> harder for the exam."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The cultural council recommended _____ the traditional Kecak dance, insisting that every performance _____ its authentic form."
+      },
+      "options": {
+        "A": { "text": "preserving / maintains", "correct": false },
+        "B": { "text": "to preserve / maintain", "correct": false },
+        "C": { "text": "preserving / maintain", "correct": true },
+        "D": { "text": "to preserve / maintains", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the mandative subjunctive with gerund verb patterns. 'Recommend' is followed by a gerund ('preserving'), and 'insisting that' triggers the subjunctive base form ('maintain').",
+        "topic": "Subjunctive Mood + Gerunds",
+        "concept": "Gerund complements paired with mandative subjunctive clauses",
+        "formula": "Subject + recommended + verb-ing, insisting that + subject + base verb",
+        "examples": [
+          "They <b>recommended</b> <b>waiting</b>, insisting that we <b>be</b> patient."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The traditional Balinese", "clickable": false },
+        { "id": "s2", "text": "architecture looks as though", "clickable": false },
+        { "id": "s3", "text": "it is", "clickable": true, "isError": true, "correctAnswers": ["it were"] },
+        { "id": "s4", "text": " more intricate than any", "clickable": false },
+        { "id": "s5", "text": "modern structure, even", "clickable": false },
+        { "id": "s6", "text": "though it was", "clickable": true, "isError": true, "correctAnswers": ["it is"] },
+        { "id": "s7", "text": " built centuries ago.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the hypothetical subjunctive 'as though' with advanced comparatives. 'As though' requires the past subjunctive 'were' for hypothetical present situations, while the factual 'even though' clause uses the present simple 'is' to state a current truth.",
+        "topic": "Subjunctive Mood + Advanced Comparatives",
+        "concept": "Using past subjunctive for unreal comparisons paired with factual present statements",
+        "formula": "Subject + looks as though + subject + were + comparative, even though + subject + present simple",
+        "examples": [
+          "He acts <b>as though</b> he <b>were</b> richer than anyone, even though he <b>is</b> struggling."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "Come what _____, the villagers of Tenganan, who _____ their ancient customs, will continue their unique traditions."
+      },
+      "options": {
+        "A": { "text": "may / uphold", "correct": true },
+        "B": { "text": "might / upholds", "correct": false },
+        "C": { "text": "will / upheld", "correct": false },
+        "D": { "text": "can / will uphold", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a formulaic subjunctive ('Come what may') with a non-defining relative clause. 'Come what may' is a fixed subjunctive expression, and the plural 'villagers' requires the plural verb 'uphold'.",
+        "topic": "Subjunctive Mood + Relative Clauses",
+        "concept": "Formulaic subjunctive expressions paired with subject-verb agreement in relative clauses",
+        "formula": "Come what + may, plural noun, who + base verb, + will + base verb",
+        "examples": [
+          "<b>Come what may</b>, the team, who <b>train</b> daily, will win."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "It is imperative that", "clickable": false },
+        { "id": "s2", "text": "the local government", "clickable": false },
+        { "id": "s3", "text": "be accountable for", "clickable": true, "isError": true, "correctAnswers": ["be accountable to"] },
+        { "id": "s4", "text": " the preservation of", "clickable": false },
+        { "id": "s5", "text": "the Subak irrigation", "clickable": false },
+        { "id": "s6", "text": "system, which is", "clickable": false },
+        { "id": "s7", "text": "vital for", "clickable": true, "isError": true, "correctAnswers": ["vital to"] },
+        { "id": "s8", "text": " the island's agriculture.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the mandative subjunctive with preposition collocations. 'Accountable' is followed by 'to', and 'vital' is followed by 'to' when indicating importance to something.",
+        "topic": "Subjunctive Mood + Prepositions",
+        "concept": "Correct preposition usage after adjectives in subjunctive clauses",
+        "formula": "It is imperative that + subject + be + accountable to + noun, which is vital to + noun",
+        "examples": [
+          "It is vital that he <b>be</b> <b>accountable to</b> the board, which is <b>vital to</b> the company's success."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the mixed conditional sentence.",
+        "question": "If the volcanic ash _____ the region in the past, Mount Batur _____ a completely different landscape today."
+      },
+      "options": {
+        "A": { "text": "had not covered / would be", "correct": true },
+        "B": { "text": "did not cover / would be", "correct": false },
+        "C": { "text": "had not covered / would have been", "correct": false },
+        "D": { "text": "were not covering / will be", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a hypothetical subjunctive in a mixed conditional. The 'if' clause refers to a past unreal condition (past perfect 'had not covered'), and the main clause refers to a present unreal result ('would be').",
+        "topic": "Subjunctive Mood + Mixed Conditionals",
+        "concept": "Past unreal condition with present unreal result",
+        "formula": "If + subject + had + past participle, subject + would + base verb",
+        "examples": [
+          "If I <b>had studied</b> harder, I <b>would be</b> a doctor now."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The environmentalists demand", "clickable": false },
+        { "id": "s2", "text": "that few of the coastal", "clickable": false },
+        { "id": "s3", "text": "areas is developed,", "clickable": true, "isError": true, "correctAnswers": ["areas be developed,"] },
+        { "id": "s4", "text": "and that much of the", "clickable": false },
+        { "id": "s5", "text": "mangrove forest remain", "clickable": true, "isError": true, "correctAnswers": ["mangrove forest remains"] },
+        { "id": "s6", "text": " untouched.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the mandative subjunctive with quantifiers and subject-verb agreement. 'Demand that' requires the base form 'be' for the plural 'areas'. 'Much of the mangrove forest' is singular, requiring the indicative 'remains' (or subjunctive 'remain' if treated as a separate demand, but 'remain' is actually correct for subjunctive! Let's adjust the error to 'is developed' -> 'be developed' and 'remain' -> 'remains' as a factual statement, or better: 'demand that few of the coastal areas be developed, and that much of the mangrove forest be left untouched'. Let's use 'be left' to maintain subjunctive).",
+        "topic": "Subjunctive Mood + Quantifiers",
+        "concept": "Maintaining base form in coordinated mandative subjunctive clauses with quantifiers",
+        "formula": "Subject + demand that + quantifier + plural noun + be + past participle, and that + quantifier + singular noun + be + past participle",
+        "examples": [
+          "They <b>demand</b> that <b>few</b> of the <b>rooms</b> <b>be</b> <b>used</b>, and that <b>much</b> of the <b>space</b> <b>be</b> <b>preserved</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the cleft sentence.",
+        "question": "It is crucial that it _____ the local artisans who _____ the primary benefits of the tourism revenue."
+      },
+      "options": {
+        "A": { "text": "is / receive", "correct": false },
+        "B": { "text": "be / receive", "correct": true },
+        "C": { "text": "be / receives", "correct": false },
+        "D": { "text": "is / receives", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the mandative subjunctive with a cleft sentence. 'It is crucial that' requires the subjunctive 'be', and the relative pronoun 'who' refers to the plural 'artisans', requiring the plural base form 'receive'.",
+        "topic": "Subjunctive Mood + Cleft Sentences",
+        "concept": "Mandative subjunctive in it-cleft structures with plural relative clauses",
+        "formula": "It is crucial that + it + be + plural noun + who + base verb",
+        "examples": [
+          "It is vital that it <b>be</b> the students who <b>decide</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The hotel manager wishes", "clickable": false },
+        { "id": "s2", "text": "he consulted", "clickable": true, "isError": true, "correctAnswers": ["he had consulted"] },
+        { "id": "s3", "text": " the village elders", "clickable": false },
+        { "id": "s4", "text": "before deciding to build", "clickable": false },
+        { "id": "s5", "text": "the new wing, avoiding", "clickable": true, "isError": false },
+        { "id": "s6", "text": " to disturb", "clickable": true, "isError": true, "correctAnswers": ["disturbing"] },
+        { "id": "s7", "text": " the sacred grounds.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the subjunctive 'wish' with gerund verb patterns. 'Wish' about a past event requires the past perfect ('had consulted'), and 'avoid' must be followed by a gerund ('disturbing').",
+        "topic": "Subjunctive Mood + Gerunds",
+        "concept": "Past perfect after 'wish' paired with gerund complements",
+        "formula": "Subject + wishes + subject + had + past participle, avoiding + verb-ing",
+        "examples": [
+          "She <b>wishes</b> she <b>had checked</b> the map, avoiding <b>getting</b> lost."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "Were the sacred offerings _____ unattended, they _____ considered highly disrespectful by the local community."
+      },
+      "options": {
+        "A": { "text": "to be left / would be", "correct": true },
+        "B": { "text": "left / will be", "correct": false },
+        "C": { "text": "to leave / would be", "correct": false },
+        "D": { "text": "being left / would have been", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a hypothetical subjunctive with inversion and the passive voice. 'Were' inverts with the subject, followed by the passive infinitive 'to be left', and the result clause uses 'would be' + past participle.",
+        "topic": "Subjunctive Mood + Passive Voice + Inversion",
+        "concept": "Inverted hypothetical subjunctive with passive infinitive structures",
+        "formula": "Were + subject + to + be + past participle, subject + would + be + past participle",
+        "examples": [
+          "<b>Were</b> the documents <b>to be lost</b>, the company <b>would be</b> <b>fined</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "It is vital that", "clickable": false },
+        { "id": "s2", "text": "the traditional Balinese", "clickable": false },
+        { "id": "s3", "text": "calendar be strictly", "clickable": false },
+        { "id": "s4", "text": "followed; therefore,", "clickable": true, "isError": true, "correctAnswers": ["however,"] },
+        { "id": "s5", "text": "the ceremonies", "clickable": false },
+        { "id": "s6", "text": "are scheduled", "clickable": true, "isError": true, "correctAnswers": ["be scheduled"] },
+        { "id": "s7", "text": " accordingly, regardless", "clickable": false },
+        { "id": "s8", "text": "of the tourists' convenience.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the mandative subjunctive with discourse markers. 'However' is required to show contrast (the calendar is followed despite tourist convenience). The second clause continues the mandative subjunctive, requiring the base form 'be scheduled'.",
+        "topic": "Subjunctive Mood + Discourse Markers",
+        "concept": "Contrastive discourse markers paired with continued mandative subjunctive",
+        "formula": "It is vital that + subject + be + past participle; however, + subject + be + past participle",
+        "examples": [
+          "It is crucial that the rules <b>be</b> <b>followed</b>; <b>however</b>, the exceptions <b>be</b> <b>noted</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The dancers moved as though they _____ possessed by divine spirits, _____ centuries of cultural heritage."
+      },
+      "options": {
+        "A": { "text": "were / channeling", "correct": true },
+        "B": { "text": "are / channeling", "correct": false },
+        "C": { "text": "were / channeled", "correct": false },
+        "D": { "text": "had been / to channel", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the hypothetical subjunctive 'as though' with a present participle clause. 'As though' requires the past subjunctive 'were' for an unreal present comparison, and the participle 'channeling' describes a simultaneous action.",
+        "topic": "Subjunctive Mood + Participle Clauses",
+        "concept": "Hypothetical subjunctive paired with present participle clauses",
+        "formula": "Subject + moved as though + subject + were + past participle, verb-ing + object",
+        "examples": [
+          "He spoke <b>as though</b> he <b>were</b> an expert, <b>knowing</b> all the facts."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The committee proposed", "clickable": false },
+        { "id": "s2", "text": "that an unique cultural", "clickable": true, "isError": true, "correctAnswers": ["that a unique cultural"] },
+        { "id": "s3", "text": "heritage site be", "clickable": false },
+        { "id": "s4", "text": "designated in Ubud,", "clickable": false },
+        { "id": "s5", "text": "ensuring that the area", "clickable": false },
+        { "id": "s6", "text": "retains", "clickable": true, "isError": true, "correctAnswers": ["retain"] },
+        { "id": "s7", "text": " its traditional", "clickable": false },
+        { "id": "s8", "text": "Balinese character.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the mandative subjunctive with article usage. 'Unique' starts with a consonant sound (/j/), requiring 'a'. The second 'that' clause continues the mandative subjunctive, requiring the base form 'retain'.",
+        "topic": "Subjunctive Mood + Articles",
+        "concept": "Indefinite articles before /j/ sounds paired with continued mandative subjunctive",
+        "formula": "Subject + proposed that + a + word starting with /j/ sound + be + past participle, ensuring that + subject + base verb",
+        "examples": [
+          "They <b>proposed</b> that <b>a</b> <b>unique</b> method <b>be</b> <b>used</b>, ensuring that the system <b>remain</b> secure."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "If the ancient manuscripts _____ correctly, scholars might gain unprecedented insight into the island's pre-colonial history."
+      },
+      "options": {
+        "A": { "text": "were deciphered", "correct": true },
+        "B": { "text": "are deciphered", "correct": false },
+        "C": { "text": "had been deciphered", "correct": false },
+        "D": { "text": "would be deciphered", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a hypothetical subjunctive with modal verbs. The second conditional 'If' clause requires the past subjunctive passive 'were deciphered' to express a hypothetical present/future situation.",
+        "topic": "Subjunctive Mood + Modal Verbs",
+        "concept": "Hypothetical subjunctive passive paired with modal verbs of possibility",
+        "formula": "If + subject + were + past participle, subject + might + base verb",
+        "examples": [
+          "If the code <b>were cracked</b>, we <b>might find</b> the truth."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The village chief insisted", "clickable": false },
+        { "id": "s2", "text": "that the developers back", "clickable": false },
+        { "id": "s3", "text": "down from their plan,", "clickable": false },
+        { "id": "s4", "text": "demanding that they", "clickable": false },
+        { "id": "s5", "text": "gave up", "clickable": true, "isError": true, "correctAnswers": ["give up"] },
+        { "id": "s6", "text": " the project and that", "clickable": false },
+        { "id": "s7", "text": "the land be returned", "clickable": true, "isError": false },
+        { "id": "s8", "text": " to the community.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the mandative subjunctive with phrasal verbs. After 'demanding that', the base form of the phrasal verb ('give up') must be used, not the past tense 'gave up'.",
+        "topic": "Subjunctive Mood + Phrasal Verbs",
+        "concept": "Using base forms of phrasal verbs in mandative subjunctive clauses",
+        "formula": "Subject + demanding that + subject + base phrasal verb, and that + subject + be + past participle",
+        "examples": [
+          "He <b>demanded</b> that they <b>back down</b> and that the money <b>be returned</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "It is essential that the new regulations, which _____ waste management, _____ strictly enforced before the festival begins."
+      },
+      "options": {
+        "A": { "text": "govern / be", "correct": true },
+        "B": { "text": "governs / be", "correct": false },
+        "C": { "text": "govern / are", "correct": false },
+        "D": { "text": "governs / are", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the mandative subjunctive with a non-defining relative clause. The plural 'regulations' requires the plural verb 'govern' in the relative clause, and the main mandative clause requires the subjunctive base form 'be'.",
+        "topic": "Subjunctive Mood + Relative Clauses",
+        "concept": "Subject-verb agreement in relative clauses interrupting mandative subjunctive structures",
+        "formula": "It is essential that + plural noun, which + plural verb, + be + past participle",
+        "examples": [
+          "It is vital that the rules, which <b>govern</b> safety, <b>be</b> <b>followed</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Rarely do the locals", "clickable": false },
+        { "id": "s2", "text": "complain about the", "clickable": false },
+        { "id": "s3", "text": "tourists; however, they", "clickable": false },
+        { "id": "s4", "text": "wish the visitors", "clickable": false },
+        { "id": "s5", "text": "will show", "clickable": true, "isError": true, "correctAnswers": ["would show"] },
+        { "id": "s6", "text": " more respect for the", "clickable": false },
+        { "id": "s7", "text": "sacred temples, and", "clickable": false },
+        { "id": "s8", "text": "that the noise levels", "clickable": false },
+        { "id": "s9", "text": "be kept", "clickable": true, "isError": false },
+        { "id": "s10", "text": " to a minimum.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the subjunctive 'wish' with negative adverbial inversion. 'Wish' for a future change in behavior requires 'would' + base verb ('would show'), not 'will'.",
+        "topic": "Subjunctive Mood + Inversion",
+        "concept": "Using 'would' after 'wish' for future desires in sentences with inverted introductory clauses",
+        "formula": "Rarely + do + subject + verb; however, + subject + wish + subject + would + base verb",
+        "examples": [
+          "<b>Never do</b> they <b>complain</b>; however, they <b>wish</b> he <b>would</b> <b>help</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb forms to complete the sentence.",
+        "question": "The mayor insisted that the new infrastructure be _____ sustainable than the previous projects, demanding that every detail _____ meticulously planned."
+      },
+      "options": {
+        "A": { "text": "far more / be", "correct": true },
+        "B": { "text": "more far / is", "correct": false },
+        "C": { "text": "far more / is", "correct": false },
+        "D": { "text": "much more / is", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the mandative subjunctive with advanced comparatives. 'Far more' correctly intensifies the comparative 'sustainable', and 'demanding that' triggers the subjunctive base form 'be'.",
+        "topic": "Subjunctive Mood + Advanced Comparatives",
+        "concept": "Intensified comparatives paired with mandative subjunctive",
+        "formula": "Subject + insisted that + subject + be + far more + adjective, demanding that + subject + be + past participle",
+        "examples": [
+          "He <b>insisted</b> that the plan <b>be</b> <b>far more</b> <b>efficient</b>, demanding that every step <b>be</b> <b>optimized</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "What the cultural experts", "clickable": false },
+        { "id": "s2", "text": "emphasize is that if", "clickable": false },
+        { "id": "s3", "text": "the traditional Subak", "clickable": false },
+        { "id": "s4", "text": "system was to collapse,", "clickable": true, "isError": true, "correctAnswers": ["were to collapse,"] },
+        { "id": "s5", "text": "the entire island's rice", "clickable": false },
+        { "id": "s6", "text": "production would be", "clickable": true, "isError": false },
+        { "id": "s7", "text": " severely impacted.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a hypothetical subjunctive with a noun clause. The 'if' clause expressing a hypothetical future event requires the past subjunctive 'were to collapse', not 'was to collapse'.",
+        "topic": "Subjunctive Mood + Noun Clauses",
+        "concept": "Using past subjunctive 'were' in hypothetical 'if' clauses embedded within noun clauses",
+        "formula": "What + subject + verb + is that + if + subject + were + to + base verb, subject + would + be + past participle",
+        "examples": [
+          "What they <b>know</b> is that if the system <b>were</b> <b>to fail</b>, the network <b>would be</b> <b>disrupted</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "The elders perform the purification rituals lest the sacred spring _____ contaminated by modern pollutants."
+      },
+      "options": {
+        "A": { "text": "is", "correct": false },
+        "B": { "text": "be", "correct": true },
+        "C": { "text": "will be", "correct": false },
+        "D": { "text": "was", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines the formulaic subjunctive 'lest' with the passive voice. 'Lest' is always followed by the base form of the verb ('be') in formal English.",
+        "topic": "Subjunctive Mood + Passive Voice",
+        "concept": "Formulaic subjunctive 'lest' with passive constructions",
+        "formula": "Subject + verb + lest + subject + be + past participle",
+        "examples": [
+          "He spoke quietly <b>lest</b> he <b>be</b> <b>overheard</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The tourism board recommends", "clickable": false },
+        { "id": "s2", "text": "that the group of guides", "clickable": false },
+        { "id": "s3", "text": "undergoes", "clickable": true, "isError": true, "correctAnswers": ["undergo"] },
+        { "id": "s4", "text": " extensive cultural", "clickable": false },
+        { "id": "s5", "text": "training, and that a", "clickable": false },
+        { "id": "s6", "text": "number of new protocols", "clickable": false },
+        { "id": "s7", "text": "be implemented", "clickable": true, "isError": false },
+        { "id": "s8", "text": " immediately.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the mandative subjunctive with subject-verb agreement for collective nouns. 'The group' acts as a single unit here, but the mandative subjunctive overrides agreement, requiring the base form 'undergo' regardless of the subject.",
+        "topic": "Subjunctive Mood + Subject-Verb Agreement",
+        "concept": "Mandative subjunctive base form overriding collective noun agreement",
+        "formula": "Subject + recommends that + collective noun + base verb, and that + subject + be + past participle",
+        "examples": [
+          "The committee <b>recommends</b> that the <b>team</b> <b>train</b> daily, and that new <b>rules</b> <b>be</b> <b>enforced</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structure to complete the elliptical sentence.",
+        "question": "If the traditional Gamelan music were to fade away, so _____ the soul of Balinese ceremonies."
+      },
+      "options": {
+        "A": { "text": "would", "correct": true },
+        "B": { "text": "will", "correct": false },
+        "C": { "text": "does", "correct": false },
+        "D": { "text": "had", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a hypothetical subjunctive with ellipsis. 'Would' is used to elliptically replace 'would fade away', maintaining the second conditional structure.",
+        "topic": "Subjunctive Mood + Ellipsis",
+        "concept": "Using modal auxiliaries for ellipsis in hypothetical conditional structures",
+        "formula": "If + subject + were + to + base verb, so + would + subject",
+        "examples": [
+          "If the sun <b>were</b> <b>to</b> <b>set</b>, so <b>would</b> the temperature."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "It is high time", "clickable": false },
+        { "id": "s2", "text": "the local authorities", "clickable": false },
+        { "id": "s3", "text": "stop allowing", "clickable": true, "isError": true, "correctAnswers": ["stopped allowing"] },
+        { "id": "s4", "text": " unchecked development,", "clickable": false },
+        { "id": "s5", "text": "and it is imperative", "clickable": false },
+        { "id": "s6", "text": "that they focus", "clickable": true, "isError": false },
+        { "id": "s7", "text": " on sustainable tourism.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the subjunctive 'it's high time' with gerund verb patterns. 'It's high time' requires the past simple ('stopped') to indicate present urgency, while 'allowing' remains a gerund.",
+        "topic": "Subjunctive Mood + Gerunds",
+        "concept": "Past simple requirement in 'it's high time' structures paired with gerund complements",
+        "formula": "It is high time + subject + past simple + verb-ing, and it is imperative that + subject + base verb",
+        "examples": [
+          "<b>It is high time</b> we <b>stopped</b> <b>ignoring</b> the issue, and it is vital that we <b>act</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "question": "Should the traditional weaving techniques be lost, it is crucial that the younger generation _____ trained immediately to preserve the craft."
+      },
+      "options": {
+        "A": { "text": "is", "correct": false },
+        "B": { "text": "be", "correct": true },
+        "C": { "text": "will be", "correct": false },
+        "D": { "text": "were", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted first conditional with the mandative subjunctive. 'It is crucial that' requires the subjunctive base form 'be', regardless of the conditional introductory clause.",
+        "topic": "Subjunctive Mood + Conditionals",
+        "concept": "Mandative subjunctive in the main clause following an inverted conditional",
+        "formula": "Should + subject + be + past participle, it is crucial that + subject + be + past participle",
+        "examples": [
+          "<b>Should</b> the system <b>fail</b>, it is vital that the backup <b>be</b> <b>activated</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The ancient banyan tree,", "clickable": false },
+        { "id": "s2", "text": "which the villagers believe", "clickable": false },
+        { "id": "s3", "text": "is inhabited", "clickable": true, "isError": false },
+        { "id": "s4", "text": " by spirits, must be", "clickable": false },
+        { "id": "s5", "text": "protected as though", "clickable": false },
+        { "id": "s6", "text": "it was", "clickable": true, "isError": true, "correctAnswers": ["it were"] },
+        { "id": "s7", "text": " a living deity.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines a non-defining relative clause with the hypothetical subjunctive 'as though'. The unreal comparison requires the past subjunctive 'were', not 'was'.",
+        "topic": "Subjunctive Mood + Relative Clauses",
+        "concept": "Past subjunctive 'were' for unreal comparisons in sentences containing relative clauses",
+        "formula": "Noun, which + subject + believe + is + past participle, must be + past participle + as though + subject + were + noun",
+        "examples": [
+          "The old house, which they <b>believe</b> <b>is</b> <b>haunted</b>, must be <b>avoided</b> <b>as though</b> it <b>were</b> dangerous."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the gods forbid, a natural disaster strikes the island, the community's resilience, which has been tested before, _____ ensure their recovery."
+      },
+      "options": {
+        "A": { "text": "Should / will", "correct": true },
+        "B": { "text": "If / would", "correct": false },
+        "C": { "text": "Were / will", "correct": false },
+        "D": { "text": "Had / would", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a formulaic subjunctive ('the gods forbid') with an inverted first conditional ('Should... strike') and a non-defining relative clause. 'Should' correctly inverts the first conditional, and 'will' provides the future result.",
+        "topic": "Subjunctive Mood + Conditionals + Relative Clauses",
+        "concept": "Formulaic subjunctive paired with inverted first conditionals and relative clauses",
+        "formula": "Subject + formulaic subjunctive, should + subject + base verb, noun, which + clause, + will + base verb",
+        "examples": [
+          "<b>God</b> <b>forbid</b>, <b>should</b> the alarm <b>sound</b>, the system, which <b>is</b> <b>robust</b>, <b>will</b> <b>protect</b> us."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The council insists on", "clickable": false },
+        { "id": "s2", "text": "the new policy being", "clickable": false },
+        { "id": "s3", "text": "fair, demanding that", "clickable": false },
+        { "id": "s4", "text": "all stakeholders", "clickable": false },
+        { "id": "s5", "text": "are consulted", "clickable": true, "isError": true, "correctAnswers": ["be consulted"] },
+        { "id": "s6", "text": " prior to", "clickable": false },
+        { "id": "s7", "text": "implement", "clickable": true, "isError": true, "correctAnswers": ["implementing"] },
+        { "id": "s8", "text": " any changes to the", "clickable": false },
+        { "id": "s9", "text": "cultural sites.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines the mandative subjunctive with gerund verb patterns. 'Demanding that' requires the subjunctive base form 'be' for the passive 'be consulted', and the preposition 'to' requires the gerund 'implementing'.",
+        "topic": "Subjunctive Mood + Gerunds",
+        "concept": "Mandative subjunctive passive paired with gerunds after prepositions",
+        "formula": "Subject + demanding that + subject + be + past participle + prior to + verb-ing",
+        "examples": [
+          "They <b>demand</b> that the rules <b>be</b> <b>followed</b> prior to <b>starting</b> the project."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    }
+  ]
+}

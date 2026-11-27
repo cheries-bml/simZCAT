@@ -1,0 +1,916 @@
+{
+  "meta": {
+    "title": "Inverted Conditionals",
+    "description": "A comprehensive test covering English Inverted Conditionals themed around Korean Dramas.",
+    "info": "This test includes 30 questions focusing on combined C1-C2 level grammar structures, primarily featuring Inverted Conditionals (mixed, third, second, first) paired with other complex topics like passive voice, relative clauses, participle clauses, and gerunds.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the script not been leaked online, the drama _____ its suspense until the finale."
+      },
+      "options": {
+        "A": { "text": "If / would maintain", "correct": false },
+        "B": { "text": "Had / would have maintained", "correct": true },
+        "C": { "text": "Should / will maintain", "correct": false },
+        "D": { "text": "Were / would maintain", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted third conditional ('Had the script not been leaked') with a passive voice structure and a third conditional result clause ('would have maintained').",
+        "topic": "Inverted Conditionals + Passive Voice",
+        "concept": "Inverted third conditionals with passive voice in the condition clause",
+        "formula": "Had + subject + not + been + past participle, subject + would have + past participle",
+        "examples": [
+          "<b>Had</b> the evidence <b>not been</b> <b>destroyed</b>, the case <b>would have been</b> <b>solved</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 2,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Were the lead actor,", "clickable": false },
+        { "id": "s2", "text": "who have won", "clickable": true, "isError": true, "correctAnswers": ["who has won"] },
+        { "id": "s3", "text": " multiple awards,", "clickable": false },
+        { "id": "s4", "text": "to leaves", "clickable": true, "isError": true, "correctAnswers": ["to leave"] },
+        { "id": "s5", "text": " the project,", "clickable": false },
+        { "id": "s6", "text": "the ratings", "clickable": true, "isError": false },
+        { "id": "s7", "text": "would drop", "clickable": true, "isError": false },
+        { "id": "s8", "text": " significantly.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an inverted second conditional with a non-defining relative clause. The singular noun 'actor' requires the singular verb 'has won', and the infinitive 'to' must be followed by the base verb 'leave'.",
+        "topic": "Inverted Conditionals + Relative Clauses",
+        "concept": "Subject-verb agreement in relative clauses within inverted conditional structures",
+        "formula": "Were + singular noun, who + has + past participle, + to + base verb, subject + would + base verb",
+        "examples": [
+          "<b>Were</b> the director, who <b>has</b> <b>guided</b> many hits, <b>to resign</b>, the project <b>would stall</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the viewership fall below ten percent, the broadcasting network _____ the series immediately."
+      },
+      "options": {
+        "A": { "text": "Should / might cancel", "correct": true },
+        "B": { "text": "If / would have canceled", "correct": false },
+        "C": { "text": "Were / might have canceled", "correct": false },
+        "D": { "text": "Had / will cancel", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted first conditional ('Should the viewership fall') with a modal verb of possibility ('might cancel') in the main clause.",
+        "topic": "Inverted Conditionals + Modal Verbs",
+        "concept": "Inverted first conditionals paired with modal verbs of possibility",
+        "formula": "Should + subject + base verb, subject + might + base verb",
+        "examples": [
+          "<b>Should</b> the weather <b>deteriorate</b>, the event <b>might be</b> <b>postponed</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 4,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Had the director", "clickable": false },
+        { "id": "s2", "text": "avoided to cast", "clickable": true, "isError": true, "correctAnswers": ["avoided casting"] },
+        { "id": "s3", "text": " the inexperienced rookie,", "clickable": false },
+        { "id": "s4", "text": "the drama", "clickable": false },
+        { "id": "s5", "text": "would have succeeded", "clickable": true, "isError": false },
+        { "id": "s6", "text": " at the awards.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an inverted third conditional with gerund verb patterns. The verb 'avoid' must be followed by a gerund ('casting'), not a to-infinitive.",
+        "topic": "Inverted Conditionals + Gerunds vs. Infinitives",
+        "concept": "Gerund complements following specific verbs in inverted conditional clauses",
+        "formula": "Had + subject + avoided + verb-ing, subject + would have + past participle",
+        "examples": [
+          "<b>Had</b> they <b>avoided provoking</b> the audience, the show <b>would have survived</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the OST, _____ the charts, to be removed from the soundtrack, the drama would lose much of its emotional impact."
+      },
+      "options": {
+        "A": { "text": "Were / having topped", "correct": true },
+        "B": { "text": "If / having topped", "correct": false },
+        "C": { "text": "Were / to have topped", "correct": false },
+        "D": { "text": "Should / topping", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted second conditional ('Were the OST... to be removed') with a perfect participle clause ('having topped') providing additional context.",
+        "topic": "Inverted Conditionals + Participle Clauses",
+        "concept": "Inverted second conditionals containing perfect participle clauses",
+        "formula": "Were + subject, having + past participle, + to + be + past participle, subject + would + base verb",
+        "examples": [
+          "<b>Were</b> the policy, <b>having been</b> <b>debated</b> for months, <b>to be</b> <b>rejected</b>, chaos would ensue."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Had little of", "clickable": true, "isError": true, "correctAnswers": ["Had few of"] },
+        { "id": "s2", "text": " the episodes", "clickable": false },
+        { "id": "s3", "text": "been delayed", "clickable": true, "isError": false },
+        { "id": "s4", "text": " by production issues,", "clickable": false },
+        { "id": "s5", "text": "the series", "clickable": false },
+        { "id": "s6", "text": "would have concluded", "clickable": true, "isError": false },
+        { "id": "s7", "text": " on schedule.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an inverted third conditional with quantifiers. 'Episodes' is a countable plural noun, requiring the quantifier 'few', not 'little' (which is used for uncountable nouns).",
+        "topic": "Inverted Conditionals + Quantifiers",
+        "concept": "Countable quantifiers in inverted third conditional clauses",
+        "formula": "Had + few + of + plural countable noun + been + past participle, subject + would have + past participle",
+        "examples": [
+          "<b>Had</b> <b>few</b> of the <b>supplies</b> <b>been</b> <b>lost</b>, the expedition <b>would have succeeded</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "It was the unexpected plot twist that, _____, would have shocked the audience even more."
+      },
+      "options": {
+        "A": { "text": "had it not been spoiled", "correct": true },
+        "B": { "text": "if it has not been spoiled", "correct": false },
+        "C": { "text": "should it not be spoiled", "correct": false },
+        "D": { "text": "were it not spoiled", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines a mixed conditional with a cleft sentence. The inverted third conditional ('had it not been spoiled') is embedded within the cleft structure to emphasize the subject.",
+        "topic": "Inverted Conditionals + Cleft Sentences",
+        "concept": "Embedding inverted third conditionals within it-cleft structures",
+        "formula": "It + was + noun + that, + had + subject + not + been + past participle, + would have + past participle",
+        "examples": [
+          "<b>It was</b> the evidence <b>that</b>, <b>had it not been</b> <b>suppressed</b>, <b>would have changed</b> the verdict."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 8,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Were the producer", "clickable": false },
+        { "id": "s2", "text": "oblivious for", "clickable": true, "isError": true, "correctAnswers": ["oblivious to"] },
+        { "id": "s3", "text": " the growing controversy,", "clickable": false },
+        { "id": "s4", "text": "he would continue", "clickable": true, "isError": false },
+        { "id": "s5", "text": " the broadcast", "clickable": false },
+        { "id": "s6", "text": "without hesitation.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an inverted second conditional with preposition collocations. The adjective 'oblivious' is strictly followed by the preposition 'to', not 'for'.",
+        "topic": "Inverted Conditionals + Prepositions",
+        "concept": "Correct preposition usage after adjectives in inverted conditional clauses",
+        "formula": "Were + subject + oblivious to + noun, subject + would + base verb",
+        "examples": [
+          "<b>Were</b> he <b>oblivious to</b> the risks, he <b>would proceed</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the script been fundamentally flawed; _____, the stellar acting would have saved the drama from cancellation."
+      },
+      "options": {
+        "A": { "text": "If / therefore", "correct": false },
+        "B": { "text": "Had / however", "correct": true },
+        "C": { "text": "Should / furthermore", "correct": false },
+        "D": { "text": "Were / consequently", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted third conditional ('Had the script been') with a contrastive discourse marker ('however') to show opposition to the expected outcome.",
+        "topic": "Inverted Conditionals + Discourse Markers",
+        "concept": "Using contrastive discourse markers with inverted third conditionals",
+        "formula": "Had + subject + been + past participle; however, + subject + would have + past participle",
+        "examples": [
+          "<b>Had</b> the plan <b>been</b> <b>flawed</b>; <b>however</b>, the team <b>would have</b> <b>adapted</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 10,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Should the network", "clickable": false },
+        { "id": "s2", "text": "decide to call of", "clickable": true, "isError": true, "correctAnswers": ["call off"] },
+        { "id": "s3", "text": " the live broadcast,", "clickable": false },
+        { "id": "s4", "text": "the fans", "clickable": false },
+        { "id": "s5", "text": "will protest", "clickable": true, "isError": false },
+        { "id": "s6", "text": " outside the studio.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an inverted first conditional with phrasal verbs. The correct phrasal verb meaning 'to cancel' is 'call off', not 'call of'.",
+        "topic": "Inverted Conditionals + Phrasal Verbs",
+        "concept": "Using correct phrasal verbs in inverted first conditional structures",
+        "formula": "Should + subject + base verb + phrasal verb, subject + will + base verb",
+        "examples": [
+          "<b>Should</b> they <b>call off</b> the event, we <b>will demand</b> a refund."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ neither of the main actors signed the initial contract, the entire production _____ immediately."
+      },
+      "options": {
+        "A": { "text": "If / would be halted", "correct": false },
+        "B": { "text": "Had / would have been halted", "correct": true },
+        "C": { "text": "Should / will be halted", "correct": false },
+        "D": { "text": "Were / would have halted", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted third conditional with subject-verb agreement and passive voice. 'Neither' is singular, but the focus here is the inverted third conditional passive structure 'would have been halted'.",
+        "topic": "Inverted Conditionals + Passive Voice",
+        "concept": "Inverted third conditionals with passive voice in the result clause",
+        "formula": "Had + subject + past participle, subject + would have + been + past participle",
+        "examples": [
+          "<b>Had</b> the agreement <b>failed</b>, the merger <b>would have been</b> <b>canceled</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Were the drama", "clickable": false },
+        { "id": "s2", "text": "to be a massive", "clickable": true, "isError": false },
+        { "id": "s3", "text": "hit, the cast", "clickable": false },
+        { "id": "s4", "text": "would be", "clickable": true, "isError": false },
+        { "id": "s5", "text": "celebrated, and", "clickable": false },
+        { "id": "s6", "text": "the staff would", "clickable": false },
+        { "id": "s7", "text": "too.", "clickable": true, "isError": true, "correctAnswers": ["would be too."] }
+      ],
+      "explanation": {
+        "text": "This combines an inverted second conditional with ellipsis. In parallel structures, the auxiliary 'be' must be retained to correctly elliptically replace 'would be celebrated'.",
+        "topic": "Inverted Conditionals + Ellipsis",
+        "concept": "Maintaining auxiliary verbs in elliptical parallel structures",
+        "formula": "Were + subject + to + be + adjective, subject + would + be + adjective, and + subject + would + be + too",
+        "examples": [
+          "<b>Were</b> the plan <b>to be</b> <b>successful</b>, the managers <b>would be</b> <b>promoted</b>, and the staff <b>would be</b> too."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the writer not suffered from severe burnout, the final episodes _____ much more cohesive."
+      },
+      "options": {
+        "A": { "text": "If / might have been", "correct": false },
+        "B": { "text": "Had / might have been", "correct": true },
+        "C": { "text": "Should / might be", "correct": false },
+        "D": { "text": "Were / might have been", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted third conditional ('Had the writer not suffered') with a modal perfect in the result clause ('might have been') to express a past possibility.",
+        "topic": "Inverted Conditionals + Modal Verbs",
+        "concept": "Inverted third conditionals paired with modal perfects for past possibility",
+        "formula": "Had + subject + not + past participle, subject + might + have + been + adjective",
+        "examples": [
+          "<b>Had</b> the storm <b>not</b> <b>hit</b>, the flight <b>might have been</b> <b>on time</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 14,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "What surprised", "clickable": false },
+        { "id": "s2", "text": "the critics was", "clickable": false },
+        { "id": "s3", "text": "that, had the", "clickable": false },
+        { "id": "s4", "text": "drama not been", "clickable": false },
+        { "id": "s5", "text": "so predictable,", "clickable": false },
+        { "id": "s6", "text": "it would of", "clickable": true, "isError": true, "correctAnswers": ["it would have"] },
+        { "id": "s7", "text": " won multiple", "clickable": true, "isError": false },
+        { "id": "s8", "text": " awards.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an inverted third conditional embedded in a noun clause. The modal 'would' must be followed by 'have', not the preposition 'of'.",
+        "topic": "Inverted Conditionals + Noun Clauses",
+        "concept": "Correct modal perfect formation in noun clauses containing inverted conditionals",
+        "formula": "What + past simple + was that, + had + subject + not + been + adjective, + subject + would + have + past participle",
+        "examples": [
+          "What shocked me was that, <b>had</b> the evidence <b>not been</b> <b>faked</b>, he <b>would have</b> <b>won</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the production budget larger, the CGI effects _____ far more impressive than they currently are."
+      },
+      "options": {
+        "A": { "text": "If / would be", "correct": false },
+        "B": { "text": "Were / would be", "correct": true },
+        "C": { "text": "Had / would have been", "correct": false },
+        "D": { "text": "Should / will be", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted second conditional ('Were the production budget larger') with an advanced comparative structure in the result clause.",
+        "topic": "Inverted Conditionals + Advanced Comparatives",
+        "concept": "Inverted second conditionals paired with 'far more' comparative structures",
+        "formula": "Were + subject + adjective, subject + would be + far more + adjective + than + clause",
+        "examples": [
+          "<b>Were</b> the funding <b>greater</b>, the research <b>would be</b> <b>far more</b> <b>comprehensive</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Should the drama", "clickable": false },
+        { "id": "s2", "text": "be always", "clickable": true, "isError": true, "correctAnswers": ["always be"] },
+        { "id": "s3", "text": " broadcast on", "clickable": false },
+        { "id": "s4", "text": "Fridays, it", "clickable": false },
+        { "id": "s5", "text": "will consistently", "clickable": true, "isError": false },
+        { "id": "s6", "text": " attract a", "clickable": false },
+        { "id": "s7", "text": "younger audience.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an inverted first conditional with adverb placement. Adverbs of frequency like 'always' are typically placed between the auxiliary 'be' and the main verb (or past participle), so 'always be broadcast' is the standard order.",
+        "topic": "Inverted Conditionals + Adverb Placement",
+        "concept": "Correct positioning of frequency adverbs in inverted conditional structures",
+        "formula": "Should + subject + always + be + past participle, subject + will + adverb + base verb",
+        "examples": [
+          "<b>Should</b> the system <b>always be</b> <b>updated</b>, it <b>will</b> <b>remain</b> secure."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the original webtoon, the fans _____ less shocked had they not been warned about the adaptation changes."
+      },
+      "options": {
+        "A": { "text": "Having read / would have been", "correct": true },
+        "B": { "text": "Reading / would be", "correct": false },
+        "C": { "text": "Having been read / would have been", "correct": false },
+        "D": { "text": "To have read / would be", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted third conditional with a perfect active participle clause. 'Having read' indicates an action completed by the subject before the conditional past event.",
+        "topic": "Inverted Conditionals + Participle Clauses",
+        "concept": "Perfect active participles introducing inverted third conditional sentences",
+        "formula": "Having + past participle + object, subject + would have + been + past participle + had + subject + not + been + past participle",
+        "examples": [
+          "<b>Having studied</b> the manual, they <b>would have</b> <b>succeeded</b> <b>had</b> the equipment <b>not</b> <b>failed</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Were the villain", "clickable": false },
+        { "id": "s2", "text": "to act as though", "clickable": false },
+        { "id": "s3", "text": "he know", "clickable": true, "isError": true, "correctAnswers": ["he knew"] },
+        { "id": "s4", "text": " the hero's", "clickable": false },
+        { "id": "s5", "text": "true identity,", "clickable": false },
+        { "id": "s6", "text": "the narrative", "clickable": false },
+        { "id": "s7", "text": "tension would", "clickable": true, "isError": false },
+        { "id": "s8", "text": "be palpable.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an inverted second conditional with an unreal comparison using 'as though'. The hypothetical situation requires the past subjunctive 'knew', not the present 'know'.",
+        "topic": "Inverted Conditionals + As Though / As If",
+        "concept": "Using past subjunctive for unreal comparisons within inverted second conditionals",
+        "formula": "Were + subject + to + base verb + as though + subject + past simple, subject + would + be + adjective",
+        "examples": [
+          "<b>Were</b> he <b>to</b> <b>speak</b> <b>as though</b> he <b>knew</b> the truth, the room <b>would fall</b> silent."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "The director, _____ vision had been compromised by the studio, _____ had the producers not issued a formal apology."
+      },
+      "options": {
+        "A": { "text": "whose / would have resigned", "correct": true },
+        "B": { "text": "who / would resign", "correct": false },
+        "C": { "text": "whose / would resign", "correct": false },
+        "D": { "text": "who / would have resigned", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted third conditional with a possessive relative clause. 'Whose' correctly indicates possession, and the inverted condition requires the third conditional result 'would have resigned'.",
+        "topic": "Inverted Conditionals + Relative Clauses",
+        "concept": "Possessive relative pronouns embedded in inverted third conditional sentences",
+        "formula": "Noun, whose + noun + had + been + past participle, + would have + past participle + had + subject + not + past participle",
+        "examples": [
+          "The CEO, <b>whose</b> <b>authority</b> <b>had been</b> <b>undermined</b>, <b>would have</b> <b>quit</b> <b>had</b> the board <b>not</b> <b>apologized</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Should any of", "clickable": false },
+        { "id": "s2", "text": "the scenes be", "clickable": true, "isError": false },
+        { "id": "s3", "text": "deemed inappropriate,", "clickable": false },
+        { "id": "s4", "text": "they will be", "clickable": true, "isError": false },
+        { "id": "s5", "text": "edit before", "clickable": true, "isError": true, "correctAnswers": ["edited before"] },
+        { "id": "s6", "text": "the official", "clickable": false },
+        { "id": "s7", "text": "broadcast.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an inverted first conditional with the passive voice. The passive structure requires 'be' + past participle ('edited'), not the base form 'edit'.",
+        "topic": "Inverted Conditionals + Passive Voice",
+        "concept": "Forming the passive voice correctly in inverted first conditional result clauses",
+        "formula": "Should + subject + be + past participle, subject + will + be + past participle",
+        "examples": [
+          "<b>Should</b> the documents <b>be</b> <b>found</b>, they <b>will be</b> <b>returned</b> immediately."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the network considered renewing the show, they _____ the second season right now."
+      },
+      "options": {
+        "A": { "text": "If / would film", "correct": false },
+        "B": { "text": "Had / would be filming", "correct": true },
+        "C": { "text": "Should / will be filming", "correct": false },
+        "D": { "text": "Were / would have filmed", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted mixed conditional (past condition, present result) with a gerund verb pattern. 'Had the network considered' pairs with 'would be filming' to show a present ongoing result of a past unreal condition.",
+        "topic": "Inverted Conditionals + Mixed Tenses",
+        "concept": "Inverted mixed conditionals showing present continuous results of past unreal conditions",
+        "formula": "Had + subject + past participle, subject + would + be + verb-ing",
+        "examples": [
+          "<b>Had</b> they <b>invested</b> earlier, they <b>would be</b> <b>profiting</b> now."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Not only the lead", "clickable": true, "isError": true, "correctAnswers": ["Not only had the lead"] },
+        { "id": "s2", "text": "actress forgotten", "clickable": true, "isError": true, "correctAnswers": ["actress forgotten"] },
+        { "id": "s3", "text": " her lines,", "clickable": false },
+        { "id": "s4", "text": "but the crew", "clickable": false },
+        { "id": "s5", "text": "had also failed", "clickable": true, "isError": false },
+        { "id": "s6", "text": "to cue the", "clickable": false },
+        { "id": "s7", "text": "background music.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an inverted third conditional structure with 'not only... but also'. 'Not only' at the beginning of a clause requires subject-auxiliary inversion ('Not only had the lead actress forgotten').",
+        "topic": "Inverted Conditionals + Not Only ... But Also",
+        "concept": "Subject-auxiliary inversion with 'not only' in past perfect structures",
+        "formula": "Not only + had + subject + past participle, but + subject + had + also + past participle",
+        "examples": [
+          "<b>Not only had</b> the system <b>crashed</b>, but the backup <b>had</b> also <b>failed</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the drama to be adapted into a feature film, the original cast _____ highly favored to reprise their roles."
+      },
+      "options": {
+        "A": { "text": "If / will be", "correct": false },
+        "B": { "text": "Were / would be", "correct": true },
+        "C": { "text": "Should / would have been", "correct": false },
+        "D": { "text": "Had / will be", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted second conditional ('Were the drama to be adapted') with a passive voice result clause ('would be highly favored').",
+        "topic": "Inverted Conditionals + Passive Voice",
+        "concept": "Inverted second conditionals with passive infinitive structures and passive results",
+        "formula": "Were + subject + to + be + past participle, subject + would + be + past participle",
+        "examples": [
+          "<b>Were</b> the law <b>to be</b> <b>amended</b>, the penalties <b>would be</b> <b>increased</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Had the drama", "clickable": false },
+        { "id": "s2", "text": "won an unique", "clickable": true, "isError": true, "correctAnswers": ["won a unique"] },
+        { "id": "s3", "text": " international award,", "clickable": false },
+        { "id": "s4", "text": "the cast", "clickable": false },
+        { "id": "s5", "text": "would have", "clickable": true, "isError": false },
+        { "id": "s6", "text": "celebrated", "clickable": true, "isError": false },
+        { "id": "s7", "text": " wildly.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an inverted third conditional with article usage. 'Unique' starts with a consonant sound (/j/), so it correctly takes the indefinite article 'a', not 'an'.",
+        "topic": "Inverted Conditionals + Articles",
+        "concept": "Indefinite articles before words starting with a /j/ sound in conditional contexts",
+        "formula": "Had + subject + past participle + a + word starting with /j/ sound, subject + would have + past participle",
+        "examples": [
+          "<b>Had</b> the project <b>received</b> <b>a</b> <b>unique</b> grant, it <b>would have</b> <b>expanded</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 4,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "_____ the ratings continue to rise, the network _____ a lucrative sponsorship deal by the end of the quarter."
+      },
+      "options": {
+        "A": { "text": "If / will secure", "correct": false },
+        "B": { "text": "Should / will have secured", "correct": true },
+        "C": { "text": "Were / would have secured", "correct": false },
+        "D": { "text": "Had / will secure", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted first conditional ('Should the ratings continue') with the future perfect tense ('will have secured') to indicate an action completed before a future time.",
+        "topic": "Inverted Conditionals + Future Perfect",
+        "concept": "Inverted first conditionals paired with future perfect result clauses",
+        "formula": "Should + subject + base verb, subject + will + have + past participle + by + future time",
+        "examples": [
+          "<b>Should</b> sales <b>increase</b>, the company <b>will have</b> <b>met</b> its target by December."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Were the writers", "clickable": false },
+        { "id": "s2", "text": "to introduce a", "clickable": false },
+        { "id": "s3", "text": "new character,", "clickable": false },
+        { "id": "s4", "text": "it is high time", "clickable": false },
+        { "id": "s5", "text": "they resolve", "clickable": true, "isError": true, "correctAnswers": ["they resolved"] },
+        { "id": "s6", "text": " the existing", "clickable": false },
+        { "id": "s7", "text": "plot holes.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an inverted second conditional with the 'it's high time' structure. 'It's high time' requires the past subjunctive ('resolved') to indicate present urgency.",
+        "topic": "Inverted Conditionals + It's High Time",
+        "concept": "Past subjunctive requirement in 'it's high time' structures following conditional clauses",
+        "formula": "Were + subject + to + base verb, it is high time + subject + past simple",
+        "examples": [
+          "<b>Were</b> they <b>to</b> <b>expand</b>, <b>it is high time</b> we <b>upgraded</b> the servers."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "Little did the audience know that, _____ the actor not insisted on the role, the character _____ out of the script entirely."
+      },
+      "options": {
+        "A": { "text": "if / would be written", "correct": false },
+        "B": { "text": "had / would have been written", "correct": true },
+        "C": { "text": "should / will be written", "correct": false },
+        "D": { "text": "were / would have been written", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines an inverted third conditional embedded within a noun clause following 'Little did... know'. 'Had the actor not insisted' pairs with the third conditional passive 'would have been written'.",
+        "topic": "Inverted Conditionals + Noun Clauses + Passive Voice",
+        "concept": "Embedding inverted third conditional passive structures within past tense noun clauses",
+        "formula": "Little + did + subject + know + that, + had + subject + not + past participle, + subject + would have + been + past participle",
+        "examples": [
+          "<b>Little did</b> they <b>know</b> that, <b>had</b> the signal <b>not</b> <b>failed</b>, the message <b>would have been</b> <b>sent</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Under no circumstances", "clickable": false },
+        { "id": "s2", "text": "the spoilers should", "clickable": true, "isError": true, "correctAnswers": ["should the spoilers"] },
+        { "id": "s3", "text": " be shared online,", "clickable": false },
+        { "id": "s4", "text": "or the network", "clickable": false },
+        { "id": "s5", "text": "will issue", "clickable": true, "isError": false },
+        { "id": "s6", "text": " a strict", "clickable": false },
+        { "id": "s7", "text": "warning.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an inverted first conditional structure with negative adverbial inversion. 'Under no circumstances' at the beginning of a clause requires subject-auxiliary inversion ('should the spoilers be').",
+        "topic": "Inverted Conditionals + Negative Adverbial Inversion",
+        "concept": "Subject-auxiliary inversion with negative phrases in conditional warnings",
+        "formula": "Under no circumstances + should + subject + be + past participle, or + subject + will + base verb",
+        "examples": [
+          "<b>Under no circumstances should</b> the data <b>be</b> <b>leaked</b>, or the company <b>will</b> <b>sue</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct structures to complete the sentence.",
+        "question": "So compelling _____ the on-screen chemistry that, _____ they not been contractually bound to other projects, they would be dating in real life."
+      },
+      "options": {
+        "A": { "text": "was / had", "correct": true },
+        "B": { "text": "were / should", "correct": false },
+        "C": { "text": "is / had", "correct": false },
+        "D": { "text": "was / should", "correct": false }
+      },
+      "explanation": {
+        "text": "This combines 'so + adjective' inversion with an inverted mixed conditional. 'Was' inverts with the singular subject 'chemistry', and 'had' introduces the past unreal condition for a present result ('would be dating').",
+        "topic": "Inverted Conditionals + So / Such Inversion",
+        "concept": "Subject-auxiliary inversion with 'so' paired with inverted mixed conditionals",
+        "formula": "So + adjective + was + singular subject + that, + had + subject + not + been + past participle, + subject + would + be + verb-ing",
+        "examples": [
+          "<b>So</b> intense <b>was</b> the storm that, <b>had</b> they <b>not</b> <b>evacuated</b>, they <b>would be</b> <b>stranded</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "If only the production", "clickable": false },
+        { "id": "s2", "text": "team has listened", "clickable": true, "isError": true, "correctAnswers": ["team had listened"] },
+        { "id": "s3", "text": " to the fans,", "clickable": false },
+        { "id": "s4", "text": "the drama", "clickable": false },
+        { "id": "s5", "text": "would not have", "clickable": true, "isError": false },
+        { "id": "s6", "text": "ended on such", "clickable": false },
+        { "id": "s7", "text": "a controversial note.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "This combines an inverted third conditional structure with 'If only' for past regret. 'If only' referring to a past unreal condition requires the past perfect ('had listened'), not the present perfect ('has listened').",
+        "topic": "Inverted Conditionals + Wish / If Only",
+        "concept": "Past perfect requirement in 'If only' clauses expressing regret about past events",
+        "formula": "If only + subject + had + past participle, subject + would + not + have + past participle",
+        "examples": [
+          "<b>If only</b> I <b>had</b> <b>studied</b>, I <b>would not have</b> <b>failed</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 5,
+        "time_in_seconds": { "fast": 45, "normal": 90, "easy": 120 }
+      }
+    }
+  ]
+}

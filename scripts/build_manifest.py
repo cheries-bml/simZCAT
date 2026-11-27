@@ -32,6 +32,17 @@ def created_at(data: dict):
         return None
 
 
+def check_sounds(data: dict, rel: str) -> None:
+    """Warn when meta.soundpath + data.sound points at a file that is not in the repository."""
+    base = data["meta"].get("soundpath")
+    if not isinstance(base, str) or not base.strip() or base.strip().lower().startswith(("http:", "https:")):
+        return
+    for q in data["questions"]:
+        name = (q.get("data") or {}).get("sound") if isinstance(q, dict) else None
+        if isinstance(name, str) and name.strip() and not (ROOT / base.strip().lstrip("/") / name.strip().lstrip("./")).is_file():
+            print(f"warning: missing sound file {base.strip()}{name.strip()} (used in {rel}, question {q.get('id')})", file=sys.stderr)
+
+
 def build_questions() -> None:
     found = []  # (timestamp or None, path)
     for path in sorted(QUESTIONS_DIR.rglob("*")):
@@ -45,6 +56,7 @@ def build_questions() -> None:
             continue
         if isinstance(data, dict) and "meta" in data and isinstance(data.get("questions"), list):
             found.append((created_at(data), rel))
+            check_sounds(data, rel)
         else:
             print(f"skip (not a question file): {rel}", file=sys.stderr)
     # Newest first (by meta.created, undated files last): the app treats the first entries as the newest tests.

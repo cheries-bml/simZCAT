@@ -1,6 +1,7 @@
 import { loadData, getSession, touchSession, logout, can, roleLabel, userRoles } from "./auth.js";
 import { el, mount } from "./util.js";
 import { alertModal } from "./modal.js";
+import { sounds } from "./sound.js";
 import { icon } from "./icons.js";
 import { brandNodes } from "./brand.js";
 import { themeControls } from "./theme.js";
@@ -54,6 +55,7 @@ function renderSettings() {
 
 async function show(id, opts) {
   if (!(await canLeave())) return; // a running test asks for confirmation first
+  sounds.stop();
   const section = SECTIONS.find((s) => s.id === id);
   content.replaceChildren(...section.render(opts));
   document.querySelectorAll("#nav button").forEach((b) => {
