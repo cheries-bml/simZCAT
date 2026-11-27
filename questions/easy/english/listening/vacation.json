@@ -5,7 +5,7 @@
     "info": "Each listening question has a Listen button. Read the question before listening to focus on the key details.",
     "author": "Cheries",
     "created": "2026-11-27",
-    "soundpath": "./qsound/intermediate/english/listening/vacation/",
+    "soundpath": "./qsound/easy/english/listening/vacation/",
     "config": {
       "show_answer": false,
       "show_explanation": false,
