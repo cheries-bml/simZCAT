@@ -1,0 +1,421 @@
+{
+  "meta": {
+    "title": "Listening: School",
+    "description": "Listen to longer recordings about school scenarios and answer the questions. The correct answers use paraphrasing and require inference.",
+    "info": "Each listening question has a Listen button. Read the question and options before listening to focus on the key details. Note that the correct answers are not explicitly stated word-for-word in the audio.",
+    "author": "Cheries",
+    "created": "2026-11-27",
+    "soundpath": "./qsound/intermediate/english/listening/school/",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "allow_random": true,
+      "allow_start": true,
+      "allow_end": true,
+      "no_timer": false,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "What is the student's favorite subject?",
+        "passage": "I've always struggled with numbers and equations, so arithmetic class makes me really anxious. On the other hand, I absolutely love analyzing poems and writing essays. My favorite part of the week is when we get to discuss classic novels and famous authors.",
+        "sound": "school_q1.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "Arithmetic"
+        },
+        "B": {
+          "text": "Literature",
+          "correct": true
+        },
+        "C": {
+          "text": "Geography"
+        },
+        "D": {
+          "text": "Chemistry"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: '...I absolutely love analyzing poems... discuss classic novels and famous authors.' The speaker describes activities related to reading and writing, which indicates their favorite subject is Literature.",
+        "topic": "Listening",
+        "concept": "Listening for inference and paraphrasing"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "What sport does the speaker play?",
+        "passage": "After classes finish at three o'clock, I usually head straight to the gymnasium. I've been practicing my jump shots and dribbling drills with the coach for the past two months. We have a big tournament coming up against our rival high school next Friday.",
+        "sound": "school_q2.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "Soccer"
+        },
+        "B": {
+          "text": "Tennis"
+        },
+        "C": {
+          "text": "Basketball",
+          "correct": true
+        },
+        "D": {
+          "text": "Volleyball"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: '...practicing my jump shots and dribbling drills...' These specific actions and terms are uniquely associated with playing basketball.",
+        "topic": "Listening",
+        "concept": "Listening for vocabulary inference"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "Where should the student go?",
+        "passage": "If you need to borrow a laptop or find a quiet place to study for your finals, you should go to the building next to the cafeteria. The librarians there are very helpful, and they just added a new section with comfortable sofas and private study rooms.",
+        "sound": "school_q3.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "The dining hall"
+        },
+        "B": {
+          "text": "The library",
+          "correct": true
+        },
+        "C": {
+          "text": "The sports center"
+        },
+        "D": {
+          "text": "The principal's office"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: 'The librarians there are very helpful...' The mention of librarians, borrowing equipment, and quiet study spaces clearly describes the school library.",
+        "topic": "Listening",
+        "concept": "Listening for context clues"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "What is the students' final assignment?",
+        "passage": "For our final project, we don't have to write a traditional research paper. Instead, the teacher wants us to work in groups of three to create a ten-minute documentary about local history. We need to interview residents and edit the video by next Wednesday.",
+        "sound": "school_q4.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "Writing an essay"
+        },
+        "B": {
+          "text": "Taking a written exam"
+        },
+        "C": {
+          "text": "Making a short film",
+          "correct": true
+        },
+        "D": {
+          "text": "Giving a solo presentation"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: '...create a ten-minute documentary... edit the video...' A documentary is a type of short film, meaning the assignment involves making a short film rather than writing.",
+        "topic": "Listening",
+        "concept": "Listening for synonyms and paraphrasing"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "Why didn't the speaker take Mr. Harrison's class?",
+        "passage": "I was really hoping to take Mr. Harrison's biology class, but it's only offered during the first period. Since I take the bus and don't arrive on campus until eight-fifteen, I had to enroll in the afternoon session with Mrs. Gable instead.",
+        "sound": "school_q5.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "The class was completely full."
+        },
+        "B": {
+          "text": "The speaker dislikes biology."
+        },
+        "C": {
+          "text": "It conflicted with their morning commute.",
+          "correct": true
+        },
+        "D": {
+          "text": "Mrs. Gable is a much better teacher."
+        }
+      },
+      "explanation": {
+        "text": "Transcript: '...take the bus and don't arrive on campus until eight-fifteen...' The speaker misses the first period because their transportation schedule (morning commute) prevents them from arriving early enough.",
+        "topic": "Listening",
+        "concept": "Listening for cause and effect inference"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 6,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "What is the school implementing?",
+        "passage": "Starting next semester, the administration has decided to ban all denim and graphic tees. Everyone will be required to wear collared shirts, khaki trousers, and closed-toe shoes. They claim it will help reduce distractions and make everyone look more professional.",
+        "sound": "school_q6.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "A new grading system"
+        },
+        "B": {
+          "text": "A new uniform policy",
+          "correct": true
+        },
+        "C": {
+          "text": "A ban on smartphones"
+        },
+        "D": {
+          "text": "A new cafeteria menu"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: '...ban all denim... required to wear collared shirts, khaki trousers...' The specific clothing rules described indicate the implementation of a strict dress code or uniform policy.",
+        "topic": "Listening",
+        "concept": "Listening for main idea and summarization"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "How did the speaker perform on the test?",
+        "passage": "I spent the entire weekend memorizing dates and names for the history exam. I thought I did really well, but when the teacher handed back the graded sheets today, I saw a big red C-minus at the top. I guess I need to join a study group before the midterms.",
+        "sound": "school_q7.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "They got a perfect score."
+        },
+        "B": {
+          "text": "They failed the exam completely."
+        },
+        "C": {
+          "text": "They received an average or below-average mark.",
+          "correct": true
+        },
+        "D": {
+          "text": "They haven't received their results yet."
+        }
+      },
+      "explanation": {
+        "text": "Transcript: '...I saw a big red C-minus at the top.' A C-minus is generally considered an average or slightly below-average grade, indicating they didn't do as well as they hoped but didn't completely fail.",
+        "topic": "Listening",
+        "concept": "Listening for cultural context (grading systems)"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "What is the class doing today?",
+        "passage": "Instead of sitting in the classroom learning about the solar system from a textbook, we are spending the whole day at the planetarium. We will get to look through the massive telescope and watch the immersive star show in the dome theater.",
+        "sound": "school_q8.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "Visiting a science museum",
+          "correct": true
+        },
+        "B": {
+          "text": "Taking an astronomy test"
+        },
+        "C": {
+          "text": "Constructing a model"
+        },
+        "D": {
+          "text": "Doing a classroom worksheet"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: '...spending the whole day at the planetarium.' A planetarium is a type of educational facility or science museum where students can observe space-related exhibits and shows.",
+        "topic": "Listening",
+        "concept": "Listening for vocabulary inference"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "What is Ms. Albright's likely profession?",
+        "passage": "Whenever I feel overwhelmed with my college applications, I make an appointment with Ms. Albright. She helps me review my personal statements, gives me advice on which universities to apply to, and even writes letters of recommendation on my behalf.",
+        "sound": "school_q9.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "A math tutor"
+        },
+        "B": {
+          "text": "A school nurse"
+        },
+        "C": {
+          "text": "A guidance counselor",
+          "correct": true
+        },
+        "D": {
+          "text": "A university professor"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: '...helps me review my personal statements... writes letters of recommendation...' Assisting students with university applications and recommendations is the primary role of a high school guidance counselor.",
+        "topic": "Listening",
+        "concept": "Listening for role and context inference"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 120
+        }
+      }
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Listen to the audio, then choose the best answer.",
+        "question": "How does the speaker get to school now?",
+        "passage": "My dad used to drive me to campus every single day, but his new job starts too early. Now, I have to wake up at six in the morning to catch the number 42 transit, which drops me off right at the main gate.",
+        "sound": "school_q10.mp3"
+      },
+      "options": {
+        "A": {
+          "text": "On foot"
+        },
+        "B": {
+          "text": "By public bus",
+          "correct": true
+        },
+        "C": {
+          "text": "In a private vehicle"
+        },
+        "D": {
+          "text": "On a bicycle"
+        }
+      },
+      "explanation": {
+        "text": "Transcript: '...catch the number 42 transit...' Taking a numbered transit route that drops passengers off at a destination refers to using a public transportation bus.",
+        "topic": "Listening",
+        "concept": "Listening for synonyms and paraphrasing"
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 30,
+          "normal": 60,
+          "easy": 120
+        }
+      }
+    }
+  ]
+}

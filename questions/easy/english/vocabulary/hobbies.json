@@ -1,0 +1,1147 @@
+{
+  "meta": {
+    "title": "Hobbies Vocabulary",
+    "description": "A comprehensive A1/A2 level English vocabulary test focusing on hobbies and combining related everyday topics.",
+    "info": "This test evaluates basic vocabulary and grammar related to hobbies, daily routines, family, weather, places, food, time, animals, transportation, colors/objects, and emotions.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/football.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "I love sports. I have a lot of energy on weekends.",
+        "question": "I ___ football every Saturday morning."
+      },
+      "options": {
+        "A": { "text": "play", "correct": true },
+        "B": { "text": "plays", "correct": false },
+        "C": { "text": "playing", "correct": false },
+        "D": { "text": "played", "correct": false },
+        "E": { "text": "usually play", "correct": true }
+      },
+      "explanation": {
+        "text": "The subject 'I' requires the base form of the verb 'play' in the simple present tense. 'Usually play' is also correct as it adds a frequency adverb to a habitual action.",
+        "topic": "Hobbies + Daily Routine",
+        "concept": "Simple Present Tense and Subject-Verb Agreement",
+        "formula": "Subject (I/You/We/They) + Verb (base form)",
+        "examples": [
+          "I <b>play</b> tennis on Sundays.",
+          "We <b>usually play</b> games after school."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct form of the verb after 'loves'.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/family-art.jpg",
+          "orientation": "square"
+        },
+        "passage": "My sister is very creative. She has many colored pencils.",
+        "question": "My sister loves ___ pictures of our family."
+      },
+      "options": {
+        "A": { "text": "draw", "correct": false },
+        "B": { "text": "drawing", "correct": true },
+        "C": { "text": "draws", "correct": false },
+        "D": { "text": "to draw", "correct": true }
+      },
+      "explanation": {
+        "text": "The verb 'love' can be followed by a gerund ('drawing') or an infinitive ('to draw') with little change in meaning.",
+        "topic": "Hobbies + Family",
+        "concept": "Gerunds and Infinitives after 'love'",
+        "formula": "Subject + love/loves + Verb-ing OR to + Verb",
+        "examples": [
+          "She loves <b>drawing</b> animals.",
+          "He loves <b>to draw</b> cartoons."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "When it is ", "clickable": false },
+        { "id": "s2", "text": "rain, ", "clickable": true, "isError": true, "correctAnswers": ["raining, "] },
+        { "id": "s3", "text": "I ", "clickable": false },
+        { "id": "s4", "text": "likes ", "clickable": true, "isError": true, "correctAnswers": ["like "] },
+        { "id": "s5", "text": "to read ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "books inside.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The correct forms are 'raining' (present continuous for weather) and 'like' (subject 'I' takes the base verb form).",
+        "topic": "Hobbies + Weather",
+        "concept": "Present Continuous for Weather and Simple Present Agreement",
+        "formula": "It is + Verb-ing / Subject (I) + base Verb",
+        "examples": [
+          "When it is <b>raining</b>, I stay home.",
+          "I <b>like</b> to read books."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct place for this hobby.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/swimming-pool.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "We wear swimsuits and goggles. The water is very clean.",
+        "question": "We go to the ___ to swim."
+      },
+      "options": {
+        "A": { "text": "library", "correct": false },
+        "B": { "text": "pool", "correct": true },
+        "C": { "text": "park", "correct": false },
+        "D": { "text": "cinema", "correct": false }
+      },
+      "explanation": {
+        "text": "A 'pool' (swimming pool) is the correct place where people go to swim.",
+        "topic": "Hobbies + Places",
+        "concept": "Vocabulary for Places and Activities",
+        "formula": "go to the + [Place] + to + [Activity]",
+        "examples": [
+          "We go to the <b>pool</b> to swim.",
+          "They go to the <b>park</b> to run."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct adjective to describe how you feel after sports.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/drinking-water.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "After playing tennis for an hour, I need a cold drink.",
+        "question": "After playing tennis, I am very ___ and I drink water."
+      },
+      "options": {
+        "A": { "text": "hungry", "correct": false },
+        "B": { "text": "thirsty", "correct": true },
+        "C": { "text": "tired", "correct": false },
+        "D": { "text": "sleepy", "correct": false }
+      },
+      "explanation": {
+        "text": "When you play sports and need to drink water, you feel 'thirsty'.",
+        "topic": "Hobbies + Food/Drink",
+        "concept": "Adjectives for Physical Feelings",
+        "formula": "Subject + be verb + Adjective",
+        "examples": [
+          "I am <b>thirsty</b> after running.",
+          "She is <b>hungry</b> before dinner."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "She ", "clickable": false },
+        { "id": "s2", "text": "go ", "clickable": true, "isError": true, "correctAnswers": ["goes "] },
+        { "id": "s3", "text": "to the park ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "at three ", "clickable": false },
+        { "id": "s5", "text": "o'clock to ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "ride her bike.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The subject 'She' is third-person singular, so the verb must be 'goes' in the simple present tense.",
+        "topic": "Hobbies + Time",
+        "concept": "Third-Person Singular Verb Agreement",
+        "formula": "Subject (He/She/It) + Verb (base form + s/es)",
+        "examples": [
+          "She <b>goes</b> to the park at 3 o'clock.",
+          "He <b>rides</b> his bike every day."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct noun for this hobby.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/camera-birds.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "He has a camera and likes to capture nature.",
+        "question": "He likes to take photos of birds. His hobby is ___."
+      },
+      "options": {
+        "A": { "text": "cooking", "correct": false },
+        "B": { "text": "photography", "correct": true },
+        "C": { "text": "swimming", "correct": false },
+        "D": { "text": "reading", "correct": false }
+      },
+      "explanation": {
+        "text": "Taking photos as a hobby is called 'photography'.",
+        "topic": "Hobbies + Animals",
+        "concept": "Hobby Vocabulary",
+        "formula": "Subject + hobby + is + Noun/Gerund",
+        "examples": [
+          "Taking photos is called <b>photography</b>.",
+          "Her hobby is <b>birdwatching</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct vehicle for this outdoor activity.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/bicycle-park.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "I wear a helmet and pedal with my feet.",
+        "question": "I ride my ___ to school and in the park."
+      },
+      "options": {
+        "A": { "text": "car", "correct": false },
+        "B": { "text": "bicycle", "correct": true },
+        "C": { "text": "bus", "correct": false },
+        "D": { "text": "train", "correct": false }
+      },
+      "explanation": {
+        "text": "A 'bicycle' (or bike) is a vehicle you ride by pedaling, often used for fun or transport.",
+        "topic": "Hobbies + Transportation",
+        "concept": "Vocabulary for Vehicles and Activities",
+        "formula": "ride + a/an + [Vehicle]",
+        "examples": [
+          "I ride my <b>bicycle</b> to school.",
+          "He rides a <b>horse</b> on the farm."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 9,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "She ", "clickable": false },
+        { "id": "s2", "text": "paint ", "clickable": true, "isError": true, "correctAnswers": ["paints "] },
+        { "id": "s3", "text": "a beautiful ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "red flower ", "clickable": false },
+        { "id": "s5", "text": "in her ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "garden.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The subject 'She' requires the third-person singular verb form 'paints' in the simple present tense.",
+        "topic": "Hobbies + Colors/Objects",
+        "concept": "Third-Person Singular Verb Agreement",
+        "formula": "Subject (He/She/It) + Verb (base form + s)",
+        "examples": [
+          "She <b>paints</b> a beautiful picture.",
+          "He <b>draws</b> a red car."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct emotion related to enjoying a hobby.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/happy-music.jpg",
+          "orientation": "square"
+        },
+        "passage": "When I play the guitar, I smile a lot.",
+        "question": "Playing music makes me feel very ___."
+      },
+      "options": {
+        "A": { "text": "sad", "correct": false },
+        "B": { "text": "angry", "correct": false },
+        "C": { "text": "happy", "correct": true },
+        "D": { "text": "bored", "correct": false }
+      },
+      "explanation": {
+        "text": "Doing something you enjoy, like playing music, makes you feel 'happy'.",
+        "topic": "Hobbies + Emotions",
+        "concept": "Adjectives for Emotions",
+        "formula": "Subject + make(s) + object + Adjective",
+        "examples": [
+          "Playing music makes me <b>happy</b>.",
+          "Winning makes the team <b>excited</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form for a daily routine.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/reading-bed.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "I like stories. I do this before I sleep.",
+        "question": "Before I go to bed, I usually ___ a book."
+      },
+      "options": {
+        "A": { "text": "read", "correct": true },
+        "B": { "text": "reads", "correct": false },
+        "C": { "text": "reading", "correct": false },
+        "D": { "text": "reader", "correct": false }
+      },
+      "explanation": {
+        "text": "The subject 'I' takes the base form of the verb 'read' in the simple present tense.",
+        "topic": "Hobbies + Daily Routine",
+        "concept": "Simple Present Tense for Habits",
+        "formula": "Subject (I) + Adverb of Frequency + Base Verb",
+        "examples": [
+          "I usually <b>read</b> before bed.",
+          "I always <b>drink</b> water in the morning."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "My brother ", "clickable": false },
+        { "id": "s2", "text": "and I ", "clickable": true, "isError": false },
+        { "id": "s3", "text": "plays ", "clickable": true, "isError": true, "correctAnswers": ["play "] },
+        { "id": "s4", "text": "video games ", "clickable": false },
+        { "id": "s5", "text": "together ", "clickable": false },
+        { "id": "s6", "text": "every Sunday.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "The compound subject 'My brother and I' is plural (equivalent to 'We'), so it requires the base verb form 'play'.",
+        "topic": "Hobbies + Family",
+        "concept": "Plural Subject-Verb Agreement",
+        "formula": "Plural Subject + Base Verb",
+        "examples": [
+          "My brother and I <b>play</b> games.",
+          "We <b>watch</b> movies together."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct place for this sport.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/basketball-court.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "We bounce the ball and try to score points.",
+        "question": "You can play basketball on a ___."
+      },
+      "options": {
+        "A": { "text": "court", "correct": true },
+        "B": { "text": "kitchen", "correct": false },
+        "C": { "text": "bedroom", "correct": false },
+        "D": { "text": "bathroom", "correct": false }
+      },
+      "explanation": {
+        "text": "Basketball is played on a 'court'.",
+        "topic": "Hobbies + Places",
+        "concept": "Vocabulary for Sports Locations",
+        "formula": "play + [Sport] + on a + [Location]",
+        "examples": [
+          "Play basketball on a <b>court</b>.",
+          "Play tennis on a <b>court</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 14,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct activity for this weather.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/sunny-hiking.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "The sky is blue and the sun is shining.",
+        "question": "It is sunny today, so we can go ___."
+      },
+      "options": {
+        "A": { "text": "hiking", "correct": true },
+        "B": { "text": "sleep", "correct": false },
+        "C": { "text": "inside", "correct": false },
+        "D": { "text": "bed", "correct": false }
+      },
+      "explanation": {
+        "text": "'Hiking' is a common outdoor hobby enjoyed on sunny days. 'Go' is followed by a gerund for activities.",
+        "topic": "Hobbies + Weather",
+        "concept": "Go + Gerund for Activities",
+        "formula": "go + Verb-ing",
+        "examples": [
+          "We can go <b>hiking</b>.",
+          "Let's go <b>swimming</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 15,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "He ", "clickable": false },
+        { "id": "s2", "text": "like ", "clickable": true, "isError": true, "correctAnswers": ["likes "] },
+        { "id": "s3", "text": "to cook ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "pasta for ", "clickable": false },
+        { "id": "s5", "text": "dinner on ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "Sundays.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The subject 'He' is third-person singular, so the verb must be 'likes' in the simple present tense.",
+        "topic": "Hobbies + Food",
+        "concept": "Third-Person Singular Verb Agreement",
+        "formula": "Subject (He/She/It) + Verb (base form + s)",
+        "examples": [
+          "He <b>likes</b> to cook pasta.",
+          "She <b>enjoys</b> baking cakes."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 16,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct unit of time.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/clock-piano.jpg",
+          "orientation": "square"
+        },
+        "passage": "I practice my music for 60 minutes every day.",
+        "question": "I practice the piano for one ___ every day."
+      },
+      "options": {
+        "A": { "text": "minute", "correct": false },
+        "B": { "text": "hour", "correct": true },
+        "C": { "text": "second", "correct": false },
+        "D": { "text": "day", "correct": false }
+      },
+      "explanation": {
+        "text": "60 minutes is equal to one 'hour'.",
+        "topic": "Hobbies + Time",
+        "concept": "Units of Time",
+        "formula": "Number + Unit of Time",
+        "examples": [
+          "I practice for one <b>hour</b>.",
+          "The movie is two <b>hours</b> long."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct animal for this activity.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/walking-dog.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "I put a leash on my pet and we walk in the park.",
+        "question": "Walking the ___ is my favorite morning activity."
+      },
+      "options": {
+        "A": { "text": "fish", "correct": false },
+        "B": { "text": "dog", "correct": true },
+        "C": { "text": "bird", "correct": false },
+        "D": { "text": "snake", "correct": false }
+      },
+      "explanation": {
+        "text": "You walk a 'dog' on a leash as a daily activity or hobby.",
+        "topic": "Hobbies + Animals",
+        "concept": "Pet Care Vocabulary",
+        "formula": "Walking the + [Pet]",
+        "examples": [
+          "I am walking the <b>dog</b>.",
+          "She is feeding the <b>cat</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "They ", "clickable": false },
+        { "id": "s2", "text": "goes ", "clickable": true, "isError": true, "correctAnswers": ["go "] },
+        { "id": "s3", "text": "fishing by ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "the lake ", "clickable": false },
+        { "id": "s5", "text": "on the ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "weekend.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The subject 'They' is plural, so it requires the base verb form 'go' in the simple present tense.",
+        "topic": "Hobbies + Transportation/Places",
+        "concept": "Plural Subject-Verb Agreement",
+        "formula": "Plural Subject + Base Verb",
+        "examples": [
+          "They <b>go</b> fishing on weekends.",
+          "We <b>travel</b> by train."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct object used in this hobby.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/ruler-drawing.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "I want to draw a perfect straight line on my paper.",
+        "question": "She uses a ___ to draw straight lines."
+      },
+      "options": {
+        "A": { "text": "brush", "correct": false },
+        "B": { "text": "ruler", "correct": true },
+        "C": { "text": "sponge", "correct": false },
+        "D": { "text": "eraser", "correct": false }
+      },
+      "explanation": {
+        "text": "A 'ruler' is a straight strip of plastic or wood used to draw straight lines.",
+        "topic": "Hobbies + Colors/Objects",
+        "concept": "Art Supply Vocabulary",
+        "formula": "use + a/an + [Object] + to + [Action]",
+        "examples": [
+          "Use a <b>ruler</b> to draw lines.",
+          "Use a <b>brush</b> to paint."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 20,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct emotion after a positive event.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/winning-team.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "Our team scored the most points and won the match.",
+        "question": "Winning the game makes the team feel ___."
+      },
+      "options": {
+        "A": { "text": "excited", "correct": true },
+        "B": { "text": "sad", "correct": false },
+        "C": { "text": "angry", "correct": false },
+        "D": { "text": "tired", "correct": false }
+      },
+      "explanation": {
+        "text": "Winning a game is a positive event that makes people feel 'excited' or happy.",
+        "topic": "Hobbies + Emotions",
+        "concept": "Adjectives for Positive Emotions",
+        "formula": "Subject + make(s) + object + Adjective",
+        "examples": [
+          "Winning makes me <b>excited</b>.",
+          "The good news makes her <b>happy</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 21,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We always ", "clickable": false },
+        { "id": "s2", "text": "watches ", "clickable": true, "isError": true, "correctAnswers": ["watch "] },
+        { "id": "s3", "text": "TV after ", "clickable": false },
+        { "id": "s4", "text": "eat ", "clickable": true, "isError": true, "correctAnswers": ["eating "] },
+        { "id": "s5", "text": "dinner at ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "home.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The subject 'We' requires the base verb 'watch'. After the preposition 'after', we use the gerund form 'eating'.",
+        "topic": "Hobbies + Daily Routine",
+        "concept": "Subject-Verb Agreement and Gerunds after Prepositions",
+        "formula": "Plural Subject + Base Verb / Preposition + Verb-ing",
+        "examples": [
+          "We <b>watch</b> TV.",
+          "After <b>eating</b>, we relax."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 22,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct hobby related to plants.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/garden-flowers.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "My parents plant flowers and vegetables outside.",
+        "question": "My parents enjoy ___ in the garden."
+      },
+      "options": {
+        "A": { "text": "gardening", "correct": true },
+        "B": { "text": "swim", "correct": false },
+        "C": { "text": "run", "correct": false },
+        "D": { "text": "sleep", "correct": false }
+      },
+      "explanation": {
+        "text": "'Gardening' is the hobby of growing and caring for plants in a garden.",
+        "topic": "Hobbies + Family",
+        "concept": "Gerunds after 'enjoy'",
+        "formula": "Subject + enjoy(s) + Verb-ing",
+        "examples": [
+          "They enjoy <b>gardening</b>.",
+          "She enjoys <b>reading</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct activity for this place.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/library-books.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "This place has many books and it is very quiet.",
+        "question": "The library is a quiet place to ___."
+      },
+      "options": {
+        "A": { "text": "shout", "correct": false },
+        "B": { "text": "read", "correct": true },
+        "C": { "text": "dance", "correct": false },
+        "D": { "text": "sing", "correct": false }
+      },
+      "explanation": {
+        "text": "A library is a place designed for reading and studying quietly.",
+        "topic": "Hobbies + Places",
+        "concept": "Place and Activity Association",
+        "formula": "Place + is a place to + Verb",
+        "examples": [
+          "The library is a place to <b>read</b>.",
+          "The kitchen is a place to <b>cook</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "In the ", "clickable": false },
+        { "id": "s2", "text": "winter, we ", "clickable": true, "isError": false },
+        { "id": "s3", "text": "goes ", "clickable": true, "isError": true, "correctAnswers": ["go "] },
+        { "id": "s4", "text": "ice skating ", "clickable": false },
+        { "id": "s5", "text": "on the ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "frozen lake.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The subject 'we' is plural, so it requires the base verb form 'go' in the simple present tense.",
+        "topic": "Hobbies + Weather",
+        "concept": "Plural Subject-Verb Agreement",
+        "formula": "Plural Subject + Base Verb",
+        "examples": [
+          "We <b>go</b> ice skating in winter.",
+          "They <b>play</b> in the snow."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct food item for this hobby.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/baking-cookies.jpg",
+          "orientation": "square"
+        },
+        "passage": "We use flour, sugar, and chocolate chips to make these.",
+        "question": "Baking ___ is a fun hobby for many children."
+      },
+      "options": {
+        "A": { "text": "cookies", "correct": true },
+        "B": { "text": "water", "correct": false },
+        "C": { "text": "salad", "correct": false },
+        "D": { "text": "soup", "correct": false }
+      },
+      "explanation": {
+        "text": "'Cookies' are baked goods made with flour, sugar, and often chocolate chips.",
+        "topic": "Hobbies + Food",
+        "concept": "Vocabulary for Baking",
+        "formula": "Baking + [Plural Noun]",
+        "examples": [
+          "Baking <b>cookies</b> is fun.",
+          "Baking <b>cakes</b> is a hobby."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 26,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form after 'spends time'.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/stamp-collection.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "He has a big book with stamps from many countries.",
+        "question": "He spends two hours a week ___ stamps."
+      },
+      "options": {
+        "A": { "text": "collect", "correct": false },
+        "B": { "text": "collects", "correct": false },
+        "C": { "text": "collecting", "correct": true },
+        "D": { "text": "collected", "correct": false }
+      },
+      "explanation": {
+        "text": "The phrase 'spends time' is followed by a gerund (Verb-ing).",
+        "topic": "Hobbies + Time",
+        "concept": "Gerunds after 'spend time'",
+        "formula": "Subject + spend(s) + time + Verb-ing",
+        "examples": [
+          "He spends time <b>collecting</b> stamps.",
+          "I spend an hour <b>reading</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 27,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "My cat ", "clickable": false },
+        { "id": "s2", "text": "love ", "clickable": true, "isError": true, "correctAnswers": ["loves "] },
+        { "id": "s3", "text": "to play ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "with a ", "clickable": false },
+        { "id": "s5", "text": "small ball ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "every day.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The subject 'My cat' is third-person singular, so the verb must be 'loves' in the simple present tense.",
+        "topic": "Hobbies + Animals",
+        "concept": "Third-Person Singular Verb Agreement",
+        "formula": "Subject (He/She/It/Singular Noun) + Verb (base form + s)",
+        "examples": [
+          "My cat <b>loves</b> to play.",
+          "The dog <b>runs</b> fast."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 28,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct noun for this activity.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/train-travel.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "She visits new cities and takes many photos.",
+        "question": "She travels by train to visit new cities and take photos. Her hobby is ___."
+      },
+      "options": {
+        "A": { "text": "traveling", "correct": true },
+        "B": { "text": "cooking", "correct": false },
+        "C": { "text": "sleeping", "correct": false },
+        "D": { "text": "washing", "correct": false }
+      },
+      "explanation": {
+        "text": "Visiting new places as a hobby is called 'traveling'.",
+        "topic": "Hobbies + Transportation",
+        "concept": "Hobby Vocabulary (Gerunds)",
+        "formula": "Subject + hobby + is + Verb-ing",
+        "examples": [
+          "Her hobby is <b>traveling</b>.",
+          "His hobby is <b>swimming</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct object for this collection hobby.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/old-coins.jpg",
+          "orientation": "square"
+        },
+        "passage": "He keeps old money from different countries in a special book.",
+        "question": "He collects old ___ from different countries."
+      },
+      "options": {
+        "A": { "text": "coins", "correct": true },
+        "B": { "text": "water", "correct": false },
+        "C": { "text": "air", "correct": false },
+        "D": { "text": "sand", "correct": false }
+      },
+      "explanation": {
+        "text": "'Coins' are pieces of metal money that people often collect as a hobby.",
+        "topic": "Hobbies + Colors/Objects",
+        "concept": "Collection Vocabulary",
+        "formula": "collect + [Plural Noun]",
+        "examples": [
+          "He collects <b>coins</b>.",
+          "She collects <b>stamps</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Learning to ", "clickable": false },
+        { "id": "s2", "text": "dance are ", "clickable": true, "isError": true, "correctAnswers": ["dance is "] },
+        { "id": "s3", "text": "very fun ", "clickable": false },
+        { "id": "s4", "text": "and make ", "clickable": true, "isError": true, "correctAnswers": ["and makes "] },
+        { "id": "s5", "text": "me happy ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "every week.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The subject 'Learning to dance' is a singular gerund phrase, so it requires the singular verb 'is'. Similarly, 'make' must be 'makes' to agree with the singular subject.",
+        "topic": "Hobbies + Emotions",
+        "concept": "Singular Subject-Verb Agreement with Gerund Phrases",
+        "formula": "Gerund Phrase + Singular Verb (is/makes)",
+        "examples": [
+          "Learning to dance <b>is</b> fun.",
+          "It <b>makes</b> me happy."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    }
+  ]
+}

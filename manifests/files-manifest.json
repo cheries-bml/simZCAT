@@ -11,9 +11,11 @@
     { "path": "files/advanced/english/Conditionals, Hypotheticals And Mood/subjunctive_mood.md" },
     { "path": "files/advanced/english/Conditionals, Hypotheticals And Mood/inverted_conditionals.md" },
     { "path": "files/advanced/english/Conditionals, Hypotheticals And Mood/conditionals.md" },
+
     { "path": "files/advanced/math/practice-data.csv", "size": 155 },
     { "path": "files/advanced/math/problem-set.zip", "size": 162 },
     { "path": "files/advanced/math/quadratic-reference.md", "size": 263 },
+
     { "path": "files/intermediate/english/tenses/past_future_perfect_continuous.md" },
     { "path": "files/intermediate/english/tenses/past_future_perfect.md" },
     { "path": "files/intermediate/english/tenses/past_future_continuous.md" },
@@ -30,11 +32,17 @@
     { "path": "files/intermediate/english/tenses/past_perfect_tense.md" },
     { "path": "files/intermediate/english/tenses/past_continuous_tense.md" },
     { "path": "files/intermediate/english/tenses/simple_past_tense.md" },
+
     { "path": "files/intermediate/math/algebra-cheat-sheet.pdf", "size": 2047 },
+
+    { "path": "files/easy/verb/verbs_and_prepositions.md" },
+    { "path": "files/easy/verb/verbs_followed_by_gerunds.md" },
+    { "path": "files/easy/verb/to_infinitive.md" },
+
     { "path": "files/easy/english/articles-chart.png", "size": 11751 },
     { "path": "files/easy/english/articles-cheatsheet.txt", "size": 307 },
-    { "path": "files/easy/english/grammar-basics.md", "size": 579 },
     { "path": "files/easy/english/listening-sample.wav", "size": 24044 },
+
     { "path": "files/easy/math/fractions-circles.png", "size": 6162 },
     { "path": "files/easy/math/times-table.jpg", "size": 76954 }
   ]
