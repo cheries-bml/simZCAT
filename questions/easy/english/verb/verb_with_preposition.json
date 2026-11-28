@@ -17,7 +17,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "I have a strict morning routine. I like to learn while I get ready.",
         "question": "She ___ audiobooks every morning while she eats breakfast."
       },
       "options": {
@@ -53,7 +52,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "My family loves stories. We discuss them after dinner.",
         "question": "My brother ___ the new book with our parents every evening."
       },
       "options": {
@@ -124,7 +122,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "I want to buy a specific mystery novel today.",
         "question": "I ___ a good mystery book in the bookstore right now."
       },
       "options": {
@@ -160,7 +157,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "I love eating pastries while I imagine the story.",
         "question": "While I eat my cake, I ___ the main character's adventure."
       },
       "options": {
@@ -231,7 +227,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "My son loves dinosaurs. He has many books about them.",
         "question": "He ___ dinosaurs in his favorite science book."
       },
       "options": {
@@ -267,7 +262,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "I travel to work every day. I bring a novel with me.",
         "question": "She ___ the train every morning to read her novel."
       },
       "options": {
@@ -338,7 +332,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "The horror story is very scary. I feel nervous about the ending.",
         "question": "I ___ the scary ending of the horror story."
       },
       "options": {
@@ -374,7 +367,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "I do not know what to read next. I need help.",
         "question": "I ___ a good book recommendation from the librarian."
       },
       "options": {
@@ -445,7 +437,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "This is not my book. It has my brother's name on it.",
         "question": "This book ___ my older brother."
       },
       "options": {
@@ -481,7 +472,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "I love reading about the past. It is very interesting.",
         "question": "She ___ ancient history in her favorite textbook."
       },
       "options": {
@@ -552,7 +542,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "My sister loves animals and nature.",
         "question": "My sister ___ science books about wild animals."
       },
       "options": {
@@ -588,7 +577,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "My dad and I read the same novel. We have the same opinion.",
         "question": "My father ___ the author's opinion on the story."
       },
       "options": {
@@ -659,7 +647,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "The main character wears a bright red dress. I imagine her often.",
         "question": "I often ___ the main character's red dress."
       },
       "options": {
@@ -695,7 +682,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "It is raining outside. I stay inside with my headphones.",
         "question": "When it rains, I ___ my favorite audiobook."
       },
       "options": {
@@ -766,7 +752,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "I cannot find my reading glasses. They are missing.",
         "question": "I ___ my reading glasses every morning."
       },
       "options": {
@@ -802,7 +787,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "My cat sits on my lap when I read.",
         "question": "She ___ stories to her pet cat every night."
       },
       "options": {
@@ -873,7 +857,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "The fantasy book is amazing. I imagine being the hero.",
         "question": "I ___ going on a magical adventure when I read."
       },
       "options": {
@@ -909,7 +892,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "My sister is reading a new mystery. I want to know the story.",
         "question": "I ___ the plot of the mystery novel with my sister."
       },
       "options": {
@@ -980,7 +962,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "The comic book is very funny. I eat my sandwich while reading it.",
         "question": "He ___ the funny jokes in the comic book while he eats."
       },
       "options": {
@@ -1016,7 +997,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "passage": "I travel by plane often. I bring educational books.",
         "question": "She ___ the travel guide on the airplane."
       },
       "options": {

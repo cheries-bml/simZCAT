@@ -17,7 +17,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "I have a strict morning routine. I like to learn while I get ready.",
         "question": "I ___ books every morning while I eat breakfast."
       },
       "options": {
@@ -53,7 +52,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "My family loves stories. We discuss them after dinner.",
         "question": "My sister ___ fairy tales every evening."
       },
       "options": {
@@ -125,7 +123,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "I want to complete this chapter before I go home.",
         "question": "I ___ my book in the quiet library."
       },
       "options": {
@@ -161,7 +158,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "She likes to keep her pages clean and free of crumbs.",
         "question": "She ___ while reading her favorite novel."
       },
       "options": {
@@ -233,7 +229,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "I am very interested in nature and wildlife.",
         "question": "I ___ about wild animals in my science book."
       },
       "options": {
@@ -269,7 +264,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "The bus is very bumpy and noisy. I get dizzy easily.",
         "question": "He ___ on the bus because it is too bumpy."
       },
       "options": {
@@ -340,7 +334,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "Comedy books make me smile and feel good.",
         "question": "We ___ happy stories before bed."
       },
       "options": {
@@ -376,7 +369,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "The librarian asked for silence so everyone can focus.",
         "question": "Please ___ and start your homework."
       },
       "options": {
@@ -447,7 +439,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "The staff member knows all the best new releases.",
         "question": "The librarian ___ this interesting magazine."
       },
       "options": {
@@ -483,7 +474,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "She gets chocolate on the pages and hates cleaning them.",
         "question": "She ___ while reading her favorite novel."
       },
       "options": {
@@ -555,7 +545,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "They are very interested in marine biology.",
         "question": "They ___ about sea turtles in their textbook."
       },
       "options": {
@@ -591,7 +580,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "We have a long commute every morning.",
         "question": "We ___ our novels on the train."
       },
       "options": {
@@ -662,7 +650,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "Ghost stories give me nightmares. I do not like them.",
         "question": "I ___ scary books at night."
       },
       "options": {
@@ -698,7 +685,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "She wants to improve her language skills.",
         "question": "She ___ English out loud every day."
       },
       "options": {
@@ -770,7 +756,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "The library is very peaceful and has comfortable chairs.",
         "question": "He ___ in the quiet library."
       },
       "options": {
@@ -806,7 +791,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "It is time to focus on our studies, not our snacks.",
         "question": "Please ___ and open your textbooks."
       },
       "options": {
@@ -877,7 +861,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "Cats sleep a lot, but I like to learn about them.",
         "question": "I ___ about cats in my pet care book."
       },
       "options": {
@@ -913,7 +896,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "I have a short commute, so I must be quick.",
         "question": "I ___ my chapter before the bus stops."
       },
       "options": {
@@ -984,7 +966,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "These books make us feel joyful and relaxed.",
         "question": "We ___ happy stories together."
       },
       "options": {
@@ -1020,7 +1001,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "passage": "Reading late makes my eyes tired and hurts my sleep schedule.",
         "question": "I ___ late at night to protect my eyes."
       },
       "options": {
