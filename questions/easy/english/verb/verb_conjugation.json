@@ -17,11 +17,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/morning-skincare.jpg",
-          "orientation": "landscape"
-        },
-        "passage": "I have a strict morning routine to keep my skin healthy.",
         "question": "She ___ her face with a gentle cleanser every morning."
       },
       "options": {
@@ -57,11 +52,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct past tense verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/salon-clock.jpg",
-          "orientation": "square"
-        },
-        "passage": "I had a long appointment yesterday to get my hair done.",
         "question": "Yesterday, I ___ two hours at the beauty salon."
       },
       "options": {
@@ -132,11 +122,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/sunscreen-beach.jpg",
-          "orientation": "landscape"
-        },
-        "passage": "The sun is very strong today. We must protect our skin.",
         "question": "He always ___ sunscreen when it is sunny outside."
       },
       "options": {
@@ -172,11 +157,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct past participle verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/perfume-bottle.jpg",
-          "orientation": "portrait"
-        },
-        "passage": "I have a new fragrance and it smells wonderful.",
         "question": "I have ___ my new perfume, and it smells great."
       },
       "options": {
@@ -248,11 +228,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct gerund verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/beauty-store-shelves.jpg",
-          "orientation": "landscape"
-        },
-        "passage": "I love going to this place to find new makeup.",
         "question": "I enjoy ___ the local beauty store on weekends."
       },
       "options": {
@@ -288,11 +263,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct base verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/water-glass-fruit.jpg",
-          "orientation": "square"
-        },
-        "passage": "Healthy habits are important for clear skin.",
         "question": "We ___ lots of water every day to keep our skin healthy."
       },
       "options": {
@@ -363,11 +333,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/cruelty-free-rabbit.jpg",
-          "orientation": "landscape"
-        },
-        "passage": "This brand cares about animals and does not test on them.",
         "question": "This brand ___ animal testing; they are cruelty-free."
       },
       "options": {
@@ -403,11 +368,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct past participle verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/makeup-party.jpg",
-          "orientation": "portrait"
-        },
-        "passage": "The party is tonight, and I am almost ready.",
         "question": "She has ___ her makeup before the party."
       },
       "options": {
@@ -478,11 +438,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct past tense verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/pharmacy-aisle.jpg",
-          "orientation": "landscape"
-        },
-        "passage": "We needed some face cream, so we went to the store.",
         "question": "We ___ to the pharmacy to buy some face cream yesterday."
       },
       "options": {
@@ -518,11 +473,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct gerund verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/skincare-routine-timer.jpg",
-          "orientation": "square"
-        },
-        "passage": "She is very dedicated to her morning skincare steps.",
         "question": "She spends thirty minutes ___ her skincare routine."
       },
       "options": {
@@ -593,11 +543,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/night-hairbrush.jpg",
-          "orientation": "landscape"
-        },
-        "passage": "Taking care of hair is part of her nightly habit.",
         "question": "My sister ___ her hair every night before bed."
       },
       "options": {
@@ -633,11 +578,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct past tense verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/winter-scarf.jpg",
-          "orientation": "portrait"
-        },
-        "passage": "The weather was very cold yesterday.",
         "question": "It was cold, so she ___ a thick scarf to protect her neck."
       },
       "options": {
@@ -708,11 +648,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct base verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/bus-stop-shopping.jpg",
-          "orientation": "landscape"
-        },
-        "passage": "We go to the beauty supply store every Saturday.",
         "question": "They ___ the bus to the beauty store every Saturday."
       },
       "options": {
@@ -748,11 +683,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct past tense verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/new-shampoo-bottle.jpg",
-          "orientation": "square"
-        },
-        "passage": "The company launched a new product last month.",
         "question": "The company ___ a new cruelty-free shampoo last month."
       },
       "options": {
@@ -823,11 +753,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct gerund verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/makeup-palette-weekend.jpg",
-          "orientation": "portrait"
-        },
-        "passage": "She is very creative and likes to experiment.",
         "question": "She loves ___ new makeup looks on the weekend."
       },
       "options": {
@@ -863,11 +788,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/shop-open-sign.jpg",
-          "orientation": "landscape"
-        },
-        "passage": "The store has a strict schedule for its customers.",
         "question": "The beauty shop ___ at 9 AM every day."
       },
       "options": {
@@ -939,11 +859,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct past participle verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/red-lipstick-bag.jpg",
-          "orientation": "square"
-        },
-        "passage": "I always carry my favorite makeup item with me.",
         "question": "I have ___ my favorite red lipstick in my bag."
       },
       "options": {
@@ -979,11 +894,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct past tense verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/birthday-gift-perfume.jpg",
-          "orientation": "landscape"
-        },
-        "passage": "It was my birthday last week, and I received a lovely gift.",
         "question": "My dad ___ me a nice perfume for my birthday."
       },
       "options": {
@@ -1054,11 +964,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct past tense verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/healthy-salad-lunch.jpg",
-          "orientation": "portrait"
-        },
-        "passage": "She had a very healthy meal today to help her skin.",
         "question": "She ___ a healthy salad for lunch to help her skin."
       },
       "options": {
@@ -1094,11 +999,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/car-barber-shop.jpg",
-          "orientation": "landscape"
-        },
-        "passage": "He has a regular weekly appointment for his hair.",
         "question": "He ___ his car to the barber shop every Friday."
       },
       "options": {
