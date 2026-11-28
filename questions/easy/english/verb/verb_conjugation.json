@@ -1,0 +1,1168 @@
+{
+  "meta": {
+    "title": "Verb Conjugation",
+    "description": "A comprehensive A1/A2 level English grammar test focusing on verb conjugations for regular and irregular verbs, combined with everyday topics related to beauty and self-care.",
+    "info": "This test evaluates basic verb conjugation and usage related to beauty routines, family, weather, places, food, time, animals, transportation, colors/objects, and emotions.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/morning-skincare.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "I have a strict morning routine to keep my skin healthy.",
+        "question": "She ___ her face with a gentle cleanser every morning."
+      },
+      "options": {
+        "A": { "text": "wash", "correct": false },
+        "B": { "text": "washes", "correct": true },
+        "C": { "text": "washing", "correct": false },
+        "D": { "text": "washed", "correct": false },
+        "E": { "text": "always washes", "correct": true }
+      },
+      "explanation": {
+        "text": "The third-person singular subject 'She' requires the verb form 'washes' (V s/es) in the simple present tense. 'Always washes' is also correct as it adds a frequency adverb.",
+        "topic": "Beauty + Daily Routine",
+        "concept": "Third-Person Singular Verb + s/es (Regular Verb)",
+        "formula": "Subject (He/She/It) + Verb (base form + s/es)",
+        "examples": [
+          "She <b>washes</b> her face every day.",
+          "He <b>always washes</b> his hands."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct past tense verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/salon-clock.jpg",
+          "orientation": "square"
+        },
+        "passage": "I had a long appointment yesterday to get my hair done.",
+        "question": "Yesterday, I ___ two hours at the beauty salon."
+      },
+      "options": {
+        "A": { "text": "spend", "correct": false },
+        "B": { "text": "spends", "correct": false },
+        "C": { "text": "spent", "correct": true },
+        "D": { "text": "spending", "correct": false },
+        "E": { "text": "have spent", "correct": true }
+      },
+      "explanation": {
+        "text": "The time marker 'Yesterday' requires the simple past tense. 'Spent' is the irregular V2 form of 'spend'. 'Have spent' is also grammatically correct as a present perfect form, though 'spent' is the most direct fit for 'yesterday'.",
+        "topic": "Beauty + Time",
+        "concept": "Irregular Verb Past Tense (V2)",
+        "formula": "Subject + Irregular Verb (V2)",
+        "examples": [
+          "I <b>spent</b> two hours there.",
+          "She <b>spent</b> all her money."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "She ", "clickable": false },
+        { "id": "s2", "text": "paint ", "clickable": true, "isError": true, "correctAnswers": ["paints "] },
+        { "id": "s3", "text": "her nails ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "red and ", "clickable": false },
+        { "id": "s5", "text": "love ", "clickable": true, "isError": true, "correctAnswers": ["loves "] },
+        { "id": "s6", "text": "showing them.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The singular subject 'She' requires the third-person singular verb forms 'paints' and 'loves' in the simple present tense.",
+        "topic": "Beauty + Colors/Objects",
+        "concept": "Third-Person Singular Verb + s/es (Regular Verbs)",
+        "formula": "Subject (He/She/It) + Verb (base form + s)",
+        "examples": [
+          "She <b>paints</b> her nails red.",
+          "She <b>loves</b> showing them."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/sunscreen-beach.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "The sun is very strong today. We must protect our skin.",
+        "question": "He always ___ sunscreen when it is sunny outside."
+      },
+      "options": {
+        "A": { "text": "apply", "correct": false },
+        "B": { "text": "applies", "correct": true },
+        "C": { "text": "applying", "correct": false },
+        "D": { "text": "applied", "correct": false },
+        "E": { "text": "has applied", "correct": true }
+      },
+      "explanation": {
+        "text": "The adverb 'always' indicates a habit, requiring the simple present tense. The subject 'He' takes 'applies'. 'Has applied' is also correct for present perfect.",
+        "topic": "Beauty + Weather",
+        "concept": "Third-Person Singular Verb + s/es and Present Perfect",
+        "formula": "Subject (He/She/It) + Verb (base form + s/es) OR Subject + has/have + V3",
+        "examples": [
+          "He <b>applies</b> sunscreen daily.",
+          "He <b>has applied</b> it already."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct past participle verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/perfume-bottle.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "I have a new fragrance and it smells wonderful.",
+        "question": "I have ___ my new perfume, and it smells great."
+      },
+      "options": {
+        "A": { "text": "buy", "correct": false },
+        "B": { "text": "buys", "correct": false },
+        "C": { "text": "buying", "correct": false },
+        "D": { "text": "bought", "correct": true },
+        "E": { "text": "bought", "correct": true }
+      },
+      "explanation": {
+        "text": "The present perfect tense ('have') requires the past participle (V3). 'Bought' is the irregular V3 form of 'buy'.",
+        "topic": "Beauty + Emotions",
+        "concept": "Irregular Verb Past Participle (V3)",
+        "formula": "Subject + have/has + Irregular Verb (V3)",
+        "examples": [
+          "I have <b>bought</b> a new perfume.",
+          "She has <b>bought</b> a new dress."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "My mom ", "clickable": false },
+        { "id": "s2", "text": "buy ", "clickable": true, "isError": true, "correctAnswers": ["bought "] },
+        { "id": "s3", "text": "me a new ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "hairbrush and ", "clickable": false },
+        { "id": "s5", "text": "I ", "clickable": false },
+        { "id": "s6", "text": "uses ", "clickable": true, "isError": true, "correctAnswers": ["use "] },
+        { "id": "s7", "text": "it every day.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The past action requires the irregular V2 'bought'. The subject 'I' requires the base verb form 'use' (V1) in the simple present tense.",
+        "topic": "Beauty + Family",
+        "concept": "Irregular Verb Past Tense (V2) and First-Person Singular (V1)",
+        "formula": "Subject + Irregular Verb (V2) / Subject (I) + Base Verb (V1)",
+        "examples": [
+          "My mom <b>bought</b> me a gift.",
+          "I <b>use</b> it every day."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct gerund verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/beauty-store-shelves.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "I love going to this place to find new makeup.",
+        "question": "I enjoy ___ the local beauty store on weekends."
+      },
+      "options": {
+        "A": { "text": "visit", "correct": false },
+        "B": { "text": "visits", "correct": false },
+        "C": { "text": "visiting", "correct": true },
+        "D": { "text": "visited", "correct": false },
+        "E": { "text": "going to visit", "correct": true }
+      },
+      "explanation": {
+        "text": "The verb 'enjoy' is always followed by a gerund (Ving). 'Visiting' or 'going to visit' are correct.",
+        "topic": "Beauty + Places",
+        "concept": "Verb + Gerund (Ving)",
+        "formula": "Subject + enjoy(s) + Verb-ing",
+        "examples": [
+          "I enjoy <b>visiting</b> the store.",
+          "She enjoys <b>shopping</b> for makeup."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct base verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/water-glass-fruit.jpg",
+          "orientation": "square"
+        },
+        "passage": "Healthy habits are important for clear skin.",
+        "question": "We ___ lots of water every day to keep our skin healthy."
+      },
+      "options": {
+        "A": { "text": "drink", "correct": true },
+        "B": { "text": "drinks", "correct": false },
+        "C": { "text": "drinking", "correct": false },
+        "D": { "text": "drank", "correct": false },
+        "E": { "text": "always drink", "correct": true }
+      },
+      "explanation": {
+        "text": "The plural subject 'We' requires the base verb form 'drink' (V1) in the simple present tense.",
+        "topic": "Beauty + Food",
+        "concept": "Plural Subject + Base Verb (V1)",
+        "formula": "Plural Subject + Base Verb (V1)",
+        "examples": [
+          "We <b>drink</b> water daily.",
+          "They <b>always drink</b> tea."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 9,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "She ", "clickable": false },
+        { "id": "s2", "text": "drive ", "clickable": true, "isError": true, "correctAnswers": ["drove "] },
+        { "id": "s3", "text": "to the spa ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "last week and ", "clickable": false },
+        { "id": "s5", "text": "feels ", "clickable": true, "isError": true, "correctAnswers": ["felt "] },
+        { "id": "s6", "text": "very relaxed.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The time marker 'last week' requires the irregular past tense (V2) 'drove' and 'felt'.",
+        "topic": "Beauty + Transportation",
+        "concept": "Irregular Verb Past Tense (V2)",
+        "formula": "Subject + Irregular Verb (V2)",
+        "examples": [
+          "She <b>drove</b> to the spa.",
+          "She <b>felt</b> relaxed."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/cruelty-free-rabbit.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "This brand cares about animals and does not test on them.",
+        "question": "This brand ___ animal testing; they are cruelty-free."
+      },
+      "options": {
+        "A": { "text": "avoid", "correct": false },
+        "B": { "text": "avoids", "correct": true },
+        "C": { "text": "avoiding", "correct": false },
+        "D": { "text": "avoided", "correct": false },
+        "E": { "text": "has avoided", "correct": true }
+      },
+      "explanation": {
+        "text": "The singular subject 'This brand' requires the third-person singular verb 'avoids' (V s/es). 'Has avoided' is also correct for present perfect.",
+        "topic": "Beauty + Animals",
+        "concept": "Third-Person Singular Verb + s/es (Regular Verb)",
+        "formula": "Singular Subject + Verb (base form + s/es)",
+        "examples": [
+          "The brand <b>avoids</b> animal testing.",
+          "It <b>has avoided</b> harm."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct past participle verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/makeup-party.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "The party is tonight, and I am almost ready.",
+        "question": "She has ___ her makeup before the party."
+      },
+      "options": {
+        "A": { "text": "apply", "correct": false },
+        "B": { "text": "applies", "correct": false },
+        "C": { "text": "applying", "correct": false },
+        "D": { "text": "applied", "correct": true },
+        "E": { "text": "already applied", "correct": true }
+      },
+      "explanation": {
+        "text": "The present perfect tense ('has') requires the past participle (V3). 'Applied' is the regular V3 form of 'apply'.",
+        "topic": "Beauty + Daily Routine",
+        "concept": "Regular Verb Past Participle (V3)",
+        "formula": "Subject + has/have + Regular Verb (V3)",
+        "examples": [
+          "She has <b>applied</b> her makeup.",
+          "I have <b>already applied</b> it."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "He ", "clickable": false },
+        { "id": "s2", "text": "feel ", "clickable": true, "isError": true, "correctAnswers": ["felt "] },
+        { "id": "s3", "text": "happy when ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "he ", "clickable": false },
+        { "id": "s5", "text": "get ", "clickable": true, "isError": true, "correctAnswers": ["got "] },
+        { "id": "s6", "text": "a new haircut yesterday.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The time marker 'yesterday' requires the irregular past tense (V2) 'felt' and 'got'.",
+        "topic": "Beauty + Emotions",
+        "concept": "Irregular Verb Past Tense (V2)",
+        "formula": "Subject + Irregular Verb (V2)",
+        "examples": [
+          "He <b>felt</b> happy.",
+          "He <b>got</b> a haircut."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct past tense verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/pharmacy-aisle.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "We needed some face cream, so we went to the store.",
+        "question": "We ___ to the pharmacy to buy some face cream yesterday."
+      },
+      "options": {
+        "A": { "text": "go", "correct": false },
+        "B": { "text": "goes", "correct": false },
+        "C": { "text": "going", "correct": false },
+        "D": { "text": "went", "correct": true },
+        "E": { "text": "have gone", "correct": true }
+      },
+      "explanation": {
+        "text": "The time marker 'yesterday' requires the simple past tense. 'Went' is the irregular V2 form of 'go'.",
+        "topic": "Beauty + Places",
+        "concept": "Irregular Verb Past Tense (V2)",
+        "formula": "Subject + Irregular Verb (V2)",
+        "examples": [
+          "We <b>went</b> to the pharmacy.",
+          "They <b>have gone</b> to the store."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 14,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct gerund verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/skincare-routine-timer.jpg",
+          "orientation": "square"
+        },
+        "passage": "She is very dedicated to her morning skincare steps.",
+        "question": "She spends thirty minutes ___ her skincare routine."
+      },
+      "options": {
+        "A": { "text": "do", "correct": false },
+        "B": { "text": "does", "correct": false },
+        "C": { "text": "doing", "correct": true },
+        "D": { "text": "did", "correct": false },
+        "E": { "text": "always doing", "correct": true }
+      },
+      "explanation": {
+        "text": "The verb 'spend' (time) is followed by a gerund (Ving). 'Doing' is the correct form.",
+        "topic": "Beauty + Time",
+        "concept": "Verb + Gerund (Ving)",
+        "formula": "Subject + spend(s) + time + Verb-ing",
+        "examples": [
+          "She spends time <b>doing</b> her routine.",
+          "I spend an hour <b>reading</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 15,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I have ", "clickable": false },
+        { "id": "s2", "text": "choose ", "clickable": true, "isError": true, "correctAnswers": ["chosen "] },
+        { "id": "s3", "text": "the blue ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "eyeshadow and ", "clickable": false },
+        { "id": "s5", "text": "wore ", "clickable": true, "isError": true, "correctAnswers": ["worn "] },
+        { "id": "s6", "text": "it today.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The present perfect tense ('have') requires the irregular past participle (V3) 'chosen'. The conjunction 'and' links to another past participle 'worn' (V3 of wear).",
+        "topic": "Beauty + Colors/Objects",
+        "concept": "Irregular Verb Past Participle (V3)",
+        "formula": "Subject + have/has + Irregular Verb (V3)",
+        "examples": [
+          "I have <b>chosen</b> the color.",
+          "I have <b>worn</b> it today."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 16,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/night-hairbrush.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "Taking care of hair is part of her nightly habit.",
+        "question": "My sister ___ her hair every night before bed."
+      },
+      "options": {
+        "A": { "text": "brush", "correct": false },
+        "B": { "text": "brushes", "correct": true },
+        "C": { "text": "brushing", "correct": false },
+        "D": { "text": "brushed", "correct": false },
+        "E": { "text": "always brushes", "correct": true }
+      },
+      "explanation": {
+        "text": "The third-person singular subject 'My sister' requires the verb form 'brushes' (V s/es) in the simple present tense.",
+        "topic": "Beauty + Family",
+        "concept": "Third-Person Singular Verb + es (Regular Verb)",
+        "formula": "Subject (He/She/It) + Verb (base form + es)",
+        "examples": [
+          "She <b>brushes</b> her hair nightly.",
+          "He <b>always brushes</b> his teeth."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct past tense verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/winter-scarf.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "The weather was very cold yesterday.",
+        "question": "It was cold, so she ___ a thick scarf to protect her neck."
+      },
+      "options": {
+        "A": { "text": "wear", "correct": false },
+        "B": { "text": "wears", "correct": false },
+        "C": { "text": "wearing", "correct": false },
+        "D": { "text": "wore", "correct": true },
+        "E": { "text": "has worn", "correct": true }
+      },
+      "explanation": {
+        "text": "The past context ('was cold') requires the irregular past tense (V2) 'wore'.",
+        "topic": "Beauty + Weather",
+        "concept": "Irregular Verb Past Tense (V2)",
+        "formula": "Subject + Irregular Verb (V2)",
+        "examples": [
+          "She <b>wore</b> a scarf.",
+          "He <b>has worn</b> a coat."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Eating vegetables ", "clickable": false },
+        { "id": "s2", "text": "make ", "clickable": true, "isError": true, "correctAnswers": ["makes "] },
+        { "id": "s3", "text": "her skin glow ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "and she ", "clickable": false },
+        { "id": "s5", "text": "feel ", "clickable": true, "isError": true, "correctAnswers": ["feels "] },
+        { "id": "s6", "text": "great.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The gerund phrase 'Eating vegetables' acts as a singular subject, requiring 'makes'. The subject 'she' requires 'feels' (V s/es).",
+        "topic": "Beauty + Food",
+        "concept": "Singular Subject-Verb Agreement (V s/es)",
+        "formula": "Singular Subject + Verb (base form + s/es)",
+        "examples": [
+          "Eating well <b>makes</b> a difference.",
+          "She <b>feels</b> great."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct base verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/bus-stop-shopping.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "We go to the beauty supply store every Saturday.",
+        "question": "They ___ the bus to the beauty store every Saturday."
+      },
+      "options": {
+        "A": { "text": "take", "correct": true },
+        "B": { "text": "takes", "correct": false },
+        "C": { "text": "taking", "correct": false },
+        "D": { "text": "took", "correct": false },
+        "E": { "text": "always take", "correct": true }
+      },
+      "explanation": {
+        "text": "The plural subject 'They' requires the base verb form 'take' (V1) in the simple present tense.",
+        "topic": "Beauty + Transportation",
+        "concept": "Plural Subject + Base Verb (V1)",
+        "formula": "Plural Subject + Base Verb (V1)",
+        "examples": [
+          "They <b>take</b> the bus.",
+          "We <b>always take</b> the train."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 20,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct past tense verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/new-shampoo-bottle.jpg",
+          "orientation": "square"
+        },
+        "passage": "The company launched a new product last month.",
+        "question": "The company ___ a new cruelty-free shampoo last month."
+      },
+      "options": {
+        "A": { "text": "make", "correct": false },
+        "B": { "text": "makes", "correct": false },
+        "C": { "text": "making", "correct": false },
+        "D": { "text": "made", "correct": true },
+        "E": { "text": "has made", "correct": true }
+      },
+      "explanation": {
+        "text": "The time marker 'last month' requires the simple past tense. 'Made' is the irregular V2 form of 'make'.",
+        "topic": "Beauty + Animals",
+        "concept": "Irregular Verb Past Tense (V2)",
+        "formula": "Subject + Irregular Verb (V2)",
+        "examples": [
+          "The company <b>made</b> a new product.",
+          "They <b>have made</b> it cruelty-free."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 21,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "He has ", "clickable": false },
+        { "id": "s2", "text": "wash ", "clickable": true, "isError": true, "correctAnswers": ["washed "] },
+        { "id": "s3", "text": "his face ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "and now he ", "clickable": false },
+        { "id": "s5", "text": "applies ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "moisturizer.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The present perfect tense ('has') requires the regular past participle (V3) 'washed'. 'Applies' is correctly conjugated for the simple present.",
+        "topic": "Beauty + Daily Routine",
+        "concept": "Regular Verb Past Participle (V3)",
+        "formula": "Subject + has/have + Regular Verb (V3)",
+        "examples": [
+          "He has <b>washed</b> his face.",
+          "He <b>applies</b> moisturizer."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 22,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct gerund verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/makeup-palette-weekend.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "She is very creative and likes to experiment.",
+        "question": "She loves ___ new makeup looks on the weekend."
+      },
+      "options": {
+        "A": { "text": "try", "correct": false },
+        "B": { "text": "tries", "correct": false },
+        "C": { "text": "trying", "correct": true },
+        "D": { "text": "tried", "correct": false },
+        "E": { "text": "always trying", "correct": true }
+      },
+      "explanation": {
+        "text": "The verb 'love' can be followed by a gerund (Ving). 'Trying' is the correct form.",
+        "topic": "Beauty + Emotions",
+        "concept": "Verb + Gerund (Ving)",
+        "formula": "Subject + love(s) + Verb-ing",
+        "examples": [
+          "She loves <b>trying</b> new looks.",
+          "He loves <b>always trying</b> new things."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/shop-open-sign.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "The store has a strict schedule for its customers.",
+        "question": "The beauty shop ___ at 9 AM every day."
+      },
+      "options": {
+        "A": { "text": "open", "correct": false },
+        "B": { "text": "opens", "correct": true },
+        "C": { "text": "opening", "correct": false },
+        "D": { "text": "opened", "correct": false },
+        "E": { "text": "has opened", "correct": true }
+      },
+      "explanation": {
+        "text": "The singular subject 'The beauty shop' requires the third-person singular verb 'opens' (V s/es) for a daily schedule.",
+        "topic": "Beauty + Places",
+        "concept": "Third-Person Singular Verb + s (Regular Verb)",
+        "formula": "Singular Subject + Verb (base form + s)",
+        "examples": [
+          "The shop <b>opens</b> at 9 AM.",
+          "It <b>has opened</b> early today."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Last night, I ", "clickable": false },
+        { "id": "s2", "text": "spend ", "clickable": true, "isError": true, "correctAnswers": ["spent "] },
+        { "id": "s3", "text": "an hour ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "doing my nails and ", "clickable": false },
+        { "id": "s5", "text": "it ", "clickable": false },
+        { "id": "s6", "text": "look ", "clickable": true, "isError": true, "correctAnswers": ["looked "] },
+        { "id": "s7", "text": "perfect.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The time marker 'Last night' requires the irregular past tense (V2) 'spent' and the regular past tense (V2) 'looked'.",
+        "topic": "Beauty + Time",
+        "concept": "Irregular and Regular Verb Past Tense (V2)",
+        "formula": "Subject + Irregular/Regular Verb (V2)",
+        "examples": [
+          "I <b>spent</b> an hour.",
+          "It <b>looked</b> perfect."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct past participle verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/red-lipstick-bag.jpg",
+          "orientation": "square"
+        },
+        "passage": "I always carry my favorite makeup item with me.",
+        "question": "I have ___ my favorite red lipstick in my bag."
+      },
+      "options": {
+        "A": { "text": "put", "correct": true },
+        "B": { "text": "puts", "correct": false },
+        "C": { "text": "putting", "correct": false },
+        "D": { "text": "puts", "correct": false },
+        "E": { "text": "already put", "correct": true }
+      },
+      "explanation": {
+        "text": "The present perfect tense ('have') requires the past participle (V3). 'Put' is an irregular verb where V1, V2, and V3 are all 'put'.",
+        "topic": "Beauty + Colors/Objects",
+        "concept": "Irregular Verb Past Participle (V3)",
+        "formula": "Subject + have/has + Irregular Verb (V3)",
+        "examples": [
+          "I have <b>put</b> it in my bag.",
+          "I have <b>already put</b> it away."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 26,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct past tense verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/birthday-gift-perfume.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "It was my birthday last week, and I received a lovely gift.",
+        "question": "My dad ___ me a nice perfume for my birthday."
+      },
+      "options": {
+        "A": { "text": "buy", "correct": false },
+        "B": { "text": "buys", "correct": false },
+        "C": { "text": "buying", "correct": false },
+        "D": { "text": "bought", "correct": true },
+        "E": { "text": "has bought", "correct": true }
+      },
+      "explanation": {
+        "text": "The past context requires the irregular past tense (V2) 'bought'.",
+        "topic": "Beauty + Family",
+        "concept": "Irregular Verb Past Tense (V2)",
+        "formula": "Subject + Irregular Verb (V2)",
+        "examples": [
+          "My dad <b>bought</b> me a gift.",
+          "He <b>has bought</b> it already."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 27,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "When it rains, ", "clickable": false },
+        { "id": "s2", "text": "I wear ", "clickable": true, "isError": false },
+        { "id": "s3", "text": "my hood and ", "clickable": false },
+        { "id": "s4", "text": "have ", "clickable": false },
+        { "id": "s5", "text": "protect ", "clickable": true, "isError": true, "correctAnswers": ["protected "] },
+        { "id": "s6", "text": "my hair.", "clickable": true, "isError": false }
+      ],
+      "explanation": {
+        "text": "The present perfect tense ('have') requires the regular past participle (V3) 'protected'.",
+        "topic": "Beauty + Weather",
+        "concept": "Regular Verb Past Participle (V3)",
+        "formula": "Subject + have/has + Regular Verb (V3)",
+        "examples": [
+          "I have <b>protected</b> my hair.",
+          "I <b>wear</b> my hood."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 28,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct past tense verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/healthy-salad-lunch.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "She had a very healthy meal today to help her skin.",
+        "question": "She ___ a healthy salad for lunch to help her skin."
+      },
+      "options": {
+        "A": { "text": "eat", "correct": false },
+        "B": { "text": "eats", "correct": false },
+        "C": { "text": "eating", "correct": false },
+        "D": { "text": "ate", "correct": true },
+        "E": { "text": "has eaten", "correct": true }
+      },
+      "explanation": {
+        "text": "The past context requires the irregular past tense (V2) 'ate', or present perfect 'has eaten'.",
+        "topic": "Beauty + Food",
+        "concept": "Irregular Verb Past Tense (V2) / Present Perfect (V3)",
+        "formula": "Subject + Irregular Verb (V2) OR Subject + has/have + V3",
+        "examples": [
+          "She <b>ate</b> a salad.",
+          "She <b>has eaten</b> well."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/car-barber-shop.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "He has a regular weekly appointment for his hair.",
+        "question": "He ___ his car to the barber shop every Friday."
+      },
+      "options": {
+        "A": { "text": "drive", "correct": false },
+        "B": { "text": "drives", "correct": true },
+        "C": { "text": "driving", "correct": false },
+        "D": { "text": "drove", "correct": false },
+        "E": { "text": "always drives", "correct": true }
+      },
+      "explanation": {
+        "text": "The third-person singular subject 'He' requires the verb form 'drives' (V s/es) in the simple present tense.",
+        "topic": "Beauty + Transportation",
+        "concept": "Third-Person Singular Verb + s (Regular Verb)",
+        "formula": "Subject (He/She/It) + Verb (base form + s)",
+        "examples": [
+          "He <b>drives</b> to the shop.",
+          "He <b>always drives</b> there."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "She ", "clickable": false },
+        { "id": "s2", "text": "enjoy ", "clickable": true, "isError": true, "correctAnswers": ["enjoys "] },
+        { "id": "s3", "text": "trying new ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "skincare products and ", "clickable": false },
+        { "id": "s5", "text": "feels ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "confident.", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The singular subject 'She' requires the third-person singular verb form 'enjoys' (V s/es). 'Feels' is already correctly conjugated.",
+        "topic": "Beauty + Emotions",
+        "concept": "Third-Person Singular Verb + s (Regular Verb)",
+        "formula": "Subject (He/She/It) + Verb (base form + s)",
+        "examples": [
+          "She <b>enjoys</b> trying new products.",
+          "She <b>feels</b> confident."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    }
+  ]
+}

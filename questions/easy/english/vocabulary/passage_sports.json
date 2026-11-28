@@ -1,0 +1,871 @@
+{
+  "meta": {
+    "title": "English Passage - Sports",
+    "description": "A comprehensive English test focusing on Sports vocabulary.",
+    "info": "This test contains 30 questions designed for A1-A2 learners, featuring short passages (80-100 words) about various sports.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option that combines vocabulary, translation, and grammar.",
+        "passage": "Football is the most popular sport in the world. Millions of people watch it on television every weekend. A football match has two teams. Each team has eleven players on the field. The players run, pass, and kick a round ball. The main goal is to score by putting the ball into the net. The game lasts for ninety minutes. There is a short break in the middle. Fans cheer loudly for their favorite teams. Playing football is great exercise. It helps you stay strong and healthy. Do you like playing football with your friends?",
+        "question": "Translate 'putting the ball into the net' and choose the correct verb form: 'He ___ the ball into the net.'"
+      },
+      "options": {
+        "A": {"text": "kick", "correct": false},
+        "B": {"text": "kicks", "correct": true},
+        "C": {"text": "kicking", "correct": false},
+        "D": {"text": "to kick", "correct": false}
+      },
+      "explanation": {
+        "text": "'Kicks' is the correct third-person singular present tense verb. 'Putting the ball into the net' means scoring a goal.",
+        "topic": "Vocabulary and Grammar",
+        "concept": "Present Simple Tense and Sports Vocabulary",
+        "formula": "Subject (He/She/It) + Verb(s/es)",
+        "examples": ["He kicks the ball every day."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {"fast": 20, "normal": 45, "easy": 90}
+      }
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option that combines vocabulary, translation, and grammar.",
+        "passage": "Basketball is a fast and exciting sport. Two teams play against each other on a rectangular court. Each team has five players. The players dribble and pass an orange ball. They try to throw the ball through a high hoop. A successful throw is called a basket. The game is divided into four quarters. Players must run fast and jump high. Good teamwork is very important to win. Many children learn to play basketball at school. It is a fun way to make new friends and stay active every day.",
+        "question": "Which word means 'a successful throw' and correctly completes: 'She ___ a basket'?"
+      },
+      "options": {
+        "A": {"text": "make", "correct": false},
+        "B": {"text": "makes", "correct": true},
+        "C": {"text": "making", "correct": false},
+        "D": {"text": "made", "correct": false}
+      },
+      "explanation": {
+        "text": "'Makes' is the correct present simple form for 'She'. A successful throw in basketball is called 'making a basket'.",
+        "topic": "Vocabulary and Grammar",
+        "concept": "Present Simple Tense and Sports Vocabulary",
+        "formula": "Subject (She) + Verb(s/es)",
+        "examples": ["She makes a basket every time."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {"fast": 20, "normal": 45, "easy": 90}
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option that combines vocabulary, translation, and grammar.",
+        "passage": "Swimming is a wonderful sport for people of all ages. You can swim in a pool, a lake, or the ocean. It is a great full-body workout. Swimming uses your arms, legs, and back muscles. There are different styles, like freestyle, backstroke, and breaststroke. Beginners should always swim with a teacher or a friend. It is important to warm up before you enter the water. Swimming keeps your heart healthy and helps you relax. Many people enjoy swimming during the hot summer months to cool down.",
+        "question": "Translate 'warm up' and choose the correct modal verb: 'You ___ warm up before swimming.'"
+      },
+      "options": {
+        "A": {"text": "can", "correct": false},
+        "B": {"text": "should", "correct": true},
+        "C": {"text": "will", "correct": false},
+        "D": {"text": "are", "correct": false}
+      },
+      "explanation": {
+        "text": "'Should' is used to give advice. 'Warm up' means to prepare your body for exercise.",
+        "topic": "Vocabulary and Grammar",
+        "concept": "Modal Verbs for Advice and Phrasal Verbs",
+        "formula": "Subject + should + base verb",
+        "examples": ["You should warm up before running."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {"fast": 20, "normal": 45, "easy": 90}
+      }
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option that combines vocabulary, translation, and grammar.",
+        "passage": "Tennis is a popular racket sport played by two or four people. Players use a stringed racket to hit a small yellow ball. The ball must go over a net and land inside the court lines. A tennis match can be played on grass, clay, or hard courts. Players need good hand-eye coordination and fast reflexes. They run quickly from one side of the court to the other. A game is scored in points, games, and sets. Tennis is a great sport for building strength and improving focus.",
+        "question": "What is the translation of 'racket sport' and the correct plural form: 'They play two ___'?"
+      },
+      "options": {
+        "A": {"text": "racket sports", "correct": true},
+        "B": {"text": "racket sport", "correct": false},
+        "C": {"text": "rackets sport", "correct": false},
+        "D": {"text": "racketes sports", "correct": false}
+      },
+      "explanation": {
+        "text": "'Racket sports' is the correct plural form. A racket sport uses a racket to hit a ball or shuttlecock.",
+        "topic": "Vocabulary and Grammar",
+        "concept": "Plural Nouns and Compound Nouns",
+        "formula": "Noun + s (for regular plurals)",
+        "examples": ["Tennis and badminton are racket sports."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {"fast": 20, "normal": 45, "easy": 90}
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option that combines vocabulary, translation, and grammar.",
+        "passage": "Running is one of the simplest and oldest sports. You only need a good pair of running shoes to start. People run in parks, on streets, or on special tracks. Some people run for fun, while others train for marathons. A marathon is a very long race of forty-two kilometers. Running every day makes your heart and lungs stronger. It also helps you lose weight and feel happy. Beginners should start with short distances and walk when they feel tired. Always drink water before and after your run.",
+        "question": "Translate 'forty-two kilometers' and choose the correct article: 'It is ___ long race.'"
+      },
+      "options": {
+        "A": {"text": "a", "correct": true},
+        "B": {"text": "an", "correct": false},
+        "C": {"text": "the", "correct": false},
+        "D": {"text": "no article", "correct": false}
+      },
+      "explanation": {
+        "text": "'A' is used before a consonant sound. 'Forty-two kilometers' is the distance of a marathon.",
+        "topic": "Vocabulary and Grammar",
+        "concept": "Articles and Numbers",
+        "formula": "a + consonant sound",
+        "examples": ["It is a long race."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {"fast": 20, "normal": 45, "easy": 90}
+      }
+    },
+    {
+      "id": 6,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option that combines vocabulary, translation, and grammar.",
+        "passage": "Cycling is a fun and eco-friendly sport. You can ride a bicycle in the city, in the countryside, or on mountain trails. Cyclists wear helmets to protect their heads in case of a fall. Riding a bike is good for the environment because it does not produce pollution. It also saves money on gasoline. Cycling strengthens your leg muscles and improves your balance. Many families enjoy going on bike rides together on weekends. It is a wonderful way to explore new places and enjoy nature.",
+        "question": "What does 'eco-friendly' mean and which verb is correct: 'Cycling ___ the environment'?"
+      },
+      "options": {
+        "A": {"text": "help", "correct": false},
+        "B": {"text": "helps", "correct": true},
+        "C": {"text": "helping", "correct": false},
+        "D": {"text": "helped", "correct": false}
+      },
+      "explanation": {
+        "text": "'Helps' is the third-person singular present tense. 'Eco-friendly' means not harmful to the environment.",
+        "topic": "Vocabulary and Grammar",
+        "concept": "Present Simple and Compound Adjectives",
+        "formula": "Subject (It) + Verb(s/es)",
+        "examples": ["Cycling helps the planet."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {"fast": 20, "normal": 45, "easy": 90}
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option that combines vocabulary, translation, and grammar.",
+        "passage": "Volleyball is a team sport played with a ball and a high net. Two teams of six players stand on opposite sides of the net. Players use their hands or arms to hit the ball over the net. The ball cannot touch the ground. A team can hit the ball up to three times before sending it back. Players must communicate well to win the point. Volleyball is often played on the beach during summer vacations. It requires quick reactions and strong teamwork to be successful.",
+        "question": "Translate 'opposite sides' and choose the correct preposition: 'The teams stand ___ the net.'"
+      },
+      "options": {
+        "A": {"text": "in", "correct": false},
+        "B": {"text": "on", "correct": true},
+        "C": {"text": "at", "correct": false},
+        "D": {"text": "by", "correct": false}
+      },
+      "explanation": {
+        "text": "'On' is the correct preposition for sides of a net. 'Opposite sides' means facing each other.",
+        "topic": "Vocabulary and Grammar",
+        "concept": "Prepositions of Place and Vocabulary",
+        "formula": "on + the + noun",
+        "examples": ["They stand on opposite sides."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {"fast": 20, "normal": 45, "easy": 90}
+      }
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option that combines vocabulary, translation, and grammar.",
+        "passage": "Baseball is a classic sport played with a bat, a ball, and gloves. Two teams take turns batting and fielding. The field has four bases arranged in a diamond shape. A pitcher throws the ball, and the batter tries to hit it. If the batter hits the ball, they run to the bases. A player scores a run by touching all four bases. Baseball games can be long, often lasting three hours. Fans love to eat hot dogs and drink soda while watching the game.",
+        "question": "What is the translation of 'take turns' and the correct past tense: 'They ___ turns yesterday.'"
+      },
+      "options": {
+        "A": {"text": "take", "correct": false},
+        "B": {"text": "took", "correct": true},
+        "C": {"text": "taking", "correct": false},
+        "D": {"text": "takes", "correct": false}
+      },
+      "explanation": {
+        "text": "'Took' is the past tense of 'take'. 'Take turns' means to alternate doing something.",
+        "topic": "Vocabulary and Grammar",
+        "concept": "Past Simple Tense and Phrasal Verbs",
+        "formula": "Subject + V2 (past form)",
+        "examples": ["They took turns yesterday."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {"fast": 20, "normal": 45, "easy": 90}
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option that combines vocabulary, translation, and grammar.",
+        "passage": "Gymnastics is a sport that requires strength, flexibility, and balance. Gymnasts perform routines on different equipment, like bars, beams, and mats. They do flips, jumps, and spins in the air. Judges watch the performance and give scores based on difficulty and execution. Gymnasts must practice for many hours every week. They start training at a very young age. It is a challenging sport, but it teaches discipline and confidence. Watching gymnastics at the Olympic Games is always very exciting for fans.",
+        "question": "Translate 'based on' and choose the correct verb: 'The score ___ on difficulty.'"
+      },
+      "options": {
+        "A": {"text": "are", "correct": false},
+        "B": {"text": "is", "correct": true},
+        "C": {"text": "be", "correct": false},
+        "D": {"text": "were", "correct": false}
+      },
+      "explanation": {
+        "text": "'Is' is the correct singular verb for 'score'. 'Based on' means using something as a foundation.",
+        "topic": "Vocabulary and Grammar",
+        "concept": "Subject-Verb Agreement and Phrasal Verbs",
+        "formula": "Singular Subject + is",
+        "examples": ["The score is based on skill."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {"fast": 20, "normal": 45, "easy": 90}
+      }
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option that combines vocabulary, translation, and grammar.",
+        "passage": "Skiing is a popular winter sport enjoyed in snowy mountains. Skiers wear special boots that attach to long, flat skis. They use poles to help them balance and move forward. There are two main types of skiing: downhill and cross-country. Downhill skiing is fast and thrilling, while cross-country is slower and more peaceful. Skiers must wear warm clothes, gloves, and goggles to protect their eyes from the bright snow. Many families go to ski resorts during the winter holidays to enjoy the fresh snow.",
+        "question": "What does 'cross-country' mean and which comparative is correct: 'It is ___ than downhill.'"
+      },
+      "options": {
+        "A": {"text": "peaceful", "correct": false},
+        "B": {"text": "more peaceful", "correct": true},
+        "C": {"text": "most peaceful", "correct": false},
+        "D": {"text": "peacefuller", "correct": false}
+      },
+      "explanation": {
+        "text": "'More peaceful' is the correct comparative form for long adjectives. 'Cross-country' means across open country.",
+        "topic": "Vocabulary and Grammar",
+        "concept": "Comparative Adjectives and Compound Words",
+        "formula": "more + adjective",
+        "examples": ["It is more peaceful than downhill."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {"fast": 20, "normal": 45, "easy": 90}
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option that combines vocabulary, translation, and grammar.",
+        "passage": "Badminton is a light and fast racket sport. Players hit a shuttlecock over a net using a lightweight racket. The shuttlecock is made of feathers and cork, making it fly differently than a ball. It can be played indoors or outdoors. Singles matches have one player per side, while doubles have two. Players need to be quick and agile to reach the shuttlecock. Badminton is a great sport for improving reflexes and burning calories. It is very popular in many Asian countries.",
+        "question": "Translate 'made of' and choose the correct passive form: 'The shuttlecock ___ of feathers.'"
+      },
+      "options": {
+        "A": {"text": "is made", "correct": true},
+        "B": {"text": "are made", "correct": false},
+        "C": {"text": "make", "correct": false},
+        "D": {"text": "making", "correct": false}
+      },
+      "explanation": {
+        "text": "'Is made' is the correct singular passive form. 'Made of' describes the material something consists of.",
+        "topic": "Vocabulary and Grammar",
+        "concept": "Passive Voice and Prepositions",
+        "formula": "Singular Subject + is + past participle",
+        "examples": ["The shuttlecock is made of feathers."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {"fast": 20, "normal": 45, "easy": 90}
+      }
+    },
+    {
+      "id": 12,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option that combines vocabulary, translation, and grammar.",
+        "passage": "Golf is a quiet and precise sport played on a large green course. Players use different clubs to hit a small white ball into a series of holes. The goal is to complete the course in the fewest number of strokes. Golf requires a lot of patience and concentration. Players walk long distances during a round, which is good exercise. The sport has strict rules about etiquette and dress code. Many business people play golf to relax and network with others.",
+        "question": "What is the translation of 'fewest number' and the correct superlative: 'This is the ___ strokes.'"
+      },
+      "options": {
+        "A": {"text": "few", "correct": false},
+        "B": {"text": "fewer", "correct": false},
+        "C": {"text": "fewest", "correct": true},
+        "D": {"text": "most few", "correct": false}
+      },
+      "explanation": {
+        "text": "'Fewest' is the superlative form of 'few'. It means the smallest number.",
+        "topic": "Vocabulary and Grammar",
+        "concept": "Superlative Adjectives and Quantifiers",
+        "formula": "the + fewest + plural noun",
+        "examples": ["This is the fewest strokes."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {"fast": 20, "normal": 45, "easy": 90}
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option that combines vocabulary, translation, and grammar.",
+        "passage": "Boxing is a combat sport where two people fight using their fists. Boxers wear padded gloves to protect their hands and their opponent. They fight inside a square ring, supervised by a referee. The goal is to score points by landing clean hits or to win by knockout. Boxers must follow strict rules to ensure safety during the match. Training includes running, jumping rope, and hitting heavy bags. It is a tough sport that requires immense physical and mental strength.",
+        "question": "Translate 'landing clean hits' and choose the correct gerund: '___ clean hits is the goal.'"
+      },
+      "options": {
+        "A": {"text": "Land", "correct": false},
+        "B": {"text": "Landing", "correct": true},
+        "C": {"text": "Landed", "correct": false},
+        "D": {"text": "Lands", "correct": false}
+      },
+      "explanation": {
+        "text": "'Landing' is the gerund form used as the subject. 'Landing clean hits' means hitting the opponent clearly.",
+        "topic": "Vocabulary and Grammar",
+        "concept": "Gerunds as Subjects and Sports Vocabulary",
+        "formula": "Verb + ing (as subject)",
+        "examples": ["Landing clean hits is the goal."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {"fast": 20, "normal": 45, "easy": 90}
+      }
+    },
+    {
+      "id": 14,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option that combines vocabulary, translation, and grammar.",
+        "passage": "Surfing is an exciting water sport done in the ocean. Surfers stand on a long board and ride moving waves toward the shore. It requires excellent balance and strong swimming skills. Beginners usually start on soft, long boards in small waves. Surfers must respect the ocean and know how to read the waves safely. Wearing a wetsuit keeps them warm in cold water. Surfing is not just a sport; it is a lifestyle for many people who love the beach.",
+        "question": "What does 'toward the shore' mean and which preposition is correct: 'They ride ___ the shore.'"
+      },
+      "options": {
+        "A": {"text": "toward", "correct": true},
+        "B": {"text": "at", "correct": false},
+        "C": {"text": "in", "correct": false},
+        "D": {"text": "on", "correct": false}
+      },
+      "explanation": {
+        "text": "'Toward' indicates direction. 'Toward the shore' means moving in the direction of the land.",
+        "topic": "Vocabulary and Grammar",
+        "concept": "Prepositions of Direction and Vocabulary",
+        "formula": "toward + noun",
+        "examples": ["They ride toward the shore."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {"fast": 20, "normal": 45, "easy": 90}
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct option that combines vocabulary, translation, and grammar.",
+        "passage": "Yoga is an ancient practice that combines physical postures, breathing, and meditation. It is not a competitive sport, but it improves fitness and health. People do yoga on mats in studios or at home. There are many styles, from gentle stretching to intense workouts. Yoga helps reduce stress and makes your body more flexible. It is suitable for everyone, regardless of age or fitness level. Practicing yoga regularly can improve your sleep and overall well-being significantly.",
+        "question": "Translate 'regardless of' and choose the correct conjunction: 'It is for everyone, ___ their age.'"
+      },
+      "options": {
+        "A": {"text": "regardless of", "correct": true},
+        "B": {"text": "because", "correct": false},
+        "C": {"text": "so", "correct": false},
+        "D": {"text": "and", "correct": false}
+      },
+      "explanation": {
+        "text": "'Regardless of' means without being affected by. It correctly connects the idea of inclusion despite age.",
+        "topic": "Vocabulary and Grammar",
+        "concept": "Conjunctions/Prepositions and Advanced Vocabulary",
+        "formula": "regardless of + noun phrase",
+        "examples": ["It is for everyone, regardless of their age."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {"fast": 20, "normal": 45, "easy": 90}
+      }
+    },
+    {
+      "id": 16,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error.",
+        "passage": "Rugby is a rough and exciting team sport similar to football. Players carry, pass, and kick an oval-shaped ball. The main difference is that players can carry the ball in their hands. Tackling is allowed to stop the player with the ball. A match is played on a large grass field with H-shaped goalposts. Rugby teaches players to be brave and work closely together. It is very popular in countries like New Zealand, South Africa, and England."
+      },
+      "multiErrorSegments": [
+        {"id": "s1", "text": "The players ", "clickable": false},
+        {"id": "s2", "text": "runs ", "clickable": true, "isError": true, "correctAnswers": ["run"]},
+        {"id": "s3", "text": "and ", "clickable": false},
+        {"id": "s4", "text": "kick ", "clickable": true, "isError": false},
+        {"id": "s5", "text": "the ball ", "clickable": false},
+        {"id": "s6", "text": "into the net. ", "clickable": true, "isError": false}
+      ],
+      "explanation": {
+        "text": "'Run' is correct because 'players' is plural. 'Kick' and 'into the net' are correct.",
+        "topic": "Subject-Verb Agreement",
+        "concept": "Plural subjects take base form verbs.",
+        "formula": "Subject + Correct Verb Form",
+        "examples": ["The players run fast."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {"fast": 25, "normal": 50, "easy": 90}
+      }
+    },
+    {
+      "id": 17,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error.",
+        "passage": "Ice hockey is a fast and physical sport played on ice. Two teams of six players wear skates and use sticks to hit a hard rubber puck. The goal is to shoot the puck into the opponent's net. Players wear heavy padding and helmets for protection because the game is very fast. Ice hockey is extremely popular in cold countries like Canada and Russia. The sound of skates cutting the ice and sticks hitting the puck is thrilling."
+      },
+      "multiErrorSegments": [
+        {"id": "s1", "text": "She ", "clickable": false},
+        {"id": "s2", "text": "make ", "clickable": true, "isError": true, "correctAnswers": ["makes"]},
+        {"id": "s3", "text": "a successful ", "clickable": false},
+        {"id": "s4", "text": "basket ", "clickable": true, "isError": false},
+        {"id": "s5", "text": "every ", "clickable": false},
+        {"id": "s6", "text": "game. ", "clickable": true, "isError": false}
+      ],
+      "explanation": {
+        "text": "'Makes' is correct for third-person singular 'She'. 'Basket' and 'game' are correct.",
+        "topic": "Subject-Verb Agreement",
+        "concept": "Third-person singular adds 's' to the verb.",
+        "formula": "Subject + Correct Verb Form",
+        "examples": ["She makes a basket."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {"fast": 25, "normal": 50, "easy": 90}
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error.",
+        "passage": "Table tennis, also known as ping-pong, is a fast indoor sport. Two or four players stand at opposite ends of a small table. They use small paddles to hit a lightweight plastic ball over a low net. The ball bounces once on each side of the table. Players need incredibly fast reflexes and good hand-eye coordination. It is a fun game to play at home, in schools, or in community centers. Table tennis is an official Olympic sport."
+      },
+      "multiErrorSegments": [
+        {"id": "s1", "text": "You ", "clickable": false},
+        {"id": "s2", "text": "must ", "clickable": true, "isError": false},
+        {"id": "s3", "text": "warms up ", "clickable": true, "isError": true, "correctAnswers": ["warm up"]},
+        {"id": "s4", "text": "before ", "clickable": false},
+        {"id": "s5", "text": "you go ", "clickable": false},
+        {"id": "s6", "text": "swimming. ", "clickable": true, "isError": false}
+      ],
+      "explanation": {
+        "text": "'Warm up' is correct after the modal verb 'must'. Modal verbs are followed by the base form.",
+        "topic": "Modal Verbs",
+        "concept": "Modal + base verb (no 's').",
+        "formula": "Subject + Correct Verb Form",
+        "examples": ["You must warm up."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {"fast": 25, "normal": 50, "easy": 90}
+      }
+    },
+    {
+      "id": 19,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error.",
+        "passage": "Athletics includes many different sports like running, jumping, and throwing. Track events are running races of various distances. Field events include the long jump, high jump, and shot put. Athletes train hard to improve their speed, strength, and technique. The Olympic Games feature the best athletes from around the world. Athletics is often called the king of sports because it tests basic human physical abilities. Watching a close race finish is always very exciting for everyone."
+      },
+      "multiErrorSegments": [
+        {"id": "s1", "text": "They ", "clickable": false},
+        {"id": "s2", "text": "plays ", "clickable": true, "isError": true, "correctAnswers": ["play"]},
+        {"id": "s3", "text": "two ", "clickable": false},
+        {"id": "s4", "text": "racket sports ", "clickable": true, "isError": false},
+        {"id": "s5", "text": "every ", "clickable": false},
+        {"id": "s6", "text": "week. ", "clickable": true, "isError": false}
+      ],
+      "explanation": {
+        "text": "'Play' is correct because 'They' is plural. 'Racket sports' is the correct plural compound noun.",
+        "topic": "Subject-Verb Agreement",
+        "concept": "Plural pronouns take base form verbs.",
+        "formula": "Subject + Correct Verb Form",
+        "examples": ["They play racket sports."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {"fast": 25, "normal": 50, "easy": 90}
+      }
+    },
+    {
+      "id": 20,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error.",
+        "passage": "Skateboarding is a popular action sport among young people. Skateboarders ride on a wooden board with four wheels. They perform tricks like ollies, kickflips, and grinds at skate parks. Safety gear, such as helmets and knee pads, is very important. Skateboarding requires a lot of practice and courage to learn new tricks. It is also a creative way to express yourself. Many cities build special skate parks to give skateboarders a safe place to ride."
+      },
+      "multiErrorSegments": [
+        {"id": "s1", "text": "It ", "clickable": false},
+        {"id": "s2", "text": "are ", "clickable": true, "isError": true, "correctAnswers": ["is"]},
+        {"id": "s3", "text": "a ", "clickable": false},
+        {"id": "s4", "text": "long race ", "clickable": true, "isError": false},
+        {"id": "s5", "text": "of ", "clickable": false},
+        {"id": "s6", "text": "forty-two km. ", "clickable": true, "isError": false}
+      ],
+      "explanation": {
+        "text": "'Is' is correct because 'It' is singular. 'Long race' and 'forty-two km' are correct.",
+        "topic": "Subject-Verb Agreement",
+        "concept": "Singular subjects take 'is'.",
+        "formula": "Subject + Correct Verb Form",
+        "examples": ["It is a long race."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {"fast": 25, "normal": 50, "easy": 90}
+      }
+    },
+    {
+      "id": 21,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error.",
+        "passage": "Rowing is a water sport where people propel boats using oars. It can be done on rivers, lakes, or the ocean. Rowers sit in a line and pull the oars together in perfect rhythm. Teamwork and synchronization are crucial for moving the boat fast. Rowing is an excellent workout for the arms, back, and legs. It is a peaceful sport that allows you to enjoy nature. Competitive rowing races are called regattas and are very exciting to watch."
+      },
+      "multiErrorSegments": [
+        {"id": "s1", "text": "Cycling ", "clickable": false},
+        {"id": "s2", "text": "help ", "clickable": true, "isError": true, "correctAnswers": ["helps"]},
+        {"id": "s3", "text": "the ", "clickable": false},
+        {"id": "s4", "text": "environment ", "clickable": true, "isError": false},
+        {"id": "s5", "text": "a lot. ", "clickable": true, "isError": false},
+        {"id": "s6", "text": "daily. ", "clickable": false}
+      ],
+      "explanation": {
+        "text": "'Helps' is correct because 'Cycling' is a singular gerund subject. 'Environment' is correct.",
+        "topic": "Subject-Verb Agreement",
+        "concept": "Gerund subjects are singular.",
+        "formula": "Subject + Correct Verb Form",
+        "examples": ["Cycling helps the environment."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {"fast": 25, "normal": 50, "easy": 90}
+      }
+    },
+    {
+      "id": 22,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error.",
+        "passage": "Martial arts, such as karate, judo, and taekwondo, are combat sports. They teach self-defense, discipline, and respect for others. Students wear a uniform called a gi and practice in a dojo. They learn kicks, punches, and throws through repeated practice. Belts of different colors show a student's skill level, from white to black. Martial arts are not about fighting; they are about controlling your body and mind. They build confidence and physical fitness."
+      },
+      "multiErrorSegments": [
+        {"id": "s1", "text": "The two teams ", "clickable": false},
+        {"id": "s2", "text": "stands ", "clickable": true, "isError": true, "correctAnswers": ["stand"]},
+        {"id": "s3", "text": "on ", "clickable": true, "isError": false},
+        {"id": "s4", "text": "opposite sides ", "clickable": true, "isError": false},
+        {"id": "s5", "text": "of the high ", "clickable": false},
+        {"id": "s6", "text": "net. ", "clickable": false}
+      ],
+      "explanation": {
+        "text": "'Stand' is correct because 'teams' is plural. 'On opposite sides' is the correct prepositional phrase.",
+        "topic": "Subject-Verb Agreement",
+        "concept": "Plural subjects take base form verbs.",
+        "formula": "Subject + Correct Verb Form",
+        "examples": ["The two teams stand on opposite sides."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {"fast": 25, "normal": 50, "easy": 90}
+      }
+    },
+    {
+      "id": 23,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error.",
+        "passage": "Rock climbing is an adventurous sport that involves climbing up natural rock formations or artificial walls. Climbers use ropes, harnesses, and special shoes for safety and grip. It requires strong arms, legs, and problem-solving skills to find the best path up. Bouldering is a type of climbing done on short walls without ropes, using thick mats below. Climbing pushes your physical and mental limits. Reaching the top of a difficult climb gives a great sense of achievement."
+      },
+      "multiErrorSegments": [
+        {"id": "s1", "text": "The players ", "clickable": false},
+        {"id": "s2", "text": "takes ", "clickable": true, "isError": true, "correctAnswers": ["took"]},
+        {"id": "s3", "text": "turns ", "clickable": true, "isError": false},
+        {"id": "s4", "text": "during ", "clickable": false},
+        {"id": "s5", "text": "the game ", "clickable": false},
+        {"id": "s6", "text": "yesterday. ", "clickable": true, "isError": false}
+      ],
+      "explanation": {
+        "text": "'Took' is the correct past tense of 'take' for a past time marker 'yesterday'. 'Turns' is correct.",
+        "topic": "Past Simple Tense",
+        "concept": "Past time markers require past tense verbs.",
+        "formula": "Subject + Correct Verb Form",
+        "examples": ["The players took turns yesterday."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {"fast": 25, "normal": 50, "easy": 90}
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error.",
+        "passage": "Archery is the sport of shooting arrows with a bow at a target. It requires intense focus, steady hands, and good eyesight. Archers stand at a specific distance from the target and aim for the center. The center of the target is usually yellow and worth the most points. Archery is a very quiet and calm sport. It helps improve concentration and patience. It has been practiced for thousands of years, originally for hunting and warfare."
+      },
+      "multiErrorSegments": [
+        {"id": "s1", "text": "The score ", "clickable": false},
+        {"id": "s2", "text": "are ", "clickable": true, "isError": true, "correctAnswers": ["is"]},
+        {"id": "s3", "text": "based on ", "clickable": true, "isError": false},
+        {"id": "s4", "text": "difficulty ", "clickable": false},
+        {"id": "s5", "text": "and ", "clickable": false},
+        {"id": "s6", "text": "execution. ", "clickable": true, "isError": false}
+      ],
+      "explanation": {
+        "text": "'Is' is correct because 'score' is singular. 'Based on' is the correct phrasal verb.",
+        "topic": "Subject-Verb Agreement",
+        "concept": "Singular subjects take 'is'.",
+        "formula": "Subject + Correct Verb Form",
+        "examples": ["The score is based on difficulty."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {"fast": 25, "normal": 50, "easy": 90}
+      }
+    },
+    {
+      "id": 25,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error.",
+        "passage": "Dance is a beautiful sport and art form that involves moving the body rhythmically. There are many styles, such as ballet, hip-hop, and salsa. Dancers practice for hours to perfect their steps and expressions. Dancing is a fantastic cardiovascular workout that improves coordination and flexibility. It can be done solo, in pairs, or in large groups. Dancing brings people together and is a joyful way to express emotions and tell stories through movement."
+      },
+      "multiErrorSegments": [
+        {"id": "s1", "text": "It ", "clickable": false},
+        {"id": "s2", "text": "is ", "clickable": true, "isError": false},
+        {"id": "s3", "text": "more peaceful ", "clickable": true, "isError": false},
+        {"id": "s4", "text": "than ", "clickable": false},
+        {"id": "s5", "text": "downhill ", "clickable": false},
+        {"id": "s6", "text": "skiing. ", "clickable": true, "isError": false}
+      ],
+      "explanation": {
+        "text": "All segments are correct. 'Is' matches 'It'. 'More peaceful' is the correct comparative form.",
+        "topic": "Comparative Adjectives",
+        "concept": "Long adjectives use 'more' for comparison.",
+        "formula": "Subject + Correct Verb Form",
+        "examples": ["It is more peaceful than downhill skiing."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {"fast": 25, "normal": 50, "easy": 90}
+      }
+    },
+    {
+      "id": 26,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error.",
+        "passage": "Fencing is a modern sport derived from historical sword fighting. Two fencers wear protective white uniforms and masks. They use lightweight swords called foils, épées, or sabers. The goal is to touch the opponent with the tip or edge of the sword to score points. Fencing is often called physical chess because it requires quick thinking and strategy. It improves balance, reflexes, and agility. It is a highly respected Olympic sport with a long tradition."
+      },
+      "multiErrorSegments": [
+        {"id": "s1", "text": "The shuttlecock ", "clickable": false},
+        {"id": "s2", "text": "are made ", "clickable": true, "isError": true, "correctAnswers": ["is made"]},
+        {"id": "s3", "text": "of ", "clickable": true, "isError": false},
+        {"id": "s4", "text": "feathers ", "clickable": false},
+        {"id": "s5", "text": "and ", "clickable": false},
+        {"id": "s6", "text": "cork. ", "clickable": true, "isError": false}
+      ],
+      "explanation": {
+        "text": "'Is made' is correct because 'shuttlecock' is singular. 'Of feathers' is the correct preposition.",
+        "topic": "Passive Voice",
+        "concept": "Singular subjects take 'is' + past participle.",
+        "formula": "Subject + Correct Verb Form",
+        "examples": ["The shuttlecock is made of feathers."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {"fast": 25, "normal": 50, "easy": 90}
+      }
+    },
+    {
+      "id": 27,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error.",
+        "passage": "Weightlifting is a strength sport where athletes lift heavy barbells. There are two main lifts: the snatch and the clean and jerk. Lifters must raise the weight from the floor to above their heads. Proper technique is essential to avoid serious injuries. Weightlifters train in gyms, focusing on building muscle and power. It is a core sport in the Olympic Games. Weightlifting teaches discipline, perseverance, and the importance of a healthy diet."
+      },
+      "multiErrorSegments": [
+        {"id": "s1", "text": "This ", "clickable": false},
+        {"id": "s2", "text": "is ", "clickable": true, "isError": false},
+        {"id": "s3", "text": "the fewest ", "clickable": true, "isError": false},
+        {"id": "s4", "text": "number ", "clickable": false},
+        {"id": "s5", "text": "of ", "clickable": false},
+        {"id": "s6", "text": "strokes. ", "clickable": true, "isError": false}
+      ],
+      "explanation": {
+        "text": "All segments are correct. 'Is' matches 'This'. 'Fewest' is the correct superlative for countable nouns.",
+        "topic": "Superlative Adjectives",
+        "concept": "Superlative uses 'the' + 'fewest'.",
+        "formula": "Subject + Correct Verb Form",
+        "examples": ["This is the fewest number of strokes."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {"fast": 25, "normal": 50, "easy": 90}
+      }
+    },
+    {
+      "id": 28,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error.",
+        "passage": "Sailing is the sport of traveling on water using wind power. Sailors control the sails and the rudder to steer the boat. It requires knowledge of wind direction, weather, and water currents. Sailing can be a relaxing solo activity or a competitive team sport. Regattas are sailing races that test the crew's skill and teamwork. Being on the water provides a unique connection with nature. Sailing teaches responsibility and adaptability to changing conditions."
+      },
+      "multiErrorSegments": [
+        {"id": "s1", "text": "Land ", "clickable": true, "isError": true, "correctAnswers": ["Landing"]},
+        {"id": "s2", "text": "clean hits ", "clickable": true, "isError": false},
+        {"id": "s3", "text": "is ", "clickable": false},
+        {"id": "s4", "text": "the main ", "clickable": false},
+        {"id": "s5", "text": "goal. ", "clickable": true, "isError": false},
+        {"id": "s6", "text": "always. ", "clickable": false}
+      ],
+      "explanation": {
+        "text": "'Landing' is correct because a gerund is needed as the subject of the sentence. 'Clean hits' and 'is' are correct.",
+        "topic": "Gerunds",
+        "concept": "Verbs acting as subjects must be in gerund (-ing) form.",
+        "formula": "Subject + Correct Verb Form",
+        "examples": ["Landing clean hits is the main goal."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {"fast": 25, "normal": 50, "easy": 90}
+      }
+    },
+    {
+      "id": 29,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error.",
+        "passage": "A triathlon is a multi-sport event consisting of three continuous disciplines. Athletes must swim, cycle, and run in that exact order. The distances can vary, but the Olympic distance is quite challenging. Triathletes need to be fit in all three areas, making it a tough sport. Transitions between swimming, cycling, and running must be fast and smooth. Training for a triathlon requires dedication and careful time management. Finishing a triathlon is a massive personal achievement."
+      },
+      "multiErrorSegments": [
+        {"id": "s1", "text": "They ", "clickable": false},
+        {"id": "s2", "text": "ride ", "clickable": true, "isError": false},
+        {"id": "s3", "text": "at ", "clickable": true, "isError": true, "correctAnswers": ["toward"]},
+        {"id": "s4", "text": "the ", "clickable": false},
+        {"id": "s5", "text": "shore ", "clickable": false},
+        {"id": "s6", "text": "daily. ", "clickable": true, "isError": false}
+      ],
+      "explanation": {
+        "text": "'Toward' is the correct preposition of direction. 'Ride' and 'the shore' are correct.",
+        "topic": "Prepositions",
+        "concept": "'Toward' indicates movement in a specific direction.",
+        "formula": "Subject + Correct Verb Form",
+        "examples": ["They ride toward the shore daily."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {"fast": 25, "normal": 50, "easy": 90}
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error.",
+        "passage": "Cheerleading is an energetic sport that combines dance, gymnastics, and cheering. Cheerleaders support their school or sports teams by performing routines. These routines include jumps, tumbling, and building human pyramids. It requires immense strength, flexibility, and trust among team members. Cheerleading is highly competitive, with teams traveling to national championships. It teaches teamwork, spirit, and dedication. Despite common misconceptions, it is a physically demanding and respected athletic activity."
+      },
+      "multiErrorSegments": [
+        {"id": "s1", "text": "It ", "clickable": false},
+        {"id": "s2", "text": "is ", "clickable": true, "isError": false},
+        {"id": "s3", "text": "for everyone, ", "clickable": true, "isError": false},
+        {"id": "s4", "text": "regardless of ", "clickable": true, "isError": false},
+        {"id": "s5", "text": "their ", "clickable": false},
+        {"id": "s6", "text": "age. ", "clickable": false}
+      ],
+      "explanation": {
+        "text": "All segments are correct. 'Is' matches 'It'. 'Regardless of' correctly introduces the noun phrase 'their age'.",
+        "topic": "Prepositions/Conjunctions",
+        "concept": "'Regardless of' is followed by a noun phrase.",
+        "formula": "Subject + Correct Verb Form",
+        "examples": ["It is for everyone, regardless of their age."]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {"fast": 25, "normal": 50, "easy": 90}
+      }
+    }
+  ]
+}

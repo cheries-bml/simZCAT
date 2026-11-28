@@ -36,8 +36,11 @@
     "questions/easy/english/verb/verb_with_preposition.json",
     "questions/easy/english/verb/verb_with_gerunds.json",
     "questions/easy/english/verb/to_infinitive.json",
+    "questions/easy/english/verb/verb_conjugation.json",
 
     "questions/easy/english/vocabulary/hobbies.json",
+    "questions/easy/english/vocabulary/passage_sports.json",
+
     "questions/easy/english/listening/school.json",
     "questions/easy/english/listening/vacation.json",
     "questions/easy/english/listening/sample.json",
