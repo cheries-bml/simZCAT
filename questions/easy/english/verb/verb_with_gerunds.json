@@ -17,10 +17,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/morning-reading.jpg",
-          "orientation": "landscape"
-        },
         "passage": "I have a strict morning routine. I like to learn while I get ready.",
         "question": "I ___ books every morning while I eat breakfast."
       },
@@ -57,10 +53,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/family-reading.jpg",
-          "orientation": "square"
-        },
         "passage": "My family loves stories. We discuss them after dinner.",
         "question": "My sister ___ fairy tales every evening."
       },
@@ -133,10 +125,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/library-study.jpg",
-          "orientation": "landscape"
-        },
         "passage": "I want to complete this chapter before I go home.",
         "question": "I ___ my book in the quiet library."
       },
@@ -173,10 +161,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/clean-books.jpg",
-          "orientation": "portrait"
-        },
         "passage": "She likes to keep her pages clean and free of crumbs.",
         "question": "She ___ while reading her favorite novel."
       },
@@ -249,10 +233,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/wildlife-book.jpg",
-          "orientation": "landscape"
-        },
         "passage": "I am very interested in nature and wildlife.",
         "question": "I ___ about wild animals in my science book."
       },
@@ -289,10 +269,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/bus-reading.jpg",
-          "orientation": "landscape"
-        },
         "passage": "The bus is very bumpy and noisy. I get dizzy easily.",
         "question": "He ___ on the bus because it is too bumpy."
       },
@@ -364,10 +340,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/happy-reader.jpg",
-          "orientation": "square"
-        },
         "passage": "Comedy books make me smile and feel good.",
         "question": "We ___ happy stories before bed."
       },
@@ -404,10 +376,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/quiet-library.jpg",
-          "orientation": "portrait"
-        },
         "passage": "The librarian asked for silence so everyone can focus.",
         "question": "Please ___ and start your homework."
       },
@@ -479,10 +447,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/librarian-recommend.jpg",
-          "orientation": "landscape"
-        },
         "passage": "The staff member knows all the best new releases.",
         "question": "The librarian ___ this interesting magazine."
       },
@@ -519,10 +483,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/messy-eating.jpg",
-          "orientation": "square"
-        },
         "passage": "She gets chocolate on the pages and hates cleaning them.",
         "question": "She ___ while reading her favorite novel."
       },
@@ -595,10 +555,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/ocean-book.jpg",
-          "orientation": "landscape"
-        },
         "passage": "They are very interested in marine biology.",
         "question": "They ___ about sea turtles in their textbook."
       },
@@ -635,10 +591,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/train-commute.jpg",
-          "orientation": "landscape"
-        },
         "passage": "We have a long commute every morning.",
         "question": "We ___ our novels on the train."
       },
@@ -710,10 +662,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/scary-night.jpg",
-          "orientation": "square"
-        },
         "passage": "Ghost stories give me nightmares. I do not like them.",
         "question": "I ___ scary books at night."
       },
@@ -750,10 +698,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/english-practice.jpg",
-          "orientation": "portrait"
-        },
         "passage": "She wants to improve her language skills.",
         "question": "She ___ English out loud every day."
       },
@@ -826,10 +770,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/quiet-corner.jpg",
-          "orientation": "landscape"
-        },
         "passage": "The library is very peaceful and has comfortable chairs.",
         "question": "He ___ in the quiet library."
       },
@@ -866,10 +806,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/dinner-table.jpg",
-          "orientation": "portrait"
-        },
         "passage": "It is time to focus on our studies, not our snacks.",
         "question": "Please ___ and open your textbooks."
       },
@@ -941,10 +877,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/cat-sleeping.jpg",
-          "orientation": "square"
-        },
         "passage": "Cats sleep a lot, but I like to learn about them.",
         "question": "I ___ about cats in my pet care book."
       },
@@ -981,10 +913,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/bus-stop.jpg",
-          "orientation": "landscape"
-        },
         "passage": "I have a short commute, so I must be quick.",
         "question": "I ___ my chapter before the bus stops."
       },
@@ -1056,10 +984,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/smiling-kids.jpg",
-          "orientation": "portrait"
-        },
         "passage": "These books make us feel joyful and relaxed.",
         "question": "We ___ happy stories together."
       },
@@ -1096,10 +1020,6 @@
       "type": "multiple_choice",
       "data": {
         "hint": "Choose the correct verb+gerund form to complete the sentence.",
-        "image": {
-          "url": "https://via.placeholder.com/400x200/night-clock.jpg",
-          "orientation": "square"
-        },
         "passage": "Reading late makes my eyes tired and hurts my sleep schedule.",
         "question": "I ___ late at night to protect my eyes."
       },
