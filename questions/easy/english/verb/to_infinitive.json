@@ -1,0 +1,1166 @@
+{
+  "meta": {
+    "title": "To-Infinitive",
+    "description": "A comprehensive A1/A2 level English grammar test focusing on to-infinitive structures related to books.",
+    "info": "This test evaluates basic to-infinitive usage (e.g., want to read, need to eat, happy to learn) related to books, daily routines, family, weather, places, food, time, animals, transportation, colors/objects, and emotions.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/morning-reading.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "I have a good habit. I do this every morning.",
+        "question": "I ___ a book every morning before breakfast."
+      },
+      "options": {
+        "A": { "text": "want to read", "correct": true },
+        "B": { "text": "wants to read", "correct": false },
+        "C": { "text": "wanting to read", "correct": false },
+        "D": { "text": "wanted to read", "correct": false },
+        "E": { "text": "need to read", "correct": true }
+      },
+      "explanation": {
+        "text": "The subject 'I' requires the base verb 'want' or 'need' followed by the to-infinitive 'to read'.",
+        "topic": "Books + Daily Routine",
+        "concept": "Verb + To-Infinitive (want/need + to + verb)",
+        "formula": "Subject (I/You/We/They) + Base Verb + To-Infinitive",
+        "examples": [
+          "I <b>want to read</b> every day.",
+          "I <b>need to read</b> this chapter."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/family-reading.jpg",
+          "orientation": "square"
+        },
+        "passage": "My sister loves stories. We discuss them after dinner.",
+        "question": "My sister ___ fairy tales to me every night."
+      },
+      "options": {
+        "A": { "text": "like to read", "correct": false },
+        "B": { "text": "likes to read", "correct": true },
+        "C": { "text": "liking to read", "correct": false },
+        "D": { "text": "liked to read", "correct": false },
+        "E": { "text": "always likes to read", "correct": true }
+      },
+      "explanation": {
+        "text": "The third-person singular subject 'My sister' requires the verb form 'likes' followed by the to-infinitive 'to read'.",
+        "topic": "Books + Family",
+        "concept": "Third-Person Singular Verb + To-Infinitive",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + To-Infinitive",
+        "examples": [
+          "She <b>likes to read</b> fairy tales.",
+          "He <b>always likes to read</b> comics."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "When it ", "clickable": false },
+        { "id": "s2", "text": "rain, ", "clickable": true, "isError": true, "correctAnswers": ["rains, ", "is raining, "] },
+        { "id": "s3", "text": "I likes ", "clickable": true, "isError": true, "correctAnswers": ["I like "] },
+        { "id": "s4", "text": "to read ", "clickable": true, "isError": false },
+        { "id": "s5", "text": "a book ", "clickable": false },
+        { "id": "s6", "text": "inside. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The weather condition requires 'rains' or 'is raining'. The subject 'I' requires the base verb 'like' followed by the to-infinitive 'to read'.",
+        "topic": "Books + Weather",
+        "concept": "Present Tense for Weather and First-Person Verb + To-Infinitive",
+        "formula": "It + Verb (rains/is raining) / Subject (I) + Base Verb + To-Infinitive",
+        "examples": [
+          "When it <b>rains</b>, I stay inside.",
+          "I <b>like to read</b> a book."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/library-study.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "I want to complete this chapter before I go home.",
+        "question": "We go to the library ___ quietly."
+      },
+      "options": {
+        "A": { "text": "read", "correct": false },
+        "B": { "text": "to read", "correct": true },
+        "C": { "text": "reading", "correct": false },
+        "D": { "text": "reads", "correct": false },
+        "E": { "text": "for read", "correct": false }
+      },
+      "explanation": {
+        "text": "The to-infinitive 'to read' is used to express the purpose of going to the library.",
+        "topic": "Books + Places",
+        "concept": "To-Infinitive of Purpose",
+        "formula": "Subject + Verb + Place + To-Infinitive",
+        "examples": [
+          "We go to the library <b>to read</b>.",
+          "She went to the store <b>to buy</b> a book."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/clean-books.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "She likes to keep her pages clean and free of crumbs.",
+        "question": "I need ___ a snack before I start to read."
+      },
+      "options": {
+        "A": { "text": "eat", "correct": false },
+        "B": { "text": "to eat", "correct": true },
+        "C": { "text": "eating", "correct": false },
+        "D": { "text": "eats", "correct": false },
+        "E": { "text": "want to eat", "correct": true }
+      },
+      "explanation": {
+        "text": "The subject 'I' requires the base verb 'need' or 'want' followed by the to-infinitive 'to eat'.",
+        "topic": "Books + Food",
+        "concept": "Verb + To-Infinitive (need/want + to + verb)",
+        "formula": "Subject (I) + Base Verb + To-Infinitive",
+        "examples": [
+          "I <b>need to eat</b> a snack.",
+          "I <b>want to eat</b> an apple."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "He ", "clickable": false },
+        { "id": "s2", "text": "plan ", "clickable": true, "isError": true, "correctAnswers": ["plans "] },
+        { "id": "s3", "text": "to reads ", "clickable": true, "isError": true, "correctAnswers": ["to read "] },
+        { "id": "s4", "text": "the book ", "clickable": false },
+        { "id": "s5", "text": "at five ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "o'clock. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The singular subject 'He' requires 'plans'. The verb 'plan' is followed by the to-infinitive 'to read', not 'to reads'.",
+        "topic": "Books + Time",
+        "concept": "Third-Person Singular Verb + To-Infinitive",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + To-Infinitive",
+        "examples": [
+          "He <b>plans to read</b> the book.",
+          "She <b>wants to study</b> at five."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/wildlife-book.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "I am very interested in nature and wildlife.",
+        "question": "She ___ books about wild animals."
+      },
+      "options": {
+        "A": { "text": "like to read", "correct": false },
+        "B": { "text": "likes to read", "correct": true },
+        "C": { "text": "liking to read", "correct": false },
+        "D": { "text": "liked to read", "correct": false },
+        "E": { "text": "loves to read", "correct": true }
+      },
+      "explanation": {
+        "text": "The third-person singular subject 'She' requires 'likes' or 'loves' followed by the to-infinitive 'to read'.",
+        "topic": "Books + Animals",
+        "concept": "Third-Person Singular Verb + To-Infinitive",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + To-Infinitive",
+        "examples": [
+          "She <b>likes to read</b> about animals.",
+          "He <b>loves to read</b> about birds."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/bus-reading.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "The bus is very bumpy and noisy. I get dizzy easily.",
+        "question": "I hope ___ my novel on the train."
+      },
+      "options": {
+        "A": { "text": "read", "correct": false },
+        "B": { "text": "to read", "correct": true },
+        "C": { "text": "reading", "correct": false },
+        "D": { "text": "reads", "correct": false },
+        "E": { "text": "plan to read", "correct": true }
+      },
+      "explanation": {
+        "text": "The subject 'I' requires the base verb 'hope' or 'plan' followed by the to-infinitive 'to read'.",
+        "topic": "Books + Transportation",
+        "concept": "Verb + To-Infinitive (hope/plan + to + verb)",
+        "formula": "Subject (I) + Base Verb + To-Infinitive",
+        "examples": [
+          "I <b>hope to read</b> my novel.",
+          "I <b>plan to read</b> on the bus."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 9,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "He ", "clickable": false },
+        { "id": "s2", "text": "choose ", "clickable": true, "isError": true, "correctAnswers": ["chooses "] },
+        { "id": "s3", "text": "to read ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "the red ", "clickable": false },
+        { "id": "s5", "text": "book ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "today. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The singular subject 'He' requires the third-person singular verb form 'chooses' followed by the to-infinitive 'to read'.",
+        "topic": "Books + Colors/Objects",
+        "concept": "Third-Person Singular Verb + To-Infinitive",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + To-Infinitive",
+        "examples": [
+          "He <b>chooses to read</b> the red book.",
+          "She <b>decides to buy</b> the blue pen."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/happy-reader.jpg",
+          "orientation": "square"
+        },
+        "passage": "Comedy books make me smile and feel good.",
+        "question": "I am excited ___ the next chapter of the story."
+      },
+      "options": {
+        "A": { "text": "read", "correct": false },
+        "B": { "text": "to read", "correct": true },
+        "C": { "text": "reading", "correct": false },
+        "D": { "text": "reads", "correct": false },
+        "E": { "text": "happy to read", "correct": true }
+      },
+      "explanation": {
+        "text": "Adjectives like 'excited' or 'happy' are followed by the to-infinitive 'to read' to express the cause of the emotion.",
+        "topic": "Books + Emotions",
+        "concept": "Adjective + To-Infinitive",
+        "formula": "Subject + Be Verb + Adjective + To-Infinitive",
+        "examples": [
+          "I am <b>excited to read</b> the next chapter.",
+          "She is <b>happy to read</b> this story."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/quiet-library.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "The librarian asked for silence so everyone can focus.",
+        "question": "I remember ___ my book before I go to sleep."
+      },
+      "options": {
+        "A": { "text": "read", "correct": false },
+        "B": { "text": "to read", "correct": true },
+        "C": { "text": "reading", "correct": false },
+        "D": { "text": "reads", "correct": false },
+        "E": { "text": "need to read", "correct": true }
+      },
+      "explanation": {
+        "text": "The verb 'remember' or 'need' is followed by the to-infinitive 'to read' to indicate a future or habitual action.",
+        "topic": "Books + Daily Routine",
+        "concept": "Verb + To-Infinitive (remember/need + to + verb)",
+        "formula": "Subject (I) + Base Verb + To-Infinitive",
+        "examples": [
+          "I <b>remember to read</b> before bed.",
+          "I <b>need to read</b> this page."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "My parents ", "clickable": false },
+        { "id": "s2", "text": "tells me ", "clickable": true, "isError": true, "correctAnswers": ["tell me "] },
+        { "id": "s3", "text": "to reads ", "clickable": true, "isError": true, "correctAnswers": ["to read "] },
+        { "id": "s4", "text": "more ", "clickable": false },
+        { "id": "s5", "text": "books ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "every week. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The plural subject 'My parents' requires the base verb 'tell'. The verb 'tell' is followed by an object and the to-infinitive 'to read'.",
+        "topic": "Books + Family",
+        "concept": "Plural Subject-Verb Agreement and Verb + Object + To-Infinitive",
+        "formula": "Plural Subject + Base Verb + Object + To-Infinitive",
+        "examples": [
+          "My parents <b>tell me to read</b> more.",
+          "They <b>ask him to study</b> hard."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/librarian-recommend.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "The staff member knows all the best new releases.",
+        "question": "She asks the librarian ___ her find a good book."
+      },
+      "options": {
+        "A": { "text": "help", "correct": false },
+        "B": { "text": "to help", "correct": true },
+        "C": { "text": "helping", "correct": false },
+        "D": { "text": "helps", "correct": false },
+        "E": { "text": "to assist", "correct": true }
+      },
+      "explanation": {
+        "text": "The verb 'ask' is followed by an object and the to-infinitive 'to help' or 'to assist'.",
+        "topic": "Books + Places",
+        "concept": "Verb + Object + To-Infinitive (ask + object + to + verb)",
+        "formula": "Subject + Verb + Object + To-Infinitive",
+        "examples": [
+          "She asks the librarian <b>to help</b>.",
+          "I ask my friend <b>to assist</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 14,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/messy-eating.jpg",
+          "orientation": "square"
+        },
+        "passage": "She gets chocolate on the pages and hates cleaning them.",
+        "question": "We often forget ___ apples when we go to the bookstore."
+      },
+      "options": {
+        "A": { "text": "buy", "correct": false },
+        "B": { "text": "to buy", "correct": true },
+        "C": { "text": "buying", "correct": false },
+        "D": { "text": "buys", "correct": false },
+        "E": { "text": "need to buy", "correct": true }
+      },
+      "explanation": {
+        "text": "The verb 'forget' or 'need' is followed by the to-infinitive 'to buy' to indicate an action that was not done or is necessary.",
+        "topic": "Books + Food",
+        "concept": "Verb + To-Infinitive (forget/need + to + verb)",
+        "formula": "Subject + Base Verb + To-Infinitive",
+        "examples": [
+          "We often <b>forget to buy</b> apples.",
+          "I <b>need to buy</b> a snack."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 15,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "They ", "clickable": false },
+        { "id": "s2", "text": "decides ", "clickable": true, "isError": true, "correctAnswers": ["decide "] },
+        { "id": "s3", "text": "to reads ", "clickable": true, "isError": true, "correctAnswers": ["to read "] },
+        { "id": "s4", "text": "the chapter ", "clickable": false },
+        { "id": "s5", "text": "tomorrow ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "morning. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The plural subject 'They' requires the base verb 'decide'. The verb 'decide' is followed by the to-infinitive 'to read'.",
+        "topic": "Books + Time",
+        "concept": "Plural Subject-Verb Agreement and Verb + To-Infinitive",
+        "formula": "Plural Subject + Base Verb + To-Infinitive",
+        "examples": [
+          "They <b>decide to read</b> the chapter.",
+          "We <b>plan to study</b> tomorrow."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 16,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/ocean-book.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "They are very interested in marine biology.",
+        "question": "The boy learns ___ about dogs in his new book."
+      },
+      "options": {
+        "A": { "text": "read", "correct": false },
+        "B": { "text": "to read", "correct": true },
+        "C": { "text": "reading", "correct": false },
+        "D": { "text": "reads", "correct": false },
+        "E": { "text": "wants to read", "correct": true }
+      },
+      "explanation": {
+        "text": "The verb 'learns' or 'wants' is followed by the to-infinitive 'to read' to express acquiring a skill or a desire.",
+        "topic": "Books + Animals",
+        "concept": "Verb + To-Infinitive (learn/want + to + verb)",
+        "formula": "Subject + Verb + To-Infinitive",
+        "examples": [
+          "The boy <b>learns to read</b> about dogs.",
+          "He <b>wants to read</b> about cats."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/train-commute.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "We have a long commute every morning.",
+        "question": "We plan ___ on the bus to school."
+      },
+      "options": {
+        "A": { "text": "read", "correct": false },
+        "B": { "text": "to read", "correct": true },
+        "C": { "text": "reading", "correct": false },
+        "D": { "text": "reads", "correct": false },
+        "E": { "text": "hope to read", "correct": true }
+      },
+      "explanation": {
+        "text": "The verb 'plan' or 'hope' is followed by the to-infinitive 'to read' to express an intention.",
+        "topic": "Books + Transportation",
+        "concept": "Verb + To-Infinitive (plan/hope + to + verb)",
+        "formula": "Subject + Base Verb + To-Infinitive",
+        "examples": [
+          "We <b>plan to read</b> on the bus.",
+          "They <b>hope to read</b> during the trip."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "I ", "clickable": false },
+        { "id": "s2", "text": "wants ", "clickable": true, "isError": true, "correctAnswers": ["want "] },
+        { "id": "s3", "text": "to buys ", "clickable": true, "isError": true, "correctAnswers": ["to buy "] },
+        { "id": "s4", "text": "a blue ", "clickable": false },
+        { "id": "s5", "text": "pen ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "today. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The subject 'I' requires the base verb 'want'. The verb 'want' is followed by the to-infinitive 'to buy'.",
+        "topic": "Books + Colors/Objects",
+        "concept": "First-Person Singular Verb + To-Infinitive",
+        "formula": "Subject (I) + Base Verb + To-Infinitive",
+        "examples": [
+          "I <b>want to buy</b> a blue pen.",
+          "I <b>need to find</b> my book."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/scary-night.jpg",
+          "orientation": "square"
+        },
+        "passage": "Ghost stories give me nightmares. I do not like them.",
+        "question": "He is afraid ___ the scary story alone at night."
+      },
+      "options": {
+        "A": { "text": "read", "correct": false },
+        "B": { "text": "to read", "correct": true },
+        "C": { "text": "reading", "correct": false },
+        "D": { "text": "reads", "correct": false },
+        "E": { "text": "scared to read", "correct": true }
+      },
+      "explanation": {
+        "text": "Adjectives like 'afraid' or 'scared' are followed by the to-infinitive 'to read' to express the cause of the fear.",
+        "topic": "Books + Emotions",
+        "concept": "Adjective + To-Infinitive",
+        "formula": "Subject + Be Verb + Adjective + To-Infinitive",
+        "examples": [
+          "He is <b>afraid to read</b> the story.",
+          "She is <b>scared to read</b> alone."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 20,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/english-practice.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "She wants to improve her language skills.",
+        "question": "She tries ___ one page of her book every day."
+      },
+      "options": {
+        "A": { "text": "read", "correct": false },
+        "B": { "text": "to read", "correct": true },
+        "C": { "text": "reading", "correct": false },
+        "D": { "text": "reads", "correct": false },
+        "E": { "text": "wants to read", "correct": true }
+      },
+      "explanation": {
+        "text": "The verb 'tries' or 'wants' is followed by the to-infinitive 'to read' to express an effort or desire.",
+        "topic": "Books + Daily Routine",
+        "concept": "Third-Person Singular Verb + To-Infinitive",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + To-Infinitive",
+        "examples": [
+          "She <b>tries to read</b> one page.",
+          "He <b>wants to read</b> daily."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 21,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "My brother ", "clickable": false },
+        { "id": "s2", "text": "promise ", "clickable": true, "isError": true, "correctAnswers": ["promises "] },
+        { "id": "s3", "text": "to read ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "the ", "clickable": false },
+        { "id": "s5", "text": "story ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "tonight. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The singular subject 'My brother' requires the third-person singular verb form 'promises' followed by the to-infinitive 'to read'.",
+        "topic": "Books + Family",
+        "concept": "Third-Person Singular Verb + To-Infinitive",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + To-Infinitive",
+        "examples": [
+          "My brother <b>promises to read</b> the story.",
+          "She <b>agrees to help</b> tonight."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 22,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/quiet-corner.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "The library is very peaceful and has comfortable chairs.",
+        "question": "It is important ___ quiet in the library."
+      },
+      "options": {
+        "A": { "text": "be", "correct": false },
+        "B": { "text": "to be", "correct": true },
+        "C": { "text": "being", "correct": false },
+        "D": { "text": "is", "correct": false },
+        "E": { "text": "to stay", "correct": true }
+      },
+      "explanation": {
+        "text": "The adjective 'important' is followed by the to-infinitive 'to be' or 'to stay' to express a rule or necessity.",
+        "topic": "Books + Places",
+        "concept": "Adjective + To-Infinitive (It is + adjective + to + verb)",
+        "formula": "It is + Adjective + To-Infinitive",
+        "examples": [
+          "It is important <b>to be</b> quiet.",
+          "It is necessary <b>to stay</b> calm."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/dinner-table.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "It is time to focus on our studies, not our snacks.",
+        "question": "I would like ___ tea while I read my book."
+      },
+      "options": {
+        "A": { "text": "drink", "correct": false },
+        "B": { "text": "to drink", "correct": true },
+        "C": { "text": "drinking", "correct": false },
+        "D": { "text": "drinks", "correct": false },
+        "E": { "text": "to have", "correct": true }
+      },
+      "explanation": {
+        "text": "The phrase 'would like' is always followed by the to-infinitive 'to drink' or 'to have'.",
+        "topic": "Books + Food",
+        "concept": "Would Like + To-Infinitive",
+        "formula": "Subject + Would Like + To-Infinitive",
+        "examples": [
+          "I would like <b>to drink</b> tea.",
+          "She would like <b>to have</b> a cookie."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "He ", "clickable": false },
+        { "id": "s2", "text": "need ", "clickable": true, "isError": true, "correctAnswers": ["needs "] },
+        { "id": "s3", "text": "to finish ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "reading by ", "clickable": false },
+        { "id": "s5", "text": "five ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "o'clock. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The singular subject 'He' requires the third-person singular verb form 'needs' followed by the to-infinitive 'to finish'.",
+        "topic": "Books + Time",
+        "concept": "Third-Person Singular Verb + To-Infinitive",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + To-Infinitive",
+        "examples": [
+          "He <b>needs to finish</b> reading.",
+          "She <b>has to complete</b> it by five."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/cat-sleeping.jpg",
+          "orientation": "square"
+        },
+        "passage": "Cats sleep a lot, but I like to learn about them.",
+        "question": "We choose ___ a book about birds for our project."
+      },
+      "options": {
+        "A": { "text": "read", "correct": false },
+        "B": { "text": "to read", "correct": true },
+        "C": { "text": "reading", "correct": false },
+        "D": { "text": "reads", "correct": false },
+        "E": { "text": "plan to read", "correct": true }
+      },
+      "explanation": {
+        "text": "The verb 'choose' or 'plan' is followed by the to-infinitive 'to read' to express a decision or intention.",
+        "topic": "Books + Animals",
+        "concept": "Verb + To-Infinitive (choose/plan + to + verb)",
+        "formula": "Subject + Base Verb + To-Infinitive",
+        "examples": [
+          "We <b>choose to read</b> a book about birds.",
+          "They <b>plan to read</b> about dogs."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 26,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/bus-stop.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "I have a short commute, so I must be quick.",
+        "question": "They seem ___ their books on the airplane."
+      },
+      "options": {
+        "A": { "text": "enjoy", "correct": false },
+        "B": { "text": "to enjoy", "correct": true },
+        "C": { "text": "enjoying", "correct": false },
+        "D": { "text": "enjoys", "correct": false },
+        "E": { "text": "to love", "correct": true }
+      },
+      "explanation": {
+        "text": "The verb 'seem' is followed by the to-infinitive 'to enjoy' or 'to love' to express an appearance or impression.",
+        "topic": "Books + Transportation",
+        "concept": "Verb + To-Infinitive (seem + to + verb)",
+        "formula": "Subject + Seem + To-Infinitive",
+        "examples": [
+          "They <b>seem to enjoy</b> their books.",
+          "He <b>seems to love</b> reading."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 27,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "She ", "clickable": false },
+        { "id": "s2", "text": "prefer ", "clickable": true, "isError": true, "correctAnswers": ["prefers "] },
+        { "id": "s3", "text": "to use ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "a pencil ", "clickable": false },
+        { "id": "s5", "text": "to mark ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "her book. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The singular subject 'She' requires the third-person singular verb form 'prefers' followed by the to-infinitive 'to use'.",
+        "topic": "Books + Colors/Objects",
+        "concept": "Third-Person Singular Verb + To-Infinitive",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + To-Infinitive",
+        "examples": [
+          "She <b>prefers to use</b> a pencil.",
+          "He <b>likes to mark</b> his book."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 28,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/smiling-kids.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "These books make us feel joyful and relaxed.",
+        "question": "I am happy ___ new things from this book."
+      },
+      "options": {
+        "A": { "text": "learn", "correct": false },
+        "B": { "text": "to learn", "correct": true },
+        "C": { "text": "learning", "correct": false },
+        "D": { "text": "learns", "correct": false },
+        "E": { "text": "excited to learn", "correct": true }
+      },
+      "explanation": {
+        "text": "Adjectives like 'happy' or 'excited' are followed by the to-infinitive 'to learn' to express the cause of the positive emotion.",
+        "topic": "Books + Emotions",
+        "concept": "Adjective + To-Infinitive",
+        "formula": "Subject + Be Verb + Adjective + To-Infinitive",
+        "examples": [
+          "I am <b>happy to learn</b> new things.",
+          "She is <b>excited to learn</b> more."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct to-infinitive form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/night-clock.jpg",
+          "orientation": "square"
+        },
+        "passage": "Reading late makes my eyes tired and hurts my sleep schedule.",
+        "question": "I continue ___ after dinner every evening."
+      },
+      "options": {
+        "A": { "text": "read", "correct": false },
+        "B": { "text": "to read", "correct": true },
+        "C": { "text": "reads", "correct": false },
+        "D": { "text": "to reading", "correct": false },
+        "E": { "text": "want to read", "correct": true }
+      },
+      "explanation": {
+        "text": "The verb 'continue' or 'want' is followed by the to-infinitive 'to read' to express an ongoing action or desire.",
+        "topic": "Books + Daily Routine",
+        "concept": "Verb + To-Infinitive (continue/want + to + verb)",
+        "formula": "Subject + Base Verb + To-Infinitive",
+        "examples": [
+          "I <b>continue to read</b> after dinner.",
+          "I <b>want to read</b> every evening."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "My mom ", "clickable": false },
+        { "id": "s2", "text": "ask me ", "clickable": true, "isError": true, "correctAnswers": ["asks me "] },
+        { "id": "s3", "text": "to read ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "one ", "clickable": false },
+        { "id": "s5", "text": "chapter ", "clickable": true, "isError": false },
+        { "id": "s6", "text": "every night. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The singular subject 'My mom' requires the third-person singular verb form 'asks'. The verb 'ask' is followed by an object and the to-infinitive 'to read'.",
+        "topic": "Books + Family",
+        "concept": "Third-Person Singular Verb + Object + To-Infinitive",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + Object + To-Infinitive",
+        "examples": [
+          "My mom <b>asks me to read</b> one chapter.",
+          "She <b>tells him to study</b> every night."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    }
+  ]
+}

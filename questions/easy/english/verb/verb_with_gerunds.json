@@ -1,0 +1,1170 @@
+{
+  "meta": {
+    "title": "Verb+Gerunds",
+    "description": "A comprehensive A1/A2 level English grammar test focusing on verb+gerund combinations related to books.",
+    "info": "This test evaluates basic verb+gerund usage (e.g., enjoy reading, avoid eating, finish studying) related to books, daily routines, family, weather, places, food, time, animals, transportation, colors/objects, and emotions.",
+    "author": "Qwen3.7",
+    "config": {
+      "show_answer": false,
+      "show_explanation": false,
+      "no_timer": true,
+      "active": true
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/morning-reading.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "I have a strict morning routine. I like to learn while I get ready.",
+        "question": "I ___ books every morning while I eat breakfast."
+      },
+      "options": {
+        "A": { "text": "enjoy reading", "correct": true },
+        "B": { "text": "enjoys reading", "correct": false },
+        "C": { "text": "enjoying reading", "correct": false },
+        "D": { "text": "enjoyed reading", "correct": false },
+        "E": { "text": "always enjoy reading", "correct": true }
+      },
+      "explanation": {
+        "text": "The subject 'I' requires the base verb 'enjoy' followed by the gerund 'reading'. Adding 'always' correctly describes a habitual action.",
+        "topic": "Books + Daily Routine",
+        "concept": "Verb + Gerund (enjoy reading) and Subject-Verb Agreement",
+        "formula": "Subject (I/You/We/They) + Base Verb + Gerund",
+        "examples": [
+          "I <b>enjoy reading</b> every day.",
+          "We <b>always enjoy reading</b> stories."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/family-reading.jpg",
+          "orientation": "square"
+        },
+        "passage": "My family loves stories. We discuss them after dinner.",
+        "question": "My sister ___ fairy tales every evening."
+      },
+      "options": {
+        "A": { "text": "love reading", "correct": false },
+        "B": { "text": "loves reading", "correct": true },
+        "C": { "text": "loving reading", "correct": false },
+        "D": { "text": "loved reading", "correct": false },
+        "E": { "text": "really loves reading", "correct": true }
+      },
+      "explanation": {
+        "text": "The third-person singular subject 'My sister' requires the verb form 'loves' followed by the gerund 'reading'.",
+        "topic": "Books + Family",
+        "concept": "Third-Person Singular Verb + Gerund",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + Gerund",
+        "examples": [
+          "She <b>loves reading</b> fairy tales.",
+          "He <b>really loves reading</b> comics."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "He ", "clickable": false },
+        { "id": "s2", "text": "keep ", "clickable": true, "isError": true, "correctAnswers": ["keeps "] },
+        { "id": "s3", "text": "reading ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "outside when ", "clickable": false },
+        { "id": "s5", "text": "the weather ", "clickable": false },
+        { "id": "s6", "text": "is cold and ", "clickable": false },
+        { "id": "s7", "text": "rain. ", "clickable": true, "isError": true, "correctAnswers": ["rains. ", "is raining. "] }
+      ],
+      "explanation": {
+        "text": "The singular subject 'He' requires 'keeps'. The weather condition requires 'rains' or 'is raining' in the present tense.",
+        "topic": "Books + Weather",
+        "concept": "Third-Person Singular Verb + Gerund and Present Tense for Weather",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + Gerund",
+        "examples": [
+          "He <b>keeps reading</b> when it <b>rains</b>.",
+          "She <b>keeps studying</b> when it <b>is raining</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/library-study.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "I want to complete this chapter before I go home.",
+        "question": "I ___ my book in the quiet library."
+      },
+      "options": {
+        "A": { "text": "finish reading", "correct": true },
+        "B": { "text": "finishes reading", "correct": false },
+        "C": { "text": "finishing reading", "correct": false },
+        "D": { "text": "finished reading", "correct": false },
+        "E": { "text": "usually finish reading", "correct": true }
+      },
+      "explanation": {
+        "text": "The subject 'I' requires the base verb 'finish' followed by the gerund 'reading'.",
+        "topic": "Books + Places",
+        "concept": "Verb + Gerund (finish reading) and Subject-Verb Agreement",
+        "formula": "Subject (I/You/We/They) + Base Verb + Gerund",
+        "examples": [
+          "I <b>finish reading</b> in the library.",
+          "We <b>usually finish reading</b> by noon."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/clean-books.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "She likes to keep her pages clean and free of crumbs.",
+        "question": "She ___ while reading her favorite novel."
+      },
+      "options": {
+        "A": { "text": "avoid eating", "correct": false },
+        "B": { "text": "avoids eating", "correct": true },
+        "C": { "text": "avoiding eating", "correct": false },
+        "D": { "text": "avoided eating", "correct": false },
+        "E": { "text": "always avoids eating", "correct": true }
+      },
+      "explanation": {
+        "text": "The third-person singular subject 'She' requires 'avoids' followed by the gerund 'eating'.",
+        "topic": "Books + Food",
+        "concept": "Third-Person Singular Verb + Gerund",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + Gerund",
+        "examples": [
+          "She <b>avoids eating</b> near books.",
+          "He <b>always avoids eating</b> in the library."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 6,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "They ", "clickable": false },
+        { "id": "s2", "text": "starts ", "clickable": true, "isError": true, "correctAnswers": ["start "] },
+        { "id": "s3", "text": "reading ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "the book ", "clickable": true, "isError": false },
+        { "id": "s5", "text": "at eight ", "clickable": false },
+        { "id": "s6", "text": "o'clock every ", "clickable": false },
+        { "id": "s7", "text": "morning. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The plural subject 'They' requires the base verb form 'start' followed by the gerund 'reading'.",
+        "topic": "Books + Time",
+        "concept": "Plural Subject-Verb Agreement with Verb + Gerund",
+        "formula": "Plural Subject + Base Verb + Gerund",
+        "examples": [
+          "They <b>start reading</b> at eight.",
+          "We <b>start studying</b> early."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/wildlife-book.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "I am very interested in nature and wildlife.",
+        "question": "I ___ about wild animals in my science book."
+      },
+      "options": {
+        "A": { "text": "like reading", "correct": true },
+        "B": { "text": "likes reading", "correct": false },
+        "C": { "text": "liking reading", "correct": false },
+        "D": { "text": "liked reading", "correct": false },
+        "E": { "text": "really like reading", "correct": true }
+      },
+      "explanation": {
+        "text": "The subject 'I' requires the base verb 'like' followed by the gerund 'reading'.",
+        "topic": "Books + Animals",
+        "concept": "First-Person Singular Verb + Gerund",
+        "formula": "Subject (I) + Base Verb + Gerund",
+        "examples": [
+          "I <b>like reading</b> about animals.",
+          "I <b>really like reading</b> about birds."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/bus-reading.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "The bus is very bumpy and noisy. I get dizzy easily.",
+        "question": "He ___ on the bus because it is too bumpy."
+      },
+      "options": {
+        "A": { "text": "hate reading", "correct": false },
+        "B": { "text": "hates reading", "correct": true },
+        "C": { "text": "hating reading", "correct": false },
+        "D": { "text": "hated reading", "correct": false },
+        "E": { "text": "absolutely hates reading", "correct": true }
+      },
+      "explanation": {
+        "text": "The third-person singular subject 'He' requires 'hates' followed by the gerund 'reading'.",
+        "topic": "Books + Transportation",
+        "concept": "Third-Person Singular Verb + Gerund",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + Gerund",
+        "examples": [
+          "He <b>hates reading</b> on the bus.",
+          "She <b>absolutely hates reading</b> in the car."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 9,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "She ", "clickable": false },
+        { "id": "s2", "text": "prefer ", "clickable": true, "isError": true, "correctAnswers": ["prefers "] },
+        { "id": "s3", "text": "reading ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "the red ", "clickable": true, "isError": false },
+        { "id": "s5", "text": "book about ", "clickable": false },
+        { "id": "s6", "text": "art history. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The singular subject 'She' requires the third-person singular verb form 'prefers' followed by the gerund 'reading'.",
+        "topic": "Books + Colors/Objects",
+        "concept": "Third-Person Singular Verb + Gerund",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + Gerund",
+        "examples": [
+          "She <b>prefers reading</b> red books.",
+          "He <b>prefers reading</b> digital texts."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/happy-reader.jpg",
+          "orientation": "square"
+        },
+        "passage": "Comedy books make me smile and feel good.",
+        "question": "We ___ happy stories before bed."
+      },
+      "options": {
+        "A": { "text": "enjoy reading", "correct": true },
+        "B": { "text": "enjoys reading", "correct": false },
+        "C": { "text": "enjoying reading", "correct": false },
+        "D": { "text": "enjoyed reading", "correct": false },
+        "E": { "text": "always enjoy reading", "correct": true }
+      },
+      "explanation": {
+        "text": "The plural subject 'We' requires the base verb 'enjoy' followed by the gerund 'reading'.",
+        "topic": "Books + Emotions",
+        "concept": "Plural Subject-Verb Agreement with Verb + Gerund",
+        "formula": "Plural Subject + Base Verb + Gerund",
+        "examples": [
+          "We <b>enjoy reading</b> happy stories.",
+          "They <b>always enjoy reading</b> funny jokes."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/quiet-library.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "The librarian asked for silence so everyone can focus.",
+        "question": "Please ___ and start your homework."
+      },
+      "options": {
+        "A": { "text": "stop talking", "correct": true },
+        "B": { "text": "stops talking", "correct": false },
+        "C": { "text": "stopping talking", "correct": false },
+        "D": { "text": "stopped talking", "correct": false },
+        "E": { "text": "please stop talking", "correct": true }
+      },
+      "explanation": {
+        "text": "The imperative form uses the base verb 'stop' followed by the gerund 'talking'.",
+        "topic": "Books + Daily Routine",
+        "concept": "Imperative Verb + Gerund",
+        "formula": "(Please) + Base Verb + Gerund",
+        "examples": [
+          "<b>Stop talking</b> in the library.",
+          "<b>Please stop talking</b> and listen."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 12,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "My dad ", "clickable": false },
+        { "id": "s2", "text": "suggest ", "clickable": true, "isError": true, "correctAnswers": ["suggests "] },
+        { "id": "s3", "text": "reading ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "a good ", "clickable": true, "isError": false },
+        { "id": "s5", "text": "book together ", "clickable": false },
+        { "id": "s6", "text": "every night. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The singular subject 'My dad' requires the third-person singular verb form 'suggests' followed by the gerund 'reading'.",
+        "topic": "Books + Family",
+        "concept": "Third-Person Singular Verb + Gerund",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + Gerund",
+        "examples": [
+          "My dad <b>suggests reading</b> together.",
+          "She <b>suggests studying</b> hard."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/librarian-recommend.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "The staff member knows all the best new releases.",
+        "question": "The librarian ___ this interesting magazine."
+      },
+      "options": {
+        "A": { "text": "recommend reading", "correct": false },
+        "B": { "text": "recommends reading", "correct": true },
+        "C": { "text": "recommending reading", "correct": false },
+        "D": { "text": "recommended reading", "correct": false },
+        "E": { "text": "highly recommends reading", "correct": true }
+      },
+      "explanation": {
+        "text": "The singular subject 'The librarian' requires 'recommends' followed by the gerund 'reading'.",
+        "topic": "Books + Places",
+        "concept": "Third-Person Singular Verb + Gerund",
+        "formula": "Singular Subject + Verb (base form + s) + Gerund",
+        "examples": [
+          "The librarian <b>recommends reading</b> this.",
+          "He <b>highly recommends reading</b> daily."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 14,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/messy-eating.jpg",
+          "orientation": "square"
+        },
+        "passage": "She gets chocolate on the pages and hates cleaning them.",
+        "question": "She ___ while reading her favorite novel."
+      },
+      "options": {
+        "A": { "text": "mind eating", "correct": false },
+        "B": { "text": "minds eating", "correct": true },
+        "C": { "text": "minding eating", "correct": false },
+        "D": { "text": "minded eating", "correct": false },
+        "E": { "text": "really minds eating", "correct": true }
+      },
+      "explanation": {
+        "text": "The third-person singular subject 'She' requires 'minds' followed by the gerund 'eating'.",
+        "topic": "Books + Food",
+        "concept": "Third-Person Singular Verb + Gerund",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + Gerund",
+        "examples": [
+          "She <b>minds eating</b> near books.",
+          "He <b>really minds eating</b> in the study."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 15,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "He ", "clickable": false },
+        { "id": "s2", "text": "finishes ", "clickable": true, "isError": false },
+        { "id": "s3", "text": "reading ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "the chapter ", "clickable": true, "isError": false },
+        { "id": "s5", "text": "in two ", "clickable": false },
+        { "id": "s6", "text": "short hour. ", "clickable": true, "isError": true, "correctAnswers": ["short hours. ", "hours. "] },
+        { "id": "s7", "text": "today. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The phrase 'two' requires the plural noun 'hours'. The verb 'finishes' and gerund 'reading' are correct for the singular subject 'He'.",
+        "topic": "Books + Time",
+        "concept": "Plural Nouns after Numbers",
+        "formula": "Number + Plural Noun",
+        "examples": [
+          "He finishes reading in two <b>hours</b>.",
+          "She reads for three <b>days</b>."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 16,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/ocean-book.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "They are very interested in marine biology.",
+        "question": "They ___ about sea turtles in their textbook."
+      },
+      "options": {
+        "A": { "text": "keep reading", "correct": true },
+        "B": { "text": "keeps reading", "correct": false },
+        "C": { "text": "keeping reading", "correct": false },
+        "D": { "text": "kept reading", "correct": false },
+        "E": { "text": "always keep reading", "correct": true }
+      },
+      "explanation": {
+        "text": "The plural subject 'They' requires the base verb 'keep' followed by the gerund 'reading'.",
+        "topic": "Books + Animals",
+        "concept": "Plural Subject-Verb Agreement with Verb + Gerund",
+        "formula": "Plural Subject + Base Verb + Gerund",
+        "examples": [
+          "They <b>keep reading</b> about turtles.",
+          "We <b>always keep reading</b> new facts."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/train-commute.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "We have a long commute every morning.",
+        "question": "We ___ our novels on the train."
+      },
+      "options": {
+        "A": { "text": "start reading", "correct": true },
+        "B": { "text": "starts reading", "correct": false },
+        "C": { "text": "starting reading", "correct": false },
+        "D": { "text": "started reading", "correct": false },
+        "E": { "text": "usually start reading", "correct": true }
+      },
+      "explanation": {
+        "text": "The plural subject 'We' requires the base verb 'start' followed by the gerund 'reading'.",
+        "topic": "Books + Transportation",
+        "concept": "Plural Subject-Verb Agreement with Verb + Gerund",
+        "formula": "Plural Subject + Base Verb + Gerund",
+        "examples": [
+          "We <b>start reading</b> on the train.",
+          "They <b>usually start reading</b> early."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 18,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "He ", "clickable": false },
+        { "id": "s2", "text": "love ", "clickable": true, "isError": true, "correctAnswers": ["loves "] },
+        { "id": "s3", "text": "reading ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "the blue ", "clickable": true, "isError": false },
+        { "id": "s5", "text": "textbook every ", "clickable": false },
+        { "id": "s6", "text": "single day. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The singular subject 'He' requires the third-person singular verb form 'loves' followed by the gerund 'reading'.",
+        "topic": "Books + Colors/Objects",
+        "concept": "Third-Person Singular Verb + Gerund",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + Gerund",
+        "examples": [
+          "He <b>loves reading</b> the blue textbook.",
+          "She <b>loves reading</b> her notes."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/scary-night.jpg",
+          "orientation": "square"
+        },
+        "passage": "Ghost stories give me nightmares. I do not like them.",
+        "question": "I ___ scary books at night."
+      },
+      "options": {
+        "A": { "text": "hate reading", "correct": true },
+        "B": { "text": "hates reading", "correct": false },
+        "C": { "text": "hating reading", "correct": false },
+        "D": { "text": "hated reading", "correct": false },
+        "E": { "text": "really hate reading", "correct": true }
+      },
+      "explanation": {
+        "text": "The subject 'I' requires the base verb 'hate' followed by the gerund 'reading'.",
+        "topic": "Books + Emotions",
+        "concept": "First-Person Singular Verb + Gerund",
+        "formula": "Subject (I) + Base Verb + Gerund",
+        "examples": [
+          "I <b>hate reading</b> scary books.",
+          "I <b>really hate reading</b> in the dark."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 20,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/english-practice.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "She wants to improve her language skills.",
+        "question": "She ___ English out loud every day."
+      },
+      "options": {
+        "A": { "text": "practice reading", "correct": false },
+        "B": { "text": "practices reading", "correct": true },
+        "C": { "text": "practicing reading", "correct": false },
+        "D": { "text": "practiced reading", "correct": false },
+        "E": { "text": "daily practices reading", "correct": true }
+      },
+      "explanation": {
+        "text": "The third-person singular subject 'She' requires 'practices' followed by the gerund 'reading'.",
+        "topic": "Books + Daily Routine",
+        "concept": "Third-Person Singular Verb + Gerund",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + Gerund",
+        "examples": [
+          "She <b>practices reading</b> daily.",
+          "He <b>daily practices reading</b> aloud."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 21,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "We ", "clickable": false },
+        { "id": "s2", "text": "enjoys ", "clickable": true, "isError": true, "correctAnswers": ["enjoy "] },
+        { "id": "s3", "text": "reading ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "funny stories ", "clickable": true, "isError": false },
+        { "id": "s5", "text": "with our ", "clickable": false },
+        { "id": "s6", "text": "kind grandparents ", "clickable": false },
+        { "id": "s7", "text": "every weekend. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The plural subject 'We' requires the base verb form 'enjoy' followed by the gerund 'reading'.",
+        "topic": "Books + Family",
+        "concept": "Plural Subject-Verb Agreement with Verb + Gerund",
+        "formula": "Plural Subject + Base Verb + Gerund",
+        "examples": [
+          "We <b>enjoy reading</b> together.",
+          "They <b>enjoy reading</b> funny stories."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 22,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/quiet-corner.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "The library is very peaceful and has comfortable chairs.",
+        "question": "He ___ in the quiet library."
+      },
+      "options": {
+        "A": { "text": "like reading", "correct": false },
+        "B": { "text": "likes reading", "correct": true },
+        "C": { "text": "liking reading", "correct": false },
+        "D": { "text": "liked reading", "correct": false },
+        "E": { "text": "really likes reading", "correct": true }
+      },
+      "explanation": {
+        "text": "The third-person singular subject 'He' requires 'likes' followed by the gerund 'reading'.",
+        "topic": "Books + Places",
+        "concept": "Third-Person Singular Verb + Gerund",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + Gerund",
+        "examples": [
+          "He <b>likes reading</b> in the library.",
+          "She <b>really likes reading</b> in peace."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/dinner-table.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "It is time to focus on our studies, not our snacks.",
+        "question": "Please ___ and open your textbooks."
+      },
+      "options": {
+        "A": { "text": "stop eating", "correct": true },
+        "B": { "text": "stops eating", "correct": false },
+        "C": { "text": "stopping eating", "correct": false },
+        "D": { "text": "stopped eating", "correct": false },
+        "E": { "text": "please stop eating", "correct": true }
+      },
+      "explanation": {
+        "text": "The imperative form uses the base verb 'stop' followed by the gerund 'eating'.",
+        "topic": "Books + Food",
+        "concept": "Imperative Verb + Gerund",
+        "formula": "(Please) + Base Verb + Gerund",
+        "examples": [
+          "<b>Stop eating</b> and study.",
+          "<b>Please stop eating</b> now."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 24,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "She ", "clickable": false },
+        { "id": "s2", "text": "keep ", "clickable": true, "isError": true, "correctAnswers": ["keeps "] },
+        { "id": "s3", "text": "reading ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "the novel ", "clickable": true, "isError": false },
+        { "id": "s5", "text": "for one ", "clickable": false },
+        { "id": "s6", "text": "full hour. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The singular subject 'She' requires the third-person singular verb form 'keeps' followed by the gerund 'reading'.",
+        "topic": "Books + Time",
+        "concept": "Third-Person Singular Verb + Gerund",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + Gerund",
+        "examples": [
+          "She <b>keeps reading</b> for an hour.",
+          "He <b>keeps studying</b> all night."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/cat-sleeping.jpg",
+          "orientation": "square"
+        },
+        "passage": "Cats sleep a lot, but I like to learn about them.",
+        "question": "I ___ about cats in my pet care book."
+      },
+      "options": {
+        "A": { "text": "prefer reading", "correct": true },
+        "B": { "text": "prefers reading", "correct": false },
+        "C": { "text": "preferring reading", "correct": false },
+        "D": { "text": "preferred reading", "correct": false },
+        "E": { "text": "always prefer reading", "correct": true }
+      },
+      "explanation": {
+        "text": "The subject 'I' requires the base verb 'prefer' followed by the gerund 'reading'.",
+        "topic": "Books + Animals",
+        "concept": "First-Person Singular Verb + Gerund",
+        "formula": "Subject (I) + Base Verb + Gerund",
+        "examples": [
+          "I <b>prefer reading</b> about cats.",
+          "I <b>always prefer reading</b> factual books."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 26,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/bus-stop.jpg",
+          "orientation": "landscape"
+        },
+        "passage": "I have a short commute, so I must be quick.",
+        "question": "I ___ my chapter before the bus stops."
+      },
+      "options": {
+        "A": { "text": "finish reading", "correct": true },
+        "B": { "text": "finishes reading", "correct": false },
+        "C": { "text": "finishing reading", "correct": false },
+        "D": { "text": "finished reading", "correct": false },
+        "E": { "text": "usually finish reading", "correct": true }
+      },
+      "explanation": {
+        "text": "The subject 'I' requires the base verb 'finish' followed by the gerund 'reading'.",
+        "topic": "Books + Transportation",
+        "concept": "First-Person Singular Verb + Gerund",
+        "formula": "Subject (I) + Base Verb + Gerund",
+        "examples": [
+          "I <b>finish reading</b> before the stop.",
+          "I <b>usually finish reading</b> quickly."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 27,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "The teacher ", "clickable": false },
+        { "id": "s2", "text": "recommend ", "clickable": true, "isError": true, "correctAnswers": ["recommends "] },
+        { "id": "s3", "text": "reading ", "clickable": true, "isError": false },
+        { "id": "s4", "text": "this green ", "clickable": true, "isError": false },
+        { "id": "s5", "text": "book about ", "clickable": false },
+        { "id": "s6", "text": "nature. ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The singular subject 'The teacher' requires the third-person singular verb form 'recommends' followed by the gerund 'reading'.",
+        "topic": "Books + Colors/Objects",
+        "concept": "Third-Person Singular Verb + Gerund",
+        "formula": "Subject (He/She/It) + Verb (base form + s) + Gerund",
+        "examples": [
+          "The teacher <b>recommends reading</b> this.",
+          "She <b>recommends reading</b> daily."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    },
+    {
+      "id": 28,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/smiling-kids.jpg",
+          "orientation": "portrait"
+        },
+        "passage": "These books make us feel joyful and relaxed.",
+        "question": "We ___ happy stories together."
+      },
+      "options": {
+        "A": { "text": "love reading", "correct": true },
+        "B": { "text": "loves reading", "correct": false },
+        "C": { "text": "loving reading", "correct": false },
+        "D": { "text": "loved reading", "correct": false },
+        "E": { "text": "truly love reading", "correct": true }
+      },
+      "explanation": {
+        "text": "The plural subject 'We' requires the base verb 'love' followed by the gerund 'reading'.",
+        "topic": "Books + Emotions",
+        "concept": "Plural Subject-Verb Agreement with Verb + Gerund",
+        "formula": "Plural Subject + Base Verb + Gerund",
+        "examples": [
+          "We <b>love reading</b> happy stories.",
+          "They <b>truly love reading</b> together."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "data": {
+        "hint": "Choose the correct verb+gerund form to complete the sentence.",
+        "image": {
+          "url": "https://via.placeholder.com/400x200/night-clock.jpg",
+          "orientation": "square"
+        },
+        "passage": "Reading late makes my eyes tired and hurts my sleep schedule.",
+        "question": "I ___ late at night to protect my eyes."
+      },
+      "options": {
+        "A": { "text": "avoid reading", "correct": true },
+        "B": { "text": "avoids reading", "correct": false },
+        "C": { "text": "avoiding reading", "correct": false },
+        "D": { "text": "avoided reading", "correct": false },
+        "E": { "text": "always avoid reading", "correct": true }
+      },
+      "explanation": {
+        "text": "The subject 'I' requires the base verb 'avoid' followed by the gerund 'reading'.",
+        "topic": "Books + Daily Routine",
+        "concept": "First-Person Singular Verb + Gerund",
+        "formula": "Subject (I) + Base Verb + Gerund",
+        "examples": [
+          "I <b>avoid reading</b> late at night.",
+          "I <b>always avoid reading</b> in the dark."
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 1,
+        "time_in_seconds": {
+          "fast": 15,
+          "normal": 30,
+          "easy": 60
+        }
+      }
+    },
+    {
+      "id": 30,
+      "type": "correction",
+      "data": {
+        "hint": "Click the incorrect parts and type the correct form. If no error, choose No Error."
+      },
+      "multiErrorSegments": [
+        { "id": "s1", "text": "Do you ", "clickable": false },
+        { "id": "s2", "text": "mind ", "clickable": true, "isError": false },
+        { "id": "s3", "text": "read ", "clickable": true, "isError": true, "correctAnswers": ["reading "] },
+        { "id": "s4", "text": "this book ", "clickable": true, "isError": false },
+        { "id": "s5", "text": "with me ", "clickable": false },
+        { "id": "s6", "text": "today? ", "clickable": false }
+      ],
+      "explanation": {
+        "text": "The verb 'mind' must be followed by a gerund ('reading'), not the base form ('read').",
+        "topic": "Books + Family",
+        "concept": "Verb + Gerund (mind reading)",
+        "formula": "Do/Does + Subject + mind + Gerund",
+        "examples": [
+          "Do you <b>mind reading</b> with me?",
+          "Does she <b>mind sharing</b> her book?"
+        ]
+      },
+      "config": {
+        "show_answer": true,
+        "show_explanation": true,
+        "level": 2,
+        "time_in_seconds": {
+          "fast": 20,
+          "normal": 45,
+          "easy": 90
+        }
+      }
+    }
+  ]
+}
