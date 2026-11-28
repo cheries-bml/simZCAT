@@ -129,7 +129,7 @@
         "B": { "text": "applies", "correct": true },
         "C": { "text": "applying", "correct": false },
         "D": { "text": "applied", "correct": false },
-        "E": { "text": "has applied", "correct": true }
+        "E": { "text": "has applied", "correct": false }
       },
       "explanation": {
         "text": "The adverb 'always' indicates a habit, requiring the simple present tense. The subject 'He' takes 'applies'. 'Has applied' is also correct for present perfect.",
@@ -163,8 +163,7 @@
         "A": { "text": "buy", "correct": false },
         "B": { "text": "buys", "correct": false },
         "C": { "text": "buying", "correct": false },
-        "D": { "text": "bought", "correct": true },
-        "E": { "text": "bought", "correct": true }
+        "D": { "text": "bought", "correct": true }
       },
       "explanation": {
         "text": "The present perfect tense ('have') requires the past participle (V3). 'Bought' is the irregular V3 form of 'buy'.",

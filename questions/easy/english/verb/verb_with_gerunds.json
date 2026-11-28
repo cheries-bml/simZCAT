@@ -376,7 +376,7 @@
         "B": { "text": "stops talking", "correct": false },
         "C": { "text": "stopping talking", "correct": false },
         "D": { "text": "stopped talking", "correct": false },
-        "E": { "text": "please stop talking", "correct": true }
+        "E": { "text": "please stop talking", "correct": false }
       },
       "explanation": {
         "text": "The imperative form uses the base verb 'stop' followed by the gerund 'talking'.",
